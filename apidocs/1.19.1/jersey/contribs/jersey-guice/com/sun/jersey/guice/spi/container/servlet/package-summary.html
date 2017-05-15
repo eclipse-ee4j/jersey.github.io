@@ -1,0 +1,289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>com.sun.jersey.guice.spi.container.servlet (jersey-guice 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="com.sun.jersey.guice.spi.container.servlet (jersey-guice 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../com/sun/jersey/guice/spi/container/package-summary.html">Prev Package</a></li>
+<li>Next Package</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?com/sun/jersey/guice/spi/container/servlet/package-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h1 title="Package" class="title">Package&nbsp;com.sun.jersey.guice.spi.container.servlet</h1>
+<div class="docSummary">
+<div class="block">Provides support for Guice-based Web applications.</div>
+</div>
+<p>See:&nbsp;<a href="#package_description">Description</a></p>
+</div>
+<div class="contentContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="packageSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
+<caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../../../com/sun/jersey/guice/spi/container/servlet/GuiceContainer.html" title="class in com.sun.jersey.guice.spi.container.servlet">GuiceContainer</a></td>
+<td class="colLast">
+<div class="block">A <code>Servlet</code> or <code>Filter</code> for deploying root resource classes
+ with Guice integration.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<a name="package_description">
+<!--   -->
+</a>
+<h2 title="Package com.sun.jersey.guice.spi.container.servlet Description">Package com.sun.jersey.guice.spi.container.servlet Description</h2>
+<div class="block">Provides support for Guice-based Web applications.
+ <p>
+ Guice support is enabled by referencing the Guice filter
+ <a href="http://google-guice.googlecode.com/svn/tags/3.0/javadoc/com/google/inject/servlet/GuiceFilter.html?is-external=true" title="class or interface in com.google.inject.servlet"><code>GuiceFilter</code></a> and an application
+ specific <code>ServletContextListener</code> that extends from
+ <a href="http://google-guice.googlecode.com/svn/tags/3.0/javadoc/com/google/inject/servlet/GuiceServletContextListener.html?is-external=true" title="class or interface in com.google.inject.servlet"><code>GuiceServletContextListener</code></a> in the web.xml.
+ For example, the web.xml may be as follows:
+ <blockquote><pre>
+   &lt;web-app&gt;
+     &lt;listener&gt;
+       &lt;listener-class&gt;foo.MyGuiceConfig&lt;/listener-class&gt;
+     &lt;/listener&gt;
+     &lt;filter&gt;
+       &lt;filter-name&gt;Guice Filter&lt;/filter-name&gt;
+       &lt;filter-class&gt;com.google.inject.servlet.GuiceFilter&lt;/filter-class&gt;
+     &lt;/filter&gt;
+     &lt;filter-mapping&gt;
+       &lt;filter-name>Guice Filter&lt;/filter-name&gt;
+       &lt;url-pattern>/*&lt;/url-pattern&gt;
+     &lt;/filter-mapping&gt;
+   &lt;/web-app&gt;
+ </blockquote></pre>
+ and the application specific servlet context listener may be as follows:
+ <blockquote><pre>
+     package foo;
+ 
+     import com.google.inject.Guice;
+     import com.google.inject.Injector;
+     import com.google.inject.servlet.GuiceServletContextListener;
+     import com.google.inject.servlet.ServletModule;
+     import com.sun.jersey.guice.spi.container.servlet.GuiceContainer;
+     import com.sun.jersey.guice.JerseyServletModule;
+     import foo.GuiceResource;
+     
+     public class MyGuiceConfig extends GuiceServletContextListener {
+ 
+         &#64;Override
+         protected Injector getInjector() {
+             return Guice.createInjector(new JerseyServletModule() {
+ 
+                 &#64;Override
+                 protected void configureServlets() {
+                     bind(GuiceResource.class);
+ 
+                     serve("/*").with(GuiceContainer.class);
+                 }
+         });
+     } 
+ }
+ </blockquote></pre>
+ Notice that one class <code>GuiceResource</code> is bound and the
+ <a href="../../../../../../../com/sun/jersey/guice/spi/container/servlet/GuiceContainer.html" title="class in com.sun.jersey.guice.spi.container.servlet"><code>GuiceContainer</code></a> is 
+ declared in the <code>serve</code> method. A instance of 
+ module <a href="../../../../../../../com/sun/jersey/guice/JerseyServletModule.html" title="class in com.sun.jersey.guice"><code>JerseyServletModule</code></a> is created. This
+ module extends from <a href="http://google-guice.googlecode.com/svn/tags/3.0/javadoc/com/google/inject/servlet/ServletModule.html?is-external=true" title="class or interface in com.google.inject.servlet"><code>ServletModule</code></a> and
+ provides JAX-RS and Jersey bindings.
+ <p>
+ Instances of
+ <code>GuiceResource</code> will be managed according to the scope declared
+ using Guice defined scopes. For example the <code>GuiceResource</code>
+ could be as follows:
+ <blockquote><pre>
+    package foo;
+ 
+    import javax.ws.rs.GET;
+    import javax.ws.rs.Produces;
+    import javax.ws.rs.Path;
+    import javax.ws.rs.QueryParam;
+    import javax.enterprise.context.RequestScoped;
+ 
+    &#64;Path("bound/perrequest")
+    &#64;RequestScoped
+    public class GuiceResource {
+ 
+        &#64;QueryParam("x") String x;
+ 
+        &#64;GET
+        &#64;Produces("text/plain")
+        public String getIt() {
+            return "Hello From Guice: " + x;
+        }     
+    }
+ </blockquote></pre>
+ <p>
+ Any root resource or provider classes bound by Guice
+ will be automatically registered. It is possible to intermix Guice and
+ non-Guice registration of classes by additionally using the normal
+ Jersey-based registration mechanisms in the servlet context listener
+ implementation. For example:
+ <blockquote><pre>
+     package foo;
+
+     import com.google.inject.Guice;
+     import com.google.inject.Injector;
+     import com.google.inject.servlet.GuiceServletContextListener;
+     import com.google.inject.servlet.ServletModule;
+     import com.sun.jersey.api.core.PackagesResourceConfig;
+     import com.sun.jersey.guice.spi.container.servlet.GuiceContainer;
+     import com.sun.jersey.guice.JerseyServletModule;
+     import foo.GuiceResource;
+     import java.util.HashMap;
+     import java.util.Map; 
+ 
+     public class GuiceServletConfig extends GuiceServletContextListener {
+ 
+         &#64;Override
+         protected Injector getInjector() {
+             return Guice.createInjector(new JerseyServletModule() {
+ 
+                 &#64;Override
+                 protected void configureServlets() {
+                     bind(GuiceResource.class);
+
+                     Map&lt;String, String&gt; params = new HashMap&lt;String, String&gt;();
+                     params.put(PackagesResourceConfig.PROPERTY_PACKAGES, "unbound");
+                     serve("/*").with(GuiceContainer.class, params);
+                 }
+             });
+         }
+     }
+ </blockquote></pre>
+ <p>
+ Any root resource or provider classes found in the package <code>unbound</code>
+ or sub-packages of will be registered whether they be Guice-bound nor not.
+ <p>
+ Sometimes it is convenient for developers not to explicitly bind a
+ resource or provider, let Guice instantiate, and let Jersey manage
+ the life-cycle. This behavior can be enabled for a resource or
+ provider class as follows:
+ <ol>
+ <li>a class constructor is annotated with <a href="http://google-guice.googlecode.com/svn/tags/3.0/javadoc/com/google/inject/Inject.html?is-external=true" title="class or interface in com.google.inject"><code>Inject</code></a>;
+ <li>the class is not explicitly bound in Guice; and
+ <li>the class is registered using a Jersey based registration mechanism,
+     for example using package scanning registration.
+ </ol>
+ <p>
+ In other cases it is convenient to let Jersey instantiate and manage
+ the life-cycle and let Guice perform injection. This behavior can be
+ enabled for a resource or provider class as follows:
+ <ol>
+ <li>a field or method is annotated with <a href="http://google-guice.googlecode.com/svn/tags/3.0/javadoc/com/google/inject/Inject.html?is-external=true" title="class or interface in com.google.inject"><code>Inject</code></a>;
+ <li>the class is not explicitly bound in Guice; and
+ <li>the class is registered using a Jersey based registration mechanism,
+     for example using package scanning registration.
+ </ol></div>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../com/sun/jersey/guice/spi/container/package-summary.html">Prev Package</a></li>
+<li>Next Package</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?com/sun/jersey/guice/spi/container/servlet/package-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

@@ -1,0 +1,601 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;17.&nbsp;Entity Data Filtering</title><link rel="stylesheet" type="text/css" href="/documentation.css"><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"><link rel="home" href="index.html" title="Jersey 2.4.1 User Guide"><link rel="up" href="index.html" title="Jersey 2.4.1 User Guide"><link rel="prev" href="bean-validation.html" title="Chapter&nbsp;16.&nbsp;Bean Validation Support"><link rel="next" href="mvc.html" title="Chapter&nbsp;18.&nbsp;MVC Templates"><script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-3160303-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;17.&nbsp;Entity Data Filtering</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="bean-validation.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="mvc.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+            <a href="index.html">
+                Table of Contents
+            </a> | <a href="user-guide.html">
+                Single HTML
+            </a></small><div lang="en" class="chapter" title="Chapter&nbsp;17.&nbsp;Entity Data Filtering"><div class="titlepage"><div><div><h2 class="title"><a name="entity-filtering"></a>Chapter&nbsp;17.&nbsp;Entity Data Filtering</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="entity-filtering.html#d0e10640">17.1. Enabling and configuring Entity Filtering in your application</a></span></dt><dt><span class="section"><a href="entity-filtering.html#d0e10741">17.2. Components used to describe Entity Filtering concepts</a></span></dt><dt><span class="section"><a href="entity-filtering.html#ef.annotations">17.3. Using custom annotations to filter entities</a></span></dt><dd><dl><dt><span class="section"><a href="entity-filtering.html#d0e10896">17.3.1. Server-side Entity Filtering</a></span></dt><dt><span class="section"><a href="entity-filtering.html#d0e11014">17.3.2. Client-side Entity Filtering</a></span></dt></dl></dd><dt><span class="section"><a href="entity-filtering.html#ef.security.annotations">17.4. Role-based Entity Filtering using (<code class="literal">javax.annotation.security</code>) annotations</a></span></dt><dt><span class="section"><a href="entity-filtering.html#ef.custom.annotations">17.5. Defining custom handling for entity-filtering annotations</a></span></dt><dt><span class="section"><a href="entity-filtering.html#ef.custom.providers">17.6. Supporting Entity Data Filtering in custom entity providers or frameworks</a></span></dt><dt><span class="section"><a href="entity-filtering.html#ef.modules">17.7. Modules with support for Entity Data Filtering</a></span></dt><dt><span class="section"><a href="entity-filtering.html#d0e11179">17.8. Examples</a></span></dt></dl></div><p>
+        Support for Entity Filtering in Jersey introduces a convenient facility for reducing the amount of data exchanged over
+        the wire between client and server without a need to create specialized data view components. The main idea behind this
+        feature is to give you APIs that will let you to selectively filter out any non-relevant data from the marshalled object
+        model before sending the data to the other party based on the context of the particular message exchange.
+        This way, only the necessary or relevant portion of the data is transferred over the network with each client request
+        or server response, without a need to create special facade models for transferring these limited subsets of the model
+        data.
+    </p><p>
+        Entity filtering feature allows you to define your own entity-filtering rules for your entity classes based on the
+        current context (e.g. matched resource method) and keep these rules in one place (directly in your domain model).
+        With Jersey entity filtering facility it is also possible to assign security access rules to entity classes properties
+        and property accessors.
+    </p><p>
+        We will first explain the main concepts and then we will explore the entity filtering feature topics from a perspective
+        of basic use-cases,
+
+        </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="xref" href="entity-filtering.html#ef.annotations" title="17.3.&nbsp;Using custom annotations to filter entities">Section&nbsp;17.3, &#8220;Using custom annotations to filter entities&#8221;</a></p></li><li class="listitem"><p><a class="xref" href="entity-filtering.html#ef.security.annotations" title="17.4.&nbsp;Role-based Entity Filtering using (javax.annotation.security) annotations">Section&nbsp;17.4, &#8220;Role-based Entity Filtering using (<code class="literal">javax.annotation.security</code>) annotations&#8221;</a></p></li></ul></div><p>
+
+        as well as some more complex ones.
+
+        </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="xref" href="entity-filtering.html#ef.custom.annotations" title="17.5.&nbsp;Defining custom handling for entity-filtering annotations">Section&nbsp;17.5, &#8220;Defining custom handling for entity-filtering annotations&#8221;</a></p></li></ul></div><p>
+    </p><div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+            Jersey entity filtering feature is supported via Jersey extension modules listed in <a class="xref" href="entity-filtering.html#ef.modules" title="17.7.&nbsp;Modules with support for Entity Data Filtering">Section&nbsp;17.7, &#8220;Modules with support for Entity Data Filtering&#8221;</a>.
+        </p></div><div class="section" title="17.1.&nbsp;Enabling and configuring Entity Filtering in your application"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10640"></a>17.1.&nbsp;Enabling and configuring Entity Filtering in your application</h2></div></div></div><p>
+            Entity Filtering support in Jersey is provided as an extension module and needs to be mentioned explicitly in your
+            <code class="literal">pom.xml</code> file (in case of using Maven):
+
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    gutter: false;">&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-entity-filtering&lt;/artifactId&gt;
+    &lt;version&gt;2.4.1&lt;/version&gt;
+&lt;/dependency&gt;</pre><p>
+
+            </p><div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+                    If you're not using Maven make sure to have also all the transitive dependencies
+                    (see <a class="link" href="https://jersey.java.net/project-info/2.4.1/jersey/project/jersey-entity-filtering/dependencies.html" target="_top">jersey-entity-filtering</a>) on the classpath.
+                </p></div><p>
+        </p><p>
+            The entity-filtering extension module provides two <code class="literal">Feature</code>s which you can register into server/client
+            runtime in prior to use Entity Filtering in an application:
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/EntityFilteringFeature.html" target="_top">EntityFilteringFeature</a></p><p>
+                        Filtering based on entity-filtering annotations (or i.e. external configuration file) created using
+                        <a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/EntityFiltering.html" target="_top">@EntityFiltering</a> meta-annotation.
+                    </p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/SecurityEntityFilteringFeature.html" target="_top">SecurityEntityFilteringFeature</a></p><p>Filtering based on security (<code class="literal">javax.annotation.security</code>) and entity-filtering
+                        annotations.</p></li></ul></div><p>
+
+            If you want to use both entity-filtering annotations and security annotations for entity data filtering it is enough
+            to register <code class="literal">SecurityEntityFilteringFeature</code> as this feature registers also
+            <code class="literal">EntityFilteringFeature</code>.
+        </p><p>
+            Entity-filtering currently recognizes one property that can be passed into the <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/Configuration.html" target="_top">Configuration</a> instance
+            (client/server):
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/EntityFilteringFeature.html#ENTITY_FILTERING_SCOPE" target="_top">EntityFilteringFeature.ENTITY_FILTERING_SCOPE</a> - "<code class="literal">jersey.config.entityFiltering.scope</code>"</p><p>
+                        Defines one or more annotations that should be used as entity-filtering scope when reading/writing an
+                        entity.
+                    </p></li></ul></div><p>
+
+            </p><div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+                    Processing of entity-filtering annotations to create an entity-filtering scope is defined by
+                    following: "<code class="literal">Request/Resource entity annotations</code>" &gt;
+                    "<code class="literal">Configuration</code>" &gt; "<code class="literal">Resource method/class annotations</code>"
+                    (on server).
+                </p></div><p>
+        </p><p>
+            You can configure entity-filtering on server (basic + security examples) as follows:
+
+            </p><div class="example"><a name="ef.example.server.registration"></a><p class="title"><b>Example&nbsp;17.1.&nbsp;Registering and configuring entity-filtering feature on server.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">new ResourceConfig()
+    // Set entity-filtering scope via configuration.
+    .property(EntityFilteringFeature.ENTITY_FILTERING_SCOPE, new Annotation[] {ProjectDetailedView.Factory.get()})
+    // Register the EntityFilteringFeature.
+    .register(EntityFilteringFeature.class)
+    // Further configuration of ResourceConfig.
+    .register( ... );</pre></div></div><p><br class="example-break">
+
+            </p><div class="example"><a name="ef.example.server.security.registration"></a><p class="title"><b>Example&nbsp;17.2.&nbsp;Registering and configuring entity-filtering feature with security annotations on server.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">new ResourceConfig()
+    // Set entity-filtering scope via configuration.
+    .property(EntityFilteringFeature.ENTITY_FILTERING_SCOPE, new Annotation[] {SecurityAnnotations.rolesAllowed("manager")})
+    // Register the SecurityEntityFilteringFeature.
+    .register(SecurityEntityFilteringFeature.class)
+    // Further configuration of ResourceConfig.
+    .register( ... );</pre></div></div><p><br class="example-break">
+        </p><p>
+            Use similar steps to register entity-filtering on client:
+
+            </p><div class="example"><a name="ef.example.client.registration"></a><p class="title"><b>Example&nbsp;17.3.&nbsp;Registering and configuring entity-filtering feature on client.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">final ClientConfig config = new ClientConfig()
+    // Set entity-filtering scope via configuration.
+    .property(EntityFilteringFeature.ENTITY_FILTERING_SCOPE, new Annotation[] {ProjectDetailedView.Factory.get()})
+    // Register the EntityFilteringFeature.
+    .register(EntityFilteringFeature.class)
+    // Further configuration of ClientConfig.
+    .register( ... );
+
+// Create new client.
+final Client client = ClientClientBuilder.newClient(config);
+
+// Use the client.</pre></div></div><p><br class="example-break">
+        </p></div><div class="section" title="17.2.&nbsp;Components used to describe Entity Filtering concepts"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10741"></a>17.2.&nbsp;Components used to describe Entity Filtering concepts</h2></div></div></div><p>
+            In the next section the entity-filtering features will be illustrated on a project-tracking application that
+            contains three classes in it's domain model and few resources (only <code class="literal">Project</code> resource will be
+            shown in this chapter). The full source code for the example application can be found in Jersey
+            <a class="link" href="https://github.com/jersey/jersey/tree/2.4.1/examples/entity-filtering" target="_top">Entity Filtering example</a>.
+        </p><p>
+            Suppose there are three domain model classes (or entities) in our model:
+            <code class="literal">Project</code>, <code class="literal">User</code> and <code class="literal">Task</code> (getters/setter are omitted for
+            brevity).
+
+            </p><div class="example"><a name="d0e10763"></a><p class="title"><b>Example&nbsp;17.4.&nbsp;Project</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class Project {
+
+    private Long id;
+
+    private String name;
+
+    private String description;
+
+    private List&lt;Task&gt; tasks;
+
+    private List&lt;User&gt; users;
+
+    // getters and setters
+}</pre></div></div><p><br class="example-break">
+
+            </p><div class="example"><a name="d0e10769"></a><p class="title"><b>Example&nbsp;17.5.&nbsp;User</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class User {
+
+    private Long id;
+
+    private String name;
+
+    private String email;
+
+    private List&lt;Project&gt; projects;
+
+    private List&lt;Task&gt; tasks;
+
+    // getters and setters
+}</pre></div></div><p><br class="example-break">
+
+            </p><div class="example"><a name="d0e10775"></a><p class="title"><b>Example&nbsp;17.6.&nbsp;Task</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class Task {
+
+    private Long id;
+
+    private String name;
+
+    private String description;
+
+    private Project project;
+
+    private User user;
+
+    // getters and setters
+}</pre></div></div><p><br class="example-break">
+        </p><p>
+            To retrieve the entities from server to client, we have created also a couple of JAX-RS resources from whose the
+            <code class="literal">ProjectsResource</code> is shown as example.
+
+            </p><div class="example"><a name="d0e10786"></a><p class="title"><b>Example&nbsp;17.7.&nbsp;ProjectsResource</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("projects")
+@Produces("application/json")
+public class ProjectsResource {
+
+    @GET
+    @Path("{id}")
+    public Project getProject(@PathParam("id") final Long id) {
+        return getDetailedProject(id);
+    }
+
+    @GET
+    public List&lt;Project&gt; getProjects() {
+        return getDetailedProjects();
+    }
+}</pre></div></div><p><br class="example-break">
+        </p></div><div class="section" title="17.3.&nbsp;Using custom annotations to filter entities"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="ef.annotations"></a>17.3.&nbsp;Using custom annotations to filter entities</h2></div></div></div><p>
+            Entity filtering via annotations is based on an <a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/EntityFiltering.html" target="_top">@EntityFiltering</a> meta-annotation.
+            This meta-annotation is used to identify entity-filtering annotations that can be then attached to
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>domain model classes (supported on both, server and client sides), and</p></li><li class="listitem"><p>resource methods / resource classes (only on server side)</p></li></ul></div><p>
+
+            An example of entity-filtering annotation applicable to a class, field or method can be seen in
+            <a class="xref" href="entity-filtering.html#ef.annotations.sample.annotation" title="Example&nbsp;17.8.&nbsp;ProjectDetailedView">Example&nbsp;17.8, &#8220;ProjectDetailedView&#8221;</a> bellow.
+
+            </p><div class="example"><a name="ef.annotations.sample.annotation"></a><p class="title"><b>Example&nbsp;17.8.&nbsp;ProjectDetailedView</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Target({ElementType.TYPE, ElementType.METHOD, ElementType.FIELD})
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
+@EntityFiltering
+public @interface ProjectDetailedView {
+
+    /**
+     * Factory class for creating instances of {@code ProjectDetailedView} annotation.
+     */
+    public static class Factory
+                        extends AnnotationLiteral&lt;ProjectDetailedView&gt;
+                        implements ProjectDetailedView {
+
+        private Factory() {
+        }
+
+        public static ProjectDetailedView get() {
+            return new Factory();
+        }
+    }
+}</pre></div></div><p><br class="example-break">
+
+        </p><p>
+            Since creating annotation instances directly in Java code is not trivial, it is a good practice to provide an inner
+            annotation <code class="literal">Factory</code> class in each custom filtering annotation, through which new instances of
+            the annotation can be directly created. The annotation factory class can be created by extending the HK2
+            <code class="literal">AnnotationLiteral</code> class and implementing the annotation interface itself. It should also provide
+            a static factory method that will create and return a new instance of the <code class="literal">Factory</code> class when
+            invoked. Such annotation instances can be then passed to the client and server run-times to define or override
+            entity-filtering scopes.
+        </p><p>
+            By placing an entity-filtering annotation on an entity (class, fields, getters or setters) we define a so-called
+            <span class="emphasis"><em>entity-filtering scope</em></span> for the entity. The purpose of entity-filtering scope is to identify
+            parts of the domain model that should be processed when the model is to be sent over the wire in a particular
+            entity-filtering scope. We distinguish between:
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+                        global entity-filtering scope (defined by placing filtering annotation on a class itself), and
+                    </p></li><li class="listitem"><p>
+                        local entity-filtering scope (defined by placing filtering annotation on a field, getter or setter)
+                    </p></li></ul></div><p>
+
+            Unannotated members of a domain model class are automatically added to all existing global entity-filtering scopes.
+            If there is no explicit global entity-filtering scope defined on a class a default scope is created for this class
+            to group these members.
+        </p><p>
+            Creating entity-filtering scopes using custom entity-filtering annotations in domain model classes is illustrated
+            in the following examples.
+
+            </p><div class="example"><a name="d0e10842"></a><p class="title"><b>Example&nbsp;17.9.&nbsp;Annotated Project</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class Project {
+
+    private Long id;
+
+    private String name;
+
+    private String description;
+
+    @ProjectDetailedView
+    private List&lt;Task&gt; tasks;
+
+    @ProjectDetailedView
+    private List&lt;User&gt; users;
+
+    // getters and setters
+}</pre></div></div><p><br class="example-break">
+
+                </p><div class="example"><a name="d0e10848"></a><p class="title"><b>Example&nbsp;17.10.&nbsp;Annotated User</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class User {
+
+    private Long id;
+
+    private String name;
+
+    private String email;
+
+    @UserDetailedView
+    private List&lt;Project&gt; projects;
+
+    @UserDetailedView
+    private List&lt;Task&gt; tasks;
+
+    // getters and setters
+}</pre></div></div><p><br class="example-break">
+
+                </p><div class="example"><a name="d0e10854"></a><p class="title"><b>Example&nbsp;17.11.&nbsp;Annotated Task</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class Task {
+
+    private Long id;
+
+    private String name;
+
+    private String description;
+
+    @TaskDetailedView
+    private Project project;
+
+    @TaskDetailedView
+    private User user;
+
+    // getters and setters
+}</pre></div></div><p><br class="example-break">
+
+            As you can see in the examples above, we have defined 3 separate scopes using <code class="literal">@ProjectDetailedView</code>,
+            <code class="literal">@UserDetailedView</code> and <code class="literal">@TaskDetailedView</code> annotations and we have applied
+            these scopes selectively to certain fields in the domain model classes.
+        </p><p>
+            Once the entity-filtering scopes are applied to the parts of a domain model, the entity filtering facility (when
+            enabled) will check the active scopes when the model is being sent over the wire, and filter out all parts from
+            the model for which there is no active scope set in the given context. Therefore, we need a way how to control
+            the scopes active in any given context in order to process the model data in a certain way (e.g. expose the detailed
+            view). We need to tell the server/client runtime which entity-filtering scopes we want to apply. There are 2 ways
+            how to do this for client-side and 3 ways for server-side:
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Out-bound client request or server response programmatically created with entity-filtering annotations
+                        that identify the scopes to be applied (available on both, client and server)</p></li><li class="listitem"><p>Property identifying the applied scopes passed through <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/Configuration.html" target="_top">Configuration</a>
+                        (available on both, client and server)</p></li><li class="listitem"><p>Entity-filtering annotations identifying the applied scopes attached to a resource method or class
+                        (server-side only)</p></li></ul></div><p>
+
+            When the multiple approaches are combined, the priorities of calculating the applied scopes are as follows:
+            <code class="literal">Entity annotations in request or response</code> &gt;
+            <code class="literal">Property passed through Configuration</code> &gt;
+            <code class="literal">Annotations applied to a resource method or class</code>.
+        </p><p>
+            In a graph of domain model objects, the entity-filtering scopes are applied to the root node as well as transitively
+            to all the child nodes. Fields and child nodes that do not match at least a single active scope are filtered out.
+            When the scope matching is performed, annotations applied to the domain model classes and fields
+            are used to compute the scope for each particular component of the model. If there are no annotations on the class
+            or it's fields, the default scope is assumed. During the filtering, first, the annotations on root model class
+            and it's fields are considered. For all composite fields that have not been filtered out, the annotations on the
+            referenced child class and it's fields are considered next, and so on.
+        </p><div class="section" title="17.3.1.&nbsp;Server-side Entity Filtering"><div class="titlepage"><div><div><h3 class="title"><a name="d0e10896"></a>17.3.1.&nbsp;Server-side Entity Filtering</h3></div></div></div><p>
+                To pass entity-filtering annotations via <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/Response.html" target="_top">Response</a> returned from a resource method you can leverage the
+                <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/Response.ResponseBuilder.html#entity(java.lang.Object, java.lang.annotation.Annotation[])" target="_top">Response.ResponseBuilder#entity(Object, Annotation[])</a>
+                method. The next example illustrates this approach. You will also see why every custom entity-filtering
+                annotation should contain a factory for creating instances of the annotation.
+
+                </p><div class="example"><a name="d0e10907"></a><p class="title"><b>Example&nbsp;17.12.&nbsp;ProjectsResource - Response entity-filtering annotations</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("projects")
+@Produces("application/json")
+public class ProjectsResource {
+
+    @GET
+    public Response getProjects(@QueryParam("detailed") final boolean isDetailed) {
+        return Response
+                .ok()
+                .entity(new GenericEntity&lt;List&lt;Project&gt;&gt;(EntityStore.getProjects()) {},
+                        isDetailed ? new Annotation[]{ProjectDetailedView.Factory.get()} : new Annotation[0])
+                .build();
+    }
+}</pre></div></div><p><br class="example-break">
+
+                Annotating a resource method / class is typically easier although it is less flexible and may require more
+                resource methods to be created to cover all the alternative use case scenarios. For example:
+
+                </p><div class="example"><a name="d0e10913"></a><p class="title"><b>Example&nbsp;17.13.&nbsp;ProjectsResource - Entity-filtering annotations on methods</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("projects")
+@Produces("application/json")
+public class ProjectsResource {
+
+    @GET
+    public List&lt;Project&gt; getProjects() {
+        return getDetailedProjects();
+    }
+
+    @GET
+    @Path("detailed")
+    @ProjectDetailedView
+    public List&lt;Project&gt; getDetailedProjects() {
+        return EntityStore.getProjects();
+    }
+}</pre></div></div><p><br class="example-break">
+
+                To see how entity-filtering scopes can be applied using a <code class="literal">Configuration</code> property,
+                see the <a class="xref" href="entity-filtering.html#ef.example.server.registration" title="Example&nbsp;17.1.&nbsp;Registering and configuring entity-filtering feature on server.">Example&nbsp;17.1, &#8220;Registering and configuring entity-filtering feature on server.&#8221;</a> example.
+            </p><p>
+                When a <code class="literal">Project</code> model from the example above is requested in a scope represented by
+                <code class="literal">@ProjectDetailedView</code> entity-filtering annotation, the <code class="literal">Project</code> model
+                data sent over the wire would contain:
+
+                </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+                            <code class="literal">Project</code> - <code class="literal">id</code>, <code class="literal">name</code>,
+                            <code class="literal">description</code>, <code class="literal">tasks</code>, <code class="literal">users</code>
+                        </p></li><li class="listitem"><p>
+                            <code class="literal">Task</code> - <code class="literal">id</code>, <code class="literal">name</code>,
+                            <code class="literal">description</code>
+                        </p></li><li class="listitem"><p>
+                            <code class="literal">User</code> - <code class="literal">id</code>, <code class="literal">name</code>, <code class="literal">email</code>
+                        </p></li></ul></div><p>
+
+                Or, to illustrate this in JSON format:
+
+                </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">{
+   "description" : "Jersey is the open source (under dual CDDL+GPL license) JAX-RS 2.0 (JSR 339) production quality Reference Implementation for building RESTful Web services.",
+   "id" : 1,
+   "name" : "Jersey",
+   "tasks" : [ {
+      "description" : "Entity Data Filtering",
+      "id" : 1,
+      "name" : "ENT_FLT"
+   }, {
+      "description" : "OAuth 1 + 2",
+      "id" : 2,
+      "name" : "OAUTH"
+   } ],
+   "users" : [ {
+      "email" : "very@secret.com",
+      "id" : 1,
+      "name" : "Jersey Robot"
+   } ]
+}</pre><p>
+
+                For the <span class="emphasis"><em>default entity-filtering scope</em></span> the filtered model would look like:
+
+                </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+                            <code class="literal">Project</code> - <code class="literal">id</code>, <code class="literal">name</code>, <code class="literal">description</code>
+                        </p></li></ul></div><p>
+
+                Or in JSON format:
+
+                </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">{
+   "description" : "Jersey is the open source (under dual CDDL+GPL license) JAX-RS 2.0 (JSR 339) production quality Reference Implementation for building RESTful Web services.",
+   "id" : 1,
+   "name" : "Jersey"
+}</pre><p>
+            </p></div><div class="section" title="17.3.2.&nbsp;Client-side Entity Filtering"><div class="titlepage"><div><div><h3 class="title"><a name="d0e11014"></a>17.3.2.&nbsp;Client-side Entity Filtering</h3></div></div></div><p>
+                As mentioned above you can define applied entity-filtering scopes using a property set either in the client
+                run-time <code class="literal">Configuration</code> (see <a class="xref" href="entity-filtering.html#ef.example.client.registration" title="Example&nbsp;17.3.&nbsp;Registering and configuring entity-filtering feature on client.">Example&nbsp;17.3, &#8220;Registering and configuring entity-filtering feature on client.&#8221;</a>) or by
+                passing the entity-filtering annotations during a creation of an individual request to be sent to server.
+
+                </p><div class="example"><a name="d0e11024"></a><p class="title"><b>Example&nbsp;17.14.&nbsp;Client - Request entity-filtering annotations</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">ClientBuilder.newClient(config)
+    .target(uri)
+    .request()
+    .post(Entity.entity(project, new Annotation[] {ProjectDetailedView.Factory.get()}));</pre></div></div><p><br class="example-break">
+
+                You can use the mentioned method with client injected into a resource as well.
+
+                </p><div class="example"><a name="d0e11030"></a><p class="title"><b>Example&nbsp;17.15.&nbsp;Client - Request entity-filtering annotations</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("clients")
+@Produces("application/json")
+public class ClientsResource {
+
+    @Uri("projects")
+    private WebTarget target;
+
+    @GET
+    public List&lt;Project&gt; getProjects() {
+        return target.request()
+            .post(Entity.entity(project, new Annotation[] {ProjectDetailedView.Factory.get()}));
+    }
+}</pre></div></div><p><br class="example-break">
+            </p></div></div><div class="section" title="17.4.&nbsp;Role-based Entity Filtering using (javax.annotation.security) annotations"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="ef.security.annotations"></a>17.4.&nbsp;Role-based Entity Filtering using (<code class="literal">javax.annotation.security</code>) annotations</h2></div></div></div><p>
+            Filtering the content sent to the client (or server) based on the authorized security roles is a commonly
+            required use case. By registering <a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/SecurityEntityFilteringFeature.html" target="_top">SecurityEntityFilteringFeature</a> you can
+            leverage the Jersey Entity Filtering facility in connection with standard
+            <code class="literal">javax.annotation.security</code> annotations exactly the same way as you would with custom
+            entity-filtering annotations described in previous chapters. Supported security annotations are:
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="http://docs.oracle.com/javaee/6/api/javax/annotation/security/PermitAll.html" target="_top">@PermitAll</a>,</p></li><li class="listitem"><p><a class="link" href="http://docs.oracle.com/javaee/6/api/javax/annotation/security/RolesAllowed.html" target="_top">@RolesAllowed</a>, and</p></li><li class="listitem"><p><a class="link" href="http://docs.oracle.com/javaee/6/api/javax/annotation/security/DenyAll.html" target="_top">@DenyAll</a></p></li></ul></div><p>
+        </p><p>
+            Although the mechanics of the Entity Data Filtering feature used for the security annotation-based filtering is
+            the same as with the entity-filtering annotations, the processing of security annotations differs in a few important
+            aspects:
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+                        Custom <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/SecurityContext.html" target="_top">SecurityContext</a> should be set by a container request filter in order to use
+                        <code class="literal">@RolesAllowed</code> for role-based filtering of domain model data (server-side)
+                    </p></li><li class="listitem"><p>
+                        There is no need to provide entity-filtering (or security) annotations on resource methods in order to
+                        define entity-filtering scopes for <code class="literal">@RolesAllowed</code> that is applied to the domain model
+                        components, as all the available roles for the current user are automatically determined using
+                        the information from the provided <code class="literal">SecurityContext</code> (server-side only).
+                    </p></li></ul></div><p>
+
+            </p><div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+                    Instances of security annotations (to be used for programmatically defined scopes either on client or server)
+                    can be created using one of the methods in the <a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/SecurityAnnotations.html" target="_top">SecurityAnnotations</a> factory class
+                    that is part of the Jersey Entity Filtering API.
+                </p></div><p>
+        </p></div><div class="section" title="17.5.&nbsp;Defining custom handling for entity-filtering annotations"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="ef.custom.annotations"></a>17.5.&nbsp;Defining custom handling for entity-filtering annotations</h2></div></div></div><p>
+            To create a custom entity-filtering annotation with special handling, i.e. an field aggregator annotation used
+            to annotate classes like the one in <a class="xref" href="entity-filtering.html#ef.custom.annotations.annotation" title="Example&nbsp;17.16.&nbsp;Entity-filtering annotation with custom meaning">Example&nbsp;17.16, &#8220;Entity-filtering annotation with custom meaning&#8221;</a> it is, in most cases,
+            sufficient to implement and register the following SPI contracts:
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/spi/EntityProcessor.html" target="_top">EntityProcessor</a></p><p>Implementations of this SPI are invoked to process entity class and it's members. Custom
+                        implementations can extend from <a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/spi/AbstractEntityProcessor.html" target="_top">AbstractEntityProcessor</a>.</p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/spi/ScopeResolver.html" target="_top">ScopeResolver</a></p><p>Implementations of this SPI are invoked to retrieve entity-filtering scopes from an array of
+                        provided annotations.</p></li></ul></div><p>
+
+            </p><div class="example"><a name="ef.custom.annotations.annotation"></a><p class="title"><b>Example&nbsp;17.16.&nbsp;Entity-filtering annotation with custom meaning</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.RUNTIME)
+@EntityFiltering
+public @interface FilteringAggregator {
+
+    /**
+     * Entity-filtering scope to add given fields to.
+     */
+    Annotation filteringScope();
+
+    /**
+     * Fields to be a part of the entity-filtering scope.
+     */
+    String[] fields();
+}</pre></div></div><p><br class="example-break">
+        </p></div><div class="section" title="17.6.&nbsp;Supporting Entity Data Filtering in custom entity providers or frameworks"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="ef.custom.providers"></a>17.6.&nbsp;Supporting Entity Data Filtering in custom entity providers or frameworks</h2></div></div></div><p>
+            To support Entity Data Filtering in custom entity providers (e.g. as in <a class="xref" href="entity-filtering.html#ef.modules.custom" title="Example&nbsp;17.17.&nbsp;Entity Data Filtering support in MOXy JSON binding provider">Example&nbsp;17.17, &#8220;Entity Data Filtering support in MOXy JSON binding provider&#8221;</a>),
+            it is sufficient in most of the cases to implement and register the following SPI contracts:
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/spi/ObjectProvider.html" target="_top">ObjectProvider</a></p><p>
+                        To be able to obtain an instance of a filtering object model your provider understands and can act on.
+                        The implementations can extend <a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/spi/AbstractObjectProvider.html" target="_top">AbstractObjectProvider</a>.
+                    </p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/spi/ObjectGraphTransformer.html" target="_top">ObjectGraphTransformer</a></p><p>
+                        To transform a read-only generic representation of a domain object model graph to be processed into
+                        an entity-filtering object model your provider understands and can act on. The implementations can
+                        extend <a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/spi/AbstractObjectProvider.html" target="_top">AbstractObjectProvider</a>.
+                    </p></li></ul></div><p>
+
+            </p><div class="example"><a name="ef.modules.custom"></a><p class="title"><b>Example&nbsp;17.17.&nbsp;Entity Data Filtering support in MOXy JSON binding provider</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Singleton
+public class FilteringMoxyJsonProvider extends ConfigurableMoxyJsonProvider {
+
+    @Inject
+    private Provider&lt;ObjectProvider&lt;ObjectGraph&gt;&gt; provider;
+
+    @Override
+    protected void preWriteTo(final Object object, final Class&lt;?&gt; type, final Type genericType, final Annotation[] annotations,
+                              final MediaType mediaType, final MultivaluedMap&lt;String, Object&gt; httpHeaders,
+                              final Marshaller marshaller) throws JAXBException {
+        super.preWriteTo(object, type, genericType, annotations, mediaType, httpHeaders, marshaller);
+
+        // Entity Filtering.
+        if (marshaller.getProperty(MarshallerProperties.OBJECT_GRAPH) == null) {
+            final Object objectGraph = provider.get().getFilteringObject(genericType, true, annotations);
+
+            if (objectGraph != null) {
+                marshaller.setProperty(MarshallerProperties.OBJECT_GRAPH, objectGraph);
+            }
+        }
+    }
+
+    @Override
+    protected void preReadFrom(final Class&lt;Object&gt; type, final Type genericType, final Annotation[] annotations,
+                               final MediaType mediaType, final MultivaluedMap&lt;String, String&gt; httpHeaders,
+                               final Unmarshaller unmarshaller) throws JAXBException {
+        super.preReadFrom(type, genericType, annotations, mediaType, httpHeaders, unmarshaller);
+
+        // Entity Filtering.
+        if (unmarshaller.getProperty(MarshallerProperties.OBJECT_GRAPH) == null) {
+            final Object objectGraph = provider.get().getFilteringObject(genericType, false, annotations);
+
+            if (objectGraph != null) {
+                unmarshaller.setProperty(MarshallerProperties.OBJECT_GRAPH, objectGraph);
+            }
+        }
+    }
+}</pre></div></div><p><br class="example-break">
+        </p></div><div class="section" title="17.7.&nbsp;Modules with support for Entity Data Filtering"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="ef.modules"></a>17.7.&nbsp;Modules with support for Entity Data Filtering</h2></div></div></div><p>
+            List of modules from Jersey workspace that support Entity Filtering:
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+                        <a class="link" href="media.html#json.moxy" title="8.1.2.&nbsp;MOXy">MOXy</a>
+                    </p></li></ul></div><p>
+        </p><p>
+            In order to use Entity Filtering in mentioned modules you need to explicitly register either
+            <a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/EntityFilteringFeature.html" target="_top">EntityFilteringFeature</a> or <a class="link" href="https://jersey.java.net/apidocs/2.4.1/jersey/org/glassfish/jersey/message/filtering/SecurityEntityFilteringFeature.html" target="_top">SecurityEntityFilteringFeature</a>
+            to activate Entity Filtering for particular module.
+        </p></div><div class="section" title="17.8.&nbsp;Examples"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e11179"></a>17.8.&nbsp;Examples</h2></div></div></div><p>
+            To see a complete working examples of entity-filtering feature refer to the:
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="https://github.com/jersey/jersey/tree/2.4.1/examples/entity-filtering" target="_top">Entity Filtering example</a></p></li><li class="listitem"><p><a class="link" href="https://github.com/jersey/jersey/tree/2.4.1/examples/entity-filtering-security" target="_top">Entity Filtering example (with security annotations)</a></p></li></ul></div><p>
+        </p></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+            function path() {
+              var args = arguments,
+                  result = []
+                  ;
+
+              for(var i = 0; i < args.length; i++)
+                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+
+              return result
+            };
+
+            SyntaxHighlighter.autoloader.apply(null, path(
+              'applescript            @shBrushAppleScript.js',
+              'actionscript3 as3      @shBrushAS3.js',
+              'bash shell             @shBrushBash.js',
+              'coldfusion cf          @shBrushColdFusion.js',
+              'cpp c                  @shBrushCpp.js',
+              'c# c-sharp csharp      @shBrushCSharp.js',
+              'css                    @shBrushCss.js',
+              'delphi pascal          @shBrushDelphi.js',
+              'diff patch pas         @shBrushDiff.js',
+              'erl erlang             @shBrushErlang.js',
+              'groovy                 @shBrushGroovy.js',
+              'java                   @shBrushJava.js',
+              'jfx javafx             @shBrushJavaFX.js',
+              'js jscript javascript  @shBrushJScript.js',
+              'perl pl                @shBrushPerl.js',
+              'php                    @shBrushPhp.js',
+              'text plain             @shBrushPlain.js',
+              'py python              @shBrushPython.js',
+              'ruby rails ror rb      @shBrushRuby.js',
+              'sass scss              @shBrushSass.js',
+              'scala                  @shBrushScala.js',
+              'sql                    @shBrushSql.js',
+              'vb vbnet               @shBrushVb.js',
+              'xml xhtml xslt html    @shBrushXml.js'
+            ));
+
+            SyntaxHighlighter.all();
+        </script><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="bean-validation.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="mvc.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;16.&nbsp;Bean Validation Support&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;18.&nbsp;MVC Templates</td></tr></table></div></div></body></html>

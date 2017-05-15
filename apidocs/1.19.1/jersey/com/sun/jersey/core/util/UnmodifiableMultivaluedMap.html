@@ -1,0 +1,562 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>UnmodifiableMultivaluedMap (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="UnmodifiableMultivaluedMap (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/UnmodifiableMultivaluedMap.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/core/util/ThrowHelper.html" title="class in com.sun.jersey.core.util"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" target="_top">Frames</a></li>
+<li><a href="UnmodifiableMultivaluedMap.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.core.util</div>
+<h2 title="Class UnmodifiableMultivaluedMap" class="title">Class UnmodifiableMultivaluedMap&lt;K,V&gt;</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>com.sun.jersey.core.util.UnmodifiableMultivaluedMap&lt;K,V&gt;</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>K</code> - the key</dd><dd><code>V</code> - the value</dd></dl>
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd>java.util.Map&lt;K,java.util.List&lt;V&gt;&gt;, <a href="../../../../../javax/ws/rs/core/MultivaluedMap.html" title="interface in javax.ws.rs.core">MultivaluedMap</a>&lt;K,V&gt;</dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">UnmodifiableMultivaluedMap&lt;K,V&gt;</span>
+extends java.lang.Object
+implements <a href="../../../../../javax/ws/rs/core/MultivaluedMap.html" title="interface in javax.ws.rs.core">MultivaluedMap</a>&lt;K,V&gt;</pre>
+<div class="block">An unmodifiable view of a <a href="../../../../../javax/ws/rs/core/MultivaluedMap.html" title="interface in javax.ws.rs.core"><code>MultivaluedMap</code></a>.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Gili Tzabari</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested_classes_inherited_from_class_java.util.Map">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from interface&nbsp;java.util.Map</h3>
+<code>java.util.Map.Entry&lt;K,V&gt;</code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#UnmodifiableMultivaluedMap(javax.ws.rs.core.MultivaluedMap)">UnmodifiableMultivaluedMap</a></strong>(<a href="../../../../../javax/ws/rs/core/MultivaluedMap.html" title="interface in javax.ws.rs.core">MultivaluedMap</a>&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&nbsp;delegate)</code>
+<div class="block">Creates a new ImmutableMultivaluedMap.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#add(K,%20V)">add</a></strong>(<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>&nbsp;key,
+   <a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&nbsp;value)</code>
+<div class="block">Add a value to the current list of values for the supplied key.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#clear()">clear</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#containsKey(java.lang.Object)">containsKey</a></strong>(java.lang.Object&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#containsValue(java.lang.Object)">containsValue</a></strong>(java.lang.Object&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;java.util.Map.Entry&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#entrySet()">entrySet</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#get(java.lang.Object)">get</a></strong>(java.lang.Object&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#getFirst(K)">getFirst</a></strong>(<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>&nbsp;key)</code>
+<div class="block">A shortcut to get the first value of the supplied key.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#isEmpty()">isEmpty</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#keySet()">keySet</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#put(K,%20java.util.List)">put</a></strong>(<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>&nbsp;key,
+   java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#putAll(java.util.Map)">putAll</a></strong>(java.util.Map&lt;? extends <a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,? extends java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;&nbsp;m)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#putSingle(K,%20V)">putSingle</a></strong>(<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>&nbsp;key,
+         <a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&nbsp;value)</code>
+<div class="block">Set the key's value to be a one item list consisting of the supplied value.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#remove(java.lang.Object)">remove</a></strong>(java.lang.Object&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#size()">size</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.Collection&lt;java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html#values()">values</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.util.Map">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;java.util.Map</h3>
+<code>equals, hashCode</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="UnmodifiableMultivaluedMap(javax.ws.rs.core.MultivaluedMap)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>UnmodifiableMultivaluedMap</h4>
+<pre>public&nbsp;UnmodifiableMultivaluedMap(<a href="../../../../../javax/ws/rs/core/MultivaluedMap.html" title="interface in javax.ws.rs.core">MultivaluedMap</a>&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&nbsp;delegate)</pre>
+<div class="block">Creates a new ImmutableMultivaluedMap.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>delegate</code> - the underlying MultivaluedMap</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="putSingle(java.lang.Object,java.lang.Object)">
+<!--   -->
+</a><a name="putSingle(K, V)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>putSingle</h4>
+<pre>public&nbsp;void&nbsp;putSingle(<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>&nbsp;key,
+             <a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&nbsp;value)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../javax/ws/rs/core/MultivaluedMap.html#putSingle(K,%20V)">MultivaluedMap</a></code></strong></div>
+<div class="block">Set the key's value to be a one item list consisting of the supplied value.
+ Any existing values will be replaced.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../javax/ws/rs/core/MultivaluedMap.html#putSingle(K,%20V)">putSingle</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../javax/ws/rs/core/MultivaluedMap.html" title="interface in javax.ws.rs.core">MultivaluedMap</a>&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>key</code> - the key</dd><dd><code>value</code> - the single value of the key</dd></dl>
+</li>
+</ul>
+<a name="add(java.lang.Object,java.lang.Object)">
+<!--   -->
+</a><a name="add(K, V)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;void&nbsp;add(<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>&nbsp;key,
+       <a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&nbsp;value)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../javax/ws/rs/core/MultivaluedMap.html#add(K,%20V)">MultivaluedMap</a></code></strong></div>
+<div class="block">Add a value to the current list of values for the supplied key.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../javax/ws/rs/core/MultivaluedMap.html#add(K,%20V)">add</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../javax/ws/rs/core/MultivaluedMap.html" title="interface in javax.ws.rs.core">MultivaluedMap</a>&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>key</code> - the key</dd><dd><code>value</code> - the value to be added.</dd></dl>
+</li>
+</ul>
+<a name="getFirst(java.lang.Object)">
+<!--   -->
+</a><a name="getFirst(K)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFirst</h4>
+<pre>public&nbsp;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&nbsp;getFirst(<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>&nbsp;key)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../javax/ws/rs/core/MultivaluedMap.html#getFirst(K)">MultivaluedMap</a></code></strong></div>
+<div class="block">A shortcut to get the first value of the supplied key.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../javax/ws/rs/core/MultivaluedMap.html#getFirst(K)">getFirst</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../javax/ws/rs/core/MultivaluedMap.html" title="interface in javax.ws.rs.core">MultivaluedMap</a>&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;</code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>key</code> - the key</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the first value for the specified key or null if the key is
+ not in the map.</dd></dl>
+</li>
+</ul>
+<a name="size()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>size</h4>
+<pre>public&nbsp;int&nbsp;size()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>size</code>&nbsp;in interface&nbsp;<code>java.util.Map&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="isEmpty()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isEmpty</h4>
+<pre>public&nbsp;boolean&nbsp;isEmpty()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>isEmpty</code>&nbsp;in interface&nbsp;<code>java.util.Map&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="containsKey(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>containsKey</h4>
+<pre>public&nbsp;boolean&nbsp;containsKey(java.lang.Object&nbsp;key)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>containsKey</code>&nbsp;in interface&nbsp;<code>java.util.Map&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="containsValue(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>containsValue</h4>
+<pre>public&nbsp;boolean&nbsp;containsValue(java.lang.Object&nbsp;value)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>containsValue</code>&nbsp;in interface&nbsp;<code>java.util.Map&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="get(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>public&nbsp;java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&nbsp;get(java.lang.Object&nbsp;key)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>get</code>&nbsp;in interface&nbsp;<code>java.util.Map&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="put(java.lang.Object,java.util.List)">
+<!--   -->
+</a><a name="put(K, java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>put</h4>
+<pre>public&nbsp;java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&nbsp;put(<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>&nbsp;key,
+                    java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&nbsp;value)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>put</code>&nbsp;in interface&nbsp;<code>java.util.Map&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="remove(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>remove</h4>
+<pre>public&nbsp;java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&nbsp;remove(java.lang.Object&nbsp;key)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>remove</code>&nbsp;in interface&nbsp;<code>java.util.Map&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="putAll(java.util.Map)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>putAll</h4>
+<pre>public&nbsp;void&nbsp;putAll(java.util.Map&lt;? extends <a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,? extends java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;&nbsp;m)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>putAll</code>&nbsp;in interface&nbsp;<code>java.util.Map&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="clear()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clear</h4>
+<pre>public&nbsp;void&nbsp;clear()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>clear</code>&nbsp;in interface&nbsp;<code>java.util.Map&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="keySet()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>keySet</h4>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>&gt;&nbsp;keySet()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>keySet</code>&nbsp;in interface&nbsp;<code>java.util.Map&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="values()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>values</h4>
+<pre>public&nbsp;java.util.Collection&lt;java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;&nbsp;values()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>values</code>&nbsp;in interface&nbsp;<code>java.util.Map&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="entrySet()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>entrySet</h4>
+<pre>public&nbsp;java.util.Set&lt;java.util.Map.Entry&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;&gt;&nbsp;entrySet()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>entrySet</code>&nbsp;in interface&nbsp;<code>java.util.Map&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">K</a>,java.util.List&lt;<a href="../../../../../com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" title="type parameter in UnmodifiableMultivaluedMap">V</a>&gt;&gt;</code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/UnmodifiableMultivaluedMap.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/core/util/ThrowHelper.html" title="class in com.sun.jersey.core.util"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/core/util/UnmodifiableMultivaluedMap.html" target="_top">Frames</a></li>
+<li><a href="UnmodifiableMultivaluedMap.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

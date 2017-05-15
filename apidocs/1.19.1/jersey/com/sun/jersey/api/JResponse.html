@@ -1,0 +1,890 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>JResponse (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="JResponse (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/JResponse.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../com/sun/jersey/api/ConflictException.html" title="class in com.sun.jersey.api"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../com/sun/jersey/api/JResponse.AJResponseBuilder.html" title="class in com.sun.jersey.api"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?com/sun/jersey/api/JResponse.html" target="_top">Frames</a></li>
+<li><a href="JResponse.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.api</div>
+<h2 title="Class JResponse" class="title">Class JResponse&lt;E&gt;</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>com.sun.jersey.api.JResponse&lt;E&gt;</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd></dl>
+<hr>
+<br>
+<pre>public class <span class="strong">JResponse&lt;E&gt;</span>
+extends java.lang.Object</pre>
+<div class="block">Defines the contract between a returned instance and the runtime when
+ an application needs to provide metadata to the runtime.
+ <p>
+ JResponse is a type safe alternative to <a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core"><code>Response</code></a> that preserves the
+ type information of response entity thus it is not necessary to utilize
+ <a href="../../../../javax/ws/rs/core/GenericEntity.html" title="class in javax.ws.rs.core"><code>GenericEntity</code></a>. It provides equivalent functionality to
+ <a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core"><code>Response</code></a>.
+ <p>
+ JResponse may be extended in combination with <a href="../../../../com/sun/jersey/api/JResponse.AJResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.AJResponseBuilder</code></a>
+ specialization when building responses.
+ <p>
+ Several methods have parameters of type URI, <a href="../../../../javax/ws/rs/core/UriBuilder.html" title="class in javax.ws.rs.core"><code>UriBuilder</code></a> provides
+ convenient methods to create such values as does
+ <a href="http://java.sun.com/j2se/1.5.0/docs/api/java/net/URI.html#create(java.lang.String)">URI.create()</a>.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Paul.Sandoz@Sun.Com</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a>, 
+<a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core"><code>Response</code></a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.AJResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.AJResponseBuilder</a>&lt;<a href="../../../../com/sun/jersey/api/JResponse.AJResponseBuilder.html" title="type parameter in JResponse.AJResponseBuilder">E</a>,<a href="../../../../com/sun/jersey/api/JResponse.AJResponseBuilder.html" title="type parameter in JResponse.AJResponseBuilder">B</a> extends <a href="../../../../com/sun/jersey/api/JResponse.AJResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.AJResponseBuilder</a>&gt;</strong></code>
+<div class="block">An abstract response builder that may be utilized to extend
+ response building and the construction of <a href="../../../../com/sun/jersey/api/JResponse.html" title="class in com.sun.jersey.api"><code>JResponse</code></a>
+ instances.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="type parameter in JResponse.JResponseBuilder">E</a>&gt;</strong></code>
+<div class="block">A class used to build <a href="../../../../com/sun/jersey/api/JResponse.html" title="class in com.sun.jersey.api"><code>JResponse</code></a> instances that contain metadata 
+ instead of or in addition to an entity.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#JResponse(int,%20com.sun.jersey.core.header.OutBoundHeaders,%20E)">JResponse</a></strong>(int&nbsp;status,
+         <a href="../../../../com/sun/jersey/core/header/OutBoundHeaders.html" title="class in com.sun.jersey.core.header">OutBoundHeaders</a>&nbsp;headers,
+         <a href="../../../../com/sun/jersey/api/JResponse.html" title="type parameter in JResponse">E</a>&nbsp;entity)</code>
+<div class="block">Construct given a status, entity and metadata.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#JResponse(com.sun.jersey.api.JResponse.AJResponseBuilder)">JResponse</a></strong>(<a href="../../../../com/sun/jersey/api/JResponse.AJResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.AJResponseBuilder</a>&lt;<a href="../../../../com/sun/jersey/api/JResponse.html" title="type parameter in JResponse">E</a>,?&gt;&nbsp;b)</code>
+<div class="block">Construct from a <a href="../../../../com/sun/jersey/api/JResponse.AJResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.AJResponseBuilder</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#JResponse(com.sun.jersey.api.JResponse)">JResponse</a></strong>(<a href="../../../../com/sun/jersey/api/JResponse.html" title="class in com.sun.jersey.api">JResponse</a>&lt;<a href="../../../../com/sun/jersey/api/JResponse.html" title="type parameter in JResponse">E</a>&gt;&nbsp;that)</code>
+<div class="block">Construct a shallow copy.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#JResponse(javax.ws.rs.core.Response.StatusType,%20com.sun.jersey.core.header.OutBoundHeaders,%20E)">JResponse</a></strong>(<a href="../../../../javax/ws/rs/core/Response.StatusType.html" title="interface in javax.ws.rs.core">Response.StatusType</a>&nbsp;statusType,
+         <a href="../../../../com/sun/jersey/core/header/OutBoundHeaders.html" title="class in com.sun.jersey.core.header">OutBoundHeaders</a>&nbsp;headers,
+         <a href="../../../../com/sun/jersey/api/JResponse.html" title="type parameter in JResponse">E</a>&nbsp;entity)</code>
+<div class="block">Construct given a status type, entity and metadata.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#created(java.net.URI)">created</a></strong>(java.net.URI&nbsp;location)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> for a created resource, set the
+ location header using the supplied value.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#fromResponse(com.sun.jersey.api.JResponse)">fromResponse</a></strong>(<a href="../../../../com/sun/jersey/api/JResponse.html" title="class in com.sun.jersey.api">JResponse</a>&lt;E&gt;&nbsp;response)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> by performing a shallow copy of an
+ existing <a href="../../../../com/sun/jersey/api/JResponse.html" title="class in com.sun.jersey.api"><code>JResponse</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#fromResponse(javax.ws.rs.core.Response)">fromResponse</a></strong>(<a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core">Response</a>&nbsp;response)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> by performing a shallow copy of an
+ existing <a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core"><code>Response</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/sun/jersey/api/JResponse.html" title="type parameter in JResponse">E</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#getEntity()">getEntity</a></strong>()</code>
+<div class="block">Get the response entity.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/sun/jersey/core/header/OutBoundHeaders.html" title="class in com.sun.jersey.core.header">OutBoundHeaders</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#getMetadata()">getMetadata</a></strong>()</code>
+<div class="block">Get metadata associated with the response as a map.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#getStatus()">getStatus</a></strong>()</code>
+<div class="block">Get the status code associated with the response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../javax/ws/rs/core/Response.StatusType.html" title="interface in javax.ws.rs.core">Response.StatusType</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#getStatusType()">getStatusType</a></strong>()</code>
+<div class="block">Get the status type associated with the response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.reflect.Type</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#getType()">getType</a></strong>()</code>
+<div class="block">Get the type of the entity.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#noContent()">noContent</a></strong>()</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> for an empty response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#notAcceptable(java.util.List)">notAcceptable</a></strong>(java.util.List&lt;<a href="../../../../javax/ws/rs/core/Variant.html" title="class in javax.ws.rs.core">Variant</a>&gt;&nbsp;variants)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> for a not acceptable response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#notModified()">notModified</a></strong>()</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with a not-modified status.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#notModified(javax.ws.rs.core.EntityTag)">notModified</a></strong>(<a href="../../../../javax/ws/rs/core/EntityTag.html" title="class in javax.ws.rs.core">EntityTag</a>&nbsp;tag)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with a not-modified status.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#notModified(java.lang.String)">notModified</a></strong>(java.lang.String&nbsp;tag)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with a not-modified status
+ and a strong entity tag.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#ok()">ok</a></strong>()</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with an OK status.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#ok(E)">ok</a></strong>(E&nbsp;entity)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> that contains a representation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#ok(E,%20javax.ws.rs.core.MediaType)">ok</a></strong>(E&nbsp;entity,
+  <a href="../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&nbsp;type)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> that contains a representation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#ok(E,%20java.lang.String)">ok</a></strong>(E&nbsp;entity,
+  java.lang.String&nbsp;type)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> that contains a representation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#ok(E,%20javax.ws.rs.core.Variant)">ok</a></strong>(E&nbsp;entity,
+  <a href="../../../../javax/ws/rs/core/Variant.html" title="class in javax.ws.rs.core">Variant</a>&nbsp;variant)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> that contains a representation.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#seeOther(java.net.URI)">seeOther</a></strong>(java.net.URI&nbsp;location)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> for a redirection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#serverError()">serverError</a></strong>()</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with an server error status.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#status(int)">status</a></strong>(int&nbsp;status)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with the supplied status.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#status(javax.ws.rs.core.Response.Status)">status</a></strong>(<a href="../../../../javax/ws/rs/core/Response.Status.html" title="enum in javax.ws.rs.core">Response.Status</a>&nbsp;status)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with the supplied status.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#status(javax.ws.rs.core.Response.StatusType)">status</a></strong>(<a href="../../../../javax/ws/rs/core/Response.StatusType.html" title="interface in javax.ws.rs.core">Response.StatusType</a>&nbsp;status)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with the supplied status.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#temporaryRedirect(java.net.URI)">temporaryRedirect</a></strong>(java.net.URI&nbsp;location)</code>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> for a temporary redirection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../com/sun/jersey/api/JResponseAsResponse.html" title="class in com.sun.jersey.api">JResponseAsResponse</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#toResponse()">toResponse</a></strong>()</code>
+<div class="block">Convert to a <a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core"><code>Response</code></a> compatible instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../com/sun/jersey/api/JResponseAsResponse.html" title="class in com.sun.jersey.api">JResponseAsResponse</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../com/sun/jersey/api/JResponse.html#toResponse(java.lang.reflect.Type)">toResponse</a></strong>(java.lang.reflect.Type&nbsp;type)</code>
+<div class="block">Convert to a <a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core"><code>Response</code></a> compatible instance.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="JResponse(javax.ws.rs.core.Response.StatusType,com.sun.jersey.core.header.OutBoundHeaders,java.lang.Object)">
+<!--   -->
+</a><a name="JResponse(javax.ws.rs.core.Response.StatusType, com.sun.jersey.core.header.OutBoundHeaders, E)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JResponse</h4>
+<pre>public&nbsp;JResponse(<a href="../../../../javax/ws/rs/core/Response.StatusType.html" title="interface in javax.ws.rs.core">Response.StatusType</a>&nbsp;statusType,
+         <a href="../../../../com/sun/jersey/core/header/OutBoundHeaders.html" title="class in com.sun.jersey.core.header">OutBoundHeaders</a>&nbsp;headers,
+         <a href="../../../../com/sun/jersey/api/JResponse.html" title="type parameter in JResponse">E</a>&nbsp;entity)</pre>
+<div class="block">Construct given a status type, entity and metadata.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>statusType</code> - the status type</dd><dd><code>headers</code> - the metadata, it is the callers responsibility to copy
+        the metadata if necessary.</dd><dd><code>entity</code> - the entity</dd></dl>
+</li>
+</ul>
+<a name="JResponse(int,com.sun.jersey.core.header.OutBoundHeaders,java.lang.Object)">
+<!--   -->
+</a><a name="JResponse(int, com.sun.jersey.core.header.OutBoundHeaders, E)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JResponse</h4>
+<pre>public&nbsp;JResponse(int&nbsp;status,
+         <a href="../../../../com/sun/jersey/core/header/OutBoundHeaders.html" title="class in com.sun.jersey.core.header">OutBoundHeaders</a>&nbsp;headers,
+         <a href="../../../../com/sun/jersey/api/JResponse.html" title="type parameter in JResponse">E</a>&nbsp;entity)</pre>
+<div class="block">Construct given a status, entity and metadata.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>status</code> - the status</dd><dd><code>headers</code> - the metadata, it is the callers responsibility to copy
+        the metadata if necessary.</dd><dd><code>entity</code> - the entity</dd></dl>
+</li>
+</ul>
+<a name="JResponse(com.sun.jersey.api.JResponse)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JResponse</h4>
+<pre>public&nbsp;JResponse(<a href="../../../../com/sun/jersey/api/JResponse.html" title="class in com.sun.jersey.api">JResponse</a>&lt;<a href="../../../../com/sun/jersey/api/JResponse.html" title="type parameter in JResponse">E</a>&gt;&nbsp;that)</pre>
+<div class="block">Construct a shallow copy. The metadata map will be copied but not the
+ key/value references.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>that</code> - the JResponse to copy from.</dd></dl>
+</li>
+</ul>
+<a name="JResponse(com.sun.jersey.api.JResponse.AJResponseBuilder)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>JResponse</h4>
+<pre>protected&nbsp;JResponse(<a href="../../../../com/sun/jersey/api/JResponse.AJResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.AJResponseBuilder</a>&lt;<a href="../../../../com/sun/jersey/api/JResponse.html" title="type parameter in JResponse">E</a>,?&gt;&nbsp;b)</pre>
+<div class="block">Construct from a <a href="../../../../com/sun/jersey/api/JResponse.AJResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.AJResponseBuilder</code></a>.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>b</code> - the builder.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="toResponse()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toResponse</h4>
+<pre>public&nbsp;<a href="../../../../com/sun/jersey/api/JResponseAsResponse.html" title="class in com.sun.jersey.api">JResponseAsResponse</a>&nbsp;toResponse()</pre>
+<div class="block">Convert to a <a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core"><code>Response</code></a> compatible instance.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the <a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core"><code>Response</code></a> compatible instance.</dd></dl>
+</li>
+</ul>
+<a name="toResponse(java.lang.reflect.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toResponse</h4>
+<pre>public&nbsp;<a href="../../../../com/sun/jersey/api/JResponseAsResponse.html" title="class in com.sun.jersey.api">JResponseAsResponse</a>&nbsp;toResponse(java.lang.reflect.Type&nbsp;type)</pre>
+<div class="block">Convert to a <a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core"><code>Response</code></a> compatible instance.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>type</code> - the entity type</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the <a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core"><code>Response</code></a> compatible instance.</dd></dl>
+</li>
+</ul>
+<a name="getStatusType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStatusType</h4>
+<pre>public&nbsp;<a href="../../../../javax/ws/rs/core/Response.StatusType.html" title="interface in javax.ws.rs.core">Response.StatusType</a>&nbsp;getStatusType()</pre>
+<div class="block">Get the status type associated with the response.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the response status type.</dd></dl>
+</li>
+</ul>
+<a name="getStatus()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStatus</h4>
+<pre>public&nbsp;int&nbsp;getStatus()</pre>
+<div class="block">Get the status code associated with the response.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the response status code.</dd></dl>
+</li>
+</ul>
+<a name="getMetadata()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMetadata</h4>
+<pre>public&nbsp;<a href="../../../../com/sun/jersey/core/header/OutBoundHeaders.html" title="class in com.sun.jersey.core.header">OutBoundHeaders</a>&nbsp;getMetadata()</pre>
+<div class="block">Get metadata associated with the response as a map. The returned map
+ may be subsequently modified by the JAX-RS runtime. Values will be
+ serialized using a <a href="../../../../javax/ws/rs/ext/RuntimeDelegate.HeaderDelegate.html" title="interface in javax.ws.rs.ext"><code>RuntimeDelegate.HeaderDelegate</code></a>
+ if one is available via
+ <a href="../../../../javax/ws/rs/ext/RuntimeDelegate.html#createHeaderDelegate(java.lang.Class)"><code>RuntimeDelegate.createHeaderDelegate(java.lang.Class)</code></a>
+ for the class of the value or using the values <code>toString</code> method if a
+ header delegate is not available.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>response metadata as a map</dd></dl>
+</li>
+</ul>
+<a name="getEntity()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEntity</h4>
+<pre>public&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.html" title="type parameter in JResponse">E</a>&nbsp;getEntity()</pre>
+<div class="block">Get the response entity. The response will be serialized using a
+ MessageBodyWriter for the class and type the entity <code>E</code>.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the response entity.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../javax/ws/rs/ext/MessageBodyWriter.html" title="interface in javax.ws.rs.ext"><code>MessageBodyWriter</code></a></dd></dl>
+</li>
+</ul>
+<a name="getType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getType</h4>
+<pre>public&nbsp;java.lang.reflect.Type&nbsp;getType()</pre>
+<div class="block">Get the type of the entity.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the type of the entity.</dd></dl>
+</li>
+</ul>
+<a name="fromResponse(javax.ws.rs.core.Response)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fromResponse</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;fromResponse(<a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core">Response</a>&nbsp;response)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> by performing a shallow copy of an
+ existing <a href="../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core"><code>Response</code></a>. The returned builder has its own metadata map but
+ entries are simply references to the keys and values contained in the
+ supplied Response metadata map.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>response</code> - a Response from which the status code, entity and metadata
+ will be copied</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd></dl>
+</li>
+</ul>
+<a name="fromResponse(com.sun.jersey.api.JResponse)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>fromResponse</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;fromResponse(<a href="../../../../com/sun/jersey/api/JResponse.html" title="class in com.sun.jersey.api">JResponse</a>&lt;E&gt;&nbsp;response)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> by performing a shallow copy of an
+ existing <a href="../../../../com/sun/jersey/api/JResponse.html" title="class in com.sun.jersey.api"><code>JResponse</code></a>. The returned builder has its own metadata map but
+ entries are simply references to the keys and values contained in the
+ supplied Response metadata map.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>response</code> - a JResponse from which the status code, entity and metadata
+ will be copied</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd></dl>
+</li>
+</ul>
+<a name="status(javax.ws.rs.core.Response.StatusType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>status</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;status(<a href="../../../../javax/ws/rs/core/Response.StatusType.html" title="interface in javax.ws.rs.core">Response.StatusType</a>&nbsp;status)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with the supplied status.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>status</code> - the response status</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if status is null</dd></dl>
+</li>
+</ul>
+<a name="status(javax.ws.rs.core.Response.Status)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>status</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;status(<a href="../../../../javax/ws/rs/core/Response.Status.html" title="enum in javax.ws.rs.core">Response.Status</a>&nbsp;status)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with the supplied status.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>status</code> - the response status</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if status is null</dd></dl>
+</li>
+</ul>
+<a name="status(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>status</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;status(int&nbsp;status)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with the supplied status.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>status</code> - the response status</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if status is less than 100 or greater
+ than 599.</dd></dl>
+</li>
+</ul>
+<a name="ok()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ok</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;ok()</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with an OK status.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd></dl>
+</li>
+</ul>
+<a name="ok(java.lang.Object)">
+<!--   -->
+</a><a name="ok(E)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ok</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;ok(E&nbsp;entity)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> that contains a representation.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>entity</code> - the representation entity data</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd></dl>
+</li>
+</ul>
+<a name="ok(java.lang.Object,javax.ws.rs.core.MediaType)">
+<!--   -->
+</a><a name="ok(E, javax.ws.rs.core.MediaType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ok</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;ok(E&nbsp;entity,
+                                   <a href="../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&nbsp;type)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> that contains a representation.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>entity</code> - the representation entity data</dd><dd><code>type</code> - the media type of the entity</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd></dl>
+</li>
+</ul>
+<a name="ok(java.lang.Object,java.lang.String)">
+<!--   -->
+</a><a name="ok(E, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ok</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;ok(E&nbsp;entity,
+                                   java.lang.String&nbsp;type)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> that contains a representation.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>entity</code> - the representation entity data</dd><dd><code>type</code> - the media type of the entity</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd></dl>
+</li>
+</ul>
+<a name="ok(java.lang.Object,javax.ws.rs.core.Variant)">
+<!--   -->
+</a><a name="ok(E, javax.ws.rs.core.Variant)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ok</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;ok(E&nbsp;entity,
+                                   <a href="../../../../javax/ws/rs/core/Variant.html" title="class in javax.ws.rs.core">Variant</a>&nbsp;variant)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> that contains a representation.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>entity</code> - the representation entity data</dd><dd><code>variant</code> - representation metadata</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd></dl>
+</li>
+</ul>
+<a name="serverError()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serverError</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;serverError()</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with an server error status.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd></dl>
+</li>
+</ul>
+<a name="created(java.net.URI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>created</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;created(java.net.URI&nbsp;location)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> for a created resource, set the
+ location header using the supplied value.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>location</code> - the URI of the new resource. If a relative URI is
+ supplied it will be converted into an absolute URI by resolving it
+ relative to the request URI (see <code>UriInfo#getRequestUri</code>).</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if location is null</dd></dl>
+</li>
+</ul>
+<a name="noContent()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>noContent</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;noContent()</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> for an empty response.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd></dl>
+</li>
+</ul>
+<a name="notModified()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notModified</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;notModified()</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with a not-modified status.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd></dl>
+</li>
+</ul>
+<a name="notModified(javax.ws.rs.core.EntityTag)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notModified</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;notModified(<a href="../../../../javax/ws/rs/core/EntityTag.html" title="class in javax.ws.rs.core">EntityTag</a>&nbsp;tag)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with a not-modified status.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>tag</code> - a tag for the unmodified entity</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if tag is null</dd></dl>
+</li>
+</ul>
+<a name="notModified(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notModified</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;notModified(java.lang.String&nbsp;tag)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> with a not-modified status
+ and a strong entity tag. This is a shortcut
+ for <code>notModified(new EntityTag(<i>value</i>))</code>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>tag</code> - the string content of a strong entity tag. The JAX-RS
+ runtime will quote the supplied value when creating the header.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if tag is null</dd></dl>
+</li>
+</ul>
+<a name="seeOther(java.net.URI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>seeOther</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;seeOther(java.net.URI&nbsp;location)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> for a redirection. Used in the
+ redirect-after-POST (aka POST/redirect/GET) pattern.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>location</code> - the redirection URI. If a relative URI is
+ supplied it will be converted into an absolute URI by resolving it
+ relative to the base URI of the application (see
+ <code>UriInfo#getBaseUri</code>).</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if location is null</dd></dl>
+</li>
+</ul>
+<a name="temporaryRedirect(java.net.URI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>temporaryRedirect</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;temporaryRedirect(java.net.URI&nbsp;location)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> for a temporary redirection.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>location</code> - the redirection URI. If a relative URI is
+ supplied it will be converted into an absolute URI by resolving it
+ relative to the base URI of the application (see
+ <code>UriInfo#getBaseUri</code>).</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if location is null</dd></dl>
+</li>
+</ul>
+<a name="notAcceptable(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>notAcceptable</h4>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api">JResponse.JResponseBuilder</a>&lt;E&gt;&nbsp;notAcceptable(java.util.List&lt;<a href="../../../../javax/ws/rs/core/Variant.html" title="class in javax.ws.rs.core">Variant</a>&gt;&nbsp;variants)</pre>
+<div class="block">Create a new <a href="../../../../com/sun/jersey/api/JResponse.JResponseBuilder.html" title="class in com.sun.jersey.api"><code>JResponse.JResponseBuilder</code></a> for a not acceptable response.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>E</code> - The entity type</dd><dt><span class="strong">Parameters:</span></dt><dd><code>variants</code> - list of variants that were available, a null value is
+ equivalent to an empty list.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a new JResponseBuilder</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/JResponse.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../index-all.html">Index</a></li>
+<li><a href="../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../com/sun/jersey/api/ConflictException.html" title="class in com.sun.jersey.api"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../com/sun/jersey/api/JResponse.AJResponseBuilder.html" title="class in com.sun.jersey.api"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../index.html?com/sun/jersey/api/JResponse.html" target="_top">Frames</a></li>
+<li><a href="JResponse.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>
