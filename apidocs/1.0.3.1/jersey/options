@@ -1,0 +1,40 @@
+-classpath '/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-bundle/target/classes:/Users/pavel/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/Users/pavel/.m2/repository/javax/persistence/persistence-api/1.0.2/persistence-api-1.0.2.jar:/Users/pavel/.m2/repository/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar:/Users/pavel/.m2/repository/javax/servlet/jsp-api/2.0/jsp-api-2.0.jar:/Users/pavel/.m2/repository/javax/mail/mail/1.4/mail-1.4.jar:/Users/pavel/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.10/jaxb-impl-2.1.10.jar:/Users/pavel/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.2/FastInfoset-1.2.2.jar:/Users/pavel/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/pavel/.m2/repository/rome/rome/0.9/rome-0.9.jar:/Users/pavel/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/pavel/.m2/repository/com/sun/grizzly/grizzly-rcm/1.9.8/grizzly-rcm-1.9.8.jar:/Users/pavel/.m2/repository/com/sun/net/httpserver/http/20070405/http-20070405.jar:/Users/pavel/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/Users/pavel/.m2/repository/com/sun/grizzly/grizzly-http/1.9.8/grizzly-http-1.9.8.jar:/Users/pavel/.m2/repository/com/sun/grizzly/grizzly-servlet-webserver/1.9.8/grizzly-servlet-webserver-1.9.8.jar:/Users/pavel/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/Users/pavel/.m2/repository/jdom/jdom/1.0/jdom-1.0.jar:/Users/pavel/.m2/repository/ant/ant/1.6.5/ant-1.6.5.jar:/Users/pavel/.m2/repository/com/sun/grizzly/grizzly-http-servlet/1.9.8/grizzly-http-servlet-1.9.8.jar:/Users/pavel/.m2/repository/com/sun/grizzly/grizzly-portunif/1.9.8/grizzly-portunif-1.9.8.jar:/Users/pavel/.m2/repository/com/sun/grizzly/grizzly-framework/1.9.8/grizzly-framework-1.9.8.jar:/Users/pavel/.m2/repository/com/sun/grizzly/grizzly-utils/1.9.8/grizzly-utils-1.9.8.jar:/Users/pavel/.m2/repository/org/codehaus/jettison/jettison/1.0.1/jettison-1.0.1.jar:/Users/pavel/.m2/repository/org/glassfish/javax.ejb/3.0-b38/javax.ejb-3.0-b38.jar:/Users/pavel/.m2/repository/org/codehaus/jackson/jackson-asl/0.9.4/jackson-asl-0.9.4.jar:/Users/pavel/.m2/repository/javax/ws/rs/jsr311-api/1.0/jsr311-api-1.0.jar:/Users/pavel/.m2/repository/org/glassfish/javax.transaction/3.0-b38/javax.transaction-3.0-b38.jar:/Users/pavel/.m2/repository/javax/xml/bind/jaxb-api/2.1/jaxb-api-2.1.jar'
+ -encoding
+'ISO-8859-1'
+-protected
+-sourcepath
+'/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-bundle/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2009 <a href="http://www.sun.com/">Sun Microsystems, Inc</a>. All Rights Reserved.'
+-charset
+'ISO-8859-1'
+-d
+'/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-bundle/target/apidocs'
+-doctitle
+'jersey-bundle 1.0.3.1 API'
+-linkoffline
+'https://jersey.dev.java.net/jersey-core/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-core/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-server/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-server/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-client/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-client/target/apidocs'
+-linkoffline
+'http://maven.apache.org/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/spring/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-contribs/jersey-multipart/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-multipart/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-contribs/jersey-atom-abdera/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-atom-abdera/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-contribs/jersey-apache-client/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-apache-client/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-contribs/jersey-simple-server/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-simple-server/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-contribs/jersey-guice/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-guice/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-json/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-json/target/apidocs'
+-notimestamp
+-use
+-version
+-windowtitle
+'jersey-bundle 1.0.3.1 API'

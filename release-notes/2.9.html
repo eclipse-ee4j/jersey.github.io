@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="google-site-verification" content="OiKukTHVW4bdQqx8Fq0zA2EZ_hI6-yYL-MvkCxBxaFs" />
+    <title>Release Notes - Jersey 2.9</title>
+</head>
+
+<body>
+
+    <h1>Release Notes - <a href="/">Jersey</a> 2.9</h1>
+
+    Release date: <strong>23-May-2014</strong>
+
+    <h2>Highlights</h2>
+
+    <h3>Declarative Linking</h3>
+    <p>Gerard updated the Declarative Linking extension module which has been ported to Jersey 2 in version 2.6. You can read more about what Declarative Linking does and what it's capable of in the following blog posts:</p>
+    <div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>
+        <a class="link" href="http://kingsfleet.blogspot.co.uk/2014/05/declarative-linking-in-jersey-29.html" target="_top">Declarative Linking in Jersey 2.9 and up</a>
+    </p></li><li class="listitem"><p>
+    <a class="link" href="http://kingsfleet.blogspot.co.uk/2014/05/reading-and-writing-jax-rs-link-objects.html" target="_top">Reading and writing JAX-RS Link objects</a>
+</p></li></ul></div>
+
+<h3>Jackson 2</h3>
+<p>Our media module that supports working with JSON via Jackson library has been updated to use Jackson 2.x (2.3.2). All samples and tests have been rewritten to use Jackson 2 as well. In order to use Jackson 2 in your application you need to add jersey-media-json-jackson (+ it's Jackson dependencies) to your class-path and register JacksonFeature in your application.</p>
+
+<h3>META-INF/services</h3>
+<p>We dropped automatic registration of message body providers (MessageBodyWriter, MessageBodyReader) and exception mappers via META-INF/services mechanism. This functionality can be restored by adding jersey-metainf-services module to the class-path of your application.</p>
+<p>Note: This change may affect 3rd party libraries (e.g. Jackson 2.x) in a way their provider would not be registered in an JAX-RS app. You need to either register them manually or use mentioned jersey-metainf-services module.</p>
+
+<h3>Jersey Test Framework</h3>
+<p>Jersey Test Framework now supports TestNG to run the tests (in addition to the JUnit, which is supported by default). You can now run the tests in parallel using either JUnit or TestNG. See chapters dedicated to TestNG and parallel testing for more information: <a href="https://jersey.java.net/documentation/latest/test-framework.html#testng">Running TestNG Tests</a> and <a href="https://jersey.java.net/documentation/latest/test-framework.html#parallel">Parallel Testing with Jersey Test Framework</a>.</p>
+
+<h2>        Bug
+</h2>
+<ul>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2320'>JERSEY-2320</a>] -         EJB singleton bean registered as an exception mapper causes deployment failure
+    </li>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2420'>JERSEY-2420</a>] -         jersey-guava-2.6-sources.jar is empty
+    </li>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2484'>JERSEY-2484</a>] -         Memory leak in GrizzlyHttpServerFactory when HttpServer.start throw exception
+    </li>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2496'>JERSEY-2496</a>] -         Permgen memory leak when deploy/undeploy multiple times
+    </li>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2499'>JERSEY-2499</a>] -         Bean validation not working for constraints placed  on super classes
+    </li>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2501'>JERSEY-2501</a>] -         Jersey 2.8 breaks JerseyTest unit tests under TestNG
+    </li>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2502'>JERSEY-2502</a>] -         JdkHttpServerFactory does not return HttpsServer when https:// URI is used.
+    </li>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2514'>JERSEY-2514</a>] -         Typo in documentation
+    </li>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2520'>JERSEY-2520</a>] -         Jersey 2.x application missing */* MIME-Type in WADL
+    </li>
+</ul>
+
+<h2>        Improvement
+</h2>
+<ul>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2512'>JERSEY-2512</a>] -         Declarative linking reading
+    </li>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2517'>JERSEY-2517</a>] -         Create mechanism to automatically register features/providers even when autodiscoverable and metainf/services mechanisms are disabled
+    </li>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2518'>JERSEY-2518</a>] -         Disable MBW, MBR, ExceptionMapper automatic registration via META-INF/services
+    </li>
+</ul>
+
+<h2>        Task
+</h2>
+<ul>
+    <li>[<a href='https://java.net/jira/browse/JERSEY-2519'>JERSEY-2519</a>] -         Update Jackson JSON module to use Jackson 2.x (Jackson 1.x -&gt; Jackson 2.x)
+    </li>
+</ul>
+
+<h2>Previous releases</h2>
+
+<ul>
+    <li><a href="2.8.html">Jersey 2.8 Release Notes</a></li>
+    <li><a href="2.7.html">Jersey 2.7 Release Notes</a></li>
+    <li><a href="2.6.html">Jersey 2.6 Release Notes</a></li>
+    <li><a href="2.5.1.html">Jersey 2.5.1 Release Notes</a></li>
+    <li><a href="2.5.html">Jersey 2.5 Release Notes</a></li>
+    <li><a href="2.4.1.html">Jersey 2.4.1 Release Notes</a></li>
+    <li><a href="2.4.html">Jersey 2.4 Release Notes</a></li>
+    <li><a href="2.3.1.html">Jersey 2.3.1 Release Notes</a></li>
+    <li><a href="2.3.html">Jersey 2.3 Release Notes</a></li>
+    <li><a href="2.2.html">Jersey 2.2 Release Notes</a></li>
+    <li><a href="2.1.html">Jersey 2.1 Release Notes</a></li>
+    <li><a href="2.0.html">Jersey 2.0 Release Notes</a></li>
+</ul>
+
+</body>
+</html>

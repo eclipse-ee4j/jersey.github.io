@@ -1,0 +1,479 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ReaderWriter (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ReaderWriter (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ReaderWriter.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/core/util/PriorityUtil.TypeComparator.html" title="class in com.sun.jersey.core.util"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/core/util/SaxHelper.html" title="class in com.sun.jersey.core.util"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/core/util/ReaderWriter.html" target="_top">Frames</a></li>
+<li><a href="ReaderWriter.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.core.util</div>
+<h2 title="Class ReaderWriter" class="title">Class ReaderWriter</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>com.sun.jersey.core.util.ReaderWriter</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public final class <span class="strong">ReaderWriter</span>
+extends java.lang.Object</pre>
+<div class="block">A utility class for reading and writing using byte and character streams.
+ <p>
+ If a byte or character array is utilized then the size of the array
+ is by default the value of <a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#DEFAULT_BUFFER_SIZE"><code>DEFAULT_BUFFER_SIZE</code></a>. This value can
+ be set using the system property <a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#BUFFER_SIZE_SYSTEM_PROPERTY"><code>BUFFER_SIZE_SYSTEM_PROPERTY</code></a>.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Paul.Sandoz@Sun.Com</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#BUFFER_SIZE">BUFFER_SIZE</a></strong></code>
+<div class="block">The buffer size for arrays of byte and character.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#BUFFER_SIZE_SYSTEM_PROPERTY">BUFFER_SIZE_SYSTEM_PROPERTY</a></strong></code>
+<div class="block">The system property to set the default buffer size for arrays
+ of byte and character.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#DEFAULT_BUFFER_SIZE">DEFAULT_BUFFER_SIZE</a></strong></code>
+<div class="block">The default buffer size for arrays of byte and character.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.nio.charset.Charset</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#UTF8">UTF8</a></strong></code>
+<div class="block">The UTF-8 Charset.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#ReaderWriter()">ReaderWriter</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.nio.charset.Charset</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#getCharset(javax.ws.rs.core.MediaType)">getCharset</a></strong>(<a href="../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&nbsp;m)</code>
+<div class="block">Get the character set from a media type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#readFromAsString(java.io.InputStream,%20javax.ws.rs.core.MediaType)">readFromAsString</a></strong>(java.io.InputStream&nbsp;in,
+                <a href="../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&nbsp;type)</code>
+<div class="block">Read the bytes of an input stream and convert to a string.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#readFromAsString(java.io.Reader)">readFromAsString</a></strong>(java.io.Reader&nbsp;reader)</code>
+<div class="block">Read the characters of a reader and convert to a string.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#writeTo(java.io.InputStream,%20java.io.OutputStream)">writeTo</a></strong>(java.io.InputStream&nbsp;in,
+       java.io.OutputStream&nbsp;out)</code>
+<div class="block">Read bytes from an input stream and write them to an output stream.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#writeTo(java.io.Reader,%20java.io.Writer)">writeTo</a></strong>(java.io.Reader&nbsp;in,
+       java.io.Writer&nbsp;out)</code>
+<div class="block">Read characters from an input stream and write them to an output stream.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#writeToAsString(java.lang.String,%20java.io.OutputStream,%20javax.ws.rs.core.MediaType)">writeToAsString</a></strong>(java.lang.String&nbsp;s,
+               java.io.OutputStream&nbsp;out,
+               <a href="../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&nbsp;type)</code>
+<div class="block">Convert a string to bytes and write those bytes to an output stream.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="UTF8">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UTF8</h4>
+<pre>public static final&nbsp;java.nio.charset.Charset UTF8</pre>
+<div class="block">The UTF-8 Charset.</div>
+</li>
+</ul>
+<a name="BUFFER_SIZE_SYSTEM_PROPERTY">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BUFFER_SIZE_SYSTEM_PROPERTY</h4>
+<pre>public static final&nbsp;java.lang.String BUFFER_SIZE_SYSTEM_PROPERTY</pre>
+<div class="block">The system property to set the default buffer size for arrays
+ of byte and character.
+ <p>
+ If the property value is not a positive integer then the default buffer
+ size declared by <a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#DEFAULT_BUFFER_SIZE"><code>DEFAULT_BUFFER_SIZE</code></a> will be utilized.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.core.util.ReaderWriter.BUFFER_SIZE_SYSTEM_PROPERTY">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="DEFAULT_BUFFER_SIZE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DEFAULT_BUFFER_SIZE</h4>
+<pre>public static final&nbsp;int DEFAULT_BUFFER_SIZE</pre>
+<div class="block">The default buffer size for arrays of byte and character.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.core.util.ReaderWriter.DEFAULT_BUFFER_SIZE">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="BUFFER_SIZE">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>BUFFER_SIZE</h4>
+<pre>public static final&nbsp;int BUFFER_SIZE</pre>
+<div class="block">The buffer size for arrays of byte and character.</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ReaderWriter()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ReaderWriter</h4>
+<pre>public&nbsp;ReaderWriter()</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="writeTo(java.io.InputStream, java.io.OutputStream)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeTo</h4>
+<pre>public static final&nbsp;void&nbsp;writeTo(java.io.InputStream&nbsp;in,
+           java.io.OutputStream&nbsp;out)
+                          throws java.io.IOException</pre>
+<div class="block">Read bytes from an input stream and write them to an output stream.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>in</code> - the input stream to read from.</dd><dd><code>out</code> - the output stream to write to.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.io.IOException</code> - if there is an error reading or writing bytes.</dd></dl>
+</li>
+</ul>
+<a name="writeTo(java.io.Reader, java.io.Writer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeTo</h4>
+<pre>public static final&nbsp;void&nbsp;writeTo(java.io.Reader&nbsp;in,
+           java.io.Writer&nbsp;out)
+                          throws java.io.IOException</pre>
+<div class="block">Read characters from an input stream and write them to an output stream.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>in</code> - the reader to read from.</dd><dd><code>out</code> - the writer to write to.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.io.IOException</code> - if there is an error reading or writing characters.</dd></dl>
+</li>
+</ul>
+<a name="getCharset(javax.ws.rs.core.MediaType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCharset</h4>
+<pre>public static final&nbsp;java.nio.charset.Charset&nbsp;getCharset(<a href="../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&nbsp;m)</pre>
+<div class="block">Get the character set from a media type.
+ <p>
+ The character set is obtained from the media type parameter "charset".
+ If the parameter is not present the <a href="../../../../../com/sun/jersey/core/util/ReaderWriter.html#UTF8"><code>UTF8</code></a> charset is utilized.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>m</code> - the media type.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the character set.</dd></dl>
+</li>
+</ul>
+<a name="readFromAsString(java.io.InputStream, javax.ws.rs.core.MediaType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readFromAsString</h4>
+<pre>public static final&nbsp;java.lang.String&nbsp;readFromAsString(java.io.InputStream&nbsp;in,
+                                <a href="../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&nbsp;type)
+                                               throws java.io.IOException</pre>
+<div class="block">Read the bytes of an input stream and convert to a string.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>in</code> - the input stream to read from.</dd><dd><code>type</code> - the media type that determines the character set defining
+        how to decode bytes to charaters.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the string.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.io.IOException</code> - if there is an error reading from the input stream.</dd></dl>
+</li>
+</ul>
+<a name="readFromAsString(java.io.Reader)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readFromAsString</h4>
+<pre>public static final&nbsp;java.lang.String&nbsp;readFromAsString(java.io.Reader&nbsp;reader)
+                                               throws java.io.IOException</pre>
+<div class="block">Read the characters of a reader and convert to a string.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>reader</code> - the reader</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the string</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.io.IOException</code> - if there is an error reading from the reader.</dd></dl>
+</li>
+</ul>
+<a name="writeToAsString(java.lang.String, java.io.OutputStream, javax.ws.rs.core.MediaType)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>writeToAsString</h4>
+<pre>public static final&nbsp;void&nbsp;writeToAsString(java.lang.String&nbsp;s,
+                   java.io.OutputStream&nbsp;out,
+                   <a href="../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&nbsp;type)
+                                  throws java.io.IOException</pre>
+<div class="block">Convert a string to bytes and write those bytes to an output stream.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>s</code> - the string to convert to bytes.</dd><dd><code>out</code> - the output stream to write to.</dd><dd><code>type</code> - the media type that determines the character set defining
+        how to decode bytes to characters.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.io.IOException</code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ReaderWriter.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/core/util/PriorityUtil.TypeComparator.html" title="class in com.sun.jersey.core.util"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/core/util/SaxHelper.html" title="class in com.sun.jersey.core.util"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/core/util/ReaderWriter.html" target="_top">Frames</a></li>
+<li><a href="ReaderWriter.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

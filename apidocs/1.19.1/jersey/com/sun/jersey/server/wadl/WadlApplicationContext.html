@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WadlApplicationContext (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="WadlApplicationContext (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/WadlApplicationContext.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/server/wadl/ApplicationDescription.ExternalGrammar.html" title="class in com.sun.jersey.server.wadl"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/server/wadl/WadlBuilder.html" title="class in com.sun.jersey.server.wadl"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/server/wadl/WadlApplicationContext.html" target="_top">Frames</a></li>
+<li><a href="WadlApplicationContext.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.server.wadl</div>
+<h2 title="Interface WadlApplicationContext" class="title">Interface WadlApplicationContext</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public interface <span class="strong">WadlApplicationContext</span></pre>
+<div class="block">A context to obtain WADL-based information.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Paul.Sandoz</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../com/sun/jersey/server/wadl/ApplicationDescription.html" title="class in com.sun.jersey.server.wadl">ApplicationDescription</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/server/wadl/WadlApplicationContext.html#getApplication(javax.ws.rs.core.UriInfo)">getApplication</a></strong>(<a href="../../../../../javax/ws/rs/core/UriInfo.html" title="interface in javax.ws.rs.core">UriInfo</a>&nbsp;ui)</code>
+<div class="block">Get a new instance of a <a href="../../../../../com/sun/jersey/server/wadl/ApplicationDescription.html" title="class in com.sun.jersey.server.wadl"><code>ApplicationDescription</code></a> corresponding to all
+ the root resource classes, and configure the base URI.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>com.sun.research.ws.wadl.Application</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/server/wadl/WadlApplicationContext.html#getApplication(javax.ws.rs.core.UriInfo,%20com.sun.jersey.api.model.AbstractResource,%20java.lang.String)">getApplication</a></strong>(<a href="../../../../../javax/ws/rs/core/UriInfo.html" title="interface in javax.ws.rs.core">UriInfo</a>&nbsp;info,
+              <a href="../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;resource,
+              java.lang.String&nbsp;path)</code>
+<div class="block">Get a new instance of <code>Application</code> for a particular resource</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javax.xml.bind.JAXBContext</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/server/wadl/WadlApplicationContext.html#getJAXBContext()">getJAXBContext</a></strong>()</code>
+<div class="block">Get the default JAXB context associated with the <a href="../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl"><code>WadlGenerator</code></a>
+ for the Web application.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/server/wadl/WadlApplicationContext.html#isWadlGenerationEnabled()">isWadlGenerationEnabled</a></strong>()</code>
+<div class="block">Get WADL generation status.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/server/wadl/WadlApplicationContext.html#setWadlGenerationEnabled(boolean)">setWadlGenerationEnabled</a></strong>(boolean&nbsp;wadlGenerationEnabled)</code>
+<div class="block">Enable/disable WADL generation.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getApplication(javax.ws.rs.core.UriInfo)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getApplication</h4>
+<pre><a href="../../../../../com/sun/jersey/server/wadl/ApplicationDescription.html" title="class in com.sun.jersey.server.wadl">ApplicationDescription</a>&nbsp;getApplication(<a href="../../../../../javax/ws/rs/core/UriInfo.html" title="interface in javax.ws.rs.core">UriInfo</a>&nbsp;ui)</pre>
+<div class="block">Get a new instance of a <a href="../../../../../com/sun/jersey/server/wadl/ApplicationDescription.html" title="class in com.sun.jersey.server.wadl"><code>ApplicationDescription</code></a> corresponding to all
+ the root resource classes, and configure the base URI.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>ui</code> - the URI information from which the base URI is set on the
+        WADL application.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the application description, the contents may be modified.</dd></dl>
+</li>
+</ul>
+<a name="getApplication(javax.ws.rs.core.UriInfo, com.sun.jersey.api.model.AbstractResource, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getApplication</h4>
+<pre>com.sun.research.ws.wadl.Application&nbsp;getApplication(<a href="../../../../../javax/ws/rs/core/UriInfo.html" title="interface in javax.ws.rs.core">UriInfo</a>&nbsp;info,
+                                                  <a href="../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;resource,
+                                                  java.lang.String&nbsp;path)</pre>
+<div class="block">Get a new instance of <code>Application</code> for a particular resource</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>info</code> - the URI information from which the base URI is set on the
+        WADL application.</dd><dd><code>resource</code> - the resource to build the Application for</dd><dd><code>path</code> - the path to this resource</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the application for this resource</dd></dl>
+</li>
+</ul>
+<a name="getJAXBContext()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getJAXBContext</h4>
+<pre>javax.xml.bind.JAXBContext&nbsp;getJAXBContext()</pre>
+<div class="block">Get the default JAXB context associated with the <a href="../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl"><code>WadlGenerator</code></a>
+ for the Web application.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the default JAXB context.</dd></dl>
+</li>
+</ul>
+<a name="setWadlGenerationEnabled(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setWadlGenerationEnabled</h4>
+<pre>void&nbsp;setWadlGenerationEnabled(boolean&nbsp;wadlGenerationEnabled)</pre>
+<div class="block">Enable/disable WADL generation.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>wadlGenerationEnabled</code> - if wadlGenerationEnabled is true and
+ <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_DISABLE_WADL"><code>ResourceConfig.FEATURE_DISABLE_WADL</code></a>
+ is false, WADL generation is enabled. In all other cases is disabled.</dd></dl>
+</li>
+</ul>
+<a name="isWadlGenerationEnabled()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isWadlGenerationEnabled</h4>
+<pre>boolean&nbsp;isWadlGenerationEnabled()</pre>
+<div class="block">Get WADL generation status.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>true when WADL generation is enabled. Does not take
+ <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_DISABLE_WADL"><code>ResourceConfig.FEATURE_DISABLE_WADL</code></a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/WadlApplicationContext.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/server/wadl/ApplicationDescription.ExternalGrammar.html" title="class in com.sun.jersey.server.wadl"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/server/wadl/WadlBuilder.html" title="class in com.sun.jersey.server.wadl"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/server/wadl/WadlApplicationContext.html" target="_top">Frames</a></li>
+<li><a href="WadlApplicationContext.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

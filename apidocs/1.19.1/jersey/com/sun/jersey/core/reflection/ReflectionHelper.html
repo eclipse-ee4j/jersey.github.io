@@ -1,0 +1,765 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ReflectionHelper (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ReflectionHelper (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ReflectionHelper.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/core/reflection/MethodList.Filter.html" title="interface in com.sun.jersey.core.reflection"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.ClassTypePair.html" title="class in com.sun.jersey.core.reflection"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/core/reflection/ReflectionHelper.html" target="_top">Frames</a></li>
+<li><a href="ReflectionHelper.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.core.reflection</div>
+<h2 title="Class ReflectionHelper" class="title">Class ReflectionHelper</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>com.sun.jersey.core.reflection.ReflectionHelper</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">ReflectionHelper</span>
+extends java.lang.Object</pre>
+<div class="block">Utility methods for Java reflection.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Paul.Sandoz@Sun.Com</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.ClassTypePair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.ClassTypePair</a></strong></code>
+<div class="block">A tuple consisting of a class and type of the class.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.DeclaringClassInterfacePair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.DeclaringClassInterfacePair</a></strong></code>
+<div class="block">A tuple consisting of a concrete class, declaring class that declares a
+ generic interface type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.TypeClassPair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.TypeClassPair</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#ReflectionHelper()">ReflectionHelper</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.security.PrivilegedAction&lt;java.lang.Class&lt;?&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#classForNamePA(java.lang.String)">classForNamePA</a></strong>(java.lang.String&nbsp;name)</code>
+<div class="block">Get privileged action to obtain Class from given class name.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.security.PrivilegedAction&lt;java.lang.Class&lt;?&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#classForNamePA(java.lang.String,%20java.lang.ClassLoader)">classForNamePA</a></strong>(java.lang.String&nbsp;name,
+              java.lang.ClassLoader&nbsp;cl)</code>
+<div class="block">Get privileged action to obtain Class from given class name.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.security.PrivilegedExceptionAction&lt;java.lang.Class&lt;T&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#classForNameWithExceptionPEA(java.lang.String)">classForNameWithExceptionPEA</a></strong>(java.lang.String&nbsp;name)</code>
+<div class="block">Get privileged exception action to obtain Class from given class name.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.security.PrivilegedExceptionAction&lt;java.lang.Class&lt;T&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#classForNameWithExceptionPEA(java.lang.String,%20java.lang.ClassLoader)">classForNameWithExceptionPEA</a></strong>(java.lang.String&nbsp;name,
+                            java.lang.ClassLoader&nbsp;cl)</code>
+<div class="block">Get privileged exception action to obtain Class from given class name.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.security.PrivilegedAction&lt;java.lang.reflect.Method&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#findMethodOnClassPA(java.lang.Class,%20java.lang.reflect.Method)">findMethodOnClassPA</a></strong>(java.lang.Class&lt;?&gt;&nbsp;c,
+                   java.lang.reflect.Method&nbsp;m)</code>
+<div class="block">Get privileged action to find a method on a class given an existing method.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.Class</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#getArrayClass(java.lang.Class)">getArrayClass</a></strong>(java.lang.Class&nbsp;c)</code>
+<div class="block">Get Array class of component class.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.DeclaringClassInterfacePair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.DeclaringClassInterfacePair</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#getClass(java.lang.Class,%20java.lang.Class)">getClass</a></strong>(java.lang.Class&nbsp;concrete,
+        java.lang.Class&nbsp;iface)</code>
+<div class="block">Find the declaring class that implements or extends an interface.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.security.PrivilegedAction&lt;java.lang.ClassLoader&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#getContextClassLoaderPA()">getContextClassLoaderPA</a></strong>()</code>
+<div class="block">Get privileged action to obtain context class loader.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.Class</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#getDeclaringClass(java.lang.reflect.AccessibleObject)">getDeclaringClass</a></strong>(java.lang.reflect.AccessibleObject&nbsp;ao)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.security.PrivilegedAction&lt;java.lang.reflect.Method&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#getFromStringStringMethodPA(java.lang.Class)">getFromStringStringMethodPA</a></strong>(java.lang.Class&lt;?&gt;&nbsp;c)</code>
+<div class="block">Get privileged action to get the static fromString(String ) method.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.Class</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#getGenericClass(java.lang.reflect.Type)">getGenericClass</a></strong>(java.lang.reflect.Type&nbsp;parameterizedType)</code>
+<div class="block">Get the class that is the type argument of a parameterized type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../com/sun/jersey/core/osgi/OsgiRegistry.html" title="class in com.sun.jersey.core.osgi">OsgiRegistry</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#getOsgiRegistryInstance()">getOsgiRegistryInstance</a></strong>()</code>
+<div class="block">Returns an <a href="../../../../../com/sun/jersey/core/osgi/OsgiRegistry.html" title="class in com.sun.jersey.core.osgi"><code>OsgiRegistry</code></a> instance.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.Class[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#getParameterizedClassArguments(com.sun.jersey.core.reflection.ReflectionHelper.DeclaringClassInterfacePair)">getParameterizedClassArguments</a></strong>(<a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.DeclaringClassInterfacePair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.DeclaringClassInterfacePair</a>&nbsp;p)</code>
+<div class="block">Get the parameterized class arguments for a declaring class that
+ declares a generic interface type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.reflect.Type[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#getParameterizedTypeArguments(com.sun.jersey.core.reflection.ReflectionHelper.DeclaringClassInterfacePair)">getParameterizedTypeArguments</a></strong>(<a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.DeclaringClassInterfacePair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.DeclaringClassInterfacePair</a>&nbsp;p)</code>
+<div class="block">Get the parameterized type arguments for a declaring class that
+ declares a generic interface type.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.security.PrivilegedAction&lt;java.lang.reflect.Constructor&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#getStringConstructorPA(java.lang.Class)">getStringConstructorPA</a></strong>(java.lang.Class&lt;?&gt;&nbsp;c)</code>
+<div class="block">Get privileged action to obtain constructor that has a single parameter of String.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.TypeClassPair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.TypeClassPair</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#getTypeArgumentAndClass(java.lang.reflect.Type)">getTypeArgumentAndClass</a></strong>(java.lang.reflect.Type&nbsp;parameterizedType)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.security.PrivilegedAction&lt;java.lang.reflect.Method&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#getValueOfStringMethodPA(java.lang.Class)">getValueOfStringMethodPA</a></strong>(java.lang.Class&lt;?&gt;&nbsp;c)</code>
+<div class="block">Get privileged action to obtain the static valueOf(String ) method.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#methodInstanceToString(java.lang.Object,%20java.lang.reflect.Method)">methodInstanceToString</a></strong>(java.lang.Object&nbsp;o,
+                      java.lang.reflect.Method&nbsp;m)</code>
+<div class="block">Create a string representation of a method and an instance whose
+ class implements the method.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#objectToString(java.lang.Object)">objectToString</a></strong>(java.lang.Object&nbsp;o)</code>
+<div class="block">Create a string representation of an object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.ClassTypePair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.ClassTypePair</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#resolveTypeVariable(java.lang.Class,%20java.lang.Class,%20java.lang.reflect.TypeVariable)">resolveTypeVariable</a></strong>(java.lang.Class&nbsp;c,
+                   java.lang.Class&nbsp;dc,
+                   java.lang.reflect.TypeVariable&nbsp;tv)</code>
+<div class="block">Given a type variable resolve the Java class of that variable.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.security.PrivilegedAction</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.html#setAccessibleMethodPA(java.lang.reflect.Method)">setAccessibleMethodPA</a></strong>(java.lang.reflect.Method&nbsp;m)</code>
+<div class="block">Get privileged action to set a method to be accessible.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ReflectionHelper()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ReflectionHelper</h4>
+<pre>public&nbsp;ReflectionHelper()</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getDeclaringClass(java.lang.reflect.AccessibleObject)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDeclaringClass</h4>
+<pre>public static&nbsp;java.lang.Class&nbsp;getDeclaringClass(java.lang.reflect.AccessibleObject&nbsp;ao)</pre>
+</li>
+</ul>
+<a name="objectToString(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>objectToString</h4>
+<pre>public static&nbsp;java.lang.String&nbsp;objectToString(java.lang.Object&nbsp;o)</pre>
+<div class="block">Create a string representation of an object.
+ <p>
+ Returns a string consisting of the name of the class of which the
+ object is an instance, the at-sign character '<code>@</code>', and
+ the unsigned hexadecimal representation of the hash code of the
+ object. In other words, this method returns a string equal to the
+ value of:
+ <blockquote>
+ <pre>
+ o.getClass().getName() + '@' + Integer.toHexString(o.hashCode())
+ </pre></blockquote></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>o</code> - the object.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the string representation of the object.</dd></dl>
+</li>
+</ul>
+<a name="methodInstanceToString(java.lang.Object, java.lang.reflect.Method)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>methodInstanceToString</h4>
+<pre>public static&nbsp;java.lang.String&nbsp;methodInstanceToString(java.lang.Object&nbsp;o,
+                                      java.lang.reflect.Method&nbsp;m)</pre>
+<div class="block">Create a string representation of a method and an instance whose
+ class implements the method.
+ <p>
+ Returns a string consisting of the name of the class of which the object
+ is an instance, the at-sign character '<code>@</code>',
+ the unsigned hexadecimal representation of the hash code of the
+ object, the character '<code>.</code>', the name of the method,
+ the character '<code>(</code>', the list of method parameters, and
+ the character '<code>)</code>'. In other words, thos method returns a
+ string equal to the value of:
+ <blockquote>
+ <pre>
+ o.getClass().getName() + '@' + Integer.toHexString(o.hashCode()) +
+ '.' + m.getName() + '(' + &lt;parameters&gt; + ')'.
+ </pre></blockquote></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>o</code> - the object whose class implements <code>m</code>.</dd><dd><code>m</code> - the method.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the string representation of the method and instance.</dd></dl>
+</li>
+</ul>
+<a name="classForNamePA(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>classForNamePA</h4>
+<pre>public static&nbsp;java.security.PrivilegedAction&lt;java.lang.Class&lt;?&gt;&gt;&nbsp;classForNamePA(java.lang.String&nbsp;name)</pre>
+<div class="block">Get privileged action to obtain Class from given class name.
+ If run using security manager, the returned privileged action
+ must be invoked within a doPrivileged block.
+ <p/>
+ The context class loader will be utilized if accessible and non-null.
+ Otherwise the defining class loader of this class will
+ be utilized.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - class name.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>privileged action to obtain desired Class.
+         The action could return <code>null</code> if the class cannot be found.</dd><dt><span class="strong">See Also:</span></dt><dd><code>AccessController.doPrivileged(java.security.PrivilegedAction)</code></dd></dl>
+</li>
+</ul>
+<a name="classForNamePA(java.lang.String, java.lang.ClassLoader)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>classForNamePA</h4>
+<pre>public static&nbsp;java.security.PrivilegedAction&lt;java.lang.Class&lt;?&gt;&gt;&nbsp;classForNamePA(java.lang.String&nbsp;name,
+                                                                java.lang.ClassLoader&nbsp;cl)</pre>
+<div class="block">Get privileged action to obtain Class from given class name.
+ If run using security manager, the returned privileged action
+ must be invoked within a doPrivileged block.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - class name.</dd><dd><code>cl</code> - class loader to use, if null then the defining class loader
+        of this class will be utilized.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>privileged action to obtain desired Class.
+         The action could return <code>null</code> if the class cannot be found.</dd><dt><span class="strong">See Also:</span></dt><dd><code>AccessController.doPrivileged(java.security.PrivilegedAction)</code></dd></dl>
+</li>
+</ul>
+<a name="classForNameWithExceptionPEA(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>classForNameWithExceptionPEA</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;java.security.PrivilegedExceptionAction&lt;java.lang.Class&lt;T&gt;&gt;&nbsp;classForNameWithExceptionPEA(java.lang.String&nbsp;name)
+                                                                                                throws java.lang.ClassNotFoundException</pre>
+<div class="block">Get privileged exception action to obtain Class from given class name.
+ If run using security manager, the returned privileged exception action
+ must be invoked within a doPrivileged block.
+ <p/>
+ The actual context class loader will be utilized if accessible and non-null.
+ Otherwise the defining class loader of the calling class will be utilized.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - class type.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - class name.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>privileged exception action to obtain the Class.
+         The action could throw <code>ClassNotFoundException</code> or return <code>null</code> if the class cannot be found.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.ClassNotFoundException</code></dd><dt><span class="strong">See Also:</span></dt><dd><code>AccessController.doPrivileged(java.security.PrivilegedExceptionAction)</code></dd></dl>
+</li>
+</ul>
+<a name="classForNameWithExceptionPEA(java.lang.String, java.lang.ClassLoader)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>classForNameWithExceptionPEA</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;java.security.PrivilegedExceptionAction&lt;java.lang.Class&lt;T&gt;&gt;&nbsp;classForNameWithExceptionPEA(java.lang.String&nbsp;name,
+                                                                                           java.lang.ClassLoader&nbsp;cl)
+                                                                                                throws java.lang.ClassNotFoundException</pre>
+<div class="block">Get privileged exception action to obtain Class from given class name.
+ If run using security manager, the returned privileged exception action
+ must be invoked within a doPrivileged block.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - class type.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>name</code> - class name.</dd><dd><code>cl</code> - class loader to use, if <code>null</code> then the defining class loader
+             of the calling class will be utilized.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>privileged exception action to obtain the Class.
+         The action throws <code>ClassNotFoundException</code>
+         or returns <code>null</code> if the class cannot be found.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.ClassNotFoundException</code></dd><dt><span class="strong">See Also:</span></dt><dd><code>AccessController.doPrivileged(java.security.PrivilegedExceptionAction)</code></dd></dl>
+</li>
+</ul>
+<a name="getContextClassLoaderPA()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContextClassLoaderPA</h4>
+<pre>public static&nbsp;java.security.PrivilegedAction&lt;java.lang.ClassLoader&gt;&nbsp;getContextClassLoaderPA()</pre>
+<div class="block">Get privileged action to obtain context class loader.
+ If run using security manager, the returned privileged action
+ must be invoked within a doPrivileged block.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>privileged action to obtain the actual context class loader.
+         The action could return <code>null</code> if context class loader has not been set.</dd><dt><span class="strong">See Also:</span></dt><dd><code>AccessController.doPrivileged(java.security.PrivilegedAction)</code></dd></dl>
+</li>
+</ul>
+<a name="setAccessibleMethodPA(java.lang.reflect.Method)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAccessibleMethodPA</h4>
+<pre>public static&nbsp;java.security.PrivilegedAction&nbsp;setAccessibleMethodPA(java.lang.reflect.Method&nbsp;m)</pre>
+<div class="block">Get privileged action to set a method to be accessible.
+ If run using security manager, the returned privileged action
+ must be invoked within a doPrivileged block.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>m</code> - method to be set as accessible.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>privileged action to set the method to be accessible.</dd><dt><span class="strong">See Also:</span></dt><dd><code>AccessController.doPrivileged(java.security.PrivilegedAction)</code></dd></dl>
+</li>
+</ul>
+<a name="getGenericClass(java.lang.reflect.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getGenericClass</h4>
+<pre>public static&nbsp;java.lang.Class&nbsp;getGenericClass(java.lang.reflect.Type&nbsp;parameterizedType)
+                                       throws java.lang.IllegalArgumentException</pre>
+<div class="block">Get the class that is the type argument of a parameterized type.
+ <p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>parameterizedType</code> - must be an instance of ParameterizedType
+        and have exactly one type argument.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the class of the actual type argument. If the type argument
+         is a class then the class is returned. If the type argument
+         is a generic array type and the generic component type is a
+         class then class of the array is returned. if the type argument
+         is a parameterized type and it's raw type is a class then
+         that class is returned.
+         If the parameterizedType is not an instance of ParameterizedType
+         or contains more than one type argument null is returned.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the single type argument is not of
+         a class, or a generic array type, or the generic component type
+         of the generic array type is not class, or not a parameterized
+         type with a raw type that is not a class.</dd></dl>
+</li>
+</ul>
+<a name="getTypeArgumentAndClass(java.lang.reflect.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeArgumentAndClass</h4>
+<pre>public static&nbsp;<a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.TypeClassPair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.TypeClassPair</a>&nbsp;getTypeArgumentAndClass(java.lang.reflect.Type&nbsp;parameterizedType)
+                                                              throws java.lang.IllegalArgumentException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code></dd></dl>
+</li>
+</ul>
+<a name="getArrayClass(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getArrayClass</h4>
+<pre>public static&nbsp;java.lang.Class&nbsp;getArrayClass(java.lang.Class&nbsp;c)</pre>
+<div class="block">Get Array class of component class.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the component class of the array</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the array class.</dd></dl>
+</li>
+</ul>
+<a name="getValueOfStringMethodPA(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getValueOfStringMethodPA</h4>
+<pre>public static&nbsp;java.security.PrivilegedAction&lt;java.lang.reflect.Method&gt;&nbsp;getValueOfStringMethodPA(java.lang.Class&lt;?&gt;&nbsp;c)</pre>
+<div class="block">Get privileged action to obtain the static valueOf(String ) method.
+ If run using security manager, the returned privileged action
+ must be invoked within a doPrivileged block.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - The class to obtain the method.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>privileged action to get the method.
+         The action could return <code>null</code> if the method is not present.</dd><dt><span class="strong">See Also:</span></dt><dd><code>AccessController.doPrivileged(java.security.PrivilegedAction)</code></dd></dl>
+</li>
+</ul>
+<a name="getFromStringStringMethodPA(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFromStringStringMethodPA</h4>
+<pre>public static&nbsp;java.security.PrivilegedAction&lt;java.lang.reflect.Method&gt;&nbsp;getFromStringStringMethodPA(java.lang.Class&lt;?&gt;&nbsp;c)</pre>
+<div class="block">Get privileged action to get the static fromString(String ) method.
+ If run using security manager, the returned privileged action
+ must be invoked within a doPrivileged block.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - class for which to get the method.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>privileged action to obtain the method.
+         The action could return <code>null</code> if the method is not present.</dd><dt><span class="strong">See Also:</span></dt><dd><code>AccessController.doPrivileged(java.security.PrivilegedAction)</code></dd></dl>
+</li>
+</ul>
+<a name="getStringConstructorPA(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStringConstructorPA</h4>
+<pre>public static&nbsp;java.security.PrivilegedAction&lt;java.lang.reflect.Constructor&gt;&nbsp;getStringConstructorPA(java.lang.Class&lt;?&gt;&nbsp;c)</pre>
+<div class="block">Get privileged action to obtain constructor that has a single parameter of String.
+ If run using security manager, the returned privileged action
+ must be invoked within a doPrivileged block.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - The class for which to obtain the constructor.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>privileged action to obtain the constructor.
+         The action could return <code>null</code> if the constructor is not present.</dd><dt><span class="strong">See Also:</span></dt><dd><code>AccessController.doPrivileged(java.security.PrivilegedAction)</code></dd></dl>
+</li>
+</ul>
+<a name="getParameterizedClassArguments(com.sun.jersey.core.reflection.ReflectionHelper.DeclaringClassInterfacePair)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getParameterizedClassArguments</h4>
+<pre>public static&nbsp;java.lang.Class[]&nbsp;getParameterizedClassArguments(<a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.DeclaringClassInterfacePair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.DeclaringClassInterfacePair</a>&nbsp;p)</pre>
+<div class="block">Get the parameterized class arguments for a declaring class that
+ declares a generic interface type.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>p</code> - the declaring class</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the parameterized class arguments, or null if the generic
+         interface type is not a parameterized type.</dd></dl>
+</li>
+</ul>
+<a name="getParameterizedTypeArguments(com.sun.jersey.core.reflection.ReflectionHelper.DeclaringClassInterfacePair)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getParameterizedTypeArguments</h4>
+<pre>public static&nbsp;java.lang.reflect.Type[]&nbsp;getParameterizedTypeArguments(<a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.DeclaringClassInterfacePair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.DeclaringClassInterfacePair</a>&nbsp;p)</pre>
+<div class="block">Get the parameterized type arguments for a declaring class that
+ declares a generic interface type.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>p</code> - the declaring class</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the parameterized type arguments, or null if the generic
+         interface type is not a parameterized type.</dd></dl>
+</li>
+</ul>
+<a name="getClass(java.lang.Class, java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getClass</h4>
+<pre>public static&nbsp;<a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.DeclaringClassInterfacePair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.DeclaringClassInterfacePair</a>&nbsp;getClass(java.lang.Class&nbsp;concrete,
+                                                    java.lang.Class&nbsp;iface)</pre>
+<div class="block">Find the declaring class that implements or extends an interface.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>concrete</code> - the concrete class than directly or indirectly
+        implements or extends an interface class.</dd><dd><code>iface</code> - the interface class.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the tuple of the declaring class and the generic interface
+         type.</dd></dl>
+</li>
+</ul>
+<a name="resolveTypeVariable(java.lang.Class, java.lang.Class, java.lang.reflect.TypeVariable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>resolveTypeVariable</h4>
+<pre>public static&nbsp;<a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.ClassTypePair.html" title="class in com.sun.jersey.core.reflection">ReflectionHelper.ClassTypePair</a>&nbsp;resolveTypeVariable(java.lang.Class&nbsp;c,
+                                                 java.lang.Class&nbsp;dc,
+                                                 java.lang.reflect.TypeVariable&nbsp;tv)</pre>
+<div class="block">Given a type variable resolve the Java class of that variable.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the concrete class from which all type variables are resolved</dd><dd><code>dc</code> - the declaring class where the type variable was defined</dd><dd><code>tv</code> - the type variable</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the resolved Java class and type, otherwise null if the type variable
+         could not be resolved</dd></dl>
+</li>
+</ul>
+<a name="findMethodOnClassPA(java.lang.Class, java.lang.reflect.Method)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findMethodOnClassPA</h4>
+<pre>public static&nbsp;java.security.PrivilegedAction&lt;java.lang.reflect.Method&gt;&nbsp;findMethodOnClassPA(java.lang.Class&lt;?&gt;&nbsp;c,
+                                                                           java.lang.reflect.Method&nbsp;m)</pre>
+<div class="block">Get privileged action to find a method on a class given an existing method.
+ If run using security manager, the returned privileged action
+ must be invoked within a doPrivileged block.
+ <p/>
+ If there exists a public method on the class that has the same name
+ and parameters as the existing method then that public method is
+ returned from the action.
+ <p/>
+ Otherwise, if there exists a public method on the class that has
+ the same name and the same number of parameters as the existing method,
+ and each generic parameter type, in order, of the public method is equal
+ to the generic parameter type, in the same order, of the existing method
+ or is an instance of <code>TypeVariable</code> then that public method is
+ returned from the action.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the class to search for a public method</dd><dd><code>m</code> - the method to find</dd>
+<dt><span class="strong">Returns:</span></dt><dd>privileged action to return public method found.</dd><dt><span class="strong">See Also:</span></dt><dd><code>AccessController.doPrivileged(java.security.PrivilegedAction)</code></dd></dl>
+</li>
+</ul>
+<a name="getOsgiRegistryInstance()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getOsgiRegistryInstance</h4>
+<pre>public static&nbsp;<a href="../../../../../com/sun/jersey/core/osgi/OsgiRegistry.html" title="class in com.sun.jersey.core.osgi">OsgiRegistry</a>&nbsp;getOsgiRegistryInstance()</pre>
+<div class="block">Returns an <a href="../../../../../com/sun/jersey/core/osgi/OsgiRegistry.html" title="class in com.sun.jersey.core.osgi"><code>OsgiRegistry</code></a> instance.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>an <a href="../../../../../com/sun/jersey/core/osgi/OsgiRegistry.html" title="class in com.sun.jersey.core.osgi"><code>OsgiRegistry</code></a> instance or <code>null</code> if the class cannot be instantiated (not in OSGi environment).</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ReflectionHelper.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/core/reflection/MethodList.Filter.html" title="interface in com.sun.jersey.core.reflection"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/core/reflection/ReflectionHelper.ClassTypePair.html" title="class in com.sun.jersey.core.reflection"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/core/reflection/ReflectionHelper.html" target="_top">Frames</a></li>
+<li><a href="ReflectionHelper.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>oauth2-client - Checkstyle report</title>
+    <link>https://jersey.java.net/project/oauth2-client/</link>
+    <description>oauth2-client - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
+    <item>
+      <title>File: 12,
+             Errors: 172,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://jersey.java.net/project/oauth2-client//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.AbstractAuthorizationCodeGrantBuilder.java">org/glassfish/jersey/client/oauth2/AbstractAuthorizationCodeGrantBuilder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2ClientFilter.java">org/glassfish/jersey/client/oauth2/OAuth2ClientFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2Parameters.java">org/glassfish/jersey/client/oauth2/OAuth2Parameters.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2FlowFacebookBuilder.java">org/glassfish/jersey/client/oauth2/OAuth2FlowFacebookBuilder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.AuthCodeGrantImpl.java">org/glassfish/jersey/client/oauth2/AuthCodeGrantImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  60
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2ClientFeature.java">org/glassfish/jersey/client/oauth2/OAuth2ClientFeature.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2ClientSupport.java">org/glassfish/jersey/client/oauth2/OAuth2ClientSupport.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.ClientIdentifier.java">org/glassfish/jersey/client/oauth2/ClientIdentifier.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2FlowGoogleBuilder.java">org/glassfish/jersey/client/oauth2/OAuth2FlowGoogleBuilder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.TokenResult.java">org/glassfish/jersey/client/oauth2/TokenResult.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.package-info.java">org/glassfish/jersey/client/oauth2/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2CodeGrantFlow.java">org/glassfish/jersey/client/oauth2/OAuth2CodeGrantFlow.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  29
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

@@ -1,0 +1,129 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="google-site-verification" content="OiKukTHVW4bdQqx8Fq0zA2EZ_hI6-yYL-MvkCxBxaFs" />
+    <title>Release Notes - Jersey 2.16</title>
+</head>
+
+<body>
+
+<h1>Release Notes - <a href="/">Jersey</a> 2.16</h1>
+
+Release date: <strong>11-Feb-2015</strong>
+
+<h2>Highlights</h2>
+
+<h4>JAX-B providers separated from the core</h4>
+<p>
+    From version 2.16 onwards, all JAX-B providers are being bundled in a separate module.
+</p>
+
+<h4>Performance gain when using Sub-Resource Locators</h4>
+<p>
+    We improved the performance for using sub-resource locators in an Jersey application. The performance gains
+    are available for cases when the sub-resource locator method returns either a resource class (return value is
+    e.g. <code class="literal">Class&lt;?&gt;</code> or <code class="literal">Class&lt;MySubResource&gt;</code>) or a (non-proxied)
+    resource instance (when return value is an instance of <code class="literal">MySubResource</code> class).
+</p>
+
+ <h4>More unified connector configuration options</h4>
+<p>
+    Jetty connector and Apache connector have been previously using their own custom properties
+    to set SSL context on a connector. These properties have been deprecated and the code has been updated
+    to read the SSL context information from the JAX-RS client configuration. This means that all Jersey
+    connectors now properly accept SSL configuration as configured via standard JAX-RS
+    <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods.
+</p>
+<p>
+    Previously, all Jersey connectors have been using their own default chunk size when HTTP chunked coding
+    was used. Since Jersey 2.16, there is a new default chunk size value used by all connectors, if a custom
+    chunk size is not set. The new default value is stored under
+    <a class="link" href="https://jersey.java.net/apidocs/latest/jersey/org/glassfish/jersey/client/ClientProperties.html#DEFAULT_CHUNK_SIZE" target="_top">ClientProperties.DEFAULT_CHUNK_SIZE</a> client property.
+</p>
+
+<h2>        Bug
+</h2>
+<ul>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2635'>JERSEY-2635</a>] -         Jersey does not produce first media type when accepts header is &quot;*/*&quot;
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2637'>JERSEY-2637</a>] -         sensitive params can be exposed in logs even for POST requests
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2668'>JERSEY-2668</a>] -         Memory leak using @BeanParams, @Context and @Valid arguments in resource methods
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2675'>JERSEY-2675</a>] -         SSLConnections are not reused
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2707'>JERSEY-2707</a>] -         char cannot be used as the type of a @*Param
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2742'>JERSEY-2742</a>] -         LoggingFilter&#39;s LoggingStream does not delegate flush()
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2748'>JERSEY-2748</a>] -         When running grizzly http server on z/OS, incoming JAX-RS based REST request URIs are incorrectly converted from UTF-8 to EBCDIC default charset and thus lead to HTTP 404
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2753'>JERSEY-2753</a>] -         UriBuilder should leave relative path relative
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2760'>JERSEY-2760</a>] -         TimeZones in DateProvider (via HttpDateFormat) can get corrupted
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2781'>JERSEY-2781</a>] -         Locale-dependent test fails in org.glassfish.jersey.message.internal.QualityTest.testEnhanceWithQualityParameter
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2783'>JERSEY-2783</a>] -         Priority comparator fails when dealing with edge case values Integer.MIN_VALUE and Integer.MAX_VALUE
+</li>
+</ul>
+
+<h2>        Improvement
+</h2>
+<ul>
+<li>[<a href='https://java.net/jira/browse/JERSEY-1708'>JERSEY-1708</a>] -         Implement sub-resource runtime model caching.
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2695'>JERSEY-2695</a>] -         Make EncodingFilter.enableFor type safe
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2718'>JERSEY-2718</a>] -         Cleanup code, fixing performance issues
+</li>
+</ul>
+
+<h2>        Task
+</h2>
+<ul>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2132'>JERSEY-2132</a>] -         Entity Filtering - Add support for JSON via Jackson
+</li>
+</ul>
+
+<h2>Pull Requests</h2>
+<ul>
+    <li>[<a href='https://github.com/jersey/jersey/pull/88'>Pull 88</a>] - getCookieStore method in ApacheConnectorProvider</li>
+    <li>[<a href='https://github.com/jersey/jersey/pull/102'>Pull 102</a>] - Produce first declared content-type on Accept:*/*</li>
+    <li>[<a href='https://github.com/jersey/jersey/pull/111'>Pull 111</a>] - Cache SSLSocketFactory so that connections can be reused. (JERSEY-2675)</li>
+    <li>[<a href='https://github.com/jersey/jersey/pull/115'>Pull 115</a>] - [JERSEY-2681] Added Spring Component method autowiring support.</li>
+    <li>[<a href='https://github.com/jersey/jersey/pull/125'>Pull 125</a>] - JERSEY-2718 cleanup code</li>
+    <li>[<a href='https://github.com/jersey/jersey/pull/132'>Pull 132</a>] - Fix various issues with JarFileScanner</li>
+    <li>[<a href='https://github.com/jersey/jersey/pull/134'>Pull 134</a>] - Add support for nested generics to ConfigurableMoxyJsonProvider</li>
+</ul>
+
+<h2>Previous releases</h2>
+
+<ul>
+    <li><a href="2.15.html">Jersey 2.15 Release Notes</a></li>
+    <li><a href="2.14.html">Jersey 2.14 Release Notes</a></li>
+    <li><a href="2.13.html">Jersey 2.13 Release Notes</a></li>
+    <li><a href="2.12.html">Jersey 2.12 Release Notes</a></li>
+    <li><a href="2.11.html">Jersey 2.11 Release Notes</a></li>
+    <li><a href="2.10.1.html">Jersey 2.10.1 Release Notes</a></li>
+    <li><a href="2.10.html">Jersey 2.10 Release Notes</a></li>
+    <li><a href="2.9.1.html">Jersey 2.9.1 Release Notes</a></li>
+    <li><a href="2.9.html">Jersey 2.9 Release Notes</a></li>
+    <li><a href="2.8.html">Jersey 2.8 Release Notes</a></li>
+    <li><a href="2.7.html">Jersey 2.7 Release Notes</a></li>
+    <li><a href="2.6.html">Jersey 2.6 Release Notes</a></li>
+    <li><a href="2.5.1.html">Jersey 2.5.1 Release Notes</a></li>
+    <li><a href="2.5.html">Jersey 2.5 Release Notes</a></li>
+    <li><a href="2.4.1.html">Jersey 2.4.1 Release Notes</a></li>
+    <li><a href="2.4.html">Jersey 2.4 Release Notes</a></li>
+    <li><a href="2.3.1.html">Jersey 2.3.1 Release Notes</a></li>
+    <li><a href="2.3.html">Jersey 2.3 Release Notes</a></li>
+    <li><a href="2.2.html">Jersey 2.2 Release Notes</a></li>
+    <li><a href="2.1.html">Jersey 2.1 Release Notes</a></li>
+    <li><a href="2.0.html">Jersey 2.0 Release Notes</a></li>
+</ul>
+
+</body>
+</html>

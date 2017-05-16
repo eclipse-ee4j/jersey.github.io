@@ -1,0 +1,28 @@
+-classpath '/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-multipart/target/classes:/Users/pavel/.m2/repository/org/jvnet/mimepull/1.3/mimepull-1.3.jar:/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-core/target/jersey-core-1.0.3.1.jar:/Users/pavel/.m2/repository/asm/asm/3.1/asm-3.1.jar:/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-server/target/jersey-server-1.0.3.1.jar:/Users/pavel/.m2/repository/javax/ws/rs/jsr311-api/1.0/jsr311-api-1.0.jar'
+ -encoding
+'ISO-8859-1'
+-protected
+-sourcepath
+'/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-multipart/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2009 <a href="http://www.sun.com/">Sun Microsystems, Inc</a>. All Rights Reserved.'
+-charset
+'ISO-8859-1'
+-d
+'/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-multipart/target/apidocs'
+-doctitle
+'jersey-multipart 1.0.3.1 API'
+-linkoffline
+'https://jersey.dev.java.net/jersey-core/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-core/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-server/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-server/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-client/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-client/target/apidocs'
+-linkoffline
+'http://maven.apache.org/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/spring/target/apidocs'
+-notimestamp
+-use
+-version
+-windowtitle
+'jersey-multipart 1.0.3.1 API'

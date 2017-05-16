@@ -1,0 +1,776 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ResponseBuilderImpl (jersey-bundle 1.3 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ResponseBuilderImpl (jersey-bundle 1.3 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ResponseBuilderImpl.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderHeaders.html" title="class in com.sun.jersey.core.spi.factory"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseImpl.html" title="class in com.sun.jersey.core.spi.factory"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ResponseBuilderImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.sun.jersey.core.spi.factory</FONT>
+<BR>
+Class ResponseBuilderImpl</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">javax.ws.rs.core.Response.ResponseBuilder</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.sun.jersey.core.spi.factory.ResponseBuilderImpl</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public final class <B>ResponseBuilderImpl</B><DT>extends <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></DL>
+</PRE>
+
+<P>
+An implementation of <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core"><CODE>Response.ResponseBuilder</CODE></A>.
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Paul.Sandoz@Sun.Com</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#ResponseBuilderImpl()">ResponseBuilderImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.html?is-external=true" title="class or interface in javax.ws.rs.core">Response</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#build()">build</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#cacheControl(javax.ws.rs.core.CacheControl)">cacheControl</A></B>(<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/CacheControl.html?is-external=true" title="class or interface in javax.ws.rs.core">CacheControl</A>&nbsp;cacheControl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#clone()">clone</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#contentLocation(java.net.URI)">contentLocation</A></B>(java.net.URI&nbsp;location)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#cookie(javax.ws.rs.core.NewCookie...)">cookie</A></B>(<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/NewCookie.html?is-external=true" title="class or interface in javax.ws.rs.core">NewCookie</A>...&nbsp;cookies)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#encoding(java.lang.String)">encoding</A></B>(java.lang.String&nbsp;encoding)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#entity(java.lang.Object)">entity</A></B>(java.lang.Object&nbsp;entity)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#entityWithType(java.lang.Object, java.lang.reflect.Type)">entityWithType</A></B>(java.lang.Object&nbsp;entity,
+               java.lang.reflect.Type&nbsp;entityType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#expires(java.util.Date)">expires</A></B>(java.util.Date&nbsp;expires)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#header(java.lang.String, java.lang.Object)">header</A></B>(java.lang.String&nbsp;name,
+       java.lang.Object&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#header(java.lang.String, java.lang.Object, boolean)">header</A></B>(java.lang.String&nbsp;name,
+       java.lang.Object&nbsp;value,
+       boolean&nbsp;single)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#headerSingle(java.lang.String, java.lang.Object)">headerSingle</A></B>(java.lang.String&nbsp;name,
+             java.lang.Object&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#language(java.util.Locale)">language</A></B>(java.util.Locale&nbsp;language)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#language(java.lang.String)">language</A></B>(java.lang.String&nbsp;language)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#lastModified(java.util.Date)">lastModified</A></B>(java.util.Date&nbsp;lastModified)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#location(java.net.URI)">location</A></B>(java.net.URI&nbsp;location)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#status(int)">status</A></B>(int&nbsp;status)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#status(javax.ws.rs.core.Response.StatusType)">status</A></B>(<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.StatusType.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.StatusType</A>&nbsp;status)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#tag(javax.ws.rs.core.EntityTag)">tag</A></B>(<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/EntityTag.html?is-external=true" title="class or interface in javax.ws.rs.core">EntityTag</A>&nbsp;tag)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#tag(java.lang.String)">tag</A></B>(java.lang.String&nbsp;tag)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#type(javax.ws.rs.core.MediaType)">type</A></B>(<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/MediaType.html?is-external=true" title="class or interface in javax.ws.rs.core">MediaType</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#type(java.lang.String)">type</A></B>(java.lang.String&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#variant(javax.ws.rs.core.Variant)">variant</A></B>(<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Variant.html?is-external=true" title="class or interface in javax.ws.rs.core">Variant</A>&nbsp;variant)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html#variants(java.util.List)">variants</A></B>(java.util.List&lt;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Variant.html?is-external=true" title="class or interface in javax.ws.rs.core">Variant</A>&gt;&nbsp;variants)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_javax.ws.rs.core.Response.ResponseBuilder"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class javax.ws.rs.core.<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#newInstance()" title="class or interface in javax.ws.rs.core">newInstance</A>, <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#status(javax.ws.rs.core.Response.Status)" title="class or interface in javax.ws.rs.core">status</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ResponseBuilderImpl()"><!-- --></A><H3>
+ResponseBuilderImpl</H3>
+<PRE>
+public <B>ResponseBuilderImpl</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="entityWithType(java.lang.Object, java.lang.reflect.Type)"><!-- --></A><H3>
+entityWithType</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>entityWithType</B>(java.lang.Object&nbsp;entity,
+                                               java.lang.reflect.Type&nbsp;entityType)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="build()"><!-- --></A><H3>
+build</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.html?is-external=true" title="class or interface in javax.ws.rs.core">Response</A> <B>build</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#build()" title="class or interface in javax.ws.rs.core">build</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="clone()"><!-- --></A><H3>
+clone</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>clone</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#clone()" title="class or interface in javax.ws.rs.core">clone</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="status(javax.ws.rs.core.Response.StatusType)"><!-- --></A><H3>
+status</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>status</B>(<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.StatusType.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.StatusType</A>&nbsp;status)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#status(javax.ws.rs.core.Response.StatusType)" title="class or interface in javax.ws.rs.core">status</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="status(int)"><!-- --></A><H3>
+status</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>status</B>(int&nbsp;status)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#status(int)" title="class or interface in javax.ws.rs.core">status</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="entity(java.lang.Object)"><!-- --></A><H3>
+entity</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>entity</B>(java.lang.Object&nbsp;entity)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#entity(java.lang.Object)" title="class or interface in javax.ws.rs.core">entity</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="type(javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+type</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>type</B>(<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/MediaType.html?is-external=true" title="class or interface in javax.ws.rs.core">MediaType</A>&nbsp;type)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#type(javax.ws.rs.core.MediaType)" title="class or interface in javax.ws.rs.core">type</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="type(java.lang.String)"><!-- --></A><H3>
+type</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>type</B>(java.lang.String&nbsp;type)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#type(java.lang.String)" title="class or interface in javax.ws.rs.core">type</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="variant(javax.ws.rs.core.Variant)"><!-- --></A><H3>
+variant</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>variant</B>(<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Variant.html?is-external=true" title="class or interface in javax.ws.rs.core">Variant</A>&nbsp;variant)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#variant(javax.ws.rs.core.Variant)" title="class or interface in javax.ws.rs.core">variant</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="variants(java.util.List)"><!-- --></A><H3>
+variants</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>variants</B>(java.util.List&lt;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Variant.html?is-external=true" title="class or interface in javax.ws.rs.core">Variant</A>&gt;&nbsp;variants)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#variants(java.util.List)" title="class or interface in javax.ws.rs.core">variants</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="language(java.lang.String)"><!-- --></A><H3>
+language</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>language</B>(java.lang.String&nbsp;language)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#language(java.lang.String)" title="class or interface in javax.ws.rs.core">language</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="language(java.util.Locale)"><!-- --></A><H3>
+language</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>language</B>(java.util.Locale&nbsp;language)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#language(java.util.Locale)" title="class or interface in javax.ws.rs.core">language</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="location(java.net.URI)"><!-- --></A><H3>
+location</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>location</B>(java.net.URI&nbsp;location)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#location(java.net.URI)" title="class or interface in javax.ws.rs.core">location</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="contentLocation(java.net.URI)"><!-- --></A><H3>
+contentLocation</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>contentLocation</B>(java.net.URI&nbsp;location)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#contentLocation(java.net.URI)" title="class or interface in javax.ws.rs.core">contentLocation</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="encoding(java.lang.String)"><!-- --></A><H3>
+encoding</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>encoding</B>(java.lang.String&nbsp;encoding)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tag(javax.ws.rs.core.EntityTag)"><!-- --></A><H3>
+tag</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>tag</B>(<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/EntityTag.html?is-external=true" title="class or interface in javax.ws.rs.core">EntityTag</A>&nbsp;tag)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#tag(javax.ws.rs.core.EntityTag)" title="class or interface in javax.ws.rs.core">tag</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="tag(java.lang.String)"><!-- --></A><H3>
+tag</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>tag</B>(java.lang.String&nbsp;tag)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#tag(java.lang.String)" title="class or interface in javax.ws.rs.core">tag</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="lastModified(java.util.Date)"><!-- --></A><H3>
+lastModified</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>lastModified</B>(java.util.Date&nbsp;lastModified)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#lastModified(java.util.Date)" title="class or interface in javax.ws.rs.core">lastModified</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cacheControl(javax.ws.rs.core.CacheControl)"><!-- --></A><H3>
+cacheControl</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>cacheControl</B>(<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/CacheControl.html?is-external=true" title="class or interface in javax.ws.rs.core">CacheControl</A>&nbsp;cacheControl)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#cacheControl(javax.ws.rs.core.CacheControl)" title="class or interface in javax.ws.rs.core">cacheControl</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="expires(java.util.Date)"><!-- --></A><H3>
+expires</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>expires</B>(java.util.Date&nbsp;expires)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#expires(java.util.Date)" title="class or interface in javax.ws.rs.core">expires</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cookie(javax.ws.rs.core.NewCookie...)"><!-- --></A><H3>
+cookie</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>cookie</B>(<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/NewCookie.html?is-external=true" title="class or interface in javax.ws.rs.core">NewCookie</A>...&nbsp;cookies)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#cookie(javax.ws.rs.core.NewCookie...)" title="class or interface in javax.ws.rs.core">cookie</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="header(java.lang.String, java.lang.Object)"><!-- --></A><H3>
+header</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>header</B>(java.lang.String&nbsp;name,
+                                       java.lang.Object&nbsp;value)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true#header(java.lang.String, java.lang.Object)" title="class or interface in javax.ws.rs.core">header</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="headerSingle(java.lang.String, java.lang.Object)"><!-- --></A><H3>
+headerSingle</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>headerSingle</B>(java.lang.String&nbsp;name,
+                                             java.lang.Object&nbsp;value)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="header(java.lang.String, java.lang.Object, boolean)"><!-- --></A><H3>
+header</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/Response.ResponseBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">Response.ResponseBuilder</A> <B>header</B>(java.lang.String&nbsp;name,
+                                       java.lang.Object&nbsp;value,
+                                       boolean&nbsp;single)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ResponseBuilderImpl.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseBuilderHeaders.html" title="class in com.sun.jersey.core.spi.factory"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../com/sun/jersey/core/spi/factory/ResponseImpl.html" title="class in com.sun.jersey.core.spi.factory"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/sun/jersey/core/spi/factory/ResponseBuilderImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ResponseBuilderImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2010 <a href="http://www.sun.com/">Sun Microsystems, Inc</a>. All Rights Reserved.
+</BODY>
+</HTML>

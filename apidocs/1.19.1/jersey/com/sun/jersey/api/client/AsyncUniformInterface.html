@@ -1,0 +1,1117 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AsyncUniformInterface (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AsyncUniformInterface (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AsyncUniformInterface.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/api/client/AbstractClientRequestAdapter.html" title="class in com.sun.jersey.api.client"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/api/client/AsyncViewResource.html" title="class in com.sun.jersey.api.client"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/api/client/AsyncUniformInterface.html" target="_top">Frames</a></li>
+<li><a href="AsyncUniformInterface.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.api.client</div>
+<h2 title="Interface AsyncUniformInterface" class="title">Interface AsyncUniformInterface</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><a href="../../../../../com/sun/jersey/api/client/AsyncWebResource.html" title="class in com.sun.jersey.api.client">AsyncWebResource</a>, <a href="../../../../../com/sun/jersey/api/client/AsyncWebResource.Builder.html" title="class in com.sun.jersey.api.client">AsyncWebResource.Builder</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public interface <span class="strong">AsyncUniformInterface</span></pre>
+<div class="block">An asynchronous uniform interface for invoking HTTP requests.
+ 
+ <p>
+ Any Java type for a response entity, that is supported by the client
+ configuration of the client, may be declared using
+ <code>Class&lt;T&gt;</code> where <code>T</code> is the Java type, or
+ using <a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client"><code>GenericType</code></a> where the generic parameter is the Java type.
+ <p>
+ Any Java type instance for a request entity, that is supported by the client
+ configuration of the client, can be passed. If generic information is
+ required then an instance of <a href="../../../../../javax/ws/rs/core/GenericEntity.html" title="class in javax.ws.rs.core"><code>GenericEntity</code></a> may
+ be used.
+ <p>
+ A type of <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a> declared for the response entity
+ may be used to obtain the status, headers and response entity. If any other
+ type is declared and the response status is greater than or equal to
+ 300 then a <a href="../../../../../com/sun/jersey/api/client/UniformInterfaceException.html" title="class in com.sun.jersey.api.client"><code>UniformInterfaceException</code></a> exception will be thrown, from 
+ which the <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a> instance can be accessed.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Paul.Sandoz@Sun.Com</dd>
+<dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../com/sun/jersey/api/client/package-summary.html"><code>com.sun.jersey.api.client</code></a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.concurrent.Future&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#delete()">delete</a></strong>()</code>
+<div class="block">Invoke the DELETE method with no request entity or response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#delete(java.lang.Class)">delete</a></strong>(java.lang.Class&lt;T&gt;&nbsp;c)</code>
+<div class="block">Invoke the DELETE method with no request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#delete(java.lang.Class,%20java.lang.Object)">delete</a></strong>(java.lang.Class&lt;T&gt;&nbsp;c,
+      java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke the DELETE method with a request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#delete(com.sun.jersey.api.client.GenericType)">delete</a></strong>(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt)</code>
+<div class="block">Invoke the DELETE method with a request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#delete(com.sun.jersey.api.client.GenericType,%20java.lang.Object)">delete</a></strong>(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt,
+      java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke the DELETE method with a request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#delete(com.sun.jersey.api.client.async.ITypeListener)">delete</a></strong>(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l)</code>
+<div class="block">Invoke the DELETE method.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#delete(com.sun.jersey.api.client.async.ITypeListener,%20java.lang.Object)">delete</a></strong>(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l,
+      java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke the DELETE method.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.concurrent.Future&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#delete(java.lang.Object)">delete</a></strong>(java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke the DELETE method with a request entity but no response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#get(java.lang.Class)">get</a></strong>(java.lang.Class&lt;T&gt;&nbsp;c)</code>
+<div class="block">Invoke the GET method.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#get(com.sun.jersey.api.client.GenericType)">get</a></strong>(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt)</code>
+<div class="block">Invoke the GET method.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#get(com.sun.jersey.api.client.async.ITypeListener)">get</a></strong>(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l)</code>
+<div class="block">Invoke the GET method.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.concurrent.Future&lt;<a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client">ClientResponse</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#head()">head</a></strong>()</code>
+<div class="block">Invoke the HEAD method.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.concurrent.Future&lt;<a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client">ClientResponse</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#head(com.sun.jersey.api.client.async.ITypeListener)">head</a></strong>(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;<a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client">ClientResponse</a>&gt;&nbsp;l)</code>
+<div class="block">Invoke the HEAD method.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.concurrent.Future&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#method(java.lang.String)">method</a></strong>(java.lang.String&nbsp;method)</code>
+<div class="block">Invoke a HTTP method with no request entity or response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#method(java.lang.String,%20java.lang.Class)">method</a></strong>(java.lang.String&nbsp;method,
+      java.lang.Class&lt;T&gt;&nbsp;c)</code>
+<div class="block">Invoke a HTTP method with no request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#method(java.lang.String,%20java.lang.Class,%20java.lang.Object)">method</a></strong>(java.lang.String&nbsp;method,
+      java.lang.Class&lt;T&gt;&nbsp;c,
+      java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke a HTTP method with a request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#method(java.lang.String,%20com.sun.jersey.api.client.GenericType)">method</a></strong>(java.lang.String&nbsp;method,
+      <a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt)</code>
+<div class="block">Invoke a HTTP method with no request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#method(java.lang.String,%20com.sun.jersey.api.client.GenericType,%20java.lang.Object)">method</a></strong>(java.lang.String&nbsp;method,
+      <a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt,
+      java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke a HTTP method with a request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#method(java.lang.String,%20com.sun.jersey.api.client.async.ITypeListener)">method</a></strong>(java.lang.String&nbsp;method,
+      <a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l)</code>
+<div class="block">Invoke a HTTP method with no request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#method(java.lang.String,%20com.sun.jersey.api.client.async.ITypeListener,%20java.lang.Object)">method</a></strong>(java.lang.String&nbsp;method,
+      <a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l,
+      java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke a HTTP method with a request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.concurrent.Future&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#method(java.lang.String,%20java.lang.Object)">method</a></strong>(java.lang.String&nbsp;method,
+      java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke a HTTP method with a request entity but no response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#options(java.lang.Class)">options</a></strong>(java.lang.Class&lt;T&gt;&nbsp;c)</code>
+<div class="block">Invoke the OPTIONS method.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#options(com.sun.jersey.api.client.GenericType)">options</a></strong>(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt)</code>
+<div class="block">Invoke the OPTIONS method.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#options(com.sun.jersey.api.client.async.ITypeListener)">options</a></strong>(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l)</code>
+<div class="block">Invoke the OPTIONS method.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.concurrent.Future&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#post()">post</a></strong>()</code>
+<div class="block">Invoke the POST method with no request entity or response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#post(java.lang.Class)">post</a></strong>(java.lang.Class&lt;T&gt;&nbsp;c)</code>
+<div class="block">Invoke the POST method with no request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#post(java.lang.Class,%20java.lang.Object)">post</a></strong>(java.lang.Class&lt;T&gt;&nbsp;c,
+    java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke the POST method with a request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#post(com.sun.jersey.api.client.GenericType)">post</a></strong>(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt)</code>
+<div class="block">Invoke the POST method with a request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#post(com.sun.jersey.api.client.GenericType,%20java.lang.Object)">post</a></strong>(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt,
+    java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke the POST method with a request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#post(com.sun.jersey.api.client.async.ITypeListener)">post</a></strong>(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l)</code>
+<div class="block">Invoke the POST method.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#post(com.sun.jersey.api.client.async.ITypeListener,%20java.lang.Object)">post</a></strong>(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l,
+    java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke the POST method.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.concurrent.Future&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#post(java.lang.Object)">post</a></strong>(java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke the POST method with a request entity but no response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.concurrent.Future&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#put()">put</a></strong>()</code>
+<div class="block">Invoke the PUT method with no request entity or response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#put(java.lang.Class)">put</a></strong>(java.lang.Class&lt;T&gt;&nbsp;c)</code>
+<div class="block">Invoke the PUT method with no request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#put(java.lang.Class,%20java.lang.Object)">put</a></strong>(java.lang.Class&lt;T&gt;&nbsp;c,
+   java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke the PUT method with a request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#put(com.sun.jersey.api.client.GenericType)">put</a></strong>(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt)</code>
+<div class="block">Invoke the PUT method with a request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#put(com.sun.jersey.api.client.GenericType,%20java.lang.Object)">put</a></strong>(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt,
+   java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke the PUT method with a request entity that returns a response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#put(com.sun.jersey.api.client.async.ITypeListener)">put</a></strong>(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l)</code>
+<div class="block">Invoke the PUT method.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#put(com.sun.jersey.api.client.async.ITypeListener,%20java.lang.Object)">put</a></strong>(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l,
+   java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke the PUT method.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.concurrent.Future&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/client/AsyncUniformInterface.html#put(java.lang.Object)">put</a></strong>(java.lang.Object&nbsp;requestEntity)</code>
+<div class="block">Invoke the PUT method with a request entity but no response.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="head()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>head</h4>
+<pre>java.util.concurrent.Future&lt;<a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client">ClientResponse</a>&gt;&nbsp;head()</pre>
+<div class="block">Invoke the HEAD method.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the HTTP response.</dd></dl>
+</li>
+</ul>
+<a name="head(com.sun.jersey.api.client.async.ITypeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>head</h4>
+<pre>java.util.concurrent.Future&lt;<a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client">ClientResponse</a>&gt;&nbsp;head(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;<a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client">ClientResponse</a>&gt;&nbsp;l)</pre>
+<div class="block">Invoke the HEAD method.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>l</code> - the listener to receive asynchronous callbacks.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a future that may be used to wait until the future completes and
+         obtain the client response state, or cancel the request.</dd></dl>
+</li>
+</ul>
+<a name="options(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>options</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;options(java.lang.Class&lt;T&gt;&nbsp;c)</pre>
+<div class="block">Invoke the OPTIONS method.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>c</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the type of the returned response.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type <code>c</code>.</dd></dl>
+</li>
+</ul>
+<a name="options(com.sun.jersey.api.client.GenericType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>options</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;options(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt)</pre>
+<div class="block">Invoke the OPTIONS method.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>gt</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>gt</code> - the generic type of the returned response.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type represented by the generic type.</dd></dl>
+</li>
+</ul>
+<a name="options(com.sun.jersey.api.client.async.ITypeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>options</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;options(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l)</pre>
+<div class="block">Invoke the OPTIONS method.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>l</code> - the listener to receive asynchronous callbacks.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a future that may be used to wait until the future completes and
+         obtain the client response state, or cancel the request.</dd></dl>
+</li>
+</ul>
+<a name="get(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;get(java.lang.Class&lt;T&gt;&nbsp;c)
+                                   throws <a href="../../../../../com/sun/jersey/api/client/UniformInterfaceException.html" title="class in com.sun.jersey.api.client">UniformInterfaceException</a></pre>
+<div class="block">Invoke the GET method.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>c</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the type of the returned response.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type <code>c</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/client/UniformInterfaceException.html" title="class in com.sun.jersey.api.client">UniformInterfaceException</a></code></dd></dl>
+</li>
+</ul>
+<a name="get(com.sun.jersey.api.client.GenericType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;get(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt)
+                                   throws <a href="../../../../../com/sun/jersey/api/client/UniformInterfaceException.html" title="class in com.sun.jersey.api.client">UniformInterfaceException</a></pre>
+<div class="block">Invoke the GET method.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>gt</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>gt</code> - the generic type of the returned response.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type represented by the generic type.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/client/UniformInterfaceException.html" title="class in com.sun.jersey.api.client">UniformInterfaceException</a></code></dd></dl>
+</li>
+</ul>
+<a name="get(com.sun.jersey.api.client.async.ITypeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;get(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l)</pre>
+<div class="block">Invoke the GET method.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>l</code> - the listener to receive asynchronous callbacks.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a future that may be used to wait until the future completes and
+         obtain the client response state, or cancel the request.</dd></dl>
+</li>
+</ul>
+<a name="put()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>put</h4>
+<pre>java.util.concurrent.Future&lt;?&gt;&nbsp;put()</pre>
+<div class="block">Invoke the PUT method with no request entity or response.
+ <p>
+ If the status of the HTTP response is less than 300 and a representation
+ is present then that representation is ignored.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a void future.</dd></dl>
+</li>
+</ul>
+<a name="put(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>put</h4>
+<pre>java.util.concurrent.Future&lt;?&gt;&nbsp;put(java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke the PUT method with a request entity but no response.
+ <p>
+ If the status of the HTTP response is less than 300 and a representation
+ is present then that representation is ignored.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a void future.</dd></dl>
+</li>
+</ul>
+<a name="put(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>put</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;put(java.lang.Class&lt;T&gt;&nbsp;c)</pre>
+<div class="block">Invoke the PUT method with no request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>c</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the type of the returned response.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type <code>c</code>.</dd></dl>
+</li>
+</ul>
+<a name="put(com.sun.jersey.api.client.GenericType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>put</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;put(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt)</pre>
+<div class="block">Invoke the PUT method with a request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>gt</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>gt</code> - the generic type of the returned response.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type represented by the generic type.</dd></dl>
+</li>
+</ul>
+<a name="put(com.sun.jersey.api.client.async.ITypeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>put</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;put(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l)</pre>
+<div class="block">Invoke the PUT method.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>l</code> - the listener to receive asynchronous callbacks.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a future that may be used to wait until the future completes and
+         obtain the client response state, or cancel the request.</dd></dl>
+</li>
+</ul>
+<a name="put(java.lang.Class, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>put</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;put(java.lang.Class&lt;T&gt;&nbsp;c,
+                                     java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke the PUT method with a request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>c</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the type of the returned response.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type <code>c</code>.</dd></dl>
+</li>
+</ul>
+<a name="put(com.sun.jersey.api.client.GenericType, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>put</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;put(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt,
+                                     java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke the PUT method with a request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>gt</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>gt</code> - the generic type of the returned response.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type represented by the generic type.</dd></dl>
+</li>
+</ul>
+<a name="put(com.sun.jersey.api.client.async.ITypeListener, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>put</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;put(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l,
+                                     java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke the PUT method.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>l</code> - the listener to receive asynchronous callbacks.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a future that may be used to wait until the future completes and
+         obtain the client response state, or cancel the request.</dd></dl>
+</li>
+</ul>
+<a name="post()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>post</h4>
+<pre>java.util.concurrent.Future&lt;?&gt;&nbsp;post()</pre>
+<div class="block">Invoke the POST method with no request entity or response.
+ <p>
+ If the status of the HTTP response is less than 300 and a representation
+ is present then that representation is ignored.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a void future.</dd></dl>
+</li>
+</ul>
+<a name="post(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>post</h4>
+<pre>java.util.concurrent.Future&lt;?&gt;&nbsp;post(java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke the POST method with a request entity but no response.
+ <p>
+ If the status of the HTTP response is less than 300 and a representation
+ is present then that representation is ignored.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a void future.</dd></dl>
+</li>
+</ul>
+<a name="post(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>post</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;post(java.lang.Class&lt;T&gt;&nbsp;c)</pre>
+<div class="block">Invoke the POST method with no request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>c</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the type of the returned response.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type <code>c</code>.</dd></dl>
+</li>
+</ul>
+<a name="post(com.sun.jersey.api.client.GenericType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>post</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;post(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt)</pre>
+<div class="block">Invoke the POST method with a request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>gt</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>gt</code> - the generic type of the returned response.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type represented by the generic type.</dd></dl>
+</li>
+</ul>
+<a name="post(com.sun.jersey.api.client.async.ITypeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>post</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;post(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l)</pre>
+<div class="block">Invoke the POST method.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>l</code> - the listener to receive asynchronous callbacks.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a future that may be used to wait until the future completes and
+         obtain the client response state, or cancel the request.</dd></dl>
+</li>
+</ul>
+<a name="post(java.lang.Class, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>post</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;post(java.lang.Class&lt;T&gt;&nbsp;c,
+                                      java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke the POST method with a request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>c</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the type of the returned response.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type <code>c</code>.</dd></dl>
+</li>
+</ul>
+<a name="post(com.sun.jersey.api.client.GenericType, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>post</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;post(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt,
+                                      java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke the POST method with a request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>gt</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>gt</code> - the generic type of the returned response.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type represented by the generic type.</dd></dl>
+</li>
+</ul>
+<a name="post(com.sun.jersey.api.client.async.ITypeListener, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>post</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;post(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l,
+                                      java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke the POST method.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>l</code> - the listener to receive asynchronous callbacks.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a future that may be used to wait until the future completes and
+         obtain the client response state, or cancel the request.</dd></dl>
+</li>
+</ul>
+<a name="delete()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>delete</h4>
+<pre>java.util.concurrent.Future&lt;?&gt;&nbsp;delete()</pre>
+<div class="block">Invoke the DELETE method with no request entity or response.
+ <p>
+ If the status of the HTTP response is less than 300 and a representation
+ is present then that representation is ignored.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a void future.</dd></dl>
+</li>
+</ul>
+<a name="delete(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>delete</h4>
+<pre>java.util.concurrent.Future&lt;?&gt;&nbsp;delete(java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke the DELETE method with a request entity but no response.
+ <p>
+ If the status of the HTTP response is less than 300 and a representation
+ is present then that representation is ignored.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a void future.</dd></dl>
+</li>
+</ul>
+<a name="delete(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>delete</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;delete(java.lang.Class&lt;T&gt;&nbsp;c)</pre>
+<div class="block">Invoke the DELETE method with no request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>c</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the type of the returned response.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type <code>c</code>.</dd></dl>
+</li>
+</ul>
+<a name="delete(com.sun.jersey.api.client.GenericType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>delete</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;delete(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt)</pre>
+<div class="block">Invoke the DELETE method with a request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>gt</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>gt</code> - the generic type of the returned response.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type represented by the generic type.</dd></dl>
+</li>
+</ul>
+<a name="delete(com.sun.jersey.api.client.async.ITypeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>delete</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;delete(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l)</pre>
+<div class="block">Invoke the DELETE method.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>l</code> - the listener to receive asynchronous callbacks.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a future that may be used to wait until the future completes and
+         obtain the client response state, or cancel the request.</dd></dl>
+</li>
+</ul>
+<a name="delete(java.lang.Class, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>delete</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;delete(java.lang.Class&lt;T&gt;&nbsp;c,
+                                        java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke the DELETE method with a request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>c</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the type of the returned response.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type <code>c</code>.</dd></dl>
+</li>
+</ul>
+<a name="delete(com.sun.jersey.api.client.GenericType, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>delete</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;delete(<a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt,
+                                        java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke the DELETE method with a request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>gt</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>gt</code> - the generic type of the returned response.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type represented by the generic type.</dd></dl>
+</li>
+</ul>
+<a name="delete(com.sun.jersey.api.client.async.ITypeListener, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>delete</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;delete(<a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l,
+                                        java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke the DELETE method.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>l</code> - the listener to receive asynchronous callbacks.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a future that may be used to wait until the future completes and
+         obtain the client response state, or cancel the request.</dd></dl>
+</li>
+</ul>
+<a name="method(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method</h4>
+<pre>java.util.concurrent.Future&lt;?&gt;&nbsp;method(java.lang.String&nbsp;method)</pre>
+<div class="block">Invoke a HTTP method with no request entity or response.
+ <p>
+ If the status of the HTTP response is less than 300 and a representation
+ is present then that representation is ignored.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>method</code> - the HTTP method.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a void future.</dd></dl>
+</li>
+</ul>
+<a name="method(java.lang.String, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method</h4>
+<pre>java.util.concurrent.Future&lt;?&gt;&nbsp;method(java.lang.String&nbsp;method,
+                                    java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke a HTTP method with a request entity but no response.
+ <p>
+ If the status of the HTTP response is less than 300 and a representation
+ is present then that representation is ignored.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>method</code> - the HTTP method.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a void future.</dd></dl>
+</li>
+</ul>
+<a name="method(java.lang.String, java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;method(java.lang.String&nbsp;method,
+                                        java.lang.Class&lt;T&gt;&nbsp;c)</pre>
+<div class="block">Invoke a HTTP method with no request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>c</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>method</code> - the HTTP method.</dd><dd><code>c</code> - the type of the returned response.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type <code>c</code>.</dd></dl>
+</li>
+</ul>
+<a name="method(java.lang.String, com.sun.jersey.api.client.GenericType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;method(java.lang.String&nbsp;method,
+                                        <a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt)</pre>
+<div class="block">Invoke a HTTP method with no request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>gt</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>method</code> - the HTTP method.</dd><dd><code>gt</code> - the generic type of the returned response.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type represented by the generic type.</dd></dl>
+</li>
+</ul>
+<a name="method(java.lang.String, com.sun.jersey.api.client.async.ITypeListener)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;method(java.lang.String&nbsp;method,
+                                        <a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l)</pre>
+<div class="block">Invoke a HTTP method with no request entity that returns a response.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>method</code> - the HTTP method.</dd><dd><code>l</code> - the listener to receive asynchronous callbacks.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a future that may be used to wait until the future completes and
+         obtain the client response state, or cancel the request.</dd></dl>
+</li>
+</ul>
+<a name="method(java.lang.String, java.lang.Class, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;method(java.lang.String&nbsp;method,
+                                        java.lang.Class&lt;T&gt;&nbsp;c,
+                                        java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke a HTTP method with a request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>c</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>method</code> - the HTTP method.</dd><dd><code>c</code> - the type of the returned response.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type <code>c</code>.</dd></dl>
+</li>
+</ul>
+<a name="method(java.lang.String, com.sun.jersey.api.client.GenericType, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>method</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;method(java.lang.String&nbsp;method,
+                                        <a href="../../../../../com/sun/jersey/api/client/GenericType.html" title="class in com.sun.jersey.api.client">GenericType</a>&lt;T&gt;&nbsp;gt,
+                                        java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke a HTTP method with a request entity that returns a response.
+ <p>
+ The <code>Future.get()</code> method will throw a UniformInterfaceException
+ if the status of the HTTP response is greater than or equal to 300 and
+ <code>gt</code> is not the type <a href="../../../../../com/sun/jersey/api/client/ClientResponse.html" title="class in com.sun.jersey.api.client"><code>ClientResponse</code></a>.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>method</code> - the HTTP method.</dd><dd><code>gt</code> - the generic type of the returned response.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>an instance of type represented by the generic type.</dd></dl>
+</li>
+</ul>
+<a name="method(java.lang.String, com.sun.jersey.api.client.async.ITypeListener, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>method</h4>
+<pre>&lt;T&gt;&nbsp;java.util.concurrent.Future&lt;T&gt;&nbsp;method(java.lang.String&nbsp;method,
+                                        <a href="../../../../../com/sun/jersey/api/client/async/ITypeListener.html" title="interface in com.sun.jersey.api.client.async">ITypeListener</a>&lt;T&gt;&nbsp;l,
+                                        java.lang.Object&nbsp;requestEntity)</pre>
+<div class="block">Invoke a HTTP method with a request entity that returns a response.</div>
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the response.</dd><dt><span class="strong">Parameters:</span></dt><dd><code>method</code> - the HTTP method.</dd><dd><code>l</code> - the listener to receive asynchronous callbacks.</dd><dd><code>requestEntity</code> - the request entity.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a future that may be used to wait until the future completes and
+         obtain the client response state, or cancel the request.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AsyncUniformInterface.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/api/client/AbstractClientRequestAdapter.html" title="class in com.sun.jersey.api.client"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/api/client/AsyncViewResource.html" title="class in com.sun.jersey.api.client"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/api/client/AsyncUniformInterface.html" target="_top">Frames</a></li>
+<li><a href="AsyncUniformInterface.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

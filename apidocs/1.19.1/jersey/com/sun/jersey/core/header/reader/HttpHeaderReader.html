@@ -1,0 +1,870 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>HttpHeaderReader (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="HttpHeaderReader (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/HttpHeaderReader.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.Event.html" title="enum in com.sun.jersey.core.header.reader"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?com/sun/jersey/core/header/reader/HttpHeaderReader.html" target="_top">Frames</a></li>
+<li><a href="HttpHeaderReader.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.core.header.reader</div>
+<h2 title="Class HttpHeaderReader" class="title">Class HttpHeaderReader</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>com.sun.jersey.core.header.reader.HttpHeaderReader</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public abstract class <span class="strong">HttpHeaderReader</span>
+extends java.lang.Object</pre>
+<div class="block">A pull-based reader of HTTP headers.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Paul.Sandoz@Sun.Com</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.Event.html" title="enum in com.sun.jersey.core.header.reader">HttpHeaderReader.Event</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static interface&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.ListElementCreator.html" title="interface in com.sun.jersey.core.header.reader">HttpHeaderReader.ListElementCreator</a>&lt;<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.ListElementCreator.html" title="type parameter in HttpHeaderReader.ListElementCreator">T</a>&gt;</strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#HttpHeaderReader()">HttpHeaderReader</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.Event.html" title="enum in com.sun.jersey.core.header.reader">HttpHeaderReader.Event</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#getEvent()">getEvent</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#getEventValue()">getEventValue</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#getIndex()">getIndex</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#getRemainder()">getRemainder</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#hasNext()">hasNext</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#hasNextSeparator(char,%20boolean)">hasNextSeparator</a></strong>(char&nbsp;separator,
+                boolean&nbsp;skipWhiteSpace)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html" title="class in com.sun.jersey.core.header.reader">HttpHeaderReader</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#newInstance(java.lang.String)">newInstance</a></strong>(java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html" title="class in com.sun.jersey.core.header.reader">HttpHeaderReader</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#newInstance(java.lang.String,%20boolean)">newInstance</a></strong>(java.lang.String&nbsp;header,
+           boolean&nbsp;processComments)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.Event.html" title="enum in com.sun.jersey.core.header.reader">HttpHeaderReader.Event</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#next()">next</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract <a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.Event.html" title="enum in com.sun.jersey.core.header.reader">HttpHeaderReader.Event</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#next(boolean)">next</a></strong>(boolean&nbsp;skipWhiteSpace)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract <a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.Event.html" title="enum in com.sun.jersey.core.header.reader">HttpHeaderReader.Event</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#next(boolean,%20boolean)">next</a></strong>(boolean&nbsp;skipWhiteSpace,
+    boolean&nbsp;preserveBackslash)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#nextQuotedString()">nextQuotedString</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#nextSeparatedString(char,%20char)">nextSeparatedString</a></strong>(char&nbsp;startSeparator,
+                   char&nbsp;endSeparator)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>char</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#nextSeparator()">nextSeparator</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#nextSeparator(char)">nextSeparator</a></strong>(char&nbsp;c)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#nextToken()">nextToken</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#nextTokenOrQuotedString()">nextTokenOrQuotedString</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#nextTokenOrQuotedString(boolean)">nextTokenOrQuotedString</a></strong>(boolean&nbsp;preserveBackslash)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.List&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readAcceptableList(java.util.Comparator,%20com.sun.jersey.core.header.reader.HttpHeaderReader.ListElementCreator,%20java.lang.String)">readAcceptableList</a></strong>(java.util.Comparator&lt;T&gt;&nbsp;comparator,
+                  <a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.ListElementCreator.html" title="interface in com.sun.jersey.core.header.reader">HttpHeaderReader.ListElementCreator</a>&lt;T&gt;&nbsp;c,
+                  java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;T extends <a href="../../../../../../com/sun/jersey/core/header/QualityFactor.html" title="interface in com.sun.jersey.core.header">QualityFactor</a>&gt;&nbsp;<br>java.util.List&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readAcceptableList(com.sun.jersey.core.header.reader.HttpHeaderReader.ListElementCreator,%20java.lang.String)">readAcceptableList</a></strong>(<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.ListElementCreator.html" title="interface in com.sun.jersey.core.header.reader">HttpHeaderReader.ListElementCreator</a>&lt;T&gt;&nbsp;c,
+                  java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/AcceptableLanguageTag.html" title="class in com.sun.jersey.core.header">AcceptableLanguageTag</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readAcceptLanguage(java.lang.String)">readAcceptLanguage</a></strong>(java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/AcceptableMediaType.html" title="class in com.sun.jersey.core.header">AcceptableMediaType</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readAcceptMediaType(java.lang.String)">readAcceptMediaType</a></strong>(java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/AcceptableMediaType.html" title="class in com.sun.jersey.core.header">AcceptableMediaType</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readAcceptMediaType(java.lang.String,%20java.util.List)">readAcceptMediaType</a></strong>(java.lang.String&nbsp;header,
+                   java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/QualitySourceMediaType.html" title="class in com.sun.jersey.core.header">QualitySourceMediaType</a>&gt;&nbsp;priorityMediaTypes)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/AcceptableToken.html" title="class in com.sun.jersey.core.header">AcceptableToken</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readAcceptToken(java.lang.String)">readAcceptToken</a></strong>(java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../javax/ws/rs/core/Cookie.html" title="class in javax.ws.rs.core">Cookie</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readCookie(java.lang.String)">readCookie</a></strong>(java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.util.Map&lt;java.lang.String,<a href="../../../../../../javax/ws/rs/core/Cookie.html" title="class in javax.ws.rs.core">Cookie</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readCookies(java.lang.String)">readCookies</a></strong>(java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.util.Date</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readDate(java.lang.String)">readDate</a></strong>(java.lang.String&nbsp;date)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.List&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readList(com.sun.jersey.core.header.reader.HttpHeaderReader.ListElementCreator,%20java.lang.String)">readList</a></strong>(<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.ListElementCreator.html" title="interface in com.sun.jersey.core.header.reader">HttpHeaderReader.ListElementCreator</a>&lt;T&gt;&nbsp;c,
+        java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static &lt;T&gt;&nbsp;java.util.List&lt;T&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readList(java.util.List,%20com.sun.jersey.core.header.reader.HttpHeaderReader.ListElementCreator,%20java.lang.String)">readList</a></strong>(java.util.List&lt;T&gt;&nbsp;l,
+        <a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.ListElementCreator.html" title="interface in com.sun.jersey.core.header.reader">HttpHeaderReader.ListElementCreator</a>&lt;T&gt;&nbsp;c,
+        java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.util.Set&lt;<a href="../../../../../../com/sun/jersey/core/header/MatchingEntityTag.html" title="class in com.sun.jersey.core.header">MatchingEntityTag</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readMatchingEntityTag(java.lang.String)">readMatchingEntityTag</a></strong>(java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.util.List&lt;<a href="../../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readMediaTypes(java.util.List,%20java.lang.String)">readMediaTypes</a></strong>(java.util.List&lt;<a href="../../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&gt;&nbsp;l,
+              java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../javax/ws/rs/core/NewCookie.html" title="class in javax.ws.rs.core">NewCookie</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readNewCookie(java.lang.String)">readNewCookie</a></strong>(java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.util.Map&lt;java.lang.String,java.lang.String&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readParameters(com.sun.jersey.core.header.reader.HttpHeaderReader)">readParameters</a></strong>(<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html" title="class in com.sun.jersey.core.header.reader">HttpHeaderReader</a>&nbsp;reader)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.util.Map&lt;java.lang.String,java.lang.String&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readParameters(com.sun.jersey.core.header.reader.HttpHeaderReader,%20boolean)">readParameters</a></strong>(<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html" title="class in com.sun.jersey.core.header.reader">HttpHeaderReader</a>&nbsp;reader,
+              boolean&nbsp;fileNameFix)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readQualityFactor(java.lang.String)">readQualityFactor</a></strong>(java.lang.String&nbsp;q)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readQualityFactorParameter(com.sun.jersey.core.header.reader.HttpHeaderReader)">readQualityFactorParameter</a></strong>(<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html" title="class in com.sun.jersey.core.header.reader">HttpHeaderReader</a>&nbsp;reader)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/QualitySourceMediaType.html" title="class in com.sun.jersey.core.header">QualitySourceMediaType</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readQualitySourceMediaType(java.lang.String)">readQualitySourceMediaType</a></strong>(java.lang.String&nbsp;header)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/QualitySourceMediaType.html" title="class in com.sun.jersey.core.header">QualitySourceMediaType</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html#readQualitySourceMediaType(java.lang.String[])">readQualitySourceMediaType</a></strong>(java.lang.String[]&nbsp;header)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="HttpHeaderReader()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>HttpHeaderReader</h4>
+<pre>public&nbsp;HttpHeaderReader()</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="hasNext()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hasNext</h4>
+<pre>public abstract&nbsp;boolean&nbsp;hasNext()</pre>
+</li>
+</ul>
+<a name="hasNextSeparator(char, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>hasNextSeparator</h4>
+<pre>public abstract&nbsp;boolean&nbsp;hasNextSeparator(char&nbsp;separator,
+                       boolean&nbsp;skipWhiteSpace)</pre>
+</li>
+</ul>
+<a name="next()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>next</h4>
+<pre>public abstract&nbsp;<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.Event.html" title="enum in com.sun.jersey.core.header.reader">HttpHeaderReader.Event</a>&nbsp;next()
+                                     throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="next(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>next</h4>
+<pre>public abstract&nbsp;<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.Event.html" title="enum in com.sun.jersey.core.header.reader">HttpHeaderReader.Event</a>&nbsp;next(boolean&nbsp;skipWhiteSpace)
+                                     throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="next(boolean, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>next</h4>
+<pre>public abstract&nbsp;<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.Event.html" title="enum in com.sun.jersey.core.header.reader">HttpHeaderReader.Event</a>&nbsp;next(boolean&nbsp;skipWhiteSpace,
+                          boolean&nbsp;preserveBackslash)
+                                     throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="nextSeparatedString(char, char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nextSeparatedString</h4>
+<pre>public abstract&nbsp;java.lang.String&nbsp;nextSeparatedString(char&nbsp;startSeparator,
+                                   char&nbsp;endSeparator)
+                                              throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="getEvent()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEvent</h4>
+<pre>public abstract&nbsp;<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.Event.html" title="enum in com.sun.jersey.core.header.reader">HttpHeaderReader.Event</a>&nbsp;getEvent()</pre>
+</li>
+</ul>
+<a name="getEventValue()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEventValue</h4>
+<pre>public abstract&nbsp;java.lang.String&nbsp;getEventValue()</pre>
+</li>
+</ul>
+<a name="getRemainder()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRemainder</h4>
+<pre>public abstract&nbsp;java.lang.String&nbsp;getRemainder()</pre>
+</li>
+</ul>
+<a name="getIndex()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIndex</h4>
+<pre>public abstract&nbsp;int&nbsp;getIndex()</pre>
+</li>
+</ul>
+<a name="nextToken()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nextToken</h4>
+<pre>public&nbsp;java.lang.String&nbsp;nextToken()
+                           throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="nextSeparator()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nextSeparator</h4>
+<pre>public&nbsp;char&nbsp;nextSeparator()
+                   throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="nextSeparator(char)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nextSeparator</h4>
+<pre>public&nbsp;void&nbsp;nextSeparator(char&nbsp;c)
+                   throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="nextQuotedString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nextQuotedString</h4>
+<pre>public&nbsp;java.lang.String&nbsp;nextQuotedString()
+                                  throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="nextTokenOrQuotedString()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nextTokenOrQuotedString</h4>
+<pre>public&nbsp;java.lang.String&nbsp;nextTokenOrQuotedString()
+                                         throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="nextTokenOrQuotedString(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>nextTokenOrQuotedString</h4>
+<pre>public&nbsp;java.lang.String&nbsp;nextTokenOrQuotedString(boolean&nbsp;preserveBackslash)
+                                         throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="newInstance(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newInstance</h4>
+<pre>public static&nbsp;<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html" title="class in com.sun.jersey.core.header.reader">HttpHeaderReader</a>&nbsp;newInstance(java.lang.String&nbsp;header)</pre>
+</li>
+</ul>
+<a name="newInstance(java.lang.String, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>newInstance</h4>
+<pre>public static&nbsp;<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html" title="class in com.sun.jersey.core.header.reader">HttpHeaderReader</a>&nbsp;newInstance(java.lang.String&nbsp;header,
+                           boolean&nbsp;processComments)</pre>
+</li>
+</ul>
+<a name="readDate(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readDate</h4>
+<pre>public static&nbsp;java.util.Date&nbsp;readDate(java.lang.String&nbsp;date)
+                               throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readQualityFactor(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readQualityFactor</h4>
+<pre>public static&nbsp;int&nbsp;readQualityFactor(java.lang.String&nbsp;q)
+                             throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readQualityFactorParameter(com.sun.jersey.core.header.reader.HttpHeaderReader)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readQualityFactorParameter</h4>
+<pre>public static&nbsp;int&nbsp;readQualityFactorParameter(<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html" title="class in com.sun.jersey.core.header.reader">HttpHeaderReader</a>&nbsp;reader)
+                                      throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readParameters(com.sun.jersey.core.header.reader.HttpHeaderReader)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readParameters</h4>
+<pre>public static&nbsp;java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;readParameters(<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html" title="class in com.sun.jersey.core.header.reader">HttpHeaderReader</a>&nbsp;reader)
+                                                                       throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readParameters(com.sun.jersey.core.header.reader.HttpHeaderReader, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readParameters</h4>
+<pre>public static&nbsp;java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;readParameters(<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.html" title="class in com.sun.jersey.core.header.reader">HttpHeaderReader</a>&nbsp;reader,
+                                                              boolean&nbsp;fileNameFix)
+                                                                       throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readCookies(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readCookies</h4>
+<pre>public static&nbsp;java.util.Map&lt;java.lang.String,<a href="../../../../../../javax/ws/rs/core/Cookie.html" title="class in javax.ws.rs.core">Cookie</a>&gt;&nbsp;readCookies(java.lang.String&nbsp;header)</pre>
+</li>
+</ul>
+<a name="readCookie(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readCookie</h4>
+<pre>public static&nbsp;<a href="../../../../../../javax/ws/rs/core/Cookie.html" title="class in javax.ws.rs.core">Cookie</a>&nbsp;readCookie(java.lang.String&nbsp;header)</pre>
+</li>
+</ul>
+<a name="readNewCookie(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readNewCookie</h4>
+<pre>public static&nbsp;<a href="../../../../../../javax/ws/rs/core/NewCookie.html" title="class in javax.ws.rs.core">NewCookie</a>&nbsp;readNewCookie(java.lang.String&nbsp;header)</pre>
+</li>
+</ul>
+<a name="readMatchingEntityTag(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readMatchingEntityTag</h4>
+<pre>public static&nbsp;java.util.Set&lt;<a href="../../../../../../com/sun/jersey/core/header/MatchingEntityTag.html" title="class in com.sun.jersey.core.header">MatchingEntityTag</a>&gt;&nbsp;readMatchingEntityTag(java.lang.String&nbsp;header)
+                                                              throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readMediaTypes(java.util.List, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readMediaTypes</h4>
+<pre>public static&nbsp;java.util.List&lt;<a href="../../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&gt;&nbsp;readMediaTypes(java.util.List&lt;<a href="../../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&gt;&nbsp;l,
+                                       java.lang.String&nbsp;header)
+                                                throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readAcceptMediaType(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readAcceptMediaType</h4>
+<pre>public static&nbsp;java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/AcceptableMediaType.html" title="class in com.sun.jersey.core.header">AcceptableMediaType</a>&gt;&nbsp;readAcceptMediaType(java.lang.String&nbsp;header)
+                                                               throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readQualitySourceMediaType(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readQualitySourceMediaType</h4>
+<pre>public static&nbsp;java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/QualitySourceMediaType.html" title="class in com.sun.jersey.core.header">QualitySourceMediaType</a>&gt;&nbsp;readQualitySourceMediaType(java.lang.String&nbsp;header)
+                                                                         throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readQualitySourceMediaType(java.lang.String[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readQualitySourceMediaType</h4>
+<pre>public static&nbsp;java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/QualitySourceMediaType.html" title="class in com.sun.jersey.core.header">QualitySourceMediaType</a>&gt;&nbsp;readQualitySourceMediaType(java.lang.String[]&nbsp;header)
+                                                                         throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readAcceptMediaType(java.lang.String, java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readAcceptMediaType</h4>
+<pre>public static&nbsp;java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/AcceptableMediaType.html" title="class in com.sun.jersey.core.header">AcceptableMediaType</a>&gt;&nbsp;readAcceptMediaType(java.lang.String&nbsp;header,
+                                                      java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/QualitySourceMediaType.html" title="class in com.sun.jersey.core.header">QualitySourceMediaType</a>&gt;&nbsp;priorityMediaTypes)
+                                                               throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readAcceptToken(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readAcceptToken</h4>
+<pre>public static&nbsp;java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/AcceptableToken.html" title="class in com.sun.jersey.core.header">AcceptableToken</a>&gt;&nbsp;readAcceptToken(java.lang.String&nbsp;header)
+                                                       throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readAcceptLanguage(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readAcceptLanguage</h4>
+<pre>public static&nbsp;java.util.List&lt;<a href="../../../../../../com/sun/jersey/core/header/AcceptableLanguageTag.html" title="class in com.sun.jersey.core.header">AcceptableLanguageTag</a>&gt;&nbsp;readAcceptLanguage(java.lang.String&nbsp;header)
+                                                                throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readAcceptableList(com.sun.jersey.core.header.reader.HttpHeaderReader.ListElementCreator, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readAcceptableList</h4>
+<pre>public static&nbsp;&lt;T extends <a href="../../../../../../com/sun/jersey/core/header/QualityFactor.html" title="interface in com.sun.jersey.core.header">QualityFactor</a>&gt;&nbsp;java.util.List&lt;T&gt;&nbsp;readAcceptableList(<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.ListElementCreator.html" title="interface in com.sun.jersey.core.header.reader">HttpHeaderReader.ListElementCreator</a>&lt;T&gt;&nbsp;c,
+                                                             java.lang.String&nbsp;header)
+                                                                  throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readAcceptableList(java.util.Comparator, com.sun.jersey.core.header.reader.HttpHeaderReader.ListElementCreator, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readAcceptableList</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;java.util.List&lt;T&gt;&nbsp;readAcceptableList(java.util.Comparator&lt;T&gt;&nbsp;comparator,
+                                       <a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.ListElementCreator.html" title="interface in com.sun.jersey.core.header.reader">HttpHeaderReader.ListElementCreator</a>&lt;T&gt;&nbsp;c,
+                                       java.lang.String&nbsp;header)
+                                            throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readList(com.sun.jersey.core.header.reader.HttpHeaderReader.ListElementCreator, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>readList</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;java.util.List&lt;T&gt;&nbsp;readList(<a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.ListElementCreator.html" title="interface in com.sun.jersey.core.header.reader">HttpHeaderReader.ListElementCreator</a>&lt;T&gt;&nbsp;c,
+                             java.lang.String&nbsp;header)
+                                  throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+<a name="readList(java.util.List, com.sun.jersey.core.header.reader.HttpHeaderReader.ListElementCreator, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>readList</h4>
+<pre>public static&nbsp;&lt;T&gt;&nbsp;java.util.List&lt;T&gt;&nbsp;readList(java.util.List&lt;T&gt;&nbsp;l,
+                             <a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.ListElementCreator.html" title="interface in com.sun.jersey.core.header.reader">HttpHeaderReader.ListElementCreator</a>&lt;T&gt;&nbsp;c,
+                             java.lang.String&nbsp;header)
+                                  throws java.text.ParseException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.text.ParseException</code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/HttpHeaderReader.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../com/sun/jersey/core/header/reader/HttpHeaderReader.Event.html" title="enum in com.sun.jersey.core.header.reader"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?com/sun/jersey/core/header/reader/HttpHeaderReader.html" target="_top">Frames</a></li>
+<li><a href="HttpHeaderReader.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

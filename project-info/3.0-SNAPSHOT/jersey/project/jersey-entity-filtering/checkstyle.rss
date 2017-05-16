@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>jersey-ext-entity-filtering - Checkstyle report</title>
+    <link>https://jersey.java.net/project/jersey-entity-filtering/</link>
+    <description>jersey-ext-entity-filtering - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2016 Oracle Corporation</copyright>
+    <item>
+      <title>File: 43,
+             Errors: 67,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityGraphImpl.java">org/glassfish/jersey/message/filtering/EntityGraphImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityInspector.java">org/glassfish/jersey/message/filtering/spi/EntityInspector.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.ObjectGraphProvider.java">org/glassfish/jersey/message/filtering/ObjectGraphProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityAnnotations.java">org/glassfish/jersey/message/filtering/SecurityAnnotations.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.CommonScopeProvider.java">org/glassfish/jersey/message/filtering/CommonScopeProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityGraphProvider.java">org/glassfish/jersey/message/filtering/spi/EntityGraphProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityEntityProcessor.java">org/glassfish/jersey/message/filtering/SecurityEntityProcessor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityInspectorImpl.java">org/glassfish/jersey/message/filtering/EntityInspectorImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ObjectGraph.java">org/glassfish/jersey/message/filtering/spi/ObjectGraph.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.DefaultEntityProcessor.java">org/glassfish/jersey/message/filtering/DefaultEntityProcessor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringProcessor.java">org/glassfish/jersey/message/filtering/EntityFilteringProcessor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityHelper.java">org/glassfish/jersey/message/filtering/SecurityHelper.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityServerScopeProvider.java">org/glassfish/jersey/message/filtering/SecurityServerScopeProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityScopeResolver.java">org/glassfish/jersey/message/filtering/SecurityScopeResolver.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EmptyEntityGraphImpl.java">org/glassfish/jersey/message/filtering/EmptyEntityGraphImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ObjectGraphTransformer.java">org/glassfish/jersey/message/filtering/spi/ObjectGraphTransformer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SelectableScopeResolver.java">org/glassfish/jersey/message/filtering/SelectableScopeResolver.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringScopeResolver.java">org/glassfish/jersey/message/filtering/EntityFilteringScopeResolver.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.AbstractObjectProvider.java">org/glassfish/jersey/message/filtering/spi/AbstractObjectProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SelectableEntityFilteringFeature.java">org/glassfish/jersey/message/filtering/SelectableEntityFilteringFeature.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityServerScopeResolver.java">org/glassfish/jersey/message/filtering/SecurityServerScopeResolver.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EmptyObjectGraph.java">org/glassfish/jersey/message/filtering/EmptyObjectGraph.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.internal.localization.properties">org/glassfish/jersey/message/filtering/internal/localization.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityProcessorContextImpl.java">org/glassfish/jersey/message/filtering/EntityProcessorContextImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityEntityFilteringFeature.java">org/glassfish/jersey/message/filtering/SecurityEntityFilteringFeature.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFiltering.java">org/glassfish/jersey/message/filtering/EntityFiltering.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringHelper.java">org/glassfish/jersey/message/filtering/EntityFilteringHelper.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.ObjectGraphImpl.java">org/glassfish/jersey/message/filtering/ObjectGraphImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringBinder.java">org/glassfish/jersey/message/filtering/EntityFilteringBinder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringFeature.java">org/glassfish/jersey/message/filtering/EntityFilteringFeature.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.ServerScopeProvider.java">org/glassfish/jersey/message/filtering/ServerScopeProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.package-info.java">org/glassfish/jersey/message/filtering/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ScopeProvider.java">org/glassfish/jersey/message/filtering/spi/ScopeProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityProcessor.java">org/glassfish/jersey/message/filtering/spi/EntityProcessor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ScopeResolver.java">org/glassfish/jersey/message/filtering/spi/ScopeResolver.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityGraphProviderImpl.java">org/glassfish/jersey/message/filtering/EntityGraphProviderImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.FilteringHelper.java">org/glassfish/jersey/message/filtering/spi/FilteringHelper.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.AbstractEntityProcessor.java">org/glassfish/jersey/message/filtering/spi/AbstractEntityProcessor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityProcessorContext.java">org/glassfish/jersey/message/filtering/spi/EntityProcessorContext.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityGraph.java">org/glassfish/jersey/message/filtering/spi/EntityGraph.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.package-info.java">org/glassfish/jersey/message/filtering/spi/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ObjectProvider.java">org/glassfish/jersey/message/filtering/spi/ObjectProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SelectableEntityProcessor.java">org/glassfish/jersey/message/filtering/SelectableEntityProcessor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

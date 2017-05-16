@@ -1,0 +1,138 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="google-site-verification" content="OiKukTHVW4bdQqx8Fq0zA2EZ_hI6-yYL-MvkCxBxaFs" />
+    <title>Release Notes - Jersey 2.11</title>
+</head>
+
+<body>
+
+<h1>Release Notes - <a href="/">Jersey</a> 2.11</h1>
+
+Release date: <strong>23-Jul-2014</strong>
+
+<h2>Highlights</h2>
+<h3>Promoted Public Beta APIs</h3>
+<p>Several experimental Jersey APIs have matured enough and as such we have decided to promote them from 
+<a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/Beta.html" target="_top">Beta</a> status, namely: </p>
+<div class="itemizedlist">
+	<ul class="itemizedlist" style="list-style-type: disc; ">
+		<li class="listitem"><p>Jersey client-side <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/client/spi/ConnectorProvider.html" target="_top">ConnectorProvider</a> SPI.</p></li>
+		<li class="listitem"><p>Jersey server-side <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/spi/ResponseErrorMapper.html" target="_top">ResponseErrorMapper</a> SPI.</p></li>
+	</ul>
+</div>
+<p>These APIs are now part of the official public Jersey 2.x API.</p>
+
+<h3>Not closing provided streams in message body providers</h3>
+<p>Jersey is now preventing message body providers (MBR, MBW) from closing given input/output stream. With this change Jersey is enforcing the JavaDoc statements present in message body providers.</p>
+
+<h3>Jackson 1</h3>
+<p>
+We have reintroduced support for JSON processing via Jackson 1.x JSON provider (1.9.11). In order to use Jackson 1 in your application you need to add <code class="literal">jersey-media-json-jackson1</code>  
+module (+ its dependencies) to your class-path and register <code class="literal">Jackson1Feature</code> in your application (server or client).
+</p>
+<h3>ClientLifecycleListener</h3>
+<p>
+Client-side providers (such as<code class="literal">ClientRequestFilter</code>s) implementing the new <code class="literal">org.glassfish.jersey.client.ClientLifecycleListener</code> interface will be notified when
+various lifecycle events occur. Currently client runtime initialization triggers the <code class="literal">onInit()</code> method and client closing triggers <code class="literal">onClose()</code> method.
+Such providers implementing the <code class="literal">ClientLifecycleListener</code> can be registered in a common way, e.g. into a <code class="literal">JerseyClient</code> or <code class="literal">JerseyWebTarget</code> 
+instance, or into a (potentially) auto discoverable feature context.
+</p>
+
+<h2>        Pull Requests
+</h2>
+<ul>
+<li>[<a href='https://github.com/jersey/jersey/pull/91'>Pull 91</a>] -        	Integrate Grizzly 2.3.16 
+</li>
+<li>[<a href='https://github.com/jersey/jersey/pull/90'>Pull 90</a>] -		Make the method really search for the @Path annotation in the ancestor hierarchy         
+</li>
+<li>[<a href='https://github.com/jersey/jersey/pull/89'>Pull 89</a>] -          Fix and test for JERSEY-2556
+</li>
+<li>[<a href='https://github.com/jersey/jersey/pull/87'>Pull 87</a>] -          Integrate Grizzly 2.3.14 and grizzly-http-client 1.8
+</li>
+<li>[<a href='https://github.com/jersey/jersey/pull/84'>Pull 84</a>] -          JERSEY-2495 and JERSEY-2059
+</li>
+<li>[<a href='https://github.com/jersey/jersey/pull/78'>Pull 78</a>] -         	Fixed some documentation errors
+</li>
+<li>[<a href='https://github.com/jersey/jersey/pull/77'>Pull 77</a>] -         	JERSEY-2471 Fix some javac type cast warnings
+</li>
+
+</ul>
+<h2>        Bug
+</h2>
+<ul>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2059'>JERSEY-2059</a>] -         Spring Integration @Service, @Controller and @Repository support yields incorrect behavior
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2421'>JERSEY-2421</a>] -         MultiPartFeature requires jersey-server to be on the class-path
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2495'>JERSEY-2495</a>] -         jersey-spring3 fails to recognize Spring components with @Controller
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2497'>JERSEY-2497</a>] -         No source injected for custom type in FormDataParam
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2533'>JERSEY-2533</a>] -         Jersey 2.8 and JSONP with missing closing parenthese for JsonStructure
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2548'>JERSEY-2548</a>] -         Authorization failed when url contains query
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2549'>JERSEY-2549</a>] -         Singleton scoped Factory.dispose is not called
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2553'>JERSEY-2553</a>] -         Jersey 2 does not accept java.util.Date as query param
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2556'>JERSEY-2556</a>] -         JerseyUriBuilder.path should ignore synthetic methods
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2557'>JERSEY-2557</a>] -         [FishCat] Documentation error in Jersey
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2560'>JERSEY-2560</a>] -         NullPointerException on IOException in FormDataParamValueFactoryProvider
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2562'>JERSEY-2562</a>] -         Invocation.Builder#header(name, null) violates specification
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2564'>JERSEY-2564</a>] -         Multiple media types produced from one method precedence is not honored
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2571'>JERSEY-2571</a>] -         StringValueReader class bundled with latest jersey-common library
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2574'>JERSEY-2574</a>] -         @PreDestroy method is not invoked on Providers
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2577'>JERSEY-2577</a>] -         Jersey client EncodingFilter should not set Content-Encoding header in GET requests
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2579'>JERSEY-2579</a>] -         CDI transactional interceptor does not support passivation scope
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2581'>JERSEY-2581</a>] -         Injection into Feature does not work 
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2584'>JERSEY-2584</a>] -         Proxy-based client example uses non-existent method
+</li>
+</ul>
+        
+<h2>        Improvement
+</h2>
+<ul>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2471'>JERSEY-2471</a>] -         Eliminate some javac type cast warnings
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2551'>JERSEY-2551</a>] -         Injections#generator field is hard coded to ServiceLocatorGeneratorImpl
+</li>
+</ul>
+                    
+
+<h2>Previous releases</h2>
+
+<ul>
+    <li><a href="2.10.1.html">Jersey 2.10.1 Release Notes</a></li>
+    <li><a href="2.10.html">Jersey 2.10 Release Notes</a></li>
+    <li><a href="2.9.1.html">Jersey 2.9.1 Release Notes</a></li>
+    <li><a href="2.9.html">Jersey 2.9 Release Notes</a></li>
+    <li><a href="2.8.html">Jersey 2.8 Release Notes</a></li>
+    <li><a href="2.7.html">Jersey 2.7 Release Notes</a></li>
+    <li><a href="2.6.html">Jersey 2.6 Release Notes</a></li>
+    <li><a href="2.5.1.html">Jersey 2.5.1 Release Notes</a></li>
+    <li><a href="2.5.html">Jersey 2.5 Release Notes</a></li>
+    <li><a href="2.4.1.html">Jersey 2.4.1 Release Notes</a></li>
+    <li><a href="2.4.html">Jersey 2.4 Release Notes</a></li>
+    <li><a href="2.3.1.html">Jersey 2.3.1 Release Notes</a></li>
+    <li><a href="2.3.html">Jersey 2.3 Release Notes</a></li>
+    <li><a href="2.2.html">Jersey 2.2 Release Notes</a></li>
+    <li><a href="2.1.html">Jersey 2.1 Release Notes</a></li>
+    <li><a href="2.0.html">Jersey 2.0 Release Notes</a></li>
+</ul>
+
+</body>
+</html>

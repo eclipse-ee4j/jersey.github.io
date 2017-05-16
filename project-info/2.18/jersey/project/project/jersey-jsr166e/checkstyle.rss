@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>jersey-repackaged-jsr166e - Checkstyle report</title>
+    <link>https://jersey.java.net/project/project/jersey-jsr166e/</link>
+    <description>jersey-repackaged-jsr166e - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
+    <item>
+      <title>File: 21,
+             Errors: 0,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.CountedCompleter.java">jersey/repackaged/jsr166e/CountedCompleter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.DoubleMaxUpdater.java">jersey/repackaged/jsr166e/DoubleMaxUpdater.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.ForkJoinTask.java">jersey/repackaged/jsr166e/ForkJoinTask.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.extra.SequenceLock.java">jersey/repackaged/jsr166e/extra/SequenceLock.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.RecursiveTask.java">jersey/repackaged/jsr166e/RecursiveTask.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.StampedLock.java">jersey/repackaged/jsr166e/StampedLock.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.ForkJoinWorkerThread.java">jersey/repackaged/jsr166e/ForkJoinWorkerThread.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.ThreadLocalRandom.java">jersey/repackaged/jsr166e/ThreadLocalRandom.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.extra.AtomicDouble.java">jersey/repackaged/jsr166e/extra/AtomicDouble.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.ForkJoinPool.java">jersey/repackaged/jsr166e/ForkJoinPool.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.LongMaxUpdater.java">jersey/repackaged/jsr166e/LongMaxUpdater.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.extra.ReadMostlyVector.java">jersey/repackaged/jsr166e/extra/ReadMostlyVector.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.Striped64.java">jersey/repackaged/jsr166e/Striped64.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.ConcurrentHashMapV8.java">jersey/repackaged/jsr166e/ConcurrentHashMapV8.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.extra.AtomicDoubleArray.java">jersey/repackaged/jsr166e/extra/AtomicDoubleArray.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.CompletionException.java">jersey/repackaged/jsr166e/CompletionException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.RecursiveAction.java">jersey/repackaged/jsr166e/RecursiveAction.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.DoubleAdder.java">jersey/repackaged/jsr166e/DoubleAdder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.CompletableFuture.java">jersey/repackaged/jsr166e/CompletableFuture.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.LongAdderTable.java">jersey/repackaged/jsr166e/LongAdderTable.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/jersey-jsr166e//checkstyle.html#jersey.repackaged.jsr166e.LongAdder.java">jersey/repackaged/jsr166e/LongAdder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+
