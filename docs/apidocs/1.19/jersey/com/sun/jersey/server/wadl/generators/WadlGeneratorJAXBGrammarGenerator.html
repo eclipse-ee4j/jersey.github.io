@@ -1,0 +1,396 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+WadlGeneratorJAXBGrammarGenerator (jersey-bundle 1.19 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="WadlGeneratorJAXBGrammarGenerator (jersey-bundle 1.19 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/WadlGeneratorJAXBGrammarGenerator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/sun/jersey/server/wadl/generators/WadlGeneratorGrammarsSupport.html" title="class in com.sun.jersey.server.wadl.generators"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/sun/jersey/server/wadl/generators/WadlGeneratorJAXBGrammarGenerator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="WadlGeneratorJAXBGrammarGenerator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.sun.jersey.server.wadl.generators</FONT>
+<BR>
+Class WadlGeneratorJAXBGrammarGenerator</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html" title="class in com.sun.jersey.server.wadl.generators">com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator</A>&lt;javax.xml.namespace.QName&gt;
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.sun.jersey.server.wadl.generators.WadlGeneratorJAXBGrammarGenerator</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>WadlGeneratorJAXBGrammarGenerator</B><DT>extends <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html" title="class in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator</A>&lt;javax.xml.namespace.QName&gt;</DL>
+</PRE>
+
+<P>
+This <A HREF="../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl"><CODE>WadlGenerator</CODE></A> generates a XML Schema content model based on
+ referenced java beans.
+ </p>
+ Created on: Jun 22, 2011<br>
+<P>
+
+<P>
+<DL>
+<DT><B>Version:</B></DT>
+  <DD>$Id: WadlGeneratorJAXBGrammarGenerator.java $</DD>
+<DT><B>Author:</B></DT>
+  <DD>Gerard Davison</DD>
+</DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class com.sun.jersey.server.wadl.generators.<A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html" title="class in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.HasType.html" title="interface in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator.HasType</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.Pair.html" title="class in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator.Pair</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.WantsName.html" title="interface in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator.WantsName</A>&lt;<A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.WantsName.html" title="type parameter in AbstractWadlGeneratorGrammarGenerator.WantsName">T</A>&gt;</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<A NAME="nested_classes_inherited_from_class_com.sun.jersey.server.wadl.WadlGenerator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from interface com.sun.jersey.server.wadl.<A HREF="../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/sun/jersey/server/wadl/WadlGenerator.Environment.html" title="class in com.sun.jersey.server.wadl">WadlGenerator.Environment</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/WadlGenerator.ExternalGrammarDefinition.html" title="class in com.sun.jersey.server.wadl">WadlGenerator.ExternalGrammarDefinition</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/WadlGenerator.Resolver.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator.Resolver</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class com.sun.jersey.server.wadl.generators.<A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html" title="class in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#_fap">_fap</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#_hasTypeWantsName">_hasTypeWantsName</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#_providers">_providers</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#_resolvedType">_resolvedType</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#_root">_root</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#_seeAlso">_seeAlso</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#_wadl">_wadl</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#SPECIAL_GENERIC_TYPES">SPECIAL_GENERIC_TYPES</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/WadlGeneratorJAXBGrammarGenerator.html#WadlGeneratorJAXBGrammarGenerator()">WadlGeneratorJAXBGrammarGenerator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/WadlGeneratorJAXBGrammarGenerator.html#acceptMediaType(javax.ws.rs.core.MediaType)">acceptMediaType</A></B>(<A HREF="../../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/sun/jersey/server/wadl/WadlGenerator.Resolver.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator.Resolver</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/WadlGeneratorJAXBGrammarGenerator.html#buildModelAndSchemas(java.util.Map)">buildModelAndSchemas</A></B>(java.util.Map&lt;java.lang.String,<A HREF="../../../../../../com/sun/jersey/server/wadl/ApplicationDescription.ExternalGrammar.html" title="class in com.sun.jersey.server.wadl">ApplicationDescription.ExternalGrammar</A>&gt;&nbsp;extraFiles)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Build the JAXB model and generate the schemas based on tha data</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.WantsName.html" title="interface in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator.WantsName</A>&lt;javax.xml.namespace.QName&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/WadlGeneratorJAXBGrammarGenerator.html#createParmWantsName(com.sun.research.ws.wadl.Param)">createParmWantsName</A></B>(com.sun.research.ws.wadl.Param&nbsp;param)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.WantsName.html" title="interface in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator.WantsName</A>&lt;javax.xml.namespace.QName&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/WadlGeneratorJAXBGrammarGenerator.html#createRepresentationWantsName(com.sun.research.ws.wadl.Representation)">createRepresentationWantsName</A></B>(com.sun.research.ws.wadl.Representation&nbsp;rt)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class com.sun.jersey.server.wadl.generators.<A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html" title="class in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#attachTypes(com.sun.jersey.server.wadl.ApplicationDescription)">attachTypes</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#createApplication(javax.ws.rs.core.UriInfo)">createApplication</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#createExternalGrammar()">createExternalGrammar</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#createMethod(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractResourceMethod)">createMethod</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#createParam(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractMethod, com.sun.jersey.api.model.Parameter)">createParam</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#createRequest(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractResourceMethod)">createRequest</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#createRequestRepresentation(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractResourceMethod, javax.ws.rs.core.MediaType)">createRequestRepresentation</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#createResource(com.sun.jersey.api.model.AbstractResource, java.lang.String)">createResource</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#createResources()">createResources</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#createResponses(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractResourceMethod)">createResponses</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#getRequiredJaxbContextPath()">getRequiredJaxbContextPath</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#init()">init</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#parameter(com.sun.jersey.api.model.Parameter, javax.ws.rs.core.MediaType)">parameter</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#setEnvironment(com.sun.jersey.server.wadl.WadlGenerator.Environment)">setEnvironment</A>, <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#setWadlGeneratorDelegate(com.sun.jersey.server.wadl.WadlGenerator)">setWadlGeneratorDelegate</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="WadlGeneratorJAXBGrammarGenerator()"><!-- --></A><H3>
+WadlGeneratorJAXBGrammarGenerator</H3>
+<PRE>
+public <B>WadlGeneratorJAXBGrammarGenerator</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="acceptMediaType(javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+acceptMediaType</H3>
+<PRE>
+public boolean <B>acceptMediaType</B>(<A HREF="../../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</A>&nbsp;type)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#acceptMediaType(javax.ws.rs.core.MediaType)">acceptMediaType</A></CODE> in class <CODE><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html" title="class in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator</A>&lt;javax.xml.namespace.QName&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if the media type appears to be a XML type</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildModelAndSchemas(java.util.Map)"><!-- --></A><H3>
+buildModelAndSchemas</H3>
+<PRE>
+protected <A HREF="../../../../../../com/sun/jersey/server/wadl/WadlGenerator.Resolver.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator.Resolver</A> <B>buildModelAndSchemas</B>(java.util.Map&lt;java.lang.String,<A HREF="../../../../../../com/sun/jersey/server/wadl/ApplicationDescription.ExternalGrammar.html" title="class in com.sun.jersey.server.wadl">ApplicationDescription.ExternalGrammar</A>&gt;&nbsp;extraFiles)</PRE>
+<DL>
+<DD>Build the JAXB model and generate the schemas based on tha data
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#buildModelAndSchemas(java.util.Map)">buildModelAndSchemas</A></CODE> in class <CODE><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html" title="class in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator</A>&lt;javax.xml.namespace.QName&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>extraFiles</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createParmWantsName(com.sun.research.ws.wadl.Param)"><!-- --></A><H3>
+createParmWantsName</H3>
+<PRE>
+protected <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.WantsName.html" title="interface in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator.WantsName</A>&lt;javax.xml.namespace.QName&gt; <B>createParmWantsName</B>(com.sun.research.ws.wadl.Param&nbsp;param)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#createParmWantsName(com.sun.research.ws.wadl.Param)">createParmWantsName</A></CODE> in class <CODE><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html" title="class in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator</A>&lt;javax.xml.namespace.QName&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRepresentationWantsName(com.sun.research.ws.wadl.Representation)"><!-- --></A><H3>
+createRepresentationWantsName</H3>
+<PRE>
+protected <A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.WantsName.html" title="interface in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator.WantsName</A>&lt;javax.xml.namespace.QName&gt; <B>createRepresentationWantsName</B>(com.sun.research.ws.wadl.Representation&nbsp;rt)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html#createRepresentationWantsName(com.sun.research.ws.wadl.Representation)">createRepresentationWantsName</A></CODE> in class <CODE><A HREF="../../../../../../com/sun/jersey/server/wadl/generators/AbstractWadlGeneratorGrammarGenerator.html" title="class in com.sun.jersey.server.wadl.generators">AbstractWadlGeneratorGrammarGenerator</A>&lt;javax.xml.namespace.QName&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/WadlGeneratorJAXBGrammarGenerator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../com/sun/jersey/server/wadl/generators/WadlGeneratorGrammarsSupport.html" title="class in com.sun.jersey.server.wadl.generators"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?com/sun/jersey/server/wadl/generators/WadlGeneratorJAXBGrammarGenerator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="WadlGeneratorJAXBGrammarGenerator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_com.sun.jersey.server.wadl.generators.AbstractWadlGeneratorGrammarGenerator">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2015 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.
+</BODY>
+</HTML>

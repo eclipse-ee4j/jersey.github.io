@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>jersey-core-client - Checkstyle report</title>
+    <link>https://jersey.java.net/jersey-client/</link>
+    <description>jersey-core-client - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
+    <item>
+      <title>File: 31,
+             Errors: 663,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://jersey.java.net/jersey-client//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://jersey.java.net/jersey-client//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.HttpBasicAuthFilter.java">org/glassfish/jersey/client/filter/HttpBasicAuthFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ChunkedInputReader.java">org/glassfish/jersey/client/ChunkedInputReader.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientBinder.java">org/glassfish/jersey/client/ClientBinder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ScopedJaxrsResponse.java">org/glassfish/jersey/client/ScopedJaxrsResponse.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.JerseyClientBuilder.java">org/glassfish/jersey/client/JerseyClientBuilder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  41
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.EncodingFeature.java">org/glassfish/jersey/client/filter/EncodingFeature.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientResponse.java">org/glassfish/jersey/client/ClientResponse.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.package-info.java">org/glassfish/jersey/client/filter/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.HttpUrlConnector.java">org/glassfish/jersey/client/HttpUrlConnector.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.HttpDigestAuthFilter.java">org/glassfish/jersey/client/filter/HttpDigestAuthFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  41
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.JerseyWebTarget.java">org/glassfish/jersey/client/JerseyWebTarget.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  80
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.JerseyClient.java">org/glassfish/jersey/client/JerseyClient.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  46
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.JerseyInvocation.java">org/glassfish/jersey/client/JerseyInvocation.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  172
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.package-info.java">org/glassfish/jersey/client/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientRequest.java">org/glassfish/jersey/client/ClientRequest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  67
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.AbortException.java">org/glassfish/jersey/client/AbortException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ResponseCallback.java">org/glassfish/jersey/client/ResponseCallback.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientFilteringStages.java">org/glassfish/jersey/client/ClientFilteringStages.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ChunkParser.java">org/glassfish/jersey/client/ChunkParser.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.EncodingFilter.java">org/glassfish/jersey/client/filter/EncodingFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientRuntime.java">org/glassfish/jersey/client/ClientRuntime.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientAsyncExecutorsFactory.java">org/glassfish/jersey/client/ClientAsyncExecutorsFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.spi.Connector.java">org/glassfish/jersey/client/spi/Connector.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientConfig.java">org/glassfish/jersey/client/ClientConfig.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  78
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.InboundJaxrsResponse.java">org/glassfish/jersey/client/InboundJaxrsResponse.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.CsrfProtectionFilter.java">org/glassfish/jersey/client/filter/CsrfProtectionFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.CustomProvidersFeature.java">org/glassfish/jersey/client/CustomProvidersFeature.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.RequestProcessingInitializationStage.java">org/glassfish/jersey/client/RequestProcessingInitializationStage.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.spi.AsyncConnectorCallback.java">org/glassfish/jersey/client/spi/AsyncConnectorCallback.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientProperties.java">org/glassfish/jersey/client/ClientProperties.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ChunkedInput.java">org/glassfish/jersey/client/ChunkedInput.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  23
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

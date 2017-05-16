@@ -1,0 +1,243 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ContainerProvider (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ContainerProvider (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ContainerProvider.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/spi/container/ContainerNotifier.html" title="interface in com.sun.jersey.spi.container"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/spi/container/ContainerRequest.html" title="class in com.sun.jersey.spi.container"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/spi/container/ContainerProvider.html" target="_top">Frames</a></li>
+<li><a href="ContainerProvider.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.spi.container</div>
+<h2 title="Interface ContainerProvider" class="title">Interface ContainerProvider&lt;T&gt;</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl><dt><span class="strong">Type Parameters:</span></dt><dd><code>T</code> - the type of the container.</dd></dl>
+<hr>
+<br>
+<pre>public interface <span class="strong">ContainerProvider&lt;T&gt;</span></pre>
+<div class="block">Service-provider interface for creating container instances.
+ <p>
+ A container instance will be created according to the 
+ the supporting generic type of the container.
+ <p>
+ A provider shall support a one-to-one mapping between a type that is not of 
+ the type Object. A provider may support 
+ more than one one-to-one mapping or a mapping of sub-types of a type
+ (that is not of the type Object). A provider shall not conflict with other
+ providers.
+ <p>
+ An implementation (a service-provider) identifies itself by placing a 
+ provider-configuration file (if not already present), 
+ "com.sun.jersey.spi.container.ContainerProvider" in the 
+ resource directory <tt>META-INF/services</tt>, and including the fully qualified
+ service-provider-class of the implementation in the file.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Paul.Sandoz@Sun.Com</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../com/sun/jersey/spi/container/ContainerProvider.html" title="type parameter in ContainerProvider">T</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/ContainerProvider.html#createContainer(java.lang.Class,%20com.sun.jersey.api.core.ResourceConfig,%20com.sun.jersey.spi.container.WebApplication)">createContainer</a></strong>(java.lang.Class&lt;<a href="../../../../../com/sun/jersey/spi/container/ContainerProvider.html" title="type parameter in ContainerProvider">T</a>&gt;&nbsp;type,
+               <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html" title="class in com.sun.jersey.api.core">ResourceConfig</a>&nbsp;resourceConfig,
+               <a href="../../../../../com/sun/jersey/spi/container/WebApplication.html" title="interface in com.sun.jersey.spi.container">WebApplication</a>&nbsp;application)</code>
+<div class="block">Create an container of type T.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="createContainer(java.lang.Class, com.sun.jersey.api.core.ResourceConfig, com.sun.jersey.spi.container.WebApplication)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>createContainer</h4>
+<pre><a href="../../../../../com/sun/jersey/spi/container/ContainerProvider.html" title="type parameter in ContainerProvider">T</a>&nbsp;createContainer(java.lang.Class&lt;<a href="../../../../../com/sun/jersey/spi/container/ContainerProvider.html" title="type parameter in ContainerProvider">T</a>&gt;&nbsp;type,
+                <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html" title="class in com.sun.jersey.api.core">ResourceConfig</a>&nbsp;resourceConfig,
+                <a href="../../../../../com/sun/jersey/spi/container/WebApplication.html" title="interface in com.sun.jersey.spi.container">WebApplication</a>&nbsp;application)
+                  throws <a href="../../../../../com/sun/jersey/api/container/ContainerException.html" title="class in com.sun.jersey.api.container">ContainerException</a></pre>
+<div class="block">Create an container of type T.
+ <p>
+ The container provider SHOULD NOT initiate the Web application. The container
+ provider MAY modify the resource configuraton.
+ <p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>type</code> - the type of the container.</dd><dd><code>resourceConfig</code> - the resource configuration.</dd><dd><code>application</code> - the Web application the container delegates to for 
+         the handling of HTTP requests.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the container, otherwise null if the provider does not support
+         the requested <code>type</code>.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/container/ContainerException.html" title="class in com.sun.jersey.api.container">ContainerException</a></code> - if there is an error creating the container.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ContainerProvider.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/spi/container/ContainerNotifier.html" title="interface in com.sun.jersey.spi.container"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/spi/container/ContainerRequest.html" title="class in com.sun.jersey.spi.container"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/spi/container/ContainerProvider.html" target="_top">Frames</a></li>
+<li><a href="ContainerProvider.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

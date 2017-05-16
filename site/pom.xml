@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+    DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+
+    Copyright (c) 2013-2015 Oracle and/or its affiliates. All rights reserved.
+
+    The contents of this file are subject to the terms of either the GNU
+    General Public License Version 2 only ("GPL") or the Common Development
+    and Distribution License("CDDL") (collectively, the "License").  You
+    may not use this file except in compliance with the License.  You can
+    obtain a copy of the License at
+    http://glassfish.java.net/public/CDDL+GPL_1_1.html
+    or packager/legal/LICENSE.txt.  See the License for the specific
+    language governing permissions and limitations under the License.
+
+    When distributing the software, include this License Header Notice in each
+    file and include the License file at packager/legal/LICENSE.txt.
+
+    GPL Classpath Exception:
+    Oracle designates this particular file as subject to the "Classpath"
+    exception as provided by Oracle in the GPL Version 2 section of the License
+    file that accompanied this code.
+
+    Modifications:
+    If applicable, add the following below the License Header, with the fields
+    enclosed by brackets [] replaced by your own identifying information:
+    "Portions Copyright [year] [name of copyright owner]"
+
+    Contributor(s):
+    If you wish your version of this file to be governed by only the CDDL or
+    only the GPL Version 2, indicate your decision by adding "[Contributor]
+    elects to include this software in this distribution under the [CDDL or GPL
+    Version 2] license."  If you don't indicate a single choice of license, a
+    recipient has the option to distribute your version of this file under
+    either the CDDL, the GPL Version 2 or to extend the choice of license to
+    its licensees as provided above.  However, if you add GPL Version 2 code
+    and therefore, elected the GPL Version 2 license, then the option applies
+    only if the new code is made subject to such option by the copyright
+    holder.
+
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.glassfish.jersey</groupId>
+    <version>2.25.1</version>
+    <artifactId>site</artifactId>
+    <packaging>pom</packaging>
+
+    <description>
+        Jersey is the open source (under dual CDDL+GPL license) JAX-RS 2.0 (JSR 339)
+        production quality Reference Implementation for building RESTful Web services.
+    </description>
+
+    <url>https://jersey.java.net/</url>
+
+    <!-- prerequisites -->
+
+    <issueManagement>
+        <system>JIRA</system>
+        <url>http://java.net/jira/browse/JERSEY/</url>
+    </issueManagement>
+
+    <ciManagement>
+        <system>Hudson</system>
+        <url>http://hudson.glassfish.org/job/Jersey-trunk-multiplatform/</url>
+    </ciManagement>
+
+    <inceptionYear>2010</inceptionYear>
+
+    <mailingLists>
+        <mailingList>
+            <name>Announcements</name>
+            <archive>http://java.net/projects/jersey/lists/announce/archive</archive>
+            <post>announce@jersey.java.net</post>
+        </mailingList>
+        <mailingList>
+            <name>Users List</name>
+            <archive>http://java.net/projects/jersey/lists/users/archive</archive>
+            <post>users@jersey.java.net</post>
+        </mailingList>
+        <mailingList>
+            <name>Developers List</name>
+            <archive>http://java.net/projects/jersey/lists/dev/archive</archive>
+            <post>dev@jersey.java.net</post>
+        </mailingList>
+        <mailingList>
+            <name>Issues</name>
+            <archive>http://java.net/projects/jersey/lists/issues/archive</archive>
+            <post>issues@jersey.java.net</post>
+        </mailingList>
+        <mailingList>
+            <name>Commits</name>
+            <archive>http://java.net/projects/jersey/lists/commits/archive</archive>
+            <post>commits@jersey.java.net</post>
+        </mailingList>
+    </mailingLists>
+
+    <developers>
+        <developer>
+            <name>Pavel Bucek</name>
+            <url>http://blogs.oracle.com/PavelBucek/</url>
+            <organization>Oracle Corporation</organization>
+            <organizationUrl>http://www.oracle.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Stepan Vavra</name>
+            <organization>Oracle Corporation</organization>
+            <organizationUrl>http://www.oracle.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Petr Janouch</name>
+            <organization>Oracle Corporation</organization>
+            <organizationUrl>http://www.oracle.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Libor Kramolis</name>
+            <url>http://yatel.kramolis.cz/</url>
+            <organization>Oracle Corporation</organization>
+            <organizationUrl>http://www.oracle.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Adam Lindenthal</name>
+            <organization>Oracle Corporation</organization>
+            <organizationUrl>http://www.oracle.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Petr Bouda</name>
+            <organization>Oracle Corporation</organization>
+            <organizationUrl>http://www.oracle.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Marek Potociar</name>
+            <url>http://marek.potociar.net/</url>
+            <organization>Oracle Corporation</organization>
+            <organizationUrl>http://www.oracle.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Martin Mares</name>
+            <organization>Oracle Corporation</organization>
+            <organizationUrl>http://www.oracle.com/</organizationUrl>
+        </developer>
+        <developer>
+            <name>Ondrej Kosatka</name>
+            <organization>Oracle Corporation</organization>
+            <organizationUrl>http://www.oracle.com/</organizationUrl>
+        </developer>
+    </developers>
+
+    <contributors>
+        <contributor>
+            <name>Santiago Pericas-Geertsen</name>
+        </contributor>
+        <contributor>
+            <name>Martin Matula</name>
+            <url>http://blog.alutam.com</url>
+        </contributor>
+        <contributor>
+            <name>Michal Gajdos</name>
+            <url>http://blog.dejavu.sk</url>
+        </contributor>
+        <contributor>
+            <name>Jakub Podlesak</name>
+            <url>http://blogs.oracle.com/japod/</url>
+        </contributor>
+    </contributors>
+
+    <distributionManagement>
+        <site>
+            <id>website</id>
+            <!-- The URL below is required by maven plugin but not actually used -->
+            <url>scp://java.net/projects/website/www</url>
+        </site>
+    </distributionManagement>
+
+    <!-- The organization data is used in the web page footers as Copyright -->
+    <organization>
+        <name>Oracle Corporation</name>
+        <url>http://oracle.com</url>
+    </organization>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <outputDirectory>${project.reporting.outputDirectory}</outputDirectory>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>pre-site</phase>
+                        <goals>
+                            <goal>resources</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-project-info-reports-plugin</artifactId>
+                <version>2.7</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <stagingDirectory>site</stagingDirectory>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.apache.maven.doxia</groupId>
+                        <artifactId>doxia-module-markdown</artifactId>
+                        <version>1.4</version>
+                    </dependency>
+                    <dependency>
+                        <groupId>lt.velykis.maven.skins</groupId>
+                        <artifactId>reflow-velocity-tools</artifactId>
+                        <version>1.0.0</version>
+                    </dependency>
+                    <!--
+                        Reflow skin requires Velocity >= 1.7
+
+                        NOTE: To enable substitution of properties in markdown sources (*.md),
+                        append an additional ".vm" extension to the file (*.md.vm).
+                     -->
+                    <dependency>
+                        <groupId>org.apache.velocity</groupId>
+                        <artifactId>velocity</artifactId>
+                        <version>1.7</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.7</version>
+                <executions>
+                    <execution>
+                        <phase>post-site</phase>
+                        <configuration>
+                            <target>
+                                <tstamp>
+                                    <format property="releaseDate" pattern="dd-MMM-yyyy" locale="en,US"/>
+                                </tstamp>
+                                <echo>The resolved release date is ${releaseDate}</echo>
+                                <!-- copy generated site to ../www/ -->
+                                <copy todir="${www.dir}">
+                                    <fileset dir="${project.reporting.outputDirectory}"/>
+                                </copy>
+                                <!-- prepare latest release-notes/x.y.html if not exists -->
+                                <copy file="src/main/templates/release-note.html" tofile="${www.dir}/release-notes/${latestVersion}.html" filtering="true">
+                                    <filterset>
+                                        <filter token="LATEST_VERSION" value="${latestVersion}"/>
+                                        <filter token="RELEASE_DATE" value="${releaseDate}"/>
+                                    </filterset>
+                                    <!-- TODO iterate by ant all x.y.html and generate "Previous releases" section -->
+                                </copy>
+                            </target>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+      </plugins>
+    </build>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- latest released Jersey version - property name must not use '.' as it would get ignored by Velocity -->
+        <latestVersion>${project.version}</latestVersion>
+        <www.dir>../www</www.dir>
+    </properties>
+</project>

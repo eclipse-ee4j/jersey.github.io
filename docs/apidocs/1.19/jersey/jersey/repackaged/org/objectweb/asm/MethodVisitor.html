@@ -1,0 +1,1304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+MethodVisitor (jersey-bundle 1.19 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="MethodVisitor (jersey-bundle 1.19 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/MethodVisitor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html" title="interface in jersey.repackaged.org.objectweb.asm"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?jersey/repackaged/org/objectweb/asm/MethodVisitor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MethodVisitor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+jersey.repackaged.org.objectweb.asm</FONT>
+<BR>
+Class MethodVisitor</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>jersey.repackaged.org.objectweb.asm.MethodVisitor</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>MethodVisitor</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+A visitor to visit a Java method. The methods of this class must be called in
+ the following order: ( <tt>visitParameter</tt> )* [
+ <tt>visitAnnotationDefault</tt> ] ( <tt>visitAnnotation</tt> |
+ <tt>visitTypeAnnotation</tt> | <tt>visitAttribute</tt> )* [
+ <tt>visitCode</tt> ( <tt>visitFrame</tt> | <tt>visit<i>X</i>Insn</tt> |
+ <tt>visitLabel</tt> | <tt>visitInsnAnnotation</tt> |
+ <tt>visitTryCatchBlock</tt> | <tt>visitTryCatchBlockAnnotation</tt> |
+ <tt>visitLocalVariable</tt> | <tt>visitLocalVariableAnnotation</tt> |
+ <tt>visitLineNumber</tt> )* <tt>visitMaxs</tt> ] <tt>visitEnd</tt>. In
+ addition, the <tt>visit<i>X</i>Insn</tt> and <tt>visitLabel</tt> methods must
+ be called in the sequential order of the bytecode instructions of the visited
+ code, <tt>visitInsnAnnotation</tt> must be called <i>after</i> the annotated
+ instruction, <tt>visitTryCatchBlock</tt> must be called <i>before</i> the
+ labels passed as arguments have been visited,
+ <tt>visitTryCatchBlockAnnotation</tt> must be called <i>after</i> the
+ corresponding try catch block has been visited, and the
+ <tt>visitLocalVariable</tt>, <tt>visitLocalVariableAnnotation</tt> and
+ <tt>visitLineNumber</tt> methods must be called <i>after</i> the labels
+ passed as arguments have been visited.
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Eric Bruneton</DD>
+</DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#api">api</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ASM API version implemented by this visitor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">MethodVisitor</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#mv">mv</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The method visitor to which this visitor must delegate method calls.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#MethodVisitor(int)">MethodVisitor</A></B>(int&nbsp;api)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>MethodVisitor</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#MethodVisitor(int, jersey.repackaged.org.objectweb.asm.MethodVisitor)">MethodVisitor</A></B>(int&nbsp;api,
+              <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">MethodVisitor</A>&nbsp;mv)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructs a new <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>MethodVisitor</CODE></A>.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitAnnotation(java.lang.String, boolean)">visitAnnotation</A></B>(java.lang.String&nbsp;desc,
+                boolean&nbsp;visible)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits an annotation of this method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitAnnotationDefault()">visitAnnotationDefault</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits the default value of this annotation interface method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitAttribute(jersey.repackaged.org.objectweb.asm.Attribute)">visitAttribute</A></B>(<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Attribute.html" title="class in jersey.repackaged.org.objectweb.asm">Attribute</A>&nbsp;attr)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a non standard attribute of this method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitCode()">visitCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Starts the visit of the method's code, if any (i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitEnd()">visitEnd</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits the end of the method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitFieldInsn(int, java.lang.String, java.lang.String, java.lang.String)">visitFieldInsn</A></B>(int&nbsp;opcode,
+               java.lang.String&nbsp;owner,
+               java.lang.String&nbsp;name,
+               java.lang.String&nbsp;desc)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a field instruction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitFrame(int, int, java.lang.Object[], int, java.lang.Object[])">visitFrame</A></B>(int&nbsp;type,
+           int&nbsp;nLocal,
+           java.lang.Object[]&nbsp;local,
+           int&nbsp;nStack,
+           java.lang.Object[]&nbsp;stack)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits the current state of the local variables and operand stack
+ elements.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitIincInsn(int, int)">visitIincInsn</A></B>(int&nbsp;var,
+              int&nbsp;increment)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits an IINC instruction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitInsn(int)">visitInsn</A></B>(int&nbsp;opcode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a zero operand instruction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitInsnAnnotation(int, jersey.repackaged.org.objectweb.asm.TypePath, java.lang.String, boolean)">visitInsnAnnotation</A></B>(int&nbsp;typeRef,
+                    <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html" title="class in jersey.repackaged.org.objectweb.asm">TypePath</A>&nbsp;typePath,
+                    java.lang.String&nbsp;desc,
+                    boolean&nbsp;visible)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits an annotation on an instruction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitIntInsn(int, int)">visitIntInsn</A></B>(int&nbsp;opcode,
+             int&nbsp;operand)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits an instruction with a single int operand.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitInvokeDynamicInsn(java.lang.String, java.lang.String, jersey.repackaged.org.objectweb.asm.Handle, java.lang.Object...)">visitInvokeDynamicInsn</A></B>(java.lang.String&nbsp;name,
+                       java.lang.String&nbsp;desc,
+                       <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Handle.html" title="class in jersey.repackaged.org.objectweb.asm">Handle</A>&nbsp;bsm,
+                       java.lang.Object...&nbsp;bsmArgs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits an invokedynamic instruction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitJumpInsn(int, jersey.repackaged.org.objectweb.asm.Label)">visitJumpInsn</A></B>(int&nbsp;opcode,
+              <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;label)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a jump instruction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitLabel(jersey.repackaged.org.objectweb.asm.Label)">visitLabel</A></B>(<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;label)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a label.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitLdcInsn(java.lang.Object)">visitLdcInsn</A></B>(java.lang.Object&nbsp;cst)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a LDC instruction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitLineNumber(int, jersey.repackaged.org.objectweb.asm.Label)">visitLineNumber</A></B>(int&nbsp;line,
+                <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;start)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a line number declaration.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitLocalVariable(java.lang.String, java.lang.String, java.lang.String, jersey.repackaged.org.objectweb.asm.Label, jersey.repackaged.org.objectweb.asm.Label, int)">visitLocalVariable</A></B>(java.lang.String&nbsp;name,
+                   java.lang.String&nbsp;desc,
+                   java.lang.String&nbsp;signature,
+                   <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;start,
+                   <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;end,
+                   int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a local variable declaration.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitLocalVariableAnnotation(int, jersey.repackaged.org.objectweb.asm.TypePath, jersey.repackaged.org.objectweb.asm.Label[], jersey.repackaged.org.objectweb.asm.Label[], int[], java.lang.String, boolean)">visitLocalVariableAnnotation</A></B>(int&nbsp;typeRef,
+                             <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html" title="class in jersey.repackaged.org.objectweb.asm">TypePath</A>&nbsp;typePath,
+                             <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>[]&nbsp;start,
+                             <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>[]&nbsp;end,
+                             int[]&nbsp;index,
+                             java.lang.String&nbsp;desc,
+                             boolean&nbsp;visible)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits an annotation on a local variable type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitLookupSwitchInsn(jersey.repackaged.org.objectweb.asm.Label, int[], jersey.repackaged.org.objectweb.asm.Label[])">visitLookupSwitchInsn</A></B>(<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;dflt,
+                      int[]&nbsp;keys,
+                      <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>[]&nbsp;labels)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a LOOKUPSWITCH instruction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitMaxs(int, int)">visitMaxs</A></B>(int&nbsp;maxStack,
+          int&nbsp;maxLocals)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits the maximum stack size and the maximum number of local variables
+ of the method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitMethodInsn(int, java.lang.String, java.lang.String, java.lang.String)">visitMethodInsn</A></B>(int&nbsp;opcode,
+                java.lang.String&nbsp;owner,
+                java.lang.String&nbsp;name,
+                java.lang.String&nbsp;desc)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a method instruction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitMultiANewArrayInsn(java.lang.String, int)">visitMultiANewArrayInsn</A></B>(java.lang.String&nbsp;desc,
+                        int&nbsp;dims)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a MULTIANEWARRAY instruction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitParameter(java.lang.String, int)">visitParameter</A></B>(java.lang.String&nbsp;name,
+               int&nbsp;access)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a parameter of this method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitParameterAnnotation(int, java.lang.String, boolean)">visitParameterAnnotation</A></B>(int&nbsp;parameter,
+                         java.lang.String&nbsp;desc,
+                         boolean&nbsp;visible)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits an annotation of a parameter this method.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitTableSwitchInsn(int, int, jersey.repackaged.org.objectweb.asm.Label, jersey.repackaged.org.objectweb.asm.Label...)">visitTableSwitchInsn</A></B>(int&nbsp;min,
+                     int&nbsp;max,
+                     <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;dflt,
+                     <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>...&nbsp;labels)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a TABLESWITCH instruction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitTryCatchAnnotation(int, jersey.repackaged.org.objectweb.asm.TypePath, java.lang.String, boolean)">visitTryCatchAnnotation</A></B>(int&nbsp;typeRef,
+                        <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html" title="class in jersey.repackaged.org.objectweb.asm">TypePath</A>&nbsp;typePath,
+                        java.lang.String&nbsp;desc,
+                        boolean&nbsp;visible)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits an annotation on an exception handler type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitTryCatchBlock(jersey.repackaged.org.objectweb.asm.Label, jersey.repackaged.org.objectweb.asm.Label, jersey.repackaged.org.objectweb.asm.Label, java.lang.String)">visitTryCatchBlock</A></B>(<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;start,
+                   <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;end,
+                   <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;handler,
+                   java.lang.String&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a try catch block.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitTypeAnnotation(int, jersey.repackaged.org.objectweb.asm.TypePath, java.lang.String, boolean)">visitTypeAnnotation</A></B>(int&nbsp;typeRef,
+                    <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html" title="class in jersey.repackaged.org.objectweb.asm">TypePath</A>&nbsp;typePath,
+                    java.lang.String&nbsp;desc,
+                    boolean&nbsp;visible)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits an annotation on a type in the method signature.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitTypeInsn(int, java.lang.String)">visitTypeInsn</A></B>(int&nbsp;opcode,
+              java.lang.String&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a type instruction.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitVarInsn(int, int)">visitVarInsn</A></B>(int&nbsp;opcode,
+             int&nbsp;var)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Visits a local variable instruction.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="api"><!-- --></A><H3>
+api</H3>
+<PRE>
+protected final int <B>api</B></PRE>
+<DL>
+<DD>The ASM API version implemented by this visitor. The value of this field
+ must be one of <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#ASM4"><CODE>Opcodes.ASM4</CODE></A> or <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#ASM5"><CODE>Opcodes.ASM5</CODE></A>.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="mv"><!-- --></A><H3>
+mv</H3>
+<PRE>
+protected <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">MethodVisitor</A> <B>mv</B></PRE>
+<DL>
+<DD>The method visitor to which this visitor must delegate method calls. May
+ be null.
+<P>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="MethodVisitor(int)"><!-- --></A><H3>
+MethodVisitor</H3>
+<PRE>
+public <B>MethodVisitor</B>(int&nbsp;api)</PRE>
+<DL>
+<DD>Constructs a new <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>MethodVisitor</CODE></A>.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>api</CODE> - the ASM API version implemented by this visitor. Must be one
+            of <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#ASM4"><CODE>Opcodes.ASM4</CODE></A> or <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#ASM5"><CODE>Opcodes.ASM5</CODE></A>.</DL>
+</DL>
+<HR>
+
+<A NAME="MethodVisitor(int, jersey.repackaged.org.objectweb.asm.MethodVisitor)"><!-- --></A><H3>
+MethodVisitor</H3>
+<PRE>
+public <B>MethodVisitor</B>(int&nbsp;api,
+                     <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">MethodVisitor</A>&nbsp;mv)</PRE>
+<DL>
+<DD>Constructs a new <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>MethodVisitor</CODE></A>.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>api</CODE> - the ASM API version implemented by this visitor. Must be one
+            of <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#ASM4"><CODE>Opcodes.ASM4</CODE></A> or <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#ASM5"><CODE>Opcodes.ASM5</CODE></A>.<DD><CODE>mv</CODE> - the method visitor to which this visitor must delegate method
+            calls. May be null.</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="visitParameter(java.lang.String, int)"><!-- --></A><H3>
+visitParameter</H3>
+<PRE>
+public void <B>visitParameter</B>(java.lang.String&nbsp;name,
+                           int&nbsp;access)</PRE>
+<DL>
+<DD>Visits a parameter of this method.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>name</CODE> - parameter name or null if none is provided.<DD><CODE>access</CODE> - the parameter's access flags, only <tt>ACC_FINAL</tt>,
+            <tt>ACC_SYNTHETIC</tt> or/and <tt>ACC_MANDATED</tt> are
+            allowed (see <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html" title="interface in jersey.repackaged.org.objectweb.asm"><CODE>Opcodes</CODE></A>).</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitAnnotationDefault()"><!-- --></A><H3>
+visitAnnotationDefault</H3>
+<PRE>
+public <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A> <B>visitAnnotationDefault</B>()</PRE>
+<DL>
+<DD>Visits the default value of this annotation interface method.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>a visitor to the visit the actual default value of this
+         annotation interface method, or <tt>null</tt> if this visitor is
+         not interested in visiting this default value. The 'name'
+         parameters passed to the methods of this annotation visitor are
+         ignored. Moreover, exacly one visit method must be called on this
+         annotation visitor, followed by visitEnd.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitAnnotation(java.lang.String, boolean)"><!-- --></A><H3>
+visitAnnotation</H3>
+<PRE>
+public <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A> <B>visitAnnotation</B>(java.lang.String&nbsp;desc,
+                                         boolean&nbsp;visible)</PRE>
+<DL>
+<DD>Visits an annotation of this method.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>desc</CODE> - the class descriptor of the annotation class.<DD><CODE>visible</CODE> - <tt>true</tt> if the annotation is visible at runtime.
+<DT><B>Returns:</B><DD>a visitor to visit the annotation values, or <tt>null</tt> if
+         this visitor is not interested in visiting this annotation.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitTypeAnnotation(int, jersey.repackaged.org.objectweb.asm.TypePath, java.lang.String, boolean)"><!-- --></A><H3>
+visitTypeAnnotation</H3>
+<PRE>
+public <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A> <B>visitTypeAnnotation</B>(int&nbsp;typeRef,
+                                             <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html" title="class in jersey.repackaged.org.objectweb.asm">TypePath</A>&nbsp;typePath,
+                                             java.lang.String&nbsp;desc,
+                                             boolean&nbsp;visible)</PRE>
+<DL>
+<DD>Visits an annotation on a type in the method signature.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>typeRef</CODE> - a reference to the annotated type. The sort of this type
+            reference must be <CODE>METHOD_TYPE_PARAMETER</CODE>,
+            <CODE>METHOD_TYPE_PARAMETER_BOUND</CODE>,
+            <CODE>METHOD_RETURN</CODE>,
+            <CODE>METHOD_RECEIVER</CODE>,
+            <CODE>METHOD_FORMAL_PARAMETER</CODE> or <CODE>THROWS</CODE>. See <CODE>TypeReference</CODE>.<DD><CODE>typePath</CODE> - the path to the annotated type argument, wildcard bound, array
+            element type, or static inner type within 'typeRef'. May be
+            <tt>null</tt> if the annotation targets 'typeRef' as a whole.<DD><CODE>desc</CODE> - the class descriptor of the annotation class.<DD><CODE>visible</CODE> - <tt>true</tt> if the annotation is visible at runtime.
+<DT><B>Returns:</B><DD>a visitor to visit the annotation values, or <tt>null</tt> if
+         this visitor is not interested in visiting this annotation.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitParameterAnnotation(int, java.lang.String, boolean)"><!-- --></A><H3>
+visitParameterAnnotation</H3>
+<PRE>
+public <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A> <B>visitParameterAnnotation</B>(int&nbsp;parameter,
+                                                  java.lang.String&nbsp;desc,
+                                                  boolean&nbsp;visible)</PRE>
+<DL>
+<DD>Visits an annotation of a parameter this method.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>parameter</CODE> - the parameter index.<DD><CODE>desc</CODE> - the class descriptor of the annotation class.<DD><CODE>visible</CODE> - <tt>true</tt> if the annotation is visible at runtime.
+<DT><B>Returns:</B><DD>a visitor to visit the annotation values, or <tt>null</tt> if
+         this visitor is not interested in visiting this annotation.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitAttribute(jersey.repackaged.org.objectweb.asm.Attribute)"><!-- --></A><H3>
+visitAttribute</H3>
+<PRE>
+public void <B>visitAttribute</B>(<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Attribute.html" title="class in jersey.repackaged.org.objectweb.asm">Attribute</A>&nbsp;attr)</PRE>
+<DL>
+<DD>Visits a non standard attribute of this method.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>attr</CODE> - an attribute.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitCode()"><!-- --></A><H3>
+visitCode</H3>
+<PRE>
+public void <B>visitCode</B>()</PRE>
+<DL>
+<DD>Starts the visit of the method's code, if any (i.e. non abstract method).
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitFrame(int, int, java.lang.Object[], int, java.lang.Object[])"><!-- --></A><H3>
+visitFrame</H3>
+<PRE>
+public void <B>visitFrame</B>(int&nbsp;type,
+                       int&nbsp;nLocal,
+                       java.lang.Object[]&nbsp;local,
+                       int&nbsp;nStack,
+                       java.lang.Object[]&nbsp;stack)</PRE>
+<DL>
+<DD>Visits the current state of the local variables and operand stack
+ elements. This method must(*) be called <i>just before</i> any
+ instruction <b>i</b> that follows an unconditional branch instruction
+ such as GOTO or THROW, that is the target of a jump instruction, or that
+ starts an exception handler block. The visited types must describe the
+ values of the local variables and of the operand stack elements <i>just
+ before</i> <b>i</b> is executed.<br>
+ <br>
+ (*) this is mandatory only for classes whose version is greater than or
+ equal to <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#V1_6"><CODE>V1_6</CODE></A>. <br>
+ <br>
+ The frames of a method must be given either in expanded form, or in
+ compressed form (all frames must use the same format, i.e. you must not
+ mix expanded and compressed frames within a single method):
+ <ul>
+ <li>In expanded form, all frames must have the F_NEW type.</li>
+ <li>In compressed form, frames are basically "deltas" from the state of
+ the previous frame:
+ <ul>
+ <li><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#F_SAME"><CODE>Opcodes.F_SAME</CODE></A> representing frame with exactly the same
+ locals as the previous frame and with the empty stack.</li>
+ <li><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#F_SAME1"><CODE>Opcodes.F_SAME1</CODE></A> representing frame with exactly the same
+ locals as the previous frame and with single value on the stack (
+ <code>nStack</code> is 1 and <code>stack[0]</code> contains value for the
+ type of the stack item).</li>
+ <li><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#F_APPEND"><CODE>Opcodes.F_APPEND</CODE></A> representing frame with current locals are
+ the same as the locals in the previous frame, except that additional
+ locals are defined (<code>nLocal</code> is 1, 2 or 3 and
+ <code>local</code> elements contains values representing added types).</li>
+ <li><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#F_CHOP"><CODE>Opcodes.F_CHOP</CODE></A> representing frame with current locals are the
+ same as the locals in the previous frame, except that the last 1-3 locals
+ are absent and with the empty stack (<code>nLocals</code> is 1, 2 or 3).</li>
+ <li><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#F_FULL"><CODE>Opcodes.F_FULL</CODE></A> representing complete frame data.</li>
+ </ul>
+ </li>
+ </ul>
+ <br>
+ In both cases the first frame, corresponding to the method's parameters
+ and access flags, is implicit and must not be visited. Also, it is
+ illegal to visit two or more frames for the same code location (i.e., at
+ least one instruction must be visited between two calls to visitFrame).
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>type</CODE> - the type of this stack map frame. Must be
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#F_NEW"><CODE>Opcodes.F_NEW</CODE></A> for expanded frames, or
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#F_FULL"><CODE>Opcodes.F_FULL</CODE></A>, <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#F_APPEND"><CODE>Opcodes.F_APPEND</CODE></A>,
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#F_CHOP"><CODE>Opcodes.F_CHOP</CODE></A>, <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#F_SAME"><CODE>Opcodes.F_SAME</CODE></A> or
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#F_APPEND"><CODE>Opcodes.F_APPEND</CODE></A>, <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#F_SAME1"><CODE>Opcodes.F_SAME1</CODE></A> for
+            compressed frames.<DD><CODE>nLocal</CODE> - the number of local variables in the visited frame.<DD><CODE>local</CODE> - the local variable types in this frame. This array must not be
+            modified. Primitive types are represented by
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#TOP"><CODE>Opcodes.TOP</CODE></A>, <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#INTEGER"><CODE>Opcodes.INTEGER</CODE></A>,
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#FLOAT"><CODE>Opcodes.FLOAT</CODE></A>, <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#LONG"><CODE>Opcodes.LONG</CODE></A>,
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#DOUBLE"><CODE>Opcodes.DOUBLE</CODE></A>,<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#NULL"><CODE>Opcodes.NULL</CODE></A> or
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#UNINITIALIZED_THIS"><CODE>Opcodes.UNINITIALIZED_THIS</CODE></A> (long and double are
+            represented by a single element). Reference types are
+            represented by String objects (representing internal names),
+            and uninitialized types by Label objects (this label
+            designates the NEW instruction that created this uninitialized
+            value).<DD><CODE>nStack</CODE> - the number of operand stack elements in the visited frame.<DD><CODE>stack</CODE> - the operand stack types in this frame. This array must not be
+            modified. Its content has the same format as the "local"
+            array.
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalStateException</CODE> - if a frame is visited just after another one, without any
+             instruction between the two (unless this frame is a
+             Opcodes#F_SAME frame, in which case it is silently ignored).</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitInsn(int)"><!-- --></A><H3>
+visitInsn</H3>
+<PRE>
+public void <B>visitInsn</B>(int&nbsp;opcode)</PRE>
+<DL>
+<DD>Visits a zero operand instruction.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>opcode</CODE> - the opcode of the instruction to be visited. This opcode is
+            either NOP, ACONST_NULL, ICONST_M1, ICONST_0, ICONST_1,
+            ICONST_2, ICONST_3, ICONST_4, ICONST_5, LCONST_0, LCONST_1,
+            FCONST_0, FCONST_1, FCONST_2, DCONST_0, DCONST_1, IALOAD,
+            LALOAD, FALOAD, DALOAD, AALOAD, BALOAD, CALOAD, SALOAD,
+            IASTORE, LASTORE, FASTORE, DASTORE, AASTORE, BASTORE, CASTORE,
+            SASTORE, POP, POP2, DUP, DUP_X1, DUP_X2, DUP2, DUP2_X1,
+            DUP2_X2, SWAP, IADD, LADD, FADD, DADD, ISUB, LSUB, FSUB, DSUB,
+            IMUL, LMUL, FMUL, DMUL, IDIV, LDIV, FDIV, DDIV, IREM, LREM,
+            FREM, DREM, INEG, LNEG, FNEG, DNEG, ISHL, LSHL, ISHR, LSHR,
+            IUSHR, LUSHR, IAND, LAND, IOR, LOR, IXOR, LXOR, I2L, I2F, I2D,
+            L2I, L2F, L2D, F2I, F2L, F2D, D2I, D2L, D2F, I2B, I2C, I2S,
+            LCMP, FCMPL, FCMPG, DCMPL, DCMPG, IRETURN, LRETURN, FRETURN,
+            DRETURN, ARETURN, RETURN, ARRAYLENGTH, ATHROW, MONITORENTER,
+            or MONITOREXIT.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitIntInsn(int, int)"><!-- --></A><H3>
+visitIntInsn</H3>
+<PRE>
+public void <B>visitIntInsn</B>(int&nbsp;opcode,
+                         int&nbsp;operand)</PRE>
+<DL>
+<DD>Visits an instruction with a single int operand.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>opcode</CODE> - the opcode of the instruction to be visited. This opcode is
+            either BIPUSH, SIPUSH or NEWARRAY.<DD><CODE>operand</CODE> - the operand of the instruction to be visited.<br>
+            When opcode is BIPUSH, operand value should be between
+            Byte.MIN_VALUE and Byte.MAX_VALUE.<br>
+            When opcode is SIPUSH, operand value should be between
+            Short.MIN_VALUE and Short.MAX_VALUE.<br>
+            When opcode is NEWARRAY, operand value should be one of
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#T_BOOLEAN"><CODE>Opcodes.T_BOOLEAN</CODE></A>, <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#T_CHAR"><CODE>Opcodes.T_CHAR</CODE></A>,
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#T_FLOAT"><CODE>Opcodes.T_FLOAT</CODE></A>, <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#T_DOUBLE"><CODE>Opcodes.T_DOUBLE</CODE></A>,
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#T_BYTE"><CODE>Opcodes.T_BYTE</CODE></A>, <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#T_SHORT"><CODE>Opcodes.T_SHORT</CODE></A>,
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#T_INT"><CODE>Opcodes.T_INT</CODE></A> or <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html#T_LONG"><CODE>Opcodes.T_LONG</CODE></A>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitVarInsn(int, int)"><!-- --></A><H3>
+visitVarInsn</H3>
+<PRE>
+public void <B>visitVarInsn</B>(int&nbsp;opcode,
+                         int&nbsp;var)</PRE>
+<DL>
+<DD>Visits a local variable instruction. A local variable instruction is an
+ instruction that loads or stores the value of a local variable.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>opcode</CODE> - the opcode of the local variable instruction to be visited.
+            This opcode is either ILOAD, LLOAD, FLOAD, DLOAD, ALOAD,
+            ISTORE, LSTORE, FSTORE, DSTORE, ASTORE or RET.<DD><CODE>var</CODE> - the operand of the instruction to be visited. This operand is
+            the index of a local variable.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitTypeInsn(int, java.lang.String)"><!-- --></A><H3>
+visitTypeInsn</H3>
+<PRE>
+public void <B>visitTypeInsn</B>(int&nbsp;opcode,
+                          java.lang.String&nbsp;type)</PRE>
+<DL>
+<DD>Visits a type instruction. A type instruction is an instruction that
+ takes the internal name of a class as parameter.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>opcode</CODE> - the opcode of the type instruction to be visited. This opcode
+            is either NEW, ANEWARRAY, CHECKCAST or INSTANCEOF.<DD><CODE>type</CODE> - the operand of the instruction to be visited. This operand
+            must be the internal name of an object or array class (see
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Type.html#getInternalName()"><CODE>getInternalName</CODE></A>).</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitFieldInsn(int, java.lang.String, java.lang.String, java.lang.String)"><!-- --></A><H3>
+visitFieldInsn</H3>
+<PRE>
+public void <B>visitFieldInsn</B>(int&nbsp;opcode,
+                           java.lang.String&nbsp;owner,
+                           java.lang.String&nbsp;name,
+                           java.lang.String&nbsp;desc)</PRE>
+<DL>
+<DD>Visits a field instruction. A field instruction is an instruction that
+ loads or stores the value of a field of an object.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>opcode</CODE> - the opcode of the type instruction to be visited. This opcode
+            is either GETSTATIC, PUTSTATIC, GETFIELD or PUTFIELD.<DD><CODE>owner</CODE> - the internal name of the field's owner class (see
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Type.html#getInternalName()"><CODE>getInternalName</CODE></A>).<DD><CODE>name</CODE> - the field's name.<DD><CODE>desc</CODE> - the field's descriptor (see <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Type.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>Type</CODE></A>).</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitMethodInsn(int, java.lang.String, java.lang.String, java.lang.String)"><!-- --></A><H3>
+visitMethodInsn</H3>
+<PRE>
+public void <B>visitMethodInsn</B>(int&nbsp;opcode,
+                            java.lang.String&nbsp;owner,
+                            java.lang.String&nbsp;name,
+                            java.lang.String&nbsp;desc)</PRE>
+<DL>
+<DD>Visits a method instruction. A method instruction is an instruction that
+ invokes a method.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>opcode</CODE> - the opcode of the type instruction to be visited. This opcode
+            is either INVOKEVIRTUAL, INVOKESPECIAL, INVOKESTATIC or
+            INVOKEINTERFACE.<DD><CODE>owner</CODE> - the internal name of the method's owner class (see
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Type.html#getInternalName()"><CODE>getInternalName</CODE></A>).<DD><CODE>name</CODE> - the method's name.<DD><CODE>desc</CODE> - the method's descriptor (see <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Type.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>Type</CODE></A>).</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitInvokeDynamicInsn(java.lang.String, java.lang.String, jersey.repackaged.org.objectweb.asm.Handle, java.lang.Object...)"><!-- --></A><H3>
+visitInvokeDynamicInsn</H3>
+<PRE>
+public void <B>visitInvokeDynamicInsn</B>(java.lang.String&nbsp;name,
+                                   java.lang.String&nbsp;desc,
+                                   <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Handle.html" title="class in jersey.repackaged.org.objectweb.asm">Handle</A>&nbsp;bsm,
+                                   java.lang.Object...&nbsp;bsmArgs)</PRE>
+<DL>
+<DD>Visits an invokedynamic instruction.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>name</CODE> - the method's name.<DD><CODE>desc</CODE> - the method's descriptor (see <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Type.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>Type</CODE></A>).<DD><CODE>bsm</CODE> - the bootstrap method.<DD><CODE>bsmArgs</CODE> - the bootstrap method constant arguments. Each argument must be
+            an <CODE>Integer</CODE>, <CODE>Float</CODE>, <CODE>Long</CODE>,
+            <CODE>Double</CODE>, <CODE>String</CODE>, <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Type.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>Type</CODE></A> or <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Handle.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>Handle</CODE></A>
+            value. This method is allowed to modify the content of the
+            array so a caller should expect that this array may change.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitJumpInsn(int, jersey.repackaged.org.objectweb.asm.Label)"><!-- --></A><H3>
+visitJumpInsn</H3>
+<PRE>
+public void <B>visitJumpInsn</B>(int&nbsp;opcode,
+                          <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;label)</PRE>
+<DL>
+<DD>Visits a jump instruction. A jump instruction is an instruction that may
+ jump to another instruction.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>opcode</CODE> - the opcode of the type instruction to be visited. This opcode
+            is either IFEQ, IFNE, IFLT, IFGE, IFGT, IFLE, IF_ICMPEQ,
+            IF_ICMPNE, IF_ICMPLT, IF_ICMPGE, IF_ICMPGT, IF_ICMPLE,
+            IF_ACMPEQ, IF_ACMPNE, GOTO, JSR, IFNULL or IFNONNULL.<DD><CODE>label</CODE> - the operand of the instruction to be visited. This operand is
+            a label that designates the instruction to which the jump
+            instruction may jump.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitLabel(jersey.repackaged.org.objectweb.asm.Label)"><!-- --></A><H3>
+visitLabel</H3>
+<PRE>
+public void <B>visitLabel</B>(<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;label)</PRE>
+<DL>
+<DD>Visits a label. A label designates the instruction that will be visited
+ just after it.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>label</CODE> - a <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>Label</CODE></A> object.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitLdcInsn(java.lang.Object)"><!-- --></A><H3>
+visitLdcInsn</H3>
+<PRE>
+public void <B>visitLdcInsn</B>(java.lang.Object&nbsp;cst)</PRE>
+<DL>
+<DD>Visits a LDC instruction. Note that new constant types may be added in
+ future versions of the Java Virtual Machine. To easily detect new
+ constant types, implementations of this method should check for
+ unexpected constant types, like this:
+ 
+ <pre>
+ if (cst instanceof Integer) {
+     // ...
+ } else if (cst instanceof Float) {
+     // ...
+ } else if (cst instanceof Long) {
+     // ...
+ } else if (cst instanceof Double) {
+     // ...
+ } else if (cst instanceof String) {
+     // ...
+ } else if (cst instanceof Type) {
+     int sort = ((Type) cst).getSort();
+     if (sort == Type.OBJECT) {
+         // ...
+     } else if (sort == Type.ARRAY) {
+         // ...
+     } else if (sort == Type.METHOD) {
+         // ...
+     } else {
+         // throw an exception
+     }
+ } else if (cst instanceof Handle) {
+     // ...
+ } else {
+     // throw an exception
+ }
+ </pre>
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>cst</CODE> - the constant to be loaded on the stack. This parameter must be
+            a non null <CODE>Integer</CODE>, a <CODE>Float</CODE>, a <CODE>Long</CODE>, a
+            <CODE>Double</CODE>, a <CODE>String</CODE>, a <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Type.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>Type</CODE></A> of OBJECT or
+            ARRAY sort for <tt>.class</tt> constants, for classes whose
+            version is 49.0, a <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Type.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>Type</CODE></A> of METHOD sort or a
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Handle.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>Handle</CODE></A> for MethodType and MethodHandle constants, for
+            classes whose version is 51.0.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitIincInsn(int, int)"><!-- --></A><H3>
+visitIincInsn</H3>
+<PRE>
+public void <B>visitIincInsn</B>(int&nbsp;var,
+                          int&nbsp;increment)</PRE>
+<DL>
+<DD>Visits an IINC instruction.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>var</CODE> - index of the local variable to be incremented.<DD><CODE>increment</CODE> - amount to increment the local variable by.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitTableSwitchInsn(int, int, jersey.repackaged.org.objectweb.asm.Label, jersey.repackaged.org.objectweb.asm.Label...)"><!-- --></A><H3>
+visitTableSwitchInsn</H3>
+<PRE>
+public void <B>visitTableSwitchInsn</B>(int&nbsp;min,
+                                 int&nbsp;max,
+                                 <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;dflt,
+                                 <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>...&nbsp;labels)</PRE>
+<DL>
+<DD>Visits a TABLESWITCH instruction.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>min</CODE> - the minimum key value.<DD><CODE>max</CODE> - the maximum key value.<DD><CODE>dflt</CODE> - beginning of the default handler block.<DD><CODE>labels</CODE> - beginnings of the handler blocks. <tt>labels[i]</tt> is the
+            beginning of the handler block for the <tt>min + i</tt> key.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitLookupSwitchInsn(jersey.repackaged.org.objectweb.asm.Label, int[], jersey.repackaged.org.objectweb.asm.Label[])"><!-- --></A><H3>
+visitLookupSwitchInsn</H3>
+<PRE>
+public void <B>visitLookupSwitchInsn</B>(<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;dflt,
+                                  int[]&nbsp;keys,
+                                  <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>[]&nbsp;labels)</PRE>
+<DL>
+<DD>Visits a LOOKUPSWITCH instruction.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>dflt</CODE> - beginning of the default handler block.<DD><CODE>keys</CODE> - the values of the keys.<DD><CODE>labels</CODE> - beginnings of the handler blocks. <tt>labels[i]</tt> is the
+            beginning of the handler block for the <tt>keys[i]</tt> key.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitMultiANewArrayInsn(java.lang.String, int)"><!-- --></A><H3>
+visitMultiANewArrayInsn</H3>
+<PRE>
+public void <B>visitMultiANewArrayInsn</B>(java.lang.String&nbsp;desc,
+                                    int&nbsp;dims)</PRE>
+<DL>
+<DD>Visits a MULTIANEWARRAY instruction.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>desc</CODE> - an array type descriptor (see <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Type.html" title="class in jersey.repackaged.org.objectweb.asm"><CODE>Type</CODE></A>).<DD><CODE>dims</CODE> - number of dimensions of the array to allocate.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitInsnAnnotation(int, jersey.repackaged.org.objectweb.asm.TypePath, java.lang.String, boolean)"><!-- --></A><H3>
+visitInsnAnnotation</H3>
+<PRE>
+public <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A> <B>visitInsnAnnotation</B>(int&nbsp;typeRef,
+                                             <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html" title="class in jersey.repackaged.org.objectweb.asm">TypePath</A>&nbsp;typePath,
+                                             java.lang.String&nbsp;desc,
+                                             boolean&nbsp;visible)</PRE>
+<DL>
+<DD>Visits an annotation on an instruction. This method must be called just
+ <i>after</i> the annotated instruction. It can be called several times
+ for the same instruction.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>typeRef</CODE> - a reference to the annotated type. The sort of this type
+            reference must be <CODE>INSTANCEOF</CODE>,
+            <CODE>NEW</CODE>,
+            <CODE>CONSTRUCTOR_REFERENCE</CODE>, <CODE>METHOD_REFERENCE</CODE>, <CODE>CAST</CODE>,
+            <CODE>CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT</CODE>,
+            <CODE>METHOD_INVOCATION_TYPE_ARGUMENT</CODE>,
+            <CODE>CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT</CODE>, or
+            <CODE>METHOD_REFERENCE_TYPE_ARGUMENT</CODE>. See <CODE>TypeReference</CODE>.<DD><CODE>typePath</CODE> - the path to the annotated type argument, wildcard bound, array
+            element type, or static inner type within 'typeRef'. May be
+            <tt>null</tt> if the annotation targets 'typeRef' as a whole.<DD><CODE>desc</CODE> - the class descriptor of the annotation class.<DD><CODE>visible</CODE> - <tt>true</tt> if the annotation is visible at runtime.
+<DT><B>Returns:</B><DD>a visitor to visit the annotation values, or <tt>null</tt> if
+         this visitor is not interested in visiting this annotation.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitTryCatchBlock(jersey.repackaged.org.objectweb.asm.Label, jersey.repackaged.org.objectweb.asm.Label, jersey.repackaged.org.objectweb.asm.Label, java.lang.String)"><!-- --></A><H3>
+visitTryCatchBlock</H3>
+<PRE>
+public void <B>visitTryCatchBlock</B>(<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;start,
+                               <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;end,
+                               <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;handler,
+                               java.lang.String&nbsp;type)</PRE>
+<DL>
+<DD>Visits a try catch block.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>start</CODE> - beginning of the exception handler's scope (inclusive).<DD><CODE>end</CODE> - end of the exception handler's scope (exclusive).<DD><CODE>handler</CODE> - beginning of the exception handler's code.<DD><CODE>type</CODE> - internal name of the type of exceptions handled by the
+            handler, or <tt>null</tt> to catch any exceptions (for
+            "finally" blocks).
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if one of the labels has already been visited by this visitor
+             (by the <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitLabel(jersey.repackaged.org.objectweb.asm.Label)"><CODE>visitLabel</CODE></A> method).</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitTryCatchAnnotation(int, jersey.repackaged.org.objectweb.asm.TypePath, java.lang.String, boolean)"><!-- --></A><H3>
+visitTryCatchAnnotation</H3>
+<PRE>
+public <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A> <B>visitTryCatchAnnotation</B>(int&nbsp;typeRef,
+                                                 <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html" title="class in jersey.repackaged.org.objectweb.asm">TypePath</A>&nbsp;typePath,
+                                                 java.lang.String&nbsp;desc,
+                                                 boolean&nbsp;visible)</PRE>
+<DL>
+<DD>Visits an annotation on an exception handler type. This method must be
+ called <i>after</i> the <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitTryCatchBlock(jersey.repackaged.org.objectweb.asm.Label, jersey.repackaged.org.objectweb.asm.Label, jersey.repackaged.org.objectweb.asm.Label, java.lang.String)"><CODE>visitTryCatchBlock(jersey.repackaged.org.objectweb.asm.Label, jersey.repackaged.org.objectweb.asm.Label, jersey.repackaged.org.objectweb.asm.Label, java.lang.String)</CODE></A> for the annotated
+ exception handler. It can be called several times for the same exception
+ handler.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>typeRef</CODE> - a reference to the annotated type. The sort of this type
+            reference must be <CODE>EXCEPTION_PARAMETER</CODE>. See <CODE>TypeReference</CODE>.<DD><CODE>typePath</CODE> - the path to the annotated type argument, wildcard bound, array
+            element type, or static inner type within 'typeRef'. May be
+            <tt>null</tt> if the annotation targets 'typeRef' as a whole.<DD><CODE>desc</CODE> - the class descriptor of the annotation class.<DD><CODE>visible</CODE> - <tt>true</tt> if the annotation is visible at runtime.
+<DT><B>Returns:</B><DD>a visitor to visit the annotation values, or <tt>null</tt> if
+         this visitor is not interested in visiting this annotation.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitLocalVariable(java.lang.String, java.lang.String, java.lang.String, jersey.repackaged.org.objectweb.asm.Label, jersey.repackaged.org.objectweb.asm.Label, int)"><!-- --></A><H3>
+visitLocalVariable</H3>
+<PRE>
+public void <B>visitLocalVariable</B>(java.lang.String&nbsp;name,
+                               java.lang.String&nbsp;desc,
+                               java.lang.String&nbsp;signature,
+                               <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;start,
+                               <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;end,
+                               int&nbsp;index)</PRE>
+<DL>
+<DD>Visits a local variable declaration.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>name</CODE> - the name of a local variable.<DD><CODE>desc</CODE> - the type descriptor of this local variable.<DD><CODE>signature</CODE> - the type signature of this local variable. May be
+            <tt>null</tt> if the local variable type does not use generic
+            types.<DD><CODE>start</CODE> - the first instruction corresponding to the scope of this local
+            variable (inclusive).<DD><CODE>end</CODE> - the last instruction corresponding to the scope of this local
+            variable (exclusive).<DD><CODE>index</CODE> - the local variable's index.
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if one of the labels has not already been visited by this
+             visitor (by the <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitLabel(jersey.repackaged.org.objectweb.asm.Label)"><CODE>visitLabel</CODE></A> method).</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitLocalVariableAnnotation(int, jersey.repackaged.org.objectweb.asm.TypePath, jersey.repackaged.org.objectweb.asm.Label[], jersey.repackaged.org.objectweb.asm.Label[], int[], java.lang.String, boolean)"><!-- --></A><H3>
+visitLocalVariableAnnotation</H3>
+<PRE>
+public <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/AnnotationVisitor.html" title="class in jersey.repackaged.org.objectweb.asm">AnnotationVisitor</A> <B>visitLocalVariableAnnotation</B>(int&nbsp;typeRef,
+                                                      <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html" title="class in jersey.repackaged.org.objectweb.asm">TypePath</A>&nbsp;typePath,
+                                                      <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>[]&nbsp;start,
+                                                      <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>[]&nbsp;end,
+                                                      int[]&nbsp;index,
+                                                      java.lang.String&nbsp;desc,
+                                                      boolean&nbsp;visible)</PRE>
+<DL>
+<DD>Visits an annotation on a local variable type.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>typeRef</CODE> - a reference to the annotated type. The sort of this type
+            reference must be <CODE>LOCAL_VARIABLE</CODE> or <CODE>RESOURCE_VARIABLE</CODE>. See <CODE>TypeReference</CODE>.<DD><CODE>typePath</CODE> - the path to the annotated type argument, wildcard bound, array
+            element type, or static inner type within 'typeRef'. May be
+            <tt>null</tt> if the annotation targets 'typeRef' as a whole.<DD><CODE>start</CODE> - the fist instructions corresponding to the continuous ranges
+            that make the scope of this local variable (inclusive).<DD><CODE>end</CODE> - the last instructions corresponding to the continuous ranges
+            that make the scope of this local variable (exclusive). This
+            array must have the same size as the 'start' array.<DD><CODE>index</CODE> - the local variable's index in each range. This array must have
+            the same size as the 'start' array.<DD><CODE>desc</CODE> - the class descriptor of the annotation class.<DD><CODE>visible</CODE> - <tt>true</tt> if the annotation is visible at runtime.
+<DT><B>Returns:</B><DD>a visitor to visit the annotation values, or <tt>null</tt> if
+         this visitor is not interested in visiting this annotation.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitLineNumber(int, jersey.repackaged.org.objectweb.asm.Label)"><!-- --></A><H3>
+visitLineNumber</H3>
+<PRE>
+public void <B>visitLineNumber</B>(int&nbsp;line,
+                            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm">Label</A>&nbsp;start)</PRE>
+<DL>
+<DD>Visits a line number declaration.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>line</CODE> - a line number. This number refers to the source file from
+            which the class was compiled.<DD><CODE>start</CODE> - the first instruction corresponding to this line number.
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE> - if <tt>start</tt> has not already been visited by this
+             visitor (by the <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/MethodVisitor.html#visitLabel(jersey.repackaged.org.objectweb.asm.Label)"><CODE>visitLabel</CODE></A> method).</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitMaxs(int, int)"><!-- --></A><H3>
+visitMaxs</H3>
+<PRE>
+public void <B>visitMaxs</B>(int&nbsp;maxStack,
+                      int&nbsp;maxLocals)</PRE>
+<DL>
+<DD>Visits the maximum stack size and the maximum number of local variables
+ of the method.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>maxStack</CODE> - maximum stack size of the method.<DD><CODE>maxLocals</CODE> - maximum number of local variables for the method.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="visitEnd()"><!-- --></A><H3>
+visitEnd</H3>
+<PRE>
+public void <B>visitEnd</B>()</PRE>
+<DL>
+<DD>Visits the end of the method. This method, which is the last one to be
+ called, is used to inform the visitor that all the annotations and
+ attributes of the method have been visited.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/MethodVisitor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Label.html" title="class in jersey.repackaged.org.objectweb.asm"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Opcodes.html" title="interface in jersey.repackaged.org.objectweb.asm"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?jersey/repackaged/org/objectweb/asm/MethodVisitor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MethodVisitor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2015 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.
+</BODY>
+</HTML>

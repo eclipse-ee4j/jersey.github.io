@@ -1,0 +1,631 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;2.&nbsp;Modules and dependencies</title><link rel="stylesheet" type="text/css" href="/documentation.css"><meta name="generator" content="DocBook XSL-NS Stylesheets V1.76.1"><link rel="home" href="index.html" title="Jersey 2.6 User Guide"><link rel="up" href="index.html" title="Jersey 2.6 User Guide"><link rel="prev" href="getting-started.html" title="Chapter&nbsp;1.&nbsp;Getting Started"><link rel="next" href="jaxrs-resources.html" title="Chapter&nbsp;3.&nbsp;JAX-RS Application, Resources and Sub-Resources"><script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-3160303-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;2.&nbsp;Modules and dependencies</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="getting-started.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="jaxrs-resources.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+            <a href="index.html">
+                Table of Contents
+            </a> | <a href="user-guide.html">
+                Single HTML
+            </a></small><div lang="en" class="chapter" title="Chapter&nbsp;2.&nbsp;Modules and dependencies"><div class="titlepage"><div><div><h2 class="title"><a name="modules-and-dependencies"></a>Chapter&nbsp;2.&nbsp;Modules and dependencies</h2></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl><dt><span class="section"><a href="modules-and-dependencies.html#d0e560">2.1. Java SE Compatibility</a></span></dt><dt><span class="section"><a href="modules-and-dependencies.html#d0e565">2.2. Introduction to Jersey dependencies</a></span></dt><dt><span class="section"><a href="modules-and-dependencies.html#dependencies">2.3. Common Jersey Use Cases</a></span></dt><dd><dl><dt><span class="section"><a href="modules-and-dependencies.html#servlet-app-glassfish">2.3.1. Servlet based application on Glassfish</a></span></dt><dt><span class="section"><a href="modules-and-dependencies.html#servlet-app-general">2.3.2. Servlet based server-side application</a></span></dt><dt><span class="section"><a href="modules-and-dependencies.html#client-jdk">2.3.3. Client application on JDK</a></span></dt><dt><span class="section"><a href="modules-and-dependencies.html#server-jdk">2.3.4. Server-side application on supported containers</a></span></dt></dl></dd><dt><span class="section"><a href="modules-and-dependencies.html#modules">2.4. List of modules</a></span></dt></dl></div><div class="section" title="2.1.&nbsp;Java SE Compatibility"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e560"></a>2.1.&nbsp;Java SE Compatibility</h2></div></div></div><p>
+            All Jersey components are compiled with Java SE 6 target. It means, you will also need at least Java SE 6
+            to be able to compile and run your application.
+        </p></div><div class="section" title="2.2.&nbsp;Introduction to Jersey dependencies"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e565"></a>2.2.&nbsp;Introduction to Jersey dependencies</h2></div></div></div><p>
+            Jersey is built, assembled and installed using <a class="link" href="http://maven.apache.org/" target="_top">Apache Maven</a>.
+            Non-snapshot Jersey releases are deployed to the
+            <a class="link" href="http://search.maven.org/" target="_top">Central Maven Repository</a>. Jersey is also being deployed to
+            <a class="link" href="http://maven.java.net/" target="_top">Java.Net Maven repositories</a>, which contain also Jersey SNAPSHOT
+            versions. In case you would want to test the latest development builds check out the
+            <a class="link" href="https://maven.java.net/content/repositories/snapshots/org/glassfish/jersey" target="_top">
+                Java.Net Snapshots Maven repository</a>.
+        </p><p>
+            An application that uses Jersey and depends on Jersey modules is in turn required to also include in the application
+            dependencies the set of 3rd party modules that Jersey modules depend on. Jersey is designed as a pluggable component
+            architecture and different applications can therefore require different sets of Jersey modules. This also means that
+            the set of external Jersey dependencies required to be included in the application dependencies may vary in each
+            application based on the Jersey modules that are being used by the application.
+        </p><p>
+            Developers using Maven or a Maven-aware build system in their projects are likely to find it easier to include and
+            manage dependencies of their applications compared to developers using ant or other build systems that are not
+            compatible with Maven. This document will explain to both maven and non-maven developers how to depend on
+            Jersey modules in their application. Ant developers are likely to find the
+            <a class="link" href="http://maven.apache.org/ant-tasks/index.html" target="_top">Ant Tasks for Maven</a> very useful.
+        </p></div><div class="section" title="2.3.&nbsp;Common Jersey Use Cases"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="dependencies"></a>2.3.&nbsp;Common Jersey Use Cases</h2></div></div></div><div class="section" title="2.3.1.&nbsp;Servlet based application on Glassfish"><div class="titlepage"><div><div><h3 class="title"><a name="servlet-app-glassfish"></a>2.3.1.&nbsp;Servlet based application on Glassfish</h3></div></div></div><p>If you are using Glassfish application server, you don't need to package
+                anything with your application, everything is already included. You just need to declare
+                (provided) dependency on JAX-RS API to be able to compile your application.
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
+    &lt;groupId&gt;javax.ws.rs&lt;/groupId&gt;
+    &lt;artifactId&gt;javax.ws.rs-api&lt;/artifactId&gt;
+    &lt;version&gt;2.0&lt;/version&gt;
+    &lt;scope&gt;provided&lt;/scope&gt;
+&lt;/dependency&gt;</pre><p>If you are using any Jersey specific feature, you will need to depend on Jersey directly.</p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+    &lt;scope&gt;provided&lt;/scope&gt;
+&lt;/dependency&gt;
+&lt;!-- if you are using Jersey client specific features --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-client&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+    &lt;scope&gt;provided&lt;/scope&gt;
+&lt;/dependency&gt;
+            </pre></div><div class="section" title="2.3.2.&nbsp;Servlet based server-side application"><div class="titlepage"><div><div><h3 class="title"><a name="servlet-app-general"></a>2.3.2.&nbsp;Servlet based server-side application</h3></div></div></div><p>Following dependencies apply to application server (servlet containers) without any
+                integrated JAX-RS implementation. Then application needs to include JAX-RS API and Jersey
+                implementation in deployed application.</p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
+    &lt;!-- if your container implements Servlet API older than 3.0, use "jersey-container-servlet-core"  --&gt;
+    &lt;artifactId&gt;jersey-container-servlet&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+&lt;/dependency&gt;
+&lt;!-- Required only when you are using JAX-RS Client --&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-client&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+&lt;/dependency&gt;</pre></div><div class="section" title="2.3.3.&nbsp;Client application on JDK"><div class="titlepage"><div><div><h3 class="title"><a name="client-jdk"></a>2.3.3.&nbsp;Client application on JDK</h3></div></div></div><p>Applications running on plain JDK using only client part of JAX-RS specification need
+                to depend only on client. There are various additional modules which can be added, like
+                for example grizzly or apache or jetty connector (see dependencies snipped below). Jersey client
+                runs by default with plain JDK (using HttpUrlConnection). See <a class="xref" href="client.html" title="Chapter&nbsp;5.&nbsp;Client API">Chapter&nbsp;5, <i>Client API</i></a>.
+                for more details.
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.core&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-client&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+&lt;/dependency&gt;
+            </pre><p>Currently available connectors:</p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.connectors&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-grizzly-connector&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.connectors&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-apache-connector&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.connectors&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-jetty-connector&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+&lt;/dependency&gt;</pre></div><div class="section" title="2.3.4.&nbsp;Server-side application on supported containers"><div class="titlepage"><div><div><h3 class="title"><a name="server-jdk"></a>2.3.4.&nbsp;Server-side application on supported containers</h3></div></div></div><p>Apart for a standard JAX-RS Servlet-based deployment that works with any Servlet container that
+                supports Servlet 2.5 and higher,
+                Jersey provides support for programmatic deployment to the following containers: Grizzly 2 (HTTP and Servlet),
+                JDK Http server, Simple Http server and Jetty Http server. This chapter presents only required maven dependencies,
+                more information can be found in <a class="xref" href="deployment.html" title="Chapter&nbsp;4.&nbsp;Application Deployment and Runtime Environments">Chapter&nbsp;4, <i>Application Deployment and Runtime Environments</i></a>.
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-container-grizzly2-http&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-container-grizzly2-servlet&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-container-jdk-http&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-container-simple-http&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-container-jetty-http&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.containers&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-container-jetty-servlet&lt;/artifactId&gt;
+    &lt;version&gt;2.6&lt;/version&gt;
+&lt;/dependency&gt;</pre></div></div><div lang="en" class="section" title="2.4.&nbsp;List of modules"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="modules"></a>2.4.&nbsp;List of modules</h2></div></div></div><p>The following chapters provide an overview of all Jersey modules
+        and their dependencies with links to the respective binaries (follow a link
+        on a module name to get complete set of downloadable dependencies).
+    </p><div class="table"><a name="dependencies-table-org.glassfish.jersey.core"></a><p class="title"><b>Table&nbsp;2.1.&nbsp;Jersey Core</b></p><div class="table-contents"><table summary="Jersey Core" width="100%" border="1"><colgroup><col width="22%" align="left" class="c1"><col width="78%" align="left" class="c3"></colgroup><thead><tr><th colspan="2" align="center">Jersey Core</th></tr></thead><tbody><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/jersey-client/dependencies.html" target="_top">
+    jersey-client
+</a>
+</td><td align="left">Jersey core client implementation</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/jersey-common/dependencies.html" target="_top">
+    jersey-common
+</a>
+</td><td align="left">Jersey core common packages</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/jersey-server/dependencies.html" target="_top">
+    jersey-server
+</a>
+</td><td align="left">Jersey core server implementation</td></tr></tbody></table></div></div><br class="table-break"><div class="table"><a name="dependencies-table-org.glassfish.jersey.containers"></a><p class="title"><b>Table&nbsp;2.2.&nbsp;Jersey Containers</b></p><div class="table-contents"><table summary="Jersey Containers" width="100%" border="1"><colgroup><col width="22%" align="left" class="c1"><col width="78%" align="left" class="c3"></colgroup><thead><tr><th colspan="2" align="center">Jersey Containers</th></tr></thead><tbody><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-container-grizzly2-http/dependencies.html" target="_top">
+    jersey-container-grizzly2-http
+</a>
+</td><td align="left">Grizzly 2 Http Container.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-container-grizzly2-servlet/dependencies.html" target="_top">
+    jersey-container-grizzly2-servlet
+</a>
+</td><td align="left">Grizzly 2 Servlet Container.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-container-jdk-http/dependencies.html" target="_top">
+    jersey-container-jdk-http
+</a>
+</td><td align="left">JDK Http Container</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-container-jetty-http/dependencies.html" target="_top">
+    jersey-container-jetty-http
+</a>
+</td><td align="left">Jetty Http Container</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-container-jetty-servlet/dependencies.html" target="_top">
+    jersey-container-jetty-servlet
+</a>
+</td><td align="left">Jetty Servlet Container</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-container-servlet/dependencies.html" target="_top">
+    jersey-container-servlet
+</a>
+</td><td align="left">Jersey core Servlet 3.x implementation</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-container-servlet-core/dependencies.html" target="_top">
+    jersey-container-servlet-core
+</a>
+</td><td align="left">Jersey core Servlet 2.x implementation</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-container-simple-http/dependencies.html" target="_top">
+    jersey-container-simple-http
+</a>
+</td><td align="left">Simple Http Container</td></tr></tbody></table></div></div><br class="table-break"><div class="table"><a name="dependencies-table-org.glassfish.jersey.connectors"></a><p class="title"><b>Table&nbsp;2.3.&nbsp;Jersey Connectors</b></p><div class="table-contents"><table summary="Jersey Connectors" width="100%" border="1"><colgroup><col width="22%" align="left" class="c1"><col width="78%" align="left" class="c3"></colgroup><thead><tr><th colspan="2" align="center">Jersey Connectors</th></tr></thead><tbody><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-apache-connector/dependencies.html" target="_top">
+    jersey-apache-connector
+</a>
+</td><td align="left">Jersey Client Transport via Apache</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-grizzly-connector/dependencies.html" target="_top">
+    jersey-grizzly-connector
+</a>
+</td><td align="left">Jersey Client Transport via Grizzly</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-jetty-connector/dependencies.html" target="_top">
+    jersey-jetty-connector
+</a>
+</td><td align="left">Jersey Client Transport via Jetty</td></tr></tbody></table></div></div><br class="table-break"><div class="table"><a name="dependencies-table-org.glassfish.jersey.media"></a><p class="title"><b>Table&nbsp;2.4.&nbsp;Jersey Media</b></p><div class="table-contents"><table summary="Jersey Media" width="100%" border="1"><colgroup><col width="22%" align="left" class="c1"><col width="78%" align="left" class="c3"></colgroup><thead><tr><th colspan="2" align="center">Jersey Media</th></tr></thead><tbody><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/html-json/dependencies.html" target="_top">
+    html-json
+</a>
+</td><td align="left">JAX-RS Reader/Writer via net.java.html.json library that provides
+        JSON serialization and deserialization using lightweight (no reflection)
+        net.java.html.json library. Define your objects via @Model annotation.
+        Use them in Jersey.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-media-json-jackson/dependencies.html" target="_top">
+    jersey-media-json-jackson
+</a>
+</td><td align="left">Jersey JSON Jackson entity providers support module.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-media-json-jettison/dependencies.html" target="_top">
+    jersey-media-json-jettison
+</a>
+</td><td align="left">Jersey JSON Jettison entity providers support module.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-media-json-processing/dependencies.html" target="_top">
+    jersey-media-json-processing
+</a>
+</td><td align="left">Jersey JSON-P (JSR 353) entity providers support proxy module.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-media-moxy/dependencies.html" target="_top">
+    jersey-media-moxy
+</a>
+</td><td align="left">Jersey JSON entity providers support module based on EclipseLink MOXy.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-media-multipart/dependencies.html" target="_top">
+    jersey-media-multipart
+</a>
+</td><td align="left">Jersey Multipart entity providers support module.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-media-sse/dependencies.html" target="_top">
+    jersey-media-sse
+</a>
+</td><td align="left">Jersey Server Sent Events entity providers support module.</td></tr></tbody></table></div></div><br class="table-break"><div class="table"><a name="dependencies-table-org.glassfish.jersey.ext"></a><p class="title"><b>Table&nbsp;2.5.&nbsp;Jersey Extensions</b></p><div class="table-contents"><table summary="Jersey Extensions" width="100%" border="1"><colgroup><col width="22%" align="left" class="c1"><col width="78%" align="left" class="c3"></colgroup><thead><tr><th colspan="2" align="center">Jersey Extensions</th></tr></thead><tbody><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-bean-validation/dependencies.html" target="_top">
+    jersey-bean-validation
+</a>
+</td><td align="left">Jersey extension module providing support for Bean Validation (JSR-349) API.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-declarative-linking/dependencies.html" target="_top">
+    jersey-declarative-linking
+</a>
+</td><td align="left">Jersey support for declarative hyperlinking.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-entity-filtering/dependencies.html" target="_top">
+    jersey-entity-filtering
+</a>
+</td><td align="left">Jersey extension module providing support for Entity Data Filtering.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-mvc/dependencies.html" target="_top">
+    jersey-mvc
+</a>
+</td><td align="left">Jersey extension module providing support for MVC.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-mvc-bean-validation/dependencies.html" target="_top">
+    jersey-mvc-bean-validation
+</a>
+</td><td align="left">Jersey extension module providing support for Bean Validation in MVC.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-mvc-freemarker/dependencies.html" target="_top">
+    jersey-mvc-freemarker
+</a>
+</td><td align="left">Jersey extension module providing support for Freemarker templates.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-mvc-jsp/dependencies.html" target="_top">
+    jersey-mvc-jsp
+</a>
+</td><td align="left">Jersey extension module providing support for JSP templates.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-mvc-mustache/dependencies.html" target="_top">
+    jersey-mvc-mustache
+</a>
+</td><td align="left">Jersey extension module providing support for Mustache templates.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-proxy-client/dependencies.html" target="_top">
+    jersey-proxy-client
+</a>
+</td><td align="left">Jersey extension module providing support for (proxy-based) high-level client API.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-servlet-portability/dependencies.html" target="_top">
+    jersey-servlet-portability
+</a>
+</td><td align="left">Library that enables writing web applications that run with both Jersey 1.x and Jersey 2.x servlet containers.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-spring3/dependencies.html" target="_top">
+    jersey-spring3
+</a>
+</td><td align="left">Jersey extension module providing support for Spring 3 integration.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-wadl-doclet/dependencies.html" target="_top">
+    jersey-wadl-doclet
+</a>
+</td><td align="left">A doclet that generates a resourcedoc xml file: this file contains the javadoc documentation
+        of resource classes, so that this can be used for extending generated wadl with useful
+        documentation.</td></tr></tbody></table></div></div><br class="table-break"><div class="table"><a name="dependencies-table-org.glassfish.jersey.test-framework"></a><p class="title"><b>Table&nbsp;2.6.&nbsp;Jersey Test Framework</b></p><div class="table-contents"><table summary="Jersey Test Framework" width="100%" border="1"><colgroup><col width="22%" align="left" class="c1"><col width="78%" align="left" class="c3"></colgroup><thead><tr><th colspan="2" align="center">Jersey Test Framework</th></tr></thead><tbody><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-test-framework-core/dependencies.html" target="_top">
+    jersey-test-framework-core
+</a>
+</td><td align="left">Jersey Test Framework Core</td></tr></tbody></table></div></div><br class="table-break"><div class="table"><a name="dependencies-table-org.glassfish.jersey.test-framework.providers"></a><p class="title"><b>Table&nbsp;2.7.&nbsp;Jersey Test Framework Providers</b></p><div class="table-contents"><table summary="Jersey Test Framework Providers" width="100%" border="1"><colgroup><col width="22%" align="left" class="c1"><col width="78%" align="left" class="c3"></colgroup><thead><tr><th colspan="2" align="center">Jersey Test Framework Providers</th></tr></thead><tbody><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/project/jersey-test-framework-provider-bundle/dependencies.html" target="_top">
+    jersey-test-framework-provider-bundle
+</a>
+</td><td align="left">Jersey Test Framework Providers Bundle</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/project/jersey-test-framework-provider-default-client/dependencies.html" target="_top">
+    jersey-test-framework-provider-default-client
+</a>
+</td><td align="left">Jersey Test Framework Default Client Provider</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/project/jersey-test-framework-provider-external/dependencies.html" target="_top">
+    jersey-test-framework-provider-external
+</a>
+</td><td align="left">Jersey Test Framework - External container</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/project/jersey-test-framework-provider-grizzly2/dependencies.html" target="_top">
+    jersey-test-framework-provider-grizzly2
+</a>
+</td><td align="left">Jersey Test Framework - Grizzly2 container</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/project/jersey-test-framework-provider-inmemory/dependencies.html" target="_top">
+    jersey-test-framework-provider-inmemory
+</a>
+</td><td align="left">Jersey Test Framework - InMemory container</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/project/jersey-test-framework-provider-jdk-http/dependencies.html" target="_top">
+    jersey-test-framework-provider-jdk-http
+</a>
+</td><td align="left">Jersey Test Framework - JDK HTTP container</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/project/jersey-test-framework-provider-jetty/dependencies.html" target="_top">
+    jersey-test-framework-provider-jetty
+</a>
+</td><td align="left">Jersey Test Framework - Jetty HTTP container</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/project/jersey-test-framework-provider-simple/dependencies.html" target="_top">
+    jersey-test-framework-provider-simple
+</a>
+</td><td align="left">Jersey Test Framework - Simple HTTP container</td></tr></tbody></table></div></div><br class="table-break"><div class="table"><a name="dependencies-table-org.glassfish.jersey.containers.glassfish"></a><p class="title"><b>Table&nbsp;2.8.&nbsp;Jersey Glassfish Bundles</b></p><div class="table-contents"><table summary="Jersey Glassfish Bundles" width="100%" border="1"><colgroup><col width="22%" align="left" class="c1"><col width="78%" align="left" class="c3"></colgroup><thead><tr><th colspan="2" align="center">Jersey Glassfish Bundles</th></tr></thead><tbody><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/project/jersey-gf-cdi/dependencies.html" target="_top">
+    jersey-gf-cdi
+</a>
+</td><td align="left">Jersey CDI for GlassFish integration</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/project/jersey-gf-ejb/dependencies.html" target="_top">
+    jersey-gf-ejb
+</a>
+</td><td align="left">Jersey EJB for GlassFish integration</td></tr></tbody></table></div></div><br class="table-break"><div class="table"><a name="dependencies-table-org.glassfish.jersey.security"></a><p class="title"><b>Table&nbsp;2.9.&nbsp;Security</b></p><div class="table-contents"><table summary="Security" width="100%" border="1"><colgroup><col width="22%" align="left" class="c1"><col width="78%" align="left" class="c3"></colgroup><thead><tr><th colspan="2" align="center">Security</th></tr></thead><tbody><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/oauth1-client/dependencies.html" target="_top">
+    oauth1-client
+</a>
+</td><td align="left">Module that adds an OAuth 1 support to Jersey client.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/oauth1-server/dependencies.html" target="_top">
+    oauth1-server
+</a>
+</td><td align="left">Module that adds an OAuth 1 support to Jersey server</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/oauth1-signature/dependencies.html" target="_top">
+    oauth1-signature
+</a>
+</td><td align="left">OAuth1 signature module</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/oauth2-client/dependencies.html" target="_top">
+    oauth2-client
+</a>
+</td><td align="left">Module that adds an OAuth 2 support to Jersey client</td></tr></tbody></table></div></div><br class="table-break"><div class="table"><a name="dependencies-table-org.glassfish.jersey.examples"></a><p class="title"><b>Table&nbsp;2.10.&nbsp;Jersey Examples</b></p><div class="table-contents"><table summary="Jersey Examples" width="100%" border="1"><colgroup><col width="22%" align="left" class="c1"><col width="78%" align="left" class="c3"></colgroup><thead><tr><th colspan="2" align="center">Jersey Examples</th></tr></thead><tbody><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/assemblies/dependencies.html" target="_top">
+    assemblies
+</a>
+</td><td align="left">Jersey examples shared assembly types.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/bean-validation-webapp/dependencies.html" target="_top">
+    bean-validation-webapp
+</a>
+</td><td align="left">Jersey Bean Validation (JSR-349) example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/bookmark/dependencies.html" target="_top">
+    bookmark
+</a>
+</td><td align="left">Jersey Bookmark example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/bookmark-em/dependencies.html" target="_top">
+    bookmark-em
+</a>
+</td><td align="left">Jersey Bookmark example using EntityManager.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/bookstore-webapp/dependencies.html" target="_top">
+    bookstore-webapp
+</a>
+</td><td align="left">Jersey MVC Bookstore example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/cdi-webapp/dependencies.html" target="_top">
+    cdi-webapp
+</a>
+</td><td align="left">Jersey CDI example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/clipboard/dependencies.html" target="_top">
+    clipboard
+</a>
+</td><td align="left">Jersey clipboard example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/clipboard-programmatic/dependencies.html" target="_top">
+    clipboard-programmatic
+</a>
+</td><td align="left">Jersey programmatic resource API clipboard example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/declarative-linking/dependencies.html" target="_top">
+    declarative-linking
+</a>
+</td><td align="left">Declarative Hyperlinking - Jersey Sample</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/entity-filtering/dependencies.html" target="_top">
+    entity-filtering
+</a>
+</td><td align="left">Jersey Entity Data Filtering Example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/entity-filtering-security/dependencies.html" target="_top">
+    entity-filtering-security
+</a>
+</td><td align="left">Jersey Entity Data Filtering Security Example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/entity-filtering-selectable/dependencies.html" target="_top">
+    entity-filtering-selectable
+</a>
+</td><td align="left">Jersey Entity Data Filtering Selectable Example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/exception-mapping/dependencies.html" target="_top">
+    exception-mapping
+</a>
+</td><td align="left">Jersey example showing exception mappers in action.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/extended-wadl-webapp/dependencies.html" target="_top">
+    extended-wadl-webapp
+</a>
+</td><td align="left">Extended WADL example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/flight-management-webapp/dependencies.html" target="_top">
+    flight-management-webapp
+</a>
+</td><td align="left">Jersey Flight Management Demo Web Application Example</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/freemarker-webapp/dependencies.html" target="_top">
+    freemarker-webapp
+</a>
+</td><td align="left">Jersey Freemarker example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/groovy/dependencies.html" target="_top">
+    groovy
+</a>
+</td><td align="left">Groovy Jersey</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/helloworld/dependencies.html" target="_top">
+    helloworld
+</a>
+</td><td align="left">Jersey annotated resource class "Hello world" example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/helloworld-programmatic/dependencies.html" target="_top">
+    helloworld-programmatic
+</a>
+</td><td align="left">Jersey programmatic resource API "Hello world" example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/helloworld-pure-jax-rs/dependencies.html" target="_top">
+    helloworld-pure-jax-rs
+</a>
+</td><td align="left">Example using only the standard JAX-RS API's and the lightweight HTTP server bundled in JDK.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/helloworld-spring-annotations/dependencies.html" target="_top">
+    helloworld-spring-annotations
+</a>
+</td><td align="left">Spring 3 Integration Jersey Example</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/helloworld-spring-webapp/dependencies.html" target="_top">
+    helloworld-spring-webapp
+</a>
+</td><td align="left">Spring 3 Integration Jersey Example</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/helloworld-webapp/dependencies.html" target="_top">
+    helloworld-webapp
+</a>
+</td><td align="left">Jersey annotated resource class "Hello world" example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/http-patch/dependencies.html" target="_top">
+    http-patch
+</a>
+</td><td align="left">Jersey example for implementing generic PATCH support via JAX-RS reader interceptor.
+        Taken from Gerard Davison's blog entry:
+        http://kingsfleet.blogspot.co.uk/2014/02/transparent-patch-support-in-jax-rs-20.html</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/http-trace/dependencies.html" target="_top">
+    http-trace
+</a>
+</td><td align="left">Jersey HTTP TRACE support example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/https-clientserver-grizzly/dependencies.html" target="_top">
+    https-clientserver-grizzly
+</a>
+</td><td align="left">Jersey HTTPS Client/Server example on Grizzly.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/https-server-glassfish/dependencies.html" target="_top">
+    https-server-glassfish
+</a>
+</td><td align="left">Jersey HTTPS server on GlassFish example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jaxb/dependencies.html" target="_top">
+    jaxb
+</a>
+</td><td align="left">Jersey JAXB example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jaxrs-types-injection/dependencies.html" target="_top">
+    jaxrs-types-injection
+</a>
+</td><td align="left">Jersey JAX-RS types injection example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/jersey-ejb/dependencies.html" target="_top">
+    jersey-ejb
+</a>
+</td><td align="left">Jersey Web Application (Servlet) examples parent POM.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/json-jackson/dependencies.html" target="_top">
+    json-jackson
+</a>
+</td><td align="left">Jersey JSON with Jackson example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/json-jettison/dependencies.html" target="_top">
+    json-jettison
+</a>
+</td><td align="left">Jersey JSON with Jettison JAXB example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/json-moxy/dependencies.html" target="_top">
+    json-moxy
+</a>
+</td><td align="left">Jersey JSON with MOXy example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/json-processing-webapp/dependencies.html" target="_top">
+    json-processing-webapp
+</a>
+</td><td align="left">Jersey JSON-P (JSR 353) example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/json-with-padding/dependencies.html" target="_top">
+    json-with-padding
+</a>
+</td><td align="left">Jersey JSON with Padding example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/managed-beans-webapp/dependencies.html" target="_top">
+    managed-beans-webapp
+</a>
+</td><td align="left">Jersey Managed Beans Web Application Example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/managed-client/dependencies.html" target="_top">
+    managed-client
+</a>
+</td><td align="left">Jersey managed client example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/managed-client-simple-webapp/dependencies.html" target="_top">
+    managed-client-simple-webapp
+</a>
+</td><td align="left">Jersey Web Application (Servlet) examples parent POM.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/managed-client-webapp/dependencies.html" target="_top">
+    managed-client-webapp
+</a>
+</td><td align="left">Jersey managed client web application example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/monitoring-webapp/dependencies.html" target="_top">
+    monitoring-webapp
+</a>
+</td><td align="left">Jersey Web Application (Servlet) examples parent POM.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/multipart-webapp/dependencies.html" target="_top">
+    multipart-webapp
+</a>
+</td><td align="left">Jersey Multipart example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/oauth-client-twitter/dependencies.html" target="_top">
+    oauth-client-twitter
+</a>
+</td><td align="left">Twitter client using OAuth 1 support for Jersey that retrieves Tweets from the home timeline of a
+        registered Twitter account.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/oauth2-client-google-webapp/dependencies.html" target="_top">
+    oauth2-client-google-webapp
+</a>
+</td><td align="left">Google API data retrieving example using OAuth2 for authentication and authorization</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/osgi-helloworld-webapp/dependencies.html" target="_top">
+    osgi-helloworld-webapp
+</a>
+</td><td align="left">Jersey examples</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/osgi-http-service/dependencies.html" target="_top">
+    osgi-http-service
+</a>
+</td><td align="left">OSGi HttpService example</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/reload/dependencies.html" target="_top">
+    reload
+</a>
+</td><td align="left">Jersey resource configuration reload example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/server-async/dependencies.html" target="_top">
+    server-async
+</a>
+</td><td align="left">Jersey JAX-RS asynchronous server-side example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/server-async-managed/dependencies.html" target="_top">
+    server-async-managed
+</a>
+</td><td align="left">Jersey JAX-RS asynchronous server-side example with custom Jersey executor providers.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/server-async-standalone/dependencies.html" target="_top">
+    server-async-standalone
+</a>
+</td><td align="left">Standalone Jersey JAX-RS asynchronous server-side processing example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/server-async-standalone/server-async-standalone-client/dependencies.html" target="_top">
+    server-async-standalone-client
+</a>
+</td><td align="left">Standalone Jersey JAX-RS asynchronous server-side processing example client.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/server-async-standalone/server-async-standalone-webapp/dependencies.html" target="_top">
+    server-async-standalone-webapp
+</a>
+</td><td align="left">Standalone Jersey JAX-RS asynchronous server-side processing example web application.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/server-sent-events/dependencies.html" target="_top">
+    server-sent-events
+</a>
+</td><td align="left">Jersey Server-Sent Events example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/servlet3-webapp/dependencies.html" target="_top">
+    servlet3-webapp
+</a>
+</td><td align="left">Jersey Servlet 3 example with missing servlet-class in the web.xml file</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/shortener-webapp/dependencies.html" target="_top">
+    shortener-webapp
+</a>
+</td><td align="left">Jersey Shortener Webapp (MVC + Bean Validation).</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/simple-console/dependencies.html" target="_top">
+    simple-console
+</a>
+</td><td align="left">Jersey Simple Console example</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/sparklines/dependencies.html" target="_top">
+    sparklines
+</a>
+</td><td align="left">Jersey examples</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/sse-item-store-webapp/dependencies.html" target="_top">
+    sse-item-store-webapp
+</a>
+</td><td align="left">Jersey SSE-based item store example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/sse-twitter-aggregator/dependencies.html" target="_top">
+    sse-twitter-aggregator
+</a>
+</td><td align="left">Jersey SSE Twitter Message Aggregator Example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/system-properties-example/dependencies.html" target="_top">
+    system-properties-example
+</a>
+</td><td align="left">Jersey system properties example.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/tone-generator/dependencies.html" target="_top">
+    tone-generator
+</a>
+</td><td align="left">Jersey examples</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/webapp-example-parent/dependencies.html" target="_top">
+    webapp-example-parent
+</a>
+</td><td align="left">Jersey Web Application (Servlet) examples parent POM.</td></tr><tr><td align="left">
+<a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/xml-moxy/dependencies.html" target="_top">
+    xml-moxy
+</a>
+</td><td align="left">Jersey XML MOXy example.</td></tr></tbody></table></div></div><br class="table-break"></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+            function path() {
+              var args = arguments,
+                  result = []
+                  ;
+
+              for(var i = 0; i < args.length; i++)
+                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+
+              return result
+            };
+
+            SyntaxHighlighter.autoloader.apply(null, path(
+              'applescript            @shBrushAppleScript.js',
+              'actionscript3 as3      @shBrushAS3.js',
+              'bash shell             @shBrushBash.js',
+              'coldfusion cf          @shBrushColdFusion.js',
+              'cpp c                  @shBrushCpp.js',
+              'c# c-sharp csharp      @shBrushCSharp.js',
+              'css                    @shBrushCss.js',
+              'delphi pascal          @shBrushDelphi.js',
+              'diff patch pas         @shBrushDiff.js',
+              'erl erlang             @shBrushErlang.js',
+              'groovy                 @shBrushGroovy.js',
+              'java                   @shBrushJava.js',
+              'jfx javafx             @shBrushJavaFX.js',
+              'js jscript javascript  @shBrushJScript.js',
+              'perl pl                @shBrushPerl.js',
+              'php                    @shBrushPhp.js',
+              'text plain             @shBrushPlain.js',
+              'py python              @shBrushPython.js',
+              'ruby rails ror rb      @shBrushRuby.js',
+              'sass scss              @shBrushSass.js',
+              'scala                  @shBrushScala.js',
+              'sql                    @shBrushSql.js',
+              'vb vbnet               @shBrushVb.js',
+              'xml xhtml xslt html    @shBrushXml.js'
+            ));
+
+            SyntaxHighlighter.all();
+        </script><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="getting-started.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="jaxrs-resources.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;1.&nbsp;Getting Started&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;3.&nbsp;JAX-RS Application, Resources and Sub-Resources</td></tr></table></div></div></body></html>

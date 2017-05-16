@@ -1,0 +1,474 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ClientConfig (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ClientConfig (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ClientConfig.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../com/sun/jersey/api/client/config/DefaultClientConfig.html" title="class in com.sun.jersey.api.client.config"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?com/sun/jersey/api/client/config/ClientConfig.html" target="_top">Frames</a></li>
+<li><a href="ClientConfig.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.api.client.config</div>
+<h2 title="Interface ClientConfig" class="title">Interface ClientConfig</h2>
+</div>
+<div class="contentContainer">
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Superinterfaces:</dt>
+<dd><a href="../../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a></dd>
+</dl>
+<dl>
+<dt>All Known Implementing Classes:</dt>
+<dd><a href="../../../../../../com/sun/jersey/api/client/config/DefaultClientConfig.html" title="class in com.sun.jersey.api.client.config">DefaultClientConfig</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public interface <span class="strong">ClientConfig</span>
+extends <a href="../../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a></pre>
+<div class="block">The client configuration that declares common property names,
+ features, properties, provider classes and singleton instances that
+ may be used by a <a href="../../../../../../com/sun/jersey/api/client/Client.html" title="class in com.sun.jersey.api.client"><code>Client</code></a> instance.
+ <p>
+ An instance of this interface may be passed to the <a href="../../../../../../com/sun/jersey/api/client/Client.html" title="class in com.sun.jersey.api.client"><code>Client</code></a> when
+ the client is created as follows:
+ <p>
+ <blockquote><pre>
+     ClientConfig cc = ...
+     Client c = Client.create(cc);
+ </pre></blockquote>
+ The client configuration may be used to register provider classes such
+ as those, for example, that support JAXB with JSON as follows:
+ <blockquote><pre>
+     ClientConfig cc = new DefaultClientConfig();
+     cc.getClasses().add(com.sun.jersey.impl.provider.entity.JSONRootElementProvider.class);
+     Client c = Client.create(cc);
+ </pre></blockquote>
+ Alternatively an implementation of ClientConfig could perform such
+ registration.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Paul.Sandoz@Sun.Com</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/api/client/config/ClientConfig.html#PROPERTY_BUFFER_RESPONSE_ENTITY_ON_EXCEPTION">PROPERTY_BUFFER_RESPONSE_ENTITY_ON_EXCEPTION</a></strong></code>
+<div class="block">A value of "true" declares that the client will
+ automatically buffer the response entity (if any) and close resources
+ when a UniformInterfaceException is thrown.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/api/client/config/ClientConfig.html#PROPERTY_CHUNKED_ENCODING_SIZE">PROPERTY_CHUNKED_ENCODING_SIZE</a></strong></code>
+<div class="block">Chunked encoding property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/api/client/config/ClientConfig.html#PROPERTY_CONNECT_TIMEOUT">PROPERTY_CONNECT_TIMEOUT</a></strong></code>
+<div class="block">Connect timeout interval property, in milliseconds.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/api/client/config/ClientConfig.html#PROPERTY_FOLLOW_REDIRECTS">PROPERTY_FOLLOW_REDIRECTS</a></strong></code>
+<div class="block">Redirection property.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/api/client/config/ClientConfig.html#PROPERTY_READ_TIMEOUT">PROPERTY_READ_TIMEOUT</a></strong></code>
+<div class="block">Read timeout interval property, in milliseconds.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/api/client/config/ClientConfig.html#PROPERTY_THREADPOOL_SIZE">PROPERTY_THREADPOOL_SIZE</a></strong></code>
+<div class="block">Threadpool size property.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.sun.jersey.core.util.FeaturesAndProperties">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;com.sun.jersey.core.util.<a href="../../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a></h3>
+<code><a href="../../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#FEATURE_DISABLE_XML_SECURITY">FEATURE_DISABLE_XML_SECURITY</a>, <a href="../../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#FEATURE_FORMATTED">FEATURE_FORMATTED</a>, <a href="../../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#FEATURE_PRE_1_4_PROVIDER_PRECEDENCE">FEATURE_PRE_1_4_PROVIDER_PRECEDENCE</a>, <a href="../../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#FEATURE_XMLROOTELEMENT_PROCESSING">FEATURE_XMLROOTELEMENT_PROCESSING</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;java.lang.Class&lt;?&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/api/client/config/ClientConfig.html#getClasses()">getClasses</a></strong>()</code>
+<div class="block">Get the set of provider classes to be instantiated in the scope
+ of the Client</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/api/client/config/ClientConfig.html#getPropertyAsFeature(java.lang.String)">getPropertyAsFeature</a></strong>(java.lang.String&nbsp;featureName)</code>
+<div class="block">Get a feature that is boolean property of the property bag.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;java.lang.Object&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../com/sun/jersey/api/client/config/ClientConfig.html#getSingletons()">getSingletons</a></strong>()</code>
+<div class="block">Get the singleton provider instances to be utilized by the client.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.sun.jersey.core.util.FeaturesAndProperties">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;com.sun.jersey.core.util.<a href="../../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a></h3>
+<code><a href="../../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#getFeature(java.lang.String)">getFeature</a>, <a href="../../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#getFeatures()">getFeatures</a>, <a href="../../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#getProperties()">getProperties</a>, <a href="../../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#getProperty(java.lang.String)">getProperty</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="PROPERTY_FOLLOW_REDIRECTS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_FOLLOW_REDIRECTS</h4>
+<pre>static final&nbsp;java.lang.String PROPERTY_FOLLOW_REDIRECTS</pre>
+<div class="block">Redirection property. A value of "true" declares that the client will
+ automatically redirect to the URI declared in 3xx responses.
+
+ The value MUST be an instance of <code>Boolean</code>.
+ If the property is absent then the default value is "true".</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../constant-values.html#com.sun.jersey.api.client.config.ClientConfig.PROPERTY_FOLLOW_REDIRECTS">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_READ_TIMEOUT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_READ_TIMEOUT</h4>
+<pre>static final&nbsp;java.lang.String PROPERTY_READ_TIMEOUT</pre>
+<div class="block">Read timeout interval property, in milliseconds.
+
+ The value MUST be an instance of <code>Integer</code>.
+
+ If the property is absent then the default value is an interval of
+ infinity. A value of zero 0 is equivalent to an interval of
+ infinity</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../constant-values.html#com.sun.jersey.api.client.config.ClientConfig.PROPERTY_READ_TIMEOUT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_CONNECT_TIMEOUT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_CONNECT_TIMEOUT</h4>
+<pre>static final&nbsp;java.lang.String PROPERTY_CONNECT_TIMEOUT</pre>
+<div class="block">Connect timeout interval property, in milliseconds.
+
+ The value MUST be an instance of <code>Integer</code>.
+
+ If the property is absent then the default value is an interval of
+ infinity. A value of  0 is equivalent to an interval of
+ infinity</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../constant-values.html#com.sun.jersey.api.client.config.ClientConfig.PROPERTY_CONNECT_TIMEOUT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_CHUNKED_ENCODING_SIZE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_CHUNKED_ENCODING_SIZE</h4>
+<pre>static final&nbsp;java.lang.String PROPERTY_CHUNKED_ENCODING_SIZE</pre>
+<div class="block">Chunked encoding property.
+ <p>
+ The value MUST be an instance of <code>Integer</code>.
+ </p>
+ <p>
+ If the property is absent then chunked encoding will not be used.
+ A value &lt = 0 declares that chunked encoding will be used with
+ the default chunk size. A value &gt 0 declares that chunked encoding
+ will be used with the value as the declared chunk size.
+ </p>
+ Note, that this is the default behaviour for the client which does not have
+ to be implemented by all <a href="../../../../../../com/sun/jersey/api/client/Client.html" title="class in com.sun.jersey.api.client"><code>client</code></a> implementations. A client can define
+ different default behaviour if it is not capable of supporting buffering
+ for example.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../constant-values.html#com.sun.jersey.api.client.config.ClientConfig.PROPERTY_CHUNKED_ENCODING_SIZE">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_BUFFER_RESPONSE_ENTITY_ON_EXCEPTION">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_BUFFER_RESPONSE_ENTITY_ON_EXCEPTION</h4>
+<pre>static final&nbsp;java.lang.String PROPERTY_BUFFER_RESPONSE_ENTITY_ON_EXCEPTION</pre>
+<div class="block">A value of "true" declares that the client will
+ automatically buffer the response entity (if any) and close resources
+ when a UniformInterfaceException is thrown.
+
+ The value MUST be an instance of <code>Boolean</code>.
+ If the property is absent then the default value is "true".</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../constant-values.html#com.sun.jersey.api.client.config.ClientConfig.PROPERTY_BUFFER_RESPONSE_ENTITY_ON_EXCEPTION">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_THREADPOOL_SIZE">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PROPERTY_THREADPOOL_SIZE</h4>
+<pre>static final&nbsp;java.lang.String PROPERTY_THREADPOOL_SIZE</pre>
+<div class="block">Threadpool size property.
+
+ The value MUST be an instance of <code>Integer</code>.
+
+ If the property is absent then threadpool used for async requests will
+ be initialized as default cached threadpool, which creates new thread
+ for every new request, see <code>Executors</code>. When
+ value bigger than zero is provided, cached threadpool limited to that
+ number of threads will be utilized.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../constant-values.html#com.sun.jersey.api.client.config.ClientConfig.PROPERTY_THREADPOOL_SIZE">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getClasses()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getClasses</h4>
+<pre>java.util.Set&lt;java.lang.Class&lt;?&gt;&gt;&nbsp;getClasses()</pre>
+<div class="block">Get the set of provider classes to be instantiated in the scope
+ of the Client
+ <p>
+ A provider class is a Java class with a <a href="../../../../../../javax/ws/rs/ext/Provider.html" title="annotation in javax.ws.rs.ext"><code>Provider</code></a>
+ annotation declared on the class that implements a specific service
+ interface.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the mutable set of provider classes. After initialization of
+         the client modification of this value will have no effect.
+         The returned value shall never be null.</dd></dl>
+</li>
+</ul>
+<a name="getSingletons()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSingletons</h4>
+<pre>java.util.Set&lt;java.lang.Object&gt;&nbsp;getSingletons()</pre>
+<div class="block">Get the singleton provider instances to be utilized by the client.
+ <p>
+ When the client is initialized the set of provider instances
+ will be combined and take precedence over the instances of provider
+ classes.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the mutable set of provider instances. After initialization of
+         the client modification of this value will have no effect.
+         The returned value shall never be null.</dd></dl>
+</li>
+</ul>
+<a name="getPropertyAsFeature(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getPropertyAsFeature</h4>
+<pre>boolean&nbsp;getPropertyAsFeature(java.lang.String&nbsp;featureName)</pre>
+<div class="block">Get a feature that is boolean property of the property bag.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>featureName</code> - the name of the feature;</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if the feature value is present and is an instance of
+         <code>Boolean</code> and that value is true, otherwise false.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ClientConfig.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../com/sun/jersey/api/client/config/DefaultClientConfig.html" title="class in com.sun.jersey.api.client.config"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?com/sun/jersey/api/client/config/ClientConfig.html" target="_top">Frames</a></li>
+<li><a href="ClientConfig.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

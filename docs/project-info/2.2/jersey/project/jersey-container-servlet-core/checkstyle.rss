@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>jersey-container-servlet-core - Checkstyle report</title>
+    <link>https://jersey.java.net/project/jersey-container-servlet-core/</link>
+    <description>jersey-container-servlet-core - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
+    <item>
+      <title>File: 19,
+             Errors: 158,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.internal.ThreadLocalInvoker.java">org/glassfish/jersey/servlet/internal/ThreadLocalInvoker.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.ServletContainer.java">org/glassfish/jersey/servlet/ServletContainer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  48
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.spi.AsyncContextDelegateProvider.java">org/glassfish/jersey/servlet/spi/AsyncContextDelegateProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.WebComponent.java">org/glassfish/jersey/servlet/WebComponent.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  29
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.internal.ResponseWriter.java">org/glassfish/jersey/servlet/internal/ResponseWriter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.ServletProperties.java">org/glassfish/jersey/servlet/ServletProperties.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.WebServletConfig.java">org/glassfish/jersey/servlet/WebServletConfig.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.ServletPropertiesDelegate.java">org/glassfish/jersey/servlet/ServletPropertiesDelegate.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.internal.package-info.java">org/glassfish/jersey/servlet/internal/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.internal.spi.ServletContainerProvider.java">org/glassfish/jersey/servlet/internal/spi/ServletContainerProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.WebFilterConfig.java">org/glassfish/jersey/servlet/WebFilterConfig.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.package-info.java">org/glassfish/jersey/servlet/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.internal.ThreadLocalNamedInvoker.java">org/glassfish/jersey/servlet/internal/ThreadLocalNamedInvoker.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.internal.ServletContainerProviderFactory.java">org/glassfish/jersey/servlet/internal/ServletContainerProviderFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.spi.AsyncContextDelegate.java">org/glassfish/jersey/servlet/spi/AsyncContextDelegate.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.spi.package-info.java">org/glassfish/jersey/servlet/spi/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.WebAppResourcesScanner.java">org/glassfish/jersey/servlet/WebAppResourcesScanner.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.WebConfig.java">org/glassfish/jersey/servlet/WebConfig.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-container-servlet-core//checkstyle.html#org.glassfish.jersey.servlet.internal.PersistenceUnitBinder.java">org/glassfish/jersey/servlet/internal/PersistenceUnitBinder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

@@ -1,0 +1,978 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AdaptingContainerResponse (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AdaptingContainerResponse (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AdaptingContainerResponse.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerRequest.html" title="class in com.sun.jersey.spi.container"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/spi/container/CachedEntityContainerRequest.html" title="class in com.sun.jersey.spi.container"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/spi/container/AdaptingContainerResponse.html" target="_top">Frames</a></li>
+<li><a href="AdaptingContainerResponse.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.spi.container</div>
+<h2 title="Class AdaptingContainerResponse" class="title">Class AdaptingContainerResponse</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">com.sun.jersey.spi.container.ContainerResponse</a></li>
+<li>
+<ul class="inheritance">
+<li>com.sun.jersey.spi.container.AdaptingContainerResponse</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">AdaptingContainerResponse</span>
+extends <a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></pre>
+<div class="block">An adapting in-bound HTTP response that may override the behaviour of
+ <a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container"><code>ContainerResponse</code></a>.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Paul.Sandoz@Sun.Com</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#acr">acr</a></strong></code>
+<div class="block">The adapted container response.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#AdaptingContainerResponse(com.sun.jersey.spi.container.ContainerResponse)">AdaptingContainerResponse</a></strong>(<a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a>&nbsp;acr)</code>
+<div class="block">Create the adapting container response.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.lang.annotation.Annotation[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getAnnotations()">getAnnotations</a></strong>()</code>
+<div class="block">Get the annotations associated with the response entity (if any).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../com/sun/jersey/spi/container/ContainerRequest.html" title="class in com.sun.jersey.spi.container">ContainerRequest</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getContainerRequest()">getContainerRequest</a></strong>()</code>
+<div class="block">Get the container request.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponseWriter.html" title="interface in com.sun.jersey.spi.container">ContainerResponseWriter</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getContainerResponseWriter()">getContainerResponseWriter</a></strong>()</code>
+<div class="block">Get the container response writer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.Object</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getEntity()">getEntity</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.lang.reflect.Type</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getEntityType()">getEntityType</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../javax/ws/rs/core/MultivaluedMap.html" title="interface in javax.ws.rs.core">MultivaluedMap</a>&lt;java.lang.String,java.lang.Object&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getHttpHeaders()">getHttpHeaders</a></strong>()</code>
+<div class="block">Get the HTTP response headers.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.lang.Throwable</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getMappedThrowable()">getMappedThrowable</a></strong>()</code>
+<div class="block">Get the throwable (if any) that was mapped to a response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getMediaType()">getMediaType</a></strong>()</code>
+<div class="block">Get the media type of the response entity.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../com/sun/jersey/spi/MessageBodyWorkers.html" title="interface in com.sun.jersey.spi">MessageBodyWorkers</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getMessageBodyWorkers()">getMessageBodyWorkers</a></strong>()</code>
+<div class="block">Get the message body workers.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.Object</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getOriginalEntity()">getOriginalEntity</a></strong>()</code>
+<div class="block">Get the original entity instance that was set by
+ <a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setEntity(java.lang.Object)"><code>HttpResponseContext.setEntity(java.lang.Object)</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.io.OutputStream</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getOutputStream()">getOutputStream</a></strong>()</code>
+<div class="block">Get an <code>OutputStream</code> to which an entity may be written.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core">Response</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getResponse()">getResponse</a></strong>()</code>
+<div class="block">Get the response that was set.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getStatus()">getStatus</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../javax/ws/rs/core/Response.StatusType.html" title="interface in javax.ws.rs.core">Response.StatusType</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#getStatusType()">getStatusType</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#isCommitted()">isCommitted</a></strong>()</code>
+<div class="block">Ascertain if a response has been committed to the container.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#isResponseSet()">isResponseSet</a></strong>()</code>
+<div class="block">Check if the response has been set using the setReponse methods.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#mapException(java.lang.Throwable)">mapException</a></strong>(java.lang.Throwable&nbsp;e)</code>
+<div class="block">Map an exception to a response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#mapMappableContainerException(com.sun.jersey.api.container.MappableContainerException)">mapMappableContainerException</a></strong>(<a href="../../../../../com/sun/jersey/api/container/MappableContainerException.html" title="class in com.sun.jersey.api.container">MappableContainerException</a>&nbsp;e)</code>
+<div class="block">Map the cause of a mappable container exception to a response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#mapWebApplicationException(javax.ws.rs.WebApplicationException)">mapWebApplicationException</a></strong>(<a href="../../../../../javax/ws/rs/WebApplicationException.html" title="class in javax.ws.rs">WebApplicationException</a>&nbsp;e)</code>
+<div class="block">Map a web application exception to a response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#reset()">reset</a></strong>()</code>
+<div class="block">Reset the response to 204 (No content) with no headers.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#setAnnotations(java.lang.annotation.Annotation[])">setAnnotations</a></strong>(java.lang.annotation.Annotation[]&nbsp;annotations)</code>
+<div class="block">Set the annotations associated with the response entity (if any).</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#setContainerRequest(com.sun.jersey.spi.container.ContainerRequest)">setContainerRequest</a></strong>(<a href="../../../../../com/sun/jersey/spi/container/ContainerRequest.html" title="class in com.sun.jersey.spi.container">ContainerRequest</a>&nbsp;request)</code>
+<div class="block">Set the container request.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#setContainerResponseWriter(com.sun.jersey.spi.container.ContainerResponseWriter)">setContainerResponseWriter</a></strong>(<a href="../../../../../com/sun/jersey/spi/container/ContainerResponseWriter.html" title="interface in com.sun.jersey.spi.container">ContainerResponseWriter</a>&nbsp;responseWriter)</code>
+<div class="block">Set the container response writer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#setEntity(java.lang.Object)">setEntity</a></strong>(java.lang.Object&nbsp;entity)</code>
+<div class="block">Set the entity of the response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#setEntity(java.lang.Object,%20java.lang.reflect.Type)">setEntity</a></strong>(java.lang.Object&nbsp;entity,
+         java.lang.reflect.Type&nbsp;entityType)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#setResponse(javax.ws.rs.core.Response)">setResponse</a></strong>(<a href="../../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core">Response</a>&nbsp;response)</code>
+<div class="block">Set the response state from a Response instance.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#setStatus(int)">setStatus</a></strong>(int&nbsp;status)</code>
+<div class="block">Set the status of the response.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#setStatusType(javax.ws.rs.core.Response.StatusType)">setStatusType</a></strong>(<a href="../../../../../javax/ws/rs/core/Response.StatusType.html" title="interface in javax.ws.rs.core">Response.StatusType</a>&nbsp;statusType)</code>
+<div class="block">Set the status type of the response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerResponse.html#write()">write</a></strong>()</code>
+<div class="block">Write the response.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.sun.jersey.spi.container.ContainerResponse">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.sun.jersey.spi.container.<a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></h3>
+<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getHeaderValue(java.lang.Object)">getHeaderValue</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="acr">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>acr</h4>
+<pre>protected final&nbsp;<a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a> acr</pre>
+<div class="block">The adapted container response.</div>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="AdaptingContainerResponse(com.sun.jersey.spi.container.ContainerResponse)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AdaptingContainerResponse</h4>
+<pre>protected&nbsp;AdaptingContainerResponse(<a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a>&nbsp;acr)</pre>
+<div class="block">Create the adapting container response.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>acr</code> - the container response to adapt.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="write()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>write</h4>
+<pre>public&nbsp;void&nbsp;write()
+           throws java.io.IOException</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#write()">ContainerResponse</a></code></strong></div>
+<div class="block">Write the response.
+ <p>
+ The status and headers will be written by calling the method
+ <a href="../../../../../com/sun/jersey/spi/container/ContainerResponseWriter.html#writeStatusAndHeaders(long,%20com.sun.jersey.spi.container.ContainerResponse)"><code>ContainerResponseWriter.writeStatusAndHeaders(long, com.sun.jersey.spi.container.ContainerResponse)</code></a> on the provided
+ <a href="../../../../../com/sun/jersey/spi/container/ContainerResponseWriter.html" title="interface in com.sun.jersey.spi.container"><code>ContainerResponseWriter</code></a> instance. The <code>OutputStream</code>
+ returned from that method call is used to write the entity (if any)
+ to that <code>OutputStream</code>. An appropriate <a href="../../../../../javax/ws/rs/ext/MessageBodyWriter.html" title="interface in javax.ws.rs.ext"><code>MessageBodyWriter</code></a>
+ will be found to write the entity.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#write()">write</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.io.IOException</code> - if there is an error writing the entity</dd></dl>
+</li>
+</ul>
+<a name="reset()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reset</h4>
+<pre>public&nbsp;void&nbsp;reset()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#reset()">ContainerResponse</a></code></strong></div>
+<div class="block">Reset the response to 204 (No content) with no headers.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#reset()">reset</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getContainerRequest()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContainerRequest</h4>
+<pre>public&nbsp;<a href="../../../../../com/sun/jersey/spi/container/ContainerRequest.html" title="class in com.sun.jersey.spi.container">ContainerRequest</a>&nbsp;getContainerRequest()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getContainerRequest()">ContainerResponse</a></code></strong></div>
+<div class="block">Get the container request.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getContainerRequest()">getContainerRequest</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the container request.</dd></dl>
+</li>
+</ul>
+<a name="setContainerRequest(com.sun.jersey.spi.container.ContainerRequest)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setContainerRequest</h4>
+<pre>public&nbsp;void&nbsp;setContainerRequest(<a href="../../../../../com/sun/jersey/spi/container/ContainerRequest.html" title="class in com.sun.jersey.spi.container">ContainerRequest</a>&nbsp;request)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#setContainerRequest(com.sun.jersey.spi.container.ContainerRequest)">ContainerResponse</a></code></strong></div>
+<div class="block">Set the container request.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#setContainerRequest(com.sun.jersey.spi.container.ContainerRequest)">setContainerRequest</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>request</code> - the container request.</dd></dl>
+</li>
+</ul>
+<a name="getContainerResponseWriter()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContainerResponseWriter</h4>
+<pre>public&nbsp;<a href="../../../../../com/sun/jersey/spi/container/ContainerResponseWriter.html" title="interface in com.sun.jersey.spi.container">ContainerResponseWriter</a>&nbsp;getContainerResponseWriter()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getContainerResponseWriter()">ContainerResponse</a></code></strong></div>
+<div class="block">Get the container response writer.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getContainerResponseWriter()">getContainerResponseWriter</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the container response writer</dd></dl>
+</li>
+</ul>
+<a name="setContainerResponseWriter(com.sun.jersey.spi.container.ContainerResponseWriter)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setContainerResponseWriter</h4>
+<pre>public&nbsp;void&nbsp;setContainerResponseWriter(<a href="../../../../../com/sun/jersey/spi/container/ContainerResponseWriter.html" title="interface in com.sun.jersey.spi.container">ContainerResponseWriter</a>&nbsp;responseWriter)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#setContainerResponseWriter(com.sun.jersey.spi.container.ContainerResponseWriter)">ContainerResponse</a></code></strong></div>
+<div class="block">Set the container response writer.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#setContainerResponseWriter(com.sun.jersey.spi.container.ContainerResponseWriter)">setContainerResponseWriter</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>responseWriter</code> - the container response writer</dd></dl>
+</li>
+</ul>
+<a name="getMessageBodyWorkers()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMessageBodyWorkers</h4>
+<pre>public&nbsp;<a href="../../../../../com/sun/jersey/spi/MessageBodyWorkers.html" title="interface in com.sun.jersey.spi">MessageBodyWorkers</a>&nbsp;getMessageBodyWorkers()</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getMessageBodyWorkers()">ContainerResponse</a></code></strong></div>
+<div class="block">Get the message body workers.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getMessageBodyWorkers()">getMessageBodyWorkers</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the message body workers.</dd></dl>
+</li>
+</ul>
+<a name="mapMappableContainerException(com.sun.jersey.api.container.MappableContainerException)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapMappableContainerException</h4>
+<pre>public&nbsp;void&nbsp;mapMappableContainerException(<a href="../../../../../com/sun/jersey/api/container/MappableContainerException.html" title="class in com.sun.jersey.api.container">MappableContainerException</a>&nbsp;e)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#mapMappableContainerException(com.sun.jersey.api.container.MappableContainerException)">ContainerResponse</a></code></strong></div>
+<div class="block">Map the cause of a mappable container exception to a response.
+ <p>
+ If the cause cannot be mapped and then that cause is re-thrown
+ if a runtime exception otherwise the mappable container exception is
+ re-thrown.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#mapMappableContainerException(com.sun.jersey.api.container.MappableContainerException)">mapMappableContainerException</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>e</code> - the mappable container exception whose cause will be mapped to
+        a response.</dd></dl>
+</li>
+</ul>
+<a name="mapWebApplicationException(javax.ws.rs.WebApplicationException)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapWebApplicationException</h4>
+<pre>public&nbsp;void&nbsp;mapWebApplicationException(<a href="../../../../../javax/ws/rs/WebApplicationException.html" title="class in javax.ws.rs">WebApplicationException</a>&nbsp;e)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#mapWebApplicationException(javax.ws.rs.WebApplicationException)">ContainerResponse</a></code></strong></div>
+<div class="block">Map a web application exception to a response.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#mapWebApplicationException(javax.ws.rs.WebApplicationException)">mapWebApplicationException</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>e</code> - the web application exception.</dd></dl>
+</li>
+</ul>
+<a name="mapException(java.lang.Throwable)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mapException</h4>
+<pre>public&nbsp;boolean&nbsp;mapException(java.lang.Throwable&nbsp;e)</pre>
+<div class="block"><strong>Description copied from class:&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#mapException(java.lang.Throwable)">ContainerResponse</a></code></strong></div>
+<div class="block">Map an exception to a response.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#mapException(java.lang.Throwable)">mapException</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>e</code> - the exception.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if the exception was mapped, otherwise false.</dd></dl>
+</li>
+</ul>
+<a name="getResponse()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getResponse</h4>
+<pre>public&nbsp;<a href="../../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core">Response</a>&nbsp;getResponse()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getResponse()">HttpResponseContext</a></code></strong></div>
+<div class="block">Get the response that was set.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getResponse()">getResponse</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getResponse()">getResponse</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the response.</dd></dl>
+</li>
+</ul>
+<a name="setResponse(javax.ws.rs.core.Response)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setResponse</h4>
+<pre>public&nbsp;void&nbsp;setResponse(<a href="../../../../../javax/ws/rs/core/Response.html" title="class in javax.ws.rs.core">Response</a>&nbsp;response)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setResponse(javax.ws.rs.core.Response)">HttpResponseContext</a></code></strong></div>
+<div class="block">Set the response state from a Response instance. This replaces a 
+ pre-existing response state.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setResponse(javax.ws.rs.core.Response)">setResponse</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#setResponse(javax.ws.rs.core.Response)">setResponse</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>response</code> - the response.</dd></dl>
+</li>
+</ul>
+<a name="isResponseSet()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isResponseSet</h4>
+<pre>public&nbsp;boolean&nbsp;isResponseSet()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#isResponseSet()">HttpResponseContext</a></code></strong></div>
+<div class="block">Check if the response has been set using the setReponse methods.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#isResponseSet()">isResponseSet</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#isResponseSet()">isResponseSet</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if the response has been set.</dd></dl>
+</li>
+</ul>
+<a name="getMappedThrowable()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMappedThrowable</h4>
+<pre>public&nbsp;java.lang.Throwable&nbsp;getMappedThrowable()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getMappedThrowable()">HttpResponseContext</a></code></strong></div>
+<div class="block">Get the throwable (if any) that was mapped to a response.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getMappedThrowable()">getMappedThrowable</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getMappedThrowable()">getMappedThrowable</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the throwable that was mapped to a response, otherwise null
+         if no throwable was mapped to a response.</dd></dl>
+</li>
+</ul>
+<a name="getStatusType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStatusType</h4>
+<pre>public&nbsp;<a href="../../../../../javax/ws/rs/core/Response.StatusType.html" title="interface in javax.ws.rs.core">Response.StatusType</a>&nbsp;getStatusType()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getStatusType()">getStatusType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getStatusType()">getStatusType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the status type of the response</dd></dl>
+</li>
+</ul>
+<a name="setStatusType(javax.ws.rs.core.Response.StatusType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setStatusType</h4>
+<pre>public&nbsp;void&nbsp;setStatusType(<a href="../../../../../javax/ws/rs/core/Response.StatusType.html" title="interface in javax.ws.rs.core">Response.StatusType</a>&nbsp;statusType)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setStatusType(javax.ws.rs.core.Response.StatusType)">HttpResponseContext</a></code></strong></div>
+<div class="block">Set the status type of the response.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setStatusType(javax.ws.rs.core.Response.StatusType)">setStatusType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#setStatusType(javax.ws.rs.core.Response.StatusType)">setStatusType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>statusType</code> - the status type.</dd></dl>
+</li>
+</ul>
+<a name="getStatus()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStatus</h4>
+<pre>public&nbsp;int&nbsp;getStatus()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getStatus()">getStatus</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getStatus()">getStatus</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the status of the response</dd></dl>
+</li>
+</ul>
+<a name="setStatus(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setStatus</h4>
+<pre>public&nbsp;void&nbsp;setStatus(int&nbsp;status)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setStatus(int)">HttpResponseContext</a></code></strong></div>
+<div class="block">Set the status of the response.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setStatus(int)">setStatus</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#setStatus(int)">setStatus</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>status</code> - the status.</dd></dl>
+</li>
+</ul>
+<a name="getEntity()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEntity</h4>
+<pre>public&nbsp;java.lang.Object&nbsp;getEntity()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getEntity()">getEntity</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getEntity()">getEntity</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the entity of the response.</dd></dl>
+</li>
+</ul>
+<a name="getEntityType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEntityType</h4>
+<pre>public&nbsp;java.lang.reflect.Type&nbsp;getEntityType()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getEntityType()">getEntityType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getEntityType()">getEntityType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the type of the entity.</dd></dl>
+</li>
+</ul>
+<a name="getOriginalEntity()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOriginalEntity</h4>
+<pre>public&nbsp;java.lang.Object&nbsp;getOriginalEntity()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getOriginalEntity()">HttpResponseContext</a></code></strong></div>
+<div class="block">Get the original entity instance that was set by
+ <a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setEntity(java.lang.Object)"><code>HttpResponseContext.setEntity(java.lang.Object)</code></a>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getOriginalEntity()">getOriginalEntity</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getOriginalEntity()">getOriginalEntity</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setEntity(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEntity</h4>
+<pre>public&nbsp;void&nbsp;setEntity(java.lang.Object&nbsp;entity)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setEntity(java.lang.Object)">HttpResponseContext</a></code></strong></div>
+<div class="block">Set the entity of the response.
+ <p>
+ If the entity is an instance of <a href="../../../../../javax/ws/rs/core/GenericEntity.html" title="class in javax.ws.rs.core"><code>GenericEntity</code></a> then the entity
+ and entity type are set from the entity and type of that
+ <a href="../../../../../javax/ws/rs/core/GenericEntity.html" title="class in javax.ws.rs.core"><code>GenericEntity</code></a>. Otherwise, the entity is set from the entity 
+ parameter and the type is the class of that parameter.
+ <p>
+ If it is necessary to wrap an entity that may have been set with an
+ instance of <a href="../../../../../javax/ws/rs/core/GenericEntity.html" title="class in javax.ws.rs.core"><code>GenericEntity</code></a> then utilize the
+ <a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getOriginalEntity()"><code>HttpResponseContext.getOriginalEntity()</code></a>, for example:
+ <blockquote><pre>
+     HttpResponseContext r = ...
+     r.setEntity(wrap(getOriginalEntity()));
+ </blockquote></pre></div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setEntity(java.lang.Object)">setEntity</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#setEntity(java.lang.Object)">setEntity</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>entity</code> - the entity.</dd></dl>
+</li>
+</ul>
+<a name="setEntity(java.lang.Object, java.lang.reflect.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEntity</h4>
+<pre>public&nbsp;void&nbsp;setEntity(java.lang.Object&nbsp;entity,
+             java.lang.reflect.Type&nbsp;entityType)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#setEntity(java.lang.Object,%20java.lang.reflect.Type)">setEntity</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getAnnotations()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAnnotations</h4>
+<pre>public&nbsp;java.lang.annotation.Annotation[]&nbsp;getAnnotations()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getAnnotations()">HttpResponseContext</a></code></strong></div>
+<div class="block">Get the annotations associated with the response entity (if any).</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getAnnotations()">getAnnotations</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getAnnotations()">getAnnotations</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the annotations.</dd></dl>
+</li>
+</ul>
+<a name="setAnnotations(java.lang.annotation.Annotation[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAnnotations</h4>
+<pre>public&nbsp;void&nbsp;setAnnotations(java.lang.annotation.Annotation[]&nbsp;annotations)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setAnnotations(java.lang.annotation.Annotation[])">HttpResponseContext</a></code></strong></div>
+<div class="block">Set the annotations associated with the response entity (if any).</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setAnnotations(java.lang.annotation.Annotation[])">setAnnotations</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#setAnnotations(java.lang.annotation.Annotation[])">setAnnotations</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>annotations</code> - the annotations.</dd></dl>
+</li>
+</ul>
+<a name="getHttpHeaders()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHttpHeaders</h4>
+<pre>public&nbsp;<a href="../../../../../javax/ws/rs/core/MultivaluedMap.html" title="interface in javax.ws.rs.core">MultivaluedMap</a>&lt;java.lang.String,java.lang.Object&gt;&nbsp;getHttpHeaders()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getHttpHeaders()">HttpResponseContext</a></code></strong></div>
+<div class="block">Get the HTTP response headers. The returned map is case-insensitive
+ with respect to the keys (header values). The method <a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#setResponse(javax.ws.rs.core.Response)"><code>HttpResponseContext.setResponse(javax.ws.rs.core.Response)</code></a> 
+ will replace any headers previously set.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getHttpHeaders()">getHttpHeaders</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getHttpHeaders()">getHttpHeaders</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a mutable map of headerd.</dd></dl>
+</li>
+</ul>
+<a name="getMediaType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMediaType</h4>
+<pre>public&nbsp;<a href="../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&nbsp;getMediaType()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getMediaType()">HttpResponseContext</a></code></strong></div>
+<div class="block">Get the media type of the response entity.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getMediaType()">getMediaType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getMediaType()">getMediaType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the media type or null if there is no response entity.</dd></dl>
+</li>
+</ul>
+<a name="getOutputStream()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOutputStream</h4>
+<pre>public&nbsp;java.io.OutputStream&nbsp;getOutputStream()
+                                     throws java.io.IOException</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getOutputStream()">HttpResponseContext</a></code></strong></div>
+<div class="block">Get an <code>OutputStream</code> to which an entity may be written.
+ <p>
+ The first byte written will result in the writing of thethe status code 
+ and headers.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#getOutputStream()">getOutputStream</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#getOutputStream()">getOutputStream</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the output stream</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.io.IOException</code> - if an IO error occurs</dd></dl>
+</li>
+</ul>
+<a name="isCommitted()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>isCommitted</h4>
+<pre>public&nbsp;boolean&nbsp;isCommitted()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#isCommitted()">HttpResponseContext</a></code></strong></div>
+<div class="block">Ascertain if a response has been committed to the container.
+ <p>
+ A response is committed if the status code, headers have been
+ written to the container.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html#isCommitted()">isCommitted</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/api/core/HttpResponseContext.html" title="interface in com.sun.jersey.api.core">HttpResponseContext</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html#isCommitted()">isCommitted</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../com/sun/jersey/spi/container/ContainerResponse.html" title="class in com.sun.jersey.spi.container">ContainerResponse</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if the response has been committed.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AdaptingContainerResponse.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/spi/container/AdaptingContainerRequest.html" title="class in com.sun.jersey.spi.container"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/spi/container/CachedEntityContainerRequest.html" title="class in com.sun.jersey.spi.container"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/spi/container/AdaptingContainerResponse.html" target="_top">Frames</a></li>
+<li><a href="AdaptingContainerResponse.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

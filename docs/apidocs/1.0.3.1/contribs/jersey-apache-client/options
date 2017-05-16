@@ -1,0 +1,32 @@
+-classpath '/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-apache-client/target/classes:/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-core/target/jersey-core-1.0.3.1.jar:/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-client/target/jersey-client-1.0.3.1.jar:/Users/pavel/.m2/repository/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar:/Users/pavel/.m2/repository/commons-codec/commons-codec/1.2/commons-codec-1.2.jar:/Users/pavel/.m2/repository/javax/ws/rs/jsr311-api/1.0/jsr311-api-1.0.jar:/Users/pavel/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar'
+ -encoding
+'ISO-8859-1'
+-protected
+-sourcepath
+'/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-apache-client/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2009 <a href="http://www.sun.com/">Sun Microsystems, Inc</a>. All Rights Reserved.'
+-charset
+'ISO-8859-1'
+-d
+'/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-apache-client/target/apidocs'
+-doctitle
+'Jersey Apache HTTP Client 1.0.3.1 API'
+-linkoffline
+'https://jersey.dev.java.net/jersey-core/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-core/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-server/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-server/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-client/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/jersey-client/target/apidocs'
+-linkoffline
+'http://maven.apache.org/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/spring/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-contribs/jersey-multipart/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-multipart/target/apidocs'
+-linkoffline
+'https://jersey.dev.java.net/jersey-contribs/jersey-atom-abdera/apidocs' '/Users/pavel/jersey/release/jersey-1.0.3.1/contribs/jersey-atom-abdera/target/apidocs'
+-notimestamp
+-use
+-version
+-windowtitle
+'Jersey Apache HTTP Client 1.0.3.1 API'

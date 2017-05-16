@@ -1,0 +1,432 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+TypePath (jersey-bundle 1.19 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="TypePath (jersey-bundle 1.19 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/TypePath.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Type.html" title="class in jersey.repackaged.org.objectweb.asm"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?jersey/repackaged/org/objectweb/asm/TypePath.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="TypePath.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+jersey.repackaged.org.objectweb.asm</FONT>
+<BR>
+Class TypePath</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>jersey.repackaged.org.objectweb.asm.TypePath</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>TypePath</B><DT>extends java.lang.Object</DL>
+</PRE>
+
+<P>
+The path to a type argument, wildcard bound, array element type, or static
+ inner type within an enclosing type.
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Eric Bruneton</DD>
+</DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#ARRAY_ELEMENT">ARRAY_ELEMENT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A type path step that steps into the element type of an array type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#INNER_TYPE">INNER_TYPE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A type path step that steps into the nested type of a class type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#TYPE_ARGUMENT">TYPE_ARGUMENT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A type path step that steps into a type argument of a generic type.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#WILDCARD_BOUND">WILDCARD_BOUND</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A type path step that steps into the bound of a wildcard type.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html" title="class in jersey.repackaged.org.objectweb.asm">TypePath</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#fromString(java.lang.String)">fromString</A></B>(java.lang.String&nbsp;typePath)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Converts a type path in string form, in the format used by
+ <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#toString()"><CODE>toString()</CODE></A>, into a TypePath object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#getLength()">getLength</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the length of this path.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#getStep(int)">getStep</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the value of the given step of this path.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#getStepArgument(int)">getStepArgument</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the index of the type argument that the given step is stepping
+ into.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.lang.String</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#toString()">toString</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a string representation of this type path.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>clone, equals, finalize, getClass, hashCode, notify, notifyAll, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ARRAY_ELEMENT"><!-- --></A><H3>
+ARRAY_ELEMENT</H3>
+<PRE>
+public static final int <B>ARRAY_ELEMENT</B></PRE>
+<DL>
+<DD>A type path step that steps into the element type of an array type. See
+ <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#getStep(int)"><CODE>getStep</CODE></A>.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#jersey.repackaged.org.objectweb.asm.TypePath.ARRAY_ELEMENT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="INNER_TYPE"><!-- --></A><H3>
+INNER_TYPE</H3>
+<PRE>
+public static final int <B>INNER_TYPE</B></PRE>
+<DL>
+<DD>A type path step that steps into the nested type of a class type. See
+ <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#getStep(int)"><CODE>getStep</CODE></A>.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#jersey.repackaged.org.objectweb.asm.TypePath.INNER_TYPE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="WILDCARD_BOUND"><!-- --></A><H3>
+WILDCARD_BOUND</H3>
+<PRE>
+public static final int <B>WILDCARD_BOUND</B></PRE>
+<DL>
+<DD>A type path step that steps into the bound of a wildcard type. See
+ <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#getStep(int)"><CODE>getStep</CODE></A>.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#jersey.repackaged.org.objectweb.asm.TypePath.WILDCARD_BOUND">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="TYPE_ARGUMENT"><!-- --></A><H3>
+TYPE_ARGUMENT</H3>
+<PRE>
+public static final int <B>TYPE_ARGUMENT</B></PRE>
+<DL>
+<DD>A type path step that steps into a type argument of a generic type. See
+ <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#getStep(int)"><CODE>getStep</CODE></A>.
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#jersey.repackaged.org.objectweb.asm.TypePath.TYPE_ARGUMENT">Constant Field Values</A></DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getLength()"><!-- --></A><H3>
+getLength</H3>
+<PRE>
+public int <B>getLength</B>()</PRE>
+<DL>
+<DD>Returns the length of this path.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the length of this path.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStep(int)"><!-- --></A><H3>
+getStep</H3>
+<PRE>
+public int <B>getStep</B>(int&nbsp;index)</PRE>
+<DL>
+<DD>Returns the value of the given step of this path.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - an index between 0 and <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#getLength()"><CODE>getLength()</CODE></A>, exclusive.
+<DT><B>Returns:</B><DD><A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#ARRAY_ELEMENT"><CODE>ARRAY_ELEMENT</CODE></A>, <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#INNER_TYPE"><CODE>INNER_TYPE</CODE></A>, <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#WILDCARD_BOUND"><CODE>WILDCARD_BOUND</CODE></A>, or
+         <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#TYPE_ARGUMENT"><CODE>TYPE_ARGUMENT</CODE></A>.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStepArgument(int)"><!-- --></A><H3>
+getStepArgument</H3>
+<PRE>
+public int <B>getStepArgument</B>(int&nbsp;index)</PRE>
+<DL>
+<DD>Returns the index of the type argument that the given step is stepping
+ into. This method should only be used for steps whose value is
+ <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#TYPE_ARGUMENT"><CODE>TYPE_ARGUMENT</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>index</CODE> - an index between 0 and <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#getLength()"><CODE>getLength()</CODE></A>, exclusive.
+<DT><B>Returns:</B><DD>the index of the type argument that the given step is stepping
+         into.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fromString(java.lang.String)"><!-- --></A><H3>
+fromString</H3>
+<PRE>
+public static <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html" title="class in jersey.repackaged.org.objectweb.asm">TypePath</A> <B>fromString</B>(java.lang.String&nbsp;typePath)</PRE>
+<DL>
+<DD>Converts a type path in string form, in the format used by
+ <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#toString()"><CODE>toString()</CODE></A>, into a TypePath object.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>typePath</CODE> - a type path in string form, in the format used by
+            <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#toString()"><CODE>toString()</CODE></A>. May be null or empty.
+<DT><B>Returns:</B><DD>the corresponding TypePath object, or null if the path is empty.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toString()"><!-- --></A><H3>
+toString</H3>
+<PRE>
+public java.lang.String <B>toString</B>()</PRE>
+<DL>
+<DD>Returns a string representation of this type path. <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#ARRAY_ELEMENT"><CODE>ARRAY_ELEMENT</CODE></A> steps are represented with '[', <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#INNER_TYPE"><CODE>INNER_TYPE</CODE></A> steps with '.', <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#WILDCARD_BOUND"><CODE>WILDCARD_BOUND</CODE></A> steps
+ with '*' and <A HREF="../../../../../jersey/repackaged/org/objectweb/asm/TypePath.html#TYPE_ARGUMENT"><CODE>TYPE_ARGUMENT</CODE></A> steps with their type
+ argument index in decimal form.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE>toString</CODE> in class <CODE>java.lang.Object</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/TypePath.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../jersey/repackaged/org/objectweb/asm/Type.html" title="class in jersey.repackaged.org.objectweb.asm"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?jersey/repackaged/org/objectweb/asm/TypePath.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="TypePath.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2015 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.
+</BODY>
+</HTML>

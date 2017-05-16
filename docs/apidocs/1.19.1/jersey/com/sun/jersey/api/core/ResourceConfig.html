@@ -1,0 +1,1289 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ResourceConfig (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ResourceConfig (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ResourceConfig.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/api/core/ParentRef.html" title="annotation in com.sun.jersey.api.core"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/api/core/ResourceConfigurator.html" title="interface in com.sun.jersey.api.core"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/api/core/ResourceConfig.html" target="_top">Frames</a></li>
+<li><a href="ResourceConfig.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.api.core</div>
+<h2 title="Class ResourceConfig" class="title">Class ResourceConfig</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../javax/ws/rs/core/Application.html" title="class in javax.ws.rs.core">javax.ws.rs.core.Application</a></li>
+<li>
+<ul class="inheritance">
+<li>com.sun.jersey.api.core.ResourceConfig</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html" title="class in com.sun.jersey.api.core">DefaultResourceConfig</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public abstract class <span class="strong">ResourceConfig</span>
+extends <a href="../../../../../javax/ws/rs/core/Application.html" title="class in javax.ws.rs.core">Application</a>
+implements <a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a></pre>
+<div class="block">The resource configuration for configuring a web application.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#COMMON_DELIMITERS">COMMON_DELIMITERS</a></strong></code>
+<div class="block">Common delimiters used by various properties.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_CANONICALIZE_URI_PATH">FEATURE_CANONICALIZE_URI_PATH</a></strong></code>
+<div class="block">If true the request URI path component will be canonicalized by removing 
+ contiguous slashes (i.e.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_DISABLE_WADL">FEATURE_DISABLE_WADL</a></strong></code>
+<div class="block">If true then disable WADL generation.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_IMPLICIT_VIEWABLES">FEATURE_IMPLICIT_VIEWABLES</a></strong></code>
+<div class="block">If true then the matching algorithm will attempt to match and accept
+ any static content or templates associated with a resource that were
+ not explicitly declared by that resource.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_MATCH_MATRIX_PARAMS">FEATURE_MATCH_MATRIX_PARAMS</a></strong></code>
+<div class="block">If true then matrix parameters (if present) in the request URI path component
+ will not be ignored when matching the path to URI templates declared by
+ resource classes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_NORMALIZE_URI">FEATURE_NORMALIZE_URI</a></strong></code>
+<div class="block">If true and <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_CANONICALIZE_URI_PATH"><code>FEATURE_CANONICALIZE_URI_PATH</code></a> is true then the
+ request URI will be normalized as specified by
+ <code>URI.normalize()</code>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_REDIRECT">FEATURE_REDIRECT</a></strong></code>
+<div class="block">If true, and <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_CANONICALIZE_URI_PATH"><code>FEATURE_CANONICALIZE_URI_PATH</code></a> is true,
+ and the canonicalization/normalization operations on the
+ request URI result in a new URI that is not equal to the request URI,
+ then the client is (temporarily) redirected to the new URI.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_TRACE">FEATURE_TRACE</a></strong></code>
+<div class="block">If true then enable tracing.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_TRACE_PER_REQUEST">FEATURE_TRACE_PER_REQUEST</a></strong></code>
+<div class="block">If true then enable tracing on a per-request basis.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_CONTAINER_NOTIFIER">PROPERTY_CONTAINER_NOTIFIER</a></strong></code>
+<div class="block">If set the instance of <a href="../../../../../com/sun/jersey/spi/container/ContainerNotifier.html" title="interface in com.sun.jersey.spi.container"><code>ContainerNotifier</code></a> to register
+ <a href="../../../../../com/sun/jersey/spi/container/ContainerListener.html" title="interface in com.sun.jersey.spi.container"><code>ContainerListener</code></a> instances.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_CONTAINER_REQUEST_FILTERS">PROPERTY_CONTAINER_REQUEST_FILTERS</a></strong></code>
+<div class="block">If set the list of <a href="../../../../../com/sun/jersey/spi/container/ContainerRequestFilter.html" title="interface in com.sun.jersey.spi.container"><code>ContainerRequestFilter</code></a> that are applied
+ to filter the request.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_CONTAINER_RESPONSE_FILTERS">PROPERTY_CONTAINER_RESPONSE_FILTERS</a></strong></code>
+<div class="block">If set the list of <a href="../../../../../com/sun/jersey/spi/container/ContainerResponseFilter.html" title="interface in com.sun.jersey.spi.container"><code>ContainerResponseFilter</code></a> that are applied
+ to filter the response.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_DEFAULT_RESOURCE_COMPONENT_PROVIDER_FACTORY_CLASS">PROPERTY_DEFAULT_RESOURCE_COMPONENT_PROVIDER_FACTORY_CLASS</a></strong></code>
+<div class="block">If set the default resource component provider factory for the
+ life-cycle of resource classes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_LANGUAGE_MAPPINGS">PROPERTY_LANGUAGE_MAPPINGS</a></strong></code>
+<div class="block">If set the map of file extension to langauge mappings that will be
+ added to the map that is returned from <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getLanguageMappings()"><code>getLanguageMappings()</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_MEDIA_TYPE_MAPPINGS">PROPERTY_MEDIA_TYPE_MAPPINGS</a></strong></code>
+<div class="block">If set the map of file extension to media type mappings that will be
+ added to the map that is returned from <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getMediaTypeMappings()"><code>getMediaTypeMappings()</code></a>.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_RESOURCE_FILTER_FACTORIES">PROPERTY_RESOURCE_FILTER_FACTORIES</a></strong></code>
+<div class="block">If set the list of <a href="../../../../../com/sun/jersey/spi/container/ResourceFilterFactory.html" title="interface in com.sun.jersey.spi.container"><code>ResourceFilterFactory</code></a> that are applied
+ to resources.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_WADL_GENERATOR_CONFIG">PROPERTY_WADL_GENERATOR_CONFIG</a></strong></code>
+<div class="block">If set the wadl generator configuration that provides a <a href="../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl"><code>WadlGenerator</code></a>.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.sun.jersey.core.util.FeaturesAndProperties">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;com.sun.jersey.core.util.<a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a></h3>
+<code><a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#FEATURE_DISABLE_XML_SECURITY">FEATURE_DISABLE_XML_SECURITY</a>, <a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#FEATURE_FORMATTED">FEATURE_FORMATTED</a>, <a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#FEATURE_PRE_1_4_PROVIDER_PRECEDENCE">FEATURE_PRE_1_4_PROVIDER_PRECEDENCE</a>, <a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#FEATURE_XMLROOTELEMENT_PROCESSING">FEATURE_XMLROOTELEMENT_PROCESSING</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#ResourceConfig()">ResourceConfig</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#add(javax.ws.rs.core.Application)">add</a></strong>(<a href="../../../../../javax/ws/rs/core/Application.html" title="class in javax.ws.rs.core">Application</a>&nbsp;app)</code>
+<div class="block">Add the state of an <a href="../../../../../javax/ws/rs/core/Application.html" title="class in javax.ws.rs.core"><code>Application</code></a> to this instance.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html" title="class in com.sun.jersey.api.core">ResourceConfig</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#clone()">clone</a></strong>()</code>
+<div class="block">Clone this resource configuration.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.List</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getContainerRequestFilters()">getContainerRequestFilters</a></strong>()</code>
+<div class="block">Get the list of container request filters.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.List</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getContainerResponseFilters()">getContainerResponseFilters</a></strong>()</code>
+<div class="block">Get the list of container response filters.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getElements(java.lang.String[])">getElements</a></strong>(java.lang.String[]&nbsp;elements)</code>
+<div class="block">Get a canonical array of String elements from a String array
+ where each entry may contain zero or more elements separated by ';'.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static java.lang.String[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getElements(java.lang.String[],%20java.lang.String)">getElements</a></strong>(java.lang.String[]&nbsp;elements,
+           java.lang.String&nbsp;delimiters)</code>
+<div class="block">Get a canonical array of String elements from a String array
+ where each entry may contain zero or more elements separated by characters
+ in delimiters string.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.Map&lt;java.lang.String,java.lang.Object&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getExplicitRootResources()">getExplicitRootResources</a></strong>()</code>
+<div class="block">Get a map of explicit root resource classes and root resource singleton
+ instances.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getFeature(java.lang.String)">getFeature</a></strong>(java.lang.String&nbsp;featureName)</code>
+<div class="block">Get the value of a feature.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract java.util.Map&lt;java.lang.String,java.lang.Boolean&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getFeatures()">getFeatures</a></strong>()</code>
+<div class="block">Get the map of features associated with the Web application.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.Map&lt;java.lang.String,java.lang.String&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getLanguageMappings()">getLanguageMappings</a></strong>()</code>
+<div class="block">Get a map of file extension to language.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.Map&lt;java.lang.String,<a href="../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getMediaTypeMappings()">getMediaTypeMappings</a></strong>()</code>
+<div class="block">Get a map of file extension to media type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>abstract java.util.Map&lt;java.lang.String,java.lang.Object&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getProperties()">getProperties</a></strong>()</code>
+<div class="block">Get the map of properties associated with the Web application.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>abstract java.lang.Object</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getProperty(java.lang.String)">getProperty</a></strong>(java.lang.String&nbsp;propertyName)</code>
+<div class="block">Get the value of a property.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.Set&lt;java.lang.Class&lt;?&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getProviderClasses()">getProviderClasses</a></strong>()</code>
+<div class="block">Get the set of provider classes.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;java.lang.Object&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getProviderSingletons()">getProviderSingletons</a></strong>()</code>
+<div class="block">Get the set of provider singleton instances.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.List</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getResourceFilterFactories()">getResourceFilterFactories</a></strong>()</code>
+<div class="block">Get the list of resource filter factories.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;java.lang.Class&lt;?&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getRootResourceClasses()">getRootResourceClasses</a></strong>()</code>
+<div class="block">Get the set of root resource classes.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.Set&lt;java.lang.Object&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getRootResourceSingletons()">getRootResourceSingletons</a></strong>()</code>
+<div class="block">Get the set of root resource singleton instances.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#isProviderClass(java.lang.Class)">isProviderClass</a></strong>(java.lang.Class&lt;?&gt;&nbsp;c)</code>
+<div class="block">Determine if a class is a provider class.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#isRootResourceClass(java.lang.Class)">isRootResourceClass</a></strong>(java.lang.Class&lt;?&gt;&nbsp;c)</code>
+<div class="block">Determine if a class is a root resource class.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#setPropertiesAndFeatures(java.util.Map)">setPropertiesAndFeatures</a></strong>(java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;entries)</code>
+<div class="block">Set the properties and features given a map of entries.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#validate()">validate</a></strong>()</code>
+<div class="block">Validate the set of classes and singletons.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_javax.ws.rs.core.Application">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;javax.ws.rs.core.<a href="../../../../../javax/ws/rs/core/Application.html" title="class in javax.ws.rs.core">Application</a></h3>
+<code><a href="../../../../../javax/ws/rs/core/Application.html#getClasses()">getClasses</a>, <a href="../../../../../javax/ws/rs/core/Application.html#getSingletons()">getSingletons</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="FEATURE_NORMALIZE_URI">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FEATURE_NORMALIZE_URI</h4>
+<pre>public static final&nbsp;java.lang.String FEATURE_NORMALIZE_URI</pre>
+<div class="block">If true and <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_CANONICALIZE_URI_PATH"><code>FEATURE_CANONICALIZE_URI_PATH</code></a> is true then the
+ request URI will be normalized as specified by
+ <code>URI.normalize()</code>. If not true the request URI is not
+ modified.
+ <p>
+ The default value is false.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.FEATURE_NORMALIZE_URI">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="FEATURE_CANONICALIZE_URI_PATH">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FEATURE_CANONICALIZE_URI_PATH</h4>
+<pre>public static final&nbsp;java.lang.String FEATURE_CANONICALIZE_URI_PATH</pre>
+<div class="block">If true the request URI path component will be canonicalized by removing 
+ contiguous slashes (i.e. all /+ will be replaced by /). If not true the
+ request URI path component is mot modified.
+ <p>
+ The default value is false.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.FEATURE_CANONICALIZE_URI_PATH">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="FEATURE_REDIRECT">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FEATURE_REDIRECT</h4>
+<pre>public static final&nbsp;java.lang.String FEATURE_REDIRECT</pre>
+<div class="block">If true, and <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_CANONICALIZE_URI_PATH"><code>FEATURE_CANONICALIZE_URI_PATH</code></a> is true,
+ and the canonicalization/normalization operations on the
+ request URI result in a new URI that is not equal to the request URI,
+ then the client is (temporarily) redirected to the new URI.
+ <p>
+ If true, and the path value of a <a href="../../../../../javax/ws/rs/Path.html" title="annotation in javax.ws.rs"><code>Path</code></a> annotation ends 
+ in a slash, the request URI path does not end in a '/' and would otherwise
+ match the path value if it did, then the client is (temporarily) 
+ redirected to a new URI that is the request URI with a '/' appended to the
+ the end of the path.
+ <p>
+ The default value is false.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.FEATURE_REDIRECT">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="FEATURE_MATCH_MATRIX_PARAMS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FEATURE_MATCH_MATRIX_PARAMS</h4>
+<pre>public static final&nbsp;java.lang.String FEATURE_MATCH_MATRIX_PARAMS</pre>
+<div class="block">If true then matrix parameters (if present) in the request URI path component
+ will not be ignored when matching the path to URI templates declared by
+ resource classes.
+ <p>
+ The default value is false.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.FEATURE_MATCH_MATRIX_PARAMS">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="FEATURE_IMPLICIT_VIEWABLES">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FEATURE_IMPLICIT_VIEWABLES</h4>
+<pre>public static final&nbsp;java.lang.String FEATURE_IMPLICIT_VIEWABLES</pre>
+<div class="block">If true then the matching algorithm will attempt to match and accept
+ any static content or templates associated with a resource that were
+ not explicitly declared by that resource.
+ <p>
+ If a template is matched then the model for the viewable will be the
+ resource instance associated with the template.
+ <p>
+ The default value is false.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.FEATURE_IMPLICIT_VIEWABLES">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="FEATURE_DISABLE_WADL">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FEATURE_DISABLE_WADL</h4>
+<pre>public static final&nbsp;java.lang.String FEATURE_DISABLE_WADL</pre>
+<div class="block">If true then disable WADL generation.
+ <p>
+ By default WADL generation is automatically enabled, if JAXB is
+ present in the classpath.
+ <p>
+ The default value is false.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.FEATURE_DISABLE_WADL">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="FEATURE_TRACE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FEATURE_TRACE</h4>
+<pre>public static final&nbsp;java.lang.String FEATURE_TRACE</pre>
+<div class="block">If true then enable tracing.
+ <p>
+ Tracing provides useful information that describes how a request
+ is processed and dispatched to JAX-RS/Jersey components. This can aid
+ debugging when the application is not behaving as expected either
+ because of a bug in the application code or in the Jersey code.
+ <p>
+ Trace messages will be primarily output as response headers
+ with a header name of the form "X-Jersey-Trace-XXX", where XXX is a
+ decimal value corresponding to the trace message number, and a header
+ value that is the trace message.
+ <p>
+ In certain cases trace messages will be logged on the server-side if such
+ messages are not suitable as response headers, for example
+ if such messages are too verbose.
+ <p>
+ Trace messages will be output in the same order as traces occur.
+ <p>
+ To log response header trace messages on the server-side enable response
+ logging, see <a href="../../../../../com/sun/jersey/api/container/filter/LoggingFilter.html" title="class in com.sun.jersey.api.container.filter"><code>LoggingFilter</code></a>.
+ <p>
+ The default value is false.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.FEATURE_TRACE">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="FEATURE_TRACE_PER_REQUEST">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FEATURE_TRACE_PER_REQUEST</h4>
+<pre>public static final&nbsp;java.lang.String FEATURE_TRACE_PER_REQUEST</pre>
+<div class="block">If true then enable tracing on a per-request basis.
+ <p>
+ Tracing provides useful information that describes how a request
+ is processed and dispatched to JAX-RS/Jersey components. This can aid
+ debugging when the application is not behaving as expected either
+ because of a bug in the application code or in the Jersey code.
+ <p>
+ Trace messages will be output if a request header is present with a
+ header name of "X-Jersey-Trace-Accept" (the header value is ignored).
+ <p>
+ Trace messages will be primarily output as response headers
+ with a header name of the form "X-Jersey-Trace-XXX", where XXX is a
+ decimal value corresponding to the trace message number, and a header
+ value that is the trace message.
+ <p>
+ In certain cases trace messages will be logged on the server-side if such
+ messages are not suitable as response headers, for example
+ if such messages are too verbose.
+ <p>
+ Trace messages will be output in the same order as traces occur.
+ <p>
+ To log response header trace messages on the server-side enable response
+ logging, see <a href="../../../../../com/sun/jersey/api/container/filter/LoggingFilter.html" title="class in com.sun.jersey.api.container.filter"><code>LoggingFilter</code></a>.
+ <p>
+ The default value is false.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.FEATURE_TRACE_PER_REQUEST">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_MEDIA_TYPE_MAPPINGS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_MEDIA_TYPE_MAPPINGS</h4>
+<pre>public static final&nbsp;java.lang.String PROPERTY_MEDIA_TYPE_MAPPINGS</pre>
+<div class="block">If set the map of file extension to media type mappings that will be
+ added to the map that is returned from <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getMediaTypeMappings()"><code>getMediaTypeMappings()</code></a>.
+ <p>
+ This type of this property must be a String or String[] that contains
+ one or more comma separated key value pairs of the form
+ "&lt;key&gt; : &lt;value&gt;, &lt;key&gt; : &lt;value&gt;" where the key
+ is the file extension and the value is the media type. For example,
+ the following declares two mappings for XML and JSON:
+ "xml : application/xml, json : application/json"
+ <p>
+ The value of this property will be validated, and keys/values added to
+ map returned from <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getMediaTypeMappings()"><code>getMediaTypeMappings()</code></a>, when the
+ <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#validate()"><code>validate()</code></a> method is invoked.
+ <p>
+ Validation will verify that media types are valid.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.PROPERTY_MEDIA_TYPE_MAPPINGS">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_LANGUAGE_MAPPINGS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_LANGUAGE_MAPPINGS</h4>
+<pre>public static final&nbsp;java.lang.String PROPERTY_LANGUAGE_MAPPINGS</pre>
+<div class="block">If set the map of file extension to langauge mappings that will be
+ added to the map that is returned from <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getLanguageMappings()"><code>getLanguageMappings()</code></a>.
+ <p>
+ This type of this property must be a String or String[] that contains
+ one or more comma separated key value pairs of the form
+ "&lt;key&gt; : &lt;value&gt;, &lt;key&gt; : &lt;value&gt;" where the key
+ is the file extension and the value is the language tag. For example,
+ the following declares two mappings for the languages "en" and "en-US:
+ "english : en, american : en-US".
+ <p>
+ The value of this property will be validated, and keys/values added to
+ map returned from <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getMediaTypeMappings()"><code>getMediaTypeMappings()</code></a>, when the
+ <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#validate()"><code>validate()</code></a> method is invoked.
+ <p>
+ Validation will verify that language tags are valid according to HTTP/1.1
+ and are of the form:
+ <pre>
+   language-tag  = primary-tag *( "-" subtag )
+   primary-tag   = 1*8ALPHA
+   subtag        = 1*8ALPHA
+ </pre></div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.PROPERTY_LANGUAGE_MAPPINGS">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_DEFAULT_RESOURCE_COMPONENT_PROVIDER_FACTORY_CLASS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_DEFAULT_RESOURCE_COMPONENT_PROVIDER_FACTORY_CLASS</h4>
+<pre>public static final&nbsp;java.lang.String PROPERTY_DEFAULT_RESOURCE_COMPONENT_PROVIDER_FACTORY_CLASS</pre>
+<div class="block">If set the default resource component provider factory for the
+ life-cycle of resource classes.
+ <p>
+ The type of this property must be a Class or a String that is a Class name,
+ and the Class must a sub-class of
+ <a href="../../../../../com/sun/jersey/server/spi/component/ResourceComponentProviderFactory.html" title="interface in com.sun.jersey.server.spi.component"><code>ResourceComponentProviderFactory</code></a>.
+ <p>
+ If not set the default resource component provider factory will be the 
+ per-request resource component provider factory.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.PROPERTY_DEFAULT_RESOURCE_COMPONENT_PROVIDER_FACTORY_CLASS">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_CONTAINER_NOTIFIER">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_CONTAINER_NOTIFIER</h4>
+<pre>public static final&nbsp;java.lang.String PROPERTY_CONTAINER_NOTIFIER</pre>
+<div class="block">If set the instance of <a href="../../../../../com/sun/jersey/spi/container/ContainerNotifier.html" title="interface in com.sun.jersey.spi.container"><code>ContainerNotifier</code></a> to register
+ <a href="../../../../../com/sun/jersey/spi/container/ContainerListener.html" title="interface in com.sun.jersey.spi.container"><code>ContainerListener</code></a> instances.
+ <p>
+ If the instance does not implement the <a href="../../../../../com/sun/jersey/spi/container/ContainerNotifier.html" title="interface in com.sun.jersey.spi.container"><code>ContainerNotifier</code></a>
+ then the property is ignored.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.PROPERTY_CONTAINER_NOTIFIER">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_CONTAINER_REQUEST_FILTERS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_CONTAINER_REQUEST_FILTERS</h4>
+<pre>public static final&nbsp;java.lang.String PROPERTY_CONTAINER_REQUEST_FILTERS</pre>
+<div class="block">If set the list of <a href="../../../../../com/sun/jersey/spi/container/ContainerRequestFilter.html" title="interface in com.sun.jersey.spi.container"><code>ContainerRequestFilter</code></a> that are applied
+ to filter the request. When applying the list of request filters to
+ a request each request filter is applied, in order, from the first to
+ the last entry in the list.
+ <p>
+ The instance may be a String[] or String that contains one or more fully 
+ qualified class name of a request filter class separated by ';', ','
+ or ' ' (space).
+ Otherwise the instance may be List containing instances of String,
+ String[], Class&lt;? extends ContainerRequestFilter;&gt; or instances
+ of ContainerRequestFilter.
+ <p>
+ If a String[] or String of fully qualified class names or a Class then
+ each class is instantiated as a singleton. Thus, if there is more than one
+ class registered for this property or the same class is also registered for
+ the <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_CONTAINER_RESPONSE_FILTERS"><code>PROPERTY_CONTAINER_RESPONSE_FILTERS</code></a> property then only
+ one instance will be instantiated.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../com/sun/jersey/api/container/filter/package-summary.html"><code>com.sun.jersey.api.container.filter</code></a>, 
+<a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.PROPERTY_CONTAINER_REQUEST_FILTERS">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_CONTAINER_RESPONSE_FILTERS">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_CONTAINER_RESPONSE_FILTERS</h4>
+<pre>public static final&nbsp;java.lang.String PROPERTY_CONTAINER_RESPONSE_FILTERS</pre>
+<div class="block">If set the list of <a href="../../../../../com/sun/jersey/spi/container/ContainerResponseFilter.html" title="interface in com.sun.jersey.spi.container"><code>ContainerResponseFilter</code></a> that are applied
+ to filter the response. When applying the list of response filters to
+ a response each response filter is applied, in order, from the first to
+ the last entry in the list.
+ <p>
+ The instance may be a String[] or String that contains one or more fully
+ qualified class name of a request filter class separated by ';', ','
+ or ' ' (space).
+ Otherwise the instance may be List containing instances of String,
+ String[], Class&lt;? extends ContainerResponseFilter;&gt; or instances
+ of ContainerResponseFilter.
+ <p>
+ If a String[] or String of fully qualified class names or a Class then
+ each class is instantiated as a singleton. Thus, if there is more than one
+ class registered for this property or the same class is also registered for
+ the <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_CONTAINER_REQUEST_FILTERS"><code>PROPERTY_CONTAINER_REQUEST_FILTERS</code></a> property then only
+ one instance will be instantiated.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../com/sun/jersey/api/container/filter/package-summary.html"><code>com.sun.jersey.api.container.filter</code></a>, 
+<a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.PROPERTY_CONTAINER_RESPONSE_FILTERS">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_RESOURCE_FILTER_FACTORIES">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_RESOURCE_FILTER_FACTORIES</h4>
+<pre>public static final&nbsp;java.lang.String PROPERTY_RESOURCE_FILTER_FACTORIES</pre>
+<div class="block">If set the list of <a href="../../../../../com/sun/jersey/spi/container/ResourceFilterFactory.html" title="interface in com.sun.jersey.spi.container"><code>ResourceFilterFactory</code></a> that are applied
+ to resources. When applying the list of resource filters factories to a
+ request each resource filter factory is applied, in order, from the first
+ to last entry in the list.
+ <p>
+ The instance may be a String[] or String that contains one or more fully
+ qualified class name of a response filter class separated by ';', ','
+ or ' ' (space).
+ Otherwise the instance may be List containing instances of String,
+ String[], Class&lt;? extends ResourceFilterFactory;&gt; or instances
+ of ResourceFilterFactory.
+ <p>
+ If a String[] or String of fully qualified class names or a Class then
+ each class is instantiated as a singleton. Thus, if there is more than one
+ class registered for this property one instance will be instantiated.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../com/sun/jersey/api/container/filter/package-summary.html"><code>com.sun.jersey.api.container.filter</code></a>, 
+<a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.PROPERTY_RESOURCE_FILTER_FACTORIES">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="PROPERTY_WADL_GENERATOR_CONFIG">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PROPERTY_WADL_GENERATOR_CONFIG</h4>
+<pre>public static final&nbsp;java.lang.String PROPERTY_WADL_GENERATOR_CONFIG</pre>
+<div class="block">If set the wadl generator configuration that provides a <a href="../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl"><code>WadlGenerator</code></a>.
+ <p>
+ The type of this property must be a subclass or an instance of a subclass of
+ <a href="../../../../../com/sun/jersey/api/wadl/config/WadlGeneratorConfig.html" title="class in com.sun.jersey.api.wadl.config"><code>WadlGeneratorConfig</code></a>.
+ </p>
+ <p>
+ If this property is not set the default wadl generator will be used for generating wadl.
+ </p></div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.PROPERTY_WADL_GENERATOR_CONFIG">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="COMMON_DELIMITERS">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>COMMON_DELIMITERS</h4>
+<pre>public static final&nbsp;java.lang.String COMMON_DELIMITERS</pre>
+<div class="block">Common delimiters used by various properties.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ResourceConfig.COMMON_DELIMITERS">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ResourceConfig()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ResourceConfig</h4>
+<pre>public&nbsp;ResourceConfig()</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getFeatures()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFeatures</h4>
+<pre>public abstract&nbsp;java.util.Map&lt;java.lang.String,java.lang.Boolean&gt;&nbsp;getFeatures()</pre>
+<div class="block">Get the map of features associated with the Web application.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#getFeatures()">getFeatures</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the features.
+         The returned value shall never be null.</dd></dl>
+</li>
+</ul>
+<a name="getFeature(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFeature</h4>
+<pre>public abstract&nbsp;boolean&nbsp;getFeature(java.lang.String&nbsp;featureName)</pre>
+<div class="block">Get the value of a feature.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#getFeature(java.lang.String)">getFeature</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>featureName</code> - the feature name.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if the feature is present and set to true, otherwise false
+         if the feature is present and set to false or the feature is not 
+         present.</dd></dl>
+</li>
+</ul>
+<a name="getProperties()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProperties</h4>
+<pre>public abstract&nbsp;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;getProperties()</pre>
+<div class="block">Get the map of properties associated with the Web application.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#getProperties()">getProperties</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the properties.
+         The returned value shall never be null.</dd></dl>
+</li>
+</ul>
+<a name="getProperty(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProperty</h4>
+<pre>public abstract&nbsp;java.lang.Object&nbsp;getProperty(java.lang.String&nbsp;propertyName)</pre>
+<div class="block">Get the value of a property.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#getProperty(java.lang.String)">getProperty</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>propertyName</code> - the property name.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the property, or null if there is no property present for the
+         given property name.</dd></dl>
+</li>
+</ul>
+<a name="getMediaTypeMappings()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMediaTypeMappings</h4>
+<pre>public&nbsp;java.util.Map&lt;java.lang.String,<a href="../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&gt;&nbsp;getMediaTypeMappings()</pre>
+<div class="block">Get a map of file extension to media type. This is used to drive 
+ URI-based content negotiation such that, e.g.:
+ <pre>GET /resource.atom</pre>
+ <p>is equivalent to:</p>
+ <pre>GET /resource
+Accept: application/atom+xml</pre>
+ <p>
+ The default implementation returns an empty map.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a map of file extension to media type</dd></dl>
+</li>
+</ul>
+<a name="getLanguageMappings()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLanguageMappings</h4>
+<pre>public&nbsp;java.util.Map&lt;java.lang.String,java.lang.String&gt;&nbsp;getLanguageMappings()</pre>
+<div class="block">Get a map of file extension to language. This is used to drive 
+ URI-based content negotiation such that, e.g.:
+ <pre>GET /resource.english</pre>
+ <p>is equivalent to:</p>
+ <pre>GET /resource
+Accept-Language: en</pre>
+ <p>
+ The default implementation returns an empty map.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a map of file extension to language</dd></dl>
+</li>
+</ul>
+<a name="getExplicitRootResources()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExplicitRootResources</h4>
+<pre>public&nbsp;java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;getExplicitRootResources()</pre>
+<div class="block">Get a map of explicit root resource classes and root resource singleton
+ instances. The default lifecycle for root resource class instances is
+ per-request.
+ <p>
+ The root resource path template is declared using the key in the map. This
+ is a substitute for the declaration of a <a href="../../../../../javax/ws/rs/Path.html" title="annotation in javax.ws.rs"><code>Path</code></a> annotation on a root
+ resource class or singleton instance. The key has the same semantics as the
+ <a href="../../../../../javax/ws/rs/Path.html#value()"><code>Path.value()</code></a>. If such a <a href="../../../../../javax/ws/rs/Path.html" title="annotation in javax.ws.rs"><code>Path</code></a> annotation is present
+ it will be ignored.
+ <p>
+ For example, the following will register two root resources, first
+ a root resource class at the path "class" and a root resource singleton
+ at the path "singleton":
+ <blockquote><pre>
+     getExplicitRootResources().put("class", RootResourceClass.class);
+     getExplicitRootResources().put("singleton", new RootResourceSingleton());
+ </pre></blockquote></div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>a map of explicit root resource classes and root resource 
+         singleton instances.</dd></dl>
+</li>
+</ul>
+<a name="validate()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>validate</h4>
+<pre>public&nbsp;void&nbsp;validate()</pre>
+<div class="block">Validate the set of classes and singletons.
+ <p>
+ A registered class is removed from the set of registered classes
+ if an instance of that class is a member of the set of registered
+ singletons.
+ <p>
+ A registered class that is an interface or an abstract class
+ is removed from the registered classes.
+ <p>
+ File extension to media type and language mappings in the properties
+ <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_MEDIA_TYPE_MAPPINGS"><code>PROPERTY_MEDIA_TYPE_MAPPINGS</code></a> and <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_LANGUAGE_MAPPINGS"><code>PROPERTY_LANGUAGE_MAPPINGS</code></a>,
+ respectively, are processed and key/values pairs added to the maps
+ returned from <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getMediaTypeMappings()"><code>getMediaTypeMappings()</code></a> and 
+ <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getLanguageMappings()"><code>getLanguageMappings()</code></a>, respectively. The characters of file
+ extension values will be contextually encoded according to the set of 
+ valid characters defined for a path segment.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the set of registered singletons 
+         contains more than one instance of the same root resource class,
+         or validation of media type and language mappings failed.</dd></dl>
+</li>
+</ul>
+<a name="getRootResourceClasses()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRootResourceClasses</h4>
+<pre>public&nbsp;java.util.Set&lt;java.lang.Class&lt;?&gt;&gt;&nbsp;getRootResourceClasses()</pre>
+<div class="block">Get the set of root resource classes.
+ <p>
+ A root resource class is a registered class that is annotated with
+ Path.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the set of root resource classes.</dd></dl>
+</li>
+</ul>
+<a name="getProviderClasses()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProviderClasses</h4>
+<pre>public&nbsp;java.util.Set&lt;java.lang.Class&lt;?&gt;&gt;&nbsp;getProviderClasses()</pre>
+<div class="block">Get the set of provider classes.
+ <p>
+ A provider class is a registered class that is not annotated with
+ Path.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the set of provider classes.</dd></dl>
+</li>
+</ul>
+<a name="getRootResourceSingletons()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRootResourceSingletons</h4>
+<pre>public&nbsp;java.util.Set&lt;java.lang.Object&gt;&nbsp;getRootResourceSingletons()</pre>
+<div class="block">Get the set of root resource singleton instances.
+ <p>
+ A root resource singleton instance is a registered instance whose class
+ is annotated with Path.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the set of root resource singleton instances.</dd></dl>
+</li>
+</ul>
+<a name="getProviderSingletons()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProviderSingletons</h4>
+<pre>public&nbsp;java.util.Set&lt;java.lang.Object&gt;&nbsp;getProviderSingletons()</pre>
+<div class="block">Get the set of provider singleton instances.
+ <p>
+ A provider singleton instances is a registered instance whose class
+ is not annotated with Path.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the set of provider singleton instances.</dd></dl>
+</li>
+</ul>
+<a name="isRootResourceClass(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isRootResourceClass</h4>
+<pre>public static&nbsp;boolean&nbsp;isRootResourceClass(java.lang.Class&lt;?&gt;&nbsp;c)</pre>
+<div class="block">Determine if a class is a root resource class.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the class.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if the class is a root resource class, otherwise false
+         (including if the class is null).</dd></dl>
+</li>
+</ul>
+<a name="isProviderClass(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isProviderClass</h4>
+<pre>public static&nbsp;boolean&nbsp;isProviderClass(java.lang.Class&lt;?&gt;&nbsp;c)</pre>
+<div class="block">Determine if a class is a provider class.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>c</code> - the class.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>true if the class is a provider class, otherwise false
+         (including if the class is null)</dd></dl>
+</li>
+</ul>
+<a name="getContainerRequestFilters()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContainerRequestFilters</h4>
+<pre>public&nbsp;java.util.List&nbsp;getContainerRequestFilters()</pre>
+<div class="block">Get the list of container request filters.
+ <p>
+ This list may be modified to add or remove filter elements.
+ See <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_CONTAINER_REQUEST_FILTERS"><code>PROPERTY_CONTAINER_REQUEST_FILTERS</code></a> for the valid elements
+ of the list.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the list of container request filters.
+         An empty list will be returned if no filters are present.</dd></dl>
+</li>
+</ul>
+<a name="getContainerResponseFilters()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContainerResponseFilters</h4>
+<pre>public&nbsp;java.util.List&nbsp;getContainerResponseFilters()</pre>
+<div class="block">Get the list of container response filters.
+ <p>
+ This list may be modified to add or remove filter elements.
+ See <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_CONTAINER_RESPONSE_FILTERS"><code>PROPERTY_CONTAINER_RESPONSE_FILTERS</code></a> for the valid elements
+ of the list.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the list of container response filters.
+         An empty list will be returned if no filters are present.</dd></dl>
+</li>
+</ul>
+<a name="getResourceFilterFactories()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getResourceFilterFactories</h4>
+<pre>public&nbsp;java.util.List&nbsp;getResourceFilterFactories()</pre>
+<div class="block">Get the list of resource filter factories.
+ <p>
+ This list may be modified to add or remove filter elements.
+ See <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_RESOURCE_FILTER_FACTORIES"><code>PROPERTY_RESOURCE_FILTER_FACTORIES</code></a> for the valid elements
+ of the list.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the list of resource filter factories.
+         An empty list will be returned if no filters are present.</dd></dl>
+</li>
+</ul>
+<a name="setPropertiesAndFeatures(java.util.Map)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPropertiesAndFeatures</h4>
+<pre>public&nbsp;void&nbsp;setPropertiesAndFeatures(java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;entries)</pre>
+<div class="block">Set the properties and features given a map of entries.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>entries</code> - the map of entries. All entries are added as properties.
+ Properties are only added if an existing property does not currently exist.
+
+ Any entry with a value that is an instance of Boolean is added as a
+ feature with the feature name set to the entry name and the feature value
+ set to the entry value. Any entry with a value that is an instance String
+ and is equal (ignoring case and white space) to "true" or "false" is added
+ as a feature with the feature name set to the entry name and the feature
+ value set to the Boolean value of the entry value. Features are only added
+ if an existing feature does not currently exist.</dd></dl>
+</li>
+</ul>
+<a name="add(javax.ws.rs.core.Application)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;void&nbsp;add(<a href="../../../../../javax/ws/rs/core/Application.html" title="class in javax.ws.rs.core">Application</a>&nbsp;app)</pre>
+<div class="block">Add the state of an <a href="../../../../../javax/ws/rs/core/Application.html" title="class in javax.ws.rs.core"><code>Application</code></a> to this instance.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>app</code> - the application.</dd></dl>
+</li>
+</ul>
+<a name="clone()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>clone</h4>
+<pre>public&nbsp;<a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html" title="class in com.sun.jersey.api.core">ResourceConfig</a>&nbsp;clone()</pre>
+<div class="block">Clone this resource configuration.
+ <p>
+ The set of classes, set of singletons, map of explicit root resources,
+ map of language mappings, map of media type mappings, map of features and
+ map of properties will be cloned.</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code>clone</code>&nbsp;in class&nbsp;<code>java.lang.Object</code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>a cloned instance of this resource configuration.</dd></dl>
+</li>
+</ul>
+<a name="getElements(java.lang.String[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getElements</h4>
+<pre>public static&nbsp;java.lang.String[]&nbsp;getElements(java.lang.String[]&nbsp;elements)</pre>
+<div class="block">Get a canonical array of String elements from a String array
+ where each entry may contain zero or more elements separated by ';'.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>elements</code> - an array where each String entry may contain zero or more
+        ';' separated elements.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the array of elements, each element is trimmed, the array will
+         not contain any empty or null entries.</dd></dl>
+</li>
+</ul>
+<a name="getElements(java.lang.String[], java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getElements</h4>
+<pre>public static&nbsp;java.lang.String[]&nbsp;getElements(java.lang.String[]&nbsp;elements,
+                             java.lang.String&nbsp;delimiters)</pre>
+<div class="block">Get a canonical array of String elements from a String array
+ where each entry may contain zero or more elements separated by characters
+ in delimiters string.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>elements</code> - an array where each String entry may contain zero or more
+        delimiters separated elements.</dd><dd><code>delimiters</code> - string with delimiters, every character represents one
+        delimiter.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the array of elements, each element is trimmed, the array will
+         not contain any empty or null entries.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ResourceConfig.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/api/core/ParentRef.html" title="annotation in com.sun.jersey.api.core"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/api/core/ResourceConfigurator.html" title="interface in com.sun.jersey.api.core"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/api/core/ResourceConfig.html" target="_top">Frames</a></li>
+<li><a href="ResourceConfig.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

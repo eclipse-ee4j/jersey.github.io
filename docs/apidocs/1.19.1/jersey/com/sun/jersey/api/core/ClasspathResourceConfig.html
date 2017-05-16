@@ -1,0 +1,370 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>ClasspathResourceConfig (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ClasspathResourceConfig (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ClasspathResourceConfig.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/api/core/ClassNamesResourceConfig.html" title="class in com.sun.jersey.api.core"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html" title="class in com.sun.jersey.api.core"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/api/core/ClasspathResourceConfig.html" target="_top">Frames</a></li>
+<li><a href="ClasspathResourceConfig.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#methods_inherited_from_class_com.sun.jersey.api.core.ScanningResourceConfig">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.api.core</div>
+<h2 title="Class ClasspathResourceConfig" class="title">Class ClasspathResourceConfig</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../javax/ws/rs/core/Application.html" title="class in javax.ws.rs.core">javax.ws.rs.core.Application</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html" title="class in com.sun.jersey.api.core">com.sun.jersey.api.core.ResourceConfig</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html" title="class in com.sun.jersey.api.core">com.sun.jersey.api.core.DefaultResourceConfig</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../com/sun/jersey/api/core/ScanningResourceConfig.html" title="class in com.sun.jersey.api.core">com.sun.jersey.api.core.ScanningResourceConfig</a></li>
+<li>
+<ul class="inheritance">
+<li>com.sun.jersey.api.core.ClasspathResourceConfig</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a>, <a href="../../../../../com/sun/jersey/spi/container/ReloadListener.html" title="interface in com.sun.jersey.spi.container">ReloadListener</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">ClasspathResourceConfig</span>
+extends <a href="../../../../../com/sun/jersey/api/core/ScanningResourceConfig.html" title="class in com.sun.jersey.api.core">ScanningResourceConfig</a></pre>
+<div class="block">A mutable implementation of <a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html" title="class in com.sun.jersey.api.core"><code>DefaultResourceConfig</code></a> that dynamically 
+ searches for root resource and provider classes in the files and directories
+ declared by the property <a href="../../../../../com/sun/jersey/api/core/ClasspathResourceConfig.html#PROPERTY_CLASSPATH"><code>PROPERTY_CLASSPATH</code></a>. 
+ That property MUST be included in the map of initial properties passed to 
+ the constructor.</div>
+<dl><dt><span class="strong">Author:</span></dt>
+  <dd>Paul.Sandoz@Sun.Com, Frank D. Martinez. fmartinez@asimovt.com</dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/api/core/ClasspathResourceConfig.html#PROPERTY_CLASSPATH">PROPERTY_CLASSPATH</a></strong></code>
+<div class="block">The property value MUST be an instance String or String[].</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.sun.jersey.api.core.ResourceConfig">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;com.sun.jersey.api.core.<a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html" title="class in com.sun.jersey.api.core">ResourceConfig</a></h3>
+<code><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#COMMON_DELIMITERS">COMMON_DELIMITERS</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_CANONICALIZE_URI_PATH">FEATURE_CANONICALIZE_URI_PATH</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_DISABLE_WADL">FEATURE_DISABLE_WADL</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_IMPLICIT_VIEWABLES">FEATURE_IMPLICIT_VIEWABLES</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_MATCH_MATRIX_PARAMS">FEATURE_MATCH_MATRIX_PARAMS</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_NORMALIZE_URI">FEATURE_NORMALIZE_URI</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_REDIRECT">FEATURE_REDIRECT</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_TRACE">FEATURE_TRACE</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#FEATURE_TRACE_PER_REQUEST">FEATURE_TRACE_PER_REQUEST</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_CONTAINER_NOTIFIER">PROPERTY_CONTAINER_NOTIFIER</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_CONTAINER_REQUEST_FILTERS">PROPERTY_CONTAINER_REQUEST_FILTERS</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_CONTAINER_RESPONSE_FILTERS">PROPERTY_CONTAINER_RESPONSE_FILTERS</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_DEFAULT_RESOURCE_COMPONENT_PROVIDER_FACTORY_CLASS">PROPERTY_DEFAULT_RESOURCE_COMPONENT_PROVIDER_FACTORY_CLASS</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_LANGUAGE_MAPPINGS">PROPERTY_LANGUAGE_MAPPINGS</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_MEDIA_TYPE_MAPPINGS">PROPERTY_MEDIA_TYPE_MAPPINGS</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_RESOURCE_FILTER_FACTORIES">PROPERTY_RESOURCE_FILTER_FACTORIES</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#PROPERTY_WADL_GENERATOR_CONFIG">PROPERTY_WADL_GENERATOR_CONFIG</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_com.sun.jersey.core.util.FeaturesAndProperties">
+<!--   -->
+</a>
+<h3>Fields inherited from interface&nbsp;com.sun.jersey.core.util.<a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html" title="interface in com.sun.jersey.core.util">FeaturesAndProperties</a></h3>
+<code><a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#FEATURE_DISABLE_XML_SECURITY">FEATURE_DISABLE_XML_SECURITY</a>, <a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#FEATURE_FORMATTED">FEATURE_FORMATTED</a>, <a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#FEATURE_PRE_1_4_PROVIDER_PRECEDENCE">FEATURE_PRE_1_4_PROVIDER_PRECEDENCE</a>, <a href="../../../../../com/sun/jersey/core/util/FeaturesAndProperties.html#FEATURE_XMLROOTELEMENT_PROCESSING">FEATURE_XMLROOTELEMENT_PROCESSING</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../com/sun/jersey/api/core/ClasspathResourceConfig.html#ClasspathResourceConfig()">ClasspathResourceConfig</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../com/sun/jersey/api/core/ClasspathResourceConfig.html#ClasspathResourceConfig(java.util.Map)">ClasspathResourceConfig</a></strong>(java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;props)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../com/sun/jersey/api/core/ClasspathResourceConfig.html#ClasspathResourceConfig(java.lang.String[])">ClasspathResourceConfig</a></strong>(java.lang.String[]&nbsp;paths)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.sun.jersey.api.core.ScanningResourceConfig">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.sun.jersey.api.core.<a href="../../../../../com/sun/jersey/api/core/ScanningResourceConfig.html" title="class in com.sun.jersey.api.core">ScanningResourceConfig</a></h3>
+<code><a href="../../../../../com/sun/jersey/api/core/ScanningResourceConfig.html#init(com.sun.jersey.core.spi.scanning.Scanner)">init</a>, <a href="../../../../../com/sun/jersey/api/core/ScanningResourceConfig.html#onReload()">onReload</a>, <a href="../../../../../com/sun/jersey/api/core/ScanningResourceConfig.html#reload()">reload</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.sun.jersey.api.core.DefaultResourceConfig">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.sun.jersey.api.core.<a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html" title="class in com.sun.jersey.api.core">DefaultResourceConfig</a></h3>
+<code><a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html#getClasses()">getClasses</a>, <a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html#getExplicitRootResources()">getExplicitRootResources</a>, <a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html#getFeature(java.lang.String)">getFeature</a>, <a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html#getFeatures()">getFeatures</a>, <a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html#getLanguageMappings()">getLanguageMappings</a>, <a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html#getMediaTypeMappings()">getMediaTypeMappings</a>, <a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html#getProperties()">getProperties</a>, <a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html#getProperty(java.lang.String)">getProperty</a>, <a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html#getSingletons()">getSingletons</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_com.sun.jersey.api.core.ResourceConfig">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;com.sun.jersey.api.core.<a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html" title="class in com.sun.jersey.api.core">ResourceConfig</a></h3>
+<code><a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#add(javax.ws.rs.core.Application)">add</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#clone()">clone</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getContainerRequestFilters()">getContainerRequestFilters</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getContainerResponseFilters()">getContainerResponseFilters</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getElements(java.lang.String[])">getElements</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getElements(java.lang.String[],%20java.lang.String)">getElements</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getProviderClasses()">getProviderClasses</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getProviderSingletons()">getProviderSingletons</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getResourceFilterFactories()">getResourceFilterFactories</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getRootResourceClasses()">getRootResourceClasses</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#getRootResourceSingletons()">getRootResourceSingletons</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#isProviderClass(java.lang.Class)">isProviderClass</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#isRootResourceClass(java.lang.Class)">isRootResourceClass</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#setPropertiesAndFeatures(java.util.Map)">setPropertiesAndFeatures</a>, <a href="../../../../../com/sun/jersey/api/core/ResourceConfig.html#validate()">validate</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="PROPERTY_CLASSPATH">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>PROPERTY_CLASSPATH</h4>
+<pre>public static final&nbsp;java.lang.String PROPERTY_CLASSPATH</pre>
+<div class="block">The property value MUST be an instance String or String[]. Each String
+ instance represents one or more paths that MUST be separated by ';',
+ ',' or ' ' (space). 
+ Each path MUST be an absolute or relative directory, or a Jar file. 
+ The contents of a directory, including Java class files, jars files 
+ and sub-directories (recursively) are scanned. The Java class files of
+ a jar file are scanned.
+ <p>
+ Root resource classes MUST be present in the Java class path.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#com.sun.jersey.api.core.ClasspathResourceConfig.PROPERTY_CLASSPATH">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ClasspathResourceConfig()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ClasspathResourceConfig</h4>
+<pre>public&nbsp;ClasspathResourceConfig()</pre>
+</li>
+</ul>
+<a name="ClasspathResourceConfig(java.util.Map)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ClasspathResourceConfig</h4>
+<pre>public&nbsp;ClasspathResourceConfig(java.util.Map&lt;java.lang.String,java.lang.Object&gt;&nbsp;props)</pre>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>props</code> - the property bag that contains the property 
+        <a href="../../../../../com/sun/jersey/api/core/ClasspathResourceConfig.html#PROPERTY_CLASSPATH"><code>PROPERTY_CLASSPATH</code></a>.</dd></dl>
+</li>
+</ul>
+<a name="ClasspathResourceConfig(java.lang.String[])">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ClasspathResourceConfig</h4>
+<pre>public&nbsp;ClasspathResourceConfig(java.lang.String[]&nbsp;paths)</pre>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>paths</code> - the array paths consisting of either jar files or
+        directories containing jar files for class files.</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ClasspathResourceConfig.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../com/sun/jersey/api/core/ClassNamesResourceConfig.html" title="class in com.sun.jersey.api.core"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../com/sun/jersey/api/core/DefaultResourceConfig.html" title="class in com.sun.jersey.api.core"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?com/sun/jersey/api/core/ClasspathResourceConfig.html" target="_top">Frames</a></li>
+<li><a href="ClasspathResourceConfig.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#methods_inherited_from_class_com.sun.jersey.api.core.ScanningResourceConfig">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Method</li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>

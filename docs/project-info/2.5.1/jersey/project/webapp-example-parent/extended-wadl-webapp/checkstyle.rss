@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>jersey-examples-extended-wadl-webapp - Checkstyle report</title>
+    <link>https://jersey.java.net/project/webapp-example-parent/extended-wadl-webapp/</link>
+    <description>jersey-examples-extended-wadl-webapp - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
+    <item>
+      <title>File: 6,
+             Errors: 37,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://jersey.java.net/project/webapp-example-parent/extended-wadl-webapp//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://jersey.java.net/project/webapp-example-parent/extended-wadl-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/webapp-example-parent/extended-wadl-webapp//checkstyle.html#org.glassfish.jersey.examples.extendedwadl.resources.ItemResource.java">org/glassfish/jersey/examples/extendedwadl/resources/ItemResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/webapp-example-parent/extended-wadl-webapp//checkstyle.html#org.glassfish.jersey.examples.extendedwadl.resources.ItemsResource.java">org/glassfish/jersey/examples/extendedwadl/resources/ItemsResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/webapp-example-parent/extended-wadl-webapp//checkstyle.html#org.glassfish.jersey.examples.extendedwadl.util.Examples.java">org/glassfish/jersey/examples/extendedwadl/util/Examples.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/webapp-example-parent/extended-wadl-webapp//checkstyle.html#org.glassfish.jersey.examples.extendedwadl.resources.MyApplication.java">org/glassfish/jersey/examples/extendedwadl/resources/MyApplication.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/webapp-example-parent/extended-wadl-webapp//checkstyle.html#org.glassfish.jersey.examples.extendedwadl.App.java">org/glassfish/jersey/examples/extendedwadl/App.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/webapp-example-parent/extended-wadl-webapp//checkstyle.html#org.glassfish.jersey.examples.extendedwadl.SampleWadlGeneratorConfig.java">org/glassfish/jersey/examples/extendedwadl/SampleWadlGeneratorConfig.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

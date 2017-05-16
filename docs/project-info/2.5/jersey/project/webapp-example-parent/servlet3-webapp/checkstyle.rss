@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>jersey-examples-servlet3-webapp - Checkstyle report</title>
+    <link>https://jersey.java.net/project/webapp-example-parent/servlet3-webapp/</link>
+    <description>jersey-examples-servlet3-webapp - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
+    <item>
+      <title>File: 3,
+             Errors: 6,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://jersey.java.net/project/webapp-example-parent/servlet3-webapp//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://jersey.java.net/project/webapp-example-parent/servlet3-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/webapp-example-parent/servlet3-webapp//checkstyle.html#org.glassfish.jersey.examples.servlet3.webapp.CatResource.java">org/glassfish/jersey/examples/servlet3/webapp/CatResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/webapp-example-parent/servlet3-webapp//checkstyle.html#org.glassfish.jersey.examples.servlet3.webapp.DogResource.java">org/glassfish/jersey/examples/servlet3/webapp/DogResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/webapp-example-parent/servlet3-webapp//checkstyle.html#org.glassfish.jersey.examples.servlet3.webapp.App.java">org/glassfish/jersey/examples/servlet3/webapp/App.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

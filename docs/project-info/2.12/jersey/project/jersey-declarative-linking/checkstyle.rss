@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>jersey-declarative-linking - Checkstyle report</title>
+    <link>https://jersey.java.net/project/jersey-declarative-linking/</link>
+    <description>jersey-declarative-linking - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
+    <item>
+      <title>File: 20,
+             Errors: 257,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.FieldProcessor.java">org/glassfish/jersey/linking/FieldProcessor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  26
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.ResponseLinkFilter.java">org/glassfish/jersey/linking/ResponseLinkFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.ResponseContextResolver.java">org/glassfish/jersey/linking/ResponseContextResolver.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  28
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.LinkELContext.java">org/glassfish/jersey/linking/LinkELContext.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.mapping.ResourceMappingContext.java">org/glassfish/jersey/linking/mapping/ResourceMappingContext.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.RequestLinkFilter.java">org/glassfish/jersey/linking/RequestLinkFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLinkDescriptor.java">org/glassfish/jersey/linking/InjectLinkDescriptor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLink.java">org/glassfish/jersey/linking/InjectLink.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.EntityDescriptor.java">org/glassfish/jersey/linking/EntityDescriptor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.mapping.NaiveResourceMappingContext.java">org/glassfish/jersey/linking/mapping/NaiveResourceMappingContext.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  44
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.DeclarativeLinkingFeature.java">org/glassfish/jersey/linking/DeclarativeLinkingFeature.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.LinkMessages.java">org/glassfish/jersey/linking/LinkMessages.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLinks.java">org/glassfish/jersey/linking/InjectLinks.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.LinkHeaderDescriptor.java">org/glassfish/jersey/linking/LinkHeaderDescriptor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.HeaderProcessor.java">org/glassfish/jersey/linking/HeaderProcessor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  19
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.FieldDescriptor.java">org/glassfish/jersey/linking/FieldDescriptor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLinksFieldDescriptor.java">org/glassfish/jersey/linking/InjectLinksFieldDescriptor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.ELLinkBuilder.java">org/glassfish/jersey/linking/ELLinkBuilder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  22
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLinkFieldDescriptor.java">org/glassfish/jersey/linking/InjectLinkFieldDescriptor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.Binding.java">org/glassfish/jersey/linking/Binding.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

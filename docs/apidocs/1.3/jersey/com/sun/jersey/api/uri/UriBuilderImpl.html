@@ -1,0 +1,796 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+UriBuilderImpl (jersey-bundle 1.3 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="UriBuilderImpl (jersey-bundle 1.3 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/UriBuilderImpl.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../com/sun/jersey/api/uri/UriComponent.html" title="class in com.sun.jersey.api.uri"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/sun/jersey/api/uri/UriBuilderImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="UriBuilderImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+com.sun.jersey.api.uri</FONT>
+<BR>
+Class UriBuilderImpl</H2>
+<PRE>
+java.lang.Object
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">javax.ws.rs.core.UriBuilder</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>com.sun.jersey.api.uri.UriBuilderImpl</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>UriBuilderImpl</B><DT>extends <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></DL>
+</PRE>
+
+<P>
+An implementaton of <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core"><CODE>UriBuilder</CODE></A>.
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Paul.Sandoz@Sun.Com</DD>
+</DL>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#UriBuilderImpl()">UriBuilderImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.net.URI</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#build(java.lang.Object...)">build</A></B>(java.lang.Object...&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.net.URI</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#buildFromEncoded(java.lang.Object...)">buildFromEncoded</A></B>(java.lang.Object...&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.net.URI</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#buildFromEncodedMap(java.util.Map)">buildFromEncodedMap</A></B>(java.util.Map&lt;java.lang.String,? extends java.lang.Object&gt;&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;java.net.URI</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#buildFromMap(java.util.Map)">buildFromMap</A></B>(java.util.Map&lt;java.lang.String,? extends java.lang.Object&gt;&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#clone()">clone</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#fragment(java.lang.String)">fragment</A></B>(java.lang.String&nbsp;fragment)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#host(java.lang.String)">host</A></B>(java.lang.String&nbsp;host)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#matrixParam(java.lang.String, java.lang.Object...)">matrixParam</A></B>(java.lang.String&nbsp;name,
+            java.lang.Object...&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#path(java.lang.Class)">path</A></B>(java.lang.Class&nbsp;resource)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#path(java.lang.Class, java.lang.String)">path</A></B>(java.lang.Class&nbsp;resource,
+     java.lang.String&nbsp;methodName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#path(java.lang.reflect.Method)">path</A></B>(java.lang.reflect.Method&nbsp;method)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#path(java.lang.String)">path</A></B>(java.lang.String&nbsp;path)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#port(int)">port</A></B>(int&nbsp;port)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#queryParam(java.lang.String, java.lang.Object...)">queryParam</A></B>(java.lang.String&nbsp;name,
+           java.lang.Object...&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#replaceMatrix(java.lang.String)">replaceMatrix</A></B>(java.lang.String&nbsp;matrix)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#replaceMatrixParam(java.lang.String, java.lang.Object...)">replaceMatrixParam</A></B>(java.lang.String&nbsp;name,
+                   java.lang.Object...&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#replacePath(java.lang.String)">replacePath</A></B>(java.lang.String&nbsp;path)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#replaceQuery(java.lang.String)">replaceQuery</A></B>(java.lang.String&nbsp;query)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#replaceQueryParam(java.lang.String, java.lang.Object...)">replaceQueryParam</A></B>(java.lang.String&nbsp;name,
+                  java.lang.Object...&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#scheme(java.lang.String)">scheme</A></B>(java.lang.String&nbsp;scheme)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#schemeSpecificPart(java.lang.String)">schemeSpecificPart</A></B>(java.lang.String&nbsp;ssp)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#segment(java.lang.String...)">segment</A></B>(java.lang.String...&nbsp;segments)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#uri(java.net.URI)">uri</A></B>(java.net.URI&nbsp;uri)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../com/sun/jersey/api/uri/UriBuilderImpl.html#userInfo(java.lang.String)">userInfo</A></B>(java.lang.String&nbsp;ui)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_javax.ws.rs.core.UriBuilder"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class javax.ws.rs.core.<A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#fromPath(java.lang.String)" title="class or interface in javax.ws.rs.core">fromPath</A>, <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#fromResource(java.lang.Class)" title="class or interface in javax.ws.rs.core">fromResource</A>, <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#fromUri(java.lang.String)" title="class or interface in javax.ws.rs.core">fromUri</A>, <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#fromUri(java.net.URI)" title="class or interface in javax.ws.rs.core">fromUri</A>, <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#newInstance()" title="class or interface in javax.ws.rs.core">newInstance</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.Object</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="UriBuilderImpl()"><!-- --></A><H3>
+UriBuilderImpl</H3>
+<PRE>
+public <B>UriBuilderImpl</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="clone()"><!-- --></A><H3>
+clone</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>clone</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#clone()" title="class or interface in javax.ws.rs.core">clone</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="uri(java.net.URI)"><!-- --></A><H3>
+uri</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>uri</B>(java.net.URI&nbsp;uri)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#uri(java.net.URI)" title="class or interface in javax.ws.rs.core">uri</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="scheme(java.lang.String)"><!-- --></A><H3>
+scheme</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>scheme</B>(java.lang.String&nbsp;scheme)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#scheme(java.lang.String)" title="class or interface in javax.ws.rs.core">scheme</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="schemeSpecificPart(java.lang.String)"><!-- --></A><H3>
+schemeSpecificPart</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>schemeSpecificPart</B>(java.lang.String&nbsp;ssp)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#schemeSpecificPart(java.lang.String)" title="class or interface in javax.ws.rs.core">schemeSpecificPart</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="userInfo(java.lang.String)"><!-- --></A><H3>
+userInfo</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>userInfo</B>(java.lang.String&nbsp;ui)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#userInfo(java.lang.String)" title="class or interface in javax.ws.rs.core">userInfo</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="host(java.lang.String)"><!-- --></A><H3>
+host</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>host</B>(java.lang.String&nbsp;host)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#host(java.lang.String)" title="class or interface in javax.ws.rs.core">host</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="port(int)"><!-- --></A><H3>
+port</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>port</B>(int&nbsp;port)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#port(int)" title="class or interface in javax.ws.rs.core">port</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="replacePath(java.lang.String)"><!-- --></A><H3>
+replacePath</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>replacePath</B>(java.lang.String&nbsp;path)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#replacePath(java.lang.String)" title="class or interface in javax.ws.rs.core">replacePath</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="path(java.lang.String)"><!-- --></A><H3>
+path</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>path</B>(java.lang.String&nbsp;path)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#path(java.lang.String)" title="class or interface in javax.ws.rs.core">path</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="path(java.lang.Class)"><!-- --></A><H3>
+path</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>path</B>(java.lang.Class&nbsp;resource)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#path(java.lang.Class)" title="class or interface in javax.ws.rs.core">path</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="path(java.lang.Class, java.lang.String)"><!-- --></A><H3>
+path</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>path</B>(java.lang.Class&nbsp;resource,
+                       java.lang.String&nbsp;methodName)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#path(java.lang.Class, java.lang.String)" title="class or interface in javax.ws.rs.core">path</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="path(java.lang.reflect.Method)"><!-- --></A><H3>
+path</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>path</B>(java.lang.reflect.Method&nbsp;method)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#path(java.lang.reflect.Method)" title="class or interface in javax.ws.rs.core">path</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="segment(java.lang.String...)"><!-- --></A><H3>
+segment</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>segment</B>(java.lang.String...&nbsp;segments)
+                   throws java.lang.IllegalArgumentException</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#segment(java.lang.String...)" title="class or interface in javax.ws.rs.core">segment</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="replaceMatrix(java.lang.String)"><!-- --></A><H3>
+replaceMatrix</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>replaceMatrix</B>(java.lang.String&nbsp;matrix)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#replaceMatrix(java.lang.String)" title="class or interface in javax.ws.rs.core">replaceMatrix</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="matrixParam(java.lang.String, java.lang.Object...)"><!-- --></A><H3>
+matrixParam</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>matrixParam</B>(java.lang.String&nbsp;name,
+                              java.lang.Object...&nbsp;values)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#matrixParam(java.lang.String, java.lang.Object...)" title="class or interface in javax.ws.rs.core">matrixParam</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="replaceMatrixParam(java.lang.String, java.lang.Object...)"><!-- --></A><H3>
+replaceMatrixParam</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>replaceMatrixParam</B>(java.lang.String&nbsp;name,
+                                     java.lang.Object...&nbsp;values)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#replaceMatrixParam(java.lang.String, java.lang.Object...)" title="class or interface in javax.ws.rs.core">replaceMatrixParam</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="replaceQuery(java.lang.String)"><!-- --></A><H3>
+replaceQuery</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>replaceQuery</B>(java.lang.String&nbsp;query)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#replaceQuery(java.lang.String)" title="class or interface in javax.ws.rs.core">replaceQuery</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="queryParam(java.lang.String, java.lang.Object...)"><!-- --></A><H3>
+queryParam</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>queryParam</B>(java.lang.String&nbsp;name,
+                             java.lang.Object...&nbsp;values)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#queryParam(java.lang.String, java.lang.Object...)" title="class or interface in javax.ws.rs.core">queryParam</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="replaceQueryParam(java.lang.String, java.lang.Object...)"><!-- --></A><H3>
+replaceQueryParam</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>replaceQueryParam</B>(java.lang.String&nbsp;name,
+                                    java.lang.Object...&nbsp;values)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#replaceQueryParam(java.lang.String, java.lang.Object...)" title="class or interface in javax.ws.rs.core">replaceQueryParam</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fragment(java.lang.String)"><!-- --></A><H3>
+fragment</H3>
+<PRE>
+public <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A> <B>fragment</B>(java.lang.String&nbsp;fragment)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#fragment(java.lang.String)" title="class or interface in javax.ws.rs.core">fragment</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildFromMap(java.util.Map)"><!-- --></A><H3>
+buildFromMap</H3>
+<PRE>
+public java.net.URI <B>buildFromMap</B>(java.util.Map&lt;java.lang.String,? extends java.lang.Object&gt;&nbsp;values)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#buildFromMap(java.util.Map)" title="class or interface in javax.ws.rs.core">buildFromMap</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildFromEncodedMap(java.util.Map)"><!-- --></A><H3>
+buildFromEncodedMap</H3>
+<PRE>
+public java.net.URI <B>buildFromEncodedMap</B>(java.util.Map&lt;java.lang.String,? extends java.lang.Object&gt;&nbsp;values)
+                                 throws java.lang.IllegalArgumentException,
+                                        <A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilderException.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilderException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#buildFromEncodedMap(java.util.Map)" title="class or interface in javax.ws.rs.core">buildFromEncodedMap</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>java.lang.IllegalArgumentException</CODE>
+<DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilderException.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilderException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="build(java.lang.Object...)"><!-- --></A><H3>
+build</H3>
+<PRE>
+public java.net.URI <B>build</B>(java.lang.Object...&nbsp;values)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#build(java.lang.Object...)" title="class or interface in javax.ws.rs.core">build</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildFromEncoded(java.lang.Object...)"><!-- --></A><H3>
+buildFromEncoded</H3>
+<PRE>
+public java.net.URI <B>buildFromEncoded</B>(java.lang.Object...&nbsp;values)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true#buildFromEncoded(java.lang.Object...)" title="class or interface in javax.ws.rs.core">buildFromEncoded</A></CODE> in class <CODE><A HREF="https://jsr311.dev.java.net/nonav/releases/1.1/javax/ws/rs/core/UriBuilder.html?is-external=true" title="class or interface in javax.ws.rs.core">UriBuilder</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/UriBuilderImpl.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../com/sun/jersey/api/uri/UriComponent.html" title="class in com.sun.jersey.api.uri"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?com/sun/jersey/api/uri/UriBuilderImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="UriBuilderImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Copyright &#169; 2010 <a href="http://www.sun.com/">Sun Microsystems, Inc</a>. All Rights Reserved.
+</BODY>
+</HTML>

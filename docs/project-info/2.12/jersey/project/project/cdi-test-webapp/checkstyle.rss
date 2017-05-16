@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>jersey-tests-cdi-webapp - Checkstyle report</title>
+    <link>https://jersey.java.net/project/project/cdi-test-webapp/</link>
+    <description>jersey-tests-cdi-webapp - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
+    <item>
+      <title>File: 26,
+             Errors: 0,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.JCDIBeanDependentSingletonResource.java">org/glassfish/jersey/tests/cdi/resources/JCDIBeanDependentSingletonResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.JCDIBeanDependentPerRequestResource.java">org/glassfish/jersey/tests/cdi/resources/JCDIBeanDependentPerRequestResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.ValueHolder.java">org/glassfish/jersey/tests/cdi/resources/ValueHolder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.JDCIBeanDependentException.java">org/glassfish/jersey/tests/cdi/resources/JDCIBeanDependentException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.FieldProducedBean.java">org/glassfish/jersey/tests/cdi/resources/FieldProducedBean.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.StutteringEchoResource.java">org/glassfish/jersey/tests/cdi/resources/StutteringEchoResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.ConstructorInjectedResource.java">org/glassfish/jersey/tests/cdi/resources/ConstructorInjectedResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.JDCIBeanException.java">org/glassfish/jersey/tests/cdi/resources/JDCIBeanException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.JCDIBeanPerRequestResource.java">org/glassfish/jersey/tests/cdi/resources/JCDIBeanPerRequestResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.Stuttering.java">org/glassfish/jersey/tests/cdi/resources/Stuttering.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.JCDIBeanDependentExceptionMapper.java">org/glassfish/jersey/tests/cdi/resources/JCDIBeanDependentExceptionMapper.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.MethodProducedBean.java">org/glassfish/jersey/tests/cdi/resources/MethodProducedBean.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.JCDIBeanExceptionMapper.java">org/glassfish/jersey/tests/cdi/resources/JCDIBeanExceptionMapper.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.CustomExtension.java">org/glassfish/jersey/tests/cdi/resources/CustomExtension.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.ReversingEchoResource.java">org/glassfish/jersey/tests/cdi/resources/ReversingEchoResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.ReverseEcho.java">org/glassfish/jersey/tests/cdi/resources/ReverseEcho.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.JCDIBeanSingletonResource.java">org/glassfish/jersey/tests/cdi/resources/JCDIBeanSingletonResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.EchoService.java">org/glassfish/jersey/tests/cdi/resources/EchoService.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.MyApplication.java">org/glassfish/jersey/tests/cdi/resources/MyApplication.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.CounterResource.java">org/glassfish/jersey/tests/cdi/resources/CounterResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.Reversing.java">org/glassfish/jersey/tests/cdi/resources/Reversing.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.JCDIBeanDependentResource.java">org/glassfish/jersey/tests/cdi/resources/JCDIBeanDependentResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.ProducerResource.java">org/glassfish/jersey/tests/cdi/resources/ProducerResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.CustomCdiProducer.java">org/glassfish/jersey/tests/cdi/resources/CustomCdiProducer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.JCDIBeanRequestScopedTimer.java">org/glassfish/jersey/tests/cdi/resources/JCDIBeanRequestScopedTimer.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/cdi-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.StutteringEcho.java">org/glassfish/jersey/tests/cdi/resources/StutteringEcho.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

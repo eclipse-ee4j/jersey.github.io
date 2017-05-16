@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>jersey-media-multipart - Checkstyle report</title>
+    <link>https://jersey.java.net/project/jersey-media-multipart/</link>
+    <description>jersey-media-multipart - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
+    <item>
+      <title>File: 27,
+             Errors: 299,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://jersey.java.net/project/jersey-media-multipart//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.ParameterizedHeadersMap.java">org/glassfish/jersey/media/multipart/ParameterizedHeadersMap.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.DefaultMediaTypePredictor.java">org/glassfish/jersey/media/multipart/file/DefaultMediaTypePredictor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  23
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.FileDataBodyPart.java">org/glassfish/jersey/media/multipart/file/FileDataBodyPart.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.Boundary.java">org/glassfish/jersey/media/multipart/Boundary.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.FormDataMultiPart.java">org/glassfish/jersey/media/multipart/FormDataMultiPart.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.ContentDisposition.java">org/glassfish/jersey/media/multipart/ContentDisposition.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  47
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.package-info.java">org/glassfish/jersey/media/multipart/file/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.MultiPartReaderServerSide.java">org/glassfish/jersey/media/multipart/internal/MultiPartReaderServerSide.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.MultiPartMediaTypes.java">org/glassfish/jersey/media/multipart/MultiPartMediaTypes.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.MultiPartReaderClientSide.java">org/glassfish/jersey/media/multipart/internal/MultiPartReaderClientSide.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.FormDataParam.java">org/glassfish/jersey/media/multipart/FormDataParam.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.BodyPartEntity.java">org/glassfish/jersey/media/multipart/BodyPartEntity.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.MultiPartFeature.java">org/glassfish/jersey/media/multipart/MultiPartFeature.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.MultiPart.java">org/glassfish/jersey/media/multipart/MultiPart.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  26
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.FormDataParamValueFactoryProvider.java">org/glassfish/jersey/media/multipart/internal/FormDataParamValueFactoryProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.MultiPartProperties.java">org/glassfish/jersey/media/multipart/MultiPartProperties.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.FormDataBodyPart.java">org/glassfish/jersey/media/multipart/FormDataBodyPart.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  36
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.FormDataContentDisposition.java">org/glassfish/jersey/media/multipart/FormDataContentDisposition.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.StreamDataBodyPart.java">org/glassfish/jersey/media/multipart/file/StreamDataBodyPart.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.package-info.java">org/glassfish/jersey/media/multipart/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.package-info.java">org/glassfish/jersey/media/multipart/internal/package-info.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.FormDataParameterInjectionFeature.java">org/glassfish/jersey/media/multipart/internal/FormDataParameterInjectionFeature.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.BodyPart.java">org/glassfish/jersey/media/multipart/BodyPart.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  38
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.MediaTypePredictor.java">org/glassfish/jersey/media/multipart/file/MediaTypePredictor.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.MultiPartWriter.java">org/glassfish/jersey/media/multipart/internal/MultiPartWriter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.BodyPartsList.java">org/glassfish/jersey/media/multipart/BodyPartsList.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.localization.properties">org/glassfish/jersey/media/multipart/internal/localization.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

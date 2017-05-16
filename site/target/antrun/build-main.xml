@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <copy todir="../www">
+    <fileset dir="/Users/pavel/jersey/jersey~web/site/target/site"/>
+  </copy>
+  <copy filtering="true" file="src/main/templates/release-note.html" tofile="../www/release-notes/2.22.2.html">
+    <filterset>
+      <filter token="LATEST_VERSION" value="2.22.2"/>
+    </filterset>
+  </copy>
+</target>
+</project>

@@ -1,0 +1,644 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>WadlGeneratorResourceDocSupport (jersey-bundle 1.19.1 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="WadlGeneratorResourceDocSupport (jersey-bundle 1.19.1 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/WadlGeneratorResourceDocSupport.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/ResourceDocAccessor.html" title="class in com.sun.jersey.server.wadl.generators.resourcedoc"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html" target="_top">Frames</a></li>
+<li><a href="WadlGeneratorResourceDocSupport.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">com.sun.jersey.server.wadl.generators.resourcedoc</div>
+<h2 title="Class WadlGeneratorResourceDocSupport" class="title">Class WadlGeneratorResourceDocSupport</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>com.sun.jersey.server.wadl.generators.resourcedoc.WadlGeneratorResourceDocSupport</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">WadlGeneratorResourceDocSupport</span>
+extends java.lang.Object
+implements <a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></pre>
+<div class="block">A <a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl"><code>WadlGenerator</code></a> implementation that enhances the generated wadl by
+ information read from a resourcedoc (containing javadoc information about resource
+ classes).
+ <p>
+ The resourcedoc information can either be provided via a <code>File</code> (<a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#setResourceDocFile(java.io.File)"><code>setResourceDocFile(File)</code></a>) reference or
+ via an <code>InputStream</code> (<a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#setResourceDocStream(java.io.InputStream)"><code>setResourceDocStream(InputStream)</code></a>).
+ </p>
+ <p>
+ The <code>File</code> should be used when using the maven-wadl-plugin for generating wadl offline,
+ the <code>InputStream</code> should be used when the extended wadl is generated by jersey at runtime, e.g.
+ using the <a href="../../../../../../../com/sun/jersey/api/wadl/config/WadlGeneratorConfig.html" title="class in com.sun.jersey.api.wadl.config"><code>WadlGeneratorConfig</code></a> for configuration.
+ </p></div>
+<dl><dt><span class="strong">Version:</span></dt>
+  <dd>$Id$</dd>
+<dt><span class="strong">Author:</span></dt>
+  <dd><a href="mailto:martin.grotzke@freiheit.com">Martin Grotzke</a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested_classes_inherited_from_class_com.sun.jersey.server.wadl.WadlGenerator">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from interface&nbsp;com.sun.jersey.server.wadl.<a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></h3>
+<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.Environment.html" title="class in com.sun.jersey.server.wadl">WadlGenerator.Environment</a>, <a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.ExternalGrammarDefinition.html" title="class in com.sun.jersey.server.wadl">WadlGenerator.ExternalGrammarDefinition</a>, <a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.Resolver.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator.Resolver</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#WadlGeneratorResourceDocSupport()">WadlGeneratorResourceDocSupport</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#WadlGeneratorResourceDocSupport(com.sun.jersey.server.wadl.WadlGenerator,%20com.sun.jersey.server.wadl.generators.resourcedoc.model.ResourceDocType)">WadlGeneratorResourceDocSupport</a></strong>(<a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a>&nbsp;wadlGenerator,
+                               <a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/model/ResourceDocType.html" title="class in com.sun.jersey.server.wadl.generators.resourcedoc.model">ResourceDocType</a>&nbsp;resourceDoc)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#attachTypes(com.sun.jersey.server.wadl.ApplicationDescription)">attachTypes</a></strong>(<a href="../../../../../../../com/sun/jersey/server/wadl/ApplicationDescription.html" title="class in com.sun.jersey.server.wadl">ApplicationDescription</a>&nbsp;egd)</code>
+<div class="block">Process the elements in the WADL definition to attach schema types
+ as required.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>com.sun.research.ws.wadl.Application</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#createApplication(javax.ws.rs.core.UriInfo)">createApplication</a></strong>(<a href="../../../../../../../javax/ws/rs/core/UriInfo.html" title="interface in javax.ws.rs.core">UriInfo</a>&nbsp;requestInfo)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.ExternalGrammarDefinition.html" title="class in com.sun.jersey.server.wadl">WadlGenerator.ExternalGrammarDefinition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#createExternalGrammar()">createExternalGrammar</a></strong>()</code>
+<div class="block">Perform any post create functions such as generating grammars.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>com.sun.research.ws.wadl.Method</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#createMethod(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractResourceMethod)">createMethod</a></strong>(<a href="../../../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;r,
+            <a href="../../../../../../../com/sun/jersey/api/model/AbstractResourceMethod.html" title="class in com.sun.jersey.api.model">AbstractResourceMethod</a>&nbsp;m)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>com.sun.research.ws.wadl.Param</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#createParam(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractMethod,%20com.sun.jersey.api.model.Parameter)">createParam</a></strong>(<a href="../../../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;r,
+           <a href="../../../../../../../com/sun/jersey/api/model/AbstractMethod.html" title="class in com.sun.jersey.api.model">AbstractMethod</a>&nbsp;m,
+           <a href="../../../../../../../com/sun/jersey/api/model/Parameter.html" title="class in com.sun.jersey.api.model">Parameter</a>&nbsp;p)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>com.sun.research.ws.wadl.Request</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#createRequest(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractResourceMethod)">createRequest</a></strong>(<a href="../../../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;r,
+             <a href="../../../../../../../com/sun/jersey/api/model/AbstractResourceMethod.html" title="class in com.sun.jersey.api.model">AbstractResourceMethod</a>&nbsp;m)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>com.sun.research.ws.wadl.Representation</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#createRequestRepresentation(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractResourceMethod,%20javax.ws.rs.core.MediaType)">createRequestRepresentation</a></strong>(<a href="../../../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;r,
+                           <a href="../../../../../../../com/sun/jersey/api/model/AbstractResourceMethod.html" title="class in com.sun.jersey.api.model">AbstractResourceMethod</a>&nbsp;m,
+                           <a href="../../../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&nbsp;mediaType)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>com.sun.research.ws.wadl.Resource</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#createResource(com.sun.jersey.api.model.AbstractResource,%20java.lang.String)">createResource</a></strong>(<a href="../../../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;r,
+              java.lang.String&nbsp;path)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>com.sun.research.ws.wadl.Resources</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#createResources()">createResources</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;com.sun.research.ws.wadl.Response&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#createResponses(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractResourceMethod)">createResponses</a></strong>(<a href="../../../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;r,
+               <a href="../../../../../../../com/sun/jersey/api/model/AbstractResourceMethod.html" title="class in com.sun.jersey.api.model">AbstractResourceMethod</a>&nbsp;m)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#getRequiredJaxbContextPath()">getRequiredJaxbContextPath</a></strong>()</code>
+<div class="block">The jaxb context path that is used when the generated wadl application is marshalled
+ to a file.<br/>
+ This method is used in a decorator like manner.<br/>
+ The result return the path (or a colon-separated list of package names) containing
+ jaxb-beans that are added to wadl elements by this WadlGenerator, additionally to
+ the context path of the decorated WadlGenerator (set by <a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#setWadlGeneratorDelegate(com.sun.jersey.server.wadl.WadlGenerator)"><code>WadlGenerator.setWadlGeneratorDelegate(WadlGenerator)</code></a>.<br/>
+ If you do not use custom jaxb beans, then simply return <code>_delegate.getRequiredJaxbContextPath()</code>,
+ otherwise return the delegate's <a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#getRequiredJaxbContextPath()"><code>WadlGenerator.getRequiredJaxbContextPath()</code></a> together with
+ your required context path (separated by a colon):<br/></div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#init()">init</a></strong>()</code>
+<div class="block">Invoked before all methods related to wadl-building are invoked.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#setEnvironment(com.sun.jersey.server.wadl.WadlGenerator.Environment)">setEnvironment</a></strong>(<a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.Environment.html" title="class in com.sun.jersey.server.wadl">WadlGenerator.Environment</a>&nbsp;env)</code>
+<div class="block">Delegates the setting of the environment</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#setResourceDocFile(java.io.File)">setResourceDocFile</a></strong>(java.io.File&nbsp;resourceDocFile)</code>
+<div class="block">Set the <code>resourceDocFile</code> to the given file.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#setResourceDocStream(java.io.InputStream)">setResourceDocStream</a></strong>(java.io.InputStream&nbsp;resourceDocStream)</code>
+<div class="block">Set the <code>resourceDocStream</code> to the given file.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html#setWadlGeneratorDelegate(com.sun.jersey.server.wadl.WadlGenerator)">setWadlGeneratorDelegate</a></strong>(<a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a>&nbsp;delegate)</code>
+<div class="block">Sets the delegate that is decorated by this wadl generator.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="WadlGeneratorResourceDocSupport()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WadlGeneratorResourceDocSupport</h4>
+<pre>public&nbsp;WadlGeneratorResourceDocSupport()</pre>
+</li>
+</ul>
+<a name="WadlGeneratorResourceDocSupport(com.sun.jersey.server.wadl.WadlGenerator, com.sun.jersey.server.wadl.generators.resourcedoc.model.ResourceDocType)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>WadlGeneratorResourceDocSupport</h4>
+<pre>public&nbsp;WadlGeneratorResourceDocSupport(<a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a>&nbsp;wadlGenerator,
+                               <a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/model/ResourceDocType.html" title="class in com.sun.jersey.server.wadl.generators.resourcedoc.model">ResourceDocType</a>&nbsp;resourceDoc)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="setWadlGeneratorDelegate(com.sun.jersey.server.wadl.WadlGenerator)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setWadlGeneratorDelegate</h4>
+<pre>public&nbsp;void&nbsp;setWadlGeneratorDelegate(<a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a>&nbsp;delegate)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#setWadlGeneratorDelegate(com.sun.jersey.server.wadl.WadlGenerator)">WadlGenerator</a></code></strong></div>
+<div class="block">Sets the delegate that is decorated by this wadl generator. Is invoked directly after
+ this generator is instantiated before <a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#init()"><code>WadlGenerator.init()</code></a> or any setter method is invoked.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#setWadlGeneratorDelegate(com.sun.jersey.server.wadl.WadlGenerator)">setWadlGeneratorDelegate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>delegate</code> - the wadl generator to decorate</dd></dl>
+</li>
+</ul>
+<a name="setEnvironment(com.sun.jersey.server.wadl.WadlGenerator.Environment)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEnvironment</h4>
+<pre>public&nbsp;void&nbsp;setEnvironment(<a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.Environment.html" title="class in com.sun.jersey.server.wadl">WadlGenerator.Environment</a>&nbsp;env)</pre>
+<div class="block">Delegates the setting of the environment</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#setEnvironment(com.sun.jersey.server.wadl.WadlGenerator.Environment)">setEnvironment</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setResourceDocFile(java.io.File)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setResourceDocFile</h4>
+<pre>public&nbsp;void&nbsp;setResourceDocFile(java.io.File&nbsp;resourceDocFile)</pre>
+<div class="block">Set the <code>resourceDocFile</code> to the given file. Invoking this method is only allowed, as long as
+ the <code>resourceDocStream</code> is not set, otherwise an <code>IllegalStateException</code> will be thrown.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>resourceDocFile</code> - the resourcedoc file to set.</dd></dl>
+</li>
+</ul>
+<a name="setResourceDocStream(java.io.InputStream)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setResourceDocStream</h4>
+<pre>public&nbsp;void&nbsp;setResourceDocStream(java.io.InputStream&nbsp;resourceDocStream)</pre>
+<div class="block">Set the <code>resourceDocStream</code> to the given file. Invoking this method is only allowed, as long as
+ the <code>resourceDocFile</code> is not set, otherwise an <code>IllegalStateException</code> will be thrown.
+ <p>
+ The resourcedoc stream must be closed by the client providing the stream.
+ </p></div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>resourceDocStream</code> - the resourcedoc stream to set.</dd></dl>
+</li>
+</ul>
+<a name="init()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>init</h4>
+<pre>public&nbsp;void&nbsp;init()
+          throws java.lang.Exception</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#init()">WadlGenerator</a></code></strong></div>
+<div class="block">Invoked before all methods related to wadl-building are invoked. This method is used in a
+ decorator like manner, and therefore has to invoke <code>this.delegate.init()</code>.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#init()">init</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code>java.lang.Exception</code></dd></dl>
+</li>
+</ul>
+<a name="getRequiredJaxbContextPath()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRequiredJaxbContextPath</h4>
+<pre>public&nbsp;java.lang.String&nbsp;getRequiredJaxbContextPath()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#getRequiredJaxbContextPath()">WadlGenerator</a></code></strong></div>
+<div class="block">The jaxb context path that is used when the generated wadl application is marshalled
+ to a file.<br/>
+ This method is used in a decorator like manner.<br/>
+ The result return the path (or a colon-separated list of package names) containing
+ jaxb-beans that are added to wadl elements by this WadlGenerator, additionally to
+ the context path of the decorated WadlGenerator (set by <a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#setWadlGeneratorDelegate(com.sun.jersey.server.wadl.WadlGenerator)"><code>WadlGenerator.setWadlGeneratorDelegate(WadlGenerator)</code></a>.<br/>
+ If you do not use custom jaxb beans, then simply return <code>_delegate.getRequiredJaxbContextPath()</code>,
+ otherwise return the delegate's <a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#getRequiredJaxbContextPath()"><code>WadlGenerator.getRequiredJaxbContextPath()</code></a> together with
+ your required context path (separated by a colon):<br/>
+ <pre><code>_delegate.getRequiredJaxbContextPath() == null
+     ? ${yourContextPath}
+     : _delegate.getRequiredJaxbContextPath() + ":" + ${yourContextPath};</code></pre>
+
+ If you add the path for your custom jaxb beans, don't forget to add an
+ ObjectFactory (annotated with <code>XmlRegistry</code>) to this package.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#getRequiredJaxbContextPath()">getRequiredJaxbContextPath</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>simply the <a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#getRequiredJaxbContextPath()"><code>WadlGenerator.getRequiredJaxbContextPath()</code></a> of the delegate or the
+  <a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#getRequiredJaxbContextPath()"><code>WadlGenerator.getRequiredJaxbContextPath()</code></a> + ":" + ${yourContextPath}.</dd></dl>
+</li>
+</ul>
+<a name="createApplication(javax.ws.rs.core.UriInfo)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createApplication</h4>
+<pre>public&nbsp;com.sun.research.ws.wadl.Application&nbsp;createApplication(<a href="../../../../../../../javax/ws/rs/core/UriInfo.html" title="interface in javax.ws.rs.core">UriInfo</a>&nbsp;requestInfo)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createApplication(javax.ws.rs.core.UriInfo)">createApplication</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the <code>Application</code> created by the delegate</dd><dt><span class="strong">See Also:</span></dt><dd><code>com.sun.jersey.server.wadl.WadlGenerator#createApplication()</code></dd></dl>
+</li>
+</ul>
+<a name="createResource(com.sun.jersey.api.model.AbstractResource, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createResource</h4>
+<pre>public&nbsp;com.sun.research.ws.wadl.Resource&nbsp;createResource(<a href="../../../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;r,
+                                               java.lang.String&nbsp;path)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createResource(com.sun.jersey.api.model.AbstractResource,%20java.lang.String)">createResource</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>r</code> - </dd><dd><code>path</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>the enhanced <code>Resource</code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createResource(com.sun.jersey.api.model.AbstractResource,%20java.lang.String)"><code>WadlGenerator.createResource(com.sun.jersey.api.model.AbstractResource, java.lang.String)</code></a></dd></dl>
+</li>
+</ul>
+<a name="createMethod(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractResourceMethod)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createMethod</h4>
+<pre>public&nbsp;com.sun.research.ws.wadl.Method&nbsp;createMethod(<a href="../../../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;r,
+                                           <a href="../../../../../../../com/sun/jersey/api/model/AbstractResourceMethod.html" title="class in com.sun.jersey.api.model">AbstractResourceMethod</a>&nbsp;m)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createMethod(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractResourceMethod)">createMethod</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>r</code> - </dd><dd><code>m</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>the enhanced <code>Method</code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createMethod(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractResourceMethod)"><code>WadlGenerator.createMethod(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractResourceMethod)</code></a></dd></dl>
+</li>
+</ul>
+<a name="createRequestRepresentation(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractResourceMethod, javax.ws.rs.core.MediaType)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createRequestRepresentation</h4>
+<pre>public&nbsp;com.sun.research.ws.wadl.Representation&nbsp;createRequestRepresentation(<a href="../../../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;r,
+                                                                  <a href="../../../../../../../com/sun/jersey/api/model/AbstractResourceMethod.html" title="class in com.sun.jersey.api.model">AbstractResourceMethod</a>&nbsp;m,
+                                                                  <a href="../../../../../../../javax/ws/rs/core/MediaType.html" title="class in javax.ws.rs.core">MediaType</a>&nbsp;mediaType)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createRequestRepresentation(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractResourceMethod,%20javax.ws.rs.core.MediaType)">createRequestRepresentation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>r</code> - </dd><dd><code>m</code> - </dd><dd><code>mediaType</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>the enhanced <code>Representation</code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createRequestRepresentation(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractResourceMethod,%20javax.ws.rs.core.MediaType)"><code>WadlGenerator.createRequestRepresentation(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractResourceMethod, javax.ws.rs.core.MediaType)</code></a></dd></dl>
+</li>
+</ul>
+<a name="createRequest(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractResourceMethod)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createRequest</h4>
+<pre>public&nbsp;com.sun.research.ws.wadl.Request&nbsp;createRequest(<a href="../../../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;r,
+                                             <a href="../../../../../../../com/sun/jersey/api/model/AbstractResourceMethod.html" title="class in com.sun.jersey.api.model">AbstractResourceMethod</a>&nbsp;m)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createRequest(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractResourceMethod)">createRequest</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>r</code> - </dd><dd><code>m</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>the enhanced <code>Request</code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createRequest(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractResourceMethod)"><code>WadlGenerator.createRequest(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractResourceMethod)</code></a></dd></dl>
+</li>
+</ul>
+<a name="createResponses(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractResourceMethod)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createResponses</h4>
+<pre>public&nbsp;java.util.List&lt;com.sun.research.ws.wadl.Response&gt;&nbsp;createResponses(<a href="../../../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;r,
+                                                                <a href="../../../../../../../com/sun/jersey/api/model/AbstractResourceMethod.html" title="class in com.sun.jersey.api.model">AbstractResourceMethod</a>&nbsp;m)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createResponses(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractResourceMethod)">createResponses</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>r</code> - </dd><dd><code>m</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>the enhanced <code>Response</code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createResponses(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractResourceMethod)"><code>WadlGenerator.createResponses(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractResourceMethod)</code></a></dd></dl>
+</li>
+</ul>
+<a name="createParam(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractMethod, com.sun.jersey.api.model.Parameter)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createParam</h4>
+<pre>public&nbsp;com.sun.research.ws.wadl.Param&nbsp;createParam(<a href="../../../../../../../com/sun/jersey/api/model/AbstractResource.html" title="class in com.sun.jersey.api.model">AbstractResource</a>&nbsp;r,
+                                         <a href="../../../../../../../com/sun/jersey/api/model/AbstractMethod.html" title="class in com.sun.jersey.api.model">AbstractMethod</a>&nbsp;m,
+                                         <a href="../../../../../../../com/sun/jersey/api/model/Parameter.html" title="class in com.sun.jersey.api.model">Parameter</a>&nbsp;p)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createParam(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractMethod,%20com.sun.jersey.api.model.Parameter)">createParam</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>r</code> - </dd><dd><code>m</code> - </dd><dd><code>p</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd>the enhanced <code>Param</code></dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createParam(com.sun.jersey.api.model.AbstractResource,%20com.sun.jersey.api.model.AbstractMethod,%20com.sun.jersey.api.model.Parameter)"><code>WadlGenerator.createParam(com.sun.jersey.api.model.AbstractResource, com.sun.jersey.api.model.AbstractMethod, com.sun.jersey.api.model.Parameter)</code></a></dd></dl>
+</li>
+</ul>
+<a name="createResources()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createResources</h4>
+<pre>public&nbsp;com.sun.research.ws.wadl.Resources&nbsp;createResources()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createResources()">createResources</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the <code>Resources</code> created by the delegate</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createResources()"><code>WadlGenerator.createResources()</code></a></dd></dl>
+</li>
+</ul>
+<a name="createExternalGrammar()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createExternalGrammar</h4>
+<pre>public&nbsp;<a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.ExternalGrammarDefinition.html" title="class in com.sun.jersey.server.wadl">WadlGenerator.ExternalGrammarDefinition</a>&nbsp;createExternalGrammar()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createExternalGrammar()">WadlGenerator</a></code></strong></div>
+<div class="block">Perform any post create functions such as generating grammars.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#createExternalGrammar()">createExternalGrammar</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>A map of extra files to the content of those file encoded in UTF-8</dd></dl>
+</li>
+</ul>
+<a name="attachTypes(com.sun.jersey.server.wadl.ApplicationDescription)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>attachTypes</h4>
+<pre>public&nbsp;void&nbsp;attachTypes(<a href="../../../../../../../com/sun/jersey/server/wadl/ApplicationDescription.html" title="class in com.sun.jersey.server.wadl">ApplicationDescription</a>&nbsp;egd)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#attachTypes(com.sun.jersey.server.wadl.ApplicationDescription)">WadlGenerator</a></code></strong></div>
+<div class="block">Process the elements in the WADL definition to attach schema types
+ as required.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html#attachTypes(com.sun.jersey.server.wadl.ApplicationDescription)">attachTypes</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../com/sun/jersey/server/wadl/WadlGenerator.html" title="interface in com.sun.jersey.server.wadl">WadlGenerator</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>egd</code> - The root description used to resolve these entries</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/WadlGeneratorResourceDocSupport.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../com/sun/jersey/server/wadl/generators/resourcedoc/ResourceDocAccessor.html" title="class in com.sun.jersey.server.wadl.generators.resourcedoc"><span class="strong">Prev Class</span></a></li>
+<li>Next Class</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?com/sun/jersey/server/wadl/generators/resourcedoc/WadlGeneratorResourceDocSupport.html" target="_top">Frames</a></li>
+<li><a href="WadlGeneratorResourceDocSupport.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Copyright &#169; 2016 <a href="http://www.oracle.com/">Oracle Corporation</a>. All Rights Reserved.</small></p>
+</body>
+</html>
