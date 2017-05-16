@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="google-site-verification" content="OiKukTHVW4bdQqx8Fq0zA2EZ_hI6-yYL-MvkCxBxaFs" />
+    <title>Release Notes - Jersey 2.12</title>
+</head>
+
+<body>
+
+<h1>Release Notes - <a href="/">Jersey</a> 2.12</h1>
+
+Release date: <strong>26-Aug-2014</strong>
+
+<h2>Highlights</h2>
+  <h3>Promoted Public Beta APIs</h3>
+  <p>Following experimental APIs have been promoted to become part of public Jersey API: </p>
+  <div class="itemizedlist">
+    <ul class="itemizedlist" style="list-style-type: disc; ">
+      <li class="listitem"><p>Jersey client-side <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a> API.</p></li>
+      <li class="listitem"><p>Jersey server-side <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/monitoring/DestroyListener.html" target="_top">DestroyListener</a> (formerly
+                            <code class="literal">ExtendedMonitoringStatisticsListener</code>), which has been slightly refactored and is now a separate interface (e.g. not extending <code class="literal">MonitoringStatisticsListener</code>),
+                            hence providing better compatibility with lambdas.</p>
+      </li>
+    </ul>
+  </div>
+  <p>These APIs are now part of the official public Jersey 2.x API.</p>
+    
+  <h3>Breaking Changes</h3>
+  <div class="itemizedlist">
+    <ul class="itemizedlist" style="list-style-type: disc; ">
+      <li class="listitem"><p>Because of a bug fix for issue
+			      <a class="link" href="https://java.net/jira/browse/JERSEY-2602" target="_top">JERSEY-2602</a>, we re-generate WADL classes from <code class="literal">wadl.xsd</code> to make sure the getters for boolean 
+			      properties starts with <code class="literal">is</code> instead of <code class="literal">get</code> as in Jersey 1 and Jersey &lt;= 2.6.</p>
+      </li>
+      <li class="listitem"><p>For performance purposes a new server property 
+			      <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_ENABLED" target="_top">ServerProperties.MONITORING_ENABLED</a> has been introduced. 
+			      It is possible to enable just basic almost static monitoring information using the property. It allows to inject 
+			      <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/monitoring/ApplicationInfo.html" target="_top">ApplicationInfo</a> object,
+			      renamed original class <code class="literal">org.glassfish.jersey.server.monitoring.ApplicationStatistics</code>. 
+			      And <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html">MonitoringStatistics</a> no more
+			      have a reference to <code class="literal">ApplicationStatistics</code>, method <code class="literal">getApplicationStatistics()</code> has been removed.
+			    </p>
+      </li>
+    </ul>
+  </div>
+
+
+<h2>Pull Requests</h2>
+<ul>
+  <li>[<a href='https://github.com/jersey/jersey/pull/92'>Pull 92</a>] - JERSEY-2336 add wsjar to allowed PackageScanner schemas</li>
+  <li>[<a href='https://github.com/jersey/jersey/pull/93'>Pull 93</a>] - Fixes JERSEY-2532 - SE deployment with Grizzly does not honour full ctx. path</li>
+  <li>[<a href='https://github.com/jersey/jersey/pull/95'>Pull 95</a>] - Json array</li>
+  <li>[<a href='https://github.com/jersey/jersey/pull/96'>Pull 96</a>] - Fixes JERSEY-2515 - should not leave temporary files</li>
+</ul>
+<h2>        Bug
+</h2>
+<ul>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2505'>JERSEY-2505</a>] -         Can&#39;t call JettyHttpContainerFactory.createServer() with custom ApplicationHandler
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2515'>JERSEY-2515</a>] -         Client.create() creates temporal file MIMEXXX.tmp
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2532'>JERSEY-2532</a>] -         SE deployment with Grizzly container does not honour the full the context path
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2573'>JERSEY-2573</a>] -         java.lang.IllegalStateException: Queue full  when Jersey monitoring is enabled
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2596'>JERSEY-2596</a>] -         Servlet 3 deployment doesn&#39;t work in some cases.
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2602'>JERSEY-2602</a>] -         WADL classes in jersey-server are generated incorrectly
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2617'>JERSEY-2617</a>] -         Get 404 error code with @Post method
+</li>
+</ul>
+        
+<h2>        Improvement
+</h2>
+<ul>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2563'>JERSEY-2563</a>] -         Add ImmutableMultivaluedMap.toString() for nice debugging (Pull Request submitted)
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2606'>JERSEY-2606</a>] -         Monitoring statistics performance improvements
+</li>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2607'>JERSEY-2607</a>] -         Provide common priority of Jersey AutoDiscoverables
+</li>
+</ul>
+            
+<h2>        Task
+</h2>
+<ul>
+<li>[<a href='https://java.net/jira/browse/JERSEY-2047'>JERSEY-2047</a>] -         Clean docs common entities file (jersey.ent)
+</li>
+</ul>
+
+
+<h2>Previous releases</h2>
+
+<ul>
+    <li><a href="2.11.html">Jersey 2.11 Release Notes</a></li>
+    <li><a href="2.10.1.html">Jersey 2.10.1 Release Notes</a></li>
+    <li><a href="2.10.html">Jersey 2.10 Release Notes</a></li>
+    <li><a href="2.9.1.html">Jersey 2.9.1 Release Notes</a></li>
+    <li><a href="2.9.html">Jersey 2.9 Release Notes</a></li>
+    <li><a href="2.8.html">Jersey 2.8 Release Notes</a></li>
+    <li><a href="2.7.html">Jersey 2.7 Release Notes</a></li>
+    <li><a href="2.6.html">Jersey 2.6 Release Notes</a></li>
+    <li><a href="2.5.1.html">Jersey 2.5.1 Release Notes</a></li>
+    <li><a href="2.5.html">Jersey 2.5 Release Notes</a></li>
+    <li><a href="2.4.1.html">Jersey 2.4.1 Release Notes</a></li>
+    <li><a href="2.4.html">Jersey 2.4 Release Notes</a></li>
+    <li><a href="2.3.1.html">Jersey 2.3.1 Release Notes</a></li>
+    <li><a href="2.3.html">Jersey 2.3 Release Notes</a></li>
+    <li><a href="2.2.html">Jersey 2.2 Release Notes</a></li>
+    <li><a href="2.1.html">Jersey 2.1 Release Notes</a></li>
+    <li><a href="2.0.html">Jersey 2.0 Release Notes</a></li>
+</ul>
+
+</body>
+</html>

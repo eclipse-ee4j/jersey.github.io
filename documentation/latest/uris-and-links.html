@@ -1,6 +1,6 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Chapter&nbsp;12.&nbsp;URIs and Links</title><link rel="stylesheet" type="text/css" href="/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 2.23 User Guide"><link rel="up" href="index.html" title="Jersey 2.23 User Guide"><link rel="prev" href="async.html" title="Chapter&nbsp;11.&nbsp;Asynchronous Services and Clients"><link rel="next" href="declarative-linking.html" title="Chapter&nbsp;13.&nbsp;Declarative Hyperlinking"><script type="text/javascript">
+   <title>Chapter&nbsp;12.&nbsp;URIs and Links</title><link rel="stylesheet" type="text/css" href="/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 2.25.1 User Guide"><link rel="up" href="index.html" title="Jersey 2.25.1 User Guide"><link rel="prev" href="async.html" title="Chapter&nbsp;11.&nbsp;Asynchronous Services and Clients"><link rel="next" href="declarative-linking.html" title="Chapter&nbsp;13.&nbsp;Declarative Hyperlinking"><script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-3160303-1']);
             _gaq.push(['_trackPageview']);
@@ -15,7 +15,7 @@
                 Table of Contents
             </a> | <a href="user-guide.html">
                 Single HTML
-            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="uris-and-links"></a>Chapter&nbsp;12.&nbsp;URIs and Links</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="uris-and-links.html#d0e10681">12.1. Building URIs</a></span></dt><dt><span class="section"><a href="uris-and-links.html#d0e10755">12.2. Resolve and Relativize</a></span></dt><dt><span class="section"><a href="uris-and-links.html#d0e10798">12.3. Link</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10681"></a>12.1.&nbsp;Building URIs</h2></div></div></div><p>
+            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="uris-and-links"></a>Chapter&nbsp;12.&nbsp;URIs and Links</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="uris-and-links.html#d0e10770">12.1. Building URIs</a></span></dt><dt><span class="section"><a href="uris-and-links.html#d0e10844">12.2. Resolve and Relativize</a></span></dt><dt><span class="section"><a href="uris-and-links.html#d0e10887">12.3. Link</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10770"></a>12.1.&nbsp;Building URIs</h2></div></div></div><p>
             A very important aspect of REST is hyperlinks, URIs, in representations that clients can use to transition the
             Web service to new application states (this is otherwise known as "hypermedia as the engine of application state").
             HTML forms present a good example of this in practice.
@@ -29,7 +29,7 @@
         </p><p>The following example shows URI building with <code class="literal">UriInfo</code> and <code class="literal">UriBuilder</code>
             from the bookmark example:
 
-            </p><div class="example"><a name="d0e10708"></a><p class="title"><b>Example&nbsp;12.1.&nbsp;URI building</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("/users/")
+            </p><div class="example"><a name="d0e10797"></a><p class="title"><b>Example&nbsp;12.1.&nbsp;URI building</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("/users/")
 public class UsersResource {
 
     @Context
@@ -70,11 +70,11 @@ public class UsersResource {
         </p><p><code class="literal">UriBuilder</code> can be used to build/replace query or matrix parameters. URI templates can also be
             declared, for example the following will build the URI <code class="literal">"http://localhost/segment?name=value"</code>:
 
-            </p><div class="example"><a name="d0e10749"></a><p class="title"><b>Example&nbsp;12.2.&nbsp;Building URIs using query parameters</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">UriBuilder.fromUri("http://localhost/")
+            </p><div class="example"><a name="d0e10838"></a><p class="title"><b>Example&nbsp;12.2.&nbsp;Building URIs using query parameters</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">UriBuilder.fromUri("http://localhost/")
     .path("{a}")
     .queryParam("name", "{value}")
     .build("segment", "value");</pre></div></div><p><br class="example-break">
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10755"></a>12.2.&nbsp;Resolve and Relativize</h2></div></div></div><p>JAX-RS 2.0 introduced additional URI resolution and relativization methods in the <code class="literal">UriBuilder</code>:
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10844"></a>12.2.&nbsp;Resolve and Relativize</h2></div></div></div><p>JAX-RS 2.0 introduced additional URI resolution and relativization methods in the <code class="literal">UriBuilder</code>:
 
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/UriInfo.html#resolve(java.net.URI)" target="_top">UriInfo.resolve(java.net.URI)</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/UriInfo.html#relativize(java.net.URI)" target="_top">UriInfo.relativize(java.net.URI)</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/UriBuilder.html#resolveTemplate(java.lang.String, java.lang.Object)" target="_top">UriBuilder.resolveTemplate(...)</a> (various arguments)</p></li></ul></div><p>
 
@@ -95,7 +95,7 @@ public class UsersResource {
 uri.toString(); // returns "http://localhost/myApp?q=value"</pre><p>
 
             See the <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/UriBuilder.html" target="_top">UriBuilder</a> javadoc for more details.
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10798"></a>12.3.&nbsp;Link</h2></div></div></div><p>
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10887"></a>12.3.&nbsp;Link</h2></div></div></div><p>
             JAX-RS 2.0 introduces <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Link.html" target="_top">Link</a> class, which serves as a representation of Web Link defined in
             <a class="link" href="http://tools.ietf.org/html/rfc5988" target="_top">RFC 5988</a>.
             The JAX-RS <code class="literal">Link</code> class adds API support for providing additional metadata in HTTP messages,

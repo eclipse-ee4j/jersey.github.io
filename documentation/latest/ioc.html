@@ -1,6 +1,6 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Chapter&nbsp;23.&nbsp;Custom Injection and Lifecycle Management</title><link rel="stylesheet" type="text/css" href="/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 2.23 User Guide"><link rel="up" href="index.html" title="Jersey 2.23 User Guide"><link rel="prev" href="monitoring_tracing.html" title="Chapter&nbsp;22.&nbsp;Monitoring and Diagnostics"><link rel="next" href="cdi.support.html" title="Chapter&nbsp;24.&nbsp;Jersey CDI Container Agnostic Support"><script type="text/javascript">
+   <title>Chapter&nbsp;23.&nbsp;Custom Injection and Lifecycle Management</title><link rel="stylesheet" type="text/css" href="/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 2.25.1 User Guide"><link rel="up" href="index.html" title="Jersey 2.25.1 User Guide"><link rel="prev" href="monitoring_tracing.html" title="Chapter&nbsp;22.&nbsp;Monitoring and Diagnostics"><link rel="next" href="cdi.support.html" title="Chapter&nbsp;24.&nbsp;Jersey CDI Container Agnostic Support"><script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-3160303-1']);
             _gaq.push(['_trackPageview']);
@@ -15,7 +15,7 @@
                 Table of Contents
             </a> | <a href="user-guide.html">
                 Single HTML
-            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="ioc"></a>Chapter&nbsp;23.&nbsp;Custom Injection and Lifecycle Management</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="ioc.html#d0e16894">23.1. Implementing Custom Injection Provider</a></span></dt><dt><span class="section"><a href="ioc.html#d0e16995">23.2. Defining Custom Injection Annotation</a></span></dt><dt><span class="section"><a href="ioc.html#d0e17063">23.3. Custom Life Cycle Management</a></span></dt></dl></div><p>
+            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="ioc"></a>Chapter&nbsp;23.&nbsp;Custom Injection and Lifecycle Management</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="ioc.html#d0e16983">23.1. Implementing Custom Injection Provider</a></span></dt><dt><span class="section"><a href="ioc.html#d0e17084">23.2. Defining Custom Injection Annotation</a></span></dt><dt><span class="section"><a href="ioc.html#d0e17152">23.3. Custom Life Cycle Management</a></span></dt></dl></div><p>
         Since version 2.0, Jersey uses <a class="link" href="http://hk2.java.net/" target="_top">HK2</a> library for component life cycle management and dependency injection.
         Rather than spending a lot of effort in maintaining Jersey specific API (as it used to be before Jersey 2.0 version),
         Jersey defines several extension points where end-user application can directly manipulate Jersey HK2 bindings
@@ -44,7 +44,7 @@
         Bellow i will show how to make actual Servlet <a class="link" href="http://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpSession.html" target="_top">HttpSession</a> injectable into JAX-RS components
         and how to make this injection work with a custom inject annotation type. Finally, i will demonstrate
         how you can write <code class="literal">HttpSession</code>-scoped JAX-RS resources.
-    </p><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e16894"></a>23.1.&nbsp;Implementing Custom Injection Provider</h2></div></div></div><p>
+    </p><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e16983"></a>23.1.&nbsp;Implementing Custom Injection Provider</h2></div></div></div><p>
             Jersey implementation allows you to directly inject <a class="link" href="http://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html" target="_top">HttpServletRequest</a> instance into
             your JAX-RS components.
             It is quite straight forward to get the appropriate <code class="literal">HttpSession</code> instance out of the
@@ -62,7 +62,7 @@ public class MyDiResource {
 }</pre><p>
 
             To make the above injection work, you will need to define an additional HK2 binding in your
-            application <a class="link" href="https://jersey.java.net/apidocs/2.23/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a>.
+            application <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a>.
             Let's start with a custom HK2 <a class="link" href="https://hk2.java.net/apidocs/org/glassfish/hk2/api/Factory.html" target="_top">Factory</a> implementation that knows how to extract
             <code class="literal">HttpSession</code> out of given <code class="literal">HttpServletRequest</code>.
 
@@ -99,7 +99,7 @@ public class MyDiResource {
         </p><p>
             Once implemented, the factory can be used in a custom HK2 <code class="literal">Binder</code> to define the
             new injection binding for <code class="literal">HttpSession</code>. Finally, the implemented binder
-            can be registered in your <a class="link" href="https://jersey.java.net/apidocs/2.23/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a>:
+            can be registered in your <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a>:
 
             </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">import org.glassfish.hk2.utilities.binding.AbstractBinder;
 ...
@@ -143,9 +143,9 @@ public class MyApplication extends ResourceConfig {
             </p><div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Important</h3><p>
                     While the individual injection binding implementations vary and depend on your use case,
                     to enable your custom injection extension in Jersey, you must register your custom HK2 <a class="link" href="https://hk2.java.net/apidocs/org/glassfish/hk2/utilities/Binder.html" target="_top">Binder</a>
-                    implementation in your application <a class="link" href="https://jersey.java.net/apidocs/2.23/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a>!
+                    implementation in your application <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a>!
                 </p></div><p>
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e16995"></a>23.2.&nbsp;Defining Custom Injection Annotation</h2></div></div></div><p>
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e17084"></a>23.2.&nbsp;Defining Custom Injection Annotation</h2></div></div></div><p>
             Java annotations are a convenient way for attaching metadata to various elements of Java code.
             Sometimes you may even decide to combine the metadata with additional functionality, such as
             ability to automatically inject the instances based on the annotation-provided metadata.
@@ -263,7 +263,7 @@ public class MyApplication extends ResourceConfig {
         });
     }
 }</pre><p>
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e17063"></a>23.3.&nbsp;Custom Life Cycle Management</h2></div></div></div><p>
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e17152"></a>23.3.&nbsp;Custom Life Cycle Management</h2></div></div></div><p>
             The last use case discussed in this chapter will cover managing custom-scoped components
             within a Jersey application.
             If not configured otherwise, then all JAX-RS resources are by default managed on a per-request basis. A new instance
@@ -312,7 +312,7 @@ public class PerSessionResource {
             Let's see how to achieve this.
         </p><p>
             To get better control over your Jersey component instantiation and life cycle,
-            you need to implement a custom Jersey <a class="link" href="https://jersey.java.net/apidocs/2.23/jersey/org/glassfish/jersey/server/spi/ComponentProvider.html" target="_top">ComponentProvider</a> SPI,
+            you need to implement a custom Jersey <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/spi/ComponentProvider.html" target="_top">ComponentProvider</a> SPI,
             that would manage your custom components.
             Although it might seem quite complex to implement such a thing,
             the component provider concept in Jersey is in fact very simple. It allows you to define

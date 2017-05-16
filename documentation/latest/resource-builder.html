@@ -1,6 +1,6 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Chapter&nbsp;14.&nbsp;Programmatic API for Building Resources</title><link rel="stylesheet" type="text/css" href="/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 2.23 User Guide"><link rel="up" href="index.html" title="Jersey 2.23 User Guide"><link rel="prev" href="declarative-linking.html" title="Chapter&nbsp;13.&nbsp;Declarative Hyperlinking"><link rel="next" href="sse.html" title="Chapter&nbsp;15.&nbsp;Server-Sent Events (SSE) Support"><script type="text/javascript">
+   <title>Chapter&nbsp;14.&nbsp;Programmatic API for Building Resources</title><link rel="stylesheet" type="text/css" href="/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 2.25.1 User Guide"><link rel="up" href="index.html" title="Jersey 2.25.1 User Guide"><link rel="prev" href="declarative-linking.html" title="Chapter&nbsp;13.&nbsp;Declarative Hyperlinking"><link rel="next" href="sse.html" title="Chapter&nbsp;15.&nbsp;Server-Sent Events (SSE) Support"><script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-3160303-1']);
             _gaq.push(['_trackPageview']);
@@ -15,7 +15,7 @@
                 Table of Contents
             </a> | <a href="user-guide.html">
                 Single HTML
-            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="resource-builder"></a>Chapter&nbsp;14.&nbsp;Programmatic API for Building Resources</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="resource-builder.html#d0e11089">14.1. Introduction</a></span></dt><dt><span class="section"><a href="resource-builder.html#d0e11134">14.2. Programmatic Hello World example</a></span></dt><dd><dl><dt><span class="section"><a href="resource-builder.html#d0e11206">14.2.1. Deployment of programmatic resources</a></span></dt></dl></dd><dt><span class="section"><a href="resource-builder.html#d0e11268">14.3. Additional examples</a></span></dt><dt><span class="section"><a href="resource-builder.html#d0e11327">14.4. Model processors</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e11089"></a>14.1.&nbsp;Introduction</h2></div></div></div><p>A standard approach of developing JAX-RS application is to implement resource classes annotated with <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/Path.html" target="_top">@Path</a>
+            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="resource-builder"></a>Chapter&nbsp;14.&nbsp;Programmatic API for Building Resources</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="resource-builder.html#d0e11178">14.1. Introduction</a></span></dt><dt><span class="section"><a href="resource-builder.html#d0e11223">14.2. Programmatic Hello World example</a></span></dt><dd><dl><dt><span class="section"><a href="resource-builder.html#d0e11295">14.2.1. Deployment of programmatic resources</a></span></dt></dl></dd><dt><span class="section"><a href="resource-builder.html#d0e11357">14.3. Additional examples</a></span></dt><dt><span class="section"><a href="resource-builder.html#d0e11416">14.4. Model processors</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e11178"></a>14.1.&nbsp;Introduction</h2></div></div></div><p>A standard approach of developing JAX-RS application is to implement resource classes annotated with <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/Path.html" target="_top">@Path</a>
             with resource methods annotated with HTTP method annotations like <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/GET.html" target="_top">@GET</a> or <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/POST.html" target="_top">@POST</a> and
             implement needed functionality. This approach is described in the chapter
             <a class="link" href="jaxrs-resources.html" target="_top">JAX-RS Application, Resources and Sub-Resources</a>. Besides this standard
@@ -36,14 +36,14 @@
             including approaches where your resource classes would be built using Java byte code manipulation.
             However, this is exactly the case when you can solve the problem cleanly with the programmatic resource builder API.
             Let's have a closer look at how the API can be utilized.
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e11134"></a>14.2.&nbsp;Programmatic Hello World example</h2></div></div></div><p>
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e11223"></a>14.2.&nbsp;Programmatic Hello World example</h2></div></div></div><p>
             Jersey Programmatic API was designed to fully support JAX-RS resource model. In other words, every resource that can
             be designed using standard JAX-RS approach via annotated resource classes can be also modelled using Jersey
             programmatic API. Let's try to build simple hello world resource using standard approach first and
             then using the Jersey programmatic resource builder API.
         </p><p>
             The following example shows standard JAX-RS "Hello world!" resource class.
-            </p><div class="example"><a name="d0e11141"></a><p class="title"><b>Example&nbsp;14.1.&nbsp;A standard resource class</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">
+            </p><div class="example"><a name="d0e11230"></a><p class="title"><b>Example&nbsp;14.1.&nbsp;A standard resource class</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">
                     @Path("helloworld")
                     public class HelloWorldResource {
 
@@ -58,7 +58,7 @@
             as text/plain media type.
         </p><p>
             Now we will design this simple resource using programmatic API.
-            </p><div class="example"><a name="d0e11149"></a><p class="title"><b>Example&nbsp;14.2.&nbsp;A programmatic resource</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">
+            </p><div class="example"><a name="d0e11238"></a><p class="title"><b>Example&nbsp;14.2.&nbsp;A programmatic resource</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">
                     package org.glassfish.jersey.examples.helloworld;
 
                     import javax.ws.rs.container.ContainerRequestContext;
@@ -113,7 +113,7 @@
             resource method builder. It is however not necessary to do so as the new resource method model will be built
             automatically once the parent resource is built. Once a resource model is built, it is registered
             into the resource config at the last line of the <code class="literal">MyResourceConfig</code> constructor in the example.
-        </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e11206"></a>14.2.1.&nbsp;Deployment of programmatic resources</h3></div></div></div><p>
+        </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e11295"></a>14.2.1.&nbsp;Deployment of programmatic resources</h3></div></div></div><p>
                 Let's now look at how a programmatic resources are deployed.
                 The easiest way to setup your application as well as register any programmatic resources in Jersey
                 is to use a Jersey <code class="literal">ResourceConfig</code> utility class, an extension of <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Application.html" target="_top">Application</a>
@@ -128,7 +128,7 @@
             </p><p>
                 The following example shows a fragment of <code class="literal">web.xml</code> that can be used to deploy the
                 <code class="literal">ResourceConfig</code> JAX-RS application.
-                </p><div class="example"><a name="d0e11249"></a><p class="title"><b>Example&nbsp;14.3.&nbsp;A programmatic resource</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">
+                </p><div class="example"><a name="d0e11338"></a><p class="title"><b>Example&nbsp;14.3.&nbsp;A programmatic resource</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">
                         ...
                         &lt;servlet&gt;
                             &lt;servlet-name&gt;org.glassfish.jersey.examples.helloworld.MyApplication&lt;/servlet-name&gt;
@@ -154,8 +154,8 @@
                 Because Jersey programmatic API is not a standard JAX-RS feature the <code class="literal">ResourceConfig</code> must be
                 used to register programmatic resources as shown above. See <a class="link" href="deployment.html" title="Chapter&nbsp;4.&nbsp;Application Deployment and Runtime Environments">deployment chapter</a>
                 for more information.
-            </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e11268"></a>14.3.&nbsp;Additional examples</h2></div></div></div><p>
-            </p><div class="example"><a name="d0e11273"></a><p class="title"><b>Example&nbsp;14.4.&nbsp;A programmatic resource</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">
+            </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e11357"></a>14.3.&nbsp;Additional examples</h2></div></div></div><p>
+            </p><div class="example"><a name="d0e11362"></a><p class="title"><b>Example&nbsp;14.4.&nbsp;A programmatic resource</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">
                     final Resource.Builder resourceBuilder = Resource.builder(HelloWorldResource.class);
                     resourceBuilder.addMethod("OPTIONS")
                         .handledBy(new Inflector&lt;ContainerRequestContext, Response&gt;() {
@@ -178,7 +178,7 @@
          </p><p>
             The following sample shows how to define sub-resource methods (methods that contains sub-path).
         </p><p>
-            </p><div class="example"><a name="d0e11309"></a><p class="title"><b>Example&nbsp;14.5.&nbsp;A programmatic resource</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">
+            </p><div class="example"><a name="d0e11398"></a><p class="title"><b>Example&nbsp;14.5.&nbsp;A programmatic resource</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">
                     final Resource.Builder resourceBuilder = Resource.builder("helloworld");
 
                     final Resource.Builder childResource = resourceBuilder.addChildResource("subresource");
@@ -204,7 +204,7 @@
         </p><p>
             See the javadocs of the resource builder API for more information.
             
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e11327"></a>14.4.&nbsp;Model processors</h2></div></div></div><p>
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e11416"></a>14.4.&nbsp;Model processors</h2></div></div></div><p>
             Jersey gives you an option to register so called <span class="emphasis"><em>model processor providers</em></span>. These providers
             are able to modify or enhance the application resource model during application deployment. This is an advanced
             feature and will not be needed in most use cases. However, imagine you would like to add <code class="literal">OPTIONS</code> resource
@@ -214,7 +214,7 @@
             To do that, you first need to register a model processor provider in your application, which implements
             <code class="literal">org.glassfish.jersey.server.model.ModelProcessor</code> extension contract. An example of
             a model processor implementation is shown here:
-            </p><div class="example"><a name="d0e11343"></a><p class="title"><b>Example&nbsp;14.6.&nbsp;A programmatic resource</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">
+            </p><div class="example"><a name="d0e11432"></a><p class="title"><b>Example&nbsp;14.6.&nbsp;A programmatic resource</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">
                     import javax.ws.rs.GET;
                     import javax.ws.rs.Path;
                     import javax.ws.rs.Produces;

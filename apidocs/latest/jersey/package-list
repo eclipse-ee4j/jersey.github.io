@@ -6,6 +6,7 @@ javax.ws.rs.core
 javax.ws.rs.ext
 jersey.repackaged.jsr166e
 jersey.repackaged.jsr166e.extra
+jersey.repackaged.org.objectweb.asm
 org.glassfish.jersey
 org.glassfish.jersey.apache.connector
 org.glassfish.jersey.client
@@ -38,7 +39,6 @@ org.glassfish.jersey.kryo
 org.glassfish.jersey.linking
 org.glassfish.jersey.linking.mapping
 org.glassfish.jersey.logging
-org.glassfish.jersey.media.htmljson
 org.glassfish.jersey.media.multipart
 org.glassfish.jersey.media.multipart.file
 org.glassfish.jersey.media.sse
@@ -48,6 +48,8 @@ org.glassfish.jersey.message.filtering.spi
 org.glassfish.jersey.model
 org.glassfish.jersey.moxy.json
 org.glassfish.jersey.moxy.xml
+org.glassfish.jersey.netty.connector
+org.glassfish.jersey.netty.httpserver
 org.glassfish.jersey.oauth1.signature
 org.glassfish.jersey.process
 org.glassfish.jersey.server
@@ -85,6 +87,7 @@ org.glassfish.jersey.test.jetty
 org.glassfish.jersey.test.maven.rule
 org.glassfish.jersey.test.maven.runner
 org.glassfish.jersey.test.memleak.common
+org.glassfish.jersey.test.netty
 org.glassfish.jersey.test.simple
 org.glassfish.jersey.test.spi
 org.glassfish.jersey.test.util

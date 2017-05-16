@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>jersey-connectors-jdk - Checkstyle report</title>
+    <link>https://jersey.java.net/project/jersey-jdk-connector/</link>
+    <description>jersey-connectors-jdk - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2016 Oracle Corporation</copyright>
+    <item>
+      <title>File: 36,
+             Errors: 533,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.HttpConnectionPool.java">org/glassfish/jersey/jdk/connector/HttpConnectionPool.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.TransferEncodingParser.java">org/glassfish/jersey/jdk/connector/TransferEncodingParser.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.HttpResponse.java">org/glassfish/jersey/jdk/connector/HttpResponse.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  10
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.HttpRequest.java">org/glassfish/jersey/jdk/connector/HttpRequest.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.ProxyAuthenticationException.java">org/glassfish/jersey/jdk/connector/ProxyAuthenticationException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.ThreadPoolConfig.java">org/glassfish/jersey/jdk/connector/ThreadPoolConfig.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  36
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.SslFilter.java">org/glassfish/jersey/jdk/connector/SslFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  57
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.ChunkedBodyOutputStream.java">org/glassfish/jersey/jdk/connector/ChunkedBodyOutputStream.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.RedirectException.java">org/glassfish/jersey/jdk/connector/RedirectException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.HttpRequestEncoder.java">org/glassfish/jersey/jdk/connector/HttpRequestEncoder.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  12
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.BodyInputStream.java">org/glassfish/jersey/jdk/connector/BodyInputStream.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.localization.properties">org/glassfish/jersey/jdk/connector/localization.properties</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.HttpFilter.java">org/glassfish/jersey/jdk/connector/HttpFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  13
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.AsynchronousBodyInputStream.java">org/glassfish/jersey/jdk/connector/AsynchronousBodyInputStream.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  15
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.Utils.java">org/glassfish/jersey/jdk/connector/Utils.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.HttpParserUtils.java">org/glassfish/jersey/jdk/connector/HttpParserUtils.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  25
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.ConnectorConfiguration.java">org/glassfish/jersey/jdk/connector/ConnectorConfiguration.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.TransportFilter.java">org/glassfish/jersey/jdk/connector/TransportFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  38
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.ReadListener.java">org/glassfish/jersey/jdk/connector/ReadListener.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.RedirectHandler.java">org/glassfish/jersey/jdk/connector/RedirectHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  11
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.JdkConnector.java">org/glassfish/jersey/jdk/connector/JdkConnector.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  17
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.ProxyDigestAuthenticator.java">org/glassfish/jersey/jdk/connector/ProxyDigestAuthenticator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  41
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.BodyOutputStream.java">org/glassfish/jersey/jdk/connector/BodyOutputStream.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.ProxyBasicAuthenticator.java">org/glassfish/jersey/jdk/connector/ProxyBasicAuthenticator.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.BufferedBodyOutputStream.java">org/glassfish/jersey/jdk/connector/BufferedBodyOutputStream.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.HttpParser.java">org/glassfish/jersey/jdk/connector/HttpParser.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  50
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.Constants.java">org/glassfish/jersey/jdk/connector/Constants.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.DestinationConnectionPool.java">org/glassfish/jersey/jdk/connector/DestinationConnectionPool.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  56
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.InterceptingOutputStream.java">org/glassfish/jersey/jdk/connector/InterceptingOutputStream.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.Filter.java">org/glassfish/jersey/jdk/connector/Filter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.WriteListener.java">org/glassfish/jersey/jdk/connector/WriteListener.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.JdkConnectorProvider.java">org/glassfish/jersey/jdk/connector/JdkConnectorProvider.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.HttpConnection.java">org/glassfish/jersey/jdk/connector/HttpConnection.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  21
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.ProxyFilter.java">org/glassfish/jersey/jdk/connector/ProxyFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.ParseException.java">org/glassfish/jersey/jdk/connector/ParseException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/jersey-jdk-connector//checkstyle.html#org.glassfish.jersey.jdk.connector.CompletionHandler.java">org/glassfish/jersey/jdk/connector/CompletionHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

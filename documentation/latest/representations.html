@@ -1,6 +1,6 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Chapter&nbsp;7.&nbsp;Representations and Responses</title><link rel="stylesheet" type="text/css" href="/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 2.23 User Guide"><link rel="up" href="index.html" title="Jersey 2.23 User Guide"><link rel="prev" href="rx-client.html" title="Chapter&nbsp;6.&nbsp;Reactive Jersey Client API"><link rel="next" href="message-body-workers.html" title="Chapter&nbsp;8.&nbsp;JAX-RS Entity Providers"><script type="text/javascript">
+   <title>Chapter&nbsp;7.&nbsp;Representations and Responses</title><link rel="stylesheet" type="text/css" href="/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 2.25.1 User Guide"><link rel="up" href="index.html" title="Jersey 2.25.1 User Guide"><link rel="prev" href="rx-client.html" title="Chapter&nbsp;6.&nbsp;Reactive Jersey Client API"><link rel="next" href="message-body-workers.html" title="Chapter&nbsp;8.&nbsp;JAX-RS Entity Providers"><script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-3160303-1']);
             _gaq.push(['_trackPageview']);
@@ -15,7 +15,7 @@
                 Table of Contents
             </a> | <a href="user-guide.html">
                 Single HTML
-            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="representations"></a>Chapter&nbsp;7.&nbsp;Representations and Responses</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="representations.html#reps-and-types">7.1. Representations and Java Types</a></span></dt><dt><span class="section"><a href="representations.html#d0e6628">7.2. Building Responses</a></span></dt><dt><span class="section"><a href="representations.html#d0e6665">7.3. WebApplicationException and Mapping Exceptions to Responses</a></span></dt><dt><span class="section"><a href="representations.html#d0e6746">7.4. Conditional GETs and Returning 304 (Not Modified) Responses</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="reps-and-types"></a>7.1.&nbsp;Representations and Java Types</h2></div></div></div><p>Previous sections on <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/Produces.html" target="_top">@Produces</a> and <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/Consumes.html" target="_top">@Consumes</a> annotations
+            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="representations"></a>Chapter&nbsp;7.&nbsp;Representations and Responses</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="representations.html#reps-and-types">7.1. Representations and Java Types</a></span></dt><dt><span class="section"><a href="representations.html#d0e6717">7.2. Building Responses</a></span></dt><dt><span class="section"><a href="representations.html#d0e6754">7.3. WebApplicationException and Mapping Exceptions to Responses</a></span></dt><dt><span class="section"><a href="representations.html#d0e6835">7.4. Conditional GETs and Returning 304 (Not Modified) Responses</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="reps-and-types"></a>7.1.&nbsp;Representations and Java Types</h2></div></div></div><p>Previous sections on <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/Produces.html" target="_top">@Produces</a> and <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/Consumes.html" target="_top">@Consumes</a> annotations
             referred to media type of an entity representation. Examples above depicted resource
             methods that could consume and/or produce String Java type for a number of
 	    different media types. This approach is easy to understand and relatively
@@ -44,7 +44,7 @@
             <code class="literal">File</code>
             as follows:
         </p><p>
-            </p><div class="example"><a name="d0e6589"></a><p class="title"><b>Example&nbsp;7.1.&nbsp;Using
+            </p><div class="example"><a name="d0e6678"></a><p class="title"><b>Example&nbsp;7.1.&nbsp;Using
                     <code class="code">File</code>
                     with a specific media type to produce a response
                 </b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@GET
@@ -80,7 +80,7 @@ public String doGetAsXmlOrJson() {
             by the request (e.g. by header <code class="literal">Accept: application/xml</code>), then the
             <code class="literal">Content-Type</code> response header
             will be set to <code class="literal">application/xml</code>.
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e6628"></a>7.2.&nbsp;Building Responses</h2></div></div></div><p>Sometimes it is necessary to return additional
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e6717"></a>7.2.&nbsp;Building Responses</h2></div></div></div><p>Sometimes it is necessary to return additional
             information in response to a HTTP request. Such information may be built
             and returned using <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Response.html" target="_top">Response</a> and <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Response.ResponseBuilder.html" target="_top">Response.ResponseBuilder</a>.
             For example, a common RESTful pattern for the creation of a new resource
@@ -90,7 +90,7 @@ public String doGetAsXmlOrJson() {
             header whose value is the URI to the newly
             created resource. This may be achieved as follows:
         </p><p>
-            </p><div class="example"><a name="d0e6644"></a><p class="title"><b>Example&nbsp;7.2.&nbsp;Returning 201 status code and adding
+            </p><div class="example"><a name="d0e6733"></a><p class="title"><b>Example&nbsp;7.2.&nbsp;Returning 201 status code and adding
                     <code class="literal">Location</code>
                     header in response to POST request
                 </b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@POST
@@ -103,7 +103,7 @@ public Response post(String content) {
         </p><p>In the above no representation produced is returned, this can be
             achieved by building an entity as part of the response as follows:
         </p><p>
-            </p><div class="example"><a name="d0e6657"></a><p class="title"><b>Example&nbsp;7.3.&nbsp;Adding an entity body to a custom response</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@POST
+            </p><div class="example"><a name="d0e6746"></a><p class="title"><b>Example&nbsp;7.3.&nbsp;Adding an entity body to a custom response</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@POST
 @Consumes("application/xml")
 public Response post(String content) {
   URI createdUri = ...
@@ -112,7 +112,7 @@ public Response post(String content) {
 }</pre></div></div><p><br class="example-break">
         </p><p>Response building provides other functionality such as setting the
             entity tag and last modified date of the representation.
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e6665"></a>7.3.&nbsp;WebApplicationException and Mapping Exceptions to Responses</h2></div></div></div><p>Previous section shows how to return HTTP responses,
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e6754"></a>7.3.&nbsp;WebApplicationException and Mapping Exceptions to Responses</h2></div></div></div><p>Previous section shows how to return HTTP responses,
               that are built up programmatically.
             It is possible to use the very same mechanism
             to return HTTP errors directly,
@@ -123,7 +123,7 @@ public Response post(String content) {
             <code class="literal">CustomNotFoundException</code>
             from a resource method in order to return an error HTTP response to the client:
         </p><p>
-            </p><div class="example"><a name="d0e6677"></a><p class="title"><b>Example&nbsp;7.4.&nbsp;Throwing exceptions to control response</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("items/{itemid}/")
+            </p><div class="example"><a name="d0e6766"></a><p class="title"><b>Example&nbsp;7.4.&nbsp;Throwing exceptions to control response</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("items/{itemid}/")
 public Item getItem(@PathParam("itemid") String itemid) {
   Item i = getItems().get(itemid);
   if (i == null) {
@@ -136,7 +136,7 @@ public Item getItem(@PathParam("itemid") String itemid) {
             and builds a HTTP response with the 404 status code and an optional
             message as the body of the response:
         </p><p>
-            </p><div class="example"><a name="d0e6690"></a><p class="title"><b>Example&nbsp;7.5.&nbsp;Application specific exception implementation</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class CustomNotFoundException extends WebApplicationException {
+            </p><div class="example"><a name="d0e6779"></a><p class="title"><b>Example&nbsp;7.5.&nbsp;Application specific exception implementation</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class CustomNotFoundException extends WebApplicationException {
 
   /**
   * Create a HTTP 404 (Not Found) exception.
@@ -162,7 +162,7 @@ public Item getItem(@PathParam("itemid") String itemid) {
             <a class="link" href="http://docs.oracle.com/javaee/5/api/javax/persistence/EntityNotFoundException.html" target="_top">EntityNotFoundException</a>
             to a HTTP 404 (Not Found) response:
         </p><p>
-            </p><div class="example"><a name="d0e6712"></a><p class="title"><b>Example&nbsp;7.6.&nbsp;Mapping generic exceptions to responses</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Provider
+            </p><div class="example"><a name="d0e6801"></a><p class="title"><b>Example&nbsp;7.6.&nbsp;Mapping generic exceptions to responses</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Provider
 public class EntityNotFoundMapper implements ExceptionMapper&lt;javax.persistence.EntityNotFoundException&gt; {
   public Response toResponse(javax.persistence.EntityNotFoundException ex) {
     return Response.status(404).
@@ -187,13 +187,13 @@ public class EntityNotFoundMapper implements ExceptionMapper&lt;javax.persistenc
             method the provider can reject mapping of the exception before the method <code class="literal">toResponse</code>
             is invoked. The provider can for example check the exception parameters and based on them return false
             and let other provider to be chosen for the exception mapping.
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e6746"></a>7.4.&nbsp;Conditional GETs and Returning 304 (Not Modified) Responses</h2></div></div></div><p>Conditional GETs are a great way to reduce bandwidth, and
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e6835"></a>7.4.&nbsp;Conditional GETs and Returning 304 (Not Modified) Responses</h2></div></div></div><p>Conditional GETs are a great way to reduce bandwidth, and
             potentially improve on the server-side performance, depending on how the information used
             to determine conditions is calculated. A well-designed web site may for example return
             304 (Not Modified) responses for many of static images it serves.
         </p><p>JAX-RS provides support for conditional GETs using the contextual interface <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Request.html" target="_top">Request</a>.
         </p><p>The following example shows conditional GET support:</p><p>
-            </p><div class="example"><a name="d0e6760"></a><p class="title"><b>Example&nbsp;7.7.&nbsp;Conditional GET support</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public SparklinesResource(
+            </p><div class="example"><a name="d0e6849"></a><p class="title"><b>Example&nbsp;7.7.&nbsp;Conditional GET support</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public SparklinesResource(
   @QueryParam("d") IntegerList data,
   @DefaultValue("0,100") @QueryParam("limits") Interval limits,
   @Context Request request,

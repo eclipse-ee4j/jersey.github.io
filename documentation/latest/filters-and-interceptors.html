@@ -1,6 +1,6 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Chapter&nbsp;10.&nbsp;Filters and Interceptors</title><link rel="stylesheet" type="text/css" href="/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 2.23 User Guide"><link rel="up" href="index.html" title="Jersey 2.23 User Guide"><link rel="prev" href="media.html" title="Chapter&nbsp;9.&nbsp;Support for Common Media Type Representations"><link rel="next" href="async.html" title="Chapter&nbsp;11.&nbsp;Asynchronous Services and Clients"><script type="text/javascript">
+   <title>Chapter&nbsp;10.&nbsp;Filters and Interceptors</title><link rel="stylesheet" type="text/css" href="/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 2.25.1 User Guide"><link rel="up" href="index.html" title="Jersey 2.25.1 User Guide"><link rel="prev" href="media.html" title="Chapter&nbsp;9.&nbsp;Support for Common Media Type Representations"><link rel="next" href="async.html" title="Chapter&nbsp;11.&nbsp;Asynchronous Services and Clients"><script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-3160303-1']);
             _gaq.push(['_trackPageview']);
@@ -15,12 +15,12 @@
                 Table of Contents
             </a> | <a href="user-guide.html">
                 Single HTML
-            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="filters-and-interceptors"></a>Chapter&nbsp;10.&nbsp;Filters and Interceptors</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="filters-and-interceptors.html#d0e9644">10.1. Introduction</a></span></dt><dt><span class="section"><a href="filters-and-interceptors.html#d0e9649">10.2. Filters</a></span></dt><dd><dl><dt><span class="section"><a href="filters-and-interceptors.html#d0e9678">10.2.1. Server filters</a></span></dt><dt><span class="section"><a href="filters-and-interceptors.html#d0e9783">10.2.2. Client filters</a></span></dt></dl></dd><dt><span class="section"><a href="filters-and-interceptors.html#d0e9818">10.3. Interceptors</a></span></dt><dt><span class="section"><a href="filters-and-interceptors.html#d0e9927">10.4. Filter and interceptor execution order</a></span></dt><dt><span class="section"><a href="filters-and-interceptors.html#d0e9988">10.5. Name binding</a></span></dt><dt><span class="section"><a href="filters-and-interceptors.html#d0e10061">10.6. Dynamic binding</a></span></dt><dt><span class="section"><a href="filters-and-interceptors.html#d0e10129">10.7. Priorities</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e9644"></a>10.1.&nbsp;Introduction</h2></div></div></div><p>This chapter describes filters, interceptors and their configuration. Filters and interceptors
+            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="filters-and-interceptors"></a>Chapter&nbsp;10.&nbsp;Filters and Interceptors</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="filters-and-interceptors.html#d0e9733">10.1. Introduction</a></span></dt><dt><span class="section"><a href="filters-and-interceptors.html#d0e9738">10.2. Filters</a></span></dt><dd><dl><dt><span class="section"><a href="filters-and-interceptors.html#d0e9767">10.2.1. Server filters</a></span></dt><dt><span class="section"><a href="filters-and-interceptors.html#d0e9872">10.2.2. Client filters</a></span></dt></dl></dd><dt><span class="section"><a href="filters-and-interceptors.html#d0e9907">10.3. Interceptors</a></span></dt><dt><span class="section"><a href="filters-and-interceptors.html#d0e10016">10.4. Filter and interceptor execution order</a></span></dt><dt><span class="section"><a href="filters-and-interceptors.html#d0e10077">10.5. Name binding</a></span></dt><dt><span class="section"><a href="filters-and-interceptors.html#d0e10150">10.6. Dynamic binding</a></span></dt><dt><span class="section"><a href="filters-and-interceptors.html#d0e10218">10.7. Priorities</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e9733"></a>10.1.&nbsp;Introduction</h2></div></div></div><p>This chapter describes filters, interceptors and their configuration. Filters and interceptors
             can be used on both sides, on the client and the server side. Filters can modify inbound and outbound requests
             and responses including modification of headers, entity and other request/response parameters. Interceptors
             are used primarily for modification of entity input and output streams. You can use interceptors for example
             to zip and unzip output and input entity streams.
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e9649"></a>10.2.&nbsp;Filters</h2></div></div></div><p>
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e9738"></a>10.2.&nbsp;Filters</h2></div></div></div><p>
             Filters can be used when you want to modify any request or response parameters like headers. For example
             you would like to add a response header "X-Powered-By" to each generated response. Instead of adding this header
             in each resource method you would use a response filter to add this header.
@@ -35,11 +35,11 @@
             </p><table border="0" summary="Simple list" class="simplelist"><tr><td><a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a>
                 </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientResponseFilter.html" target="_top">ClientResponseFilter</a>
                 </td></tr></table><p>
-        </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e9678"></a>10.2.1.&nbsp;Server filters</h3></div></div></div>
+        </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e9767"></a>10.2.1.&nbsp;Server filters</h3></div></div></div>
             The following example shows a simple container response filter adding a header to each response.
 
             <p>
-                </p><div class="example"><a name="d0e9684"></a><p class="title"><b>Example&nbsp;10.1.&nbsp;Container response filter</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">import java.io.IOException;
+                </p><div class="example"><a name="d0e9773"></a><p class="title"><b>Example&nbsp;10.1.&nbsp;Container response filter</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">import java.io.IOException;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerResponseContext;
 import javax.ws.rs.container.ContainerResponseFilter;
@@ -68,7 +68,7 @@ public class PoweredByResponseFilter implements ContainerResponseFilter {
                 in response phase. The modifications can be done in the <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/ContainerResponseContext.html" target="_top">ContainerResponseContext</a>.
             </p><p>
                 The following example shows the usage of a request filter.
-            </p><div class="example"><a name="d0e9711"></a><p class="title"><b>Example&nbsp;10.2.&nbsp;Container request filter</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">import java.io.IOException;
+            </p><div class="example"><a name="d0e9800"></a><p class="title"><b>Example&nbsp;10.2.&nbsp;Container request filter</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">import java.io.IOException;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.core.Response;
@@ -93,7 +93,7 @@ public class AuthorizationRequestFilter implements ContainerRequestFilter {
     }
 }</pre></div></div><br class="example-break"><p>
                 The request filter is similar to the response filter but does not have access to the ContainerResponseContext
-                as no response is accessible yet. Response filter inherits from <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientResponseFilter.html" target="_top">ClientResponseFilter</a>.
+                as no response is accessible yet. Response filter inherits from <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/ContainerResponseFilter.html" target="_top">ContainerResponseFilter</a>.
                 Request filter is executed before the resource method is run and before the
                 response is created. The filter has possibility to manipulate the request parameters including request
                 headers or entity.
@@ -105,7 +105,7 @@ public class AuthorizationRequestFilter implements ContainerRequestFilter {
                 When the <code class="literal">filter</code> method is finished the response passed as a parameter to the
                 <code class="literal">abortWith</code> method is used to respond to the request. Response filters, if any are registered,
                 will be executed and will have possibility to process the aborted response.
-            </p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e9738"></a>10.2.1.1.&nbsp;Pre-matching and post-matching filters</h4></div></div></div></div><p>
+            </p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e9827"></a>10.2.1.1.&nbsp;Pre-matching and post-matching filters</h4></div></div></div></div><p>
                 All the request filters shown above was implemented as post-matching filters. It means that the filters
                 would be applied only after a suitable resource method has been selected to process the actual request
                 i.e. after request matching happens. Request matching is the process of finding a resource method that
@@ -121,7 +121,7 @@ public class AuthorizationRequestFilter implements ContainerRequestFilter {
                 the possibility to influence which method will be matched. Such a pre-matching request filter example is shown
                 here:
             </p><p>
-                </p><div class="example"><a name="d0e9753"></a><p class="title"><b>Example&nbsp;10.3.&nbsp;Pre-matching request filter</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">...
+                </p><div class="example"><a name="d0e9842"></a><p class="title"><b>Example&nbsp;10.3.&nbsp;Pre-matching request filter</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">...
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerRequestFilter;
 import javax.ws.rs.container.PreMatching;
@@ -155,14 +155,14 @@ public class PreMatchingFilter implements ContainerRequestFilter {
                 so that a different resource would be matched.
             </p><p>
                 Like in post-matching filters you can abort a response in pre-matching filters too.
-            </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e9783"></a>10.2.2.&nbsp;Client filters</h3></div></div></div><p>
+            </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e9872"></a>10.2.2.&nbsp;Client filters</h3></div></div></div><p>
                 Client filters are similar to container filters. The response can also be aborted
                 in the <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a> which would cause that no request will actually be sent to the server at all.
                 A new response is passed to the <code class="literal">abort</code> method. This response will be used and delivered
                 as a result of the request invocation. Such a response goes through the client response filters.
                 This is similar to what happens on the server side. The process is shown in the following example:
             </p><p>
-                </p><div class="example"><a name="d0e9796"></a><p class="title"><b>Example&nbsp;10.4.&nbsp;Client request filter</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class CheckRequestFilter implements ClientRequestFilter {
+                </p><div class="example"><a name="d0e9885"></a><p class="title"><b>Example&nbsp;10.4.&nbsp;Client request filter</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class CheckRequestFilter implements ClientRequestFilter {
 
     @Override
     public void filter(ClientRequestContext requestContext)
@@ -195,7 +195,7 @@ public class PreMatchingFilter implements ContainerRequestFilter {
                 If the request was aborted in any client request filter then the
                 client/server communication is skipped and the aborted response
                 is used in the response filters.
-            </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e9818"></a>10.3.&nbsp;Interceptors</h2></div></div></div><p>
+            </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e9907"></a>10.3.&nbsp;Interceptors</h2></div></div></div><p>
             Interceptors share a common API for the server and the client side. Whereas filters are primarily intended to manipulate
             request and response parameters like HTTP headers, URIs and/or HTTP methods, interceptors are intended to manipulate entities, via manipulating
             entity input/output streams. If you for example need to encode entity body of a client request then you could
@@ -214,7 +214,7 @@ public class PreMatchingFilter implements ContainerRequestFilter {
         </p><p>
             The following example shows a writer interceptor that enables GZIP compression of the whole entity body.
         </p><p>
-            </p><div class="example"><a name="d0e9835"></a><p class="title"><b>Example&nbsp;10.5.&nbsp;GZIP writer interceptor</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class GZIPWriterInterceptor implements WriterInterceptor {
+            </p><div class="example"><a name="d0e9924"></a><p class="title"><b>Example&nbsp;10.5.&nbsp;GZIP writer interceptor</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class GZIPWriterInterceptor implements WriterInterceptor {
 
     @Override
     public void aroundWriteTo(WriterInterceptorContext context)
@@ -254,9 +254,9 @@ public class PreMatchingFilter implements ContainerRequestFilter {
             present. Interceptors should modify properties only for entity serialization
             and deserialization purposes.
         </p><p>
-            Let's now look at an example of a <code class="literal">WriterInterceptor</code>
+            Let's now look at an example of a <code class="literal">ReaderInterceptor</code>
         </p><p>
-            </p><div class="example"><a name="d0e9884"></a><p class="title"><b>Example&nbsp;10.6.&nbsp;GZIP reader interceptor</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class GZIPReaderInterceptor implements ReaderInterceptor {
+            </p><div class="example"><a name="d0e9973"></a><p class="title"><b>Example&nbsp;10.6.&nbsp;GZIP reader interceptor</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class GZIPReaderInterceptor implements ReaderInterceptor {
 
     @Override
     public Object aroundReadFrom(ReaderInterceptorContext context)
@@ -282,7 +282,7 @@ public class PreMatchingFilter implements ContainerRequestFilter {
             URIs and/or HTTP methods (excluding getters and setters for entity as entity has not been read yet).
             Again the same rules as for <code class="literal">WriterInterceptor</code> applies for changing these properties (change only
             properties in order to influence reading of an entity).
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e9927"></a>10.4.&nbsp;Filter and interceptor execution order</h2></div></div></div><p>
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10016"></a>10.4.&nbsp;Filter and interceptor execution order</h2></div></div></div><p>
             Let's look closer at the context of execution of filters and interceptors. The following steps describes scenario
             where a JAX-RS client makes a POST request to the server. The server receives an entity and sends a response back
             with the same entity. GZIP reader and writer interceptors are registered on the
@@ -318,7 +318,7 @@ public class PreMatchingFilter implements ContainerRequestFilter {
             reader/writers but this is not the case of simple scenario above. This happens for example when the entity is
             read many times from client response using internal buffering. Then the data are intercepted only once and kept
             'decoded' in the buffer.
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e9988"></a>10.5.&nbsp;Name binding</h2></div></div></div><p>
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10077"></a>10.5.&nbsp;Name binding</h2></div></div></div><p>
             Filters and interceptors can be <span class="emphasis"><em>name-bound</em></span>. Name binding is a concept that allows to say to a JAX-RS
             runtime that a specific filter or interceptor will be executed only for a specific resource method. When a filter or
             an interceptor is limited only to a specific resource method we say that it is <span class="emphasis"><em>name-bound</em></span>.
@@ -328,7 +328,7 @@ public class PreMatchingFilter implements ContainerRequestFilter {
             is used as meta annotation for other user implemented annotations that are applied to a providers and resource
             methods. See the following example:
         </p><p>
-            </p><div class="example"><a name="d0e10009"></a><p class="title"><b>Example&nbsp;10.7.&nbsp;<code class="literal">@NameBinding</code> example</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">...
+            </p><div class="example"><a name="d0e10098"></a><p class="title"><b>Example&nbsp;10.7.&nbsp;<code class="literal">@NameBinding</code> example</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">...
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.zip.GZIPInputStream;
@@ -403,11 +403,11 @@ public class GZIPWriterInterceptor implements WriterInterceptor {
         </p><p>
             Note that <span class="emphasis"><em>global filters are executed always</em></span>, so even for resource methods
             which have any name binding annotations.
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10061"></a>10.6.&nbsp;Dynamic binding</h2></div></div></div><p>Dynamic binding is a way how to assign filters and interceptors to the resource methods in a dynamic
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10150"></a>10.6.&nbsp;Dynamic binding</h2></div></div></div><p>Dynamic binding is a way how to assign filters and interceptors to the resource methods in a dynamic
         manner. Name binding from the previous chapter uses a static approach and changes to binding require source
         code change and recompilation. With dynamic binding you can implement code which defines bindings during the application
         initialization time. The following example shows how to implement dynamic binding.</p><p>
-            </p><div class="example"><a name="d0e10068"></a><p class="title"><b>Example&nbsp;10.8.&nbsp;Dynamic binding example</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">...
+            </p><div class="example"><a name="d0e10157"></a><p class="title"><b>Example&nbsp;10.8.&nbsp;Dynamic binding example</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">...
 import javax.ws.rs.core.FeatureContext;
 import javax.ws.rs.container.DynamicFeature;
 ...
@@ -466,7 +466,7 @@ public class CompressionDynamicBinding implements DynamicFeature {
         </p><p>
             Note that filters and interceptors registered using dynamic binding are only additional filters run for the
             resource method. If there are any name bound providers or global providers they will still be executed.
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10129"></a>10.7.&nbsp;Priorities</h2></div></div></div><p>In case you register more filters and interceptors you might want to define an exact order in which
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10218"></a>10.7.&nbsp;Priorities</h2></div></div></div><p>In case you register more filters and interceptors you might want to define an exact order in which
             they should be invoked. The order can be controlled by the <code class="literal">@Priority</code> annotation defined
             by the <code class="literal">javax.annotation.Priority</code> class. The annotation accepts an integer parameter of priority.
             Providers used in request processing (<code class="literal">ContainerRequestFilter</code>,
@@ -487,7 +487,7 @@ public class CompressionDynamicBinding implements DynamicFeature {
             shows the filter from the beginning
             of this chapter with a priority assigned.
         </p><p>
-            </p><div class="example"><a name="d0e10182"></a><p class="title"><b>Example&nbsp;10.9.&nbsp;Priorities example</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">...
+            </p><div class="example"><a name="d0e10271"></a><p class="title"><b>Example&nbsp;10.9.&nbsp;Priorities example</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">...
 import javax.annotation.Priority;
 import javax.ws.rs.Priorities;
 ...

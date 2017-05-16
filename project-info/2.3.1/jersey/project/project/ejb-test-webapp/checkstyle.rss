@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>jersey-tests-ejb-webapp - Checkstyle report</title>
+    <link>https://jersey.java.net/project/project/ejb-test-webapp/</link>
+    <description>jersey-tests-ejb-webapp - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
+    <item>
+      <title>File: 10,
+             Errors: 51,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.MyApplication.java">org/glassfish/jersey/tests/ejb/resources/MyApplication.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.RawEcho.java">org/glassfish/jersey/tests/ejb/resources/RawEcho.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.EchoResource.java">org/glassfish/jersey/tests/ejb/resources/EchoResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.CounterFilter.java">org/glassfish/jersey/tests/ejb/resources/CounterFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.Echo.java">org/glassfish/jersey/tests/ejb/resources/Echo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.ExceptionEjbResource.java">org/glassfish/jersey/tests/ejb/resources/ExceptionEjbResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.RawEchoResource.java">org/glassfish/jersey/tests/ejb/resources/RawEchoResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.StandaloneServlet.java">org/glassfish/jersey/tests/ejb/resources/StandaloneServlet.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.CounterBean.java">org/glassfish/jersey/tests/ejb/resources/CounterBean.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.EchoBean.java">org/glassfish/jersey/tests/ejb/resources/EchoBean.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+
