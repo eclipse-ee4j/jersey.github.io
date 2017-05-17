@@ -95,13 +95,13 @@
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/ClientHandler.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientHandler</a></dd>
+<dd><a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/ClientHandler.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientHandler</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public final class <span class="strong">ApacheHttpClientHandler</span>
 extends java.lang.Object
-implements <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/ClientHandler.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientHandler</a></pre>
+implements <a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/ClientHandler.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientHandler</a></pre>
 <div class="block">A root handler with Jakarta Commons HttpClient acting as a backend.
  <p>
  Client operations are thread safe, the HTTP connection may
@@ -111,8 +111,8 @@ implements <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jerse
  then the instance MUST be closed after processing the entity to release
  connection-based resources.
  <p>
- If a <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/ClientResponse.html?is-external=true" title="class or interface in com.sun.jersey.api.client"><code>ClientResponse</code></a> is obtained and an entity is not read from the
- response then <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/ClientResponse.html?is-external=true#close()" title="class or interface in com.sun.jersey.api.client"><code>ClientResponse.close()</code></a> MUST be called after processing
+ If a <a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/ClientResponse.html?is-external=true" title="class or interface in com.sun.jersey.api.client"><code>ClientResponse</code></a> is obtained and an entity is not read from the
+ response then <a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/ClientResponse.html?is-external=true#close()" title="class or interface in com.sun.jersey.api.client"><code>ClientResponse.close()</code></a> MUST be called after processing
  the response to release connection-based resources.
  <p>
  The following methods are currently supported: HEAD, GET, POST, PUT, DELETE
@@ -120,7 +120,7 @@ implements <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jerse
  <p>
  Chunked transfer encoding can be enabled or disabled but configuration of
  the chunked encoding size is not possible. If the 
- <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true#PROPERTY_CHUNKED_ENCODING_SIZE" title="class or interface in com.sun.jersey.api.client.config"><code>ClientConfig.PROPERTY_CHUNKED_ENCODING_SIZE</code></a> property is set
+ <a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true#PROPERTY_CHUNKED_ENCODING_SIZE" title="class or interface in com.sun.jersey.api.client.config"><code>ClientConfig.PROPERTY_CHUNKED_ENCODING_SIZE</code></a> property is set
  to a non-null value then chunked transfer encoding is enabled.</div>
 <dl><dt><span class="strong">Author:</span></dt>
   <dd>jorgeluisw@mac.com, Paul.Sandoz@Sun.Com</dd></dl>
@@ -148,13 +148,13 @@ implements <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jerse
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><strong><a href="../../../../../com/sun/jersey/client/apache/ApacheHttpClientHandler.html#ApacheHttpClientHandler(org.apache.commons.httpclient.HttpClient,%20com.sun.jersey.api.client.config.ClientConfig)">ApacheHttpClientHandler</a></strong>(org.apache.commons.httpclient.HttpClient&nbsp;client,
-                       <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.client.config">ClientConfig</a>&nbsp;config)</code>
+                       <a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.client.config">ClientConfig</a>&nbsp;config)</code>
 <div class="block">Create a new root handler with an <code>HttpClient</code>.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><strong><a href="../../../../../com/sun/jersey/client/apache/ApacheHttpClientHandler.html#ApacheHttpClientHandler(org.apache.commons.httpclient.HttpClient,%20com.sun.jersey.api.client.config.ClientConfig,%20com.sun.jersey.client.apache.ApacheHttpMethodExecutor)">ApacheHttpClientHandler</a></strong>(org.apache.commons.httpclient.HttpClient&nbsp;client,
-                       <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.client.config">ClientConfig</a>&nbsp;config,
+                       <a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.client.config">ClientConfig</a>&nbsp;config,
                        <a href="../../../../../com/sun/jersey/client/apache/ApacheHttpMethodExecutor.html" title="interface in com.sun.jersey.client.apache">ApacheHttpMethodExecutor</a>&nbsp;methodExecutor)</code>
 <div class="block">Create a new root handler with an <code>HttpClient</code>.</div>
 </td>
@@ -175,7 +175,7 @@ implements <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jerse
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.client.config">ClientConfig</a></code></td>
+<td class="colFirst"><code><a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.client.config">ClientConfig</a></code></td>
 <td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/client/apache/ApacheHttpClientHandler.html#getConfig()">getConfig</a></strong>()</code>
 <div class="block">Get the client config.</div>
 </td>
@@ -187,8 +187,8 @@ implements <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jerse
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/ClientResponse.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientResponse</a></code></td>
-<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/client/apache/ApacheHttpClientHandler.html#handle(com.sun.jersey.api.client.ClientRequest)">handle</a></strong>(<a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/ClientRequest.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientRequest</a>&nbsp;cr)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/ClientResponse.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientResponse</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../com/sun/jersey/client/apache/ApacheHttpClientHandler.html#handle(com.sun.jersey.api.client.ClientRequest)">handle</a></strong>(<a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/ClientRequest.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientRequest</a>&nbsp;cr)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -230,7 +230,7 @@ implements <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jerse
 <li class="blockList">
 <h4>ApacheHttpClientHandler</h4>
 <pre>public&nbsp;ApacheHttpClientHandler(org.apache.commons.httpclient.HttpClient&nbsp;client,
-                       <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.client.config">ClientConfig</a>&nbsp;config)</pre>
+                       <a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.client.config">ClientConfig</a>&nbsp;config)</pre>
 <div class="block">Create a new root handler with an <code>HttpClient</code>.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>client</code> - the <code>HttpClient</code>.</dd><dd><code>config</code> - the client configuration.</dd></dl>
 </li>
@@ -242,7 +242,7 @@ implements <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jerse
 <li class="blockList">
 <h4>ApacheHttpClientHandler</h4>
 <pre>public&nbsp;ApacheHttpClientHandler(org.apache.commons.httpclient.HttpClient&nbsp;client,
-                       <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.client.config">ClientConfig</a>&nbsp;config,
+                       <a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.client.config">ClientConfig</a>&nbsp;config,
                        <a href="../../../../../com/sun/jersey/client/apache/ApacheHttpMethodExecutor.html" title="interface in com.sun.jersey.client.apache">ApacheHttpMethodExecutor</a>&nbsp;methodExecutor)</pre>
 <div class="block">Create a new root handler with an <code>HttpClient</code>.</div>
 <dl><dt><span class="strong">Parameters:</span></dt><dd><code>client</code> - the <code>HttpClient</code>.</dd><dd><code>config</code> - the client configuration.</dd><dd><code>methodExecutor</code> - the method executor.</dd></dl>
@@ -262,7 +262,7 @@ implements <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jerse
 <ul class="blockList">
 <li class="blockList">
 <h4>getConfig</h4>
-<pre>public&nbsp;<a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.client.config">ClientConfig</a>&nbsp;getConfig()</pre>
+<pre>public&nbsp;<a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/config/ClientConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.client.config">ClientConfig</a>&nbsp;getConfig()</pre>
 <div class="block">Get the client config.</div>
 <dl><dt><span class="strong">Returns:</span></dt><dd>the client config.</dd></dl>
 </li>
@@ -284,13 +284,13 @@ implements <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jerse
 <ul class="blockListLast">
 <li class="blockList">
 <h4>handle</h4>
-<pre>public&nbsp;<a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/ClientResponse.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientResponse</a>&nbsp;handle(<a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/ClientRequest.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientRequest</a>&nbsp;cr)
-                      throws <a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/ClientHandlerException.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientHandlerException</a></pre>
+<pre>public&nbsp;<a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/ClientResponse.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientResponse</a>&nbsp;handle(<a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/ClientRequest.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientRequest</a>&nbsp;cr)
+                      throws <a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/ClientHandlerException.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientHandlerException</a></pre>
 <dl>
 <dt><strong>Specified by:</strong></dt>
-<dd><code><a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/ClientHandler.html?is-external=true#handle(com.sun.jersey.api.client.ClientRequest)" title="class or interface in com.sun.jersey.api.client">handle</a></code>&nbsp;in interface&nbsp;<code><a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/ClientHandler.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientHandler</a></code></dd>
+<dd><code><a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/ClientHandler.html?is-external=true#handle(com.sun.jersey.api.client.ClientRequest)" title="class or interface in com.sun.jersey.api.client">handle</a></code>&nbsp;in interface&nbsp;<code><a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/ClientHandler.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientHandler</a></code></dd>
 <dt><span class="strong">Throws:</span></dt>
-<dd><code><a href="https://jersey.java.net/jersey-client//apidocs/com/sun/jersey/api/client/ClientHandlerException.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientHandlerException</a></code></dd></dl>
+<dd><code><a href="https://jersey.github.io/jersey-client//apidocs/com/sun/jersey/api/client/ClientHandlerException.html?is-external=true" title="class or interface in com.sun.jersey.api.client">ClientHandlerException</a></code></dd></dl>
 </li>
 </ul>
 </li>

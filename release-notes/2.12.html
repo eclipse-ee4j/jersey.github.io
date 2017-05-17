@@ -18,8 +18,8 @@ Release date: <strong>26-Aug-2014</strong>
   <p>Following experimental APIs have been promoted to become part of public Jersey API: </p>
   <div class="itemizedlist">
     <ul class="itemizedlist" style="list-style-type: disc; ">
-      <li class="listitem"><p>Jersey client-side <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a> API.</p></li>
-      <li class="listitem"><p>Jersey server-side <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/monitoring/DestroyListener.html" target="_top">DestroyListener</a> (formerly
+      <li class="listitem"><p>Jersey client-side <a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a> API.</p></li>
+      <li class="listitem"><p>Jersey server-side <a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/monitoring/DestroyListener.html" target="_top">DestroyListener</a> (formerly
                             <code class="literal">ExtendedMonitoringStatisticsListener</code>), which has been slightly refactored and is now a separate interface (e.g. not extending <code class="literal">MonitoringStatisticsListener</code>),
                             hence providing better compatibility with lambdas.</p>
       </li>
@@ -35,11 +35,11 @@ Release date: <strong>26-Aug-2014</strong>
 			      properties starts with <code class="literal">is</code> instead of <code class="literal">get</code> as in Jersey 1 and Jersey &lt;= 2.6.</p>
       </li>
       <li class="listitem"><p>For performance purposes a new server property 
-			      <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_ENABLED" target="_top">ServerProperties.MONITORING_ENABLED</a> has been introduced. 
+			      <a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_ENABLED" target="_top">ServerProperties.MONITORING_ENABLED</a> has been introduced. 
 			      It is possible to enable just basic almost static monitoring information using the property. It allows to inject 
-			      <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/monitoring/ApplicationInfo.html" target="_top">ApplicationInfo</a> object,
+			      <a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/monitoring/ApplicationInfo.html" target="_top">ApplicationInfo</a> object,
 			      renamed original class <code class="literal">org.glassfish.jersey.server.monitoring.ApplicationStatistics</code>. 
-			      And <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html">MonitoringStatistics</a> no more
+			      And <a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html">MonitoringStatistics</a> no more
 			      have a reference to <code class="literal">ApplicationStatistics</code>, method <code class="literal">getApplicationStatistics()</code> has been removed.
 			    </p>
       </li>
