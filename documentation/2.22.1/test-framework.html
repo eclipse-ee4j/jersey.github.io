@@ -10,7 +10,7 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;25.&nbsp;Jersey Test Framework</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="spring.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="how-to-build.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;25.&nbsp;Jersey Test Framework</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="spring.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="how-to-build.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
@@ -49,26 +49,26 @@
         assertEquals("Hello World!", hello);
     }
 }</pre><p>
-            If you want to develop a test using Jersey Test Framework, you need to subclass <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html" target="_top">JerseyTest</a> and
+            If you want to develop a test using Jersey Test Framework, you need to subclass <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html" target="_top">JerseyTest</a> and
             configure the set of resources and/or providers that will be deployed as part of the test application. This short
             code snippet shows basic resource class <code class="literal">HelloResource</code> used in tests defined as part of the
             <code class="literal">SimpleTest</code> class. The overridden <code class="literal">configure</code> method returns
-            a <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> of the test application,that contains only the <code class="literal">HelloResource</code>
+            a <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> of the test application,that contains only the <code class="literal">HelloResource</code>
             resource class. <code class="literal">ResourceConfig</code> is a sub-class of JAX-RS <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/Application.html" target="_top">Application</a>. It is a Jersey
             convenience class for configuring JAX-RS applications. <code class="literal">ResourceConfig</code> also implements JAX-RS
             <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a> interface to make the application configuration more flexible.
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e17113"></a>25.2.&nbsp;Supported Containers</h2></div></div></div><p>
-            <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html" target="_top">JerseyTest</a> supports deploying applications on various containers, all (except the external container
+            <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html" target="_top">JerseyTest</a> supports deploying applications on various containers, all (except the external container
             wrapper) need to have some "glue" code to be supported. Currently Jersey Test Framework provides support for
             Grizzly, In-Memory, JDK (<code class="literal">com.sun.net.httpserver.HttpServer</code>), Simple HTTP container
             (<code class="literal">org.simpleframework.http</code>) and Jetty HTTP container (<code class="literal">org.eclipse.jetty</code>).
         </p><p>
             A test container is selected based on various inputs.
-            <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#getTestContainerFactory()" target="_top">JerseyTest#getTestContainerFactory()</a>
+            <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#getTestContainerFactory()" target="_top">JerseyTest#getTestContainerFactory()</a>
             is always executed, so if you override it and provide your own version of
-            <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/spi/TestContainerFactory.html" target="_top">TestContainerFactory</a>, nothing else will be considered.
+            <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/spi/TestContainerFactory.html" target="_top">TestContainerFactory</a>, nothing else will be considered.
             Setting a system variable
-            <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/TestProperties.html#CONTAINER_FACTORY" target="_top">TestProperties#CONTAINER_FACTORY</a>
+            <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/TestProperties.html#CONTAINER_FACTORY" target="_top">TestProperties#CONTAINER_FACTORY</a>
             has similar effect. This way you may defer the decision on which containers you want to run your tests
             from the compile time to the test execution time.
             Default implementation of <code class="literal">TestContainerFactory</code> looks for container factories on classpath.
@@ -132,8 +132,8 @@
             the following 2 steps are fulfilled:
 
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                        Extend <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.html" target="_top">JerseyTestNg</a>, or one of it's inner classes <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.ContainerPerClassTest.html" target="_top">JerseyTestNg.ContainerPerClassTest</a>
-                        / <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.ContainerPerMethodTest.html" target="_top">JerseyTestNg.ContainerPerMethodTest</a>, instead of <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html" target="_top">JerseyTest</a>.
+                        Extend <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.html" target="_top">JerseyTestNg</a>, or one of it's inner classes <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.ContainerPerClassTest.html" target="_top">JerseyTestNg.ContainerPerClassTest</a>
+                        / <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.ContainerPerMethodTest.html" target="_top">JerseyTestNg.ContainerPerMethodTest</a>, instead of <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html" target="_top">JerseyTest</a>.
                     </p></li><li class="listitem"><p>
                         Add TestNG to your class-patch, i.e.:
 
@@ -155,11 +155,11 @@
             TestNG creates only one instance of a test class and the initialization of the test container depends more on
             setup/teardown methods (driven by <code class="literal">@BeforeXXX</code> and <code class="literal">@AfterXXX</code> annotations) than in
             JUnit. This means that, basically, you can start one instance of test container for all tests present in a test class
-            or separate test container for each and every test. For this reason a separate subclasses of <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.html" target="_top">JerseyTestNg</a>
+            or separate test container for each and every test. For this reason a separate subclasses of <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.html" target="_top">JerseyTestNg</a>
             have been created:
 
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                        <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.ContainerPerClassTest.html" target="_top">JerseyTestNg.ContainerPerClassTest</a> creates one container to run all the tests in. Setup method
+                        <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.ContainerPerClassTest.html" target="_top">JerseyTestNg.ContainerPerClassTest</a> creates one container to run all the tests in. Setup method
                         is annotated with <code class="literal">@BeforeClass</code>, teardown method with <code class="literal">@AfterClass</code>.
                     </p><p>
                         For example take a look at <code class="literal">ContainerPerClassTest</code> test. It contains two test
@@ -205,7 +205,7 @@
     }
 }</pre><p>
                     </p></li><li class="listitem"><p>
-                        <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.ContainerPerMethodTest.html" target="_top">JerseyTestNg.ContainerPerMethodTest</a> creates separate container for each test. Setup method
+                        <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.ContainerPerMethodTest.html" target="_top">JerseyTestNg.ContainerPerMethodTest</a> creates separate container for each test. Setup method
                         is annotated with <code class="literal">@BeforeMethod</code>, teardown method with <code class="literal">@AfterMethod</code>.
                     </p><p>
                         We can create a similar test to the previous one. Take a look at <code class="literal">ContainerPerMethodTest</code>
@@ -253,13 +253,13 @@
 }</pre><p>
                     </p></li></ul></div><p>
         </p><p>
-            If you need more complex setup of your test you can achieve this by directly extending the <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.html" target="_top">JerseyTestNg</a>
+            If you need more complex setup of your test you can achieve this by directly extending the <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTestNg.html" target="_top">JerseyTestNg</a>
             class create setup/teardown methods suited to your needs and provide a strategy for storing and handling a test
             container / client instance (see <code class="literal">JerseyTestNg.configureStrategy(TestNgStrategy)</code> method).
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e17306"></a>25.4.&nbsp;Advanced features</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e17309"></a>25.4.1.&nbsp;<code class="literal">JerseyTest</code> Features</h3></div></div></div><p><code class="literal">JerseyTest</code> provide
-                <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#enable(java.lang.String)" target="_top">enable(...)</a>,
-                <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#forceEnable(java.lang.String)" target="_top">forceEnable(...)</a>
-                and <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#disable(java.lang.String)" target="_top">disable(...)</a>
+                <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#enable(java.lang.String)" target="_top">enable(...)</a>,
+                <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#forceEnable(java.lang.String)" target="_top">forceEnable(...)</a>
+                and <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#disable(java.lang.String)" target="_top">disable(...)</a>
                 methods, that give you control over configuring values of the properties defined and described in the
                 <code class="literal">TestProperties</code> class. A typical code that overrides the default property values is listed
                 below:
@@ -298,21 +298,21 @@
                 </p><pre class="screen">mvn test -Djersey.test.host=myhost.org -Djersey.config.test.container.port=8080</pre><p>
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e17344"></a>25.4.3.&nbsp;Test Client configuration</h3></div></div></div><p>
                 Tests might require some advanced client configuration. This is possible by overriding
-                <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#configureClient(org.glassfish.jersey.client.ClientConfig)" target="_top">configureClient(ClientConfig clientConfig)</a>
+                <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#configureClient(org.glassfish.jersey.client.ClientConfig)" target="_top">configureClient(ClientConfig clientConfig)</a>
                 method. Typical use case for this is registering more providers, such as <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>s or
                 <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a>s, or enabling additional features.
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e17358"></a>25.4.4.&nbsp;Accessing the logged test records programmatically</h3></div></div></div><p>
                 Sometimes you might need to check a logged message as part of your test assertions. For this purpose Jersey Test
                 Framework provides convenient access to the logged records via
-                <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#getLastLoggedRecord()" target="_top">JerseyTest#getLastLoggedRecord()</a>
+                <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#getLastLoggedRecord()" target="_top">JerseyTest#getLastLoggedRecord()</a>
                 and
-                <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#getLoggedRecords()" target="_top">JerseyTest#getLoggedRecords()</a>
+                <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/JerseyTest.html#getLoggedRecords()" target="_top">JerseyTest#getLoggedRecords()</a>
                 methods. Note that this feature is not enabled by default, see
-                <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/TestProperties.html#RECORD_LOG_LEVEL" target="_top">TestProperties#RECORD_LOG_LEVEL</a>
+                <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/TestProperties.html#RECORD_LOG_LEVEL" target="_top">TestProperties#RECORD_LOG_LEVEL</a>
                 for more information.
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="parallel"></a>25.5.&nbsp;Parallel Testing with Jersey Test Framework</h2></div></div></div><p>
             For a purpose of running multiple test containers in parallel you need to set the
-            <a class="link" href="https://jersey.java.net/apidocs/2.22.1/jersey/org/glassfish/jersey/test/TestProperties.CONTAINER_PORT.html" target="_top">TestProperties.CONTAINER_PORT</a>
+            <a class="link" href="https://jersey.github.io/apidocs/2.22.1/jersey/org/glassfish/jersey/test/TestProperties.CONTAINER_PORT.html" target="_top">TestProperties.CONTAINER_PORT</a>
             to <code class="literal">0</code> value. This will tell Jersey Test Framework (and the underlying test container) to use the
             first available port.
         </p><p>
@@ -341,14 +341,14 @@
             For more information about this topic consult the following Maven Surefire articles:
 
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="http://maven.apache.org/surefire/maven-surefire-plugin/examples/fork-options-and-parallel-execution.html" target="_top">Fork Options and Parallel Test Execution</a></p></li><li class="listitem"><p><a class="link" href="http://maven.apache.org/surefire/maven-surefire-plugin/examples/testng.html#Running_tests_in_parallel" target="_top">Using TestNG - Running tests in parallel</a></p></li><li class="listitem"><p><a class="link" href="http://maven.apache.org/surefire/maven-surefire-plugin/examples/junit.html#Running_tests_in_parallel" target="_top">Using JUnit - Running tests in parallel</a></p></li></ul></div><p>
-        </p></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+        </p></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

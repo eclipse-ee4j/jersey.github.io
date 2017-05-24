@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-examples-rx-client-webapp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/webapp-example-parent/rx-client-webapp/</link>
+    <link>https://jersey.github.io/project/webapp-example-parent/rx-client-webapp/</link>
     <description>jersey-examples-rx-client-webapp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.remote.DestinationResource.java">org/glassfish/jersey/examples/rx/remote/DestinationResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.remote.DestinationResource.java">org/glassfish/jersey/examples/rx/remote/DestinationResource.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.remote.ForecastResource.java">org/glassfish/jersey/examples/rx/remote/ForecastResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.remote.ForecastResource.java">org/glassfish/jersey/examples/rx/remote/ForecastResource.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.Helper.java">org/glassfish/jersey/examples/rx/Helper.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.Helper.java">org/glassfish/jersey/examples/rx/Helper.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.remote.CalculationResource.java">org/glassfish/jersey/examples/rx/remote/CalculationResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.remote.CalculationResource.java">org/glassfish/jersey/examples/rx/remote/CalculationResource.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.domain.Forecast.java">org/glassfish/jersey/examples/rx/domain/Forecast.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.domain.Forecast.java">org/glassfish/jersey/examples/rx/domain/Forecast.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.domain.Calculation.java">org/glassfish/jersey/examples/rx/domain/Calculation.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.domain.Calculation.java">org/glassfish/jersey/examples/rx/domain/Calculation.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.agent.SyncAgentResource.java">org/glassfish/jersey/examples/rx/agent/SyncAgentResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.agent.SyncAgentResource.java">org/glassfish/jersey/examples/rx/agent/SyncAgentResource.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.domain.Recommendation.java">org/glassfish/jersey/examples/rx/domain/Recommendation.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.domain.Recommendation.java">org/glassfish/jersey/examples/rx/domain/Recommendation.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.domain.Destination.java">org/glassfish/jersey/examples/rx/domain/Destination.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.domain.Destination.java">org/glassfish/jersey/examples/rx/domain/Destination.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.agent.AsyncAgentResource.java">org/glassfish/jersey/examples/rx/agent/AsyncAgentResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.agent.AsyncAgentResource.java">org/glassfish/jersey/examples/rx/agent/AsyncAgentResource.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.domain.AgentResponse.java">org/glassfish/jersey/examples/rx/domain/AgentResponse.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.domain.AgentResponse.java">org/glassfish/jersey/examples/rx/domain/AgentResponse.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.agent.ObservableAgentResource.java">org/glassfish/jersey/examples/rx/agent/ObservableAgentResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.agent.ObservableAgentResource.java">org/glassfish/jersey/examples/rx/agent/ObservableAgentResource.java</a>
                 </td>
                 <td>
                   0
@@ -214,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.agent.ListenableFutureAgentResource.java">org/glassfish/jersey/examples/rx/agent/ListenableFutureAgentResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.agent.ListenableFutureAgentResource.java">org/glassfish/jersey/examples/rx/agent/ListenableFutureAgentResource.java</a>
                 </td>
                 <td>
                   0
@@ -228,7 +228,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.RxApplication.java">org/glassfish/jersey/examples/rx/RxApplication.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/rx-client-webapp//checkstyle.html#org.glassfish.jersey.examples.rx.RxApplication.java">org/glassfish/jersey/examples/rx/RxApplication.java</a>
                 </td>
                 <td>
                   0

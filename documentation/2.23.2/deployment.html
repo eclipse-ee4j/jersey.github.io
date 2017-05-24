@@ -10,7 +10,7 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;4.&nbsp;Application Deployment and Runtime Environments</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="jaxrs-resources.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="client.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;4.&nbsp;Application Deployment and Runtime Environments</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="jaxrs-resources.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="client.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
@@ -26,7 +26,7 @@
                 <a class="link" href="client.html" title="Chapter&nbsp;5.&nbsp;Client API">Jersey client runtime</a> does
                 not have any specific container requirements and runs in plain Java SE 6 or higher runtime.
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="environmenmt.appmodel"></a>4.2.&nbsp;JAX-RS Application Model</h2></div></div></div><p>
-            JAX-RS provides a deployment agnostic abstract class <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Application.html" target="_top">Application</a>
+            JAX-RS provides a deployment agnostic abstract class <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Application.html" target="_top">Application</a>
             for declaring root resource and provider classes, and root resource and provider singleton instances.
             A Web service may extend this class to declare root resource and provider classes. For example,
             </p><div class="example"><a name="d0e2881"></a><p class="title"><b>Example&nbsp;4.1.&nbsp;Deployment agnostic application model</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class MyApplication extends Application {
@@ -38,7 +38,7 @@
     }
 }</pre></div></div><p><br class="example-break">
         </p><p>
-            Alternatively it is possible to reuse <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> - Jersey's own implementations
+            Alternatively it is possible to reuse <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> - Jersey's own implementations
             of <code class="literal">Application</code> class. This class can either be directly instantiated and then configured
             or it can be extended and the configuration code placed into the constructor of the extending class. The
             approach typically depends on the chosen deployment runtime.
@@ -66,10 +66,10 @@
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="deployment.autodiscoverable"></a>4.3.&nbsp;Auto-Discoverable Features</h2></div></div></div><p>
             By default Jersey 2.x does not implicitly register any extension features from the modules available on the
             classpath, unless explicitly stated otherwise in the documentation of each particular extension.
-            Users are expected to explicitly register the extension <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Feature.html" target="_top">Feature</a>s using their
+            Users are expected to explicitly register the extension <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Feature.html" target="_top">Feature</a>s using their
             <code class="literal">Application</code> subclass.
             For a few Jersey provided modules however there is no need to explicitly register their extension
-            <code class="literal">Feature</code>s as these are discovered and registered in the <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Configuration.html" target="_top">Configuration</a> (on client/server)
+            <code class="literal">Feature</code>s as these are discovered and registered in the <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Configuration.html" target="_top">Configuration</a> (on client/server)
             automatically by Jersey runtime whenever the modules implementing these features are present on the classpath
             of the deployed JAX-RS application. The modules that are automatically discovered include:
 
@@ -79,7 +79,7 @@
             are discovered by this mechanism and their availability is affected by Jersey auto-discovery support configuration
             (see <a class="xref" href="deployment.html#deployment.autodiscovery.config" title="4.3.1.&nbsp;Configuring Feature Auto-discovery Mechanism">Section&nbsp;4.3.1, &#8220;Configuring Feature Auto-discovery Mechanism&#8221;</a>), namely:
 
-            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/server/wadl/WadlFeature.html" target="_top">WadlFeature</a> - enables WADL processing.</p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/server/filter/UriConnegFilter.html" target="_top">UriConnegFilter</a> - a URI-based content negotiation filter.</p></li></ul></div><p>
+            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/server/wadl/WadlFeature.html" target="_top">WadlFeature</a> - enables WADL processing.</p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/server/filter/UriConnegFilter.html" target="_top">UriConnegFilter</a> - a URI-based content negotiation filter.</p></li></ul></div><p>
 
             Almost all Jersey auto-discovery implementations have <code class="code">AutoDiscoverable.DEFAULT_PRIORITY</code>
             <code class="literal">@Priority</code> set.
@@ -91,10 +91,10 @@
                 The mechanism of feature auto-discovery in Jersey that described above is enabled by default. It can be
                 disabled by using special (common/server/client) properties:
 
-                </p><div class="itemizedlist"><p class="title"><b>Common auto discovery properties</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/CommonProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></p><p>When set, disables auto discovery globally on client/server.</p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/CommonProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">CommonProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p><p>When set, disables configuration of Json Processing (JSR-353) feature.</p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/CommonProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">CommonProperties.MOXY_JSON_FEATURE_DISABLE</a></p><p>When set, disables configuration of MOXy Json feature.</p></li></ul></div><p>
+                </p><div class="itemizedlist"><p class="title"><b>Common auto discovery properties</b></p><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/CommonProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></p><p>When set, disables auto discovery globally on client/server.</p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/CommonProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">CommonProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p><p>When set, disables configuration of Json Processing (JSR-353) feature.</p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/CommonProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">CommonProperties.MOXY_JSON_FEATURE_DISABLE</a></p><p>When set, disables configuration of MOXy Json feature.</p></li></ul></div><p>
 
                 For each of these properties there is a client/server counter-part that is only honored by the Jersey
-                client or server runtime respectively (see <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ClientProperties.html" target="_top">ClientProperties</a>/<a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/server/ServerProperties.html" target="_top">ServerProperties</a>).
+                client or server runtime respectively (see <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ClientProperties.html" target="_top">ClientProperties</a>/<a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/server/ServerProperties.html" target="_top">ServerProperties</a>).
                 When set, each of these client/server specific auto-discovery related properties overrides the value of the
                 related common property.
             </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
@@ -120,16 +120,16 @@
             initialization in exchange for a more verbose application configuration code.
         </p><p>
             The services lookup in Jersey (enabled by default) can be disabled via a dedicated
-            <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/CommonProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">CommonProperties.METAINF_SERVICES_LOOKUP_DISABLE</a> property.
+            <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/CommonProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">CommonProperties.METAINF_SERVICES_LOOKUP_DISABLE</a> property.
             There is a client/server counter-part that only disables the feature on the client or server respectively:
-            <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ClientProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ClientProperties.METAINF_SERVICES_LOOKUP_DISABLE</a>/<a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/server/ServerProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE</a>.
+            <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ClientProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ClientProperties.METAINF_SERVICES_LOOKUP_DISABLE</a>/<a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/server/ServerProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE</a>.
             As in all other cases, the client/server specific properties overrides the value of the related common property,
             when set.
         </p><p>
             For example, following code snippet disables service provider lookup and manually registers implementations
             of different JAX-RS and Jersey provider types
-            (<a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/ContainerRequestFilter.html" target="_top">ContainerRequestFilter</a>, <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Feature.html" target="_top">Feature</a>, <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/server/spi/ComponentProvider.html" target="_top">ComponentProvider</a>
-            and <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/server/spi/ContainerProvider.html" target="_top">ContainerProvider</a>):
+            (<a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/ContainerRequestFilter.html" target="_top">ContainerRequestFilter</a>, <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Feature.html" target="_top">Feature</a>, <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/server/spi/ComponentProvider.html" target="_top">ComponentProvider</a>
+            and <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/server/spi/ContainerProvider.html" target="_top">ContainerProvider</a>):
             </p><div class="example"><a name="d0e3130"></a><p class="title"><b>Example&nbsp;4.3.&nbsp;Registering SPI implementations using ResourceConfig</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">ResourceConfig resourceConfig = new ResourceConfig(MyResource.class);
 resourceConfig.register(org.glassfish.jersey.server.filter.UriConnegFilter.class);
 resourceConfig.register(org.glassfish.jersey.server.validation.ValidationFeature.class);
@@ -160,7 +160,7 @@ resourceConfig.property(ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE, true);
                     integration with this Java SE HTTP server through the <code class="literal">jersey-container-jdk-http</code>
                     container extension module.
                     Instead of creating the <code class="literal"><a class="link" href="http://docs.oracle.com/javase/6/docs/jre/api/net/httpserver/spec/com/sun/net/httpserver/HttpServer.html" target="_top">HttpServer</a></code> instance directly, use the
-                    <code class="literal">createHttpServer()</code> method of <code class="literal"><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/jdkhttp/JdkHttpServerFactory.html" target="_top">JdkHttpServerFactory</a></code>,
+                    <code class="literal">createHttpServer()</code> method of <code class="literal"><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/jdkhttp/JdkHttpServerFactory.html" target="_top">JdkHttpServerFactory</a></code>,
                     which creates the <code class="literal">HttpServer</code> instance configured as a Jersey container and
                     initialized with the supplied <code class="literal">Application</code> subclass.
                 </p><p>
@@ -337,7 +337,7 @@ Channel server = NettyHttpContainerProvider.createServer(baseUri, resourceConfig
                 The content of the <code class="literal">&lt;init-param&gt;</code> element will vary depending on the way you decide to
                 configure Jersey resources.
             </p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="deployment.servlet.2.application"></a>4.7.1.1.&nbsp;Custom <code class="literal">Application</code> subclass</h4></div></div></div><p>
-                    If you extend the <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Application.html" target="_top">Application</a> class to provide the list of relevant root resource
+                    If you extend the <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Application.html" target="_top">Application</a> class to provide the list of relevant root resource
                     classes (<code class="literal">getClasses()</code>) and singletons (<code class="literal">getSingletons()</code>),
                     i.e. your JAX-RS application model, you then need to register it in your web application
                     <code class="literal">web.xml</code> deployment descriptor using a Servlet or Servlet filter initialization
@@ -395,9 +395,9 @@ Channel server = NettyHttpContainerProvider.createServer(baseUri, resourceConfig
                     features, deployment options and more flexibility.
                 </p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="deployment.servlet.3"></a>4.7.2.&nbsp;Servlet 3.x Container</h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="deployment.servlet.3.no.descriptor"></a>4.7.2.1.&nbsp;Descriptor-less deployment</h4></div></div></div><p>
                     There are multiple deployment options in the Servlet 3.0 container for a JAX-RS application defined
-                    by implementing a custom <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Application.html" target="_top">Application</a> subclass. For simple deployments, no
-                    <code class="literal">web.xml</code> is necessary at all. Instead, an <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ApplicationPath.html" target="_top">@ApplicationPath</a> annotation can be used
-                    to annotate the custom <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Application.html" target="_top">Application</a> subclass and define the base application URI for all
+                    by implementing a custom <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Application.html" target="_top">Application</a> subclass. For simple deployments, no
+                    <code class="literal">web.xml</code> is necessary at all. Instead, an <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ApplicationPath.html" target="_top">@ApplicationPath</a> annotation can be used
+                    to annotate the custom <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Application.html" target="_top">Application</a> subclass and define the base application URI for all
                     JAX-RS resources configured in the application:
 
                     </p><div class="example"><a name="d0e3505"></a><p class="title"><b>Example&nbsp;4.15.&nbsp;Deployment of a JAX-RS application using <code class="literal">@ApplicationPath</code> with Servlet 3.0</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@ApplicationPath("resources")
@@ -409,7 +409,7 @@ public class MyApplication extends ResourceConfig {
                 </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                         There are many other convenience methods in the <code class="literal">ResourceConfig</code> that can be used
                         in the constructor of your custom subclass to configure your JAX-RS application,
-                        see <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> API documentation for more details.
+                        see <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> API documentation for more details.
                     </p></div><p>
                     In case you are not providing <code class="literal">web.xml</code> deployment descriptor for your maven-based web
                     application project, you need to configure your <code class="literal">maven-war-plugin</code> to ignore the missing
@@ -435,7 +435,7 @@ public class MyApplication extends ResourceConfig {
                     This is typically suitable for more complex deployments, e.g. when security model needs to be
                     properly defined or when additional initialization parameters have to be passed to Jersey runtime.
                     JAX-RS 1.1 and later specifies that a fully qualified name of the class that implements
-                    <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Application.html" target="_top">Application</a> may be used in the definition of a <code class="literal">&lt;servlet-name&gt;</code>
+                    <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Application.html" target="_top">Application</a> may be used in the definition of a <code class="literal">&lt;servlet-name&gt;</code>
                     element as part of your application's <code class="literal">web.xml</code> deployment descriptor.
                 </p><p>
                     Following example illustrates this approach:
@@ -475,8 +475,8 @@ public class MyApplication extends ResourceConfig {
                     If no <code class="literal">Application</code> (or <code class="literal">ResourceConfig</code>) subclass is present,
                     Jersey will dynamically add a Jersey container Servlet and set its name to
                     <code class="literal">javax.ws.rs.core.Application</code>. The web application path will be scanned and all the
-                    root resource classes (the classes annotated with <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/Path.html" target="_top">@Path</a> annotation) as well as any providers that are
-                    annotated with <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/Provider.html" target="_top">@Provider</a> annotation packaged with the application will be automatically registered
+                    root resource classes (the classes annotated with <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/Path.html" target="_top">@Path</a> annotation) as well as any providers that are
+                    annotated with <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/Provider.html" target="_top">@Provider</a> annotation packaged with the application will be automatically registered
                     in the JAX-RS application. The web application has to be packaged with a deployment descriptor specifying
                     at least the mapping for the added <code class="literal">javax.ws.rs.core.Application</code> Servlet:
 
@@ -507,7 +507,7 @@ public class MyApplication extends ResourceConfig {
                         If no such Servlet is defined to handle the custom <code class="literal">Application</code> subclass, Jersey
                         dynamically adds a Servlet with a fully qualified name equal to the name of the provided
                         <code class="literal">Application</code> subclass. To define the mapping for the added Servlet, you can either
-                        annotate the custom <code class="literal">Application</code> subclass with an <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ApplicationPath.html" target="_top">@ApplicationPath</a> annotation
+                        annotate the custom <code class="literal">Application</code> subclass with an <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ApplicationPath.html" target="_top">@ApplicationPath</a> annotation
                         (Jersey will use the annotation value appended with <code class="literal">/*</code> to automatically define
                         the mapping for the Servlet), or specify the mapping for the Servlet in the
                         <code class="literal">web.xml</code> descriptor directly.
@@ -550,7 +550,7 @@ public class MyApplication extends ResourceConfig {
                                         if no <code class="literal">@ApplicationPath</code> on the <code class="literal">Application</code>
                                         subclass, then Servlet mapping is required
                                     </td></tr></tbody></table></div></div><br class="table-break"></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="deployment.servlet.containers"></a>4.7.3.&nbsp;Jersey Servlet container modules</h3></div></div></div><p>
-                Jersey uses its own <code class="literal"><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/servlet/ServletContainer.html" target="_top">ServletContainer</a></code> implementation of Servlet and
+                Jersey uses its own <code class="literal"><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/servlet/ServletContainer.html" target="_top">ServletContainer</a></code> implementation of Servlet and
                 Servlet Filter API to integrate with Servlet containers. As any JAX-RS runtime, Jersey provides support
                 for Servlet containers that support Servlet specification version 2.5 and higher. To support JAX-RS 2.0
                 asynchronous resources on top of a Servlet container, support for Servlet specification version 3.0 or higher
@@ -681,7 +681,7 @@ public class StatelessEjbResource implements LocalEjb {
                 </p><p>
                   Since both CDI and HK2 use the same injection annotation, Jersey could get confused in certain
                   cases, which could lead to nasty runtime issues. The get better control over what Jersey evaluates
-                  as HK2 injection, end-users could take advantage of newly introduced, <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/ext/cdi1x/spi/Hk2CustomBoundTypesProvider.html" target="_top">Hk2CustomBoundTypesProvider</a>, SPI.
+                  as HK2 injection, end-users could take advantage of newly introduced, <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/ext/cdi1x/spi/Hk2CustomBoundTypesProvider.html" target="_top">Hk2CustomBoundTypesProvider</a>, SPI.
                   Please see the linked javadoc to get detailed information on how to use the SPI in your application.
                 </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="deployment.appservers.weblogic"></a>4.8.4.2.&nbsp;Oracle WebLogic Server</h4></div></div></div><p>
                     WebLogic 12.1.2 and earlier supports only JAX-RS 1.1 (<a class="link" href="http://jcp.org/en/jsr/detail?id=311" target="_top">JSR 311</a>) out of the box with Jersey 1.x
@@ -869,14 +869,14 @@ gogo$</pre><p>
                 As Oracle Public Cloud is based on WebLogic server, the same applies as in the paragraph about WebLogic
                 deployment (see <a class="xref" href="deployment.html#deployment.appservers.weblogic" title="4.8.4.2.&nbsp;Oracle WebLogic Server">Section&nbsp;4.8.4.2, &#8220;Oracle WebLogic Server&#8221;</a>). More on developing applications for
                 Oracle Java Cloud Service can be found in this <a class="link" href="http://docs.oracle.com/cloud/131/developer_services/CSJSU/java-develop.htm#BABHDAJH" target="_top">guide</a>.
-            </p></div></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+            </p></div></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

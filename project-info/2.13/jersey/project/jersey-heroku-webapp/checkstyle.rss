@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-archetype-heroku-webapp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-heroku-webapp/</link>
+    <link>https://jersey.github.io/project/jersey-heroku-webapp/</link>
     <description>jersey-archetype-heroku-webapp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-heroku-webapp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-heroku-webapp//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-heroku-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-heroku-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-heroku-webapp//checkstyle.html#archetype-resources.system.properties">archetype-resources/system.properties</a>
+                  <a href="https://jersey.github.io/project/jersey-heroku-webapp//checkstyle.html#archetype-resources.system.properties">archetype-resources/system.properties</a>
                 </td>
                 <td>
                   0

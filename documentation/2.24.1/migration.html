@@ -10,18 +10,18 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;28.&nbsp;Migration Guide</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="how-to-build.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="appendix-properties.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;28.&nbsp;Migration Guide</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="how-to-build.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="appendix-properties.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
                 Single HTML
             </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="migration"></a>Chapter&nbsp;28.&nbsp;Migration Guide</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="migration.html#mig-2.23">28.1. Migrating from Jersey 2.22 to 2.23</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.23-highlights">28.1.1. Release 2.23 Highlights</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.23-new-deprecated">28.1.2. Deprecated APIs</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.23-breaking-changes">28.1.3. Breaking Changes</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.22">28.2. Migrating from Jersey 2.21 to 2.22</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.22-breaking-changes">28.2.1. Breaking Changes</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.20">28.3. Migrating from Jersey 2.19 to 2.20</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.20-breaking-changes">28.3.1. Breaking Changes</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.19">28.4. Migrating from Jersey 2.18 to 2.19</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.19-breaking-changes">28.4.1. Breaking Changes</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.18">28.5. Migrating from Jersey 2.17 to 2.18</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.18-highlights">28.5.1. Release 2.18 Highlights</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.18-removed-deprecated">28.5.2. Removed deprecated APIs</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.18-breaking-changes">28.5.3. Breaking Changes</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.17">28.6. Migrating from Jersey 2.16 to 2.17</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.17-highlights">28.6.1. Release 2.17 Highlights</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.16">28.7. Migrating from Jersey 2.15 to 2.16</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.16-highlights">28.7.1. Release 2.16 Highlights</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.16-new-deprecated">28.7.2. Deprecated APIs</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.16-breaking-changes">28.7.3. Breaking Changes</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.15">28.8. Migrating to 2.15</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.15-highlights">28.8.1. Release 2.15 Highlights</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.15-breaking-changes">28.8.2. Breaking Changes</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.12">28.9. Migrating from Jersey 2.11 to 2.12</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.12-highlights">28.9.1. Release 2.12 Highlights</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.12-breaking-changes">28.9.2. Breaking Changes</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.11">28.10. Migrating from Jersey 2.10 to 2.11</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.11-highlights">28.10.1. Release 2.11 Highlights</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.10">28.11. Migrating from Jersey 2.9 to 2.10</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.10-removed-deprecated">28.11.1. Removed deprecated APIs</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.9">28.12. Migrating from Jersey 2.8 to 2.9</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.9-highlights">28.12.1. Release 2.9 Highlights</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.9-breaking-changes">28.12.2. Changes</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.8">28.13. Migrating from Jersey 2.7 to 2.8</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.8-breaking-changes">28.13.1. Changes</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.7">28.14. Migrating from Jersey 2.6 to 2.7</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.7-breaking-changes">28.14.1. Changes</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.6">28.15. Migrating from Jersey 2.5.1 to 2.6</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.6-repackaged">28.15.1. Guava and ASM have been embedded</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.6-new-deprecated">28.15.2. Deprecated APIs</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.6-removed-deprecated">28.15.3. Removed deprecated APIs</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.5.1">28.16. Migrating from Jersey 2.5 to 2.5.1</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.5">28.17. Migrating from Jersey 2.4.1 to 2.5</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-2.5-client">28.17.1. Client-side API and SPI changes</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.5-other">28.17.2. Other changes</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-2.4.1">28.18. Migrating from Jersey 2.4 to 2.4.1</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.4">28.19. Migrating from Jersey 2.3 to 2.4</a></span></dt><dt><span class="section"><a href="migration.html#mig-2.3">28.20. Migrating from Jersey 2.0, 2.1 or 2.2 to 2.3</a></span></dt><dt><span class="section"><a href="migration.html#mig-1.x">28.21. Migrating from Jersey 1.x to 2.0</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-server-api">28.21.1. Server API</a></span></dt><dt><span class="section"><a href="migration.html#mig-client-api">28.21.2. Migrating Jersey Client API</a></span></dt><dt><span class="section"><a href="migration.html#mig-1-x-json">28.21.3. JSON support changes</a></span></dt></dl></dd></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-2.23"></a>28.1.&nbsp;Migrating from Jersey 2.22 to 2.23</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.23-highlights"></a>28.1.1.&nbsp;Release 2.23 Highlights</h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e17845"></a>28.1.1.1.&nbsp;Introducing LoggingFeature</h4></div></div></div><p>
                     From version 2.23 onwards, <code class="literal">LoggingFilter</code> has been replaced
-                    with <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/logging/LoggingFeature.html" target="_top">LoggingFeature</a>.
+                    with <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/logging/LoggingFeature.html" target="_top">LoggingFeature</a>.
                 </p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.23-new-deprecated"></a>28.1.2.&nbsp;Deprecated APIs</h3></div></div></div><p>Following APIs were deprecated:</p><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
                             <code class="literal">LoggingFilter</code> has been marked as deprecated and will be removed in a subsequent
-                            release. Use <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/logging/LoggingFeature.html" target="_top">LoggingFeature</a> instead. See chapter <a class="link" href="logging_chapter.html#logging" title="21.1.&nbsp;Logging traffic">
+                            release. Use <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/logging/LoggingFeature.html" target="_top">LoggingFeature</a> instead. See chapter <a class="link" href="logging_chapter.html#logging" title="21.1.&nbsp;Logging traffic">
                             logging</a>.
                         </p></li></ul></div><p>
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.23-breaking-changes"></a>28.1.3.&nbsp;Breaking Changes</h3></div></div></div><p>
@@ -31,9 +31,9 @@
                 </p><p>
                     Therefore, the default behaviour was rollbacked and a new configuration property was introduced to switch
                     to the RFC7231 compliant
-                    behaviour: <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#LOCATION_HEADER_RELATIVE_URI_RESOLUTION_RFC7231" target="_top">ServerProperties.LOCATION_HEADER_RELATIVE_URI_RESOLUTION_RFC7231</a>. Also,
+                    behaviour: <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#LOCATION_HEADER_RELATIVE_URI_RESOLUTION_RFC7231" target="_top">ServerProperties.LOCATION_HEADER_RELATIVE_URI_RESOLUTION_RFC7231</a>. Also,
                     the possibility to switch the URI resolution completely off remains with the
-                    <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#LOCATION_HEADER_RELATIVE_URI_RESOLUTION_DISABLED" target="_top">ServerProperties.LOCATION_HEADER_RELATIVE_URI_RESOLUTION_DISABLED</a> disabled switch. Both
+                    <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#LOCATION_HEADER_RELATIVE_URI_RESOLUTION_DISABLED" target="_top">ServerProperties.LOCATION_HEADER_RELATIVE_URI_RESOLUTION_DISABLED</a> disabled switch. Both
                     properties are false by default.
                 </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-2.22"></a>28.2.&nbsp;Migrating from Jersey 2.21 to 2.22</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.22-breaking-changes"></a>28.2.1.&nbsp;Breaking Changes</h3></div></div></div><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
@@ -52,20 +52,20 @@
                             </p><table border="0" summary="Simple list" class="simplelist"><tr><td>with Jersey 2.21 and earlier: <code class="literal">http://server.com/api/foo</code></td></tr><tr><td>with Jersey 2.22: <code class="literal">http://server.com/api/management/user/foo</code></td></tr></table><p>
                         </p><p>
                             Alternatively, the entire URI resolving logic can be switched off by newly introduced
-                            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#LOCATION_HEADER_RELATIVE_URI_RESOLUTION_DISABLED" target="_top">ServerProperties.LOCATION_HEADER_RELATIVE_URI_RESOLUTION_DISABLED</a> property.
+                            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#LOCATION_HEADER_RELATIVE_URI_RESOLUTION_DISABLED" target="_top">ServerProperties.LOCATION_HEADER_RELATIVE_URI_RESOLUTION_DISABLED</a> property.
                             If the value is <code class="literal">true</code>, Jersey will not change the URI contained in the
                             <code class="literal">Location</code> header at all (even if this behaviour may not match with behaviour
                             described in JavaDoc).
                         </p></li></ul></div><p>
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-2.20"></a>28.3.&nbsp;Migrating from Jersey 2.19 to 2.20</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.20-breaking-changes"></a>28.3.1.&nbsp;Breaking Changes</h3></div></div></div><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                            New parameter, <code class="literal">org.glassfish.hk2.api.ServiceLocator</code>, has been added to <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ExternalRequestScope.html" target="_top">ExternalRequestScope</a> methods.
+                            New parameter, <code class="literal">org.glassfish.hk2.api.ServiceLocator</code>, has been added to <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ExternalRequestScope.html" target="_top">ExternalRequestScope</a> methods.
                             This is to allow 3rd party component providers to hook up with the actual HK2 locator in case of multiple Jersey applications
                             are running in paralell within a single 3rd party component container. The change was driven by CDI/Servlet requirements.
                         </p></li></ul></div><p>
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-2.19"></a>28.4.&nbsp;Migrating from Jersey 2.18 to 2.19</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.19-breaking-changes"></a>28.4.1.&nbsp;Breaking Changes</h3></div></div></div><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                            New method, <code class="literal">close</code>, has been added to <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ResourceFinder.html" target="_top">ResourceFinder</a>. It's
+                            New method, <code class="literal">close</code>, has been added to <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ResourceFinder.html" target="_top">ResourceFinder</a>. It's
                             intention is to release allocated/opened resources (such as streams) without a need to iterate through
                             the whole <code class="literal">ResourceFinder</code>.
                         </p></li></ul></div><p>
@@ -86,33 +86,33 @@
                             </p></li></ul></div><p>
                 </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e18040"></a>28.5.1.2.&nbsp;Promoted Public Beta APIs</h4></div></div></div><p>
                     Several experimental Jersey APIs have matured enough and as such we have decided to promote them
-                    from <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/Beta.html" target="_top">Beta</a> status, namely:
+                    from <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/Beta.html" target="_top">Beta</a> status, namely:
 
                     </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
                                 Jersey Reactive Client API. Also Reactive Client moved from incubator to extension (umbrella)
                                 module.
                             </p></li><li class="listitem"><p>
-                                Jersey client-side <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientLifecycleListener.html" target="_top">ClientLifecycleListener</a> SPI.
+                                Jersey client-side <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientLifecycleListener.html" target="_top">ClientLifecycleListener</a> SPI.
                             </p></li><li class="listitem"><p>
-                                Jersey server-side <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ContainerLifecycleListener.html" target="_top">ContainerLifecycleListener</a> SPI.
+                                Jersey server-side <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ContainerLifecycleListener.html" target="_top">ContainerLifecycleListener</a> SPI.
                             </p></li><li class="listitem"><p>
-                                Jersey server-side (MVC) <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/mvc/ErrorTemplate.html" target="_top">@ErrorTemplate</a> annotation.
+                                Jersey server-side (MVC) <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/mvc/ErrorTemplate.html" target="_top">@ErrorTemplate</a> annotation.
                             </p></li><li class="listitem"><p>
-                                Jersey test framework (client-side) <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/test/util/client/LoopBackConnectorProvider.html" target="_top">LoopBackConnectorProvider</a> connector.
+                                Jersey test framework (client-side) <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/test/util/client/LoopBackConnectorProvider.html" target="_top">LoopBackConnectorProvider</a> connector.
                             </p></li><li class="listitem"><p>
-                                Jersey test framework (server-side) <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/test/util/server/ContainerRequestBuilder.html" target="_top">ContainerRequestBuilder</a> class.
+                                Jersey test framework (server-side) <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/test/util/server/ContainerRequestBuilder.html" target="_top">ContainerRequestBuilder</a> class.
                             </p></li></ul></div><p>
 
                     These APIs are now part of the official public Jersey 2.x API.
                 </p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.18-removed-deprecated"></a>28.5.2.&nbsp;Removed deprecated APIs</h3></div></div></div><p>Following, already deprecated, APIs were removed:</p><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
                             <code class="literal">org.glassfish.jersey.apache.connector.ApacheClientProperties</code> - constant
-                            <code class="literal">SSL_CONFIG</code> has been removed. Use <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure
-                            SSL in a <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> instance.
+                            <code class="literal">SSL_CONFIG</code> has been removed. Use <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure
+                            SSL in a <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> instance.
                         </p></li><li class="listitem"><p>
                             <code class="literal">org.glassfish.jersey.jetty.connector.JettyClientProperties</code> - constant
-                            <code class="literal">SSL_CONFIG</code> has been removed. Use <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure
-                            SSL in a <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> instance.
+                            <code class="literal">SSL_CONFIG</code> has been removed. Use <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure
+                            SSL in a <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> instance.
                         </p></li><li class="listitem"><p>
                             <code class="literal">FreemarkerMvcFeature.TEMPLATES_BASE_PATH</code> - constant has been unified across MVC
                             modules and the deprecated one has been removed.
@@ -129,7 +129,7 @@
                             the  <code class="literal">org.glassfish.jersey.spi.RequestExecutorProvider</code> and
                             <code class="literal">org.glassfish.jersey.spi.RuntimeThreadProvider</code> SPIs have been removed from Jersey.
                             A new, common &amp; generic executor service providers have been introduced instead:
-                            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/spi/ExecutorServiceProvider.html" target="_top">ExecutorServiceProvider</a> and <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/spi/ScheduledExecutorServiceProvider.html" target="_top">ScheduledExecutorServiceProvider</a>.
+                            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/spi/ExecutorServiceProvider.html" target="_top">ExecutorServiceProvider</a> and <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/spi/ScheduledExecutorServiceProvider.html" target="_top">ScheduledExecutorServiceProvider</a>.
                             These new providers are used to support custom qualified executor service injection, including the
                             refactored use cases of client asynchronous request execution, server-side managed asynchronous
                             request processing as well as server-side background task scheduler.
@@ -151,22 +151,22 @@
                     to set SSL context on a connector. These properties have been deprecated and the code has been updated
                     to read the SSL context information from the JAX-RS client configuration. This means that all Jersey
                     connectors now properly accept SSL configuration as configured via standard JAX-RS
-                    <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods.
+                    <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods.
                 </p><p>
                     Previously, all Jersey connectors have been using their own default chunk size when HTTP chunked coding
                     was used. Since Jersey 2.16, there is a new default chunk size value used by all connectors, if a custom
                     chunk size is not set. The new default value is stored under
-                    <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#DEFAULT_CHUNK_SIZE" target="_top">ClientProperties.DEFAULT_CHUNK_SIZE</a> client property.
+                    <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#DEFAULT_CHUNK_SIZE" target="_top">ClientProperties.DEFAULT_CHUNK_SIZE</a> client property.
                 </p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.16-new-deprecated"></a>28.7.2.&nbsp;Deprecated APIs</h3></div></div></div><p>Following APIs were deprecated:</p><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
                             <code class="literal">org.glassfish.jersey.apache.connector.ApacheClientProperties</code> - constant
                             <code class="literal">SSL_CONFIG</code> has been marked as deprecated and will be removed in a subsequent
-                            release. Use <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure SSL in a <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a>
+                            release. Use <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure SSL in a <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a>
                             instance.
                         </p></li><li class="listitem"><p>
                             <code class="literal">org.glassfish.jersey.jetty.connector.JettyClientProperties</code> - constant
                             <code class="literal">SSL_CONFIG</code> has been marked as deprecated and will be removed in a subsequent
-                            release. Use <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure SSL in a <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a>
+                            release. Use <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure SSL in a <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a>
                             instance.
                         </p></li></ul></div><p>
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.16-breaking-changes"></a>28.7.3.&nbsp;Breaking Changes</h3></div></div></div><p>
@@ -228,9 +228,9 @@ public class Bookstore { ... }</pre><p>
                         </p></li></ul></div><p>
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-2.12"></a>28.9.&nbsp;Migrating from Jersey 2.11 to 2.12</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.12-highlights"></a>28.9.1.&nbsp;Release 2.12 Highlights</h3></div></div></div><p>Following experimental APIs have been promoted to become part of public Jersey API:
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                            Jersey client-side <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a> API.
+                            Jersey client-side <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a> API.
                         </p></li><li class="listitem"><p>
-                            Jersey server-side <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/monitoring/DestroyListener.html" target="_top">DestroyListener</a> (formerly
+                            Jersey server-side <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/monitoring/DestroyListener.html" target="_top">DestroyListener</a> (formerly
                             <code class="literal">ExtendedMonitoringStatisticsListener</code>), which has been slightly refactored and
                             is now a separate interface (e.g. not extending <code class="literal">MonitoringStatisticsListener</code>),
                             hence providing better compatibility with lambdas.
@@ -243,23 +243,23 @@ public class Bookstore { ... }</pre><p>
                             classes from <code class="literal">wadl.xsd</code> to make sure the getters for boolean properties starts with
                             <code class="literal">is</code> instead of <code class="literal">get</code> as in Jersey 1 and Jersey &lt;= 2.6.
                         </p></li><li class="listitem"><p>
-                            For performance purposes a new server property <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_ENABLED" target="_top">ServerProperties.MONITORING_ENABLED</a>
+                            For performance purposes a new server property <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_ENABLED" target="_top">ServerProperties.MONITORING_ENABLED</a>
                             has been introduced. It is possible to enable just basic almost static monitoring information using the
-                            property. It allows to inject <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/monitoring/ApplicationInfo.html" target="_top">ApplicationInfo</a> object,
+                            property. It allows to inject <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/monitoring/ApplicationInfo.html" target="_top">ApplicationInfo</a> object,
                             renamed original class <code class="literal">org.glassfish.jersey.server.monitoring.ApplicationStatistics</code>.
-                            And <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a> no more
+                            And <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a> no more
                             have a reference to <code class="literal">ApplicationStatistics</code>, method
                             <code class="literal">getApplicationStatistics()</code> has been removed.
                         </p>
     gitc                </li></ul></div><p>
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-2.11"></a>28.10.&nbsp;Migrating from Jersey 2.10 to 2.11</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.11-highlights"></a>28.10.1.&nbsp;Release 2.11 Highlights</h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e18407"></a>28.10.1.1.&nbsp;Promoted Public Beta APIs</h4></div></div></div><p>
                     Several experimental Jersey APIs have matured enough and as such we have decided to promote them
-                    from <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/Beta.html" target="_top">Beta</a> status, namely:
+                    from <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/Beta.html" target="_top">Beta</a> status, namely:
 
                     </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                                Jersey client-side <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/spi/ConnectorProvider.html" target="_top">ConnectorProvider</a> SPI.
+                                Jersey client-side <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/spi/ConnectorProvider.html" target="_top">ConnectorProvider</a> SPI.
                             </p></li><li class="listitem"><p>
-                                Jersey server-side <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ResponseErrorMapper.html" target="_top">ResponseErrorMapper</a> SPI.
+                                Jersey server-side <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ResponseErrorMapper.html" target="_top">ResponseErrorMapper</a> SPI.
                             </p></li></ul></div><p>
 
                     These APIs are now part of the official public Jersey 2.x API.
@@ -337,7 +337,7 @@ public class Bookstore { ... }</pre><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
                             Because of a bug fix for issue
                             <a class="link" href="https://java.net/jira/browse/JERSEY-2458" target="_top">JERSEY-2458</a>, there has been
-                            a slight change in the behavior of <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/UriInfo.html" target="_top">UriInfo</a> <code class="literal">getPath</code> and
+                            a slight change in the behavior of <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/UriInfo.html" target="_top">UriInfo</a> <code class="literal">getPath</code> and
                             <code class="literal">getPathSegments</code> methods. The <code class="literal">getPath</code> methods no longer return
                             a path prefixed with a slash (<code class="literal">'/'</code>), instead they now correctly return a request
                             path <span class="emphasis"><em>relative</em></span> to the base request URI. Also, the <code class="literal">UriInfo</code>
@@ -345,27 +345,27 @@ public class Bookstore { ... }</pre><p>
                             (e.g. <code class="literal">http://localhost///a/b//c</code>). These empty path segments are now correctly
                             included in the lists returned by the <code class="literal">UriInfo.getPathSegments</code> methods.
                         </p></li><li class="listitem"><p>
-                            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a> now gets automatically discovered and enabled if the SSE module is present
-                            on the class path. This behavior can be suppressed by setting <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/SseFeature.html#DISABLE_SSE" target="_top">DISABLE_SSE</a>
+                            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a> now gets automatically discovered and enabled if the SSE module is present
+                            on the class path. This behavior can be suppressed by setting <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/SseFeature.html#DISABLE_SSE" target="_top">DISABLE_SSE</a>
                             property to <code class="literal">true</code>. The behavior can also be selectively suppressed in either
-                            client or server runtime by setting the <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/SseFeature.html#DISABLE_SSE_CLIENT" target="_top">DISABLE_SSE_CLIENT</a> or
-                            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/SseFeature.html#DISABLE_SSE_SERVER" target="_top">DISABLE_SSE_SERVER</a> property respectively.
+                            client or server runtime by setting the <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/SseFeature.html#DISABLE_SSE_CLIENT" target="_top">DISABLE_SSE_CLIENT</a> or
+                            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/SseFeature.html#DISABLE_SSE_SERVER" target="_top">DISABLE_SSE_SERVER</a> property respectively.
                         </p></li><li class="listitem"><p>
                             Deprecated <code class="literal">getDestroyTime</code> method has been removed from
                             <code class="literal">org.glassfish.jersey.server.monitoring.ApplicationStatistics</code>.
                             To get the application shutdown information,
-                            a <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ContainerLifecycleListener.html" target="_top">ContainerLifecycleListener</a> should be registered and its
+                            a <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ContainerLifecycleListener.html" target="_top">ContainerLifecycleListener</a> should be registered and its
                             <code class="literal">onShutdown</code> method implemented to listen to and process the application
                             shutdown event.
                         </p></li><li class="listitem"><p>
                             Method <code class="literal">triggerEvent(RequestEvent.Type)</code> has been removed from the public
-                            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ContainerRequest.html" target="_top">ContainerRequest</a> API. This method has never been intended for public,
+                            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ContainerRequest.html" target="_top">ContainerRequest</a> API. This method has never been intended for public,
                             application-level use.
                         </p></li><li class="listitem"><p>
                             In Jersey 2.7 and earlier it was (under certain conditions) possible to supply custom
-                            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/test/spi/TestContainerFactory.html" target="_top">TestContainerFactory</a> as part of the tested JAX-RS / Jersey application.
-                            This factory would be picked and used by <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/test/JerseyTest.html" target="_top">JerseyTest</a> to instantiate
-                            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/test/spi/TestContainer.html" target="_top">TestContainer</a> that will host the tested application. This feature was
+                            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/test/spi/TestContainerFactory.html" target="_top">TestContainerFactory</a> as part of the tested JAX-RS / Jersey application.
+                            This factory would be picked and used by <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/test/JerseyTest.html" target="_top">JerseyTest</a> to instantiate
+                            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/test/spi/TestContainer.html" target="_top">TestContainer</a> that will host the tested application. This feature was
                             unreliable and redundant. As such, support for the feature has been removed. To specify a custom
                             <code class="literal">TestContainerFactory</code> to be used by your <code class="literal">JerseyTest</code>
                             subclass, please override the <code class="literal">JerseyTest.getTestContainerFactory</code> method instead.
@@ -382,7 +382,7 @@ public class Bookstore { ... }</pre><p>
                             method instead.
                         </p></li><li class="listitem"><p>
                             Utility methods <code class="literal">JerseyTest</code> that provide access to pre-configured
-                            <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> and <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> instances (<code class="literal">client()</code>,
+                            <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> and <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> instances (<code class="literal">client()</code>,
                             <code class="literal">target(...)</code>) have been made final to prevent overriding in subclasses
                             and thus ensure consistency of the jersey test framework functionality.
                         </p></li><li class="listitem"><p>
@@ -390,27 +390,27 @@ public class Bookstore { ... }</pre><p>
                             <code class="literal">JerseyTest(Class&lt;? extends Application&gt;)</code> has been made deprecated
                             and will be removed in the subsequent Jersey release.
                         </p></li><li class="listitem"><p>
-                            It was previously possible to pass in a custom <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ContainerProvider.html" target="_top">ContainerProvider</a> that was
+                            It was previously possible to pass in a custom <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ContainerProvider.html" target="_top">ContainerProvider</a> that was
                             supposed to deploy and run the application as one of the JAX-RS / Jersey application providers.
                             This ability has been removed without any substitute as the concept was fundamentally flawed.
                             Typical use cases should not be affected by this change.
                         </p></li><li class="listitem"><p>
                             Factory methods <code class="literal">createHttpServer</code> which take Jersey
-                            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ApplicationHandler.html" target="_top">ApplicationHandler</a> as one of the input parameters have been removed from the
+                            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ApplicationHandler.html" target="_top">ApplicationHandler</a> as one of the input parameters have been removed from the
                             Jersey container factory API as inherently broken. This impacts
-                            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/grizzly2/httpserver/GrizzlyHttpServerFactory.html" target="_top">GrizzlyHttpServerFactory</a>, <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/jdkhttp/JdkHttpServerFactory.html" target="_top">JdkHttpServerFactory</a>,
-                            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/jetty/JettyHttpContainerFactory.html" target="_top">JettyHttpContainerFactory</a> and <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/simple/SimpleContainerFactory.html" target="_top">SimpleContainerFactory</a> implementations.
-                            The methods that take <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> as input parameter should be used instead.
+                            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/grizzly2/httpserver/GrizzlyHttpServerFactory.html" target="_top">GrizzlyHttpServerFactory</a>, <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/jdkhttp/JdkHttpServerFactory.html" target="_top">JdkHttpServerFactory</a>,
+                            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/jetty/JettyHttpContainerFactory.html" target="_top">JettyHttpContainerFactory</a> and <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/simple/SimpleContainerFactory.html" target="_top">SimpleContainerFactory</a> implementations.
+                            The methods that take <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> as input parameter should be used instead.
                             Typical use cases should not be affected by this change.
                         </p></li><li class="listitem"><p>
-                            Method <code class="literal">registerAdditionalBinders</code> on <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ApplicationHandler.html" target="_top">ApplicationHandler</a>
+                            Method <code class="literal">registerAdditionalBinders</code> on <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ApplicationHandler.html" target="_top">ApplicationHandler</a>
                             has been removed from the public API. Please use the specific <code class="literal">ApplicationHandler</code>
                             constructor that accepts custom HK2 binders instead.
                         </p></li><li class="listitem"><p>
                             Several configuration properties were renamed, especially those having client and server versions
                             along with the common version in <code class="literal">CommonProperties</code>. Please see following table
                             for complete reference:
-                            </p><div class="table"><a name="d0e18806"></a><p class="title"><b>Table&nbsp;28.1.&nbsp;List of changed configuration properties:</b></p><div class="table-contents"><table summary="List of changed configuration properties:" border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th>Constant</th><th>Old value (Jersey 2.7 and before)</th><th>New value (Jersey 2.8+)</th></tr></thead><tbody><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">ClientProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></td><td><code class="literal">jersey.config.disableAutoDiscovery.client</code></td><td><code class="literal">jersey.config.client.disableAutoDiscovery</code></td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">ServerProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></td><td><code class="literal">jersey.config.disableAutoDiscovery.server</code></td><td><code class="literal">jersey.config.server.disableAutoDiscovery</code></td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ClientProperties.JSON_PROCESSING_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.disableJsonProcessing.client</code></td><td><code class="literal">jersey.config.client.disableJsonProcessing</code></td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ServerProperties.JSON_PROCESSING_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.disableJsonProcessing.server</code></td><td><code class="literal">jersey.config.server.disableJsonProcessing</code></td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ClientProperties.METAINF_SERVICES_LOOKUP_DISABLE</a></td><td><code class="literal">jersey.config.disableMetainfServicesLookup.client</code></td><td><code class="literal">jersey.config.client.disableMetainfServicesLookup</code></td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE</a></td><td><code class="literal">jersey.config.disableMetainfServicesLookup.server</code></td><td><code class="literal">jersey.config.server.disableMetainfServicesLookup</code></td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">ClientProperties.MOXY_JSON_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.disableMoxyJson.client</code></td><td><code class="literal">jersey.config.client.disableMoxyJson</code></td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">ServerProperties.MOXY_JSON_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.disableMoxyJson.server</code></td><td><code class="literal">jersey.config.server.disableMoxyJson</code></td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#OUTBOUND_CONTENT_LENGTH_BUFFER" target="_top">ClientProperties.OUTBOUND_CONTENT_LENGTH_BUFFER</a></td><td><code class="literal">jersey.config.contentLength.buffer.client</code></td><td><code class="literal">jersey.config.client.contentLength.buffer</code></td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#OUTBOUND_CONTENT_LENGTH_BUFFER" target="_top">ServerProperties.OUTBOUND_CONTENT_LENGTH_BUFFER</a></td><td><code class="literal">jersey.config.contentLength.buffer.server</code></td><td><code class="literal">jersey.config.server.contentLength.buffer</code></td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#TRACING" target="_top">ServerProperties.TRACING</a></td><td><code class="literal">jersey.config.server.tracing</code></td><td><code class="literal">jersey.config.server.tracing.type</code></td></tr></tbody></table></div></div><p><br class="table-break">
+                            </p><div class="table"><a name="d0e18806"></a><p class="title"><b>Table&nbsp;28.1.&nbsp;List of changed configuration properties:</b></p><div class="table-contents"><table summary="List of changed configuration properties:" border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th>Constant</th><th>Old value (Jersey 2.7 and before)</th><th>New value (Jersey 2.8+)</th></tr></thead><tbody><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">ClientProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></td><td><code class="literal">jersey.config.disableAutoDiscovery.client</code></td><td><code class="literal">jersey.config.client.disableAutoDiscovery</code></td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">ServerProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></td><td><code class="literal">jersey.config.disableAutoDiscovery.server</code></td><td><code class="literal">jersey.config.server.disableAutoDiscovery</code></td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ClientProperties.JSON_PROCESSING_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.disableJsonProcessing.client</code></td><td><code class="literal">jersey.config.client.disableJsonProcessing</code></td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ServerProperties.JSON_PROCESSING_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.disableJsonProcessing.server</code></td><td><code class="literal">jersey.config.server.disableJsonProcessing</code></td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ClientProperties.METAINF_SERVICES_LOOKUP_DISABLE</a></td><td><code class="literal">jersey.config.disableMetainfServicesLookup.client</code></td><td><code class="literal">jersey.config.client.disableMetainfServicesLookup</code></td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE</a></td><td><code class="literal">jersey.config.disableMetainfServicesLookup.server</code></td><td><code class="literal">jersey.config.server.disableMetainfServicesLookup</code></td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">ClientProperties.MOXY_JSON_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.disableMoxyJson.client</code></td><td><code class="literal">jersey.config.client.disableMoxyJson</code></td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">ServerProperties.MOXY_JSON_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.disableMoxyJson.server</code></td><td><code class="literal">jersey.config.server.disableMoxyJson</code></td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#OUTBOUND_CONTENT_LENGTH_BUFFER" target="_top">ClientProperties.OUTBOUND_CONTENT_LENGTH_BUFFER</a></td><td><code class="literal">jersey.config.contentLength.buffer.client</code></td><td><code class="literal">jersey.config.client.contentLength.buffer</code></td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#OUTBOUND_CONTENT_LENGTH_BUFFER" target="_top">ServerProperties.OUTBOUND_CONTENT_LENGTH_BUFFER</a></td><td><code class="literal">jersey.config.contentLength.buffer.server</code></td><td><code class="literal">jersey.config.server.contentLength.buffer</code></td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ServerProperties.html#TRACING" target="_top">ServerProperties.TRACING</a></td><td><code class="literal">jersey.config.server.tracing</code></td><td><code class="literal">jersey.config.server.tracing.type</code></td></tr></tbody></table></div></div><p><br class="table-break">
                             The old names are still working for now, but are deprecated. There is a fallback mechanism
                             implemented while reading the property and each get, that resolves the value from the old-named
                             property, will log a <code class="literal">CONFIG</code> level warning.
@@ -423,7 +423,7 @@ public class Bookstore { ... }</pre><p>
                             Only <code class="literal">core-common</code> and <code class="literal">core-client</code> modules are still compiled with Java class
                             version runnable with Java SE 6.
                         </p></li><li class="listitem"><p>
-                            MVC support: method <code class="literal">writeTo</code> of <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/mvc/spi/TemplateProcessor.html" target="_top">TemplateProcessor</a>
+                            MVC support: method <code class="literal">writeTo</code> of <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/mvc/spi/TemplateProcessor.html" target="_top">TemplateProcessor</a>
                             was modified by adding an argument <code class="literal">MultivaluedMap&lt;String, Object&gt; httpHeaders</code>.
                             This is an incompatible change (the method was modified directly in the interface). All
                             Jersey provided MVC implementation were adjusted but if you have your own MVC implementation
@@ -432,16 +432,16 @@ public class Bookstore { ... }</pre><p>
                             A minor JAX-RS incompatibility issue has been recently discovered and reported
                             (see <a class="link" href="https://java.net/jira/browse/JERSEY-2387" target="_top">JERSEY-2387</a>). As part of the
                             fix, minor breaking changes related to URI resolving and creation have been introduced in the
-                            behavior of <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/UriBuilder.html" target="_top">UriBuilder</a>, <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Link.Builder.html" target="_top">Link.Builder</a> and <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> classes.
+                            behavior of <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/UriBuilder.html" target="_top">UriBuilder</a>, <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Link.Builder.html" target="_top">Link.Builder</a> and <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> classes.
                             It is no longer possible to successfully build a new <code class="literal">URI</code> instance from a
                             <code class="literal">UriBuilder</code> that contains unresolved template parameters.
                             An <code class="literal">IllegalArgumentException</code> will be thrown in such case, as mandated by
-                            JAX-RS API javadoc. Similarly, it is not possible to successfully create a <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Link.html" target="_top">Link</a>
+                            JAX-RS API javadoc. Similarly, it is not possible to successfully create a <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Link.html" target="_top">Link</a>
                             instance from a URI template with unresolved template parameters.
                             Also, it is not possible to successfully send a request on a <code class="literal">WebTarget</code> that
                             represents a URI template that does not have all the template parameters properly resolved.
                             Any attempt to do so will fail with an exception. Note that this also applies to any managed clients
-                            injected into JAX-RS server-side components using <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/Uri.html" target="_top">Uri</a> annotation.
+                            injected into JAX-RS server-side components using <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/Uri.html" target="_top">Uri</a> annotation.
                         </p><p>
                             In Jersey 2.6 and earlier, producing a URI from an incompletely resolved URI template would succeed
                             and all unresolved template parameter locations would be encoded without change into the resulting
@@ -474,14 +474,14 @@ public class Bookstore { ... }</pre><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
                             <code class="literal">org.glassfish.jersey.client.filter.HttpBasicAuthFilter</code>
                             and <code class="literal">org.glassfish.jersey.client.filter.HttpDigestAuthFilter</code>
-                            (use <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a> instead)
+                            (use <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a> instead)
                         </p></li><li class="listitem"><p>
                             <code class="literal">org.glassfish.jersey.apache.connector.ApacheClientProperties.HTTP_PARAMS</code>
                             (use <code class="literal">org.glassfish.jersey.apache.connector.ApacheClientProperties#REQUEST_CONFIG</code> instead),
                             <code class="literal">org.glassfish.jersey.apache.connector.ApacheClientProperties.PROXY_URI</code>,
                             <code class="literal">org.glassfish.jersey.apache.connector.ApacheClientProperties.PROXY_USERNAME</code>,
                             <code class="literal">org.glassfish.jersey.apache.connector.ApacheClientProperties.PROXY_PASSWORD</code>
-                            (use corresponding <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html" target="_top">ClientProperties</a> instead.
+                            (use corresponding <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html" target="_top">ClientProperties</a> instead.
                         </p></li><li class="listitem"><p>
                             <code class="literal">org.glassfish.jersey.server.validation.ValidationConfig.setMessageInterpolator</code>
                             <code class="literal">org.glassfish.jersey.server.validation.ValidationConfig.setTraversableResolver</code>
@@ -499,17 +499,17 @@ public class Bookstore { ... }</pre><p>
                             (the attribute was obsolete and therefore removed. Resolving class now always the resource
                             class in which the MVC resource method is defined).
                         </p><p>
-                            <code class="literal">resolvingClass</code> was removed from <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a>. The constructor
+                            <code class="literal">resolvingClass</code> was removed from <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a>. The constructor
                             no longer accepts this argument and there is no getter for this field.
                         </p></li><li class="listitem"><p>
                             <code class="literal">org.glassfish.jersey.server.mvc.freemarker.FreemarkerProperties</code> (use
-                            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/mvc/freemarker/FreemarkerMvcFeature.html" target="_top">FreemarkerMvcFeature</a> instead)
+                            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/mvc/freemarker/FreemarkerMvcFeature.html" target="_top">FreemarkerMvcFeature</a> instead)
                         </p></li><li class="listitem"><p>
                             <code class="literal">org.glassfish.jersey.server.mvc.jsp.JspProperties</code>
-                            (use <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/mvc/jsp/JspMvcFeature.html" target="_top">JspMvcFeature</a> instead)
+                            (use <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/mvc/jsp/JspMvcFeature.html" target="_top">JspMvcFeature</a> instead)
                         </p></li><li class="listitem"><p>
                             <code class="literal">org.glassfish.jersey.server.model.RuntimeResource.getFirstParentResource()</code>
-                            (use <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/model/Resource.html#getParent()" target="_top">Resource.getParent()</a> instead).
+                            (use <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/model/Resource.html#getParent()" target="_top">Resource.getParent()</a> instead).
                         </p></li></ul></div><p>
             </p></div><p>
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
@@ -531,15 +531,15 @@ public class Bookstore { ... }</pre><p>
                     </p><p>
                             Jersey client uses chunked encoding (streaming) for serialization of the entity as a default option.
                             Before Jersey 2.5 release entity buffering has been used by default. The size of the chunk can still
-                            be controlled by <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#CHUNKED_ENCODING_SIZE" target="_top">ClientProperties.CHUNKED_ENCODING_SIZE</a> property, this property
+                            be controlled by <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#CHUNKED_ENCODING_SIZE" target="_top">ClientProperties.CHUNKED_ENCODING_SIZE</a> property, this property
                             however no longer enforces the use of chunked encoding. To control request entity buffering and
                             chunked transfer coding selection, please utilize use the new
-                            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#REQUEST_ENTITY_PROCESSING" target="_top">ClientProperties.REQUEST_ENTITY_PROCESSING</a> property. The behaviour of the property
-                            is however not unified across the available <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a> implementations and depends
-                            on the connector implementation configured for the <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> instance.
-                            Default connector produced by <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a> still uses
+                            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientProperties.html#REQUEST_ENTITY_PROCESSING" target="_top">ClientProperties.REQUEST_ENTITY_PROCESSING</a> property. The behaviour of the property
+                            is however not unified across the available <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a> implementations and depends
+                            on the connector implementation configured for the <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> instance.
+                            Default connector produced by <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a> still uses
                             buffering as default options due to bugs in <code class="literal">HttpURLConnection</code>. On the other hand,
-                            Jetty HTTP Client based connectors produced by <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a> do not support
+                            Jetty HTTP Client based connectors produced by <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a> do not support
                             chunked encoding at all.
                         </p><p>
                             Please note that this is not a newly introduced limitation - it's merely
@@ -547,63 +547,63 @@ public class Bookstore { ... }</pre><p>
                             limitations - something that has always been part of the individual connector implementations, it
                             just was not publicly acknowledged.
                         </p></li><li class="listitem"><p>
-                        New <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/spi/ConnectorProvider.html" target="_top">ConnectorProvider</a> SPI has been introduced to decouple <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a>
-                        instantiation from <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> instance boot-strapping. As such, the
+                        New <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/spi/ConnectorProvider.html" target="_top">ConnectorProvider</a> SPI has been introduced to decouple <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a>
+                        instantiation from <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> instance boot-strapping. As such, the
                         <code class="literal">connector(Connector)</code>
-                        method has been removed from <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a>
+                        method has been removed from <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a>
                         API. It has been replaced with a newly introduced
                         <code class="literal">connectorProvider(ConnectorProvider)</code>
                         method.
                     </p></li><li class="listitem"><p>
                         <code class="literal">org.glassfish.jersey.client.HttpUrlConnector</code>
                         has been removed from the public API.
-                        <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a> should be used to produce <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/net/HttpURLConnection.html" target="_top">HttpURLConnection</a>
+                        <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a> should be used to produce <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/net/HttpURLConnection.html" target="_top">HttpURLConnection</a>
                         connector instances instead.
                     </p></li><li class="listitem"><p>
                         <code class="literal">ClientProperties.HTTP_URL_CONNECTION_SET_METHOD_WORKAROUND</code>
-                        property has been moved to the new <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a>
-                        has been introduced in Jersey 2.4) has been moved to the new <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a>
+                        property has been moved to the new <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a>
+                        has been introduced in Jersey 2.4) has been moved to the new <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a>
                         class as this property is specific to the connector instances created by
                         <code class="literal">HttpUrlConnectorProvider</code> only. The property has been also renamed to
-                        <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/HttpUrlConnectorProvider.html#SET_METHOD_WORKAROUND" target="_top">HttpUrlConnector.SET_METHOD_WORKAROUND</a>. The name of the property
+                        <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/HttpUrlConnectorProvider.html#SET_METHOD_WORKAROUND" target="_top">HttpUrlConnector.SET_METHOD_WORKAROUND</a>. The name of the property
                         remains the same - <code class="literal">jersey.config.client.httpUrlConnection.setMethodWorkaround</code>.
                     </p></li><li class="listitem"><p>
                         <code class="literal">ClientProperties.HTTP_URL_CONNECTOR_FIX_LENGTH_STREAMING</code>
                         property (that
                         class as this property is specific to the connector instances created by
                         <code class="literal">HttpUrlConnectorProvider</code> only. The property has been also renamed to
-                        <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/HttpUrlConnectorProvider.html#USE_FIXED_LENGTH_STREAMING" target="_top">HttpUrlConnectorProvider.USE_FIXED_LENGTH_STREAMING</a> and the new property name
+                        <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/HttpUrlConnectorProvider.html#USE_FIXED_LENGTH_STREAMING" target="_top">HttpUrlConnectorProvider.USE_FIXED_LENGTH_STREAMING</a> and the new property name
                         is <code class="literal">jersey.config.client.httpUrlConnector.useFixedLengthStreaming</code>.
                     </p></li><li class="listitem"><p>
                         <code class="literal">org.glassfish.jersey.grizzly.connector.GrizzlyConnector</code>
                         has been removed from the public
-                        API. <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/grizzly/connector/GrizzlyConnectorProvider.html" target="_top">GrizzlyConnectorProvider</a> should be used to produce Grizzly Asynchronous HTTP Client
+                        API. <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/grizzly/connector/GrizzlyConnectorProvider.html" target="_top">GrizzlyConnectorProvider</a> should be used to produce Grizzly Asynchronous HTTP Client
                         connector instances instead.
                     </p></li><li class="listitem"><p>
                         Public constructor has been removed from the <code class="literal">org.glassfish.jersey.apache.connector.ApacheConnector</code>; API.
-                        <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/apache/connector/ApacheConnectorProvider.html" target="_top">ApacheConnectorProvider</a> should be used to provide Apache HTTP Client
+                        <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/apache/connector/ApacheConnectorProvider.html" target="_top">ApacheConnectorProvider</a> should be used to provide Apache HTTP Client
                         connector instances instead.
                     </p></li><li class="listitem"><p>
                         Public constructor has been removed from the <code class="literal">org.glassfish.jersey.jetty.connector.JettyConnector</code>; API.
-                        <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a> should be used to provide Jetty HTTP Client
+                        <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a> should be used to provide Jetty HTTP Client
                         connector instances instead.
                     </p></li><li class="listitem"><p>
-                        Renamed property <code class="literal">CACHING_TEMPLATES_ENABLED</code> in <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/mvc/mustache/MustacheMvcFeature.html" target="_top">MustacheMvcFeature</a>
+                        Renamed property <code class="literal">CACHING_TEMPLATES_ENABLED</code> in <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/mvc/mustache/MustacheMvcFeature.html" target="_top">MustacheMvcFeature</a>
                         from <code class="literal">jersey.config.server.mvc.caching.mustache.enabled</code> to
                         <code class="literal">jersey.config.server.mvc.caching.mustache</code>.
                     </p></li><li class="listitem"><p>
                         Authentication filters <code class="literal">org.glassfish.jersey.client.filter.HttpBasicAuthFilter</code>
                         and <code class="literal">org.glassfish.jersey.client.filter.HttpDigestAuthFilter</code>
-                        were deprecated and replaced by <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a>.
+                        were deprecated and replaced by <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a>.
                     </p></li></ul></div><p>
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.5-other"></a>28.17.2.&nbsp;Other changes</h3></div></div></div><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                        The <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ContainerLifecycleListener.html" target="_top">ContainerLifecycleListener</a> invokes event <code class="literal">onStartup</code>
+                        The <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ContainerLifecycleListener.html" target="_top">ContainerLifecycleListener</a> invokes event <code class="literal">onStartup</code>
                         and <code class="literal">onShutdown</code> also when application is being started or stopped because of
                         application redeploy. The interface was marked as a Beta now.
                     </p></li><li class="listitem"><p>
                         The monitoring statistics method <code class="literal">ApplicationStatistics.getDestroyTime()</code>
-                        is deprecated and returns always null. Use <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ContainerLifecycleListener.html" target="_top">ContainerLifecycleListener</a> to
+                        is deprecated and returns always null. Use <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/spi/ContainerLifecycleListener.html" target="_top">ContainerLifecycleListener</a> to
                         listen on application destroy and get the destroy time.
                     </p></li><li class="listitem"><p>
                         <code class="literal">org.glassfish.jersey.spi.ResponseExecutorsProvider</code> contract has been completely
@@ -631,7 +631,7 @@ public class Bookstore { ... }</pre><p>
                 </p></li></ul></div><p>
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-2.4"></a>28.19.&nbsp;Migrating from Jersey 2.3 to 2.4</h2></div></div></div><p>
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                    All deprecated SSE <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> <code class="literal">getData(...)</code> methods have been removed
+                    All deprecated SSE <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> <code class="literal">getData(...)</code> methods have been removed
                     from the API. Use the new <code class="literal">readData(...)</code> methods have been introduced instead in
                     Jersey 2.3 for consistency with other parts of client-side JAX-RS API.
                     Access to the raw SSE event data content is provided via a <code class="literal">InboundEvent</code>'s
@@ -642,20 +642,20 @@ public class Bookstore { ... }</pre><p>
                 </p></li></ul></div><p>
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-2.3"></a>28.20.&nbsp;Migrating from Jersey 2.0, 2.1 or 2.2 to 2.3</h2></div></div></div><p>
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                    All existing SSE <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> <code class="literal">getData(...)</code> methods have been made
+                    All existing SSE <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> <code class="literal">getData(...)</code> methods have been made
                     deprecated and new <code class="literal">readData(...)</code> methods have been introduced instead for consistency
                     with other parts of client-side JAX-RS API. The deprecated <code class="literal">getData(...)</code> methods will
-                    be removed in Jersey 2.4. A new SSE <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> <code class="literal">byte[] getRawData()</code> method
+                    be removed in Jersey 2.4. A new SSE <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> <code class="literal">byte[] getRawData()</code> method
                     has been introduced to provide access to the raw SSE event data content.
                 </p></li><li class="listitem"><p>
-                    Generic <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/Broadcaster.html" target="_top">Broadcaster</a> methods for adding/removing <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/BroadcasterListener.html" target="_top">BroadcasterListener</a>
+                    Generic <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/Broadcaster.html" target="_top">Broadcaster</a> methods for adding/removing <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/BroadcasterListener.html" target="_top">BroadcasterListener</a>
                     registrations have been renamed from <code class="literal">addBroadcasterListener/removeBroadcasterListener</code>
                     to simply <code class="literal">add/remove</code>.
                 </p></li><li class="listitem"><p>
-                    Generic <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/Broadcaster.html" target="_top">Broadcaster</a> (and transitively, <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/SseBroadcaster.html" target="_top">SseBroadcaster</a>)
+                    Generic <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/Broadcaster.html" target="_top">Broadcaster</a> (and transitively, <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/SseBroadcaster.html" target="_top">SseBroadcaster</a>)
                     <code class="literal">add/remove</code> methods - that are responsible for
-                    adding/removing <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/BroadcasterListener.html" target="_top">BroadcasterListener</a> and <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a>
-                    (or <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a>) registrations - no longer try to avoid duplicate registrations by comparing
+                    adding/removing <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/BroadcasterListener.html" target="_top">BroadcasterListener</a> and <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a>
+                    (or <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a>) registrations - no longer try to avoid duplicate registrations by comparing
                     hash code of the added/removed instance with the hash codes of already registered instances. This behavior
                     has been identified as a potential source of hard to discover bugs and was removed as such. The issue with
                     the former behavior was that hash codes as integer values provide only a very limited value space that
@@ -796,8 +796,8 @@ resourceConfig.getProperties().put(ResourceConfig.PROPERTY_CONTAINER_NOTIFIER, r
                     instance.
 
                     You can register your implementation of <code class="literal">ContainerLifecycleListener</code> the same way as any
-                    other provider (i.e. either by annotating it by <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/Provider.html" target="_top">@Provider</a> annotation or adding it to the
-                    Jersey <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> directly either using the class (using
+                    other provider (i.e. either by annotating it by <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/Provider.html" target="_top">@Provider</a> annotation or adding it to the
+                    Jersey <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> directly either using the class (using
                     <code class="literal">ResourceConfig.addClasses()</code>) or registering a particular instance using
                     <code class="literal">ResourceConfig.addSingletons()</code> method.
                 </p><p>
@@ -845,17 +845,17 @@ resourceConfig.addSingletons(reloader);
             </p><div class="table"><a name="d0e19676"></a><p class="title"><b>Table&nbsp;28.2.&nbsp;Mapping of Jersey 1.x to JAX-RS 2.0 client classes</b></p><div class="table-contents"><table summary="Mapping of Jersey 1.x to JAX-RS 2.0 client classes" border="1"><colgroup><col width="0%" align="left" class="c1"><col width="0%" align="left" class="c2"><col width="100%" align="left" class="c3"></colgroup><thead><tr><th align="left">Jersey 1.x Class</th><th align="left">JAX-RS 2.0 Class</th><th align="left">Notes</th></tr></thead><tbody><tr><td align="left">
                                 <a class="link" href="http://jersey.java.net/nonav/apidocs/1.17/jersey/com/sun/jersey/api/client/Client.html" target="_top">com.sun.jersey.api.client.Client</a>
                             </td><td align="left">
-                                <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a>
+                                <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a>
                             </td><td align="left">For the static factory methods and constructors.</td></tr><tr><td align="left">&nbsp;</td><td align="left">
-                                <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a>
+                                <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a>
                             </td><td align="left">For the instance methods.</td></tr><tr><td align="left">
                                 <a class="link" href="http://jersey.java.net/nonav/apidocs/1.17/jersey/com/sun/jersey/api/client/WebResource.html" target="_top">com.sun.jersey.api.client.WebResource</a>
                             </td><td align="left">
-                                <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>
+                                <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>
                             </td><td align="left">&nbsp;</td></tr><tr><td align="left">
                                 <a class="link" href="http://jersey.java.net/nonav/apidocs/1.17/jersey/com/sun/jersey/api/client/AsyncWebResource.html" target="_top">com.sun.jersey.api.client.AsyncWebResource</a>
                             </td><td align="left">
-                                <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>
+                                <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>
                             </td><td align="left">You can access async versions of the async methods by calling
                                 <code class="literal">WebTarget.request().async()</code>
                             </td></tr></tbody></table></div></div><br class="table-break"><p>The following sub-sections show code examples.</p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="mig-client-simple-request"></a>28.21.2.1.&nbsp;Making a simple client request</h4></div></div></div><p>
@@ -1014,14 +1014,14 @@ Client client = Client.create(dcc);</pre><p>
                     <code class="literal">marshallerProperty() </code> and <code class="literal">unmarshallerProperty()</code> methods.
                 </p></div><p>
                 More on the JSON Support topic can be found in <a class="xref" href="media.html#json" title="9.1.&nbsp;JSON">Section&nbsp;9.1, &#8220;JSON&#8221;</a>.
-            </p></div></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+            </p></div></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

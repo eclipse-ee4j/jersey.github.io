@@ -10,7 +10,7 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;20.&nbsp;MVC Templates</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="entity-filtering.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="monitoring_tracing.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;20.&nbsp;MVC Templates</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="entity-filtering.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="monitoring_tracing.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
@@ -25,12 +25,12 @@
             <a class="link" href="https://blogs.oracle.com/sandoz/entry/mvcj" target="_top">MVCJ</a> blog article written by Paul Sandoz.
         </p></div><p>
         In Jersey 2, the base MVC API consists of two classes (<code class="literal">org.glassfish.jersey.server.mvc</code> package)
-        that can be used to bind model to view (template), namely <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> and <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a>.
+        that can be used to bind model to view (template), namely <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> and <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a>.
         These classes determine which approach (explicit/implicit) you would be taking when working with Jersey MVC
         templating support.
     </p><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e14618"></a>20.1.&nbsp;Viewable</h2></div></div></div><p>
             In this approach a resource method explicitly returns a reference to a view template and the data model to be
-            used. For this purpose the <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> class has been introduced in Jersey 1 and is also
+            used. For this purpose the <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> class has been introduced in Jersey 1 and is also
             present (under a different package) in Jersey 2. A simple example of usage can be seen in
             <a class="xref" href="mvc.html#mvc.example.viewable.simple" title="Example&nbsp;20.1.&nbsp;Using Viewable in a resource class">Example&nbsp;20.1, &#8220;Using <code class="literal">Viewable</code> in a resource class&#8221;</a>.
 
@@ -55,7 +55,7 @@ public class Foo {
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e14663"></a>20.2.&nbsp;@Template</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e14666"></a>20.2.1.&nbsp;Annotating Resource methods</h3></div></div></div><p>
                 There is no need to use <code class="literal">Viewable</code> every time you want to bind a model to a template. To
                 make the resource method more readable (and to avoid verbose wrapping of a template reference and model into
-                <code class="literal">Viewable</code>) you can simply annotate a resource method with <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a>
+                <code class="literal">Viewable</code>) you can simply annotate a resource method with <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a>
                 annotation. An updated example, using <code class="literal">@Template</code>, from previous section is shown in
                 <a class="xref" href="mvc.html#mvc.example.template.simple" title="Example&nbsp;20.2.&nbsp;Using @Template on a resource method">Example&nbsp;20.2, &#8220;Using <code class="literal">@Template</code> on a resource method&#8221;</a> example.
 
@@ -75,14 +75,14 @@ public class Foo {
                 section but the MVC model is now represented by the return value of annotated resource method.
             </p><p>
                 The processing of such a method is then essentially the same as if the return type of the method was an
-                instance of the <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> class. If a method is annotated with
+                instance of the <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> class. If a method is annotated with
                 <code class="literal">@Template</code> and is also returning a
                 <code class="literal">Viewable</code> instance then the values from the
                 <code class="literal">Viewable</code> instance take precedence over those defined in the annotation. Producible
                 media types are for both cases, <code class="literal">Viewable</code> and <code class="literal">@Template</code>,
                 determined by the method or class level <code class="literal">@Produces</code> annotation.
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e14722"></a>20.2.2.&nbsp;Annotating Resource classes</h3></div></div></div><p>
-                A resource class can have templates implicitly associated with it via <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a> annotation.
+                A resource class can have templates implicitly associated with it via <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a> annotation.
                 For example, take a look at the resource class listing in <a class="xref" href="mvc.html#mvc.example.implicit.class" title="Example&nbsp;20.3.&nbsp;Using @Template on a resource class">Example&nbsp;20.3, &#8220;Using <code class="literal">@Template</code> on a resource class&#8221;</a>.
 
                 </p><div class="example"><a name="mvc.example.implicit.class"></a><p class="title"><b>Example&nbsp;20.3.&nbsp;Using <code class="literal">@Template</code> on a resource class</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("foo")
@@ -137,7 +137,7 @@ public Viewable get(@PathParameter("{implicit-view-path-parameter}") String temp
                 <code class="literal">/com/foo/Foo/bar</code>, where the model is still an instance of the same JAX-RS resource class
                 <code class="literal">Foo</code>.
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mvc.references"></a>20.3.&nbsp;Absolute vs. Relative template reference</h2></div></div></div><p>
-            As discussed in the previous section, both <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a> and <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> provide means
+            As discussed in the previous section, both <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a> and <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> provide means
             to define a reference to a template. We will now discuss how these values are interpreted and how the concrete
             template is found.
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e14818"></a>20.3.1.&nbsp;Relative template reference</h3></div></div></div><p>
@@ -148,7 +148,7 @@ public Viewable get(@PathParameter("{implicit-view-path-parameter}") String temp
                 Consider the <a class="xref" href="mvc.html#mvc.example.implicit.class" title="Example&nbsp;20.3.&nbsp;Using @Template on a resource class">Example&nbsp;20.3, &#8220;Using <code class="literal">@Template</code> on a resource class&#8221;</a> from the previous section,
                 the template name reference <code class="literal">index</code> is a relative value that Jersey will resolve to its
                 absolute template reference using a fully qualified class name of <code class="literal">Foo</code> (more on resolving
-                relative template name to the absolute one can be found in the JavaDoc of <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> class),
+                relative template name to the absolute one can be found in the JavaDoc of <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> class),
                 which, in our case, is:
                 </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    gutter: false;">"/com/foo/Foo/index"</pre><p>
             </p><p>
@@ -183,7 +183,7 @@ public Viewable get() {
                 as <code class="literal">pages</code>. For the absolute template reference <code class="literal">/com/example/Foo/index</code> the template
                 processor will transform the reference into the following path: <code class="literal">/pages/com/example/Foo/index.mustache</code>.
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e14908"></a>20.4.&nbsp;Handling errors with MVC</h2></div></div></div><p>
-            In addition to <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a> a <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/ErrorTemplate.html" target="_top">@ErrorTemplate</a> annotation has been introduced in
+            In addition to <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a> a <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/ErrorTemplate.html" target="_top">@ErrorTemplate</a> annotation has been introduced in
             Jersey 2.3. The purpose of this annotation is to bind the model to an error view in case an exception has been raised during
             processing of a request. This is true for any exception thrown after the resource matching phase (i.e. this not only
             applies to JAX-RS resources but providers and even Jersey runtime as well). The model in this case is the thrown exception
@@ -200,8 +200,8 @@ public Viewable get() {
 public ShortenedLink createLink(@FormParam("link") final String link) {
     // ...
 }</pre></div></div><br class="example-break"><p>
-            Note that <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/ErrorTemplate.html" target="_top">@ErrorTemplate</a> can be used on a resource class or a resource method to merely handle
-            error states. There is no need to use <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a> or <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> with it.
+            Note that <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/ErrorTemplate.html" target="_top">@ErrorTemplate</a> can be used on a resource class or a resource method to merely handle
+            error states. There is no need to use <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a> or <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> with it.
         </p><p>
             The annotation is handled by custom <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/ext/ExceptionMapper.html" target="_top">ExceptionMapper&lt;E extends Throwable&gt;</a> which creates an instance of
             <code class="literal">Viewable</code> that is further processed by Jersey. This exception mapper is registered automatically
@@ -209,7 +209,7 @@ public ShortenedLink createLink(@FormParam("link") final String link) {
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e14962"></a>20.4.1.&nbsp;MVC &amp; Bean Validation</h3></div></div></div><p>
                 <code class="literal">@ErrorTemplate</code> can be used in also with Bean Validation to display specific error pages in
                 case the validation of input/output values fails for some reason. Everything works as described above except the
-                model is not the thrown exception but rather a list of <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/validation/ValidationError.html" target="_top">ValidationError</a>s. This list can be iterated in
+                model is not the thrown exception but rather a list of <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/validation/ValidationError.html" target="_top">ValidationError</a>s. This list can be iterated in
                 the template and all the validation errors can be shown to the user in a desirable way.
             </p><div class="example"><a name="mvc.example.error.bv"></a><p class="title"><b>Example&nbsp;20.6.&nbsp;Using <code class="literal">@ErrorTemplate</code> with Bean Validation</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@POST
 @Produces({"text/html&#8221;})
@@ -234,11 +234,11 @@ public ShortenedLink createLink(@NotEmpty @FormParam("link") final String link) 
     &lt;version&gt;2.17&lt;/version&gt;
 &lt;/dependency&gt;</pre><p>
 
-                and for non-Maven users the list of dependencies is available at <a class="link" href="https://jersey.java.net/project-info/2.17/jersey/project/jersey-mvc-bean-validation/dependencies.html" target="_top">jersey-mvc-bean-validation</a>.
+                and for non-Maven users the list of dependencies is available at <a class="link" href="https://jersey.github.io/project-info/2.17/jersey/project/jersey-mvc-bean-validation/dependencies.html" target="_top">jersey-mvc-bean-validation</a>.
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mvc.registration"></a>20.5.&nbsp;Registration and Configuration</h2></div></div></div><p>
             To use the capabilities of Jersey MVC templating support in your JAX-RS/Jersey application you need to register
             specific JAX-RS <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/Feature.html" target="_top">Feature</a>s provided by the MVC modules. For <code class="literal">jersey-mvc</code> module it is
-            <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/MvcFeature.html" target="_top">MvcFeature</a> for others it could be, for example, <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/freemarker/FreemarkerMvcFeature.html" target="_top">FreemarkerMvcFeature</a>
+            <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/MvcFeature.html" target="_top">MvcFeature</a> for others it could be, for example, <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/freemarker/FreemarkerMvcFeature.html" target="_top">FreemarkerMvcFeature</a>
             (<code class="literal">jersey-mvc-freemarker</code>).
 
             </p><div class="example"><a name="d0e15030"></a><p class="title"><b>Example&nbsp;20.8.&nbsp;Registering <code class="literal">MvcFeature</code></b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">new ResourceConfig()
@@ -321,7 +321,7 @@ public ShortenedLink createLink(@NotEmpty @FormParam("link") final String link) 
     &lt;version&gt;2.17&lt;/version&gt;
 &lt;/dependency&gt;</pre><p>
 
-                and for non-Maven users the list of dependencies is available at <a class="link" href="https://jersey.java.net/project-info/2.17/jersey/project/jersey-mvc-mustache/dependencies.html" target="_top">jersey-mvc-mustache</a>.
+                and for non-Maven users the list of dependencies is available at <a class="link" href="https://jersey.github.io/project-info/2.17/jersey/project/jersey-mvc-mustache/dependencies.html" target="_top">jersey-mvc-mustache</a>.
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e15199"></a>20.6.2.&nbsp;Freemarker</h3></div></div></div><p>
                 An integration module for <a class="link" href="http://freemarker.org/" target="_top">Freemarker</a>-based templating engine.
             </p><p>
@@ -364,7 +364,7 @@ public ShortenedLink createLink(@NotEmpty @FormParam("link") final String link) 
     &lt;version&gt;2.17&lt;/version&gt;
 &lt;/dependency&gt;</pre><p>
 
-                and for non-Maven users the list of dependencies is available at <a class="link" href="https://jersey.java.net/project-info/2.17/jersey/project/jersey-mvc-freemarker/dependencies.html" target="_top">jersey-mvc-freemarker</a>.
+                and for non-Maven users the list of dependencies is available at <a class="link" href="https://jersey.github.io/project-info/2.17/jersey/project/jersey-mvc-freemarker/dependencies.html" target="_top">jersey-mvc-freemarker</a>.
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e15315"></a>20.6.3.&nbsp;JSP</h3></div></div></div><p>
                 An integration module for JSP-based templating engine.
             </p><div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Limitations of Jersey JSP MVC Templates</h3><p>
@@ -427,10 +427,10 @@ public ShortenedLink createLink(@NotEmpty @FormParam("link") final String link) 
     &lt;version&gt;2.17&lt;/version&gt;
 &lt;/dependency&gt;</pre><p>
 
-                and for non-Maven users the list of dependencies is available at <a class="link" href="https://jersey.java.net/project-info/2.17/jersey/project/jersey-mvc-jsp/dependencies.html" target="_top">jersey-mvc-jsp</a>.
+                and for non-Maven users the list of dependencies is available at <a class="link" href="https://jersey.github.io/project-info/2.17/jersey/project/jersey-mvc-jsp/dependencies.html" target="_top">jersey-mvc-jsp</a>.
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mvc.spi"></a>20.7.&nbsp;Writing Custom Templating Engines</h2></div></div></div><p>
             To add support for other (custom) templating engines into Jersey MVC Templating facility, you need to implement the
-            <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/spi/TemplateProcessor.html" target="_top">TemplateProcessor</a> and register this class into your application.
+            <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/spi/TemplateProcessor.html" target="_top">TemplateProcessor</a> and register this class into your application.
 
             </p><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Tip</h3><p>
                     When writing template processors it is recommend that you use an appropriate unique suffix for the
@@ -438,7 +438,7 @@ public ShortenedLink createLink(@NotEmpty @FormParam("link") final String link) 
                     templating engines in a single application without conflicts.
                 </p></div><p>
 
-            </p><div class="example"><a name="d0e15432"></a><p class="title"><b>Example&nbsp;20.13.&nbsp;Custom <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/spi/TemplateProcessor.html" target="_top">TemplateProcessor</a></b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Provider
+            </p><div class="example"><a name="d0e15432"></a><p class="title"><b>Example&nbsp;20.13.&nbsp;Custom <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/spi/TemplateProcessor.html" target="_top">TemplateProcessor</a></b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Provider
 class MyTemplateProcessor implements TemplateProcessor&lt;String&gt; {
 
     @Override
@@ -469,7 +469,7 @@ class MyTemplateProcessor implements TemplateProcessor&lt;String&gt; {
 
 }</pre></div></div><p><br class="example-break">
 
-            </p><div class="example"><a name="d0e15440"></a><p class="title"><b>Example&nbsp;20.14.&nbsp;Registering custom <a class="link" href="https://jersey.java.net/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/spi/TemplateProcessor.html" target="_top">TemplateProcessor</a></b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">new ResourceConfig()
+            </p><div class="example"><a name="d0e15440"></a><p class="title"><b>Example&nbsp;20.14.&nbsp;Registering custom <a class="link" href="https://jersey.github.io/apidocs/2.17/jersey/org/glassfish/jersey/server/mvc/spi/TemplateProcessor.html" target="_top">TemplateProcessor</a></b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">new ResourceConfig()
     .register(MyTemplateProcessor.class)
     // Further configuration of ResourceConfig.
     .register( ... );</pre></div></div><p><br class="example-break">
@@ -480,7 +480,7 @@ class MyTemplateProcessor implements TemplateProcessor&lt;String&gt; {
             </p></div><p>
             If you want to use just templating API infrastructure provided by Jersey for the MVC templating support in order to
             implement your custom support for a templating engine other than the ones provided by Jersey,
-            you will need to add the base <a class="link" href="https://jersey.java.net/project-info/2.17/jersey/project/jersey-mvc/dependencies.html" target="_top">jersey-mvc</a> module into the list of your dependencies:
+            you will need to add the base <a class="link" href="https://jersey.github.io/project-info/2.17/jersey/project/jersey-mvc/dependencies.html" target="_top">jersey-mvc</a> module into the list of your dependencies:
 
             </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
@@ -488,14 +488,14 @@ class MyTemplateProcessor implements TemplateProcessor&lt;String&gt; {
     &lt;version&gt;2.17&lt;/version&gt;
 &lt;/dependency&gt;</pre><p>
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e15462"></a>20.8.&nbsp;Other Examples</h2></div></div></div><p>To see an example of MVC (JSP) templating support in Jersey refer to the
-            <a class="link" href="https://github.com/jersey/jersey/tree/2.17/examples/bookstore-webapp" target="_top">MVC (Bookstore) Example</a>.</p></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+            <a class="link" href="https://github.com/jersey/jersey/tree/2.17/examples/bookstore-webapp" target="_top">MVC (Bookstore) Example</a>.</p></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

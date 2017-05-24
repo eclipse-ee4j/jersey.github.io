@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-ext-mvc-mustache - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-mvc-mustache/</link>
+    <link>https://jersey.github.io/project/jersey-mvc-mustache/</link>
     <description>jersey-ext-mvc-mustache - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-mvc-mustache//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-mvc-mustache//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-mvc-mustache//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-mvc-mustache//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc-mustache//checkstyle.html#org.glassfish.jersey.server.mvc.mustache.package-info.java">org/glassfish/jersey/server/mvc/mustache/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc-mustache//checkstyle.html#org.glassfish.jersey.server.mvc.mustache.package-info.java">org/glassfish/jersey/server/mvc/mustache/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc-mustache//checkstyle.html#org.glassfish.jersey.server.mvc.mustache.MustacheMvcFeature.java">org/glassfish/jersey/server/mvc/mustache/MustacheMvcFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc-mustache//checkstyle.html#org.glassfish.jersey.server.mvc.mustache.MustacheMvcFeature.java">org/glassfish/jersey/server/mvc/mustache/MustacheMvcFeature.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc-mustache//checkstyle.html#org.glassfish.jersey.server.mvc.mustache.MustacheTemplateProcessor.java">org/glassfish/jersey/server/mvc/mustache/MustacheTemplateProcessor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc-mustache//checkstyle.html#org.glassfish.jersey.server.mvc.mustache.MustacheTemplateProcessor.java">org/glassfish/jersey/server/mvc/mustache/MustacheTemplateProcessor.java</a>
                 </td>
                 <td>
                   0

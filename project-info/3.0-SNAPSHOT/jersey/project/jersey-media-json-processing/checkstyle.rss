@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-media-json-processing - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-media-json-processing/</link>
+    <link>https://jersey.github.io/project/jersey-media-json-processing/</link>
     <description>jersey-media-json-processing - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2016 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-media-json-processing//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-media-json-processing//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-media-json-processing//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-media-json-processing//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-processing//checkstyle.html#org.glassfish.jersey.jsonp.package-info.java">org/glassfish/jersey/jsonp/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-processing//checkstyle.html#org.glassfish.jersey.jsonp.package-info.java">org/glassfish/jersey/jsonp/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-processing//checkstyle.html#org.glassfish.jersey.jsonp.JsonProcessingFeature.java">org/glassfish/jersey/jsonp/JsonProcessingFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-processing//checkstyle.html#org.glassfish.jersey.jsonp.JsonProcessingFeature.java">org/glassfish/jersey/jsonp/JsonProcessingFeature.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-processing//checkstyle.html#org.glassfish.jersey.jsonp.internal.package-info.java">org/glassfish/jersey/jsonp/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-processing//checkstyle.html#org.glassfish.jersey.jsonp.internal.package-info.java">org/glassfish/jersey/jsonp/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-processing//checkstyle.html#org.glassfish.jersey.jsonp.internal.JsonProcessingAutoDiscoverable.java">org/glassfish/jersey/jsonp/internal/JsonProcessingAutoDiscoverable.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-processing//checkstyle.html#org.glassfish.jersey.jsonp.internal.JsonProcessingAutoDiscoverable.java">org/glassfish/jersey/jsonp/internal/JsonProcessingAutoDiscoverable.java</a>
                 </td>
                 <td>
                   0

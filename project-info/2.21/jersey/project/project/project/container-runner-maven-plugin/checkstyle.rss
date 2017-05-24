@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-tests-memleak-maven-container-runner-plugin - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/project/container-runner-maven-plugin/</link>
+    <link>https://jersey.github.io/project/project/project/container-runner-maven-plugin/</link>
     <description>jersey-tests-memleak-maven-container-runner-plugin - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/project/container-runner-maven-plugin//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/project/container-runner-maven-plugin//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/project/container-runner-maven-plugin//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/project/container-runner-maven-plugin//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>

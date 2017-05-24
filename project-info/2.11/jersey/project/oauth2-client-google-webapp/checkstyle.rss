@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>oauth2-client-google-webapp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/oauth2-client-google-webapp/</link>
+    <link>https://jersey.github.io/project/oauth2-client-google-webapp/</link>
     <description>oauth2-client-google-webapp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.resource.AuthorizationResource.java">org/glassfish/jersey/examples/oauth2/googleclient/resource/AuthorizationResource.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.resource.AuthorizationResource.java">org/glassfish/jersey/examples/oauth2/googleclient/resource/AuthorizationResource.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.entity.TaskRootBean.java">org/glassfish/jersey/examples/oauth2/googleclient/entity/TaskRootBean.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.entity.TaskRootBean.java">org/glassfish/jersey/examples/oauth2/googleclient/entity/TaskRootBean.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.resource.TaskResource.java">org/glassfish/jersey/examples/oauth2/googleclient/resource/TaskResource.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.resource.TaskResource.java">org/glassfish/jersey/examples/oauth2/googleclient/resource/TaskResource.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.model.TaskModel.java">org/glassfish/jersey/examples/oauth2/googleclient/model/TaskModel.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.model.TaskModel.java">org/glassfish/jersey/examples/oauth2/googleclient/model/TaskModel.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.resource.MyApplication.java">org/glassfish/jersey/examples/oauth2/googleclient/resource/MyApplication.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.resource.MyApplication.java">org/glassfish/jersey/examples/oauth2/googleclient/resource/MyApplication.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.model.AllTaskListsModel.java">org/glassfish/jersey/examples/oauth2/googleclient/model/AllTaskListsModel.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.model.AllTaskListsModel.java">org/glassfish/jersey/examples/oauth2/googleclient/model/AllTaskListsModel.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.resource.SetupResource.java">org/glassfish/jersey/examples/oauth2/googleclient/resource/SetupResource.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.resource.SetupResource.java">org/glassfish/jersey/examples/oauth2/googleclient/resource/SetupResource.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.SimpleOAuthService.java">org/glassfish/jersey/examples/oauth2/googleclient/SimpleOAuthService.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.SimpleOAuthService.java">org/glassfish/jersey/examples/oauth2/googleclient/SimpleOAuthService.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.entity.TaskListBean.java">org/glassfish/jersey/examples/oauth2/googleclient/entity/TaskListBean.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.entity.TaskListBean.java">org/glassfish/jersey/examples/oauth2/googleclient/entity/TaskListBean.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.model.TaskListModel.java">org/glassfish/jersey/examples/oauth2/googleclient/model/TaskListModel.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.model.TaskListModel.java">org/glassfish/jersey/examples/oauth2/googleclient/model/TaskListModel.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.entity.TaskBean.java">org/glassfish/jersey/examples/oauth2/googleclient/entity/TaskBean.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client-google-webapp//checkstyle.html#org.glassfish.jersey.examples.oauth2.googleclient.entity.TaskBean.java">org/glassfish/jersey/examples/oauth2/googleclient/entity/TaskBean.java</a>
                 </td>
                 <td>
                   0

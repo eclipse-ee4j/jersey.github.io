@@ -10,7 +10,7 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;5.&nbsp;Client API</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="deployment.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="rx-client.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;5.&nbsp;Client API</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="deployment.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="rx-client.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
@@ -44,7 +44,7 @@
                 </p></li></ol></div><p>
 
         As an extension to the standard JAX-RS Client API, the  Jersey Client API supports a pluggable architecture to enable the
-        use of different underlying HTTP client <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a> implementations. Several such implementations are
+        use of different underlying HTTP client <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a> implementations. Several such implementations are
         currently provided with Jersey. We have a default client connector using <code class="literal">Http(s)URLConnection</code> supplied
         with the JDK as well as connector implementations based on Apache HTTP Client, Jetty HTTP client and Grizzly Asynchronous Client.
     </p><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e4161"></a>5.1.&nbsp;Uniform Interface Constraint</h2></div></div></div><p>
@@ -72,7 +72,7 @@
             supplied with the JDK place too much focus on the Client-Server constraint for the exchanges of request and
             responses rather than a resource, identified by a URI, and the use of a fixed set of HTTP methods.
         </p><p>A resource in the JAX-RS client API is an instance of the Java class
-            <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>.
+            <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>.
             and encapsulates an URI. The fixed set of HTTP methods can be invoked based on the
             <code class="literal">WebTarget</code>.
             The representations are Java types, instances of which, may contain links that new instances of
@@ -82,7 +82,7 @@
             inject in ways that are not so intuitive or possible with other client-side APIs.
             The Jersey Client API reuses many aspects of the JAX-RS and the Jersey implementation such as:
             </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
-                        URI building using <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/UriBuilder.html" target="_top">UriBuilder</a> and <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/uri/UriTemplate.html" target="_top">UriTemplate</a> to safely build URIs;
+                        URI building using <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/UriBuilder.html" target="_top">UriBuilder</a> and <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/uri/UriTemplate.html" target="_top">UriTemplate</a> to safely build URIs;
                     </p></li><li class="listitem"><p>Built-in support for Java types of representations such as
                         <code class="literal">byte[]</code>,
                         <code class="literal">String</code>,
@@ -93,7 +93,7 @@
                         <code class="literal">java.io.Reader</code>,
                         <code class="literal">File</code>,
                         <code class="literal">DataSource</code>,
-                        JAXB beans as well as additional Jersey-specific JSON and <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/media/multipart/package-summary.html" target="_top">Multi Part</a> support.
+                        JAXB beans as well as additional Jersey-specific JSON and <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/media/multipart/package-summary.html" target="_top">Multi Part</a> support.
                     </p></li><li class="listitem"><p>Using the fluent builder-style API pattern to make it easier to construct requests.</p></li></ol></div><p>
             Some APIs, like the Apache HTTP Client or <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/net/HttpURLConnection.html" target="_top">HttpURLConnection</a>
             can be rather hard to use and/or require too much code to do something relatively simple, especially when
@@ -118,17 +118,17 @@ target.request(MediaType.APPLICATION_JSON_TYPE)
         MyJAXBBean.class);</pre></div></div><p><br class="example-break">
 
             In the <a class="xref" href="client.html#client.ex.formpost" title="Example&nbsp;5.1.&nbsp;POST request with form parameters">Example&nbsp;5.1, &#8220;POST request with form parameters&#8221;</a> a new <code class="literal">WebTarget</code> instance is created using a new
-            <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> instance first, next a <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Form.html" target="_top">Form</a> instance is created with two form parameters.
+            <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> instance first, next a <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Form.html" target="_top">Form</a> instance is created with two form parameters.
             Once ready, the <code class="literal">Form</code> instance is <code class="literal">POST</code>ed to the target resource.
             First, the acceptable media type is specified in the <code class="literal">request(...)</code> method. Then in the
-            <code class="literal">post(...)</code> method, a call to a static method on JAX-RS <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Entity.html" target="_top">Entity</a> is made to construct
+            <code class="literal">post(...)</code> method, a call to a static method on JAX-RS <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Entity.html" target="_top">Entity</a> is made to construct
             the request entity instance and attach the proper content media type to the form entity that is being sent. The
             second parameter in the <code class="literal">post(...)</code> method specifies the Java type of the response entity that should
             be returned from the method in case of a successful response. In this case an instance of JAXB bean is requested to
-            be returned on success. The Jersey client API takes care of selecting the proper <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> for
+            be returned on success. The Jersey client API takes care of selecting the proper <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> for
             the serialization of the <code class="literal">Form</code> instance, invoking the <code class="literal">POST</code> request and producing and
             de-serialization of the response message payload into an instance of a JAXB bean using a proper
-            <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>.
+            <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>.
         </p><p>If the code above had to be written using <code class="literal">HttpUrlConnection</code>, the developer would have to write custom
             code to serialize the form data that are sent within the POST request and de-serialize the response input stream
             into a JAXB bean. Additionally, more code would have to be written to make it easy to reuse the logic when
@@ -138,7 +138,7 @@ target.request(MediaType.APPLICATION_JSON_TYPE)
                 Refer to the <a class="link" href="modules-and-dependencies.html#dependencies" title="2.3.&nbsp;Common Jersey Use Cases">dependencies</a> for details on the dependencies when using the
                 Jersey JAX-RS Client support.
             </p><p>
-                You may also want to use a custom <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a> implementation. In such case you would need to include
+                You may also want to use a custom <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a> implementation. In such case you would need to include
                 additional dependencies on the module(s) containing the custom client connector that you want to use. See section
                 <a class="link" href="client.html#connectors">"Configuring custom Connectors"</a> about how to use and configure a custom
                 Jersey client transport <code class="literal">Connector</code>.</p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e4342"></a>5.3.2.&nbsp;
@@ -146,10 +146,10 @@ target.request(MediaType.APPLICATION_JSON_TYPE)
             </h3></div></div></div><p>
                 JAX-RS Client API is a designed to allow fluent programming model. This means, a construction of a
                 <code class="literal">Client</code> instance, from which a <code class="literal">WebTarget</code> is created, from which a
-                request <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Invocation.html" target="_top">Invocation</a> is built and invoked can be chained in a single "flow" of invocations.
+                request <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Invocation.html" target="_top">Invocation</a> is built and invoked can be chained in a single "flow" of invocations.
                 The individual steps of the flow will be shown in the following sections.
                 To utilize the client API it is first necessary to build an instance of a
-                <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> using one of the static <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> factory methods. Here's the most
+                <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a> using one of the static <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> factory methods. Here's the most
                 simple example:
 
                 </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Client client = ClientBuilder.newClient();</pre><p>
@@ -159,9 +159,9 @@ target.request(MediaType.APPLICATION_JSON_TYPE)
                 client instance properties, such as a SSL transport settings, if needed (see <a class="xref" href="">???</a>
                 below).
             </p><p>
-                A <code class="literal">Client</code> instance can be configured during creation by passing a <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a>
+                A <code class="literal">Client</code> instance can be configured during creation by passing a <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a>
                 to the <code class="literal">newClient(Configurable)</code> <code class="literal">ClientBuilder</code> factory method.
-                <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a> implements <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a> and therefore it offers methods to register
+                <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a> implements <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a> and therefore it offers methods to register
                 providers (e.g. features or individual entity providers, filters or interceptors) and setup properties.
                 The following code shows a registration of custom client filters:
 
@@ -175,7 +175,7 @@ Client client = ClientBuilder.newClient(clientConfig);</pre><p>
                 Once a <code class="literal">ClientConfig</code> instance is configured, it can be passed to the
                 <code class="literal">ClientBuilder</code> to create a pre-configured <code class="literal">Client</code> instance.
             </p><p>
-                Note that the Jersey <code class="literal">ClientConfig</code> supports the fluent API model of <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a>.
+                Note that the Jersey <code class="literal">ClientConfig</code> supports the fluent API model of <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a>.
                 With that the code that configures a new client instance can be also written using a more compact style as shown
                 below.
 
@@ -186,9 +186,9 @@ Client client = ClientBuilder.newClient(new ClientConfig()
 
                 The ability to leverage this compact pattern is inherent to all JAX-RS and Jersey Client API components.
             </p><p>
-                Since <code class="literal">Client</code> implements <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a> interface too, it can be configured further
+                Since <code class="literal">Client</code> implements <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a> interface too, it can be configured further
                 even after it has been created. Important is to mention that any configuration change done on a
-                <code class="literal">Client</code> instance will not influence the <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a> instance that was used to
+                <code class="literal">Client</code> instance will not influence the <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a> instance that was used to
                 provide the initial <code class="literal">Client</code> instance configuration at the instance creation time.
                 The next piece of code shows a configuration of an existing <code class="literal">Client</code> instance.
 
@@ -287,7 +287,7 @@ webTarget.register(FilterForExampleCom.class);</pre><p>
                 parameters too.
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e4670"></a>5.3.5.&nbsp;Invoking a HTTP request</h3></div></div></div><p>
                 Let's now focus on invoking a <code class="literal">GET</code> HTTP request on the created web targets. To start building a new
-                HTTP request invocation, we need to create a new <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Invocation.Builder.html" target="_top">Invocation.Builder</a>.
+                HTTP request invocation, we need to create a new <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Invocation.Builder.html" target="_top">Invocation.Builder</a>.
 
                 </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Invocation.Builder invocationBuilder =
         helloworldWebTargetWithQueryParam.request(MediaType.TEXT_PLAIN_TYPE);
@@ -304,13 +304,13 @@ invocationBuilder.header("some-header", "true");</pre><p>
                 header to value <code class="literal">true</code>.
             </p><p>
                 Once finished with request customizations, it's time to invoke the request. We have two options now.
-                We can use the <code class="literal">Invocation.Builder</code> to build a generic <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Invocation.html" target="_top">Invocation</a> instance
+                We can use the <code class="literal">Invocation.Builder</code> to build a generic <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Invocation.html" target="_top">Invocation</a> instance
                 that will be invoked some time later. Using <code class="literal">Invocation</code> we will be able to e.g. set additional
                 request properties which are properties in a batch of several requests and use the generic JAX-RS
                 <code class="literal">Invocation</code> API to invoke the batch of requests without actually knowing all the details
                 (such as request HTTP method, configuration etc.). Any properties set on an invocation instance can be read
-                during the request processing. For example, in a custom <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a> you can call
-                <code class="literal">getProperty()</code> method on the supplied <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientRequestContext.html" target="_top">ClientRequestContext</a> to read a request
+                during the request processing. For example, in a custom <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a> you can call
+                <code class="literal">getProperty()</code> method on the supplied <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientRequestContext.html" target="_top">ClientRequestContext</a> to read a request
                 property. Note that these request properties are different from the configuration properties set on
                 <code class="literal">Configurable</code>. As mentioned earlier, an <code class="literal">Invocation</code> instance provides generic
                 invocation API to invoke the HTTP request it represents either synchronously or asynchronously. See
@@ -345,7 +345,7 @@ Hi World!</pre><p>
                 in the resource target, when <code class="literal">response.readEntity(String.class)</code> gets called, the response
                 returned from the remote endpoint is passed through the response filter chain (including the
                 <code class="literal">MyClientResponseFilter</code>) and entity interceptor chain and at last a proper
-                <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> is located to read the response content bytes from the response stream into a
+                <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> is located to read the response content bytes from the response stream into a
                 Java <code class="literal">String</code> instance. Check <a class="xref" href="filters-and-interceptors.html" title="Chapter&nbsp;10.&nbsp;Filters and Interceptors">Chapter&nbsp;10, <i>Filters and Interceptors</i></a> to lear more about
                 request and response filters and entity interceptors.
             </p><p>
@@ -429,26 +429,26 @@ webTarget.request().post(Entity.entity(f, MediaType.TEXT_PLAIN_TYPE));
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e4861"></a>5.4.1.&nbsp;Adding support for new representations</h3></div></div></div><p>
                 The support for new application-defined representations as Java types requires the
                 implementation of the same JAX-RS entity provider extension interfaces as for the server side JAX-RS API, namely
-                <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> and <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a>
+                <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> and <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a>
                 respectively, for request and response entities (or inbound and outbound representations).
             </p><p>
                 Classes or implementations of the provider-based interfaces need to be registered as providers within the
                 JAX-RS or Jersey Client API components that implement <code class="literal">Configurable</code> contract
                 (<code class="literal">ClientBuilder</code>, <code class="literal">Client</code>, <code class="literal">WebTarget</code> or
                 <code class="literal">ClientConfig</code>), as was shown in the earlier sections.
-                Some media types are provided in the form of JAX-RS <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Feature.html" target="_top">Feature</a> a concept that allows the extension
+                Some media types are provided in the form of JAX-RS <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Feature.html" target="_top">Feature</a> a concept that allows the extension
                 providers to group together multiple different extension providers and/or configuration properties in order
                 to simplify the registration and configuration of the provided feature by the end users. For example,
-                <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/moxy/json/MoxyJsonFeature.html" target="_top">MoxyJsonFeature</a> can be register to enable and configure JSON binding support via MOXy
+                <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/moxy/json/MoxyJsonFeature.html" target="_top">MoxyJsonFeature</a> can be register to enable and configure JSON binding support via MOXy
                 library.
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e4895"></a>5.5.&nbsp;<a name="connectors"></a>Client Transport Connectors</h2></div></div></div><p>
             By default, the transport layer in Jersey is provided by <code class="literal">HttpUrlConnection</code>. This transport is implemented
-            in Jersey via <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a> that implements Jersey-specific <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a> SPI.
+            in Jersey via <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a> that implements Jersey-specific <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a> SPI.
             You can implement and/or register your own <code class="literal">Connector</code> instance to the Jersey
             <code class="literal">Client</code> implementation, that will replace the default <code class="literal">HttpUrlConnection</code>-based
             transport layer. Jersey provides several alternative client transport connector implementations that are ready-to-use.
 
-            </p><div class="table"><a name="d0e4919"></a><p class="title"><b>Table&nbsp;5.1.&nbsp;List of Jersey Connectors</b></p><div class="table-contents"><table summary="List of Jersey Connectors" border="1"><colgroup><col align="left" class="c1" width="33%"><col align="left" class="c2" width="33%"><col align="left" class="c3" width="34%"></colgroup><thead><tr><th align="left">Transport framework</th><th align="left">Jersey Connector implementation</th><th align="left">Maven dependency</th></tr></thead><tbody><tr><td align="left">Grizzly NIO framework</td><td align="left"><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/grizzly/connector/GrizzlyConnectorProvider.html" target="_top">GrizzlyConnectorProvider</a></td><td align="left"><code class="literal">org.glassfish.jersey.connectors:jersey-grizzly-connector</code></td></tr><tr><td align="left">Apache HTTP client</td><td align="left"><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/apache/connector/ApacheConnectorProvider.html" target="_top">ApacheConnectorProvider</a></td><td align="left"><code class="literal">org.glassfish.jersey.connectors:jersey-apache-connector</code></td></tr><tr><td align="left">Jetty HTTP client</td><td align="left"><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a></td><td align="left"><code class="literal">org.glassfish.jersey.connectors:jersey-jetty-connector</code></td></tr><tr><td align="left">Netty NIO framework</td><td align="left"><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/netty/connector/NettyConnectorProvider.html" target="_top">NettyConnectorProvider</a></td><td align="left"><code class="literal">org.glassfish.jersey.connectors:jersey-netty-connector</code></td></tr></tbody></table></div></div><p><br class="table-break">
+            </p><div class="table"><a name="d0e4919"></a><p class="title"><b>Table&nbsp;5.1.&nbsp;List of Jersey Connectors</b></p><div class="table-contents"><table summary="List of Jersey Connectors" border="1"><colgroup><col align="left" class="c1" width="33%"><col align="left" class="c2" width="33%"><col align="left" class="c3" width="34%"></colgroup><thead><tr><th align="left">Transport framework</th><th align="left">Jersey Connector implementation</th><th align="left">Maven dependency</th></tr></thead><tbody><tr><td align="left">Grizzly NIO framework</td><td align="left"><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/grizzly/connector/GrizzlyConnectorProvider.html" target="_top">GrizzlyConnectorProvider</a></td><td align="left"><code class="literal">org.glassfish.jersey.connectors:jersey-grizzly-connector</code></td></tr><tr><td align="left">Apache HTTP client</td><td align="left"><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/apache/connector/ApacheConnectorProvider.html" target="_top">ApacheConnectorProvider</a></td><td align="left"><code class="literal">org.glassfish.jersey.connectors:jersey-apache-connector</code></td></tr><tr><td align="left">Jetty HTTP client</td><td align="left"><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a></td><td align="left"><code class="literal">org.glassfish.jersey.connectors:jersey-jetty-connector</code></td></tr><tr><td align="left">Netty NIO framework</td><td align="left"><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/netty/connector/NettyConnectorProvider.html" target="_top">NettyConnectorProvider</a></td><td align="left"><code class="literal">org.glassfish.jersey.connectors:jersey-netty-connector</code></td></tr></tbody></table></div></div><p><br class="table-break">
 
             </p><div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title"><a name="connectors.warning"></a>Warning</h3><p>
                     Be aware of using other than default <code class="literal">Connector</code> implementation.
@@ -493,7 +493,7 @@ webTarget.request().post(Entity.entity(f, MediaType.TEXT_PLAIN_TYPE));
                     Resource Sharing) requests.
                 </p></div><p>
         </p><p>
-            As indicated earlier, <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a> and <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/spi/ConnectorProvider.html" target="_top">ConnectorProvider</a> contracts are Jersey-specific
+            As indicated earlier, <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a> and <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/spi/ConnectorProvider.html" target="_top">ConnectorProvider</a> contracts are Jersey-specific
             extension APIs that would only work with Jersey and as such are not part of JAX-RS. Following example shows how to
             setup the custom Grizzly Asynchronous HTTP Client based <code class="literal">ConnectorProvider</code> in a Jersey client
             instance:
@@ -511,7 +511,7 @@ Client client = ClientBuilder.newClient(clientConfig);</pre><p>
             using <code class="literal">Configurable</code><code class="literal">.register(...)</code>. Also, please note that in this API has changed
             in Jersey 2.5, where the <code class="literal">ConnectorProvider</code> SPI has been introduced in order to decouple client
             initialization from the connector instantiation. Starting with Jersey 2.5 it is therefore not possible to directly
-            register <code class="literal">Connector</code> instances in the Jersey <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a>. The new
+            register <code class="literal">Connector</code> instances in the Jersey <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a>. The new
             <code class="literal">ConnectorProvider</code> SPI must be used instead to configure a custom client-side transport connector.
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e5136"></a>5.6.&nbsp;Using client request and response filters</h2></div></div></div><p>
             Filtering requests and responses can provide useful lower-level concept focused on a certain independent aspect or
@@ -521,11 +521,11 @@ Client client = ClientBuilder.newClient(clientConfig);</pre><p>
             Jersey contains the following useful client-side filters (and features registering filters)
             that you may want to use in your applications:
 
-            </p><table border="0" summary="Simple list" class="simplelist"><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/filter/CsrfProtectionFilter.html" target="_top">CsrfProtectionFilter</a>: Cross-site request forgery protection filter (adds
-                    <code class="literal">X-Requested-By</code> to each state changing request).</td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/filter/EncodingFeature.html" target="_top">EncodingFeature</a>: Feature that registers encoding filter which use registered
-                    <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/spi/ContentEncoder.html" target="_top">ContentEncoder</a>s to encode and decode the communication. The encoding/decoding is performed
+            </p><table border="0" summary="Simple list" class="simplelist"><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/filter/CsrfProtectionFilter.html" target="_top">CsrfProtectionFilter</a>: Cross-site request forgery protection filter (adds
+                    <code class="literal">X-Requested-By</code> to each state changing request).</td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/filter/EncodingFeature.html" target="_top">EncodingFeature</a>: Feature that registers encoding filter which use registered
+                    <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/spi/ContentEncoder.html" target="_top">ContentEncoder</a>s to encode and decode the communication. The encoding/decoding is performed
                     in interceptor (you don't need to register this interceptor). Check the javadoc of the
-                    <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/filter/EncodingFeature.html" target="_top">EncodingFeature</a> in order to use it.</td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a>: HTTP Authentication Feature
+                    <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/filter/EncodingFeature.html" target="_top">EncodingFeature</a> in order to use it.</td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a>: HTTP Authentication Feature
                     (see <a class="xref" href="">???</a>
                     below).</td></tr></table><p>
 
@@ -552,11 +552,11 @@ System.out.println("Now the connection is closed.");</pre></div></div><br class=
             Injections into client providers (filters, interceptor) are possible as long as the provider is
             registered as a class. If the provider is registered as an instance then runtime will not inject
             the provider. The reason is that this provider instance might be registered into multiple client
-            configurations. For example one instance of <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a> can be registered
-            to two <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a>s.
+            configurations. For example one instance of <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a> can be registered
+            to two <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Client.html" target="_top">Client</a>s.
         </p><p>
             To solve injection of a custom type into a client provider instance
-            use <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ServiceLocatorClientProvider.html" target="_top">ServiceLocatorClientProvider</a> to
+            use <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ServiceLocatorClientProvider.html" target="_top">ServiceLocatorClientProvider</a> to
             extract <a class="link" href="https://hk2.java.net/apidocs/org/glassfish/hk2/api/ServiceLocator.html" target="_top">ServiceLocator</a> which can return the required injection. The following example shows how to utilize
             <code class="literal">ServiceLocatorClientProvider</code>:
         </p><div class="example"><a name="d0e5216"></a><p class="title"><b>Example&nbsp;5.6.&nbsp;ServiceLocatorClientProvider example</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public static class MyRequestFilter implements ClientRequestFilter {
@@ -576,11 +576,11 @@ System.out.println("Now the connection is closed.");</pre></div></div><br class=
         ...
     }
 }</pre></div></div><br class="example-break"><p>
-            For more information see javadoc of <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ServiceLocatorClientProvider.html" target="_top">ServiceLocatorClientProvider</a>
-            (and javadoc of <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/ServiceLocatorProvider.html" target="_top">ServiceLocatorProvider</a> which supports common JAX-RS components).
+            For more information see javadoc of <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/ServiceLocatorClientProvider.html" target="_top">ServiceLocatorClientProvider</a>
+            (and javadoc of <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/ServiceLocatorProvider.html" target="_top">ServiceLocatorProvider</a> which supports common JAX-RS components).
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e5229"></a>5.9.&nbsp;Securing a Client</h2></div></div></div><p>
             This section describes how to setup SSL configuration on Jersey client (using JAX-RS API). The SSL configuration is
-            setup in <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a>. The client builder contains methods for definition of <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.html" target="_top">KeyStore</a>,
+            setup in <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a>. The client builder contains methods for definition of <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.html" target="_top">KeyStore</a>,
             <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/security/TrustStore.html" target="_top">TrustStore</a> or entire <a class="link" href="http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SslContext.html" target="_top">SslContext</a>. See the following example:
 
             </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">SSLContext ssl = ... your configured SSL context;
@@ -589,11 +589,11 @@ Response response = client.target("https://example.com/resource").request().get(
 
             The example above shows how to setup a custom <code class="literal">SslContext</code> to the <code class="literal">ClientBuilder</code>.
             Creating a <code class="literal">SslContext</code> can be more difficult as you might need to init instance properly with the protocol,
-            <code class="literal">KeyStore</code>, <code class="literal">TrustStore</code>, etc. Jersey offers a utility <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/SslConfigurator.html" target="_top">SslConfigurator</a> class that
+            <code class="literal">KeyStore</code>, <code class="literal">TrustStore</code>, etc. Jersey offers a utility <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/SslConfigurator.html" target="_top">SslConfigurator</a> class that
             can be used to setup the <code class="literal">SslContext</code>. The <code class="literal">SslConfigurator</code> can be configured based on
             standardized system properties for SSL configuration, so for example you can configure the <code class="literal">KeyStore</code> file
             name using a environment variable <code class="literal">javax.net.ssl.keyStore</code> and <code class="literal">SslConfigurator</code>
-            will use such a variable to setup the <code class="literal">SslContext</code>. See javadoc of <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/SslConfigurator.html" target="_top">SslConfigurator</a> for more
+            will use such a variable to setup the <code class="literal">SslContext</code>. See javadoc of <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/SslConfigurator.html" target="_top">SslConfigurator</a> for more
             details. The following code shows how a <code class="literal">SslConfigurator</code> can be used to create a custom SSL
             context.
 
@@ -620,12 +620,12 @@ Client client = ClientBuilder.newBuilder().sslContext(sslContext).build();</pre>
                 <code class="literal">JettyConnectorProvider</code> and <code class="literal">GrizzlyConnectorProvider</code> provide only host URL verification
                 and throw a <code class="literal">CertificateException</code> without any possibility to use custom <code class="literal">HostnameVerifier</code>.
                 Moreover, in case of <code class="literal">JettyConnectorProvider</code> there is a property
-                <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/JettyClientProperties.html#ENABLE_SSL_HOSTNAME_VERIFICATION" target="_top">JettyClientProperties.ENABLE_SSL_HOSTNAME_VERIFICATION</a> to disable an entire host URL verification
+                <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/JettyClientProperties.html#ENABLE_SSL_HOSTNAME_VERIFICATION" target="_top">JettyClientProperties.ENABLE_SSL_HOSTNAME_VERIFICATION</a> to disable an entire host URL verification
                 mechanism in a handshake.
             </p></div><div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Important</h3><p>
                 Note that to utilize HTTP with SSL it is necessary to utilize the <code class="literal">&#8220;https&#8221;</code> scheme.
             </p></div><p>
-            Currently the default connector provider <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a> provides connectors based on
+            Currently the default connector provider <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a> provides connectors based on
             <code class="literal">HttpUrlConnection</code> which implement support for SSL defined by JAX-RS configuration discussed in this
             example.
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e5376"></a>5.9.1.&nbsp;Http Authentication Support</h3></div></div></div><p>Jersey supports Basic and Digest HTTP Authentication.</p><div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Important</h3><p>
@@ -634,10 +634,10 @@ Client client = ClientBuilder.newBuilder().sslContext(sslContext).build();</pre>
                     and <code class="literal">org.glassfish.jersey.client.filter.HttpDigestAuthFilter</code>. Since Jersey
                     2.5 these filters are deprecated (and removed in 2.6) and both authentication methods
                     are provided by single <code class="literal">Feature</code>
-                    <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a>.
+                    <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a>.
                 </p></div><p>
                 In order to enable http authentication support in Jersey client register
-                the <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a>. This feature can provide both authentication methods, digest
+                the <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a>. This feature can provide both authentication methods, digest
                 and basic. Feature can work in the following modes:
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
                         <span class="emphasis"><em>BASIC:</em></span> Basic preemptive authentication. In preemptive mode the authentication information
@@ -676,15 +676,15 @@ Client client = ClientBuilder.newBuilder().sslContext(sslContext).build();</pre>
     .property(HTTP_AUTHENTICATION_BASIC_PASSWORD, "p1swd745").get();</pre><p>
                 This allows you to reuse the same client for authenticating with many different credentials.
             </p><p>
-                See javadoc of the <a class="link" href="https://jersey.java.net/apidocs/2.23.2/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a> for more details.
-            </p></div></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+                See javadoc of the <a class="link" href="https://jersey.github.io/apidocs/2.23.2/jersey/org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.html" target="_top">HttpAuthenticationFeature</a> for more details.
+            </p></div></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

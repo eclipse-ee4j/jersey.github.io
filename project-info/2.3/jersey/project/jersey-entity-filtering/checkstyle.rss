@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-ext-entity-filtering - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-entity-filtering/</link>
+    <link>https://jersey.github.io/project/jersey-entity-filtering/</link>
     <description>jersey-ext-entity-filtering - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.FilteringHelper.java">org/glassfish/jersey/message/filtering/spi/FilteringHelper.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.FilteringHelper.java">org/glassfish/jersey/message/filtering/spi/FilteringHelper.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringScopeResolver.java">org/glassfish/jersey/message/filtering/EntityFilteringScopeResolver.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringScopeResolver.java">org/glassfish/jersey/message/filtering/EntityFilteringScopeResolver.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.AbstractObjectProvider.java">org/glassfish/jersey/message/filtering/spi/AbstractObjectProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.AbstractObjectProvider.java">org/glassfish/jersey/message/filtering/spi/AbstractObjectProvider.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityHelper.java">org/glassfish/jersey/message/filtering/SecurityHelper.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityHelper.java">org/glassfish/jersey/message/filtering/SecurityHelper.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.ServerScopeProvider.java">org/glassfish/jersey/message/filtering/ServerScopeProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.ServerScopeProvider.java">org/glassfish/jersey/message/filtering/ServerScopeProvider.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityProcessor.java">org/glassfish/jersey/message/filtering/spi/EntityProcessor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityProcessor.java">org/glassfish/jersey/message/filtering/spi/EntityProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityInspector.java">org/glassfish/jersey/message/filtering/spi/EntityInspector.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityInspector.java">org/glassfish/jersey/message/filtering/spi/EntityInspector.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringBinder.java">org/glassfish/jersey/message/filtering/EntityFilteringBinder.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringBinder.java">org/glassfish/jersey/message/filtering/EntityFilteringBinder.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringFeature.java">org/glassfish/jersey/message/filtering/EntityFilteringFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringFeature.java">org/glassfish/jersey/message/filtering/EntityFilteringFeature.java</a>
                 </td>
                 <td>
                   0
@@ -155,7 +155,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ObjectGraphTransformer.java">org/glassfish/jersey/message/filtering/spi/ObjectGraphTransformer.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ObjectGraphTransformer.java">org/glassfish/jersey/message/filtering/spi/ObjectGraphTransformer.java</a>
                 </td>
                 <td>
                   0
@@ -169,7 +169,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityEntityFilteringFeature.java">org/glassfish/jersey/message/filtering/SecurityEntityFilteringFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityEntityFilteringFeature.java">org/glassfish/jersey/message/filtering/SecurityEntityFilteringFeature.java</a>
                 </td>
                 <td>
                   0
@@ -183,7 +183,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityGraphProvider.java">org/glassfish/jersey/message/filtering/spi/EntityGraphProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityGraphProvider.java">org/glassfish/jersey/message/filtering/spi/EntityGraphProvider.java</a>
                 </td>
                 <td>
                   0
@@ -197,7 +197,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityProcessorContext.java">org/glassfish/jersey/message/filtering/spi/EntityProcessorContext.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityProcessorContext.java">org/glassfish/jersey/message/filtering/spi/EntityProcessorContext.java</a>
                 </td>
                 <td>
                   0
@@ -211,7 +211,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFiltering.java">org/glassfish/jersey/message/filtering/EntityFiltering.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFiltering.java">org/glassfish/jersey/message/filtering/EntityFiltering.java</a>
                 </td>
                 <td>
                   0
@@ -225,7 +225,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringProcessor.java">org/glassfish/jersey/message/filtering/EntityFilteringProcessor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringProcessor.java">org/glassfish/jersey/message/filtering/EntityFilteringProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -239,7 +239,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ScopeResolver.java">org/glassfish/jersey/message/filtering/spi/ScopeResolver.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ScopeResolver.java">org/glassfish/jersey/message/filtering/spi/ScopeResolver.java</a>
                 </td>
                 <td>
                   0
@@ -253,7 +253,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.CommonScopeProvider.java">org/glassfish/jersey/message/filtering/CommonScopeProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.CommonScopeProvider.java">org/glassfish/jersey/message/filtering/CommonScopeProvider.java</a>
                 </td>
                 <td>
                   0
@@ -267,7 +267,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.ObjectGraphProvider.java">org/glassfish/jersey/message/filtering/ObjectGraphProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.ObjectGraphProvider.java">org/glassfish/jersey/message/filtering/ObjectGraphProvider.java</a>
                 </td>
                 <td>
                   0
@@ -281,7 +281,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityAnnotations.java">org/glassfish/jersey/message/filtering/SecurityAnnotations.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityAnnotations.java">org/glassfish/jersey/message/filtering/SecurityAnnotations.java</a>
                 </td>
                 <td>
                   0
@@ -295,7 +295,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.ObjectGraphImpl.java">org/glassfish/jersey/message/filtering/ObjectGraphImpl.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.ObjectGraphImpl.java">org/glassfish/jersey/message/filtering/ObjectGraphImpl.java</a>
                 </td>
                 <td>
                   0
@@ -309,7 +309,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EmptyEntityGraphImpl.java">org/glassfish/jersey/message/filtering/EmptyEntityGraphImpl.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EmptyEntityGraphImpl.java">org/glassfish/jersey/message/filtering/EmptyEntityGraphImpl.java</a>
                 </td>
                 <td>
                   0
@@ -323,7 +323,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityScopeResolver.java">org/glassfish/jersey/message/filtering/SecurityScopeResolver.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityScopeResolver.java">org/glassfish/jersey/message/filtering/SecurityScopeResolver.java</a>
                 </td>
                 <td>
                   0
@@ -337,7 +337,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ScopeProvider.java">org/glassfish/jersey/message/filtering/spi/ScopeProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ScopeProvider.java">org/glassfish/jersey/message/filtering/spi/ScopeProvider.java</a>
                 </td>
                 <td>
                   0
@@ -351,7 +351,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityEntityProcessor.java">org/glassfish/jersey/message/filtering/SecurityEntityProcessor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityEntityProcessor.java">org/glassfish/jersey/message/filtering/SecurityEntityProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -365,7 +365,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringHelper.java">org/glassfish/jersey/message/filtering/EntityFilteringHelper.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityFilteringHelper.java">org/glassfish/jersey/message/filtering/EntityFilteringHelper.java</a>
                 </td>
                 <td>
                   0
@@ -379,7 +379,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityInspectorImpl.java">org/glassfish/jersey/message/filtering/EntityInspectorImpl.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityInspectorImpl.java">org/glassfish/jersey/message/filtering/EntityInspectorImpl.java</a>
                 </td>
                 <td>
                   0
@@ -393,7 +393,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityProcessorContextImpl.java">org/glassfish/jersey/message/filtering/EntityProcessorContextImpl.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityProcessorContextImpl.java">org/glassfish/jersey/message/filtering/EntityProcessorContextImpl.java</a>
                 </td>
                 <td>
                   0
@@ -407,7 +407,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.AbstractEntityProcessor.java">org/glassfish/jersey/message/filtering/spi/AbstractEntityProcessor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.AbstractEntityProcessor.java">org/glassfish/jersey/message/filtering/spi/AbstractEntityProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -421,7 +421,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityServerScopeProvider.java">org/glassfish/jersey/message/filtering/SecurityServerScopeProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityServerScopeProvider.java">org/glassfish/jersey/message/filtering/SecurityServerScopeProvider.java</a>
                 </td>
                 <td>
                   0
@@ -435,7 +435,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.DefaultEntityProcessor.java">org/glassfish/jersey/message/filtering/DefaultEntityProcessor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.DefaultEntityProcessor.java">org/glassfish/jersey/message/filtering/DefaultEntityProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -449,7 +449,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ObjectGraph.java">org/glassfish/jersey/message/filtering/spi/ObjectGraph.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ObjectGraph.java">org/glassfish/jersey/message/filtering/spi/ObjectGraph.java</a>
                 </td>
                 <td>
                   0
@@ -463,7 +463,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.package-info.java">org/glassfish/jersey/message/filtering/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.package-info.java">org/glassfish/jersey/message/filtering/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -477,7 +477,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityServerScopeResolver.java">org/glassfish/jersey/message/filtering/SecurityServerScopeResolver.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.SecurityServerScopeResolver.java">org/glassfish/jersey/message/filtering/SecurityServerScopeResolver.java</a>
                 </td>
                 <td>
                   0
@@ -491,7 +491,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ObjectProvider.java">org/glassfish/jersey/message/filtering/spi/ObjectProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.ObjectProvider.java">org/glassfish/jersey/message/filtering/spi/ObjectProvider.java</a>
                 </td>
                 <td>
                   0
@@ -505,7 +505,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityGraphProviderImpl.java">org/glassfish/jersey/message/filtering/EntityGraphProviderImpl.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityGraphProviderImpl.java">org/glassfish/jersey/message/filtering/EntityGraphProviderImpl.java</a>
                 </td>
                 <td>
                   0
@@ -519,7 +519,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.package-info.java">org/glassfish/jersey/message/filtering/spi/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.package-info.java">org/glassfish/jersey/message/filtering/spi/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -533,7 +533,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityGraph.java">org/glassfish/jersey/message/filtering/spi/EntityGraph.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.spi.EntityGraph.java">org/glassfish/jersey/message/filtering/spi/EntityGraph.java</a>
                 </td>
                 <td>
                   0
@@ -547,7 +547,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityGraphImpl.java">org/glassfish/jersey/message/filtering/EntityGraphImpl.java</a>
+                  <a href="https://jersey.github.io/project/jersey-entity-filtering//checkstyle.html#org.glassfish.jersey.message.filtering.EntityGraphImpl.java">org/glassfish/jersey/message/filtering/EntityGraphImpl.java</a>
                 </td>
                 <td>
                   0

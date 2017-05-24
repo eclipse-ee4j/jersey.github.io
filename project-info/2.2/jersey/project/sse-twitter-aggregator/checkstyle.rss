@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-examples-sse-twitter-aggregator - Checkstyle report</title>
-    <link>https://jersey.java.net/project/sse-twitter-aggregator/</link>
+    <link>https://jersey.github.io/project/sse-twitter-aggregator/</link>
     <description>jersey-examples-sse-twitter-aggregator - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/sse-twitter-aggregator//checkstyle.html</link>
+            <link>https://jersey.github.io/project/sse-twitter-aggregator//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/sse-twitter-aggregator//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/sse-twitter-aggregator//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.App.java">org/glassfish/jersey/examples/aggregator/App.java</a>
+                  <a href="https://jersey.github.io/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.App.java">org/glassfish/jersey/examples/aggregator/App.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.MessageStreamResource.java">org/glassfish/jersey/examples/aggregator/MessageStreamResource.java</a>
+                  <a href="https://jersey.github.io/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.MessageStreamResource.java">org/glassfish/jersey/examples/aggregator/MessageStreamResource.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.TwitterAggregator.java">org/glassfish/jersey/examples/aggregator/TwitterAggregator.java</a>
+                  <a href="https://jersey.github.io/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.TwitterAggregator.java">org/glassfish/jersey/examples/aggregator/TwitterAggregator.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.DataAggregator.java">org/glassfish/jersey/examples/aggregator/DataAggregator.java</a>
+                  <a href="https://jersey.github.io/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.DataAggregator.java">org/glassfish/jersey/examples/aggregator/DataAggregator.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.Message.java">org/glassfish/jersey/examples/aggregator/Message.java</a>
+                  <a href="https://jersey.github.io/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.Message.java">org/glassfish/jersey/examples/aggregator/Message.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.DataListener.java">org/glassfish/jersey/examples/aggregator/DataListener.java</a>
+                  <a href="https://jersey.github.io/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.DataListener.java">org/glassfish/jersey/examples/aggregator/DataListener.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.RemoveSelectedListItemsAction.java">org/glassfish/jersey/examples/aggregator/RemoveSelectedListItemsAction.java</a>
+                  <a href="https://jersey.github.io/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.RemoveSelectedListItemsAction.java">org/glassfish/jersey/examples/aggregator/RemoveSelectedListItemsAction.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.TestAggregator.java">org/glassfish/jersey/examples/aggregator/TestAggregator.java</a>
+                  <a href="https://jersey.github.io/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.TestAggregator.java">org/glassfish/jersey/examples/aggregator/TestAggregator.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.MainWindow.java">org/glassfish/jersey/examples/aggregator/MainWindow.java</a>
+                  <a href="https://jersey.github.io/project/sse-twitter-aggregator//checkstyle.html#org.glassfish.jersey.examples.aggregator.MainWindow.java">org/glassfish/jersey/examples/aggregator/MainWindow.java</a>
                 </td>
                 <td>
                   0

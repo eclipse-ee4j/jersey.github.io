@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>custom-parametrized-test - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/test-cases/mbw-parametrized-test/</link>
+    <link>https://jersey.github.io/project/project/test-cases/mbw-parametrized-test/</link>
     <description>custom-parametrized-test - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/test-cases/mbw-parametrized-test//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/test-cases/mbw-parametrized-test//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/test-cases/mbw-parametrized-test//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/test-cases/mbw-parametrized-test//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/test-cases/mbw-parametrized-test//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.parametrized.Person.java">org/glassfish/jersey/tests/performance/mbw/parametrized/Person.java</a>
+                  <a href="https://jersey.github.io/project/project/test-cases/mbw-parametrized-test//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.parametrized.Person.java">org/glassfish/jersey/tests/performance/mbw/parametrized/Person.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/test-cases/mbw-parametrized-test//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.parametrized.PersonProvider.java">org/glassfish/jersey/tests/performance/mbw/parametrized/PersonProvider.java</a>
+                  <a href="https://jersey.github.io/project/project/test-cases/mbw-parametrized-test//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.parametrized.PersonProvider.java">org/glassfish/jersey/tests/performance/mbw/parametrized/PersonProvider.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/test-cases/mbw-parametrized-test//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.parametrized.Config.java">org/glassfish/jersey/tests/performance/mbw/parametrized/Config.java</a>
+                  <a href="https://jersey.github.io/project/project/test-cases/mbw-parametrized-test//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.parametrized.Config.java">org/glassfish/jersey/tests/performance/mbw/parametrized/Config.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/test-cases/mbw-parametrized-test//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.parametrized.JerseyApp.java">org/glassfish/jersey/tests/performance/mbw/parametrized/JerseyApp.java</a>
+                  <a href="https://jersey.github.io/project/project/test-cases/mbw-parametrized-test//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.parametrized.JerseyApp.java">org/glassfish/jersey/tests/performance/mbw/parametrized/JerseyApp.java</a>
                 </td>
                 <td>
                   0

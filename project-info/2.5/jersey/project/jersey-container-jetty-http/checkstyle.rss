@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-container-jetty-http - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-container-jetty-http/</link>
+    <link>https://jersey.github.io/project/jersey-container-jetty-http/</link>
     <description>jersey-container-jetty-http - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-container-jetty-http//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-container-jetty-http//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-container-jetty-http//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-container-jetty-http//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-jetty-http//checkstyle.html#org.glassfish.jersey.jetty.package-info.java">org/glassfish/jersey/jetty/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-jetty-http//checkstyle.html#org.glassfish.jersey.jetty.package-info.java">org/glassfish/jersey/jetty/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-jetty-http//checkstyle.html#org.glassfish.jersey.jetty.JettyHttpContainerProvider.java">org/glassfish/jersey/jetty/JettyHttpContainerProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-jetty-http//checkstyle.html#org.glassfish.jersey.jetty.JettyHttpContainerProvider.java">org/glassfish/jersey/jetty/JettyHttpContainerProvider.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-jetty-http//checkstyle.html#org.glassfish.jersey.jetty.JettyHttpContainer.java">org/glassfish/jersey/jetty/JettyHttpContainer.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-jetty-http//checkstyle.html#org.glassfish.jersey.jetty.JettyHttpContainer.java">org/glassfish/jersey/jetty/JettyHttpContainer.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-jetty-http//checkstyle.html#org.glassfish.jersey.jetty.JettyHttpContainerFactory.java">org/glassfish/jersey/jetty/JettyHttpContainerFactory.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-jetty-http//checkstyle.html#org.glassfish.jersey.jetty.JettyHttpContainerFactory.java">org/glassfish/jersey/jetty/JettyHttpContainerFactory.java</a>
                 </td>
                 <td>
                   0

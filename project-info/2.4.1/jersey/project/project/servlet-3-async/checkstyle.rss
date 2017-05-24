@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-tests-integration-servlet-3-async - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/servlet-3-async/</link>
+    <link>https://jersey.github.io/project/project/servlet-3-async/</link>
     <description>jersey-tests-integration-servlet-3-async - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/servlet-3-async//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/servlet-3-async//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/servlet-3-async//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/servlet-3-async//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-async//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_async.AsyncTimeoutResource.java">org/glassfish/jersey/tests/integration/servlet_3_async/AsyncTimeoutResource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-async//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_async.AsyncTimeoutResource.java">org/glassfish/jersey/tests/integration/servlet_3_async/AsyncTimeoutResource.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-async//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_async.AsyncServletResource.java">org/glassfish/jersey/tests/integration/servlet_3_async/AsyncServletResource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-async//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_async.AsyncServletResource.java">org/glassfish/jersey/tests/integration/servlet_3_async/AsyncServletResource.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-async//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_async.Servlet3Async.java">org/glassfish/jersey/tests/integration/servlet_3_async/Servlet3Async.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-async//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_async.Servlet3Async.java">org/glassfish/jersey/tests/integration/servlet_3_async/Servlet3Async.java</a>
                 </td>
                 <td>
                   0

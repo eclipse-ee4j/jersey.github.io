@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-examples-declarative-linking - Checkstyle report</title>
-    <link>https://jersey.java.net/project/declarative-linking/</link>
+    <link>https://jersey.github.io/project/declarative-linking/</link>
     <description>jersey-examples-declarative-linking - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/declarative-linking//checkstyle.html</link>
+            <link>https://jersey.github.io/project/declarative-linking//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/declarative-linking//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/declarative-linking//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/declarative-linking//checkstyle.html#org.glassfish.jersey.samples.linking.model.ItemsModel.java">org/glassfish/jersey/samples/linking/model/ItemsModel.java</a>
+                  <a href="https://jersey.github.io/project/declarative-linking//checkstyle.html#org.glassfish.jersey.samples.linking.model.ItemsModel.java">org/glassfish/jersey/samples/linking/model/ItemsModel.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/declarative-linking//checkstyle.html#org.glassfish.jersey.samples.linking.model.ItemModel.java">org/glassfish/jersey/samples/linking/model/ItemModel.java</a>
+                  <a href="https://jersey.github.io/project/declarative-linking//checkstyle.html#org.glassfish.jersey.samples.linking.model.ItemModel.java">org/glassfish/jersey/samples/linking/model/ItemModel.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/declarative-linking//checkstyle.html#org.glassfish.jersey.samples.linking.App.java">org/glassfish/jersey/samples/linking/App.java</a>
+                  <a href="https://jersey.github.io/project/declarative-linking//checkstyle.html#org.glassfish.jersey.samples.linking.App.java">org/glassfish/jersey/samples/linking/App.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/declarative-linking//checkstyle.html#org.glassfish.jersey.samples.linking.resources.ItemResource.java">org/glassfish/jersey/samples/linking/resources/ItemResource.java</a>
+                  <a href="https://jersey.github.io/project/declarative-linking//checkstyle.html#org.glassfish.jersey.samples.linking.resources.ItemResource.java">org/glassfish/jersey/samples/linking/resources/ItemResource.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/declarative-linking//checkstyle.html#org.glassfish.jersey.samples.linking.representation.ItemRepresentation.java">org/glassfish/jersey/samples/linking/representation/ItemRepresentation.java</a>
+                  <a href="https://jersey.github.io/project/declarative-linking//checkstyle.html#org.glassfish.jersey.samples.linking.representation.ItemRepresentation.java">org/glassfish/jersey/samples/linking/representation/ItemRepresentation.java</a>
                 </td>
                 <td>
                   0

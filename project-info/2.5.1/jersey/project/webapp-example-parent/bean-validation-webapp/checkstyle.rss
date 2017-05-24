@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-examples-bean-validation-webapp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/webapp-example-parent/bean-validation-webapp/</link>
+    <link>https://jersey.github.io/project/webapp-example-parent/bean-validation-webapp/</link>
     <description>jersey-examples-bean-validation-webapp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/webapp-example-parent/bean-validation-webapp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/webapp-example-parent/bean-validation-webapp//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/webapp-example-parent/bean-validation-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/webapp-example-parent/bean-validation-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.resource.SearchResource.java">org/glassfish/jersey/examples/beanvalidation/webapp/resource/SearchResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.resource.SearchResource.java">org/glassfish/jersey/examples/beanvalidation/webapp/resource/SearchResource.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.constraint.NotEmptySearchField.java">org/glassfish/jersey/examples/beanvalidation/webapp/constraint/NotEmptySearchField.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.constraint.NotEmptySearchField.java">org/glassfish/jersey/examples/beanvalidation/webapp/constraint/NotEmptySearchField.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.service.StorageService.java">org/glassfish/jersey/examples/beanvalidation/webapp/service/StorageService.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.service.StorageService.java">org/glassfish/jersey/examples/beanvalidation/webapp/service/StorageService.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.MyApplication.java">org/glassfish/jersey/examples/beanvalidation/webapp/MyApplication.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.MyApplication.java">org/glassfish/jersey/examples/beanvalidation/webapp/MyApplication.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.constraint.HasId.java">org/glassfish/jersey/examples/beanvalidation/webapp/constraint/HasId.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.constraint.HasId.java">org/glassfish/jersey/examples/beanvalidation/webapp/constraint/HasId.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.constraint.AtLeastOneContact.java">org/glassfish/jersey/examples/beanvalidation/webapp/constraint/AtLeastOneContact.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.constraint.AtLeastOneContact.java">org/glassfish/jersey/examples/beanvalidation/webapp/constraint/AtLeastOneContact.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.domain.ContactCard.java">org/glassfish/jersey/examples/beanvalidation/webapp/domain/ContactCard.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.domain.ContactCard.java">org/glassfish/jersey/examples/beanvalidation/webapp/domain/ContactCard.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.constraint.SearchType.java">org/glassfish/jersey/examples/beanvalidation/webapp/constraint/SearchType.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.constraint.SearchType.java">org/glassfish/jersey/examples/beanvalidation/webapp/constraint/SearchType.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.resource.ContactCardResource.java">org/glassfish/jersey/examples/beanvalidation/webapp/resource/ContactCardResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bean-validation-webapp//checkstyle.html#org.glassfish.jersey.examples.beanvalidation.webapp.resource.ContactCardResource.java">org/glassfish/jersey/examples/beanvalidation/webapp/resource/ContactCardResource.java</a>
                 </td>
                 <td>
                   0

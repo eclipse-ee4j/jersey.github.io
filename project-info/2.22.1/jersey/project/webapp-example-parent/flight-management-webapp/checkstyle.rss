@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-examples-flight-management-webapp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/webapp-example-parent/flight-management-webapp/</link>
+    <link>https://jersey.github.io/project/webapp-example-parent/flight-management-webapp/</link>
     <description>jersey-examples-flight-management-webapp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.internal.DataStore.java">org/glassfish/jersey/examples/flight/internal/DataStore.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.internal.DataStore.java">org/glassfish/jersey/examples/flight/internal/DataStore.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.FlightDemoApp.java">org/glassfish/jersey/examples/flight/FlightDemoApp.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.FlightDemoApp.java">org/glassfish/jersey/examples/flight/FlightDemoApp.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.validation.ValidAircraftId.java">org/glassfish/jersey/examples/flight/validation/ValidAircraftId.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.validation.ValidAircraftId.java">org/glassfish/jersey/examples/flight/validation/ValidAircraftId.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.model.Aircraft.java">org/glassfish/jersey/examples/flight/model/Aircraft.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.model.Aircraft.java">org/glassfish/jersey/examples/flight/model/Aircraft.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.model.Flight.java">org/glassfish/jersey/examples/flight/model/Flight.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.model.Flight.java">org/glassfish/jersey/examples/flight/model/Flight.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.resources.FlightSimResource.java">org/glassfish/jersey/examples/flight/resources/FlightSimResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.resources.FlightSimResource.java">org/glassfish/jersey/examples/flight/resources/FlightSimResource.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.model.Location.java">org/glassfish/jersey/examples/flight/model/Location.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.model.Location.java">org/glassfish/jersey/examples/flight/model/Location.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#ValidationMessages.properties">ValidationMessages.properties</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#ValidationMessages.properties">ValidationMessages.properties</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.filtering.Detail.java">org/glassfish/jersey/examples/flight/filtering/Detail.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.filtering.Detail.java">org/glassfish/jersey/examples/flight/filtering/Detail.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.providers.ContainerAuthFilter.java">org/glassfish/jersey/examples/flight/providers/ContainerAuthFilter.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.providers.ContainerAuthFilter.java">org/glassfish/jersey/examples/flight/providers/ContainerAuthFilter.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.internal.SimEngine.java">org/glassfish/jersey/examples/flight/internal/SimEngine.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.internal.SimEngine.java">org/glassfish/jersey/examples/flight/internal/SimEngine.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.model.FlightLocation.java">org/glassfish/jersey/examples/flight/model/FlightLocation.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.model.FlightLocation.java">org/glassfish/jersey/examples/flight/model/FlightLocation.java</a>
                 </td>
                 <td>
                   0
@@ -214,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.resources.AircraftsResource.java">org/glassfish/jersey/examples/flight/resources/AircraftsResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.resources.AircraftsResource.java">org/glassfish/jersey/examples/flight/resources/AircraftsResource.java</a>
                 </td>
                 <td>
                   0
@@ -228,7 +228,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.model.AircraftType.java">org/glassfish/jersey/examples/flight/model/AircraftType.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.model.AircraftType.java">org/glassfish/jersey/examples/flight/model/AircraftType.java</a>
                 </td>
                 <td>
                   0
@@ -242,7 +242,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.resources.FlightsResource.java">org/glassfish/jersey/examples/flight/resources/FlightsResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.resources.FlightsResource.java">org/glassfish/jersey/examples/flight/resources/FlightsResource.java</a>
                 </td>
                 <td>
                   0
@@ -256,7 +256,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.validation.ValidFlightId.java">org/glassfish/jersey/examples/flight/validation/ValidFlightId.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/flight-management-webapp//checkstyle.html#org.glassfish.jersey.examples.flight.validation.ValidFlightId.java">org/glassfish/jersey/examples/flight/validation/ValidFlightId.java</a>
                 </td>
                 <td>
                   0

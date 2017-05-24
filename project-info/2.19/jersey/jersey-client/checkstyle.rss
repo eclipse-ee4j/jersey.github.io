@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-core-client - Checkstyle report</title>
-    <link>https://jersey.java.net/jersey-client/</link>
+    <link>https://jersey.github.io/jersey-client/</link>
     <description>jersey-core-client - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/jersey-client//checkstyle.html</link>
+            <link>https://jersey.github.io/jersey-client//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/jersey-client//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/jersey-client//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.DefaultClientAsyncExecutorProvider.java">org/glassfish/jersey/client/DefaultClientAsyncExecutorProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.DefaultClientAsyncExecutorProvider.java">org/glassfish/jersey/client/DefaultClientAsyncExecutorProvider.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ChunkedInputReader.java">org/glassfish/jersey/client/ChunkedInputReader.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ChunkedInputReader.java">org/glassfish/jersey/client/ChunkedInputReader.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientBinder.java">org/glassfish/jersey/client/ClientBinder.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientBinder.java">org/glassfish/jersey/client/ClientBinder.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.JerseyClientBuilder.java">org/glassfish/jersey/client/JerseyClientBuilder.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.JerseyClientBuilder.java">org/glassfish/jersey/client/JerseyClientBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.HttpUrlConnectorProvider.java">org/glassfish/jersey/client/HttpUrlConnectorProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.HttpUrlConnectorProvider.java">org/glassfish/jersey/client/HttpUrlConnectorProvider.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.EncodingFeature.java">org/glassfish/jersey/client/filter/EncodingFeature.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.EncodingFeature.java">org/glassfish/jersey/client/filter/EncodingFeature.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientResponse.java">org/glassfish/jersey/client/ClientResponse.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientResponse.java">org/glassfish/jersey/client/ClientResponse.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.authentication.BasicAuthenticator.java">org/glassfish/jersey/client/authentication/BasicAuthenticator.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.authentication.BasicAuthenticator.java">org/glassfish/jersey/client/authentication/BasicAuthenticator.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.package-info.java">org/glassfish/jersey/client/filter/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.package-info.java">org/glassfish/jersey/client/filter/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.HttpUrlConnector.java">org/glassfish/jersey/client/HttpUrlConnector.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.HttpUrlConnector.java">org/glassfish/jersey/client/HttpUrlConnector.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientAsyncExecutorLiteral.java">org/glassfish/jersey/client/ClientAsyncExecutorLiteral.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientAsyncExecutorLiteral.java">org/glassfish/jersey/client/ClientAsyncExecutorLiteral.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.Initializable.java">org/glassfish/jersey/client/Initializable.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.Initializable.java">org/glassfish/jersey/client/Initializable.java</a>
                 </td>
                 <td>
                   0
@@ -214,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.spi.ConnectorProvider.java">org/glassfish/jersey/client/spi/ConnectorProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.spi.ConnectorProvider.java">org/glassfish/jersey/client/spi/ConnectorProvider.java</a>
                 </td>
                 <td>
                   0
@@ -228,7 +228,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.internal.localization.properties">org/glassfish/jersey/client/internal/localization.properties</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.internal.localization.properties">org/glassfish/jersey/client/internal/localization.properties</a>
                 </td>
                 <td>
                   0
@@ -242,7 +242,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.JerseyWebTarget.java">org/glassfish/jersey/client/JerseyWebTarget.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.JerseyWebTarget.java">org/glassfish/jersey/client/JerseyWebTarget.java</a>
                 </td>
                 <td>
                   0
@@ -256,7 +256,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.JerseyClient.java">org/glassfish/jersey/client/JerseyClient.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.JerseyClient.java">org/glassfish/jersey/client/JerseyClient.java</a>
                 </td>
                 <td>
                   0
@@ -270,7 +270,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.spi.CachingConnectorProvider.java">org/glassfish/jersey/client/spi/CachingConnectorProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.spi.CachingConnectorProvider.java">org/glassfish/jersey/client/spi/CachingConnectorProvider.java</a>
                 </td>
                 <td>
                   0
@@ -284,7 +284,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientAsyncExecutor.java">org/glassfish/jersey/client/ClientAsyncExecutor.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientAsyncExecutor.java">org/glassfish/jersey/client/ClientAsyncExecutor.java</a>
                 </td>
                 <td>
                   0
@@ -298,7 +298,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.JerseyInvocation.java">org/glassfish/jersey/client/JerseyInvocation.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.JerseyInvocation.java">org/glassfish/jersey/client/JerseyInvocation.java</a>
                 </td>
                 <td>
                   0
@@ -312,7 +312,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.authentication.DigestAuthenticator.java">org/glassfish/jersey/client/authentication/DigestAuthenticator.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.authentication.DigestAuthenticator.java">org/glassfish/jersey/client/authentication/DigestAuthenticator.java</a>
                 </td>
                 <td>
                   0
@@ -326,7 +326,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.package-info.java">org/glassfish/jersey/client/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.package-info.java">org/glassfish/jersey/client/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -340,7 +340,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientRequest.java">org/glassfish/jersey/client/ClientRequest.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientRequest.java">org/glassfish/jersey/client/ClientRequest.java</a>
                 </td>
                 <td>
                   0
@@ -354,7 +354,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.AbortException.java">org/glassfish/jersey/client/AbortException.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.AbortException.java">org/glassfish/jersey/client/AbortException.java</a>
                 </td>
                 <td>
                   0
@@ -368,7 +368,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.authentication.HttpAuthenticationFilter.java">org/glassfish/jersey/client/authentication/HttpAuthenticationFilter.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.authentication.HttpAuthenticationFilter.java">org/glassfish/jersey/client/authentication/HttpAuthenticationFilter.java</a>
                 </td>
                 <td>
                   0
@@ -382,7 +382,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ResponseCallback.java">org/glassfish/jersey/client/ResponseCallback.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ResponseCallback.java">org/glassfish/jersey/client/ResponseCallback.java</a>
                 </td>
                 <td>
                   0
@@ -396,7 +396,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientFilteringStages.java">org/glassfish/jersey/client/ClientFilteringStages.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientFilteringStages.java">org/glassfish/jersey/client/ClientFilteringStages.java</a>
                 </td>
                 <td>
                   0
@@ -410,7 +410,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ChunkParser.java">org/glassfish/jersey/client/ChunkParser.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ChunkParser.java">org/glassfish/jersey/client/ChunkParser.java</a>
                 </td>
                 <td>
                   0
@@ -424,7 +424,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.authentication.package-info.java">org/glassfish/jersey/client/authentication/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.authentication.package-info.java">org/glassfish/jersey/client/authentication/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -438,7 +438,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.authentication.HttpAuthenticationFeature.java">org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.authentication.HttpAuthenticationFeature.java">org/glassfish/jersey/client/authentication/HttpAuthenticationFeature.java</a>
                 </td>
                 <td>
                   0
@@ -452,7 +452,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ServiceLocatorClientProvider.java">org/glassfish/jersey/client/ServiceLocatorClientProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ServiceLocatorClientProvider.java">org/glassfish/jersey/client/ServiceLocatorClientProvider.java</a>
                 </td>
                 <td>
                   0
@@ -466,7 +466,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.EncodingFilter.java">org/glassfish/jersey/client/filter/EncodingFilter.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.EncodingFilter.java">org/glassfish/jersey/client/filter/EncodingFilter.java</a>
                 </td>
                 <td>
                   0
@@ -480,7 +480,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientLifecycleListener.java">org/glassfish/jersey/client/ClientLifecycleListener.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientLifecycleListener.java">org/glassfish/jersey/client/ClientLifecycleListener.java</a>
                 </td>
                 <td>
                   0
@@ -494,7 +494,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientRuntime.java">org/glassfish/jersey/client/ClientRuntime.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientRuntime.java">org/glassfish/jersey/client/ClientRuntime.java</a>
                 </td>
                 <td>
                   0
@@ -508,7 +508,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.RequestEntityProcessing.java">org/glassfish/jersey/client/RequestEntityProcessing.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.RequestEntityProcessing.java">org/glassfish/jersey/client/RequestEntityProcessing.java</a>
                 </td>
                 <td>
                   0
@@ -522,7 +522,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.spi.Connector.java">org/glassfish/jersey/client/spi/Connector.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.spi.Connector.java">org/glassfish/jersey/client/spi/Connector.java</a>
                 </td>
                 <td>
                   0
@@ -536,7 +536,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientConfig.java">org/glassfish/jersey/client/ClientConfig.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientConfig.java">org/glassfish/jersey/client/ClientConfig.java</a>
                 </td>
                 <td>
                   0
@@ -550,7 +550,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.spi.package-info.java">org/glassfish/jersey/client/spi/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.spi.package-info.java">org/glassfish/jersey/client/spi/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -564,7 +564,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.InboundJaxrsResponse.java">org/glassfish/jersey/client/InboundJaxrsResponse.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.InboundJaxrsResponse.java">org/glassfish/jersey/client/InboundJaxrsResponse.java</a>
                 </td>
                 <td>
                   0
@@ -578,7 +578,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.CsrfProtectionFilter.java">org/glassfish/jersey/client/filter/CsrfProtectionFilter.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.filter.CsrfProtectionFilter.java">org/glassfish/jersey/client/filter/CsrfProtectionFilter.java</a>
                 </td>
                 <td>
                   0
@@ -592,7 +592,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.CustomProvidersFeature.java">org/glassfish/jersey/client/CustomProvidersFeature.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.CustomProvidersFeature.java">org/glassfish/jersey/client/CustomProvidersFeature.java</a>
                 </td>
                 <td>
                   0
@@ -606,7 +606,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.RequestProcessingInitializationStage.java">org/glassfish/jersey/client/RequestProcessingInitializationStage.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.RequestProcessingInitializationStage.java">org/glassfish/jersey/client/RequestProcessingInitializationStage.java</a>
                 </td>
                 <td>
                   0
@@ -620,7 +620,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientProperties.java">org/glassfish/jersey/client/ClientProperties.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ClientProperties.java">org/glassfish/jersey/client/ClientProperties.java</a>
                 </td>
                 <td>
                   0
@@ -634,7 +634,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.spi.AsyncConnectorCallback.java">org/glassfish/jersey/client/spi/AsyncConnectorCallback.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.spi.AsyncConnectorCallback.java">org/glassfish/jersey/client/spi/AsyncConnectorCallback.java</a>
                 </td>
                 <td>
                   0
@@ -648,7 +648,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-client//checkstyle.html#org.glassfish.jersey.client.ChunkedInput.java">org/glassfish/jersey/client/ChunkedInput.java</a>
+                  <a href="https://jersey.github.io/jersey-client//checkstyle.html#org.glassfish.jersey.client.ChunkedInput.java">org/glassfish/jersey/client/ChunkedInput.java</a>
                 </td>
                 <td>
                   0

@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-examples-system-properties - Checkstyle report</title>
-    <link>https://jersey.java.net/project/system-properties-example/</link>
+    <link>https://jersey.github.io/project/system-properties-example/</link>
     <description>jersey-examples-system-properties - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/system-properties-example//checkstyle.html</link>
+            <link>https://jersey.github.io/project/system-properties-example//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/system-properties-example//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/system-properties-example//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.PropertiesWriter.java">org/glassfish/jersey/examples/sysprops/PropertiesWriter.java</a>
+                  <a href="https://jersey.github.io/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.PropertiesWriter.java">org/glassfish/jersey/examples/sysprops/PropertiesWriter.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.App.java">org/glassfish/jersey/examples/sysprops/App.java</a>
+                  <a href="https://jersey.github.io/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.App.java">org/glassfish/jersey/examples/sysprops/App.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.PropertyResource.java">org/glassfish/jersey/examples/sysprops/PropertyResource.java</a>
+                  <a href="https://jersey.github.io/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.PropertyResource.java">org/glassfish/jersey/examples/sysprops/PropertyResource.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.PropertyNamesResource.java">org/glassfish/jersey/examples/sysprops/PropertyNamesResource.java</a>
+                  <a href="https://jersey.github.io/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.PropertyNamesResource.java">org/glassfish/jersey/examples/sysprops/PropertyNamesResource.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.impl.PropertyNamesResourceImpl.java">org/glassfish/jersey/examples/sysprops/impl/PropertyNamesResourceImpl.java</a>
+                  <a href="https://jersey.github.io/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.impl.PropertyNamesResourceImpl.java">org/glassfish/jersey/examples/sysprops/impl/PropertyNamesResourceImpl.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.PropertiesReader.java">org/glassfish/jersey/examples/sysprops/PropertiesReader.java</a>
+                  <a href="https://jersey.github.io/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.PropertiesReader.java">org/glassfish/jersey/examples/sysprops/PropertiesReader.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.impl.PropertyResourceImpl.java">org/glassfish/jersey/examples/sysprops/impl/PropertyResourceImpl.java</a>
+                  <a href="https://jersey.github.io/project/system-properties-example//checkstyle.html#org.glassfish.jersey.examples.sysprops.impl.PropertyResourceImpl.java">org/glassfish/jersey/examples/sysprops/impl/PropertyResourceImpl.java</a>
                 </td>
                 <td>
                   0

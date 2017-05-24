@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-media-moxy - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-media-moxy/</link>
+    <link>https://jersey.github.io/project/jersey-media-moxy/</link>
     <description>jersey-media-moxy - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-media-moxy//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-media-moxy//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-media-moxy//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-media-moxy//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.xml.MoxyContextResolver.java">org/glassfish/jersey/moxy/xml/MoxyContextResolver.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.xml.MoxyContextResolver.java">org/glassfish/jersey/moxy/xml/MoxyContextResolver.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.json.MoxyJsonConfig.java">org/glassfish/jersey/moxy/json/MoxyJsonConfig.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.json.MoxyJsonConfig.java">org/glassfish/jersey/moxy/json/MoxyJsonConfig.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.xml.MoxyXmlFeature.java">org/glassfish/jersey/moxy/xml/MoxyXmlFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.xml.MoxyXmlFeature.java">org/glassfish/jersey/moxy/xml/MoxyXmlFeature.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.json.internal.FilteringMoxyJsonProvider.java">org/glassfish/jersey/moxy/json/internal/FilteringMoxyJsonProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.json.internal.FilteringMoxyJsonProvider.java">org/glassfish/jersey/moxy/json/internal/FilteringMoxyJsonProvider.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.json.internal.ConfigurableMoxyJsonProvider.java">org/glassfish/jersey/moxy/json/internal/ConfigurableMoxyJsonProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.json.internal.ConfigurableMoxyJsonProvider.java">org/glassfish/jersey/moxy/json/internal/ConfigurableMoxyJsonProvider.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.internal.MoxyObjectProvider.java">org/glassfish/jersey/moxy/internal/MoxyObjectProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.internal.MoxyObjectProvider.java">org/glassfish/jersey/moxy/internal/MoxyObjectProvider.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.internal.MoxyFilteringFeature.java">org/glassfish/jersey/moxy/internal/MoxyFilteringFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.internal.MoxyFilteringFeature.java">org/glassfish/jersey/moxy/internal/MoxyFilteringFeature.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.json.MoxyJsonFeature.java">org/glassfish/jersey/moxy/json/MoxyJsonFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.json.MoxyJsonFeature.java">org/glassfish/jersey/moxy/json/MoxyJsonFeature.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.json.internal.MoxyJsonAutoDiscoverable.java">org/glassfish/jersey/moxy/json/internal/MoxyJsonAutoDiscoverable.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-moxy//checkstyle.html#org.glassfish.jersey.moxy.json.internal.MoxyJsonAutoDiscoverable.java">org/glassfish/jersey/moxy/json/internal/MoxyJsonAutoDiscoverable.java</a>
                 </td>
                 <td>
                   0

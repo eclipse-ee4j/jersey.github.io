@@ -10,7 +10,7 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;22.&nbsp;Monitoring and Diagnostics</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="logging_chapter.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ioc.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;22.&nbsp;Monitoring and Diagnostics</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="logging_chapter.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="ioc.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
@@ -36,14 +36,14 @@
                             </p></dd><dt><span class="term">Monitoring Statistics</span></dt><dd><p>
                                 Jersey can be configured to process lifecycle events in order to expose a wide range of
                                 runtime monitoring statistics to the end user. The statistics are accessible trough an injectable
-                                <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a> interface. The statistics provide general information
+                                <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a> interface. The statistics provide general information
                                 about the application as well as fine-grained execution statistics on particular resources and sub
                                 resources and exposed URIs. For performance reasons, this functionality must be explicitly enabled
                                 prior using.
                             </p></dd><dt><span class="term">JMX MBeans with statistics</span></dt><dd><p>
                                 In addition to the injectable <code class="literal">MonitoringStatistics</code> data, Jersey
                                 is able to expose the statistics as JMX MBeans (for example
-                                <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ApplicationMXBean.html" target="_top">ApplicationMXBean</a>).
+                                <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ApplicationMXBean.html" target="_top">ApplicationMXBean</a>).
                                 Jersey monitoring MXBeans can be accessed programmatically using JMX APIs or browsed via JMX-enabled
                                 tool (<code class="literal">JConsole</code> for example). This functionality is, too,  by default disabled for
                                 performance reasons and must be enabled if needed.
@@ -55,7 +55,7 @@
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e15957"></a>22.1.2.&nbsp;Event Listeners</h3></div></div></div><p>
                 Jersey defines two types of event listeners that you can implement and register with your application:
 
-                </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ApplicationEventListener.html" target="_top">ApplicationEventListener</a> for listening to application events, and</p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/RequestEventListener.html" target="_top">RequestEventListener</a> for listening to events of request processing.</p></li></ul></div><p>
+                </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ApplicationEventListener.html" target="_top">ApplicationEventListener</a> for listening to application events, and</p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/RequestEventListener.html" target="_top">RequestEventListener</a> for listening to events of request processing.</p></li></ul></div><p>
 
                 Only the first type, <code class="literal">ApplicationEventListener</code>
                 can be directly registered as an application-wide provider. The <code class="literal">RequestEventListener</code>
@@ -134,7 +134,7 @@ public class TestResource {
 }</pre></div></div><p><br class="example-break">
             </p><p>
                 Once the listeners and the monitored resource is defined, it's time to initialize our application. The following
-                piece of code shows a <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> that is used to initialize the application (please
+                piece of code shows a <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> that is used to initialize the application (please
                 note that only <code class="literal">ApplicationEventListener</code> is registered as provider).
 
                 </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">ResourceConfig resourceConfig =
@@ -148,7 +148,7 @@ public class TestResource {
                 <code class="literal">ApplicationEventListener</code> interface. A method <code class="literal">onEvent()</code> handles
                 all application lifecycle events. In our case the method handles only 2 application events - initialization
                 and destroy. Other event types are ignored. All application event types are defined
-                in <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ApplicationEvent.html" target="_top">ApplicationEvent</a><code class="literal">.Type</code>. The second method <code class="literal">onRequest</code>
+                in <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ApplicationEvent.html" target="_top">ApplicationEvent</a><code class="literal">.Type</code>. The second method <code class="literal">onRequest</code>
                 is invoked by Jersey runtime every time a new request is received. The request event type passed to the method
                 is always <code class="literal">START</code>. If you want to listen to any other request lifecycle events for the new request,
                 you are expected to return an instance of <code class="literal">RequestEventListener</code> that will handle the
@@ -160,8 +160,8 @@ public class TestResource {
                 about the particular request. In other words, <code class="literal">RequestEventListener</code> is designed to be
                 implicitly request-scoped.
             </p><p>
-                Jersey represents lifecycle events via <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/RequestEvent.html" target="_top">RequestEvent</a> and
-                <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ApplicationEvent.html" target="_top">ApplicationEvent</a> types. Instances of these classes contain information
+                Jersey represents lifecycle events via <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/RequestEvent.html" target="_top">RequestEvent</a> and
+                <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ApplicationEvent.html" target="_top">ApplicationEvent</a> types. Instances of these classes contain information
                 about respective events. The most important information is the event type <code class="literal">Type</code> retrievable via
                 <code class="literal">getType()</code> method,
                 which identifies the type of the event. Events contain also additional information that is dependent on a particular
@@ -187,7 +187,7 @@ public class TestResource {
         .post(Entity.entity("post", MediaType.TEXT_PLAIN_TYPE));
     target.path("resource").request().get();</pre><p>
 
-                In the code above, the <code class="literal">target</code> is a <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> instance pointing to the application
+                In the code above, the <code class="literal">target</code> is a <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> instance pointing to the application
                 context root path. Using the <a class="xref" href="client.html" title="Chapter&nbsp;5.&nbsp;Client API">Chapter&nbsp;5, <i>Client API</i></a>, we invoke <code class="literal">GET</code> and <code class="literal">POST</code> methods
                 on the <code class="literal">MyResource</code> JAX-RS resource class that we implemented earlier.
             </p><p>
@@ -241,7 +241,7 @@ Application my-monitored-application destroyed.</pre><p>
                     Calculating the monitoring statistics has obviously a performance impact, therefore this feature is
                     disabled by default. To enable the feature, set the following configuration property to <code class="literal">true</code>:
                 </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    gutter: false;">jersey.config.server.monitoring.statistics.enabled=true</pre><p>
-                    The property description can be found in <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_STATISTICS_ENABLED" target="_top">ServerProperties.MONITORING_STATISTICS_ENABLED</a>
+                    The property description can be found in <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_STATISTICS_ENABLED" target="_top">ServerProperties.MONITORING_STATISTICS_ENABLED</a>
                     This will calculate the statistics. The easiest way how to get statistics is to let Jersey
                     to inject them. See the following example:
                 </p><div class="example"><a name="d0e16202"></a><p class="title"><b>Example&nbsp;22.4.&nbsp;Injecting MonitoringStatistics</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("resource")
@@ -263,7 +263,7 @@ public static class StatisticsResource {
             + timeWindowStatistics.getAverageDuration();
     }
 }}</pre></div></div><br class="example-break"><p>
-                    <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a> are
+                    <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a> are
                     injected into the resource using an <a class="link" href="http://docs.oracle.com/javaee/7/api/javax/inject/Inject.html" target="_top">@Inject</a> annotation.
                     Please note the usage of the <a class="link" href="http://docs.oracle.com/javaee/7/api/javax/inject/Provider.html" target="_top">Provider</a> for injection (it will be discussed later).
                     Firstly, the snapshot of statistics is retrieved by the <code class="literal">snapshot()</code> method.
@@ -276,7 +276,7 @@ public static class StatisticsResource {
                 </p><p>
                     The injected monitoring statistics represent the root of the collected statistics hierarchy. The hierarchy
                     can be traversed to retrieve any partial statistics data. In the example, we retrieve certain request
-                    <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/TimeWindowStatistics.html" target="_top">TimeWindowStatistics</a> data. In our case, those are the request execution statistics
+                    <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/TimeWindowStatistics.html" target="_top">TimeWindowStatistics</a> data. In our case, those are the request execution statistics
                     for a time window defined by long value 0 which means unlimited time window. This means we are retrieving
                     the global request execution statistics measured since a start of the application.
                     Finally, request count and average duration from the statistics are used to produce the String response.
@@ -287,11 +287,11 @@ request count: 2, average request processing [ms]: 135
 request count: 3, average request processing [ms]: 93
 request count: 4, average request processing [ms]: 73</pre><p>
                 </p><p>
-                    Let's look closer at <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a> interface.
+                    Let's look closer at <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a> interface.
                     <code class="literal">MonitoringStatistics</code> interface defines getters by which other nested
                     statistics can be retrieved. All statistics are in the same package and ends with
                     <code class="literal">Statistics</code> postfix. Statistics interfaces are the following:
-                    </p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a></span></dt><dd><p>main top level statistics</p></dd><dt><span class="term"><a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ResponseStatistics.html" target="_top">ResponseStatistics</a></span></dt><dd><p>response statistics (eg. response status codes and their count)</p></dd><dt><span class="term"><a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ResourceStatistics.html" target="_top">ResourceStatistics</a></span></dt><dd><p>statistics of execution of resources (resource classes or resource URIs)</p></dd><dt><span class="term"><a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ResourceMethodStatistics.html" target="_top">ResourceMethodStatistics</a></span></dt><dd><p>statistics of execution of resource methods</p></dd><dt><span class="term"><a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ExecutionStatistics.html" target="_top">ExecutionStatistics</a></span></dt><dd><p>statistic of execution of a target (resource, request, resource method)</p></dd><dt><span class="term"><a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/TimeWindowStatistics.html" target="_top">TimeWindowStatistics</a></span></dt><dd><p>statistics of execution time in specific interval (eg. executions in last 5 minutes)</p></dd></dl></div><p>
+                    </p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a></span></dt><dd><p>main top level statistics</p></dd><dt><span class="term"><a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ResponseStatistics.html" target="_top">ResponseStatistics</a></span></dt><dd><p>response statistics (eg. response status codes and their count)</p></dd><dt><span class="term"><a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ResourceStatistics.html" target="_top">ResourceStatistics</a></span></dt><dd><p>statistics of execution of resources (resource classes or resource URIs)</p></dd><dt><span class="term"><a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ResourceMethodStatistics.html" target="_top">ResourceMethodStatistics</a></span></dt><dd><p>statistics of execution of resource methods</p></dd><dt><span class="term"><a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ExecutionStatistics.html" target="_top">ExecutionStatistics</a></span></dt><dd><p>statistic of execution of a target (resource, request, resource method)</p></dd><dt><span class="term"><a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/TimeWindowStatistics.html" target="_top">TimeWindowStatistics</a></span></dt><dd><p>statistics of execution time in specific interval (eg. executions in last 5 minutes)</p></dd></dl></div><p>
                 </p><p>
                     Each time-monitored target contains <code class="literal">ExecutionStatistics</code>. So, for example
                     resource method contains execution statistics of its execution. Each
@@ -324,7 +324,7 @@ request count: 4, average request processing [ms]: 73</pre><p>
                         Statistics are not calculated for each request or each change. Statistics are calculated only
                         from the collected data in regular intervals for performance reasons (for example once per second).
                         If you want to be notified about new statistics, register an implementation of
-                        <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatisticsListener.html" target="_top">MonitoringStatisticsListener</a> as one of your custom application providers.
+                        <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatisticsListener.html" target="_top">MonitoringStatisticsListener</a> as one of your custom application providers.
                         Your listener will be called every time the new statistics are calculated and the updated statistics
                         data will be passed to the listener method. This is another way of receiving statistics.
                         See the linked listener API documentation for more information.
@@ -335,7 +335,7 @@ request count: 4, average request processing [ms]: 73</pre><p>
                     </p></div><p>
                     Jersey provides feature to expose monitoring statistics as JMX MXBeans.
                     In order to enable monitoring statistics MXBeans exposure, the
-                    <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_STATISTICS_MBEANS_ENABLED" target="_top">ServerProperties.MONITORING_STATISTICS_MBEANS_ENABLED</a> must be set to <code class="literal">true</code>.
+                    <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_STATISTICS_MBEANS_ENABLED" target="_top">ServerProperties.MONITORING_STATISTICS_MBEANS_ENABLED</a> must be set to <code class="literal">true</code>.
                 </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    gutter: false;">jersey.config.server.monitoring.statistics.mbeans.enabled=true</pre><p>
                     Note that enabling exposure of monitoring MXBeans causes that also the calculation of
                     <code class="literal">MonitoringStatistics</code> is automatically enabled as the exposed
@@ -352,13 +352,13 @@ request count: 4, average request processing [ms]: 73</pre><p>
                     Under the root <code class="literal">org.glassfish.jersey</code> Jersey MBean group you can find your application.
                     If the server contains more Jersey application, all will be present under the root Jersey the group. In the
                     screen-shot, the deployed JAX-RS application is named <code class="literal">myApplication</code> (the name can be defined
-                    via <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> directly or by setting the <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ServerProperties.html#APPLICATION_NAME" target="_top">ServerProperties.APPLICATION_NAME</a>
+                    via <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> directly or by setting the <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ServerProperties.html#APPLICATION_NAME" target="_top">ServerProperties.APPLICATION_NAME</a>
                     property).
                     Each application contains <code class="literal">Global</code>, <code class="literal">Resource</code> and
                     <code class="literal">Uris</code> sub-groups. The <code class="literal">Global</code> group contains all global
                     statistics like overall requests statistics of the entire application (<code class="literal">AllRequestTimes</code>),
                     configuration of the JAX-RS application (<code class="literal">Configuration</code>), statistics about
-                    <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/ExceptionMapper.html" target="_top">ExceptionMapper&lt;E extends Throwable&gt;</a> execution (<code class="literal">ExceptionMapper</code>) and statistics about
+                    <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/ExceptionMapper.html" target="_top">ExceptionMapper&lt;E extends Throwable&gt;</a> execution (<code class="literal">ExceptionMapper</code>) and statistics about
                     produced responses (<code class="literal">Responses</code>).
                 </p><p>
                     <code class="literal">Resources</code> and <code class="literal">Uris</code> groups contains monitoring statistics specific to
@@ -383,7 +383,7 @@ request count: 4, average request processing [ms]: 73</pre><p>
                     the <code class="literal">methods</code> sub-group) contains summary of statistics for all resource methods grouped in the
                     resource entry.
                 </p><p>Additional useful details that about statistics</p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><code class="literal">Global-&gt;Configuration-&gt;Registered(Classes/Instances)</code>:
-                        registered resource classes and instances by the user (i.e., not added by <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/model/ModelProcessor.html" target="_top">ModelProcessor</a>
+                        registered resource classes and instances by the user (i.e., not added by <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/model/ModelProcessor.html" target="_top">ModelProcessor</a>
                         during deployment for example).
                     </p></li><li class="listitem"><p><code class="literal">Global-&gt;ExceptionMapper-&gt;ExceptionMapperCount</code>:
                         map that contains exception mapper classes as keys and number of their execution as values.
@@ -407,15 +407,15 @@ request count: 4, average request processing [ms]: 73</pre><p>
                     they contain Javadocs for each MXBean and attribute. Monitoring MBeans are defined by following interfaces:
 
                     </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                            <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ApplicationMXBean.html" target="_top">ApplicationMXBean</a>: contains configuration statistics
+                            <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ApplicationMXBean.html" target="_top">ApplicationMXBean</a>: contains configuration statistics
                         </p></li><li class="listitem"><p>
-                            <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ExceptionMapperMXBean.html" target="_top">ExceptionMapperMXBean</a>: contains statistics of exception mappers
+                            <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ExceptionMapperMXBean.html" target="_top">ExceptionMapperMXBean</a>: contains statistics of exception mappers
                         </p></li><li class="listitem"><p>
-                            <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ResourceMethodMXBean.html" target="_top">ResourceMethodMXBean</a>: contains statistics of resource method
+                            <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ResourceMethodMXBean.html" target="_top">ResourceMethodMXBean</a>: contains statistics of resource method
                         </p></li><li class="listitem"><p>
-                            <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ResourceMXBean.html" target="_top">ResourceMXBean</a>: contains statistics of resource
+                            <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ResourceMXBean.html" target="_top">ResourceMXBean</a>: contains statistics of resource
                         </p></li><li class="listitem"><p>
-                            <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ResponseMXBean.html" target="_top">ResponseMXBean</a>: contains statistics of responses
+                            <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/monitoring/ResponseMXBean.html" target="_top">ResponseMXBean</a>: contains statistics of responses
                         </p></li></ul></div><p>
 
                     The list does not contain MXBean for the execution and time window statistics. The reason is that
@@ -592,14 +592,14 @@ request count: 4, average request processing [ms]: 73</pre><p>
 &nbsp;10 X-Jersey-Tracing-039: WI          [ 0.00 / 24.67 ms |  0.01 %] [org.glassfish.jersey.filter.LoggingFilter @2d427def #-2147483648] AFTER context.proceed()
 &nbsp;11 X-Jersey-Tracing-040: WI          [ 0.00 / 24.70 ms |  0.01 %] [org.glassfish.jersey.server.mvc.internal.TemplateMethodInterceptor @141bcd49 #4000] AFTER context.proceed()
 &nbsp;12 ...</pre></div></div><p><br class="example-break">
-            </p></div></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+            </p></div></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-examples-shortener-webapp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/webapp-example-parent/shortener-webapp/</link>
+    <link>https://jersey.github.io/project/webapp-example-parent/shortener-webapp/</link>
     <description>jersey-examples-shortener-webapp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/webapp-example-parent/shortener-webapp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/webapp-example-parent/shortener-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.resource.PermanentLinkResource.java">org/glassfish/jersey/examples/shortener/webapp/resource/PermanentLinkResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.resource.PermanentLinkResource.java">org/glassfish/jersey/examples/shortener/webapp/resource/PermanentLinkResource.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.service.ShortenerService.java">org/glassfish/jersey/examples/shortener/webapp/service/ShortenerService.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.service.ShortenerService.java">org/glassfish/jersey/examples/shortener/webapp/service/ShortenerService.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.ShortenerApplication.java">org/glassfish/jersey/examples/shortener/webapp/ShortenerApplication.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.ShortenerApplication.java">org/glassfish/jersey/examples/shortener/webapp/ShortenerApplication.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.validation.ValidShortenedLink.java">org/glassfish/jersey/examples/shortener/webapp/validation/ValidShortenedLink.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.validation.ValidShortenedLink.java">org/glassfish/jersey/examples/shortener/webapp/validation/ValidShortenedLink.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.domain.ShortenedLink.java">org/glassfish/jersey/examples/shortener/webapp/domain/ShortenedLink.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.domain.ShortenedLink.java">org/glassfish/jersey/examples/shortener/webapp/domain/ShortenedLink.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.resource.ResolverResource.java">org/glassfish/jersey/examples/shortener/webapp/resource/ResolverResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.resource.ResolverResource.java">org/glassfish/jersey/examples/shortener/webapp/resource/ResolverResource.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.resource.ShortenerResource.java">org/glassfish/jersey/examples/shortener/webapp/resource/ShortenerResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.resource.ShortenerResource.java">org/glassfish/jersey/examples/shortener/webapp/resource/ShortenerResource.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/shortener-webapp//checkstyle.html#ValidationMessages.properties">ValidationMessages.properties</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html#ValidationMessages.properties">ValidationMessages.properties</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.validation.ShortenLink.java">org/glassfish/jersey/examples/shortener/webapp/validation/ShortenLink.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html#org.glassfish.jersey.examples.shortener.webapp.validation.ShortenLink.java">org/glassfish/jersey/examples/shortener/webapp/validation/ShortenLink.java</a>
                 </td>
                 <td>
                   0

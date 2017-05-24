@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-ext-mvc - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-mvc/</link>
+    <link>https://jersey.github.io/project/jersey-mvc/</link>
     <description>jersey-ext-mvc - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2016 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-mvc//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-mvc//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.ImplicitViewable.java">org/glassfish/jersey/server/mvc/internal/ImplicitViewable.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.ImplicitViewable.java">org/glassfish/jersey/server/mvc/internal/ImplicitViewable.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.MvcBinder.java">org/glassfish/jersey/server/mvc/internal/MvcBinder.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.MvcBinder.java">org/glassfish/jersey/server/mvc/internal/MvcBinder.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.ViewableContextException.java">org/glassfish/jersey/server/mvc/spi/ViewableContextException.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.ViewableContextException.java">org/glassfish/jersey/server/mvc/spi/ViewableContextException.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.TemplateModelProcessor.java">org/glassfish/jersey/server/mvc/internal/TemplateModelProcessor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.TemplateModelProcessor.java">org/glassfish/jersey/server/mvc/internal/TemplateModelProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.Viewable.java">org/glassfish/jersey/server/mvc/Viewable.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.Viewable.java">org/glassfish/jersey/server/mvc/Viewable.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.ViewableContext.java">org/glassfish/jersey/server/mvc/spi/ViewableContext.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.ViewableContext.java">org/glassfish/jersey/server/mvc/spi/ViewableContext.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.TemplateInflector.java">org/glassfish/jersey/server/mvc/internal/TemplateInflector.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.TemplateInflector.java">org/glassfish/jersey/server/mvc/internal/TemplateInflector.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.TemplateMethodInterceptor.java">org/glassfish/jersey/server/mvc/internal/TemplateMethodInterceptor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.TemplateMethodInterceptor.java">org/glassfish/jersey/server/mvc/internal/TemplateMethodInterceptor.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.ErrorTemplate.java">org/glassfish/jersey/server/mvc/ErrorTemplate.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.ErrorTemplate.java">org/glassfish/jersey/server/mvc/ErrorTemplate.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.Template.java">org/glassfish/jersey/server/mvc/Template.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.Template.java">org/glassfish/jersey/server/mvc/Template.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.ResolvingViewableContext.java">org/glassfish/jersey/server/mvc/internal/ResolvingViewableContext.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.ResolvingViewableContext.java">org/glassfish/jersey/server/mvc/internal/ResolvingViewableContext.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.package-info.java">org/glassfish/jersey/server/mvc/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.package-info.java">org/glassfish/jersey/server/mvc/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -214,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.ErrorTemplateExceptionMapper.java">org/glassfish/jersey/server/mvc/internal/ErrorTemplateExceptionMapper.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.ErrorTemplateExceptionMapper.java">org/glassfish/jersey/server/mvc/internal/ErrorTemplateExceptionMapper.java</a>
                 </td>
                 <td>
                   0
@@ -228,7 +228,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.TemplateProcessor.java">org/glassfish/jersey/server/mvc/spi/TemplateProcessor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.TemplateProcessor.java">org/glassfish/jersey/server/mvc/spi/TemplateProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -242,7 +242,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.package-info.java">org/glassfish/jersey/server/mvc/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.package-info.java">org/glassfish/jersey/server/mvc/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -256,7 +256,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.MvcFeature.java">org/glassfish/jersey/server/mvc/MvcFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.MvcFeature.java">org/glassfish/jersey/server/mvc/MvcFeature.java</a>
                 </td>
                 <td>
                   0
@@ -270,7 +270,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.ResolvedViewable.java">org/glassfish/jersey/server/mvc/spi/ResolvedViewable.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.ResolvedViewable.java">org/glassfish/jersey/server/mvc/spi/ResolvedViewable.java</a>
                 </td>
                 <td>
                   0
@@ -284,7 +284,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.package-info.java">org/glassfish/jersey/server/mvc/spi/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.package-info.java">org/glassfish/jersey/server/mvc/spi/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -298,7 +298,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.ViewableMessageBodyWriter.java">org/glassfish/jersey/server/mvc/internal/ViewableMessageBodyWriter.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.ViewableMessageBodyWriter.java">org/glassfish/jersey/server/mvc/internal/ViewableMessageBodyWriter.java</a>
                 </td>
                 <td>
                   0
@@ -312,7 +312,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.AbstractTemplateProcessor.java">org/glassfish/jersey/server/mvc/spi/AbstractTemplateProcessor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.AbstractTemplateProcessor.java">org/glassfish/jersey/server/mvc/spi/AbstractTemplateProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -326,7 +326,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.localization.properties">org/glassfish/jersey/server/mvc/internal/localization.properties</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.localization.properties">org/glassfish/jersey/server/mvc/internal/localization.properties</a>
                 </td>
                 <td>
                   0
@@ -340,7 +340,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.TemplateHelper.java">org/glassfish/jersey/server/mvc/internal/TemplateHelper.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.internal.TemplateHelper.java">org/glassfish/jersey/server/mvc/internal/TemplateHelper.java</a>
                 </td>
                 <td>
                   0
@@ -354,7 +354,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.AbstractErrorTemplateMapper.java">org/glassfish/jersey/server/mvc/spi/AbstractErrorTemplateMapper.java</a>
+                  <a href="https://jersey.github.io/project/jersey-mvc//checkstyle.html#org.glassfish.jersey.server.mvc.spi.AbstractErrorTemplateMapper.java">org/glassfish/jersey/server/mvc/spi/AbstractErrorTemplateMapper.java</a>
                 </td>
                 <td>
                   0

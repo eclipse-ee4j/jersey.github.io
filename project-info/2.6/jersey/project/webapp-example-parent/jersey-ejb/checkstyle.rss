@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-examples-ejb - Checkstyle report</title>
-    <link>https://jersey.java.net/project/webapp-example-parent/jersey-ejb/</link>
+    <link>https://jersey.github.io/project/webapp-example-parent/jersey-ejb/</link>
     <description>jersey-examples-ejb - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/webapp-example-parent/jersey-ejb//checkstyle.html</link>
+            <link>https://jersey.github.io/project/webapp-example-parent/jersey-ejb//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/webapp-example-parent/jersey-ejb//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/webapp-example-parent/jersey-ejb//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.entities.MessageListWriter.java">org/glassfish/jersey/examples/jersey_ejb/entities/MessageListWriter.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.entities.MessageListWriter.java">org/glassfish/jersey/examples/jersey_ejb/entities/MessageListWriter.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.exceptions.CustomNotFoundException.java">org/glassfish/jersey/examples/jersey_ejb/exceptions/CustomNotFoundException.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.exceptions.CustomNotFoundException.java">org/glassfish/jersey/examples/jersey_ejb/exceptions/CustomNotFoundException.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.entities.MessageWriter.java">org/glassfish/jersey/examples/jersey_ejb/entities/MessageWriter.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.entities.MessageWriter.java">org/glassfish/jersey/examples/jersey_ejb/entities/MessageWriter.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.resources.MyApplication.java">org/glassfish/jersey/examples/jersey_ejb/resources/MyApplication.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.resources.MyApplication.java">org/glassfish/jersey/examples/jersey_ejb/resources/MyApplication.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.resources.MessageBoardResourceBean.java">org/glassfish/jersey/examples/jersey_ejb/resources/MessageBoardResourceBean.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.resources.MessageBoardResourceBean.java">org/glassfish/jersey/examples/jersey_ejb/resources/MessageBoardResourceBean.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.resources.MessageBoardRootResource.java">org/glassfish/jersey/examples/jersey_ejb/resources/MessageBoardRootResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.resources.MessageBoardRootResource.java">org/glassfish/jersey/examples/jersey_ejb/resources/MessageBoardRootResource.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.entities.Message.java">org/glassfish/jersey/examples/jersey_ejb/entities/Message.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.entities.Message.java">org/glassfish/jersey/examples/jersey_ejb/entities/Message.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.resources.MessageHolderSingletonBean.java">org/glassfish/jersey/examples/jersey_ejb/resources/MessageHolderSingletonBean.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.resources.MessageHolderSingletonBean.java">org/glassfish/jersey/examples/jersey_ejb/resources/MessageHolderSingletonBean.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.exceptions.NotFoundExceptionMapper.java">org/glassfish/jersey/examples/jersey_ejb/exceptions/NotFoundExceptionMapper.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/jersey-ejb//checkstyle.html#org.glassfish.jersey.examples.jersey_ejb.exceptions.NotFoundExceptionMapper.java">org/glassfish/jersey/examples/jersey_ejb/exceptions/NotFoundExceptionMapper.java</a>
                 </td>
                 <td>
                   0

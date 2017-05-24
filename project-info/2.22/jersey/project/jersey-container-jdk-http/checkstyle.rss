@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-container-jdk-http - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-container-jdk-http/</link>
+    <link>https://jersey.github.io/project/jersey-container-jdk-http/</link>
     <description>jersey-container-jdk-http - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-container-jdk-http//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-container-jdk-http//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-container-jdk-http//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-container-jdk-http//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-jdk-http//checkstyle.html#org.glassfish.jersey.jdkhttp.package-info.java">org/glassfish/jersey/jdkhttp/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-jdk-http//checkstyle.html#org.glassfish.jersey.jdkhttp.package-info.java">org/glassfish/jersey/jdkhttp/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-jdk-http//checkstyle.html#org.glassfish.jersey.jdkhttp.JdkHttpHandlerContainer.java">org/glassfish/jersey/jdkhttp/JdkHttpHandlerContainer.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-jdk-http//checkstyle.html#org.glassfish.jersey.jdkhttp.JdkHttpHandlerContainer.java">org/glassfish/jersey/jdkhttp/JdkHttpHandlerContainer.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-jdk-http//checkstyle.html#org.glassfish.jersey.jdkhttp.JdkHttpServerFactory.java">org/glassfish/jersey/jdkhttp/JdkHttpServerFactory.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-jdk-http//checkstyle.html#org.glassfish.jersey.jdkhttp.JdkHttpServerFactory.java">org/glassfish/jersey/jdkhttp/JdkHttpServerFactory.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-jdk-http//checkstyle.html#org.glassfish.jersey.jdkhttp.internal.localization.properties">org/glassfish/jersey/jdkhttp/internal/localization.properties</a>
+                  <a href="https://jersey.github.io/project/jersey-container-jdk-http//checkstyle.html#org.glassfish.jersey.jdkhttp.internal.localization.properties">org/glassfish/jersey/jdkhttp/internal/localization.properties</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-jdk-http//checkstyle.html#org.glassfish.jersey.jdkhttp.JdkHttpHandlerContainerProvider.java">org/glassfish/jersey/jdkhttp/JdkHttpHandlerContainerProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-jdk-http//checkstyle.html#org.glassfish.jersey.jdkhttp.JdkHttpHandlerContainerProvider.java">org/glassfish/jersey/jdkhttp/JdkHttpHandlerContainerProvider.java</a>
                 </td>
                 <td>
                   0

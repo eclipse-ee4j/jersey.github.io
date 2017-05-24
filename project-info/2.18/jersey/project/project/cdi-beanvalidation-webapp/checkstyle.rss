@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-tests-cdi-beanvalidation-webapp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/cdi-beanvalidation-webapp/</link>
+    <link>https://jersey.github.io/project/project/cdi-beanvalidation-webapp/</link>
     <description>jersey-tests-cdi-beanvalidation-webapp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2OldFashionedResource.java">org/glassfish/jersey/tests/cdi/bv/Hk2OldFashionedResource.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2OldFashionedResource.java">org/glassfish/jersey/tests/cdi/bv/Hk2OldFashionedResource.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2FieldInjectedResource.java">org/glassfish/jersey/tests/cdi/bv/Hk2FieldInjectedResource.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2FieldInjectedResource.java">org/glassfish/jersey/tests/cdi/bv/Hk2FieldInjectedResource.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiValidationResult.java">org/glassfish/jersey/tests/cdi/bv/CdiValidationResult.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiValidationResult.java">org/glassfish/jersey/tests/cdi/bv/CdiValidationResult.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiApplication.java">org/glassfish/jersey/tests/cdi/bv/CdiApplication.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiApplication.java">org/glassfish/jersey/tests/cdi/bv/CdiApplication.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2ValidationInterceptor.java">org/glassfish/jersey/tests/cdi/bv/Hk2ValidationInterceptor.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2ValidationInterceptor.java">org/glassfish/jersey/tests/cdi/bv/Hk2ValidationInterceptor.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiPropertyInjectedResource.java">org/glassfish/jersey/tests/cdi/bv/CdiPropertyInjectedResource.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiPropertyInjectedResource.java">org/glassfish/jersey/tests/cdi/bv/CdiPropertyInjectedResource.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiOldFashionedResource.java">org/glassfish/jersey/tests/cdi/bv/CdiOldFashionedResource.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiOldFashionedResource.java">org/glassfish/jersey/tests/cdi/bv/CdiOldFashionedResource.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiParamInjectedResource.java">org/glassfish/jersey/tests/cdi/bv/CdiParamInjectedResource.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiParamInjectedResource.java">org/glassfish/jersey/tests/cdi/bv/CdiParamInjectedResource.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiFieldInjectedResource.java">org/glassfish/jersey/tests/cdi/bv/CdiFieldInjectedResource.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiFieldInjectedResource.java">org/glassfish/jersey/tests/cdi/bv/CdiFieldInjectedResource.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.ValidationResult.java">org/glassfish/jersey/tests/cdi/bv/ValidationResult.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.ValidationResult.java">org/glassfish/jersey/tests/cdi/bv/ValidationResult.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiValidationInterceptor.java">org/glassfish/jersey/tests/cdi/bv/CdiValidationInterceptor.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiValidationInterceptor.java">org/glassfish/jersey/tests/cdi/bv/CdiValidationInterceptor.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2ParamInjectedResource.java">org/glassfish/jersey/tests/cdi/bv/Hk2ParamInjectedResource.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2ParamInjectedResource.java">org/glassfish/jersey/tests/cdi/bv/Hk2ParamInjectedResource.java</a>
                 </td>
                 <td>
                   0
@@ -214,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2Application.java">org/glassfish/jersey/tests/cdi/bv/Hk2Application.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2Application.java">org/glassfish/jersey/tests/cdi/bv/Hk2Application.java</a>
                 </td>
                 <td>
                   0
@@ -228,7 +228,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiValidationResultBinder.java">org/glassfish/jersey/tests/cdi/bv/CdiValidationResultBinder.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.CdiValidationResultBinder.java">org/glassfish/jersey/tests/cdi/bv/CdiValidationResultBinder.java</a>
                 </td>
                 <td>
                   0
@@ -242,7 +242,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2ValidationResult.java">org/glassfish/jersey/tests/cdi/bv/Hk2ValidationResult.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2ValidationResult.java">org/glassfish/jersey/tests/cdi/bv/Hk2ValidationResult.java</a>
                 </td>
                 <td>
                   0
@@ -256,7 +256,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2PropertyInjectedResource.java">org/glassfish/jersey/tests/cdi/bv/Hk2PropertyInjectedResource.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.Hk2PropertyInjectedResource.java">org/glassfish/jersey/tests/cdi/bv/Hk2PropertyInjectedResource.java</a>
                 </td>
                 <td>
                   0
@@ -270,7 +270,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.ValidationResultUtil.java">org/glassfish/jersey/tests/cdi/bv/ValidationResultUtil.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-beanvalidation-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.bv.ValidationResultUtil.java">org/glassfish/jersey/tests/cdi/bv/ValidationResultUtil.java</a>
                 </td>
                 <td>
                   0

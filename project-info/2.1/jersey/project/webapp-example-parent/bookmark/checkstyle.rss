@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-examples-bookmark - Checkstyle report</title>
-    <link>https://jersey.java.net/project/webapp-example-parent/bookmark/</link>
+    <link>https://jersey.github.io/project/webapp-example-parent/bookmark/</link>
     <description>jersey-examples-bookmark - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html</link>
+            <link>https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.entity.BookmarkEntity.java">org/glassfish/jersey/examples/bookmark/entity/BookmarkEntity.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.entity.BookmarkEntity.java">org/glassfish/jersey/examples/bookmark/entity/BookmarkEntity.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.util.tx.TransactionManager.java">org/glassfish/jersey/examples/bookmark/util/tx/TransactionManager.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.util.tx.TransactionManager.java">org/glassfish/jersey/examples/bookmark/util/tx/TransactionManager.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.resource.UsersResource.java">org/glassfish/jersey/examples/bookmark/resource/UsersResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.resource.UsersResource.java">org/glassfish/jersey/examples/bookmark/resource/UsersResource.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.exception.ExtendedNotFoundException.java">org/glassfish/jersey/examples/bookmark/exception/ExtendedNotFoundException.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.exception.ExtendedNotFoundException.java">org/glassfish/jersey/examples/bookmark/exception/ExtendedNotFoundException.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.resource.BookmarkResource.java">org/glassfish/jersey/examples/bookmark/resource/BookmarkResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.resource.BookmarkResource.java">org/glassfish/jersey/examples/bookmark/resource/BookmarkResource.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.resource.UserResource.java">org/glassfish/jersey/examples/bookmark/resource/UserResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.resource.UserResource.java">org/glassfish/jersey/examples/bookmark/resource/UserResource.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.resource.BookmarksResource.java">org/glassfish/jersey/examples/bookmark/resource/BookmarksResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.resource.BookmarksResource.java">org/glassfish/jersey/examples/bookmark/resource/BookmarksResource.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.MyApplication.java">org/glassfish/jersey/examples/bookmark/MyApplication.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.MyApplication.java">org/glassfish/jersey/examples/bookmark/MyApplication.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.entity.UserEntity.java">org/glassfish/jersey/examples/bookmark/entity/UserEntity.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.entity.UserEntity.java">org/glassfish/jersey/examples/bookmark/entity/UserEntity.java</a>
                 </td>
                 <td>
                   0
@@ -155,7 +155,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.util.tx.Transactional.java">org/glassfish/jersey/examples/bookmark/util/tx/Transactional.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.util.tx.Transactional.java">org/glassfish/jersey/examples/bookmark/util/tx/Transactional.java</a>
                 </td>
                 <td>
                   0
@@ -169,7 +169,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.entity.BookmarkEntityPK.java">org/glassfish/jersey/examples/bookmark/entity/BookmarkEntityPK.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/bookmark//checkstyle.html#org.glassfish.jersey.examples.bookmark.entity.BookmarkEntityPK.java">org/glassfish/jersey/examples/bookmark/entity/BookmarkEntityPK.java</a>
                 </td>
                 <td>
                   0

@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-test-framework-util - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-test-framework-util/</link>
+    <link>https://jersey.github.io/project/jersey-test-framework-util/</link>
     <description>jersey-test-framework-util - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-test-framework-util//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-test-framework-util//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-test-framework-util//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-test-framework-util//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.runner.ConcurrentParameterizedRunner.java">org/glassfish/jersey/test/util/runner/ConcurrentParameterizedRunner.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.runner.ConcurrentParameterizedRunner.java">org/glassfish/jersey/test/util/runner/ConcurrentParameterizedRunner.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.runner.RunSeparately.java">org/glassfish/jersey/test/util/runner/RunSeparately.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.runner.RunSeparately.java">org/glassfish/jersey/test/util/runner/RunSeparately.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.client.LoopBackConnector.java">org/glassfish/jersey/test/util/client/LoopBackConnector.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.client.LoopBackConnector.java">org/glassfish/jersey/test/util/client/LoopBackConnector.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.server.ContainerRequestBuilder.java">org/glassfish/jersey/test/util/server/ContainerRequestBuilder.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.server.ContainerRequestBuilder.java">org/glassfish/jersey/test/util/server/ContainerRequestBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.server.TestContainerRequest.java">org/glassfish/jersey/test/util/server/TestContainerRequest.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.server.TestContainerRequest.java">org/glassfish/jersey/test/util/server/TestContainerRequest.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.runner.ConcurrentRunner.java">org/glassfish/jersey/test/util/runner/ConcurrentRunner.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.runner.ConcurrentRunner.java">org/glassfish/jersey/test/util/runner/ConcurrentRunner.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.client.LoopBackConnectorProvider.java">org/glassfish/jersey/test/util/client/LoopBackConnectorProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.client.LoopBackConnectorProvider.java">org/glassfish/jersey/test/util/client/LoopBackConnectorProvider.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.package-info.java">org/glassfish/jersey/test/util/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-util//checkstyle.html#org.glassfish.jersey.test.util.package-info.java">org/glassfish/jersey/test/util/package-info.java</a>
                 </td>
                 <td>
                   0

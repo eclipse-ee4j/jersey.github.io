@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>oauth2-client - Checkstyle report</title>
-    <link>https://jersey.java.net/project/oauth2-client/</link>
+    <link>https://jersey.github.io/project/oauth2-client/</link>
     <description>oauth2-client - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2016 Oracle Corporation</copyright>
@@ -30,7 +30,7 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/oauth2-client//checkstyle.html</link>
+            <link>https://jersey.github.io/project/oauth2-client//checkstyle.html</link>
       <description>
         <p>Click <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html">here</a> for the full Checkstyle report.</p>
 

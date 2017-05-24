@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-tests-integration-spring3 - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/spring3/</link>
+    <link>https://jersey.github.io/project/project/spring3/</link>
     <description>jersey-tests-integration-spring3 - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/spring3//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/spring3//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/spring3//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/spring3//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.HK2ServiceSingleton.java">org/glassfish/jersey/server/spring/test/HK2ServiceSingleton.java</a>
+                  <a href="https://jersey.github.io/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.HK2ServiceSingleton.java">org/glassfish/jersey/server/spring/test/HK2ServiceSingleton.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.AccountJerseyResource.java">org/glassfish/jersey/server/spring/test/AccountJerseyResource.java</a>
+                  <a href="https://jersey.github.io/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.AccountJerseyResource.java">org/glassfish/jersey/server/spring/test/AccountJerseyResource.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.AccountServiceImpl.java">org/glassfish/jersey/server/spring/test/AccountServiceImpl.java</a>
+                  <a href="https://jersey.github.io/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.AccountServiceImpl.java">org/glassfish/jersey/server/spring/test/AccountServiceImpl.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.HK2ServicePerLookup.java">org/glassfish/jersey/server/spring/test/HK2ServicePerLookup.java</a>
+                  <a href="https://jersey.github.io/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.HK2ServicePerLookup.java">org/glassfish/jersey/server/spring/test/HK2ServicePerLookup.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.AccountSpringResource.java">org/glassfish/jersey/server/spring/test/AccountSpringResource.java</a>
+                  <a href="https://jersey.github.io/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.AccountSpringResource.java">org/glassfish/jersey/server/spring/test/AccountSpringResource.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.AccountService.java">org/glassfish/jersey/server/spring/test/AccountService.java</a>
+                  <a href="https://jersey.github.io/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.AccountService.java">org/glassfish/jersey/server/spring/test/AccountService.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.HK2ServiceRequestScoped.java">org/glassfish/jersey/server/spring/test/HK2ServiceRequestScoped.java</a>
+                  <a href="https://jersey.github.io/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.HK2ServiceRequestScoped.java">org/glassfish/jersey/server/spring/test/HK2ServiceRequestScoped.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.MyApplication.java">org/glassfish/jersey/server/spring/test/MyApplication.java</a>
+                  <a href="https://jersey.github.io/project/project/spring3//checkstyle.html#org.glassfish.jersey.server.spring.test.MyApplication.java">org/glassfish/jersey/server/spring/test/MyApplication.java</a>
                 </td>
                 <td>
                   0

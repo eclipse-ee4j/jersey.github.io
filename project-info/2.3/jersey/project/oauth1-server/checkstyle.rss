@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>oauth1-server - Checkstyle report</title>
-    <link>https://jersey.java.net/project/oauth1-server/</link>
+    <link>https://jersey.github.io/project/oauth1-server/</link>
     <description>oauth1-server - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/oauth1-server//checkstyle.html</link>
+            <link>https://jersey.github.io/project/oauth1-server//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1Consumer.java">org/glassfish/jersey/server/oauth1/OAuth1Consumer.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1Consumer.java">org/glassfish/jersey/server/oauth1/OAuth1Consumer.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1SecurityContext.java">org/glassfish/jersey/server/oauth1/OAuth1SecurityContext.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1SecurityContext.java">org/glassfish/jersey/server/oauth1/OAuth1SecurityContext.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.TokenResource.java">org/glassfish/jersey/server/oauth1/TokenResource.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.TokenResource.java">org/glassfish/jersey/server/oauth1/TokenResource.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.NonceManager.java">org/glassfish/jersey/server/oauth1/NonceManager.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.NonceManager.java">org/glassfish/jersey/server/oauth1/NonceManager.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1Token.java">org/glassfish/jersey/server/oauth1/OAuth1Token.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1Token.java">org/glassfish/jersey/server/oauth1/OAuth1Token.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1ServerProperties.java">org/glassfish/jersey/server/oauth1/OAuth1ServerProperties.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1ServerProperties.java">org/glassfish/jersey/server/oauth1/OAuth1ServerProperties.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1Provider.java">org/glassfish/jersey/server/oauth1/OAuth1Provider.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1Provider.java">org/glassfish/jersey/server/oauth1/OAuth1Provider.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.DefaultOAuth1Provider.java">org/glassfish/jersey/server/oauth1/DefaultOAuth1Provider.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.DefaultOAuth1Provider.java">org/glassfish/jersey/server/oauth1/DefaultOAuth1Provider.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1ServerFilter.java">org/glassfish/jersey/server/oauth1/OAuth1ServerFilter.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1ServerFilter.java">org/glassfish/jersey/server/oauth1/OAuth1ServerFilter.java</a>
                 </td>
                 <td>
                   0
@@ -155,7 +155,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.internal.OAuthServerRequest.java">org/glassfish/jersey/server/oauth1/internal/OAuthServerRequest.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.internal.OAuthServerRequest.java">org/glassfish/jersey/server/oauth1/internal/OAuthServerRequest.java</a>
                 </td>
                 <td>
                   0
@@ -169,7 +169,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.internal.AccessTokenResource.java">org/glassfish/jersey/server/oauth1/internal/AccessTokenResource.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.internal.AccessTokenResource.java">org/glassfish/jersey/server/oauth1/internal/AccessTokenResource.java</a>
                 </td>
                 <td>
                   0
@@ -183,7 +183,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1ServerFeature.java">org/glassfish/jersey/server/oauth1/OAuth1ServerFeature.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1ServerFeature.java">org/glassfish/jersey/server/oauth1/OAuth1ServerFeature.java</a>
                 </td>
                 <td>
                   0
@@ -197,7 +197,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1Exception.java">org/glassfish/jersey/server/oauth1/OAuth1Exception.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.OAuth1Exception.java">org/glassfish/jersey/server/oauth1/OAuth1Exception.java</a>
                 </td>
                 <td>
                   0
@@ -211,7 +211,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.internal.RequestTokenResource.java">org/glassfish/jersey/server/oauth1/internal/RequestTokenResource.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-server//checkstyle.html#org.glassfish.jersey.server.oauth1.internal.RequestTokenResource.java">org/glassfish/jersey/server/oauth1/internal/RequestTokenResource.java</a>
                 </td>
                 <td>
                   0

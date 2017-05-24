@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-ext-rx-client-jsr166e - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/jersey-rx-client-jsr166e/</link>
+    <link>https://jersey.github.io/project/project/jersey-rx-client-jsr166e/</link>
     <description>jersey-ext-rx-client-jsr166e - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/jersey-rx-client-jsr166e//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/jersey-rx-client-jsr166e//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/jersey-rx-client-jsr166e//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/jersey-rx-client-jsr166e//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-rx-client-jsr166e//checkstyle.html#org.glassfish.jersey.client.rx.jsr166e.RxCompletableFutureInvokerProvider.java">org/glassfish/jersey/client/rx/jsr166e/RxCompletableFutureInvokerProvider.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-rx-client-jsr166e//checkstyle.html#org.glassfish.jersey.client.rx.jsr166e.RxCompletableFutureInvokerProvider.java">org/glassfish/jersey/client/rx/jsr166e/RxCompletableFutureInvokerProvider.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-rx-client-jsr166e//checkstyle.html#org.glassfish.jersey.client.rx.jsr166e.package-info.java">org/glassfish/jersey/client/rx/jsr166e/package-info.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-rx-client-jsr166e//checkstyle.html#org.glassfish.jersey.client.rx.jsr166e.package-info.java">org/glassfish/jersey/client/rx/jsr166e/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-rx-client-jsr166e//checkstyle.html#org.glassfish.jersey.client.rx.jsr166e.RxCompletableFutureInvoker.java">org/glassfish/jersey/client/rx/jsr166e/RxCompletableFutureInvoker.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-rx-client-jsr166e//checkstyle.html#org.glassfish.jersey.client.rx.jsr166e.RxCompletableFutureInvoker.java">org/glassfish/jersey/client/rx/jsr166e/RxCompletableFutureInvoker.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-rx-client-jsr166e//checkstyle.html#org.glassfish.jersey.client.rx.jsr166e.JerseyRxCompletableFutureInvoker.java">org/glassfish/jersey/client/rx/jsr166e/JerseyRxCompletableFutureInvoker.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-rx-client-jsr166e//checkstyle.html#org.glassfish.jersey.client.rx.jsr166e.JerseyRxCompletableFutureInvoker.java">org/glassfish/jersey/client/rx/jsr166e/JerseyRxCompletableFutureInvoker.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-rx-client-jsr166e//checkstyle.html#org.glassfish.jersey.client.rx.jsr166e.RxCompletableFuture.java">org/glassfish/jersey/client/rx/jsr166e/RxCompletableFuture.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-rx-client-jsr166e//checkstyle.html#org.glassfish.jersey.client.rx.jsr166e.RxCompletableFuture.java">org/glassfish/jersey/client/rx/jsr166e/RxCompletableFuture.java</a>
                 </td>
                 <td>
                   0

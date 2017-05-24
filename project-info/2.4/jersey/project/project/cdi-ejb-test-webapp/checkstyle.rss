@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-tests-cdi-ejb-webapp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/cdi-ejb-test-webapp/</link>
+    <link>https://jersey.github.io/project/project/cdi-ejb-test-webapp/</link>
     <description>jersey-tests-cdi-ejb-webapp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/cdi-ejb-test-webapp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/cdi-ejb-test-webapp//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/cdi-ejb-test-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/cdi-ejb-test-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.EjbStatelessResource.java">org/glassfish/jersey/tests/cdi/resources/EjbStatelessResource.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.EjbStatelessResource.java">org/glassfish/jersey/tests/cdi/resources/EjbStatelessResource.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.EjbSingletonResource.java">org/glassfish/jersey/tests/cdi/resources/EjbSingletonResource.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.EjbSingletonResource.java">org/glassfish/jersey/tests/cdi/resources/EjbSingletonResource.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.CdiAppScopedTimer.java">org/glassfish/jersey/tests/cdi/resources/CdiAppScopedTimer.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.CdiAppScopedTimer.java">org/glassfish/jersey/tests/cdi/resources/CdiAppScopedTimer.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.BasicTimer.java">org/glassfish/jersey/tests/cdi/resources/BasicTimer.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.BasicTimer.java">org/glassfish/jersey/tests/cdi/resources/BasicTimer.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.EjbSingletonTimer.java">org/glassfish/jersey/tests/cdi/resources/EjbSingletonTimer.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.EjbSingletonTimer.java">org/glassfish/jersey/tests/cdi/resources/EjbSingletonTimer.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.EjbStatefulResource.java">org/glassfish/jersey/tests/cdi/resources/EjbStatefulResource.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.EjbStatefulResource.java">org/glassfish/jersey/tests/cdi/resources/EjbStatefulResource.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.CdiRequestScopedResource.java">org/glassfish/jersey/tests/cdi/resources/CdiRequestScopedResource.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.CdiRequestScopedResource.java">org/glassfish/jersey/tests/cdi/resources/CdiRequestScopedResource.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.CdiRequestScopedTimer.java">org/glassfish/jersey/tests/cdi/resources/CdiRequestScopedTimer.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.CdiRequestScopedTimer.java">org/glassfish/jersey/tests/cdi/resources/CdiRequestScopedTimer.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.EjbStatelessTimer.java">org/glassfish/jersey/tests/cdi/resources/EjbStatelessTimer.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.EjbStatelessTimer.java">org/glassfish/jersey/tests/cdi/resources/EjbStatelessTimer.java</a>
                 </td>
                 <td>
                   0
@@ -155,7 +155,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.MyApplication.java">org/glassfish/jersey/tests/cdi/resources/MyApplication.java</a>
+                  <a href="https://jersey.github.io/project/project/cdi-ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.cdi.resources.MyApplication.java">org/glassfish/jersey/tests/cdi/resources/MyApplication.java</a>
                 </td>
                 <td>
                   0

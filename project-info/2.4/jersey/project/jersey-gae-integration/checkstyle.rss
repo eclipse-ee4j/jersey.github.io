@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-ext-gae-integration - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-gae-integration/</link>
+    <link>https://jersey.github.io/project/jersey-gae-integration/</link>
     <description>jersey-ext-gae-integration - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-gae-integration//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-gae-integration//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-gae-integration//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-gae-integration//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-gae-integration//checkstyle.html#org.glassfish.jersey.server.gae.internal.GaeRuntimeThreadProvider.java">org/glassfish/jersey/server/gae/internal/GaeRuntimeThreadProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-gae-integration//checkstyle.html#org.glassfish.jersey.server.gae.internal.GaeRuntimeThreadProvider.java">org/glassfish/jersey/server/gae/internal/GaeRuntimeThreadProvider.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-gae-integration//checkstyle.html#org.glassfish.jersey.server.gae.GaeFeature.java">org/glassfish/jersey/server/gae/GaeFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-gae-integration//checkstyle.html#org.glassfish.jersey.server.gae.GaeFeature.java">org/glassfish/jersey/server/gae/GaeFeature.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-gae-integration//checkstyle.html#org.glassfish.jersey.server.gae.internal.package-info.java">org/glassfish/jersey/server/gae/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-gae-integration//checkstyle.html#org.glassfish.jersey.server.gae.internal.package-info.java">org/glassfish/jersey/server/gae/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-gae-integration//checkstyle.html#org.glassfish.jersey.server.gae.package-info.java">org/glassfish/jersey/server/gae/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-gae-integration//checkstyle.html#org.glassfish.jersey.server.gae.package-info.java">org/glassfish/jersey/server/gae/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-gae-integration//checkstyle.html#org.glassfish.jersey.server.gae.internal.GaeBinder.java">org/glassfish/jersey/server/gae/internal/GaeBinder.java</a>
+                  <a href="https://jersey.github.io/project/jersey-gae-integration//checkstyle.html#org.glassfish.jersey.server.gae.internal.GaeBinder.java">org/glassfish/jersey/server/gae/internal/GaeBinder.java</a>
                 </td>
                 <td>
                   0

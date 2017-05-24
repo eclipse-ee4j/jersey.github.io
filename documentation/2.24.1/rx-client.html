@@ -10,7 +10,7 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;6.&nbsp;Reactive Jersey Client API</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="client.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="representations.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;6.&nbsp;Reactive Jersey Client API</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="client.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="representations.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
@@ -177,7 +177,7 @@ destination.path("recommended").request()
             }
         });</pre></div></div><p><br class="example-break">
             </p><p>
-                The example is a bit more complicated from the first glance. We provided an <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/InvocationCallback.html" target="_top">InvocationCallback</a> to async
+                The example is a bit more complicated from the first glance. We provided an <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/InvocationCallback.html" target="_top">InvocationCallback</a> to async
                 <code class="literal">get</code> method. One of the callback methods (<code class="literal">completed</code> or <code class="literal">failed</code>)
                 is called when the request finishes. This is a pretty convenient way to handle async invocations when no nested
                 calls are present. Since we have some nested calls (obtaining weather forecasts) we needed to introduce
@@ -275,7 +275,7 @@ final Observable&lt;Recommendation&gt; recommendations = Observable.zip(recommen
         .get();</pre></div></div><p><br class="example-break">
 
             it is apparent how to pretty conveniently modify the way how a request is invoked (from sync to async) only by calling
-            <code class="literal">async</code> method on an <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Invocation.Builder.html" target="_top">Invocation.Builder</a>.
+            <code class="literal">async</code> method on an <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Invocation.Builder.html" target="_top">Invocation.Builder</a>.
         </p><p>
             Naturally, it'd be nice to copy the same pattern to allow invoking requests in a reactive way. Just instead of
             <code class="literal">async</code> you'd call <code class="literal">rx</code> on an extension of <code class="literal">Invocation.Builder</code>,
@@ -288,7 +288,7 @@ final Observable&lt;Recommendation&gt; recommendations = Observable.zip(recommen
         .get();</pre></div></div><p><br class="example-break">
         </p><p>
             To achieve this a few new interfaces had to be introduced in the Reactive Jersey Client API. The first new interface is
-            <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxInvoker.html" target="_top">RxInvoker</a> which is very similar to <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/SyncInvoker.html" target="_top">SyncInvoker</a> and <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/AsyncInvoker.html" target="_top">AsyncInvoker</a>.
+            <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxInvoker.html" target="_top">RxInvoker</a> which is very similar to <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/SyncInvoker.html" target="_top">SyncInvoker</a> and <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/AsyncInvoker.html" target="_top">AsyncInvoker</a>.
             It contains all methods present in the two latter JAX-RS interfaces but the <code class="literal">RxInvoker</code> interface is more generic,
             so that it can be extended and used in particular implementations taking advantage of various reactive libraries. Extending this new interface
             in a particular implementation also preserves type safety which means that you're not loosing type information when a HTTP
@@ -309,24 +309,24 @@ final Observable&lt;Recommendation&gt; recommendations = Observable.zip(recommen
         </p><p>
             In addition to having a concrete <code class="literal">RxInvoker</code> implementation ready there is also a need
             to have an implementation of new reactive methods, <code class="literal">rx()</code> and <code class="literal">rx(ExecutorService)</code>.
-            They're defined in <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxInvocationBuilder.html" target="_top">RxInvocationBuilder</a> which extends the <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Invocation.Builder.html" target="_top">Invocation.Builder</a> from JAX-RS.
+            They're defined in <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxInvocationBuilder.html" target="_top">RxInvocationBuilder</a> which extends the <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/Invocation.Builder.html" target="_top">Invocation.Builder</a> from JAX-RS.
             Using the first method you can simply access the reactive request invocation interface to invoke the built request and
             the second allows you to specify the executor service to execute the current reactive request (and only this one).
         </p><p>
             To access the <code class="literal">RxInvocationBuilder</code> we needed to also extend JAX-RS <code class="literal">Client</code>
-            (<a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxClient.html" target="_top">RxClient</a>) and <code class="literal">WebTarget</code> (<a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxWebTarget.html" target="_top">RxWebTarget</a>) to preserve
+            (<a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxClient.html" target="_top">RxClient</a>) and <code class="literal">WebTarget</code> (<a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxWebTarget.html" target="_top">RxWebTarget</a>) to preserve
             the fluent Client API introduced in JAX-RS.
         </p><p>
             With all these interfaces ready the only question left behind is the way how to create an instance of Reactive Jersey
             Client. This functionality is beyond the actual JAX-RS API. It is not possible to create such a client via the standard
-            <code class="literal">ClientBuilder</code> entry point. To resolve this, we introduced a new helper class, <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html" target="_top">Rx</a>,
+            <code class="literal">ClientBuilder</code> entry point. To resolve this, we introduced a new helper class, <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html" target="_top">Rx</a>,
             which does the job. This class contains factory methods to create a new (reactive) client from scratch
 
-            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html#newClient(java.lang.Class)" target="_top">Rx.newClient(Class)</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html#newClient(java.lang.Class, java.util.concurrent.ExecutorService)" target="_top">Rx.newClient(Class,ExecutorService)</a></p></li></ul></div><p>
+            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html#newClient(java.lang.Class)" target="_top">Rx.newClient(Class)</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html#newClient(java.lang.Class, java.util.concurrent.ExecutorService)" target="_top">Rx.newClient(Class,ExecutorService)</a></p></li></ul></div><p>
 
             and it also contains methods to enhance an existing JAX-RS <code class="literal">Client</code> and <code class="literal">WebTarget</code>
 
-            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html#from(javax.ws.rs.client.Client, java.lang.Class)" target="_top">Rx.from(Client,Class)</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html#from(javax.ws.rs.client.Client, java.lang.Class, java.util.concurrent.ExecutorService)" target="_top">Rx.from(Client,Class,ExecutorService)</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html#from(javax.ws.rs.client.WebTarget, java.lang.Class)" target="_top">Rx.from(WebTarget,Class)</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html#from(javax.ws.rs.client.WebTarget, java.lang.Class, java.util.concurrent.ExecutorService)" target="_top">Rx.from(WebTarget,Class,ExecutorService)</a></p></li></ul></div><p>
+            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html#from(javax.ws.rs.client.Client, java.lang.Class)" target="_top">Rx.from(Client,Class)</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html#from(javax.ws.rs.client.Client, java.lang.Class, java.util.concurrent.ExecutorService)" target="_top">Rx.from(Client,Class,ExecutorService)</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html#from(javax.ws.rs.client.WebTarget, java.lang.Class)" target="_top">Rx.from(WebTarget,Class)</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html#from(javax.ws.rs.client.WebTarget, java.lang.Class, java.util.concurrent.ExecutorService)" target="_top">Rx.from(WebTarget,Class,ExecutorService)</a></p></li></ul></div><p>
 
             It's possible to provide an <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ExecutorService.html" target="_top">ExecutorService</a> instance to tell the reactive client that all requests should be invoked using this
             particular executor. This behaviour can be suppressed by providing another <code class="literal">ExecutorService</code> instance for a particular
@@ -350,7 +350,7 @@ final Observable&lt;Recommendation&gt; recommendations = Observable.zip(recommen
                     reactive library. To add support for a particular library, see the <a class="xref" href="rx-client.html#rx.client.supported" title="6.3.&nbsp;Supported Reactive Libraries">Section&nbsp;6.3, &#8220;Supported Reactive Libraries&#8221;</a>.
                 </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                         If you're not using Maven (or other dependency management tool) make sure to add also all the transitive
-                        dependencies of this extension module (see <a class="link" href="https://jersey.java.net/project-info/2.24.1/jersey/project/project/jersey-rx-client/dependencies.html" target="_top">jersey-rx-client</a>) on the class-path.
+                        dependencies of this extension module (see <a class="link" href="https://jersey.github.io/project-info/2.24.1/jersey/project/project/jersey-rx-client/dependencies.html" target="_top">jersey-rx-client</a>) on the class-path.
                     </p></div></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="rx.client.supported"></a>6.3.&nbsp;Supported Reactive Libraries</h2></div></div></div><p>
             There are already some available reactive (or reactive-like) libraries out there and Jersey brings support for some of
             them out of the box. Jersey currently supports:
@@ -362,7 +362,7 @@ final Observable&lt;Recommendation&gt; recommendations = Observable.zip(recommen
                 <a class="link" href="http://en.wikipedia.org/wiki/Observer_pattern" target="_top">observer pattern</a> to support these sequences of data/events
                 via it's <a class="link" href="http://reactivex.io/RxJava/javadoc//rx/Observable.html" target="_top">Observable</a> entry point class which implements the Reactive Pattern. <code class="literal">Observable</code> is
                 actually the parameter type in the RxJava's extension of <code class="literal">RxInvoker</code>, called
-                <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/rxjava/RxObservableInvoker.html" target="_top">RxObservableInvoker</a>. This means that the return type of HTTP method calls is
+                <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/rxjava/RxObservableInvoker.html" target="_top">RxObservableInvoker</a>. This means that the return type of HTTP method calls is
                 <code class="literal">Observable</code> in this case (accordingly parametrized).
             </p><p>
                 Requests are by default invoked at the moment when a subscriber is subscribed to an observable (it's a cold
@@ -372,9 +372,9 @@ final Observable&lt;Recommendation&gt; recommendations = Observable.zip(recommen
                 be invoked.
             </p><div class="simplesect"><div class="titlepage"><div><div><h4 class="title"><a name="d0e5893"></a>Usage</h4></div></div></div><p>
                     A JAX-RS <code class="literal">Client</code> or <code class="literal">WebTarget</code> aware of reactive HTTP calls, Jersey's
-                    <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxClient.html" target="_top">RxClient</a> or <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxWebTarget.html" target="_top">RxWebTarget</a> parametrized by
+                    <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxClient.html" target="_top">RxClient</a> or <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxWebTarget.html" target="_top">RxWebTarget</a> parametrized by
                     <code class="literal">RxObservableInvoker</code>, can be created either via the generic
-                    <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html" target="_top">Rx</a> entry point or the customized <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/rxjava/RxObservable.html" target="_top">RxObservable</a> one.
+                    <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html" target="_top">Rx</a> entry point or the customized <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/rxjava/RxObservable.html" target="_top">RxObservable</a> one.
                 </p><p>
                     When using the generic entry point you need to specify the <code class="literal">RxObservableInvoker</code>
                     invoker type to obtain an appropriate instance of the client or the web target.
@@ -429,13 +429,13 @@ RxTarget&lt;RxObservableInvoker&gt; rxWebTarget = RxObservable.from(target);</pr
                     <code class="literal">io.reactivex:rxjava</code>.
                 </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                         If you're not using Maven (or other dependency management tool) make sure to add also all the transitive
-                        dependencies of this extension module (see <a class="link" href="https://jersey.java.net/project-info/2.24.1/jersey/project/project/jersey-rx-client-rxjava/dependencies.html" target="_top">jersey-rx-client-rxjava</a>) on the class-path.
+                        dependencies of this extension module (see <a class="link" href="https://jersey.github.io/project-info/2.24.1/jersey/project/project/jersey-rx-client-rxjava/dependencies.html" target="_top">jersey-rx-client-rxjava</a>) on the class-path.
                     </p></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="rx-client.java8"></a>6.3.2.&nbsp;Java 8 &#8211; CompletionStage and CompletableFuture</h3></div></div></div><p>
                 Java 8 natively contains asynchronous/event-based completion aware types, <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html" target="_top">CompletionStage</a> and
                 <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html" target="_top">CompletableFuture</a>. These types can be then combined with <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html" target="_top">Stream</a>s to achieve similar functionality
                 as provided by RxJava (see <a class="xref" href="rx-client.html#rx-client.rxjava" title="6.3.1.&nbsp;RxJava &#8211; Observable">Section&nbsp;6.3.1, &#8220;RxJava (Observable)&#8221;</a> for more information). <code class="literal">CompletionStage</code>
                 is the parameter type in the Java 8 extension of <code class="literal">RxInvoker</code>, called
-                <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/java8/RxCompletionStageInvoker.html" target="_top">RxCompletionStageInvoker</a>. This means that the return type of HTTP method calls is
+                <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/java8/RxCompletionStageInvoker.html" target="_top">RxCompletionStageInvoker</a>. This means that the return type of HTTP method calls is
                 <code class="literal">CompletionStage</code> in this case (accordingly parametrized).
             </p><p>
                 Requests are by default invoked immediately. If not said otherwise the <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html#commonPool--" target="_top">ForkJoinPool#commonPool()</a> pool
@@ -444,9 +444,9 @@ RxTarget&lt;RxObservableInvoker&gt; rxWebTarget = RxObservable.from(target);</pr
                 when a particular request is about to be invoked.
             </p><div class="simplesect"><div class="titlepage"><div><div><h4 class="title"><a name="d0e6038"></a>Usage</h4></div></div></div><p>
                     A JAX-RS <code class="literal">Client</code> or <code class="literal">WebTarget</code> aware of reactive HTTP calls, Jersey's
-                    <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxClient.html" target="_top">RxClient</a> or <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxWebTarget.html" target="_top">RxWebTarget</a> parametrized by
+                    <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxClient.html" target="_top">RxClient</a> or <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxWebTarget.html" target="_top">RxWebTarget</a> parametrized by
                     <code class="literal">RxCompletionStageInvoker</code>, can be created either via the generic
-                    <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html" target="_top">Rx</a> entry point or the customized <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/java8/RxCompletionStage.html" target="_top">RxCompletionStage</a> one.
+                    <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html" target="_top">Rx</a> entry point or the customized <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/java8/RxCompletionStage.html" target="_top">RxCompletionStage</a> one.
                 </p><p>
                     When using the generic entry point you need to specify the <code class="literal">RxCompletionStage</code>
                     invoker type to obtain an appropriate instance of the client or the web target.
@@ -504,13 +504,13 @@ RxTarget&lt;RxCompletionStageInvoker&gt; rxWebTarget = RxCompletionStage.from(ta
                     dependency to your class-path as well: <code class="literal">org.glassfish.jersey.ext.rx:jersey-rx-client</code>.
                 </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                         If you're not using Maven (or other dependency management tool) make sure to add also all the transitive
-                        dependencies of this extension module (see <a class="link" href="https://jersey.java.net/project-info/2.24.1/jersey/project/project/jersey-rx-client-java8/dependencies.html" target="_top">jersey-rx-client-java8</a>) on the class-path.
+                        dependencies of this extension module (see <a class="link" href="https://jersey.github.io/project-info/2.24.1/jersey/project/project/jersey-rx-client-java8/dependencies.html" target="_top">jersey-rx-client-java8</a>) on the class-path.
                     </p></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="rx-client.guava"></a>6.3.3.&nbsp;Guava &#8211; ListenableFuture and Futures</h3></div></div></div><p>
                 <a class="link" href="https://code.google.com/p/guava-libraries/" target="_top">Guava</a>, contributed by Google, also contains a type, <a class="link" href="http://docs.guava-libraries.googlecode.com/git-history/v18.0/javadoc/com/google/common/util/concurrent/ListenableFuture.html" target="_top">ListenableFuture</a>, which can be decorated with
                 listeners that are notified when the future completes. The <code class="literal">ListenableFuture</code> can be combined with
                 <a class="link" href="http://docs.guava-libraries.googlecode.com/git-history/v18.0/javadoc/com/google/common/util/concurrent/Futures.html" target="_top">Futures</a> to achieve asynchronous/event-based completion aware processing. <code class="literal">ListenableFuture</code>
                 is the parameter type in the Guava's extension of <code class="literal">RxInvoker</code>, called
-                <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/guava/RxListenableFutureInvoker.html" target="_top">RxListenableFutureInvoker</a>. This means that the return type of HTTP method calls is
+                <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/guava/RxListenableFutureInvoker.html" target="_top">RxListenableFutureInvoker</a>. This means that the return type of HTTP method calls is
                 <code class="literal">ListenableFuture</code> in this case (accordingly parametrized).
             </p><p>
                 Requests are by default invoked immediately. If not said otherwise the <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executors.html#newCachedThreadPool--" target="_top">Executors#newCachedThreadPool()</a> pool
@@ -519,9 +519,9 @@ RxTarget&lt;RxCompletionStageInvoker&gt; rxWebTarget = RxCompletionStage.from(ta
                 when a particular requests is about to be invoked.
             </p><div class="simplesect"><div class="titlepage"><div><div><h4 class="title"><a name="d0e6189"></a>Usage</h4></div></div></div><p>
                     A JAX-RS <code class="literal">Client</code> or <code class="literal">WebTarget</code> aware of reactive HTTP calls, Jersey's
-                    <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxClient.html" target="_top">RxClient</a> or <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxWebTarget.html" target="_top">RxWebTarget</a> parametrized by
+                    <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxClient.html" target="_top">RxClient</a> or <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxWebTarget.html" target="_top">RxWebTarget</a> parametrized by
                     <code class="literal">RxListenableFutureInvoker</code>, can be created either via the generic
-                    <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html" target="_top">Rx</a> entry point or the customized <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/guava/RxListenableFuture.html" target="_top">RxListenableFuture</a> one.
+                    <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html" target="_top">Rx</a> entry point or the customized <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/guava/RxListenableFuture.html" target="_top">RxListenableFuture</a> one.
                 </p><p>
                     When using the generic entry point you need to specify the <code class="literal">RxListenableFutureInvoker</code>
                     invoker type to obtain an appropriate instance of the client or the web target.
@@ -575,13 +575,13 @@ RxTarget&lt;RxListenableFutureInvoker&gt; rxWebTarget = RxListenableFuture.from(
                     <code class="literal">com.google.guava:guava</code>.
                 </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                         If you're not using Maven (or other dependency management tool) make sure to add also all the transitive
-                        dependencies of this extension module (see <a class="link" href="https://jersey.java.net/project-info/2.24.1/jersey/project/project/jersey-rx-client-guava/dependencies.html" target="_top">jersey-rx-client-guava</a>) on the class-path.
+                        dependencies of this extension module (see <a class="link" href="https://jersey.github.io/project-info/2.24.1/jersey/project/project/jersey-rx-client-guava/dependencies.html" target="_top">jersey-rx-client-guava</a>) on the class-path.
                     </p></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="rx-client.jsr166e"></a>6.3.4.&nbsp;JSR-166e &#8211; CompletableFuture</h3></div></div></div><p>
                 When Java 8 is not an option but the functionality of <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html" target="_top">CompletionStage</a> and <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html" target="_top">CompletableFuture</a>
                 is required a <a class="link" href="http://g.oswego.edu/dl/concurrency-interest/" target="_top">JSR 166</a> library can be used. It's a back-port of classes from
                 <code class="literal">java.util.concurrent</code> package added to Java 8. Contributed and maintained by Doug Lea.
                 <code class="literal">CompletableFuture</code> is the parameter type in the JSR-166e's extension of
-                <code class="literal">RxInvoker</code>, called <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/jsr166e/RxCompletableFutureInvoker.html" target="_top">RxCompletableFutureInvoker</a>. This means
+                <code class="literal">RxInvoker</code>, called <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/jsr166e/RxCompletableFutureInvoker.html" target="_top">RxCompletableFutureInvoker</a>. This means
                 that the return type of HTTP method calls is <code class="literal">CompletableFuture</code> in this case (accordingly
                 parametrized).
             </p><p>
@@ -591,9 +591,9 @@ RxTarget&lt;RxListenableFutureInvoker&gt; rxWebTarget = RxListenableFuture.from(
                 when a particular requests is about to be invoked.
             </p><div class="simplesect"><div class="titlepage"><div><div><h4 class="title"><a name="d0e6326"></a>Usage</h4></div></div></div><p>
                     A JAX-RS <code class="literal">Client</code> or <code class="literal">WebTarget</code> aware of reactive HTTP calls, Jersey's
-                    <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxClient.html" target="_top">RxClient</a> or <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxWebTarget.html" target="_top">RxWebTarget</a> parametrized by
+                    <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxClient.html" target="_top">RxClient</a> or <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxWebTarget.html" target="_top">RxWebTarget</a> parametrized by
                     <code class="literal">RxCompletableFutureInvoker</code>, can be created either via the generic
-                    <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html" target="_top">Rx</a> entry point or the customized <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/jsr166e/RxCompletableFuture.html" target="_top">RxCompletableFuture</a> one.
+                    <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/Rx.html" target="_top">Rx</a> entry point or the customized <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/jsr166e/RxCompletableFuture.html" target="_top">RxCompletableFuture</a> one.
                 </p><p>
                     When using the generic entry point you need to specify the
                     <code class="literal">RxCompletableFutureInvoker</code> invoker type to obtain an appropriate instance
@@ -652,7 +652,7 @@ RxTarget&lt;RxCompletableFutureInvoker&gt; rxWebTarget = RxCompletableFuture.fro
                     repackaged by Jersey to make sure the OSGi headers are correct and the library can be used in OSGi environment.
                 </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                         If you're not using Maven (or other dependency management tool) make sure to add also all the transitive
-                        dependencies of this extension module (see <a class="link" href="https://jersey.java.net/project-info/2.24.1/jersey/project/project/jersey-rx-client-jsr166e/dependencies.html" target="_top">jersey-rx-client-jsr166e</a>) on the class-path.
+                        dependencies of this extension module (see <a class="link" href="https://jersey.github.io/project-info/2.24.1/jersey/project/project/jersey-rx-client-jsr166e/dependencies.html" target="_top">jersey-rx-client-jsr166e</a>) on the class-path.
                     </p></div></div></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="rx.client.spi"></a>6.4.&nbsp;Implementing Support for Custom Reactive Libraries (SPI)</h2></div></div></div><p>
             In case you want to bring support for some other library providing Reactive Programming Model into your application
             you can extend functionality of Reactive Jersey Client by implementing SPI available in <code class="literal">jersey-rx-client</code>
@@ -660,7 +660,7 @@ RxTarget&lt;RxCompletableFutureInvoker&gt; rxWebTarget = RxCompletableFuture.fro
         </p><div class="simplesect"><div class="titlepage"><div><div><h3 class="title"><a name="d0e6434"></a>Extend RxInvoker interface</h3></div></div></div><p>
                 Even though not entirely intuitive this step is required when a support for a custom reactive library is needed.
                 As mentioned above few JAX-RS Client interfaces had to be modified in order to make possible to invoke HTTP calls
-                in a reactive way. All of them except the <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxInvoker.html" target="_top">RxInvoker</a> extend the original interfaces from
+                in a reactive way. All of them except the <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/RxInvoker.html" target="_top">RxInvoker</a> extend the original interfaces from
                 JAX-RS (e.g. <code class="literal">Client</code>). <code class="literal">RxInvoker</code> is a brand new interface (very
                 similar to <code class="literal">SyncInvoker</code> and <code class="literal">AsyncInvoker</code>) that actually lets you to invoke HTTP
                 methods in the reactive way.
@@ -705,12 +705,12 @@ RxTarget&lt;RxCompletableFutureInvoker&gt; rxWebTarget = RxCompletableFuture.fro
 }</pre></div></div><p><br class="example-break">
             </p></div><div class="simplesect"><div class="titlepage"><div><div><h3 class="title"><a name="d0e6510"></a>Implement the extended interface</h3></div></div></div><p>
                 Either you can implement the extension of <code class="literal">RxInvoker</code> from scratch or it's possible to
-                extend from <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/spi/AbstractRxInvoker.html" target="_top">AbstractRxInvoker</a> abstract class which serves as a default implementation of
+                extend from <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/spi/AbstractRxInvoker.html" target="_top">AbstractRxInvoker</a> abstract class which serves as a default implementation of
                 the interface. In the later case only <code class="literal">#method(...)</code> methods are needed to be implemented as
                 the default implementation of other methods (HTTP calls) delegates to these methods.
             </p></div><div class="simplesect"><div class="titlepage"><div><div><h3 class="title"><a name="d0e6524"></a>Implement and register RxInvokerProvider</h3></div></div></div><p>
                 To create an instance of particular <code class="literal">RxInvoker</code> an implementation of
-                <a class="link" href="https://jersey.java.net/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/spi/RxInvokerProvider.html" target="_top">RxInvokerProvider</a> SPI interface is needed. When a concrete <code class="literal">RxInvoker</code>
+                <a class="link" href="https://jersey.github.io/apidocs/2.24.1/jersey/org/glassfish/jersey/client/rx/spi/RxInvokerProvider.html" target="_top">RxInvokerProvider</a> SPI interface is needed. When a concrete <code class="literal">RxInvoker</code>
                 is requested the runtime goes through all available providers and finds one which supports the given invoker type.
                 It is expected that each provider supports mapping for distinct set of types and subtypes so that different
                 providers do not conflict with each other.
@@ -737,14 +737,14 @@ RxTarget&lt;RxCompletableFutureInvoker&gt; rxWebTarget = RxCompletableFuture.fro
             Client APIs feature refer to the:
 
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://github.com/jersey/jersey/tree/2.24.1/examples/rx-client-webapp" target="_top">Travel Agency (Orchestration Layer) Example using Reactive Jersey Client API</a></p></li><li class="listitem"><p><a class="link" href="https://github.com/jersey/jersey/tree/2.24.1/examples/rx-client-java8-webapp" target="_top">Travel Agency (Orchestration Layer) Example using Reactive Jersey Client API (Java 8)</a></p></li></ul></div><p>
-        </p></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+        </p></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

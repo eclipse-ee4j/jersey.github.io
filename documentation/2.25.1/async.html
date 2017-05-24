@@ -10,7 +10,7 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;11.&nbsp;Asynchronous Services and Clients</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="filters-and-interceptors.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="uris-and-links.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;11.&nbsp;Asynchronous Services and Clients</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="filters-and-interceptors.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="uris-and-links.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
@@ -56,9 +56,9 @@ public class AsyncResource {
 }</pre></div></div><p><br class="example-break">
             In the example above, a resource <code class="literal">AsyncResource</code>
             with one <code class="literal">GET</code> method <code class="literal">asyncGet</code> is defined. The <code class="literal">asyncGet</code> method
-            injects a JAX-RS <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/AsyncResponse.html" target="_top">AsyncResponse</a> instance using a JAX-RS <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/Suspended.html" target="_top">@Suspended</a> annotation.
+            injects a JAX-RS <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/AsyncResponse.html" target="_top">AsyncResponse</a> instance using a JAX-RS <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/Suspended.html" target="_top">@Suspended</a> annotation.
             Please note that <code class="literal">AsyncResponse</code> must be injected by the <code class="literal">@Suspended</code>
-            annotation and not by <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Context.html" target="_top">@Context</a> as <code class="literal">@Suspended</code> does not only inject response but also
+            annotation and not by <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/Context.html" target="_top">@Context</a> as <code class="literal">@Suspended</code> does not only inject response but also
             says that the method is executed in the asynchronous mode. By the <code class="literal">AsyncResponse</code> parameter into
             a resource method we tell the Jersey runtime that the method is supposed to be invoked using the asynchronous
             processing mode, that is the client connection should not be automatically closed by the underlying I/O container
@@ -67,7 +67,7 @@ public class AsyncResource {
             thread. In other words, Jersey runtime knows that when the <code class="literal">asyncGet</code> method completes, the response
             to the client may not be ready yet and the processing must be suspended and wait to be explictly resumed with a
             response once it becomes available. Note that the method <code class="literal">asyncGet</code> returns <code class="literal">void</code>
-            in our example. This is perfectly valid in case of an asynchronous JAX-RS resource method, even for a <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/GET.html" target="_top">@GET</a>
+            in our example. This is perfectly valid in case of an asynchronous JAX-RS resource method, even for a <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/GET.html" target="_top">@GET</a>
             method, as the response is never returned directly from the resource method as its return value. Instead, the response
             is later returned using <code class="literal">AsyncResponse</code> instance as it is demonstrated in the example. The
             <code class="literal">asyncGet</code> resource method starts a new thread and exits from the method. In that state the
@@ -82,7 +82,7 @@ public class AsyncResource {
             It is important to note that the asynchronous response (<code class="literal">asyncResponse</code> in the example)
             does not need to be resumed from the thread started from the resource method. The asynchronous
             response can be resumed even from different request processing thread as it is shown in the
-            the example of the <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/AsyncResponse.html" target="_top">AsyncResponse</a> javadoc. In the javadoc example the
+            the example of the <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/AsyncResponse.html" target="_top">AsyncResponse</a> javadoc. In the javadoc example the
             async response suspended from the <code class="literal">GET</code> method is resumed later on from
             the <code class="literal">POST</code> method. The suspended async response is passed between requests using
             a static field and is resumed from the other resource method running on a different request processing thread.
@@ -133,9 +133,9 @@ public void asyncGetWithTimeout(@Suspended final AsyncResponse asyncResponse) {
                 a single resource method invocation, JAX-RS offers facility to register callbacks to be invoked
                 based on suspended async response state changes. In Jersey you can register two JAX-RS callbacks:
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">
-                        <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/CompletionCallback.html" target="_top">CompletionCallback</a> that is executed when request finishes or fails, and
+                        <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/CompletionCallback.html" target="_top">CompletionCallback</a> that is executed when request finishes or fails, and
                     </li><li class="listitem">
-                        <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/ConnectionCallback.html" target="_top">ConnectionCallback</a> executed when a connection to a client is closed or lost.
+                        <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/ConnectionCallback.html" target="_top">ConnectionCallback</a> executed when a connection to a client is closed or lost.
                     </li></ul></div><p>
                 </p><div class="example"><a name="d0e10437"></a><p class="title"><b>Example&nbsp;11.3.&nbsp;CompletionCallback example</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("/resource")
 public class AsyncResource {
@@ -191,7 +191,7 @@ public class AsyncResource {
                 use cases a <code class="literal">ConnectionCallback</code> can be used. This callback will be executed only if the
                 connection was prematurely terminated or lost while the response is being written to the back client. Note that
                 this callback will not be invoked when a response is written successfully and the client connection is closed
-                as expected. See javadoc of <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/ConnectionCallback.html" target="_top">ConnectionCallback</a> for more information.
+                as expected. See javadoc of <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/container/ConnectionCallback.html" target="_top">ConnectionCallback</a> for more information.
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="chunked-output"></a>11.1.2.&nbsp;Chunked Output</h3></div></div></div><p>Jersey offers a facility for sending response to the client in multiple more-or-less independent chunks using a
                 <span class="emphasis"><em>chunked output</em></span>. Each response chunk usually takes some (longer) time to prepare before
                 sending it to the client. The most important fact about response chunks is that you want
@@ -203,9 +203,9 @@ public class AsyncResource {
                 another response chunk and send it again to the client. Server keeps on sending response chunks until
                 it closes the connection after sending the last chunk when the response processing is finished.
             </p><p>
-                In Jersey you can use <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> to send response to a client in chunks. Chunks are strictly
+                In Jersey you can use <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> to send response to a client in chunks. Chunks are strictly
                 defined pieces of a response body can be marshalled as a separate entities using Jersey/JAX-RS
-                <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> providers. A chunk can be String, Long or JAXB bean serialized to XML or JSON or
+                <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> providers. A chunk can be String, Long or JAXB bean serialized to XML or JSON or
                 any other dacustom type for which a <code class="literal">MessageBodyWriter&lt;T&gt;</code> is available.
             </p><p>
                 The resource method
@@ -281,7 +281,7 @@ final Response response = responseFuture.get();
     // get() waits for the response to be ready
 System.out.println("Response received.");</pre></div></div><p><br class="example-break">
             The difference against synchronous invocation is that the http method call <code class="literal">get()</code>
-            is not called on <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/SyncInvoker.html" target="_top">SyncInvoker</a> but on <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/AsyncInvoker.html" target="_top">AsyncInvoker</a>. The
+            is not called on <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/SyncInvoker.html" target="_top">SyncInvoker</a> but on <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/AsyncInvoker.html" target="_top">AsyncInvoker</a>. The
             <code class="literal">AsyncInvoker</code> is returned from the call of method
             <code class="literal">Invocation.Builder.async()</code> as shown above. <code class="literal">AsyncInvoker</code>
             offers methods similar to <code class="literal">SyncInvoker</code> only these methods do not return a response
@@ -319,7 +319,7 @@ System.out.println("Response received.");</pre></div></div><p><br class="example
             }
         });</pre></div></div><p><br class="example-break">
 
-                The registered callback is expected to implement the <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/InvocationCallback.html" target="_top">InvocationCallback</a> interface that defines
+                The registered callback is expected to implement the <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/client/InvocationCallback.html" target="_top">InvocationCallback</a> interface that defines
                 two methods.
                 First method <code class="literal">completed(Response)</code> gets invoked when an invocation successfully
                 finishes. The result response is passed as a parameter to the callback method. The second method
@@ -362,7 +362,7 @@ System.out.println(entityFuture.get());</pre></div></div><p><br class="example-b
                 </p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e10687"></a>11.2.2.&nbsp;Chunked input</h3></div></div></div><p>
                 In an <a class="link" href="async.html#chunked-output" title="11.1.2.&nbsp;Chunked Output">earlier section</a> the <code class="literal">ChunkedOutput</code> was
                 described. It was shown how to use a chunked output on the server. In order to read chunks on the client the
-                <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/client/ChunkedInput.html" target="_top">ChunkedInput</a> can be used to complete the story.
+                <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/client/ChunkedInput.html" target="_top">ChunkedInput</a> can be used to complete the story.
             </p><p>
                 You can, of course, process input on the client as a standard input stream but if you would like to
                 leverage Jersey infrastructure to provide support of translating message chunk data into Java types
@@ -380,7 +380,7 @@ while ((chunk = chunkedInput.read()) != null) {
 </pre></div></div><p><br class="example-break">
 
                 The response is retrieved in a standard way from the server. The entity is read as a
-                <code class="literal">ChunkedInput</code> entity. In order to do that the <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/GenericEntity.html" target="_top">GenericEntity&lt;T&gt;</a> is used to preserve
+                <code class="literal">ChunkedInput</code> entity. In order to do that the <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/core/GenericEntity.html" target="_top">GenericEntity&lt;T&gt;</a> is used to preserve
                 a generic information at run time. If you would not use <code class="literal">GenericEntity&lt;T&gt;</code>, Java language generic type
                 erasure would cause that the generic information would get lost at compile time and an exception would be thrown
                 at run time complaining about the missing chunk type definition.
@@ -395,24 +395,24 @@ while ((chunk = chunkedInput.read()) != null) {
                 which writes exactly one chunk to the output. With the input reading it is slightly more complicated. The
                 <code class="literal">ChunkedInput</code> does not know how to distinguish chunks in the byte stream unless being told by
                 the developer. In order to define custom chunks boundaries,
-                the <code class="literal">ChunkedInput</code> offers possibility to register a <a class="link" href="https://jersey.java.net/apidocs/2.25.1/jersey/org/glassfish/jersey/client/ChunkParser.html" target="_top">ChunkParser</a> which
+                the <code class="literal">ChunkedInput</code> offers possibility to register a <a class="link" href="https://jersey.github.io/apidocs/2.25.1/jersey/org/glassfish/jersey/client/ChunkParser.html" target="_top">ChunkParser</a> which
                 reads chunks from the input stream and separates them. Jersey provides several chunk parser implementation and
                 you can implement your own parser to separate your chunks if you need. In our example above the default parser
                 provided by Jersey is used that separates chunks based on presence of a <code class="literal">\r\n</code> delimiting
                 character sequence.
             </p><p>
                 Each incoming input stream is firstly parsed by the <code class="literal">ChunkParser</code>, then each chunk is processed
-                by the proper <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>.
+                by the proper <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>.
                 You can define the media type of chunks to aid the selection of a proper <code class="literal">MessageBodyReader&lt;T&gt;</code> in
                 order to read chunks correctly into the requested entity types (in our case into Strings).
-            </p></div></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+            </p></div></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

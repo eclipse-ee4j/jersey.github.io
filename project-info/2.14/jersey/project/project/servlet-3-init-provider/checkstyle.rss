@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-tests-integration-servlet-3-init-provider - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/servlet-3-init-provider/</link>
+    <link>https://jersey.github.io/project/project/servlet-3-init-provider/</link>
     <description>jersey-tests-integration-servlet-3-init-provider - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.HelloWorld5Resource.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/HelloWorld5Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.HelloWorld5Resource.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/HelloWorld5Resource.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.Application2.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/Application2.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.Application2.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/Application2.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.Application4.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/Application4.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.Application4.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/Application4.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.HelloWorld4Resource.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/HelloWorld4Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.HelloWorld4Resource.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/HelloWorld4Resource.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.Application1.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/Application1.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.Application1.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/Application1.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.TestServletContainerProvider.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/TestServletContainerProvider.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.TestServletContainerProvider.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/TestServletContainerProvider.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.HelloWriter.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/HelloWriter.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.HelloWriter.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/HelloWriter.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.Application3.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/Application3.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.Application3.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/Application3.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.HelloWorld2Resource.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/HelloWorld2Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.HelloWorld2Resource.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/HelloWorld2Resource.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.AbstractHelloWorldResource.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/AbstractHelloWorldResource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.AbstractHelloWorldResource.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/AbstractHelloWorldResource.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.HelloWorld1Resource.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/HelloWorld1Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.HelloWorld1Resource.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/HelloWorld1Resource.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.HelloWorld3Resource.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/HelloWorld3Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.HelloWorld3Resource.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/HelloWorld3Resource.java</a>
                 </td>
                 <td>
                   0
@@ -214,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.TestFilter.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/TestFilter.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.TestFilter.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/TestFilter.java</a>
                 </td>
                 <td>
                   0
@@ -228,7 +228,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.TestContainerLifecycleListener.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/TestContainerLifecycleListener.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-3-init-provider//checkstyle.html#org.glassfish.jersey.tests.integration.servlet_3_init_provider.TestContainerLifecycleListener.java">org/glassfish/jersey/tests/integration/servlet_3_init_provider/TestContainerLifecycleListener.java</a>
                 </td>
                 <td>
                   0

@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-container-simple-http - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-container-simple-http/</link>
+    <link>https://jersey.github.io/project/jersey-container-simple-http/</link>
     <description>jersey-container-simple-http - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-container-simple-http//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-container-simple-http//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-container-simple-http//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-container-simple-http//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-simple-http//checkstyle.html#org.glassfish.jersey.simple.SimpleServer.java">org/glassfish/jersey/simple/SimpleServer.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-simple-http//checkstyle.html#org.glassfish.jersey.simple.SimpleServer.java">org/glassfish/jersey/simple/SimpleServer.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-simple-http//checkstyle.html#org.glassfish.jersey.simple.internal.localization.properties">org.glassfish.jersey.simple.internal/localization.properties</a>
+                  <a href="https://jersey.github.io/project/jersey-container-simple-http//checkstyle.html#org.glassfish.jersey.simple.internal.localization.properties">org.glassfish.jersey.simple.internal/localization.properties</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-simple-http//checkstyle.html#org.glassfish.jersey.simple.package-info.java">org/glassfish/jersey/simple/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-simple-http//checkstyle.html#org.glassfish.jersey.simple.package-info.java">org/glassfish/jersey/simple/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-simple-http//checkstyle.html#org.glassfish.jersey.simple.SimpleContainer.java">org/glassfish/jersey/simple/SimpleContainer.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-simple-http//checkstyle.html#org.glassfish.jersey.simple.SimpleContainer.java">org/glassfish/jersey/simple/SimpleContainer.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-simple-http//checkstyle.html#org.glassfish.jersey.simple.SimpleContainerProvider.java">org/glassfish/jersey/simple/SimpleContainerProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-simple-http//checkstyle.html#org.glassfish.jersey.simple.SimpleContainerProvider.java">org/glassfish/jersey/simple/SimpleContainerProvider.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-simple-http//checkstyle.html#org.glassfish.jersey.simple.SimpleContainerFactory.java">org/glassfish/jersey/simple/SimpleContainerFactory.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-simple-http//checkstyle.html#org.glassfish.jersey.simple.SimpleContainerFactory.java">org/glassfish/jersey/simple/SimpleContainerFactory.java</a>
                 </td>
                 <td>
                   0

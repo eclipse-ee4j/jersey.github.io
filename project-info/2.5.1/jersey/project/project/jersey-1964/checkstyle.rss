@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-tests-integration-jersey-1964 - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/jersey-1964/</link>
+    <link>https://jersey.github.io/project/project/jersey-1964/</link>
     <description>jersey-tests-integration-jersey-1964 - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/jersey-1964//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/jersey-1964//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/jersey-1964//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/jersey-1964//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-1964//checkstyle.html#org.glassfish.jersey.tests.integration.jersey1964.Jersey1964.java">org/glassfish/jersey/tests/integration/jersey1964/Jersey1964.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-1964//checkstyle.html#org.glassfish.jersey.tests.integration.jersey1964.Jersey1964.java">org/glassfish/jersey/tests/integration/jersey1964/Jersey1964.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-1964//checkstyle.html#org.glassfish.jersey.tests.integration.jersey1964.Issue1964Resource.java">org/glassfish/jersey/tests/integration/jersey1964/Issue1964Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-1964//checkstyle.html#org.glassfish.jersey.tests.integration.jersey1964.Issue1964Resource.java">org/glassfish/jersey/tests/integration/jersey1964/Issue1964Resource.java</a>
                 </td>
                 <td>
                   0

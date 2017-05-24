@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>j-376-reproducer - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/j-376/</link>
+    <link>https://jersey.github.io/project/project/j-376/</link>
     <description>j-376-reproducer - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/j-376//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/j-376//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/j-376//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/j-376//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.GrizzlyApp.java">org/glassfish/jersey/tests/integration/j376/GrizzlyApp.java</a>
+                  <a href="https://jersey.github.io/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.GrizzlyApp.java">org/glassfish/jersey/tests/integration/j376/GrizzlyApp.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.ApplicationScopedBean.java">org/glassfish/jersey/tests/integration/j376/ApplicationScopedBean.java</a>
+                  <a href="https://jersey.github.io/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.ApplicationScopedBean.java">org/glassfish/jersey/tests/integration/j376/ApplicationScopedBean.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.MyApplication.java">org/glassfish/jersey/tests/integration/j376/MyApplication.java</a>
+                  <a href="https://jersey.github.io/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.MyApplication.java">org/glassfish/jersey/tests/integration/j376/MyApplication.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.ApplicationScopedResource.java">org/glassfish/jersey/tests/integration/j376/ApplicationScopedResource.java</a>
+                  <a href="https://jersey.github.io/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.ApplicationScopedResource.java">org/glassfish/jersey/tests/integration/j376/ApplicationScopedResource.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.FormDataBean.java">org/glassfish/jersey/tests/integration/j376/FormDataBean.java</a>
+                  <a href="https://jersey.github.io/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.FormDataBean.java">org/glassfish/jersey/tests/integration/j376/FormDataBean.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.MethodInjectionResource.java">org/glassfish/jersey/tests/integration/j376/MethodInjectionResource.java</a>
+                  <a href="https://jersey.github.io/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.MethodInjectionResource.java">org/glassfish/jersey/tests/integration/j376/MethodInjectionResource.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.FieldInjectionResource.java">org/glassfish/jersey/tests/integration/j376/FieldInjectionResource.java</a>
+                  <a href="https://jersey.github.io/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.FieldInjectionResource.java">org/glassfish/jersey/tests/integration/j376/FieldInjectionResource.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.SecondBean.java">org/glassfish/jersey/tests/integration/j376/SecondBean.java</a>
+                  <a href="https://jersey.github.io/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.SecondBean.java">org/glassfish/jersey/tests/integration/j376/SecondBean.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.ConstructorInjectionResource.java">org/glassfish/jersey/tests/integration/j376/ConstructorInjectionResource.java</a>
+                  <a href="https://jersey.github.io/project/project/j-376//checkstyle.html#org.glassfish.jersey.tests.integration.j376.ConstructorInjectionResource.java">org/glassfish/jersey/tests/integration/j376/ConstructorInjectionResource.java</a>
                 </td>
                 <td>
                   0

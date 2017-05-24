@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-tests-ejb-webapp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/ejb-test-webapp/</link>
+    <link>https://jersey.github.io/project/project/ejb-test-webapp/</link>
     <description>jersey-tests-ejb-webapp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.RawEcho.java">org/glassfish/jersey/tests/ejb/resources/RawEcho.java</a>
+                  <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.RawEcho.java">org/glassfish/jersey/tests/ejb/resources/RawEcho.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.MyApplication.java">org/glassfish/jersey/tests/ejb/resources/MyApplication.java</a>
+                  <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.MyApplication.java">org/glassfish/jersey/tests/ejb/resources/MyApplication.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.EchoResource.java">org/glassfish/jersey/tests/ejb/resources/EchoResource.java</a>
+                  <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.EchoResource.java">org/glassfish/jersey/tests/ejb/resources/EchoResource.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.Echo.java">org/glassfish/jersey/tests/ejb/resources/Echo.java</a>
+                  <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.Echo.java">org/glassfish/jersey/tests/ejb/resources/Echo.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.CounterFilter.java">org/glassfish/jersey/tests/ejb/resources/CounterFilter.java</a>
+                  <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.CounterFilter.java">org/glassfish/jersey/tests/ejb/resources/CounterFilter.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.ExceptionEjbResource.java">org/glassfish/jersey/tests/ejb/resources/ExceptionEjbResource.java</a>
+                  <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.ExceptionEjbResource.java">org/glassfish/jersey/tests/ejb/resources/ExceptionEjbResource.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.AsyncService.java">org/glassfish/jersey/tests/ejb/resources/AsyncService.java</a>
+                  <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.AsyncService.java">org/glassfish/jersey/tests/ejb/resources/AsyncService.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.AsyncResource.java">org/glassfish/jersey/tests/ejb/resources/AsyncResource.java</a>
+                  <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.AsyncResource.java">org/glassfish/jersey/tests/ejb/resources/AsyncResource.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.RawEchoResource.java">org/glassfish/jersey/tests/ejb/resources/RawEchoResource.java</a>
+                  <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.RawEchoResource.java">org/glassfish/jersey/tests/ejb/resources/RawEchoResource.java</a>
                 </td>
                 <td>
                   0
@@ -155,7 +155,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.StandaloneServlet.java">org/glassfish/jersey/tests/ejb/resources/StandaloneServlet.java</a>
+                  <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.StandaloneServlet.java">org/glassfish/jersey/tests/ejb/resources/StandaloneServlet.java</a>
                 </td>
                 <td>
                   0
@@ -169,7 +169,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.CounterBean.java">org/glassfish/jersey/tests/ejb/resources/CounterBean.java</a>
+                  <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.CounterBean.java">org/glassfish/jersey/tests/ejb/resources/CounterBean.java</a>
                 </td>
                 <td>
                   0
@@ -183,7 +183,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.EchoBean.java">org/glassfish/jersey/tests/ejb/resources/EchoBean.java</a>
+                  <a href="https://jersey.github.io/project/project/ejb-test-webapp//checkstyle.html#org.glassfish.jersey.tests.ejb.resources.EchoBean.java">org/glassfish/jersey/tests/ejb/resources/EchoBean.java</a>
                 </td>
                 <td>
                   0

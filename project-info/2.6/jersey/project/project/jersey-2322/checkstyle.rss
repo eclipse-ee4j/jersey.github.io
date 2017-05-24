@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-tests-integration-jersey-2322 - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/jersey-2322/</link>
+    <link>https://jersey.github.io/project/project/jersey-2322/</link>
     <description>jersey-tests-integration-jersey-2322 - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/jersey-2322//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/jersey-2322//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/jersey-2322//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/jersey-2322//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-2322//checkstyle.html#org.glassfish.jersey.tests.integration.jersey2322.Issue2322Resource.java">org/glassfish/jersey/tests/integration/jersey2322/Issue2322Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-2322//checkstyle.html#org.glassfish.jersey.tests.integration.jersey2322.Issue2322Resource.java">org/glassfish/jersey/tests/integration/jersey2322/Issue2322Resource.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-2322//checkstyle.html#org.glassfish.jersey.tests.integration.jersey2322.Jersey2322.java">org/glassfish/jersey/tests/integration/jersey2322/Jersey2322.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-2322//checkstyle.html#org.glassfish.jersey.tests.integration.jersey2322.Jersey2322.java">org/glassfish/jersey/tests/integration/jersey2322/Jersey2322.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-2322//checkstyle.html#org.glassfish.jersey.tests.integration.jersey2322.MyObjectMapperProvider.java">org/glassfish/jersey/tests/integration/jersey2322/MyObjectMapperProvider.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-2322//checkstyle.html#org.glassfish.jersey.tests.integration.jersey2322.MyObjectMapperProvider.java">org/glassfish/jersey/tests/integration/jersey2322/MyObjectMapperProvider.java</a>
                 </td>
                 <td>
                   0

@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-examples-reload - Checkstyle report</title>
-    <link>https://jersey.java.net/project/reload/</link>
+    <link>https://jersey.github.io/project/reload/</link>
     <description>jersey-examples-reload - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/reload//checkstyle.html</link>
+            <link>https://jersey.github.io/project/reload//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/reload//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/reload//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/reload//checkstyle.html#org.glassfish.jersey.examples.reload.ArrivalsResource.java">org/glassfish/jersey/examples/reload/ArrivalsResource.java</a>
+                  <a href="https://jersey.github.io/project/reload//checkstyle.html#org.glassfish.jersey.examples.reload.ArrivalsResource.java">org/glassfish/jersey/examples/reload/ArrivalsResource.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/reload//checkstyle.html#org.glassfish.jersey.examples.reload.App.java">org/glassfish/jersey/examples/reload/App.java</a>
+                  <a href="https://jersey.github.io/project/reload//checkstyle.html#org.glassfish.jersey.examples.reload.App.java">org/glassfish/jersey/examples/reload/App.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/reload//checkstyle.html#org.glassfish.jersey.examples.reload.StatsResource.java">org/glassfish/jersey/examples/reload/StatsResource.java</a>
+                  <a href="https://jersey.github.io/project/reload//checkstyle.html#org.glassfish.jersey.examples.reload.StatsResource.java">org/glassfish/jersey/examples/reload/StatsResource.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/reload//checkstyle.html#org.glassfish.jersey.examples.reload.FlightsDB.java">org/glassfish/jersey/examples/reload/FlightsDB.java</a>
+                  <a href="https://jersey.github.io/project/reload//checkstyle.html#org.glassfish.jersey.examples.reload.FlightsDB.java">org/glassfish/jersey/examples/reload/FlightsDB.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/reload//checkstyle.html#org.glassfish.jersey.examples.reload.DeparturesResource.java">org/glassfish/jersey/examples/reload/DeparturesResource.java</a>
+                  <a href="https://jersey.github.io/project/reload//checkstyle.html#org.glassfish.jersey.examples.reload.DeparturesResource.java">org/glassfish/jersey/examples/reload/DeparturesResource.java</a>
                 </td>
                 <td>
                   0

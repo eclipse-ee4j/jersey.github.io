@@ -10,7 +10,7 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;4.&nbsp;Deploying a RESTful Web Service</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="jaxrs-resources.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="client.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;4.&nbsp;Deploying a RESTful Web Service</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="jaxrs-resources.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="client.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
@@ -59,7 +59,7 @@ public class MyApplication extends ResourceConfig {
 }</pre></div></div><p><br class="example-break">
 
         Please note that there is more which can be set or called during execution of ResourceConfig descendants
-        constructor, see <a class="link" href="https://jersey.java.net/apidocs/2.3.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> javadoc for more details.
+        constructor, see <a class="link" href="https://jersey.github.io/apidocs/2.3.1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> javadoc for more details.
     </p><p>
         You also need to set maven-war-plugin attribute
         <a class="link" href="http://maven.apache.org/plugins/maven-war-plugin/war-mojo.html#failOnMissingWebXml" target="_top">failOnMissingWebXml</a>
@@ -165,7 +165,7 @@ public class MyApplication extends ResourceConfig {
             are discovered by this mechanism and their availability is affected by Jersey auto-discovery support configuration
             (see <a class="xref" href="deployment.html#deployment.autodiscovery.config" title="4.1.1.&nbsp;Configuring the Feature Auto-discovery mechanism">Section&nbsp;4.1.1, &#8220;Configuring the Feature Auto-discovery mechanism&#8221;</a>):
 
-            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.3.1/jersey/org/glassfish/jersey/server/wadl/WadlFeature.html" target="_top">WadlFeature</a> - enables WADL processing.</p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.3.1/jersey/org/glassfish/jersey/server/filter/UriConnegFilter.html" target="_top">UriConnegFilter</a> - a URI-based content negotiation filter.</p></li></ul></div><p>
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.3.1/jersey/org/glassfish/jersey/server/wadl/WadlFeature.html" target="_top">WadlFeature</a> - enables WADL processing.</p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.3.1/jersey/org/glassfish/jersey/server/filter/UriConnegFilter.html" target="_top">UriConnegFilter</a> - a URI-based content negotiation filter.</p></li></ul></div><p>
         </p><div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                 Auto discovery functionality is in Jersey supported by implementing an internal SPI
                 <code class="literal">AutoDiscoverable</code> interface. This interface is not public at the moment,
@@ -174,10 +174,10 @@ public class MyApplication extends ResourceConfig {
                 The auto-discovery of features in Jersey that is enabled by default can be disabled by using special
                 (common/server/client) properties:
 
-                </p><div class="itemizedlist" title="Common auto discovery properties"><p class="title"><b>Common auto discovery properties</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.3.1/jersey/org/glassfish/jersey/CommonProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></p><p>Disables auto discovery globally on client/server.</p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.3.1/jersey/org/glassfish/jersey/CommonProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">CommonProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p><p>Disables configuration of Json Processing (JSR-353) feature.</p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/2.3.1/jersey/org/glassfish/jersey/CommonProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">CommonProperties.MOXY_JSON_FEATURE_DISABLE</a></p><p>Disables configuration of MOXy Json feature.</p></li></ul></div><p>
+                </p><div class="itemizedlist" title="Common auto discovery properties"><p class="title"><b>Common auto discovery properties</b></p><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.3.1/jersey/org/glassfish/jersey/CommonProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></p><p>Disables auto discovery globally on client/server.</p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.3.1/jersey/org/glassfish/jersey/CommonProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">CommonProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p><p>Disables configuration of Json Processing (JSR-353) feature.</p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/2.3.1/jersey/org/glassfish/jersey/CommonProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">CommonProperties.MOXY_JSON_FEATURE_DISABLE</a></p><p>Disables configuration of MOXy Json feature.</p></li></ul></div><p>
 
                 For each of these properties there is a client/server counter-part that only disables the feature on the
-                client or server respectively (see <a class="link" href="https://jersey.java.net/apidocs/2.3.1/jersey/org/glassfish/jersey/client/ClientProperties.html" target="_top">ClientProperties</a>/<a class="link" href="https://jersey.java.net/apidocs/2.3.1/jersey/org/glassfish/jersey/server/ServerProperties.html" target="_top">ServerProperties</a>).
+                client or server respectively (see <a class="link" href="https://jersey.github.io/apidocs/2.3.1/jersey/org/glassfish/jersey/client/ClientProperties.html" target="_top">ClientProperties</a>/<a class="link" href="https://jersey.github.io/apidocs/2.3.1/jersey/org/glassfish/jersey/server/ServerProperties.html" target="_top">ServerProperties</a>).
                 Each of these client/server specific auto-discovery related properties overrides the value of the related common
                 property (if set).
             </p><div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
@@ -195,9 +195,9 @@ public class MyApplication extends ResourceConfig {
             In all cases it is possible to register an SPI implementation class or instance programmatically. Therefore you can
             disable services lookup in Jersey and save dozens of ms during application initialization. The services lookup in
             Jersey that is enabled by default can be disabled by using special property
-            <a class="link" href="https://jersey.java.net/apidocs/2.3.1/jersey/org/glassfish/jersey/CommonProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">CommonProperties.METAINF_SERVICES_LOOKUP_DISABLE</a>.
+            <a class="link" href="https://jersey.github.io/apidocs/2.3.1/jersey/org/glassfish/jersey/CommonProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">CommonProperties.METAINF_SERVICES_LOOKUP_DISABLE</a>.
             There is a client/server counter-part that only disables the feature on the client or server respectively:
-            <a class="link" href="https://jersey.java.net/apidocs/2.3.1/jersey/org/glassfish/jersey/client/ClientProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ClientProperties.METAINF_SERVICES_LOOKUP_DISABLE</a>/<a class="link" href="https://jersey.java.net/apidocs/2.3.1/jersey/org/glassfish/jersey/server/ServerProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE</a>.
+            <a class="link" href="https://jersey.github.io/apidocs/2.3.1/jersey/org/glassfish/jersey/client/ClientProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ClientProperties.METAINF_SERVICES_LOOKUP_DISABLE</a>/<a class="link" href="https://jersey.github.io/apidocs/2.3.1/jersey/org/glassfish/jersey/server/ServerProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE</a>.
             The client/server specific property overrides the value of the related common property (if set).
         </p><p>
             For example, following code snippet registers different types of implementations: <code class="literal">ContainerRequestFilter</code>,
@@ -208,14 +208,14 @@ resourceConfig.register(org.glassfish.jersey.server.validation.ValidationFeature
 resourceConfig.register(org.glassfish.jersey.server.spring.SpringComponentProvider.class);
 resourceConfig.register(org.glassfish.jersey.grizzly2.httpserver.GrizzlyHttpContainerProvider.class);
 resourceConfig.property(ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE, true);</pre></div></div><p><br class="example-break">
-        </p></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+        </p></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

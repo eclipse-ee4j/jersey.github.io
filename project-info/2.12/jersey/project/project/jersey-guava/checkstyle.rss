@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-repackaged-guava - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/jersey-guava/</link>
+    <link>https://jersey.github.io/project/project/jersey-guava/</link>
     <description>jersey-repackaged-guava - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/jersey-guava//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/jersey-guava//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/jersey-guava//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/jersey-guava//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>

@@ -95,11 +95,11 @@ java.lang.Object
   <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>com.sun.jersey.oauth.server.api.OAuthServerFilter</B>
 </PRE>
 <DL>
-<DT><B>All Implemented Interfaces:</B> <DD><A HREF="https://jersey.java.net/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequestFilter.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequestFilter</A></DD>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="https://jersey.github.io/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequestFilter.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequestFilter</A></DD>
 </DL>
 <HR>
 <DL>
-<DT><PRE>public class <B>OAuthServerFilter</B><DT>extends java.lang.Object<DT>implements <A HREF="https://jersey.java.net/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequestFilter.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequestFilter</A></DL>
+<DT><PRE>public class <B>OAuthServerFilter</B><DT>extends java.lang.Object<DT>implements <A HREF="https://jersey.github.io/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequestFilter.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequestFilter</A></DL>
 </PRE>
 
 <P>
@@ -118,7 +118,7 @@ OAuth request filter that filters all requests indicating in the Authorization
  <p>
  This filter requires an implementation of <A HREF="../../../../../../com/sun/jersey/oauth/server/spi/OAuthProvider.html" title="interface in com.sun.jersey.oauth.server.spi"><CODE>OAuthProvider</CODE></A> interface to be
  included in the list of providers of the application (e.g. by annotating it
- using the <A HREF="https://jersey.java.net/jersey-core//apidocs/javax/ws/rs/ext/Provider.html?is-external=true" title="class or interface in javax.ws.rs.ext"><CODE>Provider</CODE></A> annotation and having it on the scanning classpath).
+ using the <A HREF="https://jersey.github.io/jersey-core//apidocs/javax/ws/rs/ext/Provider.html?is-external=true" title="class or interface in javax.ws.rs.ext"><CODE>Provider</CODE></A> annotation and having it on the scanning classpath).
  <p>
  The constants in this class indicate how you can parameterize this filter. E.g. when an application
  is deployed as a Servlet or Filter you can set the path patern to be ignored by this filter
@@ -199,7 +199,7 @@ OAuth request filter that filters all requests indicating in the Authorization
 <B>Constructor Summary</B></FONT></TH>
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
-<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/oauth/server/api/OAuthServerFilter.html#OAuthServerFilter(com.sun.jersey.api.core.ResourceConfig, com.sun.jersey.oauth.server.spi.OAuthProvider)">OAuthServerFilter</A></B>(<A HREF="https://jersey.java.net/jersey-server//apidocs/com/sun/jersey/api/core/ResourceConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.core">ResourceConfig</A>&nbsp;rc,
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/oauth/server/api/OAuthServerFilter.html#OAuthServerFilter(com.sun.jersey.api.core.ResourceConfig, com.sun.jersey.oauth.server.spi.OAuthProvider)">OAuthServerFilter</A></B>(<A HREF="https://jersey.github.io/jersey-server//apidocs/com/sun/jersey/api/core/ResourceConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.core">ResourceConfig</A>&nbsp;rc,
                   <A HREF="../../../../../../com/sun/jersey/oauth/server/spi/OAuthProvider.html" title="interface in com.sun.jersey.oauth.server.spi">OAuthProvider</A>&nbsp;provider)</CODE>
 
 <BR>
@@ -217,8 +217,8 @@ OAuth request filter that filters all requests indicating in the Authorization
 </TR>
 <TR BGCOLOR="white" CLASS="TableRowColor">
 <TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
-<CODE>&nbsp;<A HREF="https://jersey.java.net/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequest.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequest</A></CODE></FONT></TD>
-<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/oauth/server/api/OAuthServerFilter.html#filter(com.sun.jersey.spi.container.ContainerRequest)">filter</A></B>(<A HREF="https://jersey.java.net/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequest.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequest</A>&nbsp;request)</CODE>
+<CODE>&nbsp;<A HREF="https://jersey.github.io/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequest.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequest</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../com/sun/jersey/oauth/server/api/OAuthServerFilter.html#filter(com.sun.jersey.spi.container.ContainerRequest)">filter</A></B>(<A HREF="https://jersey.github.io/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequest.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequest</A>&nbsp;request)</CODE>
 
 <BR>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
@@ -321,9 +321,9 @@ public static final java.lang.String <B>FEATURE_NO_FAIL</B></PRE>
 <A NAME="OAuthServerFilter(com.sun.jersey.api.core.ResourceConfig, com.sun.jersey.oauth.server.spi.OAuthProvider)"><!-- --></A><H3>
 OAuthServerFilter</H3>
 <PRE>
-public <B>OAuthServerFilter</B>(<FONT SIZE="-1"><A HREF="https://jersey.java.net/jersey-core//apidocs/javax/ws/rs/core/Context.html?is-external=true" title="class or interface in javax.ws.rs.core">@Context</A></FONT>
-                         <A HREF="https://jersey.java.net/jersey-server//apidocs/com/sun/jersey/api/core/ResourceConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.core">ResourceConfig</A>&nbsp;rc,
-                         <FONT SIZE="-1"><A HREF="https://jersey.java.net/jersey-core//apidocs/javax/ws/rs/core/Context.html?is-external=true" title="class or interface in javax.ws.rs.core">@Context</A></FONT>
+public <B>OAuthServerFilter</B>(<FONT SIZE="-1"><A HREF="https://jersey.github.io/jersey-core//apidocs/javax/ws/rs/core/Context.html?is-external=true" title="class or interface in javax.ws.rs.core">@Context</A></FONT>
+                         <A HREF="https://jersey.github.io/jersey-server//apidocs/com/sun/jersey/api/core/ResourceConfig.html?is-external=true" title="class or interface in com.sun.jersey.api.core">ResourceConfig</A>&nbsp;rc,
+                         <FONT SIZE="-1"><A HREF="https://jersey.github.io/jersey-core//apidocs/javax/ws/rs/core/Context.html?is-external=true" title="class or interface in javax.ws.rs.core">@Context</A></FONT>
                          <A HREF="../../../../../../com/sun/jersey/oauth/server/spi/OAuthProvider.html" title="interface in com.sun.jersey.oauth.server.spi">OAuthProvider</A>&nbsp;provider)</PRE>
 <DL>
 </DL>
@@ -341,10 +341,10 @@ public <B>OAuthServerFilter</B>(<FONT SIZE="-1"><A HREF="https://jersey.java.net
 <A NAME="filter(com.sun.jersey.spi.container.ContainerRequest)"><!-- --></A><H3>
 filter</H3>
 <PRE>
-public <A HREF="https://jersey.java.net/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequest.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequest</A> <B>filter</B>(<A HREF="https://jersey.java.net/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequest.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequest</A>&nbsp;request)</PRE>
+public <A HREF="https://jersey.github.io/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequest.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequest</A> <B>filter</B>(<A HREF="https://jersey.github.io/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequest.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequest</A>&nbsp;request)</PRE>
 <DL>
 <DD><DL>
-<DT><B>Specified by:</B><DD><CODE><A HREF="https://jersey.java.net/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequestFilter.html?is-external=true#filter(com.sun.jersey.spi.container.ContainerRequest)" title="class or interface in com.sun.jersey.spi.container">filter</A></CODE> in interface <CODE><A HREF="https://jersey.java.net/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequestFilter.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequestFilter</A></CODE></DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="https://jersey.github.io/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequestFilter.html?is-external=true#filter(com.sun.jersey.spi.container.ContainerRequest)" title="class or interface in com.sun.jersey.spi.container">filter</A></CODE> in interface <CODE><A HREF="https://jersey.github.io/jersey-server//apidocs/com/sun/jersey/spi/container/ContainerRequestFilter.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">ContainerRequestFilter</A></CODE></DL>
 </DD>
 <DD><DL>
 </DL>

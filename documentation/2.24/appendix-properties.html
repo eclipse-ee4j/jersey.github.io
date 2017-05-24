@@ -10,50 +10,50 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Appendix&nbsp;A.&nbsp;Configuration Properties</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="migration.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;</td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Appendix&nbsp;A.&nbsp;Configuration Properties</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="migration.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;</td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
                 Single HTML
             </a></small><div lang="en" class="appendix"><div class="titlepage"><div><div><h1 class="title"><a name="appendix-properties"></a>Appendix&nbsp;A.&nbsp;Configuration Properties</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="appendix-properties.html#appendix-properties-common">A.1. Common (client/server) configuration properties</a></span></dt><dt><span class="section"><a href="appendix-properties.html#appendix-properties-server">A.2. Server configuration properties</a></span></dt><dt><span class="section"><a href="appendix-properties.html#appendix-properties-servlet">A.3. Servlet configuration properties</a></span></dt><dt><span class="section"><a href="appendix-properties.html#appendix-properties-client">A.4. Client configuration properties</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="appendix-properties-common"></a>A.1.&nbsp;Common (client/server) configuration properties</h2></div></div></div><p>
-            List of common configuration properties that can be found in <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/CommonProperties.html" target="_top">CommonProperties</a> class. All of these properties
+            List of common configuration properties that can be found in <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/CommonProperties.html" target="_top">CommonProperties</a> class. All of these properties
             can be overridden by their server/client counterparts.
-        </p><div class="table"><a name="d0e20115"></a><p class="title"><b>Table&nbsp;A.1.&nbsp;List of common configuration properties</b></p><div class="table-contents"><table summary="List of common configuration properties" border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th>Constant</th><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/CommonProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></td><td><code class="literal">jersey.config.disableAutoDiscovery</code></td><td>
+        </p><div class="table"><a name="d0e20115"></a><p class="title"><b>Table&nbsp;A.1.&nbsp;List of common configuration properties</b></p><div class="table-contents"><table summary="List of common configuration properties" border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th>Constant</th><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/CommonProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></td><td><code class="literal">jersey.config.disableAutoDiscovery</code></td><td>
                             <p>
                                 Disables feature auto discovery globally on client/server. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/CommonProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">CommonProperties.JSON_PROCESSING_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.disableJsonProcessing</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/CommonProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">CommonProperties.JSON_PROCESSING_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.disableJsonProcessing</code></td><td>
                             <p>
                                 Disables configuration of Json Processing (JSR-353) feature. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/CommonProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">CommonProperties.METAINF_SERVICES_LOOKUP_DISABLE</a></td><td><code class="literal">jersey.config.disableMetainfServicesLookup</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/CommonProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">CommonProperties.METAINF_SERVICES_LOOKUP_DISABLE</a></td><td><code class="literal">jersey.config.disableMetainfServicesLookup</code></td><td>
                             <p>
                                 Disables META-INF/services lookup globally on client/server. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/CommonProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">CommonProperties.MOXY_JSON_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.disableMoxyJson</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/CommonProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">CommonProperties.MOXY_JSON_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.disableMoxyJson</code></td><td>
                             <p>
                                 Disables configuration of MOXy Json feature. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/CommonProperties.html#OUTBOUND_CONTENT_LENGTH_BUFFER" target="_top">CommonProperties.OUTBOUND_CONTENT_LENGTH_BUFFER</a></td><td><code class="literal">jersey.config.contentLength.buffer</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/CommonProperties.html#OUTBOUND_CONTENT_LENGTH_BUFFER" target="_top">CommonProperties.OUTBOUND_CONTENT_LENGTH_BUFFER</a></td><td><code class="literal">jersey.config.contentLength.buffer</code></td><td>
                             <p>
                                 An integer value that defines the buffer size used to buffer the outbound message entity in order to
                                 determine its size and set the value of HTTP <code class="literal">Content-Length</code> header. Default
                                 value is <code class="literal">8192</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_LOGGER_NAME" target="_top">LoggingFeature.LOGGING_FEATURE_LOGGER_NAME</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_LOGGER_NAME" target="_top">LoggingFeature.LOGGING_FEATURE_LOGGER_NAME</a>
                         </td><td>
                             <code class="literal">jersey.config.logging.logger.name</code>
                         </td><td>
                             Logger name of the logging filter.
                             See <a class="link" href="">logging</a> chapter for more information.
                             The default value is <code class="literal">org.glassfish.jersey.logging.LoggingFeature</code>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_LOGGER_LEVEL" target="_top">LoggingFeature.LOGGING_FEATURE_LOGGER_LEVEL</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_LOGGER_LEVEL" target="_top">LoggingFeature.LOGGING_FEATURE_LOGGER_LEVEL</a>
                         </td><td>
                             <code class="literal">jersey.config.logging.logger.level</code>
                         </td><td>
                             Level of logging filter's logger at which the messages will be logged.
                             See <a class="link" href="">logging</a> chapter for more information.
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_VERBOSITY" target="_top">LoggingFeature.LOGGING_FEATURE_VERBOSITY</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_VERBOSITY" target="_top">LoggingFeature.LOGGING_FEATURE_VERBOSITY</a>
                         </td><td>
                             <code class="literal">jersey.config.logging.verbosity</code>
                         </td><td>
@@ -62,15 +62,15 @@
                             <code class="literal">LoggingFeature.Verbosity.PAYLOAD_TEXT</code> or
                             <code class="literal">LoggingFeature.Verbosity.PAYLOAD_ANY</code>.
                             See <a class="link" href="">logging</a> chapter for more information.
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_MAX_ENTITY_SIZE" target="_top">LoggingFeature.LOGGING_FEATURE_MAX_ENTITY_SIZE</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_MAX_ENTITY_SIZE" target="_top">LoggingFeature.LOGGING_FEATURE_MAX_ENTITY_SIZE</a>
                         </td><td>
                             <code class="literal">jersey.config.logging.entity.maxSize</code>
                         </td><td>
                             The maximum number of bytes of the entity which will be logged.
                             See <a class="link" href="">logging</a> chapter for more information.
                         </td></tr></tbody></table></div></div><br class="table-break"></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="appendix-properties-server"></a>A.2.&nbsp;Server configuration properties</h2></div></div></div><p>
-            List of server configuration properties that can be found in <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html" target="_top">ServerProperties</a> class.
-        </p><div class="table"><a name="d0e20286"></a><p class="title"><b>Table&nbsp;A.2.&nbsp;List of server configuration properties</b></p><div class="table-contents"><table summary="List of server configuration properties" border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th>Constant</th><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#APPLICATION_NAME" target="_top">ServerProperties.APPLICATION_NAME</a></td><td><code class="literal">jersey.config.server.application.name</code></td><td>
+            List of server configuration properties that can be found in <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html" target="_top">ServerProperties</a> class.
+        </p><div class="table"><a name="d0e20286"></a><p class="title"><b>Table&nbsp;A.2.&nbsp;List of server configuration properties</b></p><div class="table-contents"><table summary="List of server configuration properties" border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th>Constant</th><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#APPLICATION_NAME" target="_top">ServerProperties.APPLICATION_NAME</a></td><td><code class="literal">jersey.config.server.application.name</code></td><td>
                             <p>
                                 Defines the application name. The name is an arbitrary user defined name which is used to
                                 distinguish between Jersey applications in the case that more applications are deployed on
@@ -78,143 +78,143 @@
                                 by JMX when name identifies to which application deployed MBeans belong to. The name should
                                 be unique in the runtime. The property does not have a default value.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_FEATURE_DISABLE" target="_top">ServerProperties.BV_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.beanValidation.disable.server</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_FEATURE_DISABLE" target="_top">ServerProperties.BV_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.beanValidation.disable.server</code></td><td>
                             <p>
                                 Disables Bean Validation support. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK" target="_top">ServerProperties
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK" target="_top">ServerProperties
                             .BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK</a></td><td><code class="literal">jersey.config.beanValidation
                             .disable.validateOnExecutableCheck.server</code></td><td>
                             <p>
                                 Disables <code class="literal">@ValidateOnExecution</code> check. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_SEND_ERROR_IN_RESPONSE" target="_top">ServerProperties.BV_SEND_ERROR_IN_RESPONSE</a></td><td><code class="literal">jersey.config.beanValidation
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_SEND_ERROR_IN_RESPONSE" target="_top">ServerProperties.BV_SEND_ERROR_IN_RESPONSE</a></td><td><code class="literal">jersey.config.beanValidation
                             .enableOutputValidationErrorEntity.server</code></td><td>
                             <p>
                                 Enables sending validation error information to the client. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">ServerProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></td><td><code class="literal">jersey.config.server.disableAutoDiscovery</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">ServerProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></td><td><code class="literal">jersey.config.server.disableAutoDiscovery</code></td><td>
                             <p>
                                 Disables feature auto discovery on server. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#HTTP_METHOD_OVERRIDE" target="_top">ServerProperties.HTTP_METHOD_OVERRIDE</a></td><td><code class="literal">jersey.config.server.httpMethodOverride</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#HTTP_METHOD_OVERRIDE" target="_top">ServerProperties.HTTP_METHOD_OVERRIDE</a></td><td><code class="literal">jersey.config.server.httpMethodOverride</code></td><td>
                             <p>
                                 Defines configuration of HTTP method overriding.
-                                This property is used by <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/filter/HttpMethodOverrideFilter.html" target="_top">HttpMethodOverrideFilter</a> to determine
+                                This property is used by <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/filter/HttpMethodOverrideFilter.html" target="_top">HttpMethodOverrideFilter</a> to determine
                                 where it should look for method override information (e.g. request header or query parameters).
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ServerProperties.JSON_PROCESSING_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.server.disableJsonProcessing</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ServerProperties.JSON_PROCESSING_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.server.disableJsonProcessing</code></td><td>
                             <p>
                                 Disables configuration of Json Processing (JSR-353) feature. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#LANGUAGE_MAPPINGS" target="_top">ServerProperties.LANGUAGE_MAPPINGS</a></td><td><code class="literal">jersey.config.server.languageMappings</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#LANGUAGE_MAPPINGS" target="_top">ServerProperties.LANGUAGE_MAPPINGS</a></td><td><code class="literal">jersey.config.server.languageMappings</code></td><td>
                             <p>
-                                Defines mapping of URI extensions to languages. The property is used by <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/filter/UriConnegFilter.html" target="_top">UriConnegFilter</a>.
+                                Defines mapping of URI extensions to languages. The property is used by <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/filter/UriConnegFilter.html" target="_top">UriConnegFilter</a>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MEDIA_TYPE_MAPPINGS" target="_top">ServerProperties.MEDIA_TYPE_MAPPINGS</a></td><td><code class="literal">jersey.config.server.mediaTypeMappings</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MEDIA_TYPE_MAPPINGS" target="_top">ServerProperties.MEDIA_TYPE_MAPPINGS</a></td><td><code class="literal">jersey.config.server.mediaTypeMappings</code></td><td>
                             <p>
-                                Defines mapping of URI extensions to media types. The property is used by <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/filter/UriConnegFilter.html" target="_top">UriConnegFilter</a>.
+                                Defines mapping of URI extensions to media types. The property is used by <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/filter/UriConnegFilter.html" target="_top">UriConnegFilter</a>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE</a></td><td><code class="literal">jersey.config.server.disableMetainfServicesLookup</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ServerProperties.METAINF_SERVICES_LOOKUP_DISABLE</a></td><td><code class="literal">jersey.config.server.disableMetainfServicesLookup</code></td><td>
                             <p>
                                 Disables META-INF/services lookup on server. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">ServerProperties.MOXY_JSON_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.server.disableMoxyJson</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">ServerProperties.MOXY_JSON_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.server.disableMoxyJson</code></td><td>
                             <p>
                                 Disables configuration of MOXy Json feature. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_ENABLED" target="_top">ServerProperties.MONITORING_ENABLED</a> (Jersey 2.12 or later)</td><td><code class="literal">jersey.config.server
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_ENABLED" target="_top">ServerProperties.MONITORING_ENABLED</a> (Jersey 2.12 or later)</td><td><code class="literal">jersey.config.server
                             .monitoring.statistics.enabled</code></td><td>
                             <p>
                                 If <code class="literal">true</code>, then application monitoring will be enabled. This will enable the possibility
-                                of injecting <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/monitoring/ApplicationInfo.html" target="_top">ApplicationInfo</a> into resource and providers.
+                                of injecting <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/monitoring/ApplicationInfo.html" target="_top">ApplicationInfo</a> into resource and providers.
                                 Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_STATISTICS_ENABLED" target="_top">ServerProperties.MONITORING_STATISTICS_ENABLED</a></td><td><code class="literal">jersey.config.server
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_STATISTICS_ENABLED" target="_top">ServerProperties.MONITORING_STATISTICS_ENABLED</a></td><td><code class="literal">jersey.config.server
                             .monitoring.enabled</code></td><td>
                             <p>
                                 If <code class="literal">true</code>, the calculation of monitoring statistics will be enabled. This will enable the
-                                possibility of injecting <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a> into resource and
+                                possibility of injecting <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a> into resource and
                                 providers and also the registered listeners implementing
-                                <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatisticsListener.html" target="_top">MonitoringStatisticsListener</a> will be called when statistics are
+                                <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatisticsListener.html" target="_top">MonitoringStatisticsListener</a> will be called when statistics are
                                 available for processing.
                                 Monitoring statistics extends basic monitoring feature. Therefore when enabled,
                                 the monitoring gets automatically enabled too (the same result as setting the property
-                                <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_ENABLED" target="_top">ServerProperties.MONITORING_ENABLED</a> to <code class="literal">true</code>).
+                                <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_ENABLED" target="_top">ServerProperties.MONITORING_ENABLED</a> to <code class="literal">true</code>).
                                 Note that enabling statistics may have a negative performance impact
                                 and therefore should be enabled only when needed. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_STATISTICS_MBEANS_ENABLED" target="_top">ServerProperties.MONITORING_STATISTICS_MBEANS_ENABLED</a></td><td><code class="literal">jersey.config.server
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_STATISTICS_MBEANS_ENABLED" target="_top">ServerProperties.MONITORING_STATISTICS_MBEANS_ENABLED</a></td><td><code class="literal">jersey.config.server
                             .monitoring.statistics.mbeans.enabled</code></td><td>
                             <p>
                                 If <code class="literal">true</code> then Jersey will expose MBeans for the collected monitoring statistics. Exposed
-                                JMX MBeans are based on <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a> data and therefore when
+                                JMX MBeans are based on <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/monitoring/MonitoringStatistics.html" target="_top">MonitoringStatistics</a> data and therefore when
                                 enabled, the calculation of monitoring statistics gets automatically enabled too (the same result
-                                as setting the property <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_STATISTICS_ENABLED" target="_top">ServerProperties.MONITORING_STATISTICS_ENABLED</a> to
+                                as setting the property <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_STATISTICS_ENABLED" target="_top">ServerProperties.MONITORING_STATISTICS_ENABLED</a> to
                                 <code class="literal">true</code>). Note that enabling MBeans for monitoring statistics may have a negative performance
                                 impact and therefore should be enabled only when needed. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_STATISTICS_REFRESH_INTERVAL" target="_top">ServerProperties.MONITORING_STATISTICS_REFRESH_INTERVAL</a> (Jersey 2.10 or later)</td><td><code class="literal">jersey.config.server
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#MONITORING_STATISTICS_REFRESH_INTERVAL" target="_top">ServerProperties.MONITORING_STATISTICS_REFRESH_INTERVAL</a> (Jersey 2.10 or later)</td><td><code class="literal">jersey.config.server
                             .monitoring.statistics.refresh.interval</code></td><td>
                             <p>
                                 Interval (in <code class="literal">ms</code>}) indicating how often will be monitoring statistics refreshed
                                 (<code class="literal">onStatistics</code> method called). Default value is <code class="literal">500</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#OUTBOUND_CONTENT_LENGTH_BUFFER" target="_top">ServerProperties.OUTBOUND_CONTENT_LENGTH_BUFFER</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#OUTBOUND_CONTENT_LENGTH_BUFFER" target="_top">ServerProperties.OUTBOUND_CONTENT_LENGTH_BUFFER</a>
                             (Jersey 2.2 or later)</td><td><code class="literal">jersey.config.contentLength.server.buffer</code></td><td>
                             <p>
                                 An integer value that defines the buffer size used to buffer the outbound message entity in order to
                                 determine its size and set the value of HTTP <code class="literal">Content-Length</code> header. Default
                                 value is <code class="literal">8192</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#PROVIDER_CLASSNAMES" target="_top">ServerProperties.PROVIDER_CLASSNAMES</a></td><td><code class="literal">jersey.config.server.provider.classnames</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#PROVIDER_CLASSNAMES" target="_top">ServerProperties.PROVIDER_CLASSNAMES</a></td><td><code class="literal">jersey.config.server.provider.classnames</code></td><td>
                             <p>
                                 Defines one or more class names that implement application-specific resources
                                 and providers. If the property is set, the specified classes will be instantiated
                                 and registered as either application JAX-RS root resources or providers.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#PROVIDER_CLASSPATH" target="_top">ServerProperties.PROVIDER_CLASSPATH</a></td><td><code class="literal">jersey.config.server.provider.classpath</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#PROVIDER_CLASSPATH" target="_top">ServerProperties.PROVIDER_CLASSPATH</a></td><td><code class="literal">jersey.config.server.provider.classpath</code></td><td>
                             <p>
                                 Defines class-path that contains application-specific resources and
                                 providers. If the property is set, the specified packages will be scanned for
                                 JAX-RS root resources and providers.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#PROVIDER_PACKAGES" target="_top">ServerProperties.PROVIDER_PACKAGES</a></td><td><code class="literal">jersey.config.server.provider.packages</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#PROVIDER_PACKAGES" target="_top">ServerProperties.PROVIDER_PACKAGES</a></td><td><code class="literal">jersey.config.server.provider.packages</code></td><td>
                             <p>
                                 Defines one or more packages that contain application-specific resources and
                                 providers. If the property is set, the specified packages will be scanned for
                                 JAX-RS root resources and providers.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#PROVIDER_SCANNING_RECURSIVE" target="_top">ServerProperties.PROVIDER_SCANNING_RECURSIVE</a></td><td><code class="literal">jersey.config.server
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#PROVIDER_SCANNING_RECURSIVE" target="_top">ServerProperties.PROVIDER_SCANNING_RECURSIVE</a></td><td><code class="literal">jersey.config.server
                             .provider.scanning.recursive</code></td><td>
                             <p>
                                 Sets the recursion strategy for package scanning. Default value is <code class="literal">true</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#REDUCE_CONTEXT_PATH_SLASHES_ENABLED" target="_top">ServerProperties.REDUCE_CONTEXT_PATH_SLASHES_ENABLED</a></td><td><code class="literal">jersey.config.server.reduceContextPathSlashes.enabled</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#REDUCE_CONTEXT_PATH_SLASHES_ENABLED" target="_top">ServerProperties.REDUCE_CONTEXT_PATH_SLASHES_ENABLED</a></td><td><code class="literal">jersey.config.server.reduceContextPathSlashes.enabled</code></td><td>
                             <p>
                                 Ignores multiple slashes between a port and a context path and will resolve it
                                 as URI with only one slash. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#RESOURCE_VALIDATION_DISABLE" target="_top">ServerProperties.RESOURCE_VALIDATION_DISABLE</a></td><td><code class="literal">jersey.config.server
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#RESOURCE_VALIDATION_DISABLE" target="_top">ServerProperties.RESOURCE_VALIDATION_DISABLE</a></td><td><code class="literal">jersey.config.server
                             .resource.validation.disable</code></td><td>
                             <p>
                                 Disables <code class="literal">Resource</code> validation. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#RESOURCE_VALIDATION_IGNORE_ERRORS" target="_top">ServerProperties.RESOURCE_VALIDATION_IGNORE_ERRORS</a></td><td><code class="literal">jersey.config.server
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#RESOURCE_VALIDATION_IGNORE_ERRORS" target="_top">ServerProperties.RESOURCE_VALIDATION_IGNORE_ERRORS</a></td><td><code class="literal">jersey.config.server
                             .resource.validation.ignoreErrors</code></td><td>
                             <p>
                                 Determines whether validation of application resource models should fail even in case of a fatal
                                 validation errors. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#WADL_FEATURE_DISABLE" target="_top">ServerProperties.WADL_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.server.wadl.disableWadl</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#WADL_FEATURE_DISABLE" target="_top">ServerProperties.WADL_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.server.wadl.disableWadl</code></td><td>
                             <p>
                                 Disables WADL generation. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#WADL_GENERATOR_CONFIG" target="_top">ServerProperties.WADL_GENERATOR_CONFIG</a></td><td><code class="literal">jersey.config.server.wadl.generatorConfig</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#WADL_GENERATOR_CONFIG" target="_top">ServerProperties.WADL_GENERATOR_CONFIG</a></td><td><code class="literal">jersey.config.server.wadl.generatorConfig</code></td><td>
                             <p>
-                                Defines the wadl generator configuration that provides a <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/wadl/WadlGenerator.html" target="_top">WadlGenerator</a>.
+                                Defines the wadl generator configuration that provides a <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/wadl/WadlGenerator.html" target="_top">WadlGenerator</a>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#RESPONSE_SET_STATUS_OVER_SEND_ERROR" target="_top">ServerProperties.RESPONSE_SET_STATUS_OVER_SEND_ERROR</a></td><td><code class="literal">jersey.config.server.response.setStatusOverSendError</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#RESPONSE_SET_STATUS_OVER_SEND_ERROR" target="_top">ServerProperties.RESPONSE_SET_STATUS_OVER_SEND_ERROR</a></td><td><code class="literal">jersey.config.server.response.setStatusOverSendError</code></td><td>
                             <p>
                                 Whenever response status is <code class="literal">4xx</code> or <code class="literal">5xx</code> it is
                                 possible to choose between <code class="literal">sendError</code> or <code class="literal">setStatus</code>
@@ -234,35 +234,35 @@
                                 Type of the property value is <code class="literal">boolean</code>.
                                 The default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#TRACING" target="_top">ServerProperties.TRACING</a></td><td><code class="literal">jersey.config.server.tracing.type</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#TRACING" target="_top">ServerProperties.TRACING</a></td><td><code class="literal">jersey.config.server.tracing.type</code></td><td>
                             <p>
                                 Enables/disables tracing support. Possible values are <code class="literal">OFF</code> (default),
                                 <code class="literal">ON_DEMAND</code> and <code class="literal">ALL</code>.
                                 See <a class="xref" href="monitoring_tracing.html#tracing.configuration" title="22.2.1.&nbsp;Configuration options">Section&nbsp;22.2.1, &#8220;Configuration options&#8221;</a> for more detail.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#TRACING_THRESHOLD" target="_top">ServerProperties.TRACING_THRESHOLD</a></td><td><code class="literal">jersey.config.server.tracing.threshold</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#TRACING_THRESHOLD" target="_top">ServerProperties.TRACING_THRESHOLD</a></td><td><code class="literal">jersey.config.server.tracing.threshold</code></td><td>
                             <p>
                                 Sets the amount of detail provided by tracing. Possible values are <code class="literal">SUMMARY</code>,
                                 <code class="literal">TRACE</code> and <code class="literal">VERBOSE</code>.
                                 See <a class="xref" href="monitoring_tracing.html#tracing.configuration" title="22.2.1.&nbsp;Configuration options">Section&nbsp;22.2.1, &#8220;Configuration options&#8221;</a> to learn more about the levels.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#PROCESSING_RESPONSE_ERRORS_ENABLED" target="_top">ServerProperties.PROCESSING_RESPONSE_ERRORS_ENABLED</a></td><td><code class="literal">jersey.config.server.exception.processResponseErrors</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#PROCESSING_RESPONSE_ERRORS_ENABLED" target="_top">ServerProperties.PROCESSING_RESPONSE_ERRORS_ENABLED</a></td><td><code class="literal">jersey.config.server.exception.processResponseErrors</code></td><td>
                             <p>
                                 If property value is <code class="literal">true</code> then the errors raised during response processing are
                                 tried to be handled using available response error mappers.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#SUBRESOURCE_LOCATOR_CACHE_SIZE" target="_top">ServerProperties.SUBRESOURCE_LOCATOR_CACHE_SIZE</a></td><td><code class="literal">jersey.config.server.subresource.cache.size</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#SUBRESOURCE_LOCATOR_CACHE_SIZE" target="_top">ServerProperties.SUBRESOURCE_LOCATOR_CACHE_SIZE</a></td><td><code class="literal">jersey.config.server.subresource.cache.size</code></td><td>
                             <p>
                                 An integer value that defines the size of cache for sub-resource locator models. The cache is used
                                 to provide better performance for application that uses JAX-RS sub-resource locators.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#SUBRESOURCE_LOCATOR_CACHE_SIZE" target="_top">ServerProperties.SUBRESOURCE_LOCATOR_CACHE_SIZE</a></td><td><code class="literal">jersey.config.server.subresource.cache.size</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#SUBRESOURCE_LOCATOR_CACHE_SIZE" target="_top">ServerProperties.SUBRESOURCE_LOCATOR_CACHE_SIZE</a></td><td><code class="literal">jersey.config.server.subresource.cache.size</code></td><td>
                             <p>
                                 An integer value that defines the maximum age (in seconds) for cached for sub-resource locator
                                 models. The age of an cache entry is defined as the time since the last access (read) to the entry
                                 in the cache. Entry aging is not enabled by default.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#SUBRESOURCE_LOCATOR_CACHE_JERSEY_RESOURCE_ENABLED" target="_top">ServerProperties.SUBRESOURCE_LOCATOR_CACHE_JERSEY_RESOURCE_ENABLED</a></td><td><code class="literal">jersey.config.server.subresource.cache.jersey.resource.enabled</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#SUBRESOURCE_LOCATOR_CACHE_JERSEY_RESOURCE_ENABLED" target="_top">ServerProperties.SUBRESOURCE_LOCATOR_CACHE_JERSEY_RESOURCE_ENABLED</a></td><td><code class="literal">jersey.config.server.subresource.cache.jersey.resource.enabled</code></td><td>
                             <p>
                                 If <code class="literal">true</code> then Jersey will cache Jersey resources in addition to caching
                                 sub-resource locator classes and instances (which are cached by default). To make sure the caching
@@ -270,25 +270,25 @@
                                 parameters from resource method. This means that generating new Jersey Resource instances for same
                                 input parameters would not have any performance effect and it would only fill-up the cache.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#LOCATION_HEADER_RELATIVE_URI_RESOLUTION_DISABLED" target="_top">ServerProperties.LOCATION_HEADER_RELATIVE_URI_RESOLUTION_DISABLED</a></td><td><code class="literal">jersey.config.server.headers.location.relative.resolution.disabled</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/server/ServerProperties.html#LOCATION_HEADER_RELATIVE_URI_RESOLUTION_DISABLED" target="_top">ServerProperties.LOCATION_HEADER_RELATIVE_URI_RESOLUTION_DISABLED</a></td><td><code class="literal">jersey.config.server.headers.location.relative.resolution.disabled</code></td><td>
                             <p>
                                 If <code class="literal">true</code>, Jersey will not resolve relative URIs in the <code class="literal">Location</code>
                                 http header.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_LOGGER_NAME_SERVER" target="_top">LoggingFeature.LOGGING_FEATURE_LOGGER_NAME_SERVER</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_LOGGER_NAME_SERVER" target="_top">LoggingFeature.LOGGING_FEATURE_LOGGER_NAME_SERVER</a>
                         </td><td>
                             <code class="literal">jersey.config.server.logging.logger.name</code>
                         </td><td>
                             Logger name of the logging filter.
                             See <a class="link" href="">logging</a> chapter for more information.
                             The default value is <code class="literal">org.glassfish.jersey.logging.LoggingFeature</code>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_LOGGER_LEVEL_SERVER" target="_top">LoggingFeature.LOGGING_FEATURE_LOGGER_LEVEL_SERVER</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_LOGGER_LEVEL_SERVER" target="_top">LoggingFeature.LOGGING_FEATURE_LOGGER_LEVEL_SERVER</a>
                         </td><td>
                             <code class="literal">jersey.config.server.logging.logger.level</code>
                         </td><td>
                             Level of logging filter's logger at which the messages will be logged.
                             See <a class="link" href="">logging</a> chapter for more information.
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_VERBOSITY_SERVER" target="_top">LoggingFeature.LOGGING_FEATURE_VERBOSITY_SERVER</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_VERBOSITY_SERVER" target="_top">LoggingFeature.LOGGING_FEATURE_VERBOSITY_SERVER</a>
                         </td><td>
                             <code class="literal">jersey.config.server.logging.verbosity</code>
                         </td><td>
@@ -297,121 +297,121 @@
                             <code class="literal">LoggingFeature.Verbosity.PAYLOAD_TEXT</code> or
                             <code class="literal">LoggingFeature.Verbosity.PAYLOAD_ANY</code>.
                             See <a class="link" href="">logging</a> chapter for more information.
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_MAX_ENTITY_SIZE_SERVER" target="_top">LoggingFeature.LOGGING_FEATURE_MAX_ENTITY_SIZE_SERVER</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_MAX_ENTITY_SIZE_SERVER" target="_top">LoggingFeature.LOGGING_FEATURE_MAX_ENTITY_SIZE_SERVER</a>
                         </td><td>
                             <code class="literal">jersey.config.server.logging.entity.maxSize</code>
                         </td><td>
                             The maximum number of bytes of the entity which will be logged.
                             See <a class="link" href="">logging</a> chapter for more information.
                         </td></tr></tbody></table></div></div><br class="table-break"></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="appendix-properties-servlet"></a>A.3.&nbsp;Servlet configuration properties</h2></div></div></div><p>
-            List of servlet configuration properties that can be found in <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html" target="_top">ServletProperties</a> class.
-        </p><div class="table"><a name="d0e20968"></a><p class="title"><b>Table&nbsp;A.3.&nbsp;List of servlet configuration properties</b></p><div class="table-contents"><table summary="List of servlet configuration properties" border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th>Constant</th><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#FILTER_CONTEXT_PATH" target="_top">ServletProperties.FILTER_CONTEXT_PATH</a></td><td><code class="literal">jersey.config.servlet.filter.contextPath</code></td><td>
+            List of servlet configuration properties that can be found in <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html" target="_top">ServletProperties</a> class.
+        </p><div class="table"><a name="d0e20968"></a><p class="title"><b>Table&nbsp;A.3.&nbsp;List of servlet configuration properties</b></p><div class="table-contents"><table summary="List of servlet configuration properties" border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th>Constant</th><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#FILTER_CONTEXT_PATH" target="_top">ServletProperties.FILTER_CONTEXT_PATH</a></td><td><code class="literal">jersey.config.servlet.filter.contextPath</code></td><td>
                             <p>
                                 If set, indicates the URL pattern of the Jersey servlet filter context path.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#FILTER_FORWARD_ON_404" target="_top">ServletProperties.FILTER_FORWARD_ON_404</a></td><td><code class="literal">jersey.config.servlet.filter.forwardOn404</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#FILTER_FORWARD_ON_404" target="_top">ServletProperties.FILTER_FORWARD_ON_404</a></td><td><code class="literal">jersey.config.servlet.filter.forwardOn404</code></td><td>
                             <p>
                                 If set to <code class="literal">true</code> and a 404 response with no entity body is returned from either
                                 the runtime or the application then the runtime forwards the request to the next filter in the
                                 filter chain. This enables another filter or the underlying servlet engine to process the request.
                                 Before the request is forwarded the response status is set to 200.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#FILTER_STATIC_CONTENT_REGEX" target="_top">ServletProperties.FILTER_STATIC_CONTENT_REGEX</a></td><td><code class="literal">jersey.config.servlet.filter.staticContentRegex</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#FILTER_STATIC_CONTENT_REGEX" target="_top">ServletProperties.FILTER_STATIC_CONTENT_REGEX</a></td><td><code class="literal">jersey.config.servlet.filter.staticContentRegex</code></td><td>
                             <p>
                                 If set the regular expression is used to match an incoming servlet path URI to some web page
                                 content such as static resources or JSPs to be handled by the underlying servlet engine.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#JAXRS_APPLICATION_CLASS" target="_top">ServletProperties.JAXRS_APPLICATION_CLASS</a></td><td><code class="literal">javax.ws.rs.Application</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#JAXRS_APPLICATION_CLASS" target="_top">ServletProperties.JAXRS_APPLICATION_CLASS</a></td><td><code class="literal">javax.ws.rs.Application</code></td><td>
                             <p>
                                 Application configuration initialization property whose value is a fully qualified class name of a
                                 class that implements JAX-RS Application.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#PROVIDER_WEB_APP" target="_top">ServletProperties.PROVIDER_WEB_APP</a></td><td><code class="literal">jersey.config.servlet.provider.webapp</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#PROVIDER_WEB_APP" target="_top">ServletProperties.PROVIDER_WEB_APP</a></td><td><code class="literal">jersey.config.servlet.provider.webapp</code></td><td>
                             <p>
                                 Indicates that Jersey should scan the whole web app for application-specific resources and
                                 providers.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#QUERY_PARAMS_AS_FORM_PARAMS_DISABLED" target="_top">ServletProperties.QUERY_PARAMS_AS_FORM_PARAMS_DISABLED</a></td><td><code class="literal">jersey.config.servlet.form.queryParams.disabled</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#QUERY_PARAMS_AS_FORM_PARAMS_DISABLED" target="_top">ServletProperties.QUERY_PARAMS_AS_FORM_PARAMS_DISABLED</a></td><td><code class="literal">jersey.config.servlet.form.queryParams.disabled</code></td><td>
                             <p>
                                 If <code class="literal">true</code> then query parameters will not be treated as form parameters
                                 (e.g. injectable using @FormParam) in case a Form request is processed by server.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#SERVICE_LOCATOR" target="_top">ServletProperties.SERVICE_LOCATOR</a></td><td><code class="literal">jersey.config.servlet.context.serviceLocator</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/servlet/ServletProperties.html#SERVICE_LOCATOR" target="_top">ServletProperties.SERVICE_LOCATOR</a></td><td><code class="literal">jersey.config.servlet.context.serviceLocator</code></td><td>
                             <p>
                                 Identifies the object that will be used as a parent ServiceLocator in the Jersey WebComponent.
                             </p>
                         </td></tr></tbody></table></div></div><br class="table-break"></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="appendix-properties-client"></a>A.4.&nbsp;Client configuration properties</h2></div></div></div><p>
-            List of client configuration properties that can be found in <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html" target="_top">ClientProperties</a> class.
-        </p><div class="table"><a name="d0e21079"></a><p class="title"><b>Table&nbsp;A.4.&nbsp;List of client configuration properties</b></p><div class="table-contents"><table summary="List of client configuration properties" border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th>Constant</th><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#ASYNC_THREADPOOL_SIZE" target="_top">ClientProperties.ASYNC_THREADPOOL_SIZE</a></td><td><code class="literal">jersey.config.client.async.threadPoolSize</code></td><td>
+            List of client configuration properties that can be found in <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html" target="_top">ClientProperties</a> class.
+        </p><div class="table"><a name="d0e21079"></a><p class="title"><b>Table&nbsp;A.4.&nbsp;List of client configuration properties</b></p><div class="table-contents"><table summary="List of client configuration properties" border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th>Constant</th><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#ASYNC_THREADPOOL_SIZE" target="_top">ClientProperties.ASYNC_THREADPOOL_SIZE</a></td><td><code class="literal">jersey.config.client.async.threadPoolSize</code></td><td>
                             <p>
                                 Asynchronous thread pool size. Default value is not set.
-                                <span class="emphasis"><em>Supported with <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/grizzly/connector/GrizzlyConnectorProvider.html" target="_top">GrizzlyConnectorProvider</a> only.</em></span>.
+                                <span class="emphasis"><em>Supported with <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/grizzly/connector/GrizzlyConnectorProvider.html" target="_top">GrizzlyConnectorProvider</a> only.</em></span>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#CHUNKED_ENCODING_SIZE" target="_top">ClientProperties.CHUNKED_ENCODING_SIZE</a></td><td><code class="literal">jersey.config.client.chunkedEncodingSize</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#CHUNKED_ENCODING_SIZE" target="_top">ClientProperties.CHUNKED_ENCODING_SIZE</a></td><td><code class="literal">jersey.config.client.chunkedEncodingSize</code></td><td>
                             <p>
                                 Chunked encoding size. Default value is not set.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#CONNECT_TIMEOUT" target="_top">ClientProperties.CONNECT_TIMEOUT</a></td><td><code class="literal">jersey.config.client.connectTimeout</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#CONNECT_TIMEOUT" target="_top">ClientProperties.CONNECT_TIMEOUT</a></td><td><code class="literal">jersey.config.client.connectTimeout</code></td><td>
                             <p>
                                 Read timeout interval, in milliseconds. Default value is <code class="literal">0</code> (infinity).
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">ClientProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></td><td><code class="literal">jersey.config.client.disableAutoDiscovery</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">ClientProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></td><td><code class="literal">jersey.config.client.disableAutoDiscovery</code></td><td>
                             <p>
                                 Disables feature auto discovery on client. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#FOLLOW_REDIRECTS" target="_top">ClientProperties.FOLLOW_REDIRECTS</a></td><td><code class="literal">jersey.config.client.followRedirects</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#FOLLOW_REDIRECTS" target="_top">ClientProperties.FOLLOW_REDIRECTS</a></td><td><code class="literal">jersey.config.client.followRedirects</code></td><td>
                             <p>
                                 Declares that the client will automatically redirect to the URI declared in 3xx responses. Default value is <code class="literal">true</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ClientProperties.JSON_PROCESSING_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.client.disableJsonProcessing</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ClientProperties.JSON_PROCESSING_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.client.disableJsonProcessing</code></td><td>
                             <p>
                                 Disables configuration of Json Processing (JSR-353) feature. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ClientProperties.METAINF_SERVICES_LOOKUP_DISABLE</a></td><td><code class="literal">jersey.config.disableMetainfServicesLookup.client</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#METAINF_SERVICES_LOOKUP_DISABLE" target="_top">ClientProperties.METAINF_SERVICES_LOOKUP_DISABLE</a></td><td><code class="literal">jersey.config.disableMetainfServicesLookup.client</code></td><td>
                             <p>
                                 Disables META-INF/services lookup on client. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">ClientProperties.MOXY_JSON_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.client.disableMoxyJson</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">ClientProperties.MOXY_JSON_FEATURE_DISABLE</a></td><td><code class="literal">jersey.config.client.disableMoxyJson</code></td><td>
                             <p>
                                 Disables configuration of MOXy Json feature. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#OUTBOUND_CONTENT_LENGTH_BUFFER" target="_top">ClientProperties.OUTBOUND_CONTENT_LENGTH_BUFFER</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#OUTBOUND_CONTENT_LENGTH_BUFFER" target="_top">ClientProperties.OUTBOUND_CONTENT_LENGTH_BUFFER</a>
                             (Jersey 2.2 or later)</td><td><code class="literal">jersey.config.client.contentLength.buffer</code></td><td>
                             <p>
                                 An integer value that defines the buffer size used to buffer the outbound message entity in order to
                                 determine its size and set the value of HTTP <code class="literal">Content-Length</code> header. Default
                                 value is <code class="literal">8192</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#PROXY_URI" target="_top">ClientProperties.PROXY_URI</a></td><td><code class="literal">jersey.config.client.proxy.uri</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#PROXY_URI" target="_top">ClientProperties.PROXY_URI</a></td><td><code class="literal">jersey.config.client.proxy.uri</code></td><td>
                             <p>
                                 URI of a HTTP proxy the client connector should use. Default value is not set.
-                                <span class="emphasis"><em>Currently supported with <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/apache/connector/ApacheConnectorProvider.html" target="_top">ApacheConnectorProvider</a> and
-                                    <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a> only.</em></span>
+                                <span class="emphasis"><em>Currently supported with <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/apache/connector/ApacheConnectorProvider.html" target="_top">ApacheConnectorProvider</a> and
+                                    <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a> only.</em></span>
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#PROXY_USERNAME" target="_top">ClientProperties.PROXY_USERNAME</a> (Jersey 2.5 or later)</td><td><code class="literal">jersey.config.client.proxy.username</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#PROXY_USERNAME" target="_top">ClientProperties.PROXY_USERNAME</a> (Jersey 2.5 or later)</td><td><code class="literal">jersey.config.client.proxy.username</code></td><td>
                             <p>
                                 User name which will be used for HTTP proxy authentication. Default value is not set.
-                                <span class="emphasis"><em>Currently supported with <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/apache/connector/ApacheConnectorProvider.html" target="_top">ApacheConnectorProvider</a> and
-                                    <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a> only.</em></span>
+                                <span class="emphasis"><em>Currently supported with <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/apache/connector/ApacheConnectorProvider.html" target="_top">ApacheConnectorProvider</a> and
+                                    <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a> only.</em></span>
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#PROXY_PASSWORD" target="_top">ClientProperties.PROXY_PASSWORD</a> (Jersey 2.5 or later)</td><td><code class="literal">jersey.config.client.proxy.password</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#PROXY_PASSWORD" target="_top">ClientProperties.PROXY_PASSWORD</a> (Jersey 2.5 or later)</td><td><code class="literal">jersey.config.client.proxy.password</code></td><td>
                             <p>
                                 Password which will be used for HTTP proxy authentication. Default value is not set.
-                                <span class="emphasis"><em>Currently supported with <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/apache/connector/ApacheConnectorProvider.html" target="_top">ApacheConnectorProvider</a> and
-                                    <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a> only.</em></span>
+                                <span class="emphasis"><em>Currently supported with <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/apache/connector/ApacheConnectorProvider.html" target="_top">ApacheConnectorProvider</a> and
+                                    <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a> only.</em></span>
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#READ_TIMEOUT" target="_top">ClientProperties.READ_TIMEOUT</a> (Jersey 2.5 or later)</td><td><code class="literal">jersey.config.client.readTimeout</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#READ_TIMEOUT" target="_top">ClientProperties.READ_TIMEOUT</a> (Jersey 2.5 or later)</td><td><code class="literal">jersey.config.client.readTimeout</code></td><td>
                             <p>
                                 Read timeout interval, in milliseconds. Default value is <code class="literal">0</code> (infinity).
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#REQUEST_ENTITY_PROCESSING" target="_top">ClientProperties.REQUEST_ENTITY_PROCESSING</a> (Jersey 2.5 or later)</td><td><code class="literal">jersey.config.client.request.entity.processing</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#REQUEST_ENTITY_PROCESSING" target="_top">ClientProperties.REQUEST_ENTITY_PROCESSING</a> (Jersey 2.5 or later)</td><td><code class="literal">jersey.config.client.request.entity.processing</code></td><td>
                             <p>
                                 Defines whether the request entity should be serialized using internal buffer to
                                 evaluate content length or chunk encoding should be used. Possible values are
                                 <code class="literal">BUFFERED</code> or <code class="literal">CHUNKED</code>. Default value is
                                 <code class="literal">BUFFERED</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#SUPPRESS_HTTP_COMPLIANCE_VALIDATION" target="_top">ClientProperties.SUPPRESS_HTTP_COMPLIANCE_VALIDATION</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#SUPPRESS_HTTP_COMPLIANCE_VALIDATION" target="_top">ClientProperties.SUPPRESS_HTTP_COMPLIANCE_VALIDATION</a>
                             (Jersey 2.2 or later)</td><td><code class="literal">jersey.config.client.suppressHttpComplianceValidation</code></td><td>
                             <p>
                                 If <code class="literal">true</code>, the strict validation of HTTP specification compliance for client-side
@@ -419,25 +419,25 @@
                                 be merely logged as warnings, rather than causing exceptions being raised in Jersey
                                 runtime. Default value is <code class="literal">false</code>.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#USE_ENCODING" target="_top">ClientProperties.USE_ENCODING</a></td><td><code class="literal">jersey.config.client.useEncoding</code></td><td>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/ClientProperties.html#USE_ENCODING" target="_top">ClientProperties.USE_ENCODING</a></td><td><code class="literal">jersey.config.client.useEncoding</code></td><td>
                             <p>
                                 Indicates the value of <code class="literal">Content-Encoding</code> property the
-                                <a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/client/filter/EncodingFilter.html" target="_top">EncodingFilter</a> should be adding. Default value is not set.
+                                <a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/client/filter/EncodingFilter.html" target="_top">EncodingFilter</a> should be adding. Default value is not set.
                             </p>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_LOGGER_NAME_CLIENT" target="_top">LoggingFeature.LOGGING_FEATURE_LOGGER_NAME_CLIENT</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_LOGGER_NAME_CLIENT" target="_top">LoggingFeature.LOGGING_FEATURE_LOGGER_NAME_CLIENT</a>
                         </td><td>
                             <code class="literal">jersey.config.client.logging.logger.name</code>
                         </td><td>
                             Logger name of the logging filter.
                             See <a class="link" href="">logging</a> chapter for more information.
                             The default value is <code class="literal">org.glassfish.jersey.logging.LoggingFeature</code>
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_LOGGER_LEVEL_CLIENT" target="_top">LoggingFeature.LOGGING_FEATURE_LOGGER_LEVEL_CLIENT</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_LOGGER_LEVEL_CLIENT" target="_top">LoggingFeature.LOGGING_FEATURE_LOGGER_LEVEL_CLIENT</a>
                         </td><td>
                             <code class="literal">jersey.config.client.logging.logger.level</code>
                         </td><td>
                             Level of logging filter's logger at which the messages will be logged.
                             See <a class="link" href="logging_chapter.html" title="Chapter&nbsp;21.&nbsp;Logging">logging</a> chapter for more information.
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_VERBOSITY_CLIENT" target="_top">LoggingFeature.LOGGING_FEATURE_VERBOSITY_CLIENT</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_VERBOSITY_CLIENT" target="_top">LoggingFeature.LOGGING_FEATURE_VERBOSITY_CLIENT</a>
                         </td><td>
                             <code class="literal">jersey.config.client.logging.verbosity</code>
                         </td><td>
@@ -446,20 +446,20 @@
                             <code class="literal">LoggingFeature.Verbosity.PAYLOAD_TEXT</code> or
                             <code class="literal">LoggingFeature.Verbosity.PAYLOAD_ANY</code>.
                             See <a class="link" href="logging_chapter.html" title="Chapter&nbsp;21.&nbsp;Logging">logging</a> chapter for more information.
-                        </td></tr><tr><td><a class="link" href="https://jersey.java.net/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_MAX_ENTITY_SIZE_CLIENT" target="_top">LoggingFeature.LOGGING_FEATURE_MAX_ENTITY_SIZE_CLIENT</a>
+                        </td></tr><tr><td><a class="link" href="https://jersey.github.io/apidocs/2.24/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_MAX_ENTITY_SIZE_CLIENT" target="_top">LoggingFeature.LOGGING_FEATURE_MAX_ENTITY_SIZE_CLIENT</a>
                         </td><td>
                             <code class="literal">jersey.config.client.logging.entity.maxSize</code>
                         </td><td>
                             The maximum number of bytes of the entity which will be logged.
                             See <a class="link" href="logging_chapter.html" title="Chapter&nbsp;21.&nbsp;Logging">logging</a> chapter for more information.
-                        </td></tr></tbody></table></div></div><br class="table-break"></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+                        </td></tr></tbody></table></div></div><br class="table-break"></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

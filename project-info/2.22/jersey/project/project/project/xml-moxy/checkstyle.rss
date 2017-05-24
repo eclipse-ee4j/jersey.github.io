@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-tests-performance-xml-moxy-test - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/project/xml-moxy/</link>
+    <link>https://jersey.github.io/project/project/project/xml-moxy/</link>
     <description>jersey-tests-performance-xml-moxy-test - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/project/xml-moxy//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/project/xml-moxy//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/project/xml-moxy//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/project/xml-moxy//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/project/xml-moxy//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.xml.Person.java">org/glassfish/jersey/tests/performance/mbw/xml/Person.java</a>
+                  <a href="https://jersey.github.io/project/project/project/xml-moxy//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.xml.Person.java">org/glassfish/jersey/tests/performance/mbw/xml/Person.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/project/xml-moxy//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.xml.XmlEntityResource.java">org/glassfish/jersey/tests/performance/mbw/xml/XmlEntityResource.java</a>
+                  <a href="https://jersey.github.io/project/project/project/xml-moxy//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.xml.XmlEntityResource.java">org/glassfish/jersey/tests/performance/mbw/xml/XmlEntityResource.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/project/xml-moxy//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.xml.JaxRsApplication.java">org/glassfish/jersey/tests/performance/mbw/xml/JaxRsApplication.java</a>
+                  <a href="https://jersey.github.io/project/project/project/xml-moxy//checkstyle.html#org.glassfish.jersey.tests.performance.mbw.xml.JaxRsApplication.java">org/glassfish/jersey/tests/performance/mbw/xml/JaxRsApplication.java</a>
                 </td>
                 <td>
                   0

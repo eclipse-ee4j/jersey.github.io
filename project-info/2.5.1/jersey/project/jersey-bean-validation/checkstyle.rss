@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-ext-bean-validation - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-bean-validation/</link>
+    <link>https://jersey.github.io/project/jersey-bean-validation/</link>
     <description>jersey-ext-bean-validation - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-bean-validation//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-bean-validation//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.package-info.java">org/glassfish/jersey/server/validation/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.package-info.java">org/glassfish/jersey/server/validation/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.InjectingConstraintValidatorFactory.java">org/glassfish/jersey/server/validation/internal/InjectingConstraintValidatorFactory.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.InjectingConstraintValidatorFactory.java">org/glassfish/jersey/server/validation/internal/InjectingConstraintValidatorFactory.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.ValidationConfig.java">org/glassfish/jersey/server/validation/ValidationConfig.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.ValidationConfig.java">org/glassfish/jersey/server/validation/ValidationConfig.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidationHelper.java">org/glassfish/jersey/server/validation/internal/ValidationHelper.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidationHelper.java">org/glassfish/jersey/server/validation/internal/ValidationHelper.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.ValidationError.java">org/glassfish/jersey/server/validation/ValidationError.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.ValidationError.java">org/glassfish/jersey/server/validation/ValidationError.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.package-info.java">org/glassfish/jersey/server/validation/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.package-info.java">org/glassfish/jersey/server/validation/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ConfiguredValidatorImpl.java">org/glassfish/jersey/server/validation/internal/ConfiguredValidatorImpl.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ConfiguredValidatorImpl.java">org/glassfish/jersey/server/validation/internal/ConfiguredValidatorImpl.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidationAutoDiscoverable.java">org/glassfish/jersey/server/validation/internal/ValidationAutoDiscoverable.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidationAutoDiscoverable.java">org/glassfish/jersey/server/validation/internal/ValidationAutoDiscoverable.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidateOnExecutionHandler.java">org/glassfish/jersey/server/validation/internal/ValidateOnExecutionHandler.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidateOnExecutionHandler.java">org/glassfish/jersey/server/validation/internal/ValidateOnExecutionHandler.java</a>
                 </td>
                 <td>
                   0
@@ -155,7 +155,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.ValidationFeature.java">org/glassfish/jersey/server/validation/ValidationFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.ValidationFeature.java">org/glassfish/jersey/server/validation/ValidationFeature.java</a>
                 </td>
                 <td>
                   0
@@ -169,7 +169,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidationExceptionMapper.java">org/glassfish/jersey/server/validation/internal/ValidationExceptionMapper.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidationExceptionMapper.java">org/glassfish/jersey/server/validation/internal/ValidationExceptionMapper.java</a>
                 </td>
                 <td>
                   0
@@ -183,7 +183,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidationBinder.java">org/glassfish/jersey/server/validation/internal/ValidationBinder.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidationBinder.java">org/glassfish/jersey/server/validation/internal/ValidationBinder.java</a>
                 </td>
                 <td>
                   0
@@ -197,7 +197,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidateOnExecutionTraversableResolver.java">org/glassfish/jersey/server/validation/internal/ValidateOnExecutionTraversableResolver.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidateOnExecutionTraversableResolver.java">org/glassfish/jersey/server/validation/internal/ValidateOnExecutionTraversableResolver.java</a>
                 </td>
                 <td>
                   0
@@ -211,7 +211,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidationErrorMessageBodyWriter.java">org/glassfish/jersey/server/validation/internal/ValidationErrorMessageBodyWriter.java</a>
+                  <a href="https://jersey.github.io/project/jersey-bean-validation//checkstyle.html#org.glassfish.jersey.server.validation.internal.ValidationErrorMessageBodyWriter.java">org/glassfish/jersey/server/validation/internal/ValidationErrorMessageBodyWriter.java</a>
                 </td>
                 <td>
                   0

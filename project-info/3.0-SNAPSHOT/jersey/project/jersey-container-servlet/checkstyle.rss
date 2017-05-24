@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-container-servlet - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-container-servlet/</link>
+    <link>https://jersey.github.io/project/jersey-container-servlet/</link>
     <description>jersey-container-servlet - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2016 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-container-servlet//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-container-servlet//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-container-servlet//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-container-servlet//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-servlet//checkstyle.html#org.glassfish.jersey.servlet.init.FilterUrlMappingsProviderImpl.java">org/glassfish/jersey/servlet/init/FilterUrlMappingsProviderImpl.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-servlet//checkstyle.html#org.glassfish.jersey.servlet.init.FilterUrlMappingsProviderImpl.java">org/glassfish/jersey/servlet/init/FilterUrlMappingsProviderImpl.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-servlet//checkstyle.html#org.glassfish.jersey.servlet.init.package-info.java">org/glassfish/jersey/servlet/init/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-servlet//checkstyle.html#org.glassfish.jersey.servlet.init.package-info.java">org/glassfish/jersey/servlet/init/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-servlet//checkstyle.html#org.glassfish.jersey.servlet.init.JerseyServletContainerInitializer.java">org/glassfish/jersey/servlet/init/JerseyServletContainerInitializer.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-servlet//checkstyle.html#org.glassfish.jersey.servlet.init.JerseyServletContainerInitializer.java">org/glassfish/jersey/servlet/init/JerseyServletContainerInitializer.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-servlet//checkstyle.html#org.glassfish.jersey.servlet.async.AsyncContextDelegateProviderImpl.java">org/glassfish/jersey/servlet/async/AsyncContextDelegateProviderImpl.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-servlet//checkstyle.html#org.glassfish.jersey.servlet.async.AsyncContextDelegateProviderImpl.java">org/glassfish/jersey/servlet/async/AsyncContextDelegateProviderImpl.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-servlet//checkstyle.html#org.glassfish.jersey.servlet.init.internal.localization.properties">org/glassfish/jersey/servlet/init/internal/localization.properties</a>
+                  <a href="https://jersey.github.io/project/jersey-container-servlet//checkstyle.html#org.glassfish.jersey.servlet.init.internal.localization.properties">org/glassfish/jersey/servlet/init/internal/localization.properties</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-container-servlet//checkstyle.html#org.glassfish.jersey.servlet.async.package-info.java">org/glassfish/jersey/servlet/async/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-container-servlet//checkstyle.html#org.glassfish.jersey.servlet.async.package-info.java">org/glassfish/jersey/servlet/async/package-info.java</a>
                 </td>
                 <td>
                   0

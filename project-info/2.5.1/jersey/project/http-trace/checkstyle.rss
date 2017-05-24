@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-examples-http-trace - Checkstyle report</title>
-    <link>https://jersey.java.net/project/http-trace/</link>
+    <link>https://jersey.github.io/project/http-trace/</link>
     <description>jersey-examples-http-trace - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/http-trace//checkstyle.html</link>
+            <link>https://jersey.github.io/project/http-trace//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/http-trace//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/http-trace//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/http-trace//checkstyle.html#org.glassfish.jersey.examples.httptrace.Stringifier.java">org/glassfish/jersey/examples/httptrace/Stringifier.java</a>
+                  <a href="https://jersey.github.io/project/http-trace//checkstyle.html#org.glassfish.jersey.examples.httptrace.Stringifier.java">org/glassfish/jersey/examples/httptrace/Stringifier.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/http-trace//checkstyle.html#org.glassfish.jersey.examples.httptrace.TRACE.java">org/glassfish/jersey/examples/httptrace/TRACE.java</a>
+                  <a href="https://jersey.github.io/project/http-trace//checkstyle.html#org.glassfish.jersey.examples.httptrace.TRACE.java">org/glassfish/jersey/examples/httptrace/TRACE.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/http-trace//checkstyle.html#org.glassfish.jersey.examples.httptrace.App.java">org/glassfish/jersey/examples/httptrace/App.java</a>
+                  <a href="https://jersey.github.io/project/http-trace//checkstyle.html#org.glassfish.jersey.examples.httptrace.App.java">org/glassfish/jersey/examples/httptrace/App.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/http-trace//checkstyle.html#org.glassfish.jersey.examples.httptrace.TracingResource.java">org/glassfish/jersey/examples/httptrace/TracingResource.java</a>
+                  <a href="https://jersey.github.io/project/http-trace//checkstyle.html#org.glassfish.jersey.examples.httptrace.TracingResource.java">org/glassfish/jersey/examples/httptrace/TracingResource.java</a>
                 </td>
                 <td>
                   0

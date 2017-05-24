@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-examples-server-sent-events - Checkstyle report</title>
-    <link>https://jersey.java.net/project/server-sent-events/</link>
+    <link>https://jersey.github.io/project/server-sent-events/</link>
     <description>jersey-examples-server-sent-events - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/server-sent-events//checkstyle.html</link>
+            <link>https://jersey.github.io/project/server-sent-events//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/server-sent-events//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/server-sent-events//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/server-sent-events//checkstyle.html#org.glassfish.jersey.examples.sse.ServerSentEventsResource.java">org/glassfish/jersey/examples/sse/ServerSentEventsResource.java</a>
+                  <a href="https://jersey.github.io/project/server-sent-events//checkstyle.html#org.glassfish.jersey.examples.sse.ServerSentEventsResource.java">org/glassfish/jersey/examples/sse/ServerSentEventsResource.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/server-sent-events//checkstyle.html#org.glassfish.jersey.examples.sse.DomainResource.java">org/glassfish/jersey/examples/sse/DomainResource.java</a>
+                  <a href="https://jersey.github.io/project/server-sent-events//checkstyle.html#org.glassfish.jersey.examples.sse.DomainResource.java">org/glassfish/jersey/examples/sse/DomainResource.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/server-sent-events//checkstyle.html#org.glassfish.jersey.examples.sse.App.java">org/glassfish/jersey/examples/sse/App.java</a>
+                  <a href="https://jersey.github.io/project/server-sent-events//checkstyle.html#org.glassfish.jersey.examples.sse.App.java">org/glassfish/jersey/examples/sse/App.java</a>
                 </td>
                 <td>
                   0

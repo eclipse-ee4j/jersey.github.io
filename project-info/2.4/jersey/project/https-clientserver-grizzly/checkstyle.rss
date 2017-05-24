@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-examples-https-clientserver-grizzly - Checkstyle report</title>
-    <link>https://jersey.java.net/project/https-clientserver-grizzly/</link>
+    <link>https://jersey.github.io/project/https-clientserver-grizzly/</link>
     <description>jersey-examples-https-clientserver-grizzly - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/https-clientserver-grizzly//checkstyle.html</link>
+            <link>https://jersey.github.io/project/https-clientserver-grizzly//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/https-clientserver-grizzly//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/https-clientserver-grizzly//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/https-clientserver-grizzly//checkstyle.html#org.glassfish.jersey.examples.httpsclientservergrizzly.RootResource.java">org/glassfish/jersey/examples/httpsclientservergrizzly/RootResource.java</a>
+                  <a href="https://jersey.github.io/project/https-clientserver-grizzly//checkstyle.html#org.glassfish.jersey.examples.httpsclientservergrizzly.RootResource.java">org/glassfish/jersey/examples/httpsclientservergrizzly/RootResource.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/https-clientserver-grizzly//checkstyle.html#org.glassfish.jersey.examples.httpsclientservergrizzly.SecurityFilter.java">org/glassfish/jersey/examples/httpsclientservergrizzly/SecurityFilter.java</a>
+                  <a href="https://jersey.github.io/project/https-clientserver-grizzly//checkstyle.html#org.glassfish.jersey.examples.httpsclientservergrizzly.SecurityFilter.java">org/glassfish/jersey/examples/httpsclientservergrizzly/SecurityFilter.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/https-clientserver-grizzly//checkstyle.html#org.glassfish.jersey.examples.httpsclientservergrizzly.Server.java">org/glassfish/jersey/examples/httpsclientservergrizzly/Server.java</a>
+                  <a href="https://jersey.github.io/project/https-clientserver-grizzly//checkstyle.html#org.glassfish.jersey.examples.httpsclientservergrizzly.Server.java">org/glassfish/jersey/examples/httpsclientservergrizzly/Server.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/https-clientserver-grizzly//checkstyle.html#org.glassfish.jersey.examples.httpsclientservergrizzly.AuthenticationException.java">org/glassfish/jersey/examples/httpsclientservergrizzly/AuthenticationException.java</a>
+                  <a href="https://jersey.github.io/project/https-clientserver-grizzly//checkstyle.html#org.glassfish.jersey.examples.httpsclientservergrizzly.AuthenticationException.java">org/glassfish/jersey/examples/httpsclientservergrizzly/AuthenticationException.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/https-clientserver-grizzly//checkstyle.html#org.glassfish.jersey.examples.httpsclientservergrizzly.AuthenticationExceptionMapper.java">org/glassfish/jersey/examples/httpsclientservergrizzly/AuthenticationExceptionMapper.java</a>
+                  <a href="https://jersey.github.io/project/https-clientserver-grizzly//checkstyle.html#org.glassfish.jersey.examples.httpsclientservergrizzly.AuthenticationExceptionMapper.java">org/glassfish/jersey/examples/httpsclientservergrizzly/AuthenticationExceptionMapper.java</a>
                 </td>
                 <td>
                   0

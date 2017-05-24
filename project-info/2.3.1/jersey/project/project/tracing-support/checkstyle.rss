@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-tests-integration-tracing-support - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/tracing-support/</link>
+    <link>https://jersey.github.io/project/project/tracing-support/</link>
     <description>jersey-tests-integration-tracing-support - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/tracing-support//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/tracing-support//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.ContainerResponseFilterNoPriority.java">org/glassfish/jersey/tests/integration/tracing/ContainerResponseFilterNoPriority.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.ContainerResponseFilterNoPriority.java">org/glassfish/jersey/tests/integration/tracing/ContainerResponseFilterNoPriority.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.TestExceptionMapper.java">org/glassfish/jersey/tests/integration/tracing/TestExceptionMapper.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.TestExceptionMapper.java">org/glassfish/jersey/tests/integration/tracing/TestExceptionMapper.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.MessageBodyWriterTestFormat.java">org/glassfish/jersey/tests/integration/tracing/MessageBodyWriterTestFormat.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.MessageBodyWriterTestFormat.java">org/glassfish/jersey/tests/integration/tracing/MessageBodyWriterTestFormat.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.MessageBodyReaderGeneric.java">org/glassfish/jersey/tests/integration/tracing/MessageBodyReaderGeneric.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.MessageBodyReaderGeneric.java">org/glassfish/jersey/tests/integration/tracing/MessageBodyReaderGeneric.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.WriterInterceptor45.java">org/glassfish/jersey/tests/integration/tracing/WriterInterceptor45.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.WriterInterceptor45.java">org/glassfish/jersey/tests/integration/tracing/WriterInterceptor45.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.Utils.java">org/glassfish/jersey/tests/integration/tracing/Utils.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.Utils.java">org/glassfish/jersey/tests/integration/tracing/Utils.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.WriterInterceptor39.java">org/glassfish/jersey/tests/integration/tracing/WriterInterceptor39.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.WriterInterceptor39.java">org/glassfish/jersey/tests/integration/tracing/WriterInterceptor39.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.PreMatchingContainerRequestFilter23.java">org/glassfish/jersey/tests/integration/tracing/PreMatchingContainerRequestFilter23.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.PreMatchingContainerRequestFilter23.java">org/glassfish/jersey/tests/integration/tracing/PreMatchingContainerRequestFilter23.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.SubResource.java">org/glassfish/jersey/tests/integration/tracing/SubResource.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.SubResource.java">org/glassfish/jersey/tests/integration/tracing/SubResource.java</a>
                 </td>
                 <td>
                   0
@@ -155,7 +155,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.TestExtendedExceptionMapperRuntime.java">org/glassfish/jersey/tests/integration/tracing/TestExtendedExceptionMapperRuntime.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.TestExtendedExceptionMapperRuntime.java">org/glassfish/jersey/tests/integration/tracing/TestExtendedExceptionMapperRuntime.java</a>
                 </td>
                 <td>
                   0
@@ -169,7 +169,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.OnDemandTracingSupport.java">org/glassfish/jersey/tests/integration/tracing/OnDemandTracingSupport.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.OnDemandTracingSupport.java">org/glassfish/jersey/tests/integration/tracing/OnDemandTracingSupport.java</a>
                 </td>
                 <td>
                   0
@@ -183,7 +183,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.AllTracingSupport.java">org/glassfish/jersey/tests/integration/tracing/AllTracingSupport.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.AllTracingSupport.java">org/glassfish/jersey/tests/integration/tracing/AllTracingSupport.java</a>
                 </td>
                 <td>
                   0
@@ -197,7 +197,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.TestException.java">org/glassfish/jersey/tests/integration/tracing/TestException.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.TestException.java">org/glassfish/jersey/tests/integration/tracing/TestException.java</a>
                 </td>
                 <td>
                   0
@@ -211,7 +211,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.ContainerRequestFilterNoPriority.java">org/glassfish/jersey/tests/integration/tracing/ContainerRequestFilterNoPriority.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.ContainerRequestFilterNoPriority.java">org/glassfish/jersey/tests/integration/tracing/ContainerRequestFilterNoPriority.java</a>
                 </td>
                 <td>
                   0
@@ -225,7 +225,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.MessageBodyReaderTestFormat.java">org/glassfish/jersey/tests/integration/tracing/MessageBodyReaderTestFormat.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.MessageBodyReaderTestFormat.java">org/glassfish/jersey/tests/integration/tracing/MessageBodyReaderTestFormat.java</a>
                 </td>
                 <td>
                   0
@@ -239,7 +239,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.ReaderInterceptor18.java">org/glassfish/jersey/tests/integration/tracing/ReaderInterceptor18.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.ReaderInterceptor18.java">org/glassfish/jersey/tests/integration/tracing/ReaderInterceptor18.java</a>
                 </td>
                 <td>
                   0
@@ -253,7 +253,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.TestExtendedExceptionMapperGeneric.java">org/glassfish/jersey/tests/integration/tracing/TestExtendedExceptionMapperGeneric.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.TestExtendedExceptionMapperGeneric.java">org/glassfish/jersey/tests/integration/tracing/TestExtendedExceptionMapperGeneric.java</a>
                 </td>
                 <td>
                   0
@@ -267,7 +267,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.Resource.java">org/glassfish/jersey/tests/integration/tracing/Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.Resource.java">org/glassfish/jersey/tests/integration/tracing/Resource.java</a>
                 </td>
                 <td>
                   0
@@ -281,7 +281,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.ContainerResponseFilter5001.java">org/glassfish/jersey/tests/integration/tracing/ContainerResponseFilter5001.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.ContainerResponseFilter5001.java">org/glassfish/jersey/tests/integration/tracing/ContainerResponseFilter5001.java</a>
                 </td>
                 <td>
                   0
@@ -295,7 +295,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.Message.java">org/glassfish/jersey/tests/integration/tracing/Message.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.Message.java">org/glassfish/jersey/tests/integration/tracing/Message.java</a>
                 </td>
                 <td>
                   0
@@ -309,7 +309,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.ContainerRequestFilter68.java">org/glassfish/jersey/tests/integration/tracing/ContainerRequestFilter68.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.ContainerRequestFilter68.java">org/glassfish/jersey/tests/integration/tracing/ContainerRequestFilter68.java</a>
                 </td>
                 <td>
                   0
@@ -323,7 +323,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.MessageBodyWriterGeneric.java">org/glassfish/jersey/tests/integration/tracing/MessageBodyWriterGeneric.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.MessageBodyWriterGeneric.java">org/glassfish/jersey/tests/integration/tracing/MessageBodyWriterGeneric.java</a>
                 </td>
                 <td>
                   0
@@ -337,7 +337,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.ReaderInterceptor14.java">org/glassfish/jersey/tests/integration/tracing/ReaderInterceptor14.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.ReaderInterceptor14.java">org/glassfish/jersey/tests/integration/tracing/ReaderInterceptor14.java</a>
                 </td>
                 <td>
                   0
@@ -351,7 +351,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.TracingSupport.java">org/glassfish/jersey/tests/integration/tracing/TracingSupport.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.TracingSupport.java">org/glassfish/jersey/tests/integration/tracing/TracingSupport.java</a>
                 </td>
                 <td>
                   0
@@ -365,7 +365,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.PreMatchingContainerRequestFilter42.java">org/glassfish/jersey/tests/integration/tracing/PreMatchingContainerRequestFilter42.java</a>
+                  <a href="https://jersey.github.io/project/project/tracing-support//checkstyle.html#org.glassfish.jersey.tests.integration.tracing.PreMatchingContainerRequestFilter42.java">org/glassfish/jersey/tests/integration/tracing/PreMatchingContainerRequestFilter42.java</a>
                 </td>
                 <td>
                   0

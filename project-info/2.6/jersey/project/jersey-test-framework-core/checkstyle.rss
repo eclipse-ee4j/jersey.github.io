@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-test-framework-core - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-test-framework-core/</link>
+    <link>https://jersey.github.io/project/jersey-test-framework-core/</link>
     <description>jersey-test-framework-core - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-test-framework-core//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-test-framework-core//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-test-framework-core//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-test-framework-core//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.spi.TestContainer.java">org/glassfish/jersey/test/spi/TestContainer.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.spi.TestContainer.java">org/glassfish/jersey/test/spi/TestContainer.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.spi.TestContainerException.java">org/glassfish/jersey/test/spi/TestContainerException.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.spi.TestContainerException.java">org/glassfish/jersey/test/spi/TestContainerException.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.TestProperties.java">org/glassfish/jersey/test/TestProperties.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.TestProperties.java">org/glassfish/jersey/test/TestProperties.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.spi.Requires.java">org/glassfish/jersey/test/spi/Requires.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.spi.Requires.java">org/glassfish/jersey/test/spi/Requires.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.spi.TestContainerFactory.java">org/glassfish/jersey/test/spi/TestContainerFactory.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.spi.TestContainerFactory.java">org/glassfish/jersey/test/spi/TestContainerFactory.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.spi.package-info.java">org/glassfish/jersey/test/spi/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.spi.package-info.java">org/glassfish/jersey/test/spi/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.package-info.java">org/glassfish/jersey/test/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.package-info.java">org/glassfish/jersey/test/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.JerseyTest.java">org/glassfish/jersey/test/JerseyTest.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.JerseyTest.java">org/glassfish/jersey/test/JerseyTest.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.spi.Supports.java">org/glassfish/jersey/test/spi/Supports.java</a>
+                  <a href="https://jersey.github.io/project/jersey-test-framework-core//checkstyle.html#org.glassfish.jersey.test.spi.Supports.java">org/glassfish/jersey/test/spi/Supports.java</a>
                 </td>
                 <td>
                   0

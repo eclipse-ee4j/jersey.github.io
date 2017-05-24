@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-gf-ejb - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/jersey-gf-ejb/</link>
+    <link>https://jersey.github.io/project/project/jersey-gf-ejb/</link>
     <description>jersey-gf-ejb - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/jersey-gf-ejb//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/jersey-gf-ejb//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/jersey-gf-ejb//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/jersey-gf-ejb//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-gf-ejb//checkstyle.html#org.glassfish.jersey.gf.ejb.EjbComponentProvider.java">org/glassfish/jersey/gf/ejb/EjbComponentProvider.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-gf-ejb//checkstyle.html#org.glassfish.jersey.gf.ejb.EjbComponentProvider.java">org/glassfish/jersey/gf/ejb/EjbComponentProvider.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-gf-ejb//checkstyle.html#org.glassfish.jersey.gf.ejb.EjbComponentInterceptor.java">org/glassfish/jersey/gf/ejb/EjbComponentInterceptor.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-gf-ejb//checkstyle.html#org.glassfish.jersey.gf.ejb.EjbComponentInterceptor.java">org/glassfish/jersey/gf/ejb/EjbComponentInterceptor.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-gf-ejb//checkstyle.html#org.glassfish.jersey.gf.ejb.EjbExceptionMapper.java">org/glassfish/jersey/gf/ejb/EjbExceptionMapper.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-gf-ejb//checkstyle.html#org.glassfish.jersey.gf.ejb.EjbExceptionMapper.java">org/glassfish/jersey/gf/ejb/EjbExceptionMapper.java</a>
                 </td>
                 <td>
                   0

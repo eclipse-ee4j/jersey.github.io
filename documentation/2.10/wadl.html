@@ -10,7 +10,7 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;16.&nbsp;WADL Support</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="security.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="bean-validation.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;16.&nbsp;WADL Support</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="security.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="bean-validation.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
@@ -215,9 +215,9 @@ public static class CountryResource {
             All resource that were added in this second example into the WADL contains
             element <code class="literal">extended</code>. This means that this resource is not a part of a core RESTful API and
             is rather a helper resource. If you need to mark any your own resource are extended, annotate
-            is with <a class="link" href="https://jersey.java.net/apidocs/2.10/jersey/org/glassfish/jersey/server/model/ExtendedResource.html" target="_top">@ExtendedResource</a>. Note that there might be methods visible in the default simple
+            is with <a class="link" href="https://jersey.github.io/apidocs/2.10/jersey/org/glassfish/jersey/server/model/ExtendedResource.html" target="_top">@ExtendedResource</a>. Note that there might be methods visible in the default simple
             WADL even the user has not added them. This is for example the case of MVC added methods which were added
-            by <a class="link" href="https://jersey.java.net/apidocs/2.10/jersey/org/glassfish/jersey/server/model/ModelProcessor.html" target="_top">ModelProcessor</a> but are still intended to be used by the client to achieve their
+            by <a class="link" href="https://jersey.github.io/apidocs/2.10/jersey/org/glassfish/jersey/server/model/ModelProcessor.html" target="_top">ModelProcessor</a> but are still intended to be used by the client to achieve their
             primary use case of getting formatted data.
         </p><p>
             Let's now send an HTTP <code class="literal">OPTIONS</code> request to <code class="literal">"country/{id}"</code> resource using the the
@@ -478,7 +478,7 @@ public static class CustomerAddressSubResource {
             <code class="literal">getProperties()</code>. See <a class="link" href="deployment.html" title="Chapter&nbsp;4.&nbsp;Application Deployment and Runtime Environments">Deployment chapter</a> for more information
             on setting the application configuration properties in various deployments.
         </p><p>
-            WADL support in Jersey is implemented via <a class="link" href="https://jersey.java.net/apidocs/2.10/jersey/org/glassfish/jersey/server/model/ModelProcessor.html" target="_top">ModelProcessor</a> extension. This implementation enhances
+            WADL support in Jersey is implemented via <a class="link" href="https://jersey.github.io/apidocs/2.10/jersey/org/glassfish/jersey/server/model/ModelProcessor.html" target="_top">ModelProcessor</a> extension. This implementation enhances
             the application resource model by adding the WADL providing resources. WADL <code class="literal">ModelProcessor</code>
             priority value is high (i.e. the priority is low) as it should be executed as one of the last model processors.
             Therefore, any <code class="literal">ModelProcessor</code> executed before will not see WADL extensions in the resource model.
@@ -504,16 +504,16 @@ public static class CustomerAddressSubResource {
             <span class="strong"><strong>Again, note that the extended WADL in Jersey 2.x is NOT the intended final version and
             API is going to be changed.</strong></span> The existing set of features and functionality will be preserved but the
             APIs will be significantly re-designed to support additional use cases. This impacts mainly the APIs of
-            <a class="link" href="https://jersey.java.net/apidocs/2.10/jersey/org/glassfish/jersey/server/wadl/WadlGenerator.html" target="_top">WadlGenerator</a>, <a class="link" href="https://jersey.java.net/apidocs/2.10/jersey/org/glassfish/jersey/server/wadl/config/WadlGeneratorConfig.html" target="_top">WadlGeneratorConfig</a> as well as any related classes. The API changes
+            <a class="link" href="https://jersey.github.io/apidocs/2.10/jersey/org/glassfish/jersey/server/wadl/WadlGenerator.html" target="_top">WadlGenerator</a>, <a class="link" href="https://jersey.github.io/apidocs/2.10/jersey/org/glassfish/jersey/server/wadl/config/WadlGeneratorConfig.html" target="_top">WadlGeneratorConfig</a> as well as any related classes. The API changes
             may impact your code if you are using a custom <code class="literal">WadlGenerator</code> or plan to implement one.
-        </p></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+        </p></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

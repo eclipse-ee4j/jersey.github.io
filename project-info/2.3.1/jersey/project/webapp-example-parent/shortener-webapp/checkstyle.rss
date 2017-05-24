@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-examples-shortener-webapp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/webapp-example-parent/shortener-webapp/</link>
+    <link>https://jersey.github.io/project/webapp-example-parent/shortener-webapp/</link>
     <description>jersey-examples-shortener-webapp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,7 +13,7 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/webapp-example-parent/shortener-webapp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html</link>
       <description>
         <p>Click <a href="https://jersey.github.io/project/webapp-example-parent/shortener-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 

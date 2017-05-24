@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-examples-server-async - Checkstyle report</title>
-    <link>https://jersey.java.net/project/server-async/</link>
+    <link>https://jersey.github.io/project/server-async/</link>
     <description>jersey-examples-server-async - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/server-async//checkstyle.html</link>
+            <link>https://jersey.github.io/project/server-async//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/server-async//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/server-async//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/server-async//checkstyle.html#org.glassfish.jersey.examples.server.async.SimpleLongRunningResource.java">org/glassfish/jersey/examples/server/async/SimpleLongRunningResource.java</a>
+                  <a href="https://jersey.github.io/project/server-async//checkstyle.html#org.glassfish.jersey.examples.server.async.SimpleLongRunningResource.java">org/glassfish/jersey/examples/server/async/SimpleLongRunningResource.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/server-async//checkstyle.html#org.glassfish.jersey.examples.server.async.LongRunningAsyncOperationResource.java">org/glassfish/jersey/examples/server/async/LongRunningAsyncOperationResource.java</a>
+                  <a href="https://jersey.github.io/project/server-async//checkstyle.html#org.glassfish.jersey.examples.server.async.LongRunningAsyncOperationResource.java">org/glassfish/jersey/examples/server/async/LongRunningAsyncOperationResource.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/server-async//checkstyle.html#org.glassfish.jersey.examples.server.async.FireAndForgetChatResource.java">org/glassfish/jersey/examples/server/async/FireAndForgetChatResource.java</a>
+                  <a href="https://jersey.github.io/project/server-async//checkstyle.html#org.glassfish.jersey.examples.server.async.FireAndForgetChatResource.java">org/glassfish/jersey/examples/server/async/FireAndForgetChatResource.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/server-async//checkstyle.html#org.glassfish.jersey.examples.server.async.App.java">org/glassfish/jersey/examples/server/async/App.java</a>
+                  <a href="https://jersey.github.io/project/server-async//checkstyle.html#org.glassfish.jersey.examples.server.async.App.java">org/glassfish/jersey/examples/server/async/App.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/server-async//checkstyle.html#org.glassfish.jersey.examples.server.async.BlockingPostChatResource.java">org/glassfish/jersey/examples/server/async/BlockingPostChatResource.java</a>
+                  <a href="https://jersey.github.io/project/server-async//checkstyle.html#org.glassfish.jersey.examples.server.async.BlockingPostChatResource.java">org/glassfish/jersey/examples/server/async/BlockingPostChatResource.java</a>
                 </td>
                 <td>
                   0

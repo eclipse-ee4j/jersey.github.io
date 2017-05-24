@@ -10,7 +10,7 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;18.&nbsp;Bean Validation Support</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="wadl.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="entity-filtering.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;18.&nbsp;Bean Validation Support</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="wadl.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="entity-filtering.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
@@ -31,7 +31,7 @@
 &lt;/dependency&gt;</pre><p>
 
             </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
-                    If you're not using Maven make sure to have also all the transitive dependencies (see <a class="link" href="https://jersey.java.net/project-info/3.0-SNAPSHOT/jersey/project/jersey-bean-validation/dependencies.html" target="_top">jersey-bean-validation</a>) on
+                    If you're not using Maven make sure to have also all the transitive dependencies (see <a class="link" href="https://jersey.github.io/project-info/3.0-SNAPSHOT/jersey/project/jersey-bean-validation/dependencies.html" target="_top">jersey-bean-validation</a>) on
                     the classpath.
                 </p></div><p>
 
@@ -55,26 +55,26 @@
 &lt;/dependency&gt;</pre><p>
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e13229"></a>18.2.&nbsp;Enabling Bean Validation in Jersey</h2></div></div></div><p>
             As stated in <a class="xref" href="deployment.html#deployment.autodiscoverable" title="4.3.&nbsp;Auto-Discoverable Features">Section&nbsp;4.3, &#8220;Auto-Discoverable Features&#8221;</a>, Jersey Bean Validation is one of the modules where you
-            don't need to explicitly register it's <code class="literal">Feature</code>s (<a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/validation/ValidationFeature.html" target="_top">ValidationFeature</a>) on the
+            don't need to explicitly register it's <code class="literal">Feature</code>s (<a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/validation/ValidationFeature.html" target="_top">ValidationFeature</a>) on the
             server as it's features are automatically discovered and registered when you add the
             <code class="literal">jersey-bean-validation</code> module to your classpath.
             There are three Jersey specific properties that could disable automatic discovery and registration of Jersey Bean
             Validation integration module:
 
-            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/CommonProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">ServerProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_FEATURE_DISABLE" target="_top">ServerProperties.BV_FEATURE_DISABLE</a></p></li></ul></div><p>
+            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/CommonProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">ServerProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_FEATURE_DISABLE" target="_top">ServerProperties.BV_FEATURE_DISABLE</a></p></li></ul></div><p>
 
             </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>Jersey does not support Bean Validation on the client at the moment.</p></div><p>
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e13263"></a>18.3.&nbsp;Configuring Bean Validation Support</h2></div></div></div><p>
             Configuration of Bean Validation support in Jersey is twofold - there are few specific properties that affects Jersey
-            behaviour (e.g. sending validation error entities to the client) and then there is <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/validation/ValidationConfig.html" target="_top">ValidationConfig</a> class
+            behaviour (e.g. sending validation error entities to the client) and then there is <a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/validation/ValidationConfig.html" target="_top">ValidationConfig</a> class
             that configures <a class="link" href="http://docs.jboss.org/hibernate/beanvalidation/spec/1.1/api/javax/validation/Validator.html" target="_top">Validator</a> used for validating resources in JAX-RS application.
         </p><p>
             To configure Jersey specific behaviour you can use the following properties:
 
-            </p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK" target="_top">ServerProperties.BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK</a></span></dt><dd><p>
+            </p><div class="variablelist"><dl class="variablelist"><dt><span class="term"><a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK" target="_top">ServerProperties.BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK</a></span></dt><dd><p>
                             Disables <code class="literal">@ValidateOnExecution</code> check. More on this is described in
                             <a class="xref" href="bean-validation.html#bv.ValidateOnExecution" title="18.5.&nbsp;@ValidateOnExecution">Section&nbsp;18.5, &#8220;@ValidateOnExecution&#8221;</a>.
-                        </p></dd><dt><span class="term"><a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_SEND_ERROR_IN_RESPONSE" target="_top">ServerProperties.BV_SEND_ERROR_IN_RESPONSE</a></span></dt><dd><p>
+                        </p></dd><dt><span class="term"><a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_SEND_ERROR_IN_RESPONSE" target="_top">ServerProperties.BV_SEND_ERROR_IN_RESPONSE</a></span></dt><dd><p>
                             Enables sending validation errors in response entity to the client. More on this in
                             <a class="xref" href="bean-validation.html#bv.ValidationError" title="18.7.1.&nbsp;ValidationError">Section&nbsp;18.7.1, &#8220;ValidationError&#8221;</a>.
                         </p></dd></dl></div><p>
@@ -88,7 +88,7 @@
     .register( ... );</pre></div></div><p><br class="example-break">
 
             Customization of the <code class="literal">Validator</code> used in validation of resource classes/methods can be done using
-            <code class="literal">ValidationConfig</code> class and exposing it via <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/ContextResolver.html" target="_top">ContextResolver&lt;T&gt;</a> mechanism as shown in
+            <code class="literal">ValidationConfig</code> class and exposing it via <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/ContextResolver.html" target="_top">ContextResolver&lt;T&gt;</a> mechanism as shown in
             <a class="xref" href="bean-validation.html#bv.example.ValidationConfig" title="Example&nbsp;18.2.&nbsp;Using ValidationConfig to configure Validator.">Example&nbsp;18.2, &#8220;Using <code class="literal">ValidationConfig</code> to configure <code class="literal">Validator</code>.&#8221;</a>. You can set custom instances for the following interfaces from
             the Bean Validation API:
 
@@ -169,7 +169,7 @@ public class ValidationConfigurationContextResolver implements ContextResolver&l
             <code class="literal">Default</code> group is supported at the moment).
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e13400"></a>18.4.1.&nbsp;Constraint Annotations</h3></div></div></div><p>
                 The JAX-RS Server API provides support for extracting request values and mapping them into Java fields,
-                properties and parameters using annotations such as <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/HeaderParam.html" target="_top">@HeaderParam</a>, <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/QueryParam.html" target="_top">@QueryParam</a>, etc. It also
+                properties and parameters using annotations such as <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/HeaderParam.html" target="_top">@HeaderParam</a>, <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/QueryParam.html" target="_top">@QueryParam</a>, etc. It also
                 supports mapping of the request entity bodies into Java objects via non-annotated parameters (i.e., parameters
                 without any JAX-RS annotations).
             </p><p>
@@ -391,7 +391,7 @@ class MyResourceClass {
                     According to Bean Validation specification <code class="literal">@ValidateOnExecution</code> cannot be overridden once is
                     declared on a method (i.e. in subclass/sub-interface) and in this situations a
                     <code class="literal">ValidationException</code> should be raised. This default behaviour can be suppressed by
-                    setting <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK" target="_top">ServerProperties.BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK</a>
+                    setting <a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK" target="_top">ServerProperties.BV_DISABLE_VALIDATE_ON_EXECUTABLE_OVERRIDE_CHECK</a>
                     property (Jersey specific) to <code class="literal">true</code>.
                 </p></div><p>
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="bv.injecting"></a>18.6.&nbsp;Injecting</h2></div></div></div><p>
@@ -400,7 +400,7 @@ class MyResourceClass {
 
             </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                     Injected <a class="link" href="http://docs.jboss.org/hibernate/beanvalidation/spec/1.1/api/javax/validation/Configuration.html" target="_top">Configuration</a>, <a class="link" href="http://docs.jboss.org/hibernate/beanvalidation/spec/1.1/api/javax/validation/ValidatorFactory.html" target="_top">ValidatorFactory</a> and <a class="link" href="http://docs.jboss.org/hibernate/beanvalidation/spec/1.1/api/javax/validation/Validator.html" target="_top">Validator</a> do not inherit configuration provided
-                    by <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/validation/ValidationConfig.html" target="_top">ValidationConfig</a> and need to be configured manually.
+                    by <a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/validation/ValidationConfig.html" target="_top">ValidationConfig</a> and need to be configured manually.
                 </p></div><p>
 
             Injection of JAX-RS components into <code class="literal">ConstraintValidator</code>s is supported via a custom
@@ -460,11 +460,11 @@ class MyResourceClass {
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="bv.ValidationError"></a>18.7.1.&nbsp;ValidationError</h3></div></div></div><p>
                 By default, (during mapping <code class="literal">ConstraintViolationException</code>s) Jersey doesn't return any entities that would
                 include validation errors to the client. This default behaviour could be changed by enabling
-                <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_SEND_ERROR_IN_RESPONSE" target="_top">ServerProperties.BV_SEND_ERROR_IN_RESPONSE</a> property in your application
+                <a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_SEND_ERROR_IN_RESPONSE" target="_top">ServerProperties.BV_SEND_ERROR_IN_RESPONSE</a> property in your application
                 (<a class="xref" href="bean-validation.html#bv.example.jersey.properties" title="Example&nbsp;18.1.&nbsp;Configuring Jersey specific properties for Bean Validation.">Example&nbsp;18.1, &#8220;Configuring Jersey specific properties for Bean Validation.&#8221;</a>).
-                When this property is enabled then our custom <a class="link" href="https://jersey.java.net/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/ExceptionMapper.html" target="_top">ExceptionMapper&lt;E extends Throwable&gt;</a> (that is handling
+                When this property is enabled then our custom <a class="link" href="https://jersey.github.io/apidocs-javax.jax-rs/2.0.1/javax/ws/rs/ext/ExceptionMapper.html" target="_top">ExceptionMapper&lt;E extends Throwable&gt;</a> (that is handling
                 <code class="literal">ValidationException</code>s) would transform <code class="literal">ConstraintViolationException</code>(s) into
-                <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/validation/ValidationError.html" target="_top">ValidationError</a>(s) and set this object (collection) as the new response entity which Jersey is
+                <a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/validation/ValidationError.html" target="_top">ValidationError</a>(s) and set this object (collection) as the new response entity which Jersey is
                 able to sent to the client.
                 Four <code class="literal">MediaType</code>s are currently supported when sending <code class="literal">ValidationError</code>s to the
                 client:
@@ -474,7 +474,7 @@ class MyResourceClass {
                                 <a class="link" href="media.html#json.moxy" title="9.1.2.&nbsp;MOXy">MOXy</a>) to marshall validation errors to JSON.
                             </p></div></li></ul></div><p>
             </p><p>
-                Let's take a look at <a class="link" href="https://jersey.java.net/apidocs/snapshot/jersey/org/glassfish/jersey/server/validation/ValidationError.html" target="_top">ValidationError</a> class to see which properties are send to the client:
+                Let's take a look at <a class="link" href="https://jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/validation/ValidationError.html" target="_top">ValidationError</a> class to see which properties are send to the client:
 
                 </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@XmlRootElement
 public final class ValidationError {
@@ -556,14 +556,14 @@ Server: Jetty(6.1.24)
    "path" : "ContactCardResource.getContact.&lt;return value&gt;"
 } ]</pre></div></div><p><br class="example-break">
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e13899"></a>18.8.&nbsp;Example</h2></div></div></div><p>To see a complete working example of using Bean Validation (JSR-349) with Jersey refer to the
-            <a class="link" href="https://github.com/jersey/jersey/tree/master/examples/bean-validation-webapp" target="_top">Bean Validation Example</a>.</p></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+            <a class="link" href="https://github.com/jersey/jersey/tree/master/examples/bean-validation-webapp" target="_top">Bean Validation Example</a>.</p></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

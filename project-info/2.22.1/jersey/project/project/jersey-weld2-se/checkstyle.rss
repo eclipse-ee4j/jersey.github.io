@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-ext-weld2-se - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/jersey-weld2-se/</link>
+    <link>https://jersey.github.io/project/project/jersey-weld2-se/</link>
     <description>jersey-ext-weld2-se - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/jersey-weld2-se//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/jersey-weld2-se//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/jersey-weld2-se//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/jersey-weld2-se//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-weld2-se//checkstyle.html#org.glassfish.jersey.weld.se.WeldHk2LocatorManager.java">org/glassfish/jersey/weld/se/WeldHk2LocatorManager.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-weld2-se//checkstyle.html#org.glassfish.jersey.weld.se.WeldHk2LocatorManager.java">org/glassfish/jersey/weld/se/WeldHk2LocatorManager.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/jersey-weld2-se//checkstyle.html#org.glassfish.jersey.weld.se.WeldRequestScope.java">org/glassfish/jersey/weld/se/WeldRequestScope.java</a>
+                  <a href="https://jersey.github.io/project/project/jersey-weld2-se//checkstyle.html#org.glassfish.jersey.weld.se.WeldRequestScope.java">org/glassfish/jersey/weld/se/WeldRequestScope.java</a>
                 </td>
                 <td>
                   0

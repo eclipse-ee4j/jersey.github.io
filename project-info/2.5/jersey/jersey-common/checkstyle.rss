@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-core-common - Checkstyle report</title>
-    <link>https://jersey.java.net/jersey-common/</link>
+    <link>https://jersey.github.io/jersey-common/</link>
     <description>jersey-core-common - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/jersey-common//checkstyle.html</link>
+            <link>https://jersey.github.io/jersey-common//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/jersey-common//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/jersey-common//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.CookieProvider.java">org/glassfish/jersey/message/internal/CookieProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.CookieProvider.java">org/glassfish/jersey/message/internal/CookieProvider.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.NewCookieProvider.java">org/glassfish/jersey/message/internal/NewCookieProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.NewCookieProvider.java">org/glassfish/jersey/message/internal/NewCookieProvider.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.RequestScoped.java">org/glassfish/jersey/process/internal/RequestScoped.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.RequestScoped.java">org/glassfish/jersey/process/internal/RequestScoped.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.DateProvider.java">org/glassfish/jersey/message/internal/DateProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.DateProvider.java">org/glassfish/jersey/message/internal/DateProvider.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.Injections.java">org/glassfish/jersey/internal/inject/Injections.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.Injections.java">org/glassfish/jersey/internal/inject/Injections.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.ImmutableMultivaluedMap.java">org/glassfish/jersey/internal/util/collection/ImmutableMultivaluedMap.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.ImmutableMultivaluedMap.java">org/glassfish/jersey/internal/util/collection/ImmutableMultivaluedMap.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.ReaderWriter.java">org/glassfish/jersey/message/internal/ReaderWriter.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.ReaderWriter.java">org/glassfish/jersey/message/internal/ReaderWriter.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.package-info.java">org/glassfish/jersey/message/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.package-info.java">org/glassfish/jersey/message/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.model.NameBound.java">org/glassfish/jersey/model/NameBound.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.model.NameBound.java">org/glassfish/jersey/model/NameBound.java</a>
                 </td>
                 <td>
                   0
@@ -155,7 +155,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.OutboundMessageContext.java">org/glassfish/jersey/message/internal/OutboundMessageContext.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.OutboundMessageContext.java">org/glassfish/jersey/message/internal/OutboundMessageContext.java</a>
                 </td>
                 <td>
                   0
@@ -169,7 +169,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.uri.UriComponent.java">org/glassfish/jersey/uri/UriComponent.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.uri.UriComponent.java">org/glassfish/jersey/uri/UriComponent.java</a>
                 </td>
                 <td>
                   0
@@ -183,7 +183,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.Refs.java">org/glassfish/jersey/internal/util/collection/Refs.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.Refs.java">org/glassfish/jersey/internal/util/collection/Refs.java</a>
                 </td>
                 <td>
                   0
@@ -197,7 +197,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.package-info.java">org/glassfish/jersey/internal/util/collection/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.package-info.java">org/glassfish/jersey/internal/util/collection/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -211,7 +211,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.XmlRootObjectJaxbProvider.java">org/glassfish/jersey/message/internal/XmlRootObjectJaxbProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.XmlRootObjectJaxbProvider.java">org/glassfish/jersey/message/internal/XmlRootObjectJaxbProvider.java</a>
                 </td>
                 <td>
                   0
@@ -225,7 +225,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.EntityInputStream.java">org/glassfish/jersey/message/internal/EntityInputStream.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.EntityInputStream.java">org/glassfish/jersey/message/internal/EntityInputStream.java</a>
                 </td>
                 <td>
                   0
@@ -239,7 +239,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.Statuses.java">org/glassfish/jersey/message/internal/Statuses.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.Statuses.java">org/glassfish/jersey/message/internal/Statuses.java</a>
                 </td>
                 <td>
                   0
@@ -253,7 +253,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.KeyComparatorHashMap.java">org/glassfish/jersey/internal/util/collection/KeyComparatorHashMap.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.KeyComparatorHashMap.java">org/glassfish/jersey/internal/util/collection/KeyComparatorHashMap.java</a>
                 </td>
                 <td>
                   0
@@ -267,7 +267,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.model.Scoped.java">org/glassfish/jersey/model/Scoped.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.model.Scoped.java">org/glassfish/jersey/model/Scoped.java</a>
                 </td>
                 <td>
                   0
@@ -281,7 +281,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.TransformerFactoryInjectionProvider.java">org/glassfish/jersey/message/internal/TransformerFactoryInjectionProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.TransformerFactoryInjectionProvider.java">org/glassfish/jersey/message/internal/TransformerFactoryInjectionProvider.java</a>
                 </td>
                 <td>
                   0
@@ -295,7 +295,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.l10n.LocalizableMessageFactory.java">org/glassfish/jersey/internal/l10n/LocalizableMessageFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.l10n.LocalizableMessageFactory.java">org/glassfish/jersey/internal/l10n/LocalizableMessageFactory.java</a>
                 </td>
                 <td>
                   0
@@ -309,7 +309,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.package-info.java">org/glassfish/jersey/message/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.package-info.java">org/glassfish/jersey/message/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -323,7 +323,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.DocumentBuilderFactoryInjectionProvider.java">org/glassfish/jersey/message/internal/DocumentBuilderFactoryInjectionProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.DocumentBuilderFactoryInjectionProvider.java">org/glassfish/jersey/message/internal/DocumentBuilderFactoryInjectionProvider.java</a>
                 </td>
                 <td>
                   0
@@ -337,7 +337,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.RequestExecutorFactory.java">org/glassfish/jersey/process/internal/RequestExecutorFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.RequestExecutorFactory.java">org/glassfish/jersey/process/internal/RequestExecutorFactory.java</a>
                 </td>
                 <td>
                   0
@@ -351,7 +351,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.l10n.Localizable.java">org/glassfish/jersey/internal/l10n/Localizable.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.l10n.Localizable.java">org/glassfish/jersey/internal/l10n/Localizable.java</a>
                 </td>
                 <td>
                   0
@@ -365,7 +365,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.spi.ExtendedExceptionMapper.java">org/glassfish/jersey/spi/ExtendedExceptionMapper.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.spi.ExtendedExceptionMapper.java">org/glassfish/jersey/spi/ExtendedExceptionMapper.java</a>
                 </td>
                 <td>
                   0
@@ -379,7 +379,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractRootElementJaxbProvider.java">org/glassfish/jersey/message/internal/AbstractRootElementJaxbProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractRootElementJaxbProvider.java">org/glassfish/jersey/message/internal/AbstractRootElementJaxbProvider.java</a>
                 </td>
                 <td>
                   0
@@ -393,7 +393,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MediaTypes.java">org/glassfish/jersey/message/internal/MediaTypes.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MediaTypes.java">org/glassfish/jersey/message/internal/MediaTypes.java</a>
                 </td>
                 <td>
                   0
@@ -407,7 +407,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.Values.java">org/glassfish/jersey/internal/util/collection/Values.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.Values.java">org/glassfish/jersey/internal/util/collection/Values.java</a>
                 </td>
                 <td>
                   0
@@ -421,7 +421,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MsgTraceEvent.java">org/glassfish/jersey/message/internal/MsgTraceEvent.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MsgTraceEvent.java">org/glassfish/jersey/message/internal/MsgTraceEvent.java</a>
                 </td>
                 <td>
                   0
@@ -435,7 +435,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.ServiceFinder.java">org/glassfish/jersey/internal/ServiceFinder.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.ServiceFinder.java">org/glassfish/jersey/internal/ServiceFinder.java</a>
                 </td>
                 <td>
                   0
@@ -449,7 +449,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.Severity.java">org/glassfish/jersey/Severity.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.Severity.java">org/glassfish/jersey/Severity.java</a>
                 </td>
                 <td>
                   0
@@ -463,7 +463,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.HttpHeaderReaderImpl.java">org/glassfish/jersey/message/internal/HttpHeaderReaderImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.HttpHeaderReaderImpl.java">org/glassfish/jersey/message/internal/HttpHeaderReaderImpl.java</a>
                 </td>
                 <td>
                   0
@@ -477,7 +477,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.process.package-info.java">org/glassfish/jersey/process/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.process.package-info.java">org/glassfish/jersey/process/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -491,7 +491,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.CustomAnnotationImpl.java">org/glassfish/jersey/internal/inject/CustomAnnotationImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.CustomAnnotationImpl.java">org/glassfish/jersey/internal/inject/CustomAnnotationImpl.java</a>
                 </td>
                 <td>
                   0
@@ -505,7 +505,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.EntityTagProvider.java">org/glassfish/jersey/message/internal/EntityTagProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.EntityTagProvider.java">org/glassfish/jersey/message/internal/EntityTagProvider.java</a>
                 </td>
                 <td>
                   0
@@ -519,7 +519,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.Quality.java">org/glassfish/jersey/message/internal/Quality.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.Quality.java">org/glassfish/jersey/message/internal/Quality.java</a>
                 </td>
                 <td>
                   0
@@ -533,7 +533,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.GrammarUtil.java">org/glassfish/jersey/message/internal/GrammarUtil.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.GrammarUtil.java">org/glassfish/jersey/message/internal/GrammarUtil.java</a>
                 </td>
                 <td>
                   0
@@ -547,7 +547,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.ReflectionHelper.java">org/glassfish/jersey/internal/util/ReflectionHelper.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.ReflectionHelper.java">org/glassfish/jersey/internal/util/ReflectionHelper.java</a>
                 </td>
                 <td>
                   0
@@ -561,7 +561,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.model.internal.ImmutableCommonConfig.java">org/glassfish/jersey/model/internal/ImmutableCommonConfig.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.model.internal.ImmutableCommonConfig.java">org/glassfish/jersey/model/internal/ImmutableCommonConfig.java</a>
                 </td>
                 <td>
                   0
@@ -575,7 +575,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.CompletableReader.java">org/glassfish/jersey/message/internal/CompletableReader.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.CompletableReader.java">org/glassfish/jersey/message/internal/CompletableReader.java</a>
                 </td>
                 <td>
                   0
@@ -589,7 +589,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.VariantSelector.java">org/glassfish/jersey/message/internal/VariantSelector.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.VariantSelector.java">org/glassfish/jersey/message/internal/VariantSelector.java</a>
                 </td>
                 <td>
                   0
@@ -603,7 +603,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.ProviderToFactory.java">org/glassfish/jersey/internal/inject/ProviderToFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.ProviderToFactory.java">org/glassfish/jersey/internal/inject/ProviderToFactory.java</a>
                 </td>
                 <td>
                   0
@@ -617,7 +617,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.spi.HeaderDelegateProvider.java">org/glassfish/jersey/spi/HeaderDelegateProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.spi.HeaderDelegateProvider.java">org/glassfish/jersey/spi/HeaderDelegateProvider.java</a>
                 </td>
                 <td>
                   0
@@ -631,7 +631,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AcceptableLanguageTag.java">org/glassfish/jersey/message/internal/AcceptableLanguageTag.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AcceptableLanguageTag.java">org/glassfish/jersey/message/internal/AcceptableLanguageTag.java</a>
                 </td>
                 <td>
                   0
@@ -645,7 +645,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.SaxParserFactoryInjectionProvider.java">org/glassfish/jersey/message/internal/SaxParserFactoryInjectionProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.SaxParserFactoryInjectionProvider.java">org/glassfish/jersey/message/internal/SaxParserFactoryInjectionProvider.java</a>
                 </td>
                 <td>
                   0
@@ -659,7 +659,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.XmlRootElementJaxbProvider.java">org/glassfish/jersey/message/internal/XmlRootElementJaxbProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.XmlRootElementJaxbProvider.java">org/glassfish/jersey/message/internal/XmlRootElementJaxbProvider.java</a>
                 </td>
                 <td>
                   0
@@ -673,7 +673,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.Errors.java">org/glassfish/jersey/internal/Errors.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.Errors.java">org/glassfish/jersey/internal/Errors.java</a>
                 </td>
                 <td>
                   0
@@ -687,7 +687,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.Qualified.java">org/glassfish/jersey/message/internal/Qualified.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.Qualified.java">org/glassfish/jersey/message/internal/Qualified.java</a>
                 </td>
                 <td>
                   0
@@ -701,7 +701,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.model.internal.package-info.java">org/glassfish/jersey/model/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.model.internal.package-info.java">org/glassfish/jersey/model/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -715,7 +715,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.ContextInjectionResolver.java">org/glassfish/jersey/internal/inject/ContextInjectionResolver.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.ContextInjectionResolver.java">org/glassfish/jersey/internal/inject/ContextInjectionResolver.java</a>
                 </td>
                 <td>
                   0
@@ -729,7 +729,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.StringMessageProvider.java">org/glassfish/jersey/message/internal/StringMessageProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.StringMessageProvider.java">org/glassfish/jersey/message/internal/StringMessageProvider.java</a>
                 </td>
                 <td>
                   0
@@ -743,7 +743,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.HttpHeaderReader.java">org/glassfish/jersey/message/internal/HttpHeaderReader.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.HttpHeaderReader.java">org/glassfish/jersey/message/internal/HttpHeaderReader.java</a>
                 </td>
                 <td>
                   0
@@ -757,7 +757,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.ServiceConfigurationError.java">org/glassfish/jersey/internal/ServiceConfigurationError.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.ServiceConfigurationError.java">org/glassfish/jersey/internal/ServiceConfigurationError.java</a>
                 </td>
                 <td>
                   0
@@ -771,7 +771,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.FormMultivaluedMapProvider.java">org/glassfish/jersey/message/internal/FormMultivaluedMapProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.FormMultivaluedMapProvider.java">org/glassfish/jersey/message/internal/FormMultivaluedMapProvider.java</a>
                 </td>
                 <td>
                   0
@@ -785,7 +785,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.SslConfigurator.java">org/glassfish/jersey/SslConfigurator.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.SslConfigurator.java">org/glassfish/jersey/SslConfigurator.java</a>
                 </td>
                 <td>
                   0
@@ -799,7 +799,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractMessageReaderWriterProvider.java">org/glassfish/jersey/message/internal/AbstractMessageReaderWriterProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractMessageReaderWriterProvider.java">org/glassfish/jersey/message/internal/AbstractMessageReaderWriterProvider.java</a>
                 </td>
                 <td>
                   0
@@ -813,7 +813,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.spi.ContextResolvers.java">org/glassfish/jersey/spi/ContextResolvers.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.spi.ContextResolvers.java">org/glassfish/jersey/spi/ContextResolvers.java</a>
                 </td>
                 <td>
                   0
@@ -827,7 +827,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.LocaleProvider.java">org/glassfish/jersey/message/internal/LocaleProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.LocaleProvider.java">org/glassfish/jersey/message/internal/LocaleProvider.java</a>
                 </td>
                 <td>
                   0
@@ -841,7 +841,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.NonBlockingInputStream.java">org/glassfish/jersey/internal/util/collection/NonBlockingInputStream.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.NonBlockingInputStream.java">org/glassfish/jersey/internal/util/collection/NonBlockingInputStream.java</a>
                 </td>
                 <td>
                   0
@@ -855,7 +855,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.Value.java">org/glassfish/jersey/internal/util/collection/Value.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.Value.java">org/glassfish/jersey/internal/util/collection/Value.java</a>
                 </td>
                 <td>
                   0
@@ -869,7 +869,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.Stage.java">org/glassfish/jersey/process/internal/Stage.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.Stage.java">org/glassfish/jersey/process/internal/Stage.java</a>
                 </td>
                 <td>
                   0
@@ -883,7 +883,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.ContextResolverFactory.java">org/glassfish/jersey/internal/ContextResolverFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.ContextResolverFactory.java">org/glassfish/jersey/internal/ContextResolverFactory.java</a>
                 </td>
                 <td>
                   0
@@ -897,7 +897,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.Tokenizer.java">org/glassfish/jersey/internal/util/Tokenizer.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.Tokenizer.java">org/glassfish/jersey/internal/util/Tokenizer.java</a>
                 </td>
                 <td>
                   0
@@ -911,7 +911,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.XmlHeader.java">org/glassfish/jersey/message/XmlHeader.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.XmlHeader.java">org/glassfish/jersey/message/XmlHeader.java</a>
                 </td>
                 <td>
                   0
@@ -925,7 +925,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.RenderedImageProvider.java">org/glassfish/jersey/message/internal/RenderedImageProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.RenderedImageProvider.java">org/glassfish/jersey/message/internal/RenderedImageProvider.java</a>
                 </td>
                 <td>
                   0
@@ -939,7 +939,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MessagingBinders.java">org/glassfish/jersey/message/internal/MessagingBinders.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MessagingBinders.java">org/glassfish/jersey/message/internal/MessagingBinders.java</a>
                 </td>
                 <td>
                   0
@@ -953,7 +953,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.CookiesParser.java">org/glassfish/jersey/message/internal/CookiesParser.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.CookiesParser.java">org/glassfish/jersey/message/internal/CookiesParser.java</a>
                 </td>
                 <td>
                   0
@@ -967,7 +967,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.DataSourceProvider.java">org/glassfish/jersey/message/internal/DataSourceProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.DataSourceProvider.java">org/glassfish/jersey/message/internal/DataSourceProvider.java</a>
                 </td>
                 <td>
                   0
@@ -981,7 +981,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.JerseyLink.java">org/glassfish/jersey/message/internal/JerseyLink.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.JerseyLink.java">org/glassfish/jersey/message/internal/JerseyLink.java</a>
                 </td>
                 <td>
                   0
@@ -995,7 +995,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.Closure.java">org/glassfish/jersey/internal/util/Closure.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.Closure.java">org/glassfish/jersey/internal/util/Closure.java</a>
                 </td>
                 <td>
                   0
@@ -1009,7 +1009,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.MessageProperties.java">org/glassfish/jersey/message/MessageProperties.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.MessageProperties.java">org/glassfish/jersey/message/MessageProperties.java</a>
                 </td>
                 <td>
                   0
@@ -1023,7 +1023,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.Token.java">org/glassfish/jersey/message/internal/Token.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.Token.java">org/glassfish/jersey/message/internal/Token.java</a>
                 </td>
                 <td>
                   0
@@ -1037,7 +1037,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.CacheControlProvider.java">org/glassfish/jersey/message/internal/CacheControlProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.CacheControlProvider.java">org/glassfish/jersey/message/internal/CacheControlProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1051,7 +1051,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.spi.package-info.java">org/glassfish/jersey/spi/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.spi.package-info.java">org/glassfish/jersey/spi/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1065,7 +1065,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.PropertiesDelegate.java">org/glassfish/jersey/internal/PropertiesDelegate.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.PropertiesDelegate.java">org/glassfish/jersey/internal/PropertiesDelegate.java</a>
                 </td>
                 <td>
                   0
@@ -1079,7 +1079,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.model.ContractProvider.java">org/glassfish/jersey/model/ContractProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.model.ContractProvider.java">org/glassfish/jersey/model/ContractProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1093,7 +1093,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.ExtendedLogger.java">org/glassfish/jersey/internal/util/ExtendedLogger.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.ExtendedLogger.java">org/glassfish/jersey/internal/util/ExtendedLogger.java</a>
                 </td>
                 <td>
                   0
@@ -1107,7 +1107,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.Ref.java">org/glassfish/jersey/internal/util/collection/Ref.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.Ref.java">org/glassfish/jersey/internal/util/collection/Ref.java</a>
                 </td>
                 <td>
                   0
@@ -1121,7 +1121,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.OutboundJaxrsResponse.java">org/glassfish/jersey/message/internal/OutboundJaxrsResponse.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.OutboundJaxrsResponse.java">org/glassfish/jersey/message/internal/OutboundJaxrsResponse.java</a>
                 </td>
                 <td>
                   0
@@ -1135,7 +1135,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.VariantListBuilder.java">org/glassfish/jersey/message/internal/VariantListBuilder.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.VariantListBuilder.java">org/glassfish/jersey/message/internal/VariantListBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -1149,7 +1149,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MessageBodyProcessingException.java">org/glassfish/jersey/message/internal/MessageBodyProcessingException.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MessageBodyProcessingException.java">org/glassfish/jersey/message/internal/MessageBodyProcessingException.java</a>
                 </td>
                 <td>
                   0
@@ -1163,7 +1163,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.KeyComparator.java">org/glassfish/jersey/internal/util/collection/KeyComparator.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.KeyComparator.java">org/glassfish/jersey/internal/util/collection/KeyComparator.java</a>
                 </td>
                 <td>
                   0
@@ -1177,7 +1177,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.BasicTypesMessageProvider.java">org/glassfish/jersey/message/internal/BasicTypesMessageProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.BasicTypesMessageProvider.java">org/glassfish/jersey/message/internal/BasicTypesMessageProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1191,7 +1191,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.Inflecting.java">org/glassfish/jersey/process/internal/Inflecting.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.Inflecting.java">org/glassfish/jersey/process/internal/Inflecting.java</a>
                 </td>
                 <td>
                   0
@@ -1205,7 +1205,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.Stages.java">org/glassfish/jersey/process/internal/Stages.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.Stages.java">org/glassfish/jersey/process/internal/Stages.java</a>
                 </td>
                 <td>
                   0
@@ -1219,7 +1219,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractJaxbElementProvider.java">org/glassfish/jersey/message/internal/AbstractJaxbElementProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractJaxbElementProvider.java">org/glassfish/jersey/message/internal/AbstractJaxbElementProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1233,7 +1233,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.spi.RequestExecutorProvider.java">org/glassfish/jersey/spi/RequestExecutorProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.spi.RequestExecutorProvider.java">org/glassfish/jersey/spi/RequestExecutorProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1247,7 +1247,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.uri.PathPattern.java">org/glassfish/jersey/uri/PathPattern.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.uri.PathPattern.java">org/glassfish/jersey/uri/PathPattern.java</a>
                 </td>
                 <td>
                   0
@@ -1261,7 +1261,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MatchingEntityTag.java">org/glassfish/jersey/message/internal/MatchingEntityTag.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MatchingEntityTag.java">org/glassfish/jersey/message/internal/MatchingEntityTag.java</a>
                 </td>
                 <td>
                   0
@@ -1275,7 +1275,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.ProviderToService.java">org/glassfish/jersey/internal/inject/ProviderToService.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.ProviderToService.java">org/glassfish/jersey/internal/inject/ProviderToService.java</a>
                 </td>
                 <td>
                   0
@@ -1289,7 +1289,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.ProviderBinder.java">org/glassfish/jersey/internal/inject/ProviderBinder.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.ProviderBinder.java">org/glassfish/jersey/internal/inject/ProviderBinder.java</a>
                 </td>
                 <td>
                   0
@@ -1303,7 +1303,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.package-info.java">org/glassfish/jersey/process/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.package-info.java">org/glassfish/jersey/process/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1317,7 +1317,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.CommittingOutputStream.java">org/glassfish/jersey/message/internal/CommittingOutputStream.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.CommittingOutputStream.java">org/glassfish/jersey/message/internal/CommittingOutputStream.java</a>
                 </td>
                 <td>
                   0
@@ -1331,7 +1331,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MessageBodyProviderNotFoundException.java">org/glassfish/jersey/message/internal/MessageBodyProviderNotFoundException.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MessageBodyProviderNotFoundException.java">org/glassfish/jersey/message/internal/MessageBodyProviderNotFoundException.java</a>
                 </td>
                 <td>
                   0
@@ -1345,7 +1345,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.SaxHelper.java">org/glassfish/jersey/internal/util/SaxHelper.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.SaxHelper.java">org/glassfish/jersey/internal/util/SaxHelper.java</a>
                 </td>
                 <td>
                   0
@@ -1359,7 +1359,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.FactoryToService.java">org/glassfish/jersey/internal/inject/FactoryToService.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.FactoryToService.java">org/glassfish/jersey/internal/inject/FactoryToService.java</a>
                 </td>
                 <td>
                   0
@@ -1373,7 +1373,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AcceptableToken.java">org/glassfish/jersey/message/internal/AcceptableToken.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AcceptableToken.java">org/glassfish/jersey/message/internal/AcceptableToken.java</a>
                 </td>
                 <td>
                   0
@@ -1387,7 +1387,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.RuntimeDelegateImpl.java">org/glassfish/jersey/internal/RuntimeDelegateImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.RuntimeDelegateImpl.java">org/glassfish/jersey/internal/RuntimeDelegateImpl.java</a>
                 </td>
                 <td>
                   0
@@ -1401,7 +1401,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.DeflateEncoder.java">org/glassfish/jersey/message/DeflateEncoder.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.DeflateEncoder.java">org/glassfish/jersey/message/DeflateEncoder.java</a>
                 </td>
                 <td>
                   0
@@ -1415,7 +1415,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.ExtendedConfig.java">org/glassfish/jersey/ExtendedConfig.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.ExtendedConfig.java">org/glassfish/jersey/ExtendedConfig.java</a>
                 </td>
                 <td>
                   0
@@ -1429,7 +1429,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.AbstractRuntimeDelegate.java">org/glassfish/jersey/internal/AbstractRuntimeDelegate.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.AbstractRuntimeDelegate.java">org/glassfish/jersey/internal/AbstractRuntimeDelegate.java</a>
                 </td>
                 <td>
                   0
@@ -1443,7 +1443,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.TransferQueue.java">org/glassfish/jersey/internal/util/collection/TransferQueue.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.TransferQueue.java">org/glassfish/jersey/internal/util/collection/TransferQueue.java</a>
                 </td>
                 <td>
                   0
@@ -1457,7 +1457,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.spi.AutoDiscoverable.java">org/glassfish/jersey/internal/spi/AutoDiscoverable.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.spi.AutoDiscoverable.java">org/glassfish/jersey/internal/spi/AutoDiscoverable.java</a>
                 </td>
                 <td>
                   0
@@ -1471,7 +1471,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.StreamingOutputProvider.java">org/glassfish/jersey/message/internal/StreamingOutputProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.StreamingOutputProvider.java">org/glassfish/jersey/message/internal/StreamingOutputProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1485,7 +1485,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.spi.StringValueReader.java">org/glassfish/jersey/spi/StringValueReader.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.spi.StringValueReader.java">org/glassfish/jersey/spi/StringValueReader.java</a>
                 </td>
                 <td>
                   0
@@ -1499,7 +1499,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.spi.package-info.java">org/glassfish/jersey/internal/spi/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.spi.package-info.java">org/glassfish/jersey/internal/spi/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1513,7 +1513,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.l10n.LocalizableMessage.java">org/glassfish/jersey/internal/l10n/LocalizableMessage.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.l10n.LocalizableMessage.java">org/glassfish/jersey/internal/l10n/LocalizableMessage.java</a>
                 </td>
                 <td>
                   0
@@ -1527,7 +1527,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.ServiceFinderBinder.java">org/glassfish/jersey/internal/ServiceFinderBinder.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.ServiceFinderBinder.java">org/glassfish/jersey/internal/ServiceFinderBinder.java</a>
                 </td>
                 <td>
                   0
@@ -1541,7 +1541,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.HttpDateFormat.java">org/glassfish/jersey/message/internal/HttpDateFormat.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.HttpDateFormat.java">org/glassfish/jersey/message/internal/HttpDateFormat.java</a>
                 </td>
                 <td>
                   0
@@ -1555,7 +1555,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.Custom.java">org/glassfish/jersey/internal/inject/Custom.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.Custom.java">org/glassfish/jersey/internal/inject/Custom.java</a>
                 </td>
                 <td>
                   0
@@ -1569,7 +1569,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.uri.UriTemplate.java">org/glassfish/jersey/uri/UriTemplate.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.uri.UriTemplate.java">org/glassfish/jersey/uri/UriTemplate.java</a>
                 </td>
                 <td>
                   0
@@ -1583,7 +1583,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.SimpleNamespaceResolver.java">org/glassfish/jersey/internal/util/SimpleNamespaceResolver.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.SimpleNamespaceResolver.java">org/glassfish/jersey/internal/util/SimpleNamespaceResolver.java</a>
                 </td>
                 <td>
                   0
@@ -1597,7 +1597,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.StringIgnoreCaseKeyComparator.java">org/glassfish/jersey/internal/util/collection/StringIgnoreCaseKeyComparator.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.StringIgnoreCaseKeyComparator.java">org/glassfish/jersey/internal/util/collection/StringIgnoreCaseKeyComparator.java</a>
                 </td>
                 <td>
                   0
@@ -1611,7 +1611,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.JerseyErrorService.java">org/glassfish/jersey/internal/JerseyErrorService.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.JerseyErrorService.java">org/glassfish/jersey/internal/JerseyErrorService.java</a>
                 </td>
                 <td>
                   0
@@ -1625,7 +1625,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.filter.package-info.java">org/glassfish/jersey/filter/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.filter.package-info.java">org/glassfish/jersey/filter/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1639,7 +1639,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.FileProvider.java">org/glassfish/jersey/message/internal/FileProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.FileProvider.java">org/glassfish/jersey/message/internal/FileProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1653,7 +1653,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.ExceptionMapperFactory.java">org/glassfish/jersey/internal/ExceptionMapperFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.ExceptionMapperFactory.java">org/glassfish/jersey/internal/ExceptionMapperFactory.java</a>
                 </td>
                 <td>
                   0
@@ -1667,7 +1667,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.Settable.java">org/glassfish/jersey/internal/util/collection/Settable.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.Settable.java">org/glassfish/jersey/internal/util/collection/Settable.java</a>
                 </td>
                 <td>
                   0
@@ -1681,7 +1681,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.TypeVisitor.java">org/glassfish/jersey/internal/util/TypeVisitor.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.TypeVisitor.java">org/glassfish/jersey/internal/util/TypeVisitor.java</a>
                 </td>
                 <td>
                   0
@@ -1695,7 +1695,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.TracingAwarePropertiesDelegate.java">org/glassfish/jersey/message/internal/TracingAwarePropertiesDelegate.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.TracingAwarePropertiesDelegate.java">org/glassfish/jersey/message/internal/TracingAwarePropertiesDelegate.java</a>
                 </td>
                 <td>
                   0
@@ -1709,7 +1709,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.Beta.java">org/glassfish/jersey/Beta.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.Beta.java">org/glassfish/jersey/Beta.java</a>
                 </td>
                 <td>
                   0
@@ -1723,7 +1723,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.CommonProperties.java">org/glassfish/jersey/CommonProperties.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.CommonProperties.java">org/glassfish/jersey/CommonProperties.java</a>
                 </td>
                 <td>
                   0
@@ -1737,7 +1737,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.SecureSaxParserFactory.java">org/glassfish/jersey/message/internal/SecureSaxParserFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.SecureSaxParserFactory.java">org/glassfish/jersey/message/internal/SecureSaxParserFactory.java</a>
                 </td>
                 <td>
                   0
@@ -1751,7 +1751,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.ByteArrayProvider.java">org/glassfish/jersey/message/internal/ByteArrayProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.ByteArrayProvider.java">org/glassfish/jersey/message/internal/ByteArrayProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1765,7 +1765,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.ClassTypePair.java">org/glassfish/jersey/internal/util/collection/ClassTypePair.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.ClassTypePair.java">org/glassfish/jersey/internal/util/collection/ClassTypePair.java</a>
                 </td>
                 <td>
                   0
@@ -1779,7 +1779,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.package-info.java">org/glassfish/jersey/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.package-info.java">org/glassfish/jersey/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1793,7 +1793,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.uri.internal.JerseyUriBuilder.java">org/glassfish/jersey/uri/internal/JerseyUriBuilder.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.uri.internal.JerseyUriBuilder.java">org/glassfish/jersey/uri/internal/JerseyUriBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -1807,7 +1807,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.ThreadLocalRandom.java">org/glassfish/jersey/internal/util/collection/ThreadLocalRandom.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.ThreadLocalRandom.java">org/glassfish/jersey/internal/util/collection/ThreadLocalRandom.java</a>
                 </td>
                 <td>
                   0
@@ -1821,7 +1821,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractJaxbProvider.java">org/glassfish/jersey/message/internal/AbstractJaxbProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractJaxbProvider.java">org/glassfish/jersey/message/internal/AbstractJaxbProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1835,7 +1835,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.LinkedTransferQueue.java">org/glassfish/jersey/internal/util/collection/LinkedTransferQueue.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.LinkedTransferQueue.java">org/glassfish/jersey/internal/util/collection/LinkedTransferQueue.java</a>
                 </td>
                 <td>
                   0
@@ -1849,7 +1849,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.MultivaluedStringMap.java">org/glassfish/jersey/internal/util/collection/MultivaluedStringMap.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.MultivaluedStringMap.java">org/glassfish/jersey/internal/util/collection/MultivaluedStringMap.java</a>
                 </td>
                 <td>
                   0
@@ -1863,7 +1863,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.PropertiesHelper.java">org/glassfish/jersey/internal/util/PropertiesHelper.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.PropertiesHelper.java">org/glassfish/jersey/internal/util/PropertiesHelper.java</a>
                 </td>
                 <td>
                   0
@@ -1877,7 +1877,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.ByteBufferInputStream.java">org/glassfish/jersey/internal/util/collection/ByteBufferInputStream.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.ByteBufferInputStream.java">org/glassfish/jersey/internal/util/collection/ByteBufferInputStream.java</a>
                 </td>
                 <td>
                   0
@@ -1891,7 +1891,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.AbstractChainableStage.java">org/glassfish/jersey/process/internal/AbstractChainableStage.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.AbstractChainableStage.java">org/glassfish/jersey/process/internal/AbstractChainableStage.java</a>
                 </td>
                 <td>
                   0
@@ -1905,7 +1905,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.package-info.java">org/glassfish/jersey/internal/util/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.package-info.java">org/glassfish/jersey/internal/util/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1919,7 +1919,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AcceptableMediaType.java">org/glassfish/jersey/message/internal/AcceptableMediaType.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AcceptableMediaType.java">org/glassfish/jersey/message/internal/AcceptableMediaType.java</a>
                 </td>
                 <td>
                   0
@@ -1933,7 +1933,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.package-info.java">org/glassfish/jersey/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.package-info.java">org/glassfish/jersey/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1947,7 +1947,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.ReferencingFactory.java">org/glassfish/jersey/internal/inject/ReferencingFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.ReferencingFactory.java">org/glassfish/jersey/internal/inject/ReferencingFactory.java</a>
                 </td>
                 <td>
                   0
@@ -1961,7 +1961,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.InputStreamProvider.java">org/glassfish/jersey/message/internal/InputStreamProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.InputStreamProvider.java">org/glassfish/jersey/message/internal/InputStreamProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1975,7 +1975,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.MessageBodyWorkers.java">org/glassfish/jersey/message/MessageBodyWorkers.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.MessageBodyWorkers.java">org/glassfish/jersey/message/MessageBodyWorkers.java</a>
                 </td>
                 <td>
                   0
@@ -1989,7 +1989,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.StringBuilderUtils.java">org/glassfish/jersey/message/internal/StringBuilderUtils.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.StringBuilderUtils.java">org/glassfish/jersey/message/internal/StringBuilderUtils.java</a>
                 </td>
                 <td>
                   0
@@ -2003,7 +2003,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.spi.ContentEncoder.java">org/glassfish/jersey/spi/ContentEncoder.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.spi.ContentEncoder.java">org/glassfish/jersey/spi/ContentEncoder.java</a>
                 </td>
                 <td>
                   0
@@ -2017,7 +2017,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.process.Inflector.java">org/glassfish/jersey/process/Inflector.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.process.Inflector.java">org/glassfish/jersey/process/Inflector.java</a>
                 </td>
                 <td>
                   0
@@ -2031,7 +2031,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.model.package-info.java">org/glassfish/jersey/model/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.model.package-info.java">org/glassfish/jersey/model/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2045,7 +2045,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.Closing.java">org/glassfish/jersey/internal/util/Closing.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.Closing.java">org/glassfish/jersey/internal/util/Closing.java</a>
                 </td>
                 <td>
                   0
@@ -2059,7 +2059,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.uri.PatternWithGroups.java">org/glassfish/jersey/uri/PatternWithGroups.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.uri.PatternWithGroups.java">org/glassfish/jersey/uri/PatternWithGroups.java</a>
                 </td>
                 <td>
                   0
@@ -2073,7 +2073,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.FormProvider.java">org/glassfish/jersey/message/internal/FormProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.FormProvider.java">org/glassfish/jersey/message/internal/FormProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2087,7 +2087,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.filter.LoggingFilter.java">org/glassfish/jersey/filter/LoggingFilter.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.filter.LoggingFilter.java">org/glassfish/jersey/filter/LoggingFilter.java</a>
                 </td>
                 <td>
                   0
@@ -2101,7 +2101,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.RequestScope.java">org/glassfish/jersey/process/internal/RequestScope.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.RequestScope.java">org/glassfish/jersey/process/internal/RequestScope.java</a>
                 </td>
                 <td>
                   0
@@ -2115,7 +2115,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.InterceptorExecutor.java">org/glassfish/jersey/message/internal/InterceptorExecutor.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.InterceptorExecutor.java">org/glassfish/jersey/message/internal/InterceptorExecutor.java</a>
                 </td>
                 <td>
                   0
@@ -2129,7 +2129,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MediaTypeProvider.java">org/glassfish/jersey/message/internal/MediaTypeProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MediaTypeProvider.java">org/glassfish/jersey/message/internal/MediaTypeProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2143,7 +2143,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.HttpHeaderListAdapter.java">org/glassfish/jersey/message/internal/HttpHeaderListAdapter.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.HttpHeaderListAdapter.java">org/glassfish/jersey/message/internal/HttpHeaderListAdapter.java</a>
                 </td>
                 <td>
                   0
@@ -2157,7 +2157,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.LazyUid.java">org/glassfish/jersey/internal/util/LazyUid.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.LazyUid.java">org/glassfish/jersey/internal/util/LazyUid.java</a>
                 </td>
                 <td>
                   0
@@ -2171,7 +2171,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.XmlCollectionJaxbProvider.java">org/glassfish/jersey/message/internal/XmlCollectionJaxbProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.XmlCollectionJaxbProvider.java">org/glassfish/jersey/message/internal/XmlCollectionJaxbProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2185,7 +2185,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.JaxrsProviders.java">org/glassfish/jersey/internal/JaxrsProviders.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.JaxrsProviders.java">org/glassfish/jersey/internal/JaxrsProviders.java</a>
                 </td>
                 <td>
                   0
@@ -2199,7 +2199,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.KeyComparatorLinkedHashMap.java">org/glassfish/jersey/internal/util/collection/KeyComparatorLinkedHashMap.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.KeyComparatorLinkedHashMap.java">org/glassfish/jersey/internal/util/collection/KeyComparatorLinkedHashMap.java</a>
                 </td>
                 <td>
                   0
@@ -2213,7 +2213,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.l10n.Localizer.java">org/glassfish/jersey/internal/l10n/Localizer.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.l10n.Localizer.java">org/glassfish/jersey/internal/l10n/Localizer.java</a>
                 </td>
                 <td>
                   0
@@ -2227,7 +2227,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.MapPropertiesDelegate.java">org/glassfish/jersey/internal/MapPropertiesDelegate.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.MapPropertiesDelegate.java">org/glassfish/jersey/internal/MapPropertiesDelegate.java</a>
                 </td>
                 <td>
                   0
@@ -2241,7 +2241,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.DataStructures.java">org/glassfish/jersey/internal/util/collection/DataStructures.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.DataStructures.java">org/glassfish/jersey/internal/util/collection/DataStructures.java</a>
                 </td>
                 <td>
                   0
@@ -2255,7 +2255,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.WriterInterceptorExecutor.java">org/glassfish/jersey/message/internal/WriterInterceptorExecutor.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.WriterInterceptorExecutor.java">org/glassfish/jersey/message/internal/WriterInterceptorExecutor.java</a>
                 </td>
                 <td>
                   0
@@ -2269,7 +2269,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.package-info.java">org/glassfish/jersey/internal/inject/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.package-info.java">org/glassfish/jersey/internal/inject/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2283,7 +2283,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.HeadersFactory.java">org/glassfish/jersey/message/internal/HeadersFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.HeadersFactory.java">org/glassfish/jersey/message/internal/HeadersFactory.java</a>
                 </td>
                 <td>
                   0
@@ -2297,7 +2297,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.OsgiRegistry.java">org/glassfish/jersey/internal/OsgiRegistry.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.OsgiRegistry.java">org/glassfish/jersey/internal/OsgiRegistry.java</a>
                 </td>
                 <td>
                   0
@@ -2311,7 +2311,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.QualitySourceMediaType.java">org/glassfish/jersey/message/internal/QualitySourceMediaType.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.QualitySourceMediaType.java">org/glassfish/jersey/message/internal/QualitySourceMediaType.java</a>
                 </td>
                 <td>
                   0
@@ -2325,7 +2325,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractCollectionJaxbProvider.java">org/glassfish/jersey/message/internal/AbstractCollectionJaxbProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractCollectionJaxbProvider.java">org/glassfish/jersey/message/internal/AbstractCollectionJaxbProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2339,7 +2339,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.uri.internal.UriParser.java">org/glassfish/jersey/uri/internal/UriParser.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.uri.internal.UriParser.java">org/glassfish/jersey/uri/internal/UriParser.java</a>
                 </td>
                 <td>
                   0
@@ -2353,7 +2353,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.model.internal.RankedComparator.java">org/glassfish/jersey/model/internal/RankedComparator.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.model.internal.RankedComparator.java">org/glassfish/jersey/model/internal/RankedComparator.java</a>
                 </td>
                 <td>
                   0
@@ -2367,7 +2367,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.JdkVersion.java">org/glassfish/jersey/internal/util/JdkVersion.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.JdkVersion.java">org/glassfish/jersey/internal/util/JdkVersion.java</a>
                 </td>
                 <td>
                   0
@@ -2381,7 +2381,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.spi.Contract.java">org/glassfish/jersey/spi/Contract.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.spi.Contract.java">org/glassfish/jersey/spi/Contract.java</a>
                 </td>
                 <td>
                   0
@@ -2395,7 +2395,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.uri.internal.UriTemplateParser.java">org/glassfish/jersey/uri/internal/UriTemplateParser.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.uri.internal.UriTemplateParser.java">org/glassfish/jersey/uri/internal/UriTemplateParser.java</a>
                 </td>
                 <td>
                   0
@@ -2409,7 +2409,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.model.internal.RankedProvider.java">org/glassfish/jersey/model/internal/RankedProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.model.internal.RankedProvider.java">org/glassfish/jersey/model/internal/RankedProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2423,7 +2423,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.GZipEncoder.java">org/glassfish/jersey/message/GZipEncoder.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.GZipEncoder.java">org/glassfish/jersey/message/GZipEncoder.java</a>
                 </td>
                 <td>
                   0
@@ -2437,7 +2437,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.NullOutputStream.java">org/glassfish/jersey/message/internal/NullOutputStream.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.NullOutputStream.java">org/glassfish/jersey/message/internal/NullOutputStream.java</a>
                 </td>
                 <td>
                   0
@@ -2451,7 +2451,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MessageBodyFactory.java">org/glassfish/jersey/message/internal/MessageBodyFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.MessageBodyFactory.java">org/glassfish/jersey/message/internal/MessageBodyFactory.java</a>
                 </td>
                 <td>
                   0
@@ -2465,7 +2465,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.TracingInfo.java">org/glassfish/jersey/message/internal/TracingInfo.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.TracingInfo.java">org/glassfish/jersey/message/internal/TracingInfo.java</a>
                 </td>
                 <td>
                   0
@@ -2479,7 +2479,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.InboundMessageContext.java">org/glassfish/jersey/message/internal/InboundMessageContext.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.InboundMessageContext.java">org/glassfish/jersey/message/internal/InboundMessageContext.java</a>
                 </td>
                 <td>
                   0
@@ -2493,7 +2493,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.SecurityContextInjectee.java">org/glassfish/jersey/internal/inject/SecurityContextInjectee.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.SecurityContextInjectee.java">org/glassfish/jersey/internal/inject/SecurityContextInjectee.java</a>
                 </td>
                 <td>
                   0
@@ -2507,7 +2507,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.DocumentProvider.java">org/glassfish/jersey/message/internal/DocumentProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.DocumentProvider.java">org/glassfish/jersey/message/internal/DocumentProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2521,7 +2521,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.LazyValue.java">org/glassfish/jersey/internal/util/collection/LazyValue.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.LazyValue.java">org/glassfish/jersey/internal/util/collection/LazyValue.java</a>
                 </td>
                 <td>
                   0
@@ -2535,7 +2535,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.JerseyClassAnalyzer.java">org/glassfish/jersey/internal/inject/JerseyClassAnalyzer.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.JerseyClassAnalyzer.java">org/glassfish/jersey/internal/inject/JerseyClassAnalyzer.java</a>
                 </td>
                 <td>
                   0
@@ -2549,7 +2549,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractFormProvider.java">org/glassfish/jersey/message/internal/AbstractFormProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractFormProvider.java">org/glassfish/jersey/message/internal/AbstractFormProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2563,7 +2563,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.UriProvider.java">org/glassfish/jersey/message/internal/UriProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.UriProvider.java">org/glassfish/jersey/message/internal/UriProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2577,7 +2577,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.NounInflector.java">org/glassfish/jersey/message/internal/NounInflector.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.NounInflector.java">org/glassfish/jersey/message/internal/NounInflector.java</a>
                 </td>
                 <td>
                   0
@@ -2591,7 +2591,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.UnsafeValue.java">org/glassfish/jersey/internal/util/collection/UnsafeValue.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.UnsafeValue.java">org/glassfish/jersey/internal/util/collection/UnsafeValue.java</a>
                 </td>
                 <td>
                   0
@@ -2605,7 +2605,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.XmlInputFactoryInjectionProvider.java">org/glassfish/jersey/message/internal/XmlInputFactoryInjectionProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.XmlInputFactoryInjectionProvider.java">org/glassfish/jersey/message/internal/XmlInputFactoryInjectionProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2619,7 +2619,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.l10n.package-info.java">org/glassfish/jersey/internal/l10n/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.l10n.package-info.java">org/glassfish/jersey/internal/l10n/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2633,7 +2633,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.Providers.java">org/glassfish/jersey/internal/inject/Providers.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.inject.Providers.java">org/glassfish/jersey/internal/inject/Providers.java</a>
                 </td>
                 <td>
                   0
@@ -2647,7 +2647,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.model.internal.ComponentBag.java">org/glassfish/jersey/model/internal/ComponentBag.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.model.internal.ComponentBag.java">org/glassfish/jersey/model/internal/ComponentBag.java</a>
                 </td>
                 <td>
                   0
@@ -2661,7 +2661,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.Base64.java">org/glassfish/jersey/internal/util/Base64.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.Base64.java">org/glassfish/jersey/internal/util/Base64.java</a>
                 </td>
                 <td>
                   0
@@ -2675,7 +2675,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.ConcurrentHashMapV8.java">org/glassfish/jersey/internal/util/collection/ConcurrentHashMapV8.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.ConcurrentHashMapV8.java">org/glassfish/jersey/internal/util/collection/ConcurrentHashMapV8.java</a>
                 </td>
                 <td>
                   0
@@ -2689,7 +2689,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.uri.internal.package-info.java">org/glassfish/jersey/uri/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.uri.internal.package-info.java">org/glassfish/jersey/uri/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2703,7 +2703,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.model.internal.CommonConfig.java">org/glassfish/jersey/model/internal/CommonConfig.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.model.internal.CommonConfig.java">org/glassfish/jersey/model/internal/CommonConfig.java</a>
                 </td>
                 <td>
                   0
@@ -2717,7 +2717,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.uri.internal.CharacterIterator.java">org/glassfish/jersey/uri/internal/CharacterIterator.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.uri.internal.CharacterIterator.java">org/glassfish/jersey/uri/internal/CharacterIterator.java</a>
                 </td>
                 <td>
                   0
@@ -2731,7 +2731,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.uri.package-info.java">org/glassfish/jersey/uri/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.uri.package-info.java">org/glassfish/jersey/uri/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2745,7 +2745,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.HeaderValueException.java">org/glassfish/jersey/message/internal/HeaderValueException.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.HeaderValueException.java">org/glassfish/jersey/message/internal/HeaderValueException.java</a>
                 </td>
                 <td>
                   0
@@ -2759,7 +2759,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.Producer.java">org/glassfish/jersey/internal/util/Producer.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.Producer.java">org/glassfish/jersey/internal/util/Producer.java</a>
                 </td>
                 <td>
                   0
@@ -2773,7 +2773,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.XmlJaxbElementProvider.java">org/glassfish/jersey/message/internal/XmlJaxbElementProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.XmlJaxbElementProvider.java">org/glassfish/jersey/message/internal/XmlJaxbElementProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2787,7 +2787,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.uri.PathTemplate.java">org/glassfish/jersey/uri/PathTemplate.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.uri.PathTemplate.java">org/glassfish/jersey/uri/PathTemplate.java</a>
                 </td>
                 <td>
                   0
@@ -2801,7 +2801,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.ChainableStage.java">org/glassfish/jersey/process/internal/ChainableStage.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.process.internal.ChainableStage.java">org/glassfish/jersey/process/internal/ChainableStage.java</a>
                 </td>
                 <td>
                   0
@@ -2815,7 +2815,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.ParameterizedHeader.java">org/glassfish/jersey/message/internal/ParameterizedHeader.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.ParameterizedHeader.java">org/glassfish/jersey/message/internal/ParameterizedHeader.java</a>
                 </td>
                 <td>
                   0
@@ -2829,7 +2829,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.TracingLogger.java">org/glassfish/jersey/message/internal/TracingLogger.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.TracingLogger.java">org/glassfish/jersey/message/internal/TracingLogger.java</a>
                 </td>
                 <td>
                   0
@@ -2843,7 +2843,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.Utils.java">org/glassfish/jersey/message/internal/Utils.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.Utils.java">org/glassfish/jersey/message/internal/Utils.java</a>
                 </td>
                 <td>
                   0
@@ -2857,7 +2857,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.spi.RuntimeThreadProvider.java">org/glassfish/jersey/spi/RuntimeThreadProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.spi.RuntimeThreadProvider.java">org/glassfish/jersey/spi/RuntimeThreadProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2871,7 +2871,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractXmlFactory.java">org/glassfish/jersey/message/internal/AbstractXmlFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.AbstractXmlFactory.java">org/glassfish/jersey/message/internal/AbstractXmlFactory.java</a>
                 </td>
                 <td>
                   0
@@ -2885,7 +2885,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.LinkProvider.java">org/glassfish/jersey/message/internal/LinkProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.LinkProvider.java">org/glassfish/jersey/message/internal/LinkProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2899,7 +2899,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.StringKeyIgnoreCaseMultivaluedMap.java">org/glassfish/jersey/internal/util/collection/StringKeyIgnoreCaseMultivaluedMap.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.StringKeyIgnoreCaseMultivaluedMap.java">org/glassfish/jersey/internal/util/collection/StringKeyIgnoreCaseMultivaluedMap.java</a>
                 </td>
                 <td>
                   0
@@ -2913,7 +2913,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.StringHeaderProvider.java">org/glassfish/jersey/message/internal/StringHeaderProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.StringHeaderProvider.java">org/glassfish/jersey/message/internal/StringHeaderProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2927,7 +2927,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.java">org/glassfish/jersey/message/internal/ReaderInterceptorExecutor.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.ReaderInterceptorExecutor.java">org/glassfish/jersey/message/internal/ReaderInterceptorExecutor.java</a>
                 </td>
                 <td>
                   0
@@ -2941,7 +2941,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.spi.ExceptionMappers.java">org/glassfish/jersey/spi/ExceptionMappers.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.spi.ExceptionMappers.java">org/glassfish/jersey/spi/ExceptionMappers.java</a>
                 </td>
                 <td>
                   0
@@ -2955,7 +2955,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.SourceProvider.java">org/glassfish/jersey/message/internal/SourceProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.SourceProvider.java">org/glassfish/jersey/message/internal/SourceProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2969,7 +2969,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.LazyUnsafeValue.java">org/glassfish/jersey/internal/util/collection/LazyUnsafeValue.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.util.collection.LazyUnsafeValue.java">org/glassfish/jersey/internal/util/collection/LazyUnsafeValue.java</a>
                 </td>
                 <td>
                   0
@@ -2983,7 +2983,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.ReaderProvider.java">org/glassfish/jersey/message/internal/ReaderProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.ReaderProvider.java">org/glassfish/jersey/message/internal/ReaderProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2997,7 +2997,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.internal.Version.java">org/glassfish/jersey/internal/Version.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.internal.Version.java">org/glassfish/jersey/internal/Version.java</a>
                 </td>
                 <td>
                   0
@@ -3011,7 +3011,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.LanguageTag.java">org/glassfish/jersey/message/internal/LanguageTag.java</a>
+                  <a href="https://jersey.github.io/jersey-common//checkstyle.html#org.glassfish.jersey.message.internal.LanguageTag.java">org/glassfish/jersey/message/internal/LanguageTag.java</a>
                 </td>
                 <td>
                   0

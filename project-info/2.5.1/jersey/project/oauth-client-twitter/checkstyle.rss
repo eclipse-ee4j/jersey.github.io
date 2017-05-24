@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>oauth-client-twitter - Checkstyle report</title>
-    <link>https://jersey.java.net/project/oauth-client-twitter/</link>
+    <link>https://jersey.github.io/project/oauth-client-twitter/</link>
     <description>oauth-client-twitter - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/oauth-client-twitter//checkstyle.html</link>
+            <link>https://jersey.github.io/project/oauth-client-twitter//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/oauth-client-twitter//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/oauth-client-twitter//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth-client-twitter//checkstyle.html#org.glassfish.jersey.examples.oauth.twitterclient.Status.java">org/glassfish/jersey/examples/oauth/twitterclient/Status.java</a>
+                  <a href="https://jersey.github.io/project/oauth-client-twitter//checkstyle.html#org.glassfish.jersey.examples.oauth.twitterclient.Status.java">org/glassfish/jersey/examples/oauth/twitterclient/Status.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth-client-twitter//checkstyle.html#org.glassfish.jersey.examples.oauth.twitterclient.User.java">org/glassfish/jersey/examples/oauth/twitterclient/User.java</a>
+                  <a href="https://jersey.github.io/project/oauth-client-twitter//checkstyle.html#org.glassfish.jersey.examples.oauth.twitterclient.User.java">org/glassfish/jersey/examples/oauth/twitterclient/User.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth-client-twitter//checkstyle.html#org.glassfish.jersey.examples.oauth.twitterclient.App.java">org/glassfish/jersey/examples/oauth/twitterclient/App.java</a>
+                  <a href="https://jersey.github.io/project/oauth-client-twitter//checkstyle.html#org.glassfish.jersey.examples.oauth.twitterclient.App.java">org/glassfish/jersey/examples/oauth/twitterclient/App.java</a>
                 </td>
                 <td>
                   0

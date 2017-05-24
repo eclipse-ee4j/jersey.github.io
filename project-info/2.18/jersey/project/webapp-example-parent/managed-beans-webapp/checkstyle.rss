@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-examples-managed-beans-webapp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/webapp-example-parent/managed-beans-webapp/</link>
+    <link>https://jersey.github.io/project/webapp-example-parent/managed-beans-webapp/</link>
     <description>jersey-examples-managed-beans-webapp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/webapp-example-parent/managed-beans-webapp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/webapp-example-parent/managed-beans-webapp//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/webapp-example-parent/managed-beans-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/webapp-example-parent/managed-beans-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/managed-beans-webapp//checkstyle.html#org.glassfish.jersey.examples.managedbeans.resources.ManagedBeanSingletonResource.java">org/glassfish/jersey/examples/managedbeans/resources/ManagedBeanSingletonResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/managed-beans-webapp//checkstyle.html#org.glassfish.jersey.examples.managedbeans.resources.ManagedBeanSingletonResource.java">org/glassfish/jersey/examples/managedbeans/resources/ManagedBeanSingletonResource.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/managed-beans-webapp//checkstyle.html#org.glassfish.jersey.examples.managedbeans.resources.ManagedBeanPerRequestResource.java">org/glassfish/jersey/examples/managedbeans/resources/ManagedBeanPerRequestResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/managed-beans-webapp//checkstyle.html#org.glassfish.jersey.examples.managedbeans.resources.ManagedBeanPerRequestResource.java">org/glassfish/jersey/examples/managedbeans/resources/ManagedBeanPerRequestResource.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/managed-beans-webapp//checkstyle.html#org.glassfish.jersey.examples.managedbeans.resources.ManagedBeanExceptionMapper.java">org/glassfish/jersey/examples/managedbeans/resources/ManagedBeanExceptionMapper.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/managed-beans-webapp//checkstyle.html#org.glassfish.jersey.examples.managedbeans.resources.ManagedBeanExceptionMapper.java">org/glassfish/jersey/examples/managedbeans/resources/ManagedBeanExceptionMapper.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/managed-beans-webapp//checkstyle.html#org.glassfish.jersey.examples.managedbeans.resources.Widget.java">org/glassfish/jersey/examples/managedbeans/resources/Widget.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/managed-beans-webapp//checkstyle.html#org.glassfish.jersey.examples.managedbeans.resources.Widget.java">org/glassfish/jersey/examples/managedbeans/resources/Widget.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/managed-beans-webapp//checkstyle.html#org.glassfish.jersey.examples.managedbeans.resources.ManagedBeanException.java">org/glassfish/jersey/examples/managedbeans/resources/ManagedBeanException.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/managed-beans-webapp//checkstyle.html#org.glassfish.jersey.examples.managedbeans.resources.ManagedBeanException.java">org/glassfish/jersey/examples/managedbeans/resources/ManagedBeanException.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/managed-beans-webapp//checkstyle.html#org.glassfish.jersey.examples.managedbeans.resources.MyApplication.java">org/glassfish/jersey/examples/managedbeans/resources/MyApplication.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/managed-beans-webapp//checkstyle.html#org.glassfish.jersey.examples.managedbeans.resources.MyApplication.java">org/glassfish/jersey/examples/managedbeans/resources/MyApplication.java</a>
                 </td>
                 <td>
                   0

@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-ext-mvc-jsp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-mvc-jsp/</link>
+    <link>https://jersey.github.io/project/jersey-mvc-jsp/</link>
     <description>jersey-ext-mvc-jsp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,7 +30,7 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-mvc-jsp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-mvc-jsp//checkstyle.html</link>
       <description>
         <p>Click <a href="https://jersey.github.io/project/jersey-mvc-jsp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 

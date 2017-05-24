@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-tests-integration-portability-jersey-1 - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/portability-jersey-1/</link>
+    <link>https://jersey.github.io/project/project/portability-jersey-1/</link>
     <description>jersey-tests-integration-portability-jersey-1 - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/portability-jersey-1//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/portability-jersey-1//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/portability-jersey-1//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/portability-jersey-1//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/portability-jersey-1//checkstyle.html#org.glassfish.jersey.tests.integration.portability.Jersey2Application.java">org/glassfish/jersey/tests/integration/portability/Jersey2Application.java</a>
+                  <a href="https://jersey.github.io/project/project/portability-jersey-1//checkstyle.html#org.glassfish.jersey.tests.integration.portability.Jersey2Application.java">org/glassfish/jersey/tests/integration/portability/Jersey2Application.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/portability-jersey-1//checkstyle.html#org.glassfish.jersey.tests.integration.portability.Jersey2Resource.java">org/glassfish/jersey/tests/integration/portability/Jersey2Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/portability-jersey-1//checkstyle.html#org.glassfish.jersey.tests.integration.portability.Jersey2Resource.java">org/glassfish/jersey/tests/integration/portability/Jersey2Resource.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/portability-jersey-1//checkstyle.html#org.glassfish.jersey.tests.integration.portability.HelloWorldResource.java">org/glassfish/jersey/tests/integration/portability/HelloWorldResource.java</a>
+                  <a href="https://jersey.github.io/project/project/portability-jersey-1//checkstyle.html#org.glassfish.jersey.tests.integration.portability.HelloWorldResource.java">org/glassfish/jersey/tests/integration/portability/HelloWorldResource.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/portability-jersey-1//checkstyle.html#org.glassfish.jersey.tests.integration.portability.Jersey1Resource.java">org/glassfish/jersey/tests/integration/portability/Jersey1Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/portability-jersey-1//checkstyle.html#org.glassfish.jersey.tests.integration.portability.Jersey1Resource.java">org/glassfish/jersey/tests/integration/portability/Jersey1Resource.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/portability-jersey-1//checkstyle.html#org.glassfish.jersey.tests.integration.portability.Jersey1Application.java">org/glassfish/jersey/tests/integration/portability/Jersey1Application.java</a>
+                  <a href="https://jersey.github.io/project/project/portability-jersey-1//checkstyle.html#org.glassfish.jersey.tests.integration.portability.Jersey1Application.java">org/glassfish/jersey/tests/integration/portability/Jersey1Application.java</a>
                 </td>
                 <td>
                   0

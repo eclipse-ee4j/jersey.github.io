@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>oauth2-client - Checkstyle report</title>
-    <link>https://jersey.java.net/project/oauth2-client/</link>
+    <link>https://jersey.github.io/project/oauth2-client/</link>
     <description>oauth2-client - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/oauth2-client//checkstyle.html</link>
+            <link>https://jersey.github.io/project/oauth2-client//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.AbstractAuthorizationCodeGrantBuilder.java">org/glassfish/jersey/client/oauth2/AbstractAuthorizationCodeGrantBuilder.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.AbstractAuthorizationCodeGrantBuilder.java">org/glassfish/jersey/client/oauth2/AbstractAuthorizationCodeGrantBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2ClientFilter.java">org/glassfish/jersey/client/oauth2/OAuth2ClientFilter.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2ClientFilter.java">org/glassfish/jersey/client/oauth2/OAuth2ClientFilter.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.internal.localization.properties">org/glassfish/jersey/client/oauth2/internal/localization.properties</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.internal.localization.properties">org/glassfish/jersey/client/oauth2/internal/localization.properties</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2Parameters.java">org/glassfish/jersey/client/oauth2/OAuth2Parameters.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2Parameters.java">org/glassfish/jersey/client/oauth2/OAuth2Parameters.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2FlowFacebookBuilder.java">org/glassfish/jersey/client/oauth2/OAuth2FlowFacebookBuilder.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2FlowFacebookBuilder.java">org/glassfish/jersey/client/oauth2/OAuth2FlowFacebookBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.AuthCodeGrantImpl.java">org/glassfish/jersey/client/oauth2/AuthCodeGrantImpl.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.AuthCodeGrantImpl.java">org/glassfish/jersey/client/oauth2/AuthCodeGrantImpl.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2ClientFeature.java">org/glassfish/jersey/client/oauth2/OAuth2ClientFeature.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2ClientFeature.java">org/glassfish/jersey/client/oauth2/OAuth2ClientFeature.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2ClientSupport.java">org/glassfish/jersey/client/oauth2/OAuth2ClientSupport.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2ClientSupport.java">org/glassfish/jersey/client/oauth2/OAuth2ClientSupport.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.ClientIdentifier.java">org/glassfish/jersey/client/oauth2/ClientIdentifier.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.ClientIdentifier.java">org/glassfish/jersey/client/oauth2/ClientIdentifier.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2FlowGoogleBuilder.java">org/glassfish/jersey/client/oauth2/OAuth2FlowGoogleBuilder.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2FlowGoogleBuilder.java">org/glassfish/jersey/client/oauth2/OAuth2FlowGoogleBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.TokenResult.java">org/glassfish/jersey/client/oauth2/TokenResult.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.TokenResult.java">org/glassfish/jersey/client/oauth2/TokenResult.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.package-info.java">org/glassfish/jersey/client/oauth2/package-info.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.package-info.java">org/glassfish/jersey/client/oauth2/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -214,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2CodeGrantFlow.java">org/glassfish/jersey/client/oauth2/OAuth2CodeGrantFlow.java</a>
+                  <a href="https://jersey.github.io/project/oauth2-client//checkstyle.html#org.glassfish.jersey.client.oauth2.OAuth2CodeGrantFlow.java">org/glassfish/jersey/client/oauth2/OAuth2CodeGrantFlow.java</a>
                 </td>
                 <td>
                   0

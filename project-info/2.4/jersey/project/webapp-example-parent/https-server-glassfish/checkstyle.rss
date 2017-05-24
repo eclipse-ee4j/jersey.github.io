@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-examples-https-server-glassfish - Checkstyle report</title>
-    <link>https://jersey.java.net/project/webapp-example-parent/https-server-glassfish/</link>
+    <link>https://jersey.github.io/project/webapp-example-parent/https-server-glassfish/</link>
     <description>jersey-examples-https-server-glassfish - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/webapp-example-parent/https-server-glassfish//checkstyle.html</link>
+            <link>https://jersey.github.io/project/webapp-example-parent/https-server-glassfish//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/webapp-example-parent/https-server-glassfish//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/webapp-example-parent/https-server-glassfish//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/https-server-glassfish//checkstyle.html#org.glassfish.jersey.examples.https.glassfish.resources.HelloWorldResource.java">org/glassfish/jersey/examples/https/glassfish/resources/HelloWorldResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/https-server-glassfish//checkstyle.html#org.glassfish.jersey.examples.https.glassfish.resources.HelloWorldResource.java">org/glassfish/jersey/examples/https/glassfish/resources/HelloWorldResource.java</a>
                 </td>
                 <td>
                   0

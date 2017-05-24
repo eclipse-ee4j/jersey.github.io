@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-tests-integration-servlet-tests - Checkstyle report</title>
-    <link>https://jersey.java.net/project/project/servlet-tests/</link>
+    <link>https://jersey.github.io/project/project/servlet-tests/</link>
     <description>jersey-tests-integration-servlet-tests - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/project/servlet-tests//checkstyle.html</link>
+            <link>https://jersey.github.io/project/project/servlet-tests//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/project/servlet-tests//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/project/servlet-tests//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.FilterStaticContentResource.java">org/glassfish/jersey/tests/integration/servlettests/FilterStaticContentResource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.FilterStaticContentResource.java">org/glassfish/jersey/tests/integration/servlettests/FilterStaticContentResource.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.FilterForwardOn404Resource.java">org/glassfish/jersey/tests/integration/servlettests/FilterForwardOn404Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.FilterForwardOn404Resource.java">org/glassfish/jersey/tests/integration/servlettests/FilterForwardOn404Resource.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.FormConsumptionResource.java">org/glassfish/jersey/tests/integration/servlettests/FormConsumptionResource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.FormConsumptionResource.java">org/glassfish/jersey/tests/integration/servlettests/FormConsumptionResource.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.CustomMediaTypeAnd404Resource.java">org/glassfish/jersey/tests/integration/servlettests/CustomMediaTypeAnd404Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.CustomMediaTypeAnd404Resource.java">org/glassfish/jersey/tests/integration/servlettests/CustomMediaTypeAnd404Resource.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.FormConsumptionFilter.java">org/glassfish/jersey/tests/integration/servlettests/FormConsumptionFilter.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.FormConsumptionFilter.java">org/glassfish/jersey/tests/integration/servlettests/FormConsumptionFilter.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.SuppressContentLengthFilter.java">org/glassfish/jersey/tests/integration/servlettests/SuppressContentLengthFilter.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.SuppressContentLengthFilter.java">org/glassfish/jersey/tests/integration/servlettests/SuppressContentLengthFilter.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.FilterContextPathResource.java">org/glassfish/jersey/tests/integration/servlettests/FilterContextPathResource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.FilterContextPathResource.java">org/glassfish/jersey/tests/integration/servlettests/FilterContextPathResource.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.SecuredResource.java">org/glassfish/jersey/tests/integration/servlettests/SecuredResource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.SecuredResource.java">org/glassfish/jersey/tests/integration/servlettests/SecuredResource.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.CacheControlOn404Resource.java">org/glassfish/jersey/tests/integration/servlettests/CacheControlOn404Resource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.CacheControlOn404Resource.java">org/glassfish/jersey/tests/integration/servlettests/CacheControlOn404Resource.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.FilterNoContextPathResource.java">org/glassfish/jersey/tests/integration/servlettests/FilterNoContextPathResource.java</a>
+                  <a href="https://jersey.github.io/project/project/servlet-tests//checkstyle.html#org.glassfish.jersey.tests.integration.servlettests.FilterNoContextPathResource.java">org/glassfish/jersey/tests/integration/servlettests/FilterNoContextPathResource.java</a>
                 </td>
                 <td>
                   0

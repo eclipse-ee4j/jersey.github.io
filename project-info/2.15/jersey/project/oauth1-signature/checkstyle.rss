@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>oauth1-signature - Checkstyle report</title>
-    <link>https://jersey.java.net/project/oauth1-signature/</link>
+    <link>https://jersey.github.io/project/oauth1-signature/</link>
     <description>oauth1-signature - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/oauth1-signature//checkstyle.html</link>
+            <link>https://jersey.github.io/project/oauth1-signature//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.PlaintextMethod.java">org/glassfish/jersey/oauth1/signature/PlaintextMethod.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.PlaintextMethod.java">org/glassfish/jersey/oauth1/signature/PlaintextMethod.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1SignatureException.java">org/glassfish/jersey/oauth1/signature/OAuth1SignatureException.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1SignatureException.java">org/glassfish/jersey/oauth1/signature/OAuth1SignatureException.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.package-info.java">org/glassfish/jersey/oauth1/signature/package-info.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.package-info.java">org/glassfish/jersey/oauth1/signature/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1Secrets.java">org/glassfish/jersey/oauth1/signature/OAuth1Secrets.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1Secrets.java">org/glassfish/jersey/oauth1/signature/OAuth1Secrets.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1SignatureFeature.java">org/glassfish/jersey/oauth1/signature/OAuth1SignatureFeature.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1SignatureFeature.java">org/glassfish/jersey/oauth1/signature/OAuth1SignatureFeature.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.HmaSha1Method.java">org/glassfish/jersey/oauth1/signature/HmaSha1Method.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.HmaSha1Method.java">org/glassfish/jersey/oauth1/signature/HmaSha1Method.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.Base64.java">org/glassfish/jersey/oauth1/signature/Base64.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.Base64.java">org/glassfish/jersey/oauth1/signature/Base64.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.UnsupportedSignatureMethodException.java">org/glassfish/jersey/oauth1/signature/UnsupportedSignatureMethodException.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.UnsupportedSignatureMethodException.java">org/glassfish/jersey/oauth1/signature/UnsupportedSignatureMethodException.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1SignatureMethod.java">org/glassfish/jersey/oauth1/signature/OAuth1SignatureMethod.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1SignatureMethod.java">org/glassfish/jersey/oauth1/signature/OAuth1SignatureMethod.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1Parameters.java">org/glassfish/jersey/oauth1/signature/OAuth1Parameters.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1Parameters.java">org/glassfish/jersey/oauth1/signature/OAuth1Parameters.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.RsaSha1Method.java">org/glassfish/jersey/oauth1/signature/RsaSha1Method.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.RsaSha1Method.java">org/glassfish/jersey/oauth1/signature/RsaSha1Method.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.internal.localization.properties">org/glassfish/jersey/oauth1/signature/internal/localization.properties</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.internal.localization.properties">org/glassfish/jersey/oauth1/signature/internal/localization.properties</a>
                 </td>
                 <td>
                   0
@@ -214,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1Signature.java">org/glassfish/jersey/oauth1/signature/OAuth1Signature.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1Signature.java">org/glassfish/jersey/oauth1/signature/OAuth1Signature.java</a>
                 </td>
                 <td>
                   0
@@ -228,7 +228,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.InvalidSecretException.java">org/glassfish/jersey/oauth1/signature/InvalidSecretException.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.InvalidSecretException.java">org/glassfish/jersey/oauth1/signature/InvalidSecretException.java</a>
                 </td>
                 <td>
                   0
@@ -242,7 +242,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1Request.java">org/glassfish/jersey/oauth1/signature/OAuth1Request.java</a>
+                  <a href="https://jersey.github.io/project/oauth1-signature//checkstyle.html#org.glassfish.jersey.oauth1.signature.OAuth1Request.java">org/glassfish/jersey/oauth1/signature/OAuth1Request.java</a>
                 </td>
                 <td>
                   0

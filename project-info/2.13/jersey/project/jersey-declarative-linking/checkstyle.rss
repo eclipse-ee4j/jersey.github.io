@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-declarative-linking - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-declarative-linking/</link>
+    <link>https://jersey.github.io/project/jersey-declarative-linking/</link>
     <description>jersey-declarative-linking - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.FieldProcessor.java">org/glassfish/jersey/linking/FieldProcessor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.FieldProcessor.java">org/glassfish/jersey/linking/FieldProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.ResponseLinkFilter.java">org/glassfish/jersey/linking/ResponseLinkFilter.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.ResponseLinkFilter.java">org/glassfish/jersey/linking/ResponseLinkFilter.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.ResponseContextResolver.java">org/glassfish/jersey/linking/ResponseContextResolver.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.ResponseContextResolver.java">org/glassfish/jersey/linking/ResponseContextResolver.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.RequestLinkFilter.java">org/glassfish/jersey/linking/RequestLinkFilter.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.RequestLinkFilter.java">org/glassfish/jersey/linking/RequestLinkFilter.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.mapping.ResourceMappingContext.java">org/glassfish/jersey/linking/mapping/ResourceMappingContext.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.mapping.ResourceMappingContext.java">org/glassfish/jersey/linking/mapping/ResourceMappingContext.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.LinkELContext.java">org/glassfish/jersey/linking/LinkELContext.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.LinkELContext.java">org/glassfish/jersey/linking/LinkELContext.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLinkDescriptor.java">org/glassfish/jersey/linking/InjectLinkDescriptor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLinkDescriptor.java">org/glassfish/jersey/linking/InjectLinkDescriptor.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLink.java">org/glassfish/jersey/linking/InjectLink.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLink.java">org/glassfish/jersey/linking/InjectLink.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.EntityDescriptor.java">org/glassfish/jersey/linking/EntityDescriptor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.EntityDescriptor.java">org/glassfish/jersey/linking/EntityDescriptor.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.mapping.NaiveResourceMappingContext.java">org/glassfish/jersey/linking/mapping/NaiveResourceMappingContext.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.mapping.NaiveResourceMappingContext.java">org/glassfish/jersey/linking/mapping/NaiveResourceMappingContext.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.DeclarativeLinkingFeature.java">org/glassfish/jersey/linking/DeclarativeLinkingFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.DeclarativeLinkingFeature.java">org/glassfish/jersey/linking/DeclarativeLinkingFeature.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.LinkMessages.java">org/glassfish/jersey/linking/LinkMessages.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.LinkMessages.java">org/glassfish/jersey/linking/LinkMessages.java</a>
                 </td>
                 <td>
                   0
@@ -214,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLinks.java">org/glassfish/jersey/linking/InjectLinks.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLinks.java">org/glassfish/jersey/linking/InjectLinks.java</a>
                 </td>
                 <td>
                   0
@@ -228,7 +228,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.LinkHeaderDescriptor.java">org/glassfish/jersey/linking/LinkHeaderDescriptor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.LinkHeaderDescriptor.java">org/glassfish/jersey/linking/LinkHeaderDescriptor.java</a>
                 </td>
                 <td>
                   0
@@ -242,7 +242,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.FieldDescriptor.java">org/glassfish/jersey/linking/FieldDescriptor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.FieldDescriptor.java">org/glassfish/jersey/linking/FieldDescriptor.java</a>
                 </td>
                 <td>
                   0
@@ -256,7 +256,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.HeaderProcessor.java">org/glassfish/jersey/linking/HeaderProcessor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.HeaderProcessor.java">org/glassfish/jersey/linking/HeaderProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -270,7 +270,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLinksFieldDescriptor.java">org/glassfish/jersey/linking/InjectLinksFieldDescriptor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLinksFieldDescriptor.java">org/glassfish/jersey/linking/InjectLinksFieldDescriptor.java</a>
                 </td>
                 <td>
                   0
@@ -284,7 +284,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLinkFieldDescriptor.java">org/glassfish/jersey/linking/InjectLinkFieldDescriptor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.InjectLinkFieldDescriptor.java">org/glassfish/jersey/linking/InjectLinkFieldDescriptor.java</a>
                 </td>
                 <td>
                   0
@@ -298,7 +298,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.ELLinkBuilder.java">org/glassfish/jersey/linking/ELLinkBuilder.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.ELLinkBuilder.java">org/glassfish/jersey/linking/ELLinkBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -312,7 +312,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.Binding.java">org/glassfish/jersey/linking/Binding.java</a>
+                  <a href="https://jersey.github.io/project/jersey-declarative-linking//checkstyle.html#org.glassfish.jersey.linking.Binding.java">org/glassfish/jersey/linking/Binding.java</a>
                 </td>
                 <td>
                   0

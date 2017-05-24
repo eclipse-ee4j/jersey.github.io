@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-examples-json-jackson - Checkstyle report</title>
-    <link>https://jersey.java.net/project/json-jackson/</link>
+    <link>https://jersey.github.io/project/json-jackson/</link>
     <description>jersey-examples-json-jackson - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/json-jackson//checkstyle.html</link>
+            <link>https://jersey.github.io/project/json-jackson//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/json-jackson//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/json-jackson//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.MyObjectMapperProvider.java">org/glassfish/jersey/examples/jackson/MyObjectMapperProvider.java</a>
+                  <a href="https://jersey.github.io/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.MyObjectMapperProvider.java">org/glassfish/jersey/examples/jackson/MyObjectMapperProvider.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.ExceptionMappingTestResource.java">org/glassfish/jersey/examples/jackson/ExceptionMappingTestResource.java</a>
+                  <a href="https://jersey.github.io/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.ExceptionMappingTestResource.java">org/glassfish/jersey/examples/jackson/ExceptionMappingTestResource.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.NonJaxbBeanResource.java">org/glassfish/jersey/examples/jackson/NonJaxbBeanResource.java</a>
+                  <a href="https://jersey.github.io/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.NonJaxbBeanResource.java">org/glassfish/jersey/examples/jackson/NonJaxbBeanResource.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.CombinedAnnotationResource.java">org/glassfish/jersey/examples/jackson/CombinedAnnotationResource.java</a>
+                  <a href="https://jersey.github.io/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.CombinedAnnotationResource.java">org/glassfish/jersey/examples/jackson/CombinedAnnotationResource.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.EmptyArrayBean.java">org/glassfish/jersey/examples/jackson/EmptyArrayBean.java</a>
+                  <a href="https://jersey.github.io/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.EmptyArrayBean.java">org/glassfish/jersey/examples/jackson/EmptyArrayBean.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.EmptyArrayResource.java">org/glassfish/jersey/examples/jackson/EmptyArrayResource.java</a>
+                  <a href="https://jersey.github.io/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.EmptyArrayResource.java">org/glassfish/jersey/examples/jackson/EmptyArrayResource.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.App.java">org/glassfish/jersey/examples/jackson/App.java</a>
+                  <a href="https://jersey.github.io/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.App.java">org/glassfish/jersey/examples/jackson/App.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.DummyBean.java">org/glassfish/jersey/examples/jackson/DummyBean.java</a>
+                  <a href="https://jersey.github.io/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.DummyBean.java">org/glassfish/jersey/examples/jackson/DummyBean.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.CombinedAnnotationBean.java">org/glassfish/jersey/examples/jackson/CombinedAnnotationBean.java</a>
+                  <a href="https://jersey.github.io/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.CombinedAnnotationBean.java">org/glassfish/jersey/examples/jackson/CombinedAnnotationBean.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.NonJaxbBean.java">org/glassfish/jersey/examples/jackson/NonJaxbBean.java</a>
+                  <a href="https://jersey.github.io/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.NonJaxbBean.java">org/glassfish/jersey/examples/jackson/NonJaxbBean.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.MyApplication.java">org/glassfish/jersey/examples/jackson/MyApplication.java</a>
+                  <a href="https://jersey.github.io/project/json-jackson//checkstyle.html#org.glassfish.jersey.examples.jackson.MyApplication.java">org/glassfish/jersey/examples/jackson/MyApplication.java</a>
                 </td>
                 <td>
                   0

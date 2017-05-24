@@ -10,7 +10,7 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;22.&nbsp;Spring DI</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ioc.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="test-framework.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;22.&nbsp;Spring DI</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ioc.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="test-framework.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
@@ -30,7 +30,7 @@
         </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p>Spring beans can't be injected directly into JAX-RS classes by using Spring XML configuration</p></li></ul></div><p>
     </p><div class="section" title="22.1.&nbsp;Dependencies"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e15238"></a>22.1.&nbsp;Dependencies</h2></div></div></div><p>
             If you want to use Jersey Spring DI support
-            you will need to add the <a class="link" href="https://jersey.java.net/project-info/2.6/jersey/project/jersey-spring3/dependencies.html" target="_top">jersey-spring3</a> module into the list of your dependencies:
+            you will need to add the <a class="link" href="https://jersey.github.io/project-info/2.6/jersey/project/jersey-spring3/dependencies.html" target="_top">jersey-spring3</a> module into the list of your dependencies:
 
             </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
@@ -43,14 +43,14 @@
         </p></div><div class="section" title="22.2.&nbsp;Registration and Configuration"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e15251"></a>22.2.&nbsp;Registration and Configuration</h2></div></div></div><p>
             To use capabilities of Jersey Spring 3 DI support in your JAX-RS/Jersey application you need to have
             the above mentioned module on your class-path.
-        </p></div><div class="section" title="22.3.&nbsp;Example"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e15256"></a>22.3.&nbsp;Example</h2></div></div></div><p>To see an example of Spring DI support in Jersey refer to the <a class="link" href="https://github.com/jersey/jersey/tree/2.6/examples/helloworld-spring-webapp" target="_top">Spring DI example</a>.</p></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+        </p></div><div class="section" title="22.3.&nbsp;Example"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e15256"></a>22.3.&nbsp;Example</h2></div></div></div><p>To see an example of Spring DI support in Jersey refer to the <a class="link" href="https://github.com/jersey/jersey/tree/2.6/examples/helloworld-spring-webapp" target="_top">Spring DI example</a>.</p></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

@@ -10,7 +10,7 @@
                 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
                 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
             })();
-        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;14.&nbsp;Server-Sent Events (SSE) Support</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="resource-builder.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="security.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.java.net/images/jersey_logo.png"></a></div><small>Links:
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;14.&nbsp;Server-Sent Events (SSE) Support</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="resource-builder.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="security.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://jersey.java.net"><img src="https://jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
             <a href="index.html">
                 Table of Contents
             </a> | <a href="user-guide.html">
@@ -94,11 +94,11 @@
     &lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
     &lt;artifactId&gt;jersey-media-sse&lt;/artifactId&gt;
 &lt;/dependency&gt;</pre></div></div><p><br class="example-break">
-            Then you need register <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a>. The <code class="literal">SseFeature</code> is a feature that can be registered
+            Then you need register <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a>. The <code class="literal">SseFeature</code> is a feature that can be registered
             for both, the client and the server.
         </p><p>
-            <code class="literal">SseFeature</code> adds new supported entity (representation) Java types, namely <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/OutboundEvent.html" target="_top">OutboundEvent</a>
-            for the outbound server events and <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> for inbound client events. These types are serialized by
+            <code class="literal">SseFeature</code> adds new supported entity (representation) Java types, namely <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/OutboundEvent.html" target="_top">OutboundEvent</a>
+            for the outbound server events and <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> for inbound client events. These types are serialized by
             <code class="literal">OutboundEventWriter</code> and de-serialized by <code class="literal">InboundEventReader</code>.
             There is no restriction for a media type used in individual event messages; however the media type used for a SSE
             stream as whole is <span class="emphasis"><em>"text/event-stream"</em></span> and this media type should be set on messages that
@@ -106,27 +106,27 @@
             <code class="literal">EventOutput</code> - see bellow).
             The <code class="literal">InboundEvent</code> and <code class="literal">OutboundEvent</code> contain all the fields needed for composing
             and processing individual SSE events. These entities represent the <span class="emphasis"><em>chunks</em></span> sent or received over
-            an open server-to-client connection that is represented by an <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> on the servers side and
-            <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/client/ChunkedInput.html" target="_top">ChunkedInput</a> on the client side (if you are not familiar with
+            an open server-to-client connection that is represented by an <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> on the servers side and
+            <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/client/ChunkedInput.html" target="_top">ChunkedInput</a> on the client side (if you are not familiar with
             <code class="literal">ChunkedOutput</code> and <code class="literal">ChunkedInput</code>, see the
             <a class="link" href="async.html" title="Chapter&nbsp;10.&nbsp;Asynchronous Services and Clients">Async chapter</a> first for more details). In other words, our resource method that is used
             to open a SSE connection to a client does not return individual <code class="literal">OutboundEvent</code>s. Instead, a new
-            instance of <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a> is returned. <code class="literal">EventOutput</code> is a typed extension of
+            instance of <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a> is returned. <code class="literal">EventOutput</code> is a typed extension of
             <code class="literal">ChunkedOutput&lt;OutboundEvent&gt;</code>. Similarly, to receive <code class="literal">InboundEvent</code>s on a
             client side, Jersey SSE API provides a <code class="literal">EventInput</code> that represents a typed extension of
             <code class="literal">ChunkedInput&lt;InboundEvent&gt;</code>.
         </p><p>
-            The Jersey server SSE API also contains a <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/SseBroadcaster.html" target="_top">SseBroadcaster</a> utility, that provides a convenient way of
+            The Jersey server SSE API also contains a <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/SseBroadcaster.html" target="_top">SseBroadcaster</a> utility, that provides a convenient way of
             grouping multiple <code class="literal">EventOutput</code> instances that represent individual client connections into a
             group, and exposes methods for broadcasting new events to all the client connections grouped in the broadcaster.
-            The <code class="literal">SseBroadcaster</code> inherits from <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/server/Broadcaster.html" target="_top">Broadcaster</a> which is the generic broadcaster
+            The <code class="literal">SseBroadcaster</code> inherits from <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/server/Broadcaster.html" target="_top">Broadcaster</a> which is the generic broadcaster
             implementation of the Jersey chunked message processing facility.
-            On the he client side, the Jersey SSE API contains additional <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventSource.html" target="_top">EventSource</a> and <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventListener.html" target="_top">EventListener</a>
+            On the he client side, the Jersey SSE API contains additional <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventSource.html" target="_top">EventSource</a> and <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventListener.html" target="_top">EventListener</a>
             classes that further improve convenience of processing new inbound SSE events.
         </p></div><div class="section" title="14.4.&nbsp;Implementing SSE support in a JAX-RS resource"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e9934"></a>14.4.&nbsp;Implementing SSE support in a JAX-RS resource</h2></div></div></div><div class="section" title="14.4.1.&nbsp;Simple SSE resource method"><div class="titlepage"><div><div><h3 class="title"><a name="d0e9937"></a>14.4.1.&nbsp;Simple SSE resource method</h3></div></div></div><p>
                 Firstly you need to add a <a class="link" href="sse.html#sse.dependency" title="Example&nbsp;14.1.&nbsp;Add jersey-media-sse dependency.">Jersey SSE module dependency</a> to your project
-                as shown in the earlier section and register the <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a> from this module in your
-                <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/Application.html" target="_top">Application</a> or <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a>. Once done, you are ready to add SSE support
+                as shown in the earlier section and register the <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a> from this module in your
+                <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/Application.html" target="_top">Application</a> or <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a>. Once done, you are ready to add SSE support
                 to your resource:
 
                 </p><div class="example"><a name="example-simple-sse"></a><p class="title"><b>Example&nbsp;14.2.&nbsp;Simple SSE resource method</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">...
@@ -174,8 +174,8 @@ public static class SseResource {
 }</pre></div></div><p><br class="example-break">
 
                 The code above defines the resource deployed on URI <code class="literal">"/events"</code>. This resource has a single
-                <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/GET.html" target="_top">@GET</a> resource method which returns as an entity <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a> - an extension of generic Jersey
-                <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> API for output chunked message processing.
+                <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/GET.html" target="_top">@GET</a> resource method which returns as an entity <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a> - an extension of generic Jersey
+                <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> API for output chunked message processing.
                 </p><div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                         If you are not familiar with
                         <code class="literal">ChunkedOutput</code> and <code class="literal">ChunkedInput</code>, see the
@@ -258,7 +258,7 @@ data: Hello world 9!</pre><p>
                 Each message is received with a delay of one second.
             </p><div class="note" title="Note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                     If you have worked with streams in JAX-RS, you may wonder what is the difference between
-                    <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> and <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/StreamingOutput.html" target="_top">StreamingOutput</a>.
+                    <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> and <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/StreamingOutput.html" target="_top">StreamingOutput</a>.
                 </p><p>
                     <code class="literal">ChunkedOutput</code> is Jersey-specific API. It lets you send "chunks" of data without closing
                     the client connection using series of convenient calls to <code class="literal">ChunkedOutput.write</code> methods
@@ -273,7 +273,7 @@ data: Hello world 9!</pre><p>
                     and the call to this method is blocking, i.e. the method is expected to write the entire entity body
                     before returning.
                 </p></div></div><div class="section" title="14.4.2.&nbsp;Broadcasting with Jersey SSE"><div class="titlepage"><div><div><h3 class="title"><a name="d0e10128"></a>14.4.2.&nbsp;Broadcasting with Jersey SSE</h3></div></div></div><p>
-                Jersey SSE server API defines <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/SseBroadcaster.html" target="_top">SseBroadcaster</a> which allows to broadcast individual events to multiple
+                Jersey SSE server API defines <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/SseBroadcaster.html" target="_top">SseBroadcaster</a> which allows to broadcast individual events to multiple
                 clients. A simple broadcasting implementation is shown in the following example:
 
                 </p><div class="example"><a name="d0e10136"></a><p class="title"><b>Example&nbsp;14.3.&nbsp;Broadcasting SSE messages</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">...
@@ -336,22 +336,22 @@ public static class BroadcasterResource {
                 the <code class="literal">broadcastMessage(String)</code> resource method is just a simple JAX-RS resource method.
             </p><p>
                 In order to implement such a scenario, you may have noticed, that the Jersey  <code class="literal">SseBroadcaster</code>
-                is not mandatory to complete the use case. individual <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a>s can be just stored in a collection
+                is not mandatory to complete the use case. individual <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a>s can be just stored in a collection
                 and iterated over in the <code class="literal">broadcastMessage</code> method. However, the <code class="literal">SseBroadcaster</code>
                 internally identifies and handles also client disconnects. When a client closes the connection the broadcaster
                 detects this and removes the stale connection from the internal collection of the registered
-                <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a>s as well as it frees all the server-side resources associated with the stale connection.
+                <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a>s as well as it frees all the server-side resources associated with the stale connection.
                 Additionally, the <code class="literal">SseBroadcaster</code> is implemented to be thread-safe, so that clients can connect
                 and disconnect in any time and <code class="literal">SseBroadcaster</code> will always broadcast messages to the most recent
                 collection of registered and active set of clients.
             </p></div></div><div class="section" title="14.5.&nbsp;Consuming SSE events with Jersey clients"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10236"></a>14.5.&nbsp;Consuming SSE events with Jersey clients</h2></div></div></div><p>
             On the client side, Jersey exposes APIs that support receiving and processing SSE events using two programming models:
 
-            </p><table border="0" summary="Simple list" class="simplelist"><tr><td>Pull model - pulling events from a <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventInput.html" target="_top">EventInput</a>, or</td></tr><tr><td>Push model - listening for asynchronous notifications of <code class="literal">EventSource</code></td></tr></table><p>
+            </p><table border="0" summary="Simple list" class="simplelist"><tr><td>Pull model - pulling events from a <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventInput.html" target="_top">EventInput</a>, or</td></tr><tr><td>Push model - listening for asynchronous notifications of <code class="literal">EventSource</code></td></tr></table><p>
 
             Both models will be described.
         </p><div class="section" title="14.5.1.&nbsp;Reading SSE events with EventInput"><div class="titlepage"><div><div><h3 class="title"><a name="d0e10252"></a>14.5.1.&nbsp;Reading SSE events with <code class="literal">EventInput</code></h3></div></div></div><p>
-                The events can be read on the client side from a <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventInput.html" target="_top">EventInput</a>. See the following code:
+                The events can be read on the client side from a <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventInput.html" target="_top">EventInput</a>. See the following code:
 
                 </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Client client = ClientBuilder.newBuilder()
         .register(SseFeature.class).build();
@@ -398,7 +398,7 @@ message-to-client; Hello world 7!
 message-to-client; Hello world 8!
 message-to-client; Hello world 9!</pre><p>
             </p></div><div class="section" title="14.5.2.&nbsp;Asynchronous SSE processing with EventSource"><div class="titlepage"><div><div><h3 class="title"><a name="d0e10326"></a>14.5.2.&nbsp;Asynchronous SSE processing with <code class="literal">EventSource</code></h3></div></div></div><p>
-                The main Jersey SSE client API component used to read SSE events asynchronously is <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventSource.html" target="_top">EventSource</a>.
+                The main Jersey SSE client API component used to read SSE events asynchronously is <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventSource.html" target="_top">EventSource</a>.
                 The usage of the <code class="literal">EventSource</code> is shown on the following example.
                 </p><div class="example"><a name="sse.ex.client.eventListener"></a><p class="title"><b>Example&nbsp;14.4.&nbsp;Registering <code class="literal">EventListener</code> with <code class="literal">EventSource</code></b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Client client = ClientBuilder.newBuilder()
                         .register(SseFeature.class).build();
@@ -418,15 +418,15 @@ eventSource.close();</pre></div></div><p><br class="example-break">
 
                 In this example, the client code again connects to the server where the <code class="literal">SseResource</code> from the
                 <a class="xref" href="sse.html#example-simple-sse" title="Example&nbsp;14.2.&nbsp;Simple SSE resource method">Example&nbsp;14.2, &#8220;Simple SSE resource method&#8221;</a> is deployed. The <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/client/Client.html" target="_top">Client</a> instance
-                is again created and initialized with <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a>. Then the <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> is built.
+                is again created and initialized with <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a>. Then the <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> is built.
                 In this case a request to the web target is not made directly in the code, instead, the web target instance
-                is used to initialize a new <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventSource.Builder.html" target="_top">EventSource.Builder</a> instance that is used to build a new
+                is used to initialize a new <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventSource.Builder.html" target="_top">EventSource.Builder</a> instance that is used to build a new
                 <code class="literal">EventSource</code>. The choice of <code class="literal">build()</code> method is important, as it tells
                 the <code class="literal">EventSource.Builder</code> to create a new <code class="literal">EventSource</code> that is not automatically
                 connected to the <code class="literal">target</code>. The connection is established only later by manually invoking
-                the <code class="literal">eventSource.open()</code> method. A custom <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventListener.html" target="_top">EventListener</a>
+                the <code class="literal">eventSource.open()</code> method. A custom <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventListener.html" target="_top">EventListener</a>
                 implementation is used to listen to and process incoming SSE events. The method readData(Class) says that the
-                event data should be de-serialized from a received <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> instance into a
+                event data should be de-serialized from a received <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> instance into a
                 <code class="literal">String</code> Java type. This method call internally executes <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> which
                 de-serializes the event data. This is similar to reading an entity from the <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/Response.html" target="_top">Response</a> by
                 <code class="literal">readEntity(Class)</code>. The method <code class="literal">readData</code> can throw a
@@ -464,8 +464,8 @@ message-to-client; Hello world 7!
 message-to-client; Hello world 8!
 message-to-client; Hello world 9!</pre><p>
             </p><p>
-                When browsing through the Jersey SSE API documentation, you may have noticed that the <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventSource.html" target="_top">EventSource</a>
-                implements <a class="link" href="https://jersey.java.net/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventListener.html" target="_top">EventListener</a> and provides an empty implementation for the
+                When browsing through the Jersey SSE API documentation, you may have noticed that the <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventSource.html" target="_top">EventSource</a>
+                implements <a class="link" href="https://jersey.github.io/apidocs/2.7/jersey/org/glassfish/jersey/media/sse/EventListener.html" target="_top">EventListener</a> and provides an empty implementation for the
                 <code class="literal">onEvent(InboundEvent inboundEvent)</code> listener method. This adds more flexibility to the
                 Jersey client-side SSE API. Instead of defining and registering a separate event listener, in simple scenarios
                 you can also choose to derive directly from the <code class="literal">EventSource</code> and override the empty listener
@@ -523,14 +523,14 @@ eventSource.close();</pre></div></div><p><br class="example-break">
                     in return to a connection request from SSE endpoint, Jersey <code class="literal">EventSource</code> will automatically
                     schedule a reconnect attempt  and use the received <code class="literal">Retry-After</code> HTTP header value as a
                     one-time override of the reconnect delay.
-                </p></div></div></div></div><link href="https://jersey.java.net/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.java.net/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.java.net/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.java.net/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+                </p></div></div></div></div><link href="https://jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
             function path() {
               var args = arguments,
                   result = []
                   ;
 
               for(var i = 0; i < args.length; i++)
-                  result.push(args[i].replace('@', 'https://jersey.java.net/sh/'));
+                  result.push(args[i].replace('@', 'https://jersey.github.io/sh/'));
 
               return result
             };

@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-examples-entity-filtering - Checkstyle report</title>
-    <link>https://jersey.java.net/project/entity-filtering/</link>
+    <link>https://jersey.github.io/project/entity-filtering/</link>
     <description>jersey-examples-entity-filtering - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/entity-filtering//checkstyle.html</link>
+            <link>https://jersey.github.io/project/entity-filtering//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.App.java">org/glassfish/jersey/examples/entityfiltering/App.java</a>
+                  <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.App.java">org/glassfish/jersey/examples/entityfiltering/App.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.filtering.ProjectDetailedView.java">org/glassfish/jersey/examples/entityfiltering/filtering/ProjectDetailedView.java</a>
+                  <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.filtering.ProjectDetailedView.java">org/glassfish/jersey/examples/entityfiltering/filtering/ProjectDetailedView.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.filtering.TaskDetailedView.java">org/glassfish/jersey/examples/entityfiltering/filtering/TaskDetailedView.java</a>
+                  <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.filtering.TaskDetailedView.java">org/glassfish/jersey/examples/entityfiltering/filtering/TaskDetailedView.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.resource.UsersResource.java">org/glassfish/jersey/examples/entityfiltering/resource/UsersResource.java</a>
+                  <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.resource.UsersResource.java">org/glassfish/jersey/examples/entityfiltering/resource/UsersResource.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.domain.Project.java">org/glassfish/jersey/examples/entityfiltering/domain/Project.java</a>
+                  <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.domain.Project.java">org/glassfish/jersey/examples/entityfiltering/domain/Project.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.domain.User.java">org/glassfish/jersey/examples/entityfiltering/domain/User.java</a>
+                  <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.domain.User.java">org/glassfish/jersey/examples/entityfiltering/domain/User.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.filtering.UserDetailedView.java">org/glassfish/jersey/examples/entityfiltering/filtering/UserDetailedView.java</a>
+                  <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.filtering.UserDetailedView.java">org/glassfish/jersey/examples/entityfiltering/filtering/UserDetailedView.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.domain.Task.java">org/glassfish/jersey/examples/entityfiltering/domain/Task.java</a>
+                  <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.domain.Task.java">org/glassfish/jersey/examples/entityfiltering/domain/Task.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.domain.EntityStore.java">org/glassfish/jersey/examples/entityfiltering/domain/EntityStore.java</a>
+                  <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.domain.EntityStore.java">org/glassfish/jersey/examples/entityfiltering/domain/EntityStore.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.resource.TasksResource.java">org/glassfish/jersey/examples/entityfiltering/resource/TasksResource.java</a>
+                  <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.resource.TasksResource.java">org/glassfish/jersey/examples/entityfiltering/resource/TasksResource.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.EntityFilteringApplication.java">org/glassfish/jersey/examples/entityfiltering/EntityFilteringApplication.java</a>
+                  <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.EntityFilteringApplication.java">org/glassfish/jersey/examples/entityfiltering/EntityFilteringApplication.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.resource.ProjectsResource.java">org/glassfish/jersey/examples/entityfiltering/resource/ProjectsResource.java</a>
+                  <a href="https://jersey.github.io/project/entity-filtering//checkstyle.html#org.glassfish.jersey.examples.entityfiltering.resource.ProjectsResource.java">org/glassfish/jersey/examples/entityfiltering/resource/ProjectsResource.java</a>
                 </td>
                 <td>
                   0

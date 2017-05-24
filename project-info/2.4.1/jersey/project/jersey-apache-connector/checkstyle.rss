@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-connectors-apache - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-apache-connector/</link>
+    <link>https://jersey.github.io/project/jersey-apache-connector/</link>
     <description>jersey-connectors-apache - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-apache-connector//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-apache-connector//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-apache-connector//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-apache-connector//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-apache-connector//checkstyle.html#org.glassfish.jersey.apache.connector.ApacheClientProperties.java">org/glassfish/jersey/apache/connector/ApacheClientProperties.java</a>
+                  <a href="https://jersey.github.io/project/jersey-apache-connector//checkstyle.html#org.glassfish.jersey.apache.connector.ApacheClientProperties.java">org/glassfish/jersey/apache/connector/ApacheClientProperties.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-apache-connector//checkstyle.html#org.glassfish.jersey.apache.connector.ApacheConnector.java">org/glassfish/jersey/apache/connector/ApacheConnector.java</a>
+                  <a href="https://jersey.github.io/project/jersey-apache-connector//checkstyle.html#org.glassfish.jersey.apache.connector.ApacheConnector.java">org/glassfish/jersey/apache/connector/ApacheConnector.java</a>
                 </td>
                 <td>
                   0

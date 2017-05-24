@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-core-server - Checkstyle report</title>
-    <link>https://jersey.java.net/jersey-server/</link>
+    <link>https://jersey.github.io/jersey-server/</link>
     <description>jersey-core-server - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/jersey-server//checkstyle.html</link>
+            <link>https://jersey.github.io/jersey-server//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/jersey-server//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/jersey-server//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.WadlApplicationContext.java">org/glassfish/jersey/server/wadl/WadlApplicationContext.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.WadlApplicationContext.java">org/glassfish/jersey/server/wadl/WadlApplicationContext.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.DestroyListener.java">org/glassfish/jersey/server/monitoring/DestroyListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.DestroyListener.java">org/glassfish/jersey/server/monitoring/DestroyListener.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Producing.java">org/glassfish/jersey/server/model/Producing.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Producing.java">org/glassfish/jersey/server/model/Producing.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.CompositeApplicationEventListener.java">org/glassfish/jersey/server/internal/monitoring/CompositeApplicationEventListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.CompositeApplicationEventListener.java">org/glassfish/jersey/server/internal/monitoring/CompositeApplicationEventListener.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.AnnotationDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/AnnotationDocType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.AnnotationDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/AnnotationDocType.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringEventListener.java">org/glassfish/jersey/server/internal/monitoring/MonitoringEventListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringEventListener.java">org/glassfish/jersey/server/internal/monitoring/MonitoringEventListener.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.package-info.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.package-info.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.WadlResource.java">org/glassfish/jersey/server/wadl/internal/WadlResource.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.WadlResource.java">org/glassfish/jersey/server/wadl/internal/WadlResource.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ResponseMXBean.java">org/glassfish/jersey/server/monitoring/ResponseMXBean.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ResponseMXBean.java">org/glassfish/jersey/server/monitoring/ResponseMXBean.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.internal.ParameterValueHelper.java">org/glassfish/jersey/server/spi/internal/ParameterValueHelper.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.internal.ParameterValueHelper.java">org/glassfish/jersey/server/spi/internal/ParameterValueHelper.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Application.java">com/sun/research/ws/wadl/Application.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Application.java">com/sun/research/ws/wadl/Application.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.CompositeRequestEventListener.java">org/glassfish/jersey/server/internal/monitoring/CompositeRequestEventListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.CompositeRequestEventListener.java">org/glassfish/jersey/server/internal/monitoring/CompositeRequestEventListener.java</a>
                 </td>
                 <td>
                   0
@@ -214,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.ParamConverterFactory.java">org/glassfish/jersey/server/internal/inject/ParamConverterFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.ParamConverterFactory.java">org/glassfish/jersey/server/internal/inject/ParamConverterFactory.java</a>
                 </td>
                 <td>
                   0
@@ -228,7 +228,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ExtendedResource.java">org/glassfish/jersey/server/model/ExtendedResource.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ExtendedResource.java">org/glassfish/jersey/server/model/ExtendedResource.java</a>
                 </td>
                 <td>
                   0
@@ -242,7 +242,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.PackageNamesScanner.java">org/glassfish/jersey/server/internal/scanning/PackageNamesScanner.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.PackageNamesScanner.java">org/glassfish/jersey/server/internal/scanning/PackageNamesScanner.java</a>
                 </td>
                 <td>
                   0
@@ -256,7 +256,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.ContainerLifecycleListener.java">org/glassfish/jersey/server/spi/ContainerLifecycleListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.ContainerLifecycleListener.java">org/glassfish/jersey/server/spi/ContainerLifecycleListener.java</a>
                 </td>
                 <td>
                   0
@@ -270,7 +270,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.BackgroundScheduler.java">org/glassfish/jersey/server/internal/BackgroundScheduler.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.BackgroundScheduler.java">org/glassfish/jersey/server/internal/BackgroundScheduler.java</a>
                 </td>
                 <td>
                   0
@@ -284,7 +284,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceMethodValidator.java">org/glassfish/jersey/server/model/ResourceMethodValidator.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceMethodValidator.java">org/glassfish/jersey/server/model/ResourceMethodValidator.java</a>
                 </td>
                 <td>
                   0
@@ -298,7 +298,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PushMethodHandlerRouter.java">org/glassfish/jersey/server/internal/routing/PushMethodHandlerRouter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PushMethodHandlerRouter.java">org/glassfish/jersey/server/internal/routing/PushMethodHandlerRouter.java</a>
                 </td>
                 <td>
                   0
@@ -312,7 +312,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.ParamStyle.java">com/sun/research/ws/wadl/ParamStyle.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.ParamStyle.java">com/sun/research/ws/wadl/ParamStyle.java</a>
                 </td>
                 <td>
                   0
@@ -326,7 +326,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.RuntimeDelegateImpl.java">org/glassfish/jersey/server/internal/RuntimeDelegateImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.RuntimeDelegateImpl.java">org/glassfish/jersey/server/internal/RuntimeDelegateImpl.java</a>
                 </td>
                 <td>
                   0
@@ -340,7 +340,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.MatrixParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/MatrixParamValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.MatrixParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/MatrixParamValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -354,7 +354,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.RoutingStage.java">org/glassfish/jersey/server/internal/routing/RoutingStage.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.RoutingStage.java">org/glassfish/jersey/server/internal/routing/RoutingStage.java</a>
                 </td>
                 <td>
                   0
@@ -368,7 +368,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml.XhtmlElementType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/xhtml/XhtmlElementType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml.XhtmlElementType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/xhtml/XhtmlElementType.java</a>
                 </td>
                 <td>
                   0
@@ -382,7 +382,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.MappableException.java">org/glassfish/jersey/server/internal/process/MappableException.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.MappableException.java">org/glassfish/jersey/server/internal/process/MappableException.java</a>
                 </td>
                 <td>
                   0
@@ -396,7 +396,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.AbstractResourceModelVisitor.java">org/glassfish/jersey/server/model/AbstractResourceModelVisitor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.AbstractResourceModelVisitor.java">org/glassfish/jersey/server/model/AbstractResourceModelVisitor.java</a>
                 </td>
                 <td>
                   0
@@ -410,7 +410,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.ModelProcessorUtil.java">org/glassfish/jersey/server/model/internal/ModelProcessorUtil.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.ModelProcessorUtil.java">org/glassfish/jersey/server/model/internal/ModelProcessorUtil.java</a>
                 </td>
                 <td>
                   0
@@ -424,7 +424,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.FilesScanner.java">org/glassfish/jersey/server/internal/scanning/FilesScanner.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.FilesScanner.java">org/glassfish/jersey/server/internal/scanning/FilesScanner.java</a>
                 </td>
                 <td>
                   0
@@ -438,7 +438,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringUtils.java">org/glassfish/jersey/server/internal/monitoring/MonitoringUtils.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringUtils.java">org/glassfish/jersey/server/internal/monitoring/MonitoringUtils.java</a>
                 </td>
                 <td>
                   0
@@ -452,7 +452,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.DefaultRespondingContext.java">org/glassfish/jersey/server/internal/process/DefaultRespondingContext.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.DefaultRespondingContext.java">org/glassfish/jersey/server/internal/process/DefaultRespondingContext.java</a>
                 </td>
                 <td>
                   0
@@ -466,7 +466,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.RuntimeResourceModelValidator.java">org/glassfish/jersey/server/model/RuntimeResourceModelValidator.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.RuntimeResourceModelValidator.java">org/glassfish/jersey/server/model/RuntimeResourceModelValidator.java</a>
                 </td>
                 <td>
                   0
@@ -480,7 +480,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.config.WadlGeneratorLoader.java">org/glassfish/jersey/server/wadl/config/WadlGeneratorLoader.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.config.WadlGeneratorLoader.java">org/glassfish/jersey/server/wadl/config/WadlGeneratorLoader.java</a>
                 </td>
                 <td>
                   0
@@ -494,7 +494,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml.ObjectFactory.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/xhtml/ObjectFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml.ObjectFactory.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/xhtml/ObjectFactory.java</a>
                 </td>
                 <td>
                   0
@@ -508,7 +508,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.ResponseDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/ResponseDocType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.ResponseDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/ResponseDocType.java</a>
                 </td>
                 <td>
                   0
@@ -522,7 +522,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ResponseMXBeanImpl.java">org/glassfish/jersey/server/internal/monitoring/jmx/ResponseMXBeanImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ResponseMXBeanImpl.java">org/glassfish/jersey/server/internal/monitoring/jmx/ResponseMXBeanImpl.java</a>
                 </td>
                 <td>
                   0
@@ -536,7 +536,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.AbstractRouteToPathBuilder.java">org/glassfish/jersey/server/internal/routing/AbstractRouteToPathBuilder.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.AbstractRouteToPathBuilder.java">org/glassfish/jersey/server/internal/routing/AbstractRouteToPathBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -550,7 +550,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ResourceMethodStatistics.java">org/glassfish/jersey/server/monitoring/ResourceMethodStatistics.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ResourceMethodStatistics.java">org/glassfish/jersey/server/monitoring/ResourceMethodStatistics.java</a>
                 </td>
                 <td>
                   0
@@ -564,7 +564,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PathPatternRouteBuilder.java">org/glassfish/jersey/server/internal/routing/PathPatternRouteBuilder.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PathPatternRouteBuilder.java">org/glassfish/jersey/server/internal/routing/PathPatternRouteBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -578,7 +578,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.VfsSchemeResourceFinderFactory.java">org/glassfish/jersey/server/internal/scanning/VfsSchemeResourceFinderFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.VfsSchemeResourceFinderFactory.java">org/glassfish/jersey/server/internal/scanning/VfsSchemeResourceFinderFactory.java</a>
                 </td>
                 <td>
                   0
@@ -592,7 +592,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ResponseStatistics.java">org/glassfish/jersey/server/monitoring/ResponseStatistics.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ResponseStatistics.java">org/glassfish/jersey/server/monitoring/ResponseStatistics.java</a>
                 </td>
                 <td>
                   0
@@ -606,7 +606,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Grammars.java">com/sun/research/ws/wadl/Grammars.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Grammars.java">com/sun/research/ws/wadl/Grammars.java</a>
                 </td>
                 <td>
                   0
@@ -620,7 +620,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceMethodInvoker.java">org/glassfish/jersey/server/model/ResourceMethodInvoker.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceMethodInvoker.java">org/glassfish/jersey/server/model/ResourceMethodInvoker.java</a>
                 </td>
                 <td>
                   0
@@ -634,7 +634,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ApplicationMXBean.java">org/glassfish/jersey/server/monitoring/ApplicationMXBean.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ApplicationMXBean.java">org/glassfish/jersey/server/monitoring/ApplicationMXBean.java</a>
                 </td>
                 <td>
                   0
@@ -648,7 +648,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.ConfiguredValidator.java">org/glassfish/jersey/server/internal/inject/ConfiguredValidator.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.ConfiguredValidator.java">org/glassfish/jersey/server/internal/inject/ConfiguredValidator.java</a>
                 </td>
                 <td>
                   0
@@ -662,7 +662,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.EncodingFilter.java">org/glassfish/jersey/server/filter/EncodingFilter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.EncodingFilter.java">org/glassfish/jersey/server/filter/EncodingFilter.java</a>
                 </td>
                 <td>
                   0
@@ -676,7 +676,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.ResourceType.java">com/sun/research/ws/wadl/ResourceType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.ResourceType.java">com/sun/research/ws/wadl/ResourceType.java</a>
                 </td>
                 <td>
                   0
@@ -690,7 +690,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.MethodList.java">org/glassfish/jersey/server/model/MethodList.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.MethodList.java">org/glassfish/jersey/server/model/MethodList.java</a>
                 </td>
                 <td>
                   0
@@ -704,7 +704,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ApplicationEventListener.java">org/glassfish/jersey/server/monitoring/ApplicationEventListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ApplicationEventListener.java">org/glassfish/jersey/server/monitoring/ApplicationEventListener.java</a>
                 </td>
                 <td>
                   0
@@ -718,7 +718,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.TimeWindowStatistics.java">org/glassfish/jersey/server/monitoring/TimeWindowStatistics.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.TimeWindowStatistics.java">org/glassfish/jersey/server/monitoring/TimeWindowStatistics.java</a>
                 </td>
                 <td>
                   0
@@ -732,7 +732,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Consuming.java">org/glassfish/jersey/server/model/Consuming.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Consuming.java">org/glassfish/jersey/server/model/Consuming.java</a>
                 </td>
                 <td>
                   0
@@ -746,7 +746,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ApplicationInfo.java">org/glassfish/jersey/server/monitoring/ApplicationInfo.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ApplicationInfo.java">org/glassfish/jersey/server/monitoring/ApplicationInfo.java</a>
                 </td>
                 <td>
                   0
@@ -760,7 +760,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.InternalServerProperties.java">org/glassfish/jersey/server/internal/InternalServerProperties.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.InternalServerProperties.java">org/glassfish/jersey/server/internal/InternalServerProperties.java</a>
                 </td>
                 <td>
                   0
@@ -774,7 +774,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.BeanParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/BeanParamValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.BeanParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/BeanParamValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -788,7 +788,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.package-info.java">org/glassfish/jersey/server/internal/scanning/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.package-info.java">org/glassfish/jersey/server/internal/scanning/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -802,7 +802,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ManagedAsync.java">org/glassfish/jersey/server/ManagedAsync.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ManagedAsync.java">org/glassfish/jersey/server/ManagedAsync.java</a>
                 </td>
                 <td>
                   0
@@ -816,7 +816,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.RespondingContext.java">org/glassfish/jersey/server/internal/process/RespondingContext.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.RespondingContext.java">org/glassfish/jersey/server/internal/process/RespondingContext.java</a>
                 </td>
                 <td>
                   0
@@ -830,7 +830,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringContainerListener.java">org/glassfish/jersey/server/internal/monitoring/MonitoringContainerListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringContainerListener.java">org/glassfish/jersey/server/internal/monitoring/MonitoringContainerListener.java</a>
                 </td>
                 <td>
                   0
@@ -844,7 +844,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.Routers.java">org/glassfish/jersey/server/internal/routing/Routers.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.Routers.java">org/glassfish/jersey/server/internal/routing/Routers.java</a>
                 </td>
                 <td>
                   0
@@ -858,7 +858,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.WadlFeature.java">org/glassfish/jersey/server/wadl/WadlFeature.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.WadlFeature.java">org/glassfish/jersey/server/wadl/WadlFeature.java</a>
                 </td>
                 <td>
                   0
@@ -872,7 +872,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.package-info.java">org/glassfish/jersey/server/internal/monitoring/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.package-info.java">org/glassfish/jersey/server/internal/monitoring/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -886,7 +886,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.HeaderParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/HeaderParamValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.HeaderParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/HeaderParamValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -900,7 +900,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PushMatchedTemplateRouter.java">org/glassfish/jersey/server/internal/routing/PushMatchedTemplateRouter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PushMatchedTemplateRouter.java">org/glassfish/jersey/server/internal/routing/PushMatchedTemplateRouter.java</a>
                 </td>
                 <td>
                   0
@@ -914,7 +914,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.FileSchemeResourceFinderFactory.java">org/glassfish/jersey/server/internal/scanning/FileSchemeResourceFinderFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.FileSchemeResourceFinderFactory.java">org/glassfish/jersey/server/internal/scanning/FileSchemeResourceFinderFactory.java</a>
                 </td>
                 <td>
                   0
@@ -928,7 +928,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.Endpoint.java">org/glassfish/jersey/server/internal/process/Endpoint.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.Endpoint.java">org/glassfish/jersey/server/internal/process/Endpoint.java</a>
                 </td>
                 <td>
                   0
@@ -942,7 +942,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Resource.java">org/glassfish/jersey/server/model/Resource.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Resource.java">org/glassfish/jersey/server/model/Resource.java</a>
                 </td>
                 <td>
                   0
@@ -956,7 +956,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.ContainerProvider.java">org/glassfish/jersey/server/spi/ContainerProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.ContainerProvider.java">org/glassfish/jersey/server/spi/ContainerProvider.java</a>
                 </td>
                 <td>
                   0
@@ -970,7 +970,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.package-info.java">org/glassfish/jersey/server/model/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.package-info.java">org/glassfish/jersey/server/model/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -984,7 +984,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.WadlGenerator.java">org/glassfish/jersey/server/wadl/WadlGenerator.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.WadlGenerator.java">org/glassfish/jersey/server/wadl/WadlGenerator.java</a>
                 </td>
                 <td>
                   0
@@ -998,7 +998,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PushMatchedUriRouter.java">org/glassfish/jersey/server/internal/routing/PushMatchedUriRouter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PushMatchedUriRouter.java">org/glassfish/jersey/server/internal/routing/PushMatchedUriRouter.java</a>
                 </td>
                 <td>
                   0
@@ -1012,7 +1012,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Inflecting.java">org/glassfish/jersey/server/model/Inflecting.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Inflecting.java">org/glassfish/jersey/server/model/Inflecting.java</a>
                 </td>
                 <td>
                   0
@@ -1026,7 +1026,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.package-info.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.package-info.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1040,7 +1040,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ApplicationEventImpl.java">org/glassfish/jersey/server/internal/monitoring/ApplicationEventImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ApplicationEventImpl.java">org/glassfish/jersey/server/internal/monitoring/ApplicationEventImpl.java</a>
                 </td>
                 <td>
                   0
@@ -1054,7 +1054,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.MethodDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/MethodDocType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.MethodDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/MethodDocType.java</a>
                 </td>
                 <td>
                   0
@@ -1068,7 +1068,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ExecutionStatisticsDynamicBean.java">org/glassfish/jersey/server/internal/monitoring/jmx/ExecutionStatisticsDynamicBean.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ExecutionStatisticsDynamicBean.java">org/glassfish/jersey/server/internal/monitoring/jmx/ExecutionStatisticsDynamicBean.java</a>
                 </td>
                 <td>
                   0
@@ -1082,7 +1082,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.Uri.java">org/glassfish/jersey/server/Uri.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.Uri.java">org/glassfish/jersey/server/Uri.java</a>
                 </td>
                 <td>
                   0
@@ -1096,7 +1096,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.ResponseErrorMapper.java">org/glassfish/jersey/server/spi/ResponseErrorMapper.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.ResponseErrorMapper.java">org/glassfish/jersey/server/spi/ResponseErrorMapper.java</a>
                 </td>
                 <td>
                   0
@@ -1110,7 +1110,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ResourceBag.java">org/glassfish/jersey/server/ResourceBag.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ResourceBag.java">org/glassfish/jersey/server/ResourceBag.java</a>
                 </td>
                 <td>
                   0
@@ -1124,7 +1124,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ContainerFactory.java">org/glassfish/jersey/server/ContainerFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ContainerFactory.java">org/glassfish/jersey/server/ContainerFactory.java</a>
                 </td>
                 <td>
                   0
@@ -1138,7 +1138,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.MBeanExposer.java">org/glassfish/jersey/server/internal/monitoring/jmx/MBeanExposer.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.MBeanExposer.java">org/glassfish/jersey/server/internal/monitoring/jmx/MBeanExposer.java</a>
                 </td>
                 <td>
                   0
@@ -1152,7 +1152,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ResourceMXBean.java">org/glassfish/jersey/server/monitoring/ResourceMXBean.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ResourceMXBean.java">org/glassfish/jersey/server/monitoring/ResourceMXBean.java</a>
                 </td>
                 <td>
                   0
@@ -1166,7 +1166,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ResourceStatistics.java">org/glassfish/jersey/server/monitoring/ResourceStatistics.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ResourceStatistics.java">org/glassfish/jersey/server/monitoring/ResourceStatistics.java</a>
                 </td>
                 <td>
                   0
@@ -1180,7 +1180,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.NamedValueType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/NamedValueType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.NamedValueType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/NamedValueType.java</a>
                 </td>
                 <td>
                   0
@@ -1194,7 +1194,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.BroadcasterListener.java">org/glassfish/jersey/server/BroadcasterListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.BroadcasterListener.java">org/glassfish/jersey/server/BroadcasterListener.java</a>
                 </td>
                 <td>
                   0
@@ -1208,7 +1208,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ExceptionMapperMXBean.java">org/glassfish/jersey/server/monitoring/ExceptionMapperMXBean.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ExceptionMapperMXBean.java">org/glassfish/jersey/server/monitoring/ExceptionMapperMXBean.java</a>
                 </td>
                 <td>
                   0
@@ -1222,7 +1222,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ContainerFilteringStage.java">org/glassfish/jersey/server/ContainerFilteringStage.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ContainerFilteringStage.java">org/glassfish/jersey/server/ContainerFilteringStage.java</a>
                 </td>
                 <td>
                   0
@@ -1236,7 +1236,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.MonitoringStatistics.java">org/glassfish/jersey/server/monitoring/MonitoringStatistics.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.MonitoringStatistics.java">org/glassfish/jersey/server/monitoring/MonitoringStatistics.java</a>
                 </td>
                 <td>
                   0
@@ -1250,7 +1250,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.RuntimeResource.java">org/glassfish/jersey/server/model/RuntimeResource.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.RuntimeResource.java">org/glassfish/jersey/server/model/RuntimeResource.java</a>
                 </td>
                 <td>
                   0
@@ -1264,7 +1264,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ApplicationMXBeanImpl.java">org/glassfish/jersey/server/internal/monitoring/jmx/ApplicationMXBeanImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ApplicationMXBeanImpl.java">org/glassfish/jersey/server/internal/monitoring/jmx/ApplicationMXBeanImpl.java</a>
                 </td>
                 <td>
                   0
@@ -1278,7 +1278,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ExecutionStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/ExecutionStatisticsImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ExecutionStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/ExecutionStatisticsImpl.java</a>
                 </td>
                 <td>
                   0
@@ -1292,7 +1292,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceModelComponent.java">org/glassfish/jersey/server/model/ResourceModelComponent.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceModelComponent.java">org/glassfish/jersey/server/model/ResourceModelComponent.java</a>
                 </td>
                 <td>
                   0
@@ -1306,7 +1306,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.UriRoutingContext.java">org/glassfish/jersey/server/internal/routing/UriRoutingContext.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.UriRoutingContext.java">org/glassfish/jersey/server/internal/routing/UriRoutingContext.java</a>
                 </td>
                 <td>
                   0
@@ -1320,7 +1320,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.TimeWindowStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/TimeWindowStatisticsImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.TimeWindowStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/TimeWindowStatisticsImpl.java</a>
                 </td>
                 <td>
                   0
@@ -1334,7 +1334,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.config.WadlGeneratorDescription.java">org/glassfish/jersey/server/wadl/config/WadlGeneratorDescription.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.config.WadlGeneratorDescription.java">org/glassfish/jersey/server/wadl/config/WadlGeneratorDescription.java</a>
                 </td>
                 <td>
                   0
@@ -1348,7 +1348,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.SingleStringValueExtractor.java">org/glassfish/jersey/server/internal/inject/SingleStringValueExtractor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.SingleStringValueExtractor.java">org/glassfish/jersey/server/internal/inject/SingleStringValueExtractor.java</a>
                 </td>
                 <td>
                   0
@@ -1362,7 +1362,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.internal.ValueFactoryProvider.java">org/glassfish/jersey/server/spi/internal/ValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.internal.ValueFactoryProvider.java">org/glassfish/jersey/server/spi/internal/ValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1376,7 +1376,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.ObjectFactory.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/ObjectFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.ObjectFactory.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/ObjectFactory.java</a>
                 </td>
                 <td>
                   0
@@ -1390,7 +1390,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.QueryParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/QueryParamValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.QueryParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/QueryParamValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1404,7 +1404,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ResponseStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/ResponseStatisticsImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ResponseStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/ResponseStatisticsImpl.java</a>
                 </td>
                 <td>
                   0
@@ -1418,7 +1418,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.package-info.java">org/glassfish/jersey/server/wadl/internal/generators/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.package-info.java">org/glassfish/jersey/server/wadl/internal/generators/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1432,7 +1432,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ComponentModelValidator.java">org/glassfish/jersey/server/model/ComponentModelValidator.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ComponentModelValidator.java">org/glassfish/jersey/server/model/ComponentModelValidator.java</a>
                 </td>
                 <td>
                   0
@@ -1446,7 +1446,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ApplicationEvent.java">org/glassfish/jersey/server/monitoring/ApplicationEvent.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ApplicationEvent.java">org/glassfish/jersey/server/monitoring/ApplicationEvent.java</a>
                 </td>
                 <td>
                   0
@@ -1460,7 +1460,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.AbstractContainerRequestValueFactory.java">org/glassfish/jersey/server/internal/inject/AbstractContainerRequestValueFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.AbstractContainerRequestValueFactory.java">org/glassfish/jersey/server/internal/inject/AbstractContainerRequestValueFactory.java</a>
                 </td>
                 <td>
                   0
@@ -1474,7 +1474,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Parameter.java">org/glassfish/jersey/server/model/Parameter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Parameter.java">org/glassfish/jersey/server/model/Parameter.java</a>
                 </td>
                 <td>
                   0
@@ -1488,7 +1488,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Resource.java">com/sun/research/ws/wadl/Resource.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Resource.java">com/sun/research/ws/wadl/Resource.java</a>
                 </td>
                 <td>
                   0
@@ -1502,7 +1502,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.SingleValueExtractor.java">org/glassfish/jersey/server/internal/inject/SingleValueExtractor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.SingleValueExtractor.java">org/glassfish/jersey/server/internal/inject/SingleValueExtractor.java</a>
                 </td>
                 <td>
                   0
@@ -1516,7 +1516,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.package-info.java">org/glassfish/jersey/server/internal/process/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.package-info.java">org/glassfish/jersey/server/internal/process/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1530,7 +1530,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.Router.java">org/glassfish/jersey/server/internal/routing/Router.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.Router.java">org/glassfish/jersey/server/internal/routing/Router.java</a>
                 </td>
                 <td>
                   0
@@ -1544,7 +1544,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ResourcesMBeanGroup.java">org/glassfish/jersey/server/internal/monitoring/jmx/ResourcesMBeanGroup.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ResourcesMBeanGroup.java">org/glassfish/jersey/server/internal/monitoring/jmx/ResourcesMBeanGroup.java</a>
                 </td>
                 <td>
                   0
@@ -1558,7 +1558,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.WadlBuilder.java">org/glassfish/jersey/server/wadl/internal/WadlBuilder.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.WadlBuilder.java">org/glassfish/jersey/server/wadl/internal/WadlBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -1572,7 +1572,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ExtendedResourceContext.java">org/glassfish/jersey/server/ExtendedResourceContext.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ExtendedResourceContext.java">org/glassfish/jersey/server/ExtendedResourceContext.java</a>
                 </td>
                 <td>
                   0
@@ -1586,7 +1586,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.HandlerConstructor.java">org/glassfish/jersey/server/model/HandlerConstructor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.HandlerConstructor.java">org/glassfish/jersey/server/model/HandlerConstructor.java</a>
                 </td>
                 <td>
                   0
@@ -1600,7 +1600,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.WadlGeneratorJAXBGrammarGenerator.java">org/glassfish/jersey/server/wadl/internal/generators/WadlGeneratorJAXBGrammarGenerator.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.WadlGeneratorJAXBGrammarGenerator.java">org/glassfish/jersey/server/wadl/internal/generators/WadlGeneratorJAXBGrammarGenerator.java</a>
                 </td>
                 <td>
                   0
@@ -1614,7 +1614,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ServerProperties.java">org/glassfish/jersey/server/ServerProperties.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ServerProperties.java">org/glassfish/jersey/server/ServerProperties.java</a>
                 </td>
                 <td>
                   0
@@ -1628,7 +1628,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.package-info.java">org/glassfish/jersey/server/filter/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.package-info.java">org/glassfish/jersey/server/filter/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1642,7 +1642,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.WadlAutoDiscoverable.java">org/glassfish/jersey/server/wadl/internal/WadlAutoDiscoverable.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.WadlAutoDiscoverable.java">org/glassfish/jersey/server/wadl/internal/WadlAutoDiscoverable.java</a>
                 </td>
                 <td>
                   0
@@ -1656,7 +1656,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceModelIssue.java">org/glassfish/jersey/server/model/ResourceModelIssue.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceModelIssue.java">org/glassfish/jersey/server/model/ResourceModelIssue.java</a>
                 </td>
                 <td>
                   0
@@ -1670,7 +1670,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Option.java">com/sun/research/ws/wadl/Option.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Option.java">com/sun/research/ws/wadl/Option.java</a>
                 </td>
                 <td>
                   0
@@ -1684,7 +1684,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor.java">org/glassfish/jersey/server/internal/JsonWithPaddingInterceptor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.JsonWithPaddingInterceptor.java">org/glassfish/jersey/server/internal/JsonWithPaddingInterceptor.java</a>
                 </td>
                 <td>
                   0
@@ -1698,7 +1698,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.MatchResultInitializerRouter.java">org/glassfish/jersey/server/internal/routing/MatchResultInitializerRouter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.MatchResultInitializerRouter.java">org/glassfish/jersey/server/internal/routing/MatchResultInitializerRouter.java</a>
                 </td>
                 <td>
                   0
@@ -1712,7 +1712,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.config.WadlGeneratorConfigLoader.java">org/glassfish/jersey/server/wadl/config/WadlGeneratorConfigLoader.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.config.WadlGeneratorConfigLoader.java">org/glassfish/jersey/server/wadl/config/WadlGeneratorConfigLoader.java</a>
                 </td>
                 <td>
                   0
@@ -1726,7 +1726,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceMethodConfig.java">org/glassfish/jersey/server/model/ResourceMethodConfig.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceMethodConfig.java">org/glassfish/jersey/server/model/ResourceMethodConfig.java</a>
                 </td>
                 <td>
                   0
@@ -1740,7 +1740,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener.java">org/glassfish/jersey/server/internal/scanning/AnnotationAcceptingListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.AnnotationAcceptingListener.java">org/glassfish/jersey/server/internal/scanning/AnnotationAcceptingListener.java</a>
                 </td>
                 <td>
                   0
@@ -1754,7 +1754,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.package-info.java">org/glassfish/jersey/server/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.package-info.java">org/glassfish/jersey/server/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1768,7 +1768,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Suspendable.java">org/glassfish/jersey/server/model/Suspendable.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Suspendable.java">org/glassfish/jersey/server/model/Suspendable.java</a>
                 </td>
                 <td>
                   0
@@ -1782,7 +1782,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceModelVisitor.java">org/glassfish/jersey/server/model/ResourceModelVisitor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceModelVisitor.java">org/glassfish/jersey/server/model/ResourceModelVisitor.java</a>
                 </td>
                 <td>
                   0
@@ -1796,7 +1796,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.JSONP.java">org/glassfish/jersey/server/JSONP.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.JSONP.java">org/glassfish/jersey/server/JSONP.java</a>
                 </td>
                 <td>
                   0
@@ -1810,7 +1810,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.JerseyResourceContext.java">org/glassfish/jersey/server/internal/JerseyResourceContext.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.JerseyResourceContext.java">org/glassfish/jersey/server/internal/JerseyResourceContext.java</a>
                 </td>
                 <td>
                   0
@@ -1824,7 +1824,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.package-info.java">com/sun/research/ws/wadl/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.package-info.java">com/sun/research/ws/wadl/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -1838,7 +1838,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ExceptionMapperStatistics.java">org/glassfish/jersey/server/monitoring/ExceptionMapperStatistics.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ExceptionMapperStatistics.java">org/glassfish/jersey/server/monitoring/ExceptionMapperStatistics.java</a>
                 </td>
                 <td>
                   0
@@ -1852,7 +1852,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ExtendedUriInfo.java">org/glassfish/jersey/server/ExtendedUriInfo.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ExtendedUriInfo.java">org/glassfish/jersey/server/ExtendedUriInfo.java</a>
                 </td>
                 <td>
                   0
@@ -1866,7 +1866,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.ComponentProvider.java">org/glassfish/jersey/server/spi/ComponentProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.ComponentProvider.java">org/glassfish/jersey/server/spi/ComponentProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1880,7 +1880,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature.java">org/glassfish/jersey/server/filter/RolesAllowedDynamicFeature.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature.java">org/glassfish/jersey/server/filter/RolesAllowedDynamicFeature.java</a>
                 </td>
                 <td>
                   0
@@ -1894,7 +1894,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.java">org/glassfish/jersey/server/internal/routing/MethodSelectingRouter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.MethodSelectingRouter.java">org/glassfish/jersey/server/internal/routing/MethodSelectingRouter.java</a>
                 </td>
                 <td>
                   0
@@ -1908,7 +1908,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.RequestScopedInitializer.java">org/glassfish/jersey/server/spi/RequestScopedInitializer.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.RequestScopedInitializer.java">org/glassfish/jersey/server/spi/RequestScopedInitializer.java</a>
                 </td>
                 <td>
                   0
@@ -1922,7 +1922,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Representation.java">com/sun/research/ws/wadl/Representation.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Representation.java">com/sun/research/ws/wadl/Representation.java</a>
                 </td>
                 <td>
                   0
@@ -1936,7 +1936,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ContainerMessageBodyWorkersInitializer.java">org/glassfish/jersey/server/ContainerMessageBodyWorkersInitializer.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ContainerMessageBodyWorkersInitializer.java">org/glassfish/jersey/server/ContainerMessageBodyWorkersInitializer.java</a>
                 </td>
                 <td>
                   0
@@ -1950,7 +1950,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.MultivaluedParameterExtractorProvider.java">org/glassfish/jersey/server/internal/inject/MultivaluedParameterExtractorProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.MultivaluedParameterExtractorProvider.java">org/glassfish/jersey/server/internal/inject/MultivaluedParameterExtractorProvider.java</a>
                 </td>
                 <td>
                   0
@@ -1964,7 +1964,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.PrimitiveValueOfExtractor.java">org/glassfish/jersey/server/internal/inject/PrimitiveValueOfExtractor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.PrimitiveValueOfExtractor.java">org/glassfish/jersey/server/internal/inject/PrimitiveValueOfExtractor.java</a>
                 </td>
                 <td>
                   0
@@ -1978,7 +1978,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.AbstractParamValueExtractor.java">org/glassfish/jersey/server/internal/inject/AbstractParamValueExtractor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.AbstractParamValueExtractor.java">org/glassfish/jersey/server/internal/inject/AbstractParamValueExtractor.java</a>
                 </td>
                 <td>
                   0
@@ -1992,7 +1992,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.java">org/glassfish/jersey/server/internal/MappableExceptionWrapperInterceptor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.MappableExceptionWrapperInterceptor.java">org/glassfish/jersey/server/internal/MappableExceptionWrapperInterceptor.java</a>
                 </td>
                 <td>
                   0
@@ -2006,7 +2006,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ContainerRequest.java">org/glassfish/jersey/server/ContainerRequest.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ContainerRequest.java">org/glassfish/jersey/server/ContainerRequest.java</a>
                 </td>
                 <td>
                   0
@@ -2020,7 +2020,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ResourceMxBeanImpl.java">org/glassfish/jersey/server/internal/monitoring/jmx/ResourceMxBeanImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ResourceMxBeanImpl.java">org/glassfish/jersey/server/internal/monitoring/jmx/ResourceMxBeanImpl.java</a>
                 </td>
                 <td>
                   0
@@ -2034,7 +2034,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.ApplicationDocs.java">org/glassfish/jersey/server/wadl/internal/generators/ApplicationDocs.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.ApplicationDocs.java">org/glassfish/jersey/server/wadl/internal/generators/ApplicationDocs.java</a>
                 </td>
                 <td>
                   0
@@ -2048,7 +2048,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.WadlGeneratorImpl.java">org/glassfish/jersey/server/wadl/internal/WadlGeneratorImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.WadlGeneratorImpl.java">org/glassfish/jersey/server/wadl/internal/WadlGeneratorImpl.java</a>
                 </td>
                 <td>
                   0
@@ -2062,7 +2062,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.java">org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.java">org/glassfish/jersey/server/model/internal/AbstractJavaResourceMethodDispatcher.java</a>
                 </td>
                 <td>
                   0
@@ -2076,7 +2076,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml.XhtmlValueType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/xhtml/XhtmlValueType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml.XhtmlValueType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/xhtml/XhtmlValueType.java</a>
                 </td>
                 <td>
                   0
@@ -2090,7 +2090,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.ContainerUtils.java">org/glassfish/jersey/server/internal/ContainerUtils.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.ContainerUtils.java">org/glassfish/jersey/server/internal/ContainerUtils.java</a>
                 </td>
                 <td>
                   0
@@ -2104,7 +2104,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.localization.properties">org/glassfish/jersey/server/internal/localization.properties</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.localization.properties">org/glassfish/jersey/server/internal/localization.properties</a>
                 </td>
                 <td>
                   0
@@ -2118,7 +2118,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ServerRuntime.java">org/glassfish/jersey/server/ServerRuntime.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ServerRuntime.java">org/glassfish/jersey/server/ServerRuntime.java</a>
                 </td>
                 <td>
                   0
@@ -2132,7 +2132,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Parameterized.java">org/glassfish/jersey/server/model/Parameterized.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Parameterized.java">org/glassfish/jersey/server/model/Parameterized.java</a>
                 </td>
                 <td>
                   0
@@ -2146,7 +2146,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Doc.java">com/sun/research/ws/wadl/Doc.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Doc.java">com/sun/research/ws/wadl/Doc.java</a>
                 </td>
                 <td>
                   0
@@ -2160,7 +2160,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ExecutionStatistics.java">org/glassfish/jersey/server/monitoring/ExecutionStatistics.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ExecutionStatistics.java">org/glassfish/jersey/server/monitoring/ExecutionStatistics.java</a>
                 </td>
                 <td>
                   0
@@ -2174,7 +2174,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.ObjectFactory.java">org/glassfish/jersey/server/wadl/internal/generators/ObjectFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.ObjectFactory.java">org/glassfish/jersey/server/wadl/internal/generators/ObjectFactory.java</a>
                 </td>
                 <td>
                   0
@@ -2188,7 +2188,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ChunkedResponseWriter.java">org/glassfish/jersey/server/ChunkedResponseWriter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ChunkedResponseWriter.java">org/glassfish/jersey/server/ChunkedResponseWriter.java</a>
                 </td>
                 <td>
                   0
@@ -2202,7 +2202,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.BundleSchemeResourceFinderFactory.java">org/glassfish/jersey/server/internal/scanning/BundleSchemeResourceFinderFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.BundleSchemeResourceFinderFactory.java">org/glassfish/jersey/server/internal/scanning/BundleSchemeResourceFinderFactory.java</a>
                 </td>
                 <td>
                   0
@@ -2216,7 +2216,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.RepresentationDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/RepresentationDocType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.RepresentationDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/RepresentationDocType.java</a>
                 </td>
                 <td>
                   0
@@ -2230,7 +2230,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.TracingUtils.java">org/glassfish/jersey/server/TracingUtils.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.TracingUtils.java">org/glassfish/jersey/server/TracingUtils.java</a>
                 </td>
                 <td>
                   0
@@ -2244,7 +2244,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.CookieParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/CookieParamValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.CookieParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/CookieParamValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2258,7 +2258,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.TracingConfig.java">org/glassfish/jersey/server/TracingConfig.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.TracingConfig.java">org/glassfish/jersey/server/TracingConfig.java</a>
                 </td>
                 <td>
                   0
@@ -2272,7 +2272,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ParamQualifier.java">org/glassfish/jersey/server/model/ParamQualifier.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ParamQualifier.java">org/glassfish/jersey/server/model/ParamQualifier.java</a>
                 </td>
                 <td>
                   0
@@ -2286,7 +2286,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.MonitoringStatisticsListener.java">org/glassfish/jersey/server/monitoring/MonitoringStatisticsListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.MonitoringStatisticsListener.java">org/glassfish/jersey/server/monitoring/MonitoringStatisticsListener.java</a>
                 </td>
                 <td>
                   0
@@ -2300,7 +2300,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PushMatchedRuntimeResourceRouter.java">org/glassfish/jersey/server/internal/routing/PushMatchedRuntimeResourceRouter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PushMatchedRuntimeResourceRouter.java">org/glassfish/jersey/server/internal/routing/PushMatchedRuntimeResourceRouter.java</a>
                 </td>
                 <td>
                   0
@@ -2314,7 +2314,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.DelegatedInjectionValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/DelegatedInjectionValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.DelegatedInjectionValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/DelegatedInjectionValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2328,7 +2328,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider.java">org/glassfish/jersey/server/model/internal/JavaResourceMethodDispatcherProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider.java">org/glassfish/jersey/server/model/internal/JavaResourceMethodDispatcherProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2342,7 +2342,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.SecurityContextInjectee.java">org/glassfish/jersey/server/internal/process/SecurityContextInjectee.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.SecurityContextInjectee.java">org/glassfish/jersey/server/internal/process/SecurityContextInjectee.java</a>
                 </td>
                 <td>
                   0
@@ -2356,7 +2356,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.UriConnegFilter.java">org/glassfish/jersey/server/filter/UriConnegFilter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.UriConnegFilter.java">org/glassfish/jersey/server/filter/UriConnegFilter.java</a>
                 </td>
                 <td>
                   0
@@ -2370,7 +2370,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.SubResourceLocatorRouter.java">org/glassfish/jersey/server/internal/routing/SubResourceLocatorRouter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.SubResourceLocatorRouter.java">org/glassfish/jersey/server/internal/routing/SubResourceLocatorRouter.java</a>
                 </td>
                 <td>
                   0
@@ -2384,7 +2384,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.Container.java">org/glassfish/jersey/server/spi/Container.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.Container.java">org/glassfish/jersey/server/spi/Container.java</a>
                 </td>
                 <td>
                   0
@@ -2398,7 +2398,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.ResourceFinderException.java">org/glassfish/jersey/server/internal/scanning/ResourceFinderException.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.ResourceFinderException.java">org/glassfish/jersey/server/internal/scanning/ResourceFinderException.java</a>
                 </td>
                 <td>
                   0
@@ -2412,7 +2412,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.ReferencesInitializer.java">org/glassfish/jersey/server/internal/process/ReferencesInitializer.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.ReferencesInitializer.java">org/glassfish/jersey/server/internal/process/ReferencesInitializer.java</a>
                 </td>
                 <td>
                   0
@@ -2426,7 +2426,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ExceptionMapperMXBeanImpl.java">org/glassfish/jersey/server/internal/monitoring/jmx/ExceptionMapperMXBeanImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ExceptionMapperMXBeanImpl.java">org/glassfish/jersey/server/internal/monitoring/jmx/ExceptionMapperMXBeanImpl.java</a>
                 </td>
                 <td>
                   0
@@ -2440,7 +2440,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.ResourceDocAccessor.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/ResourceDocAccessor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.ResourceDocAccessor.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/ResourceDocAccessor.java</a>
                 </td>
                 <td>
                   0
@@ -2454,7 +2454,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.ConfigHelper.java">org/glassfish/jersey/server/internal/ConfigHelper.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.ConfigHelper.java">org/glassfish/jersey/server/internal/ConfigHelper.java</a>
                 </td>
                 <td>
                   0
@@ -2468,7 +2468,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.AbstractContainerLifecycleListener.java">org/glassfish/jersey/server/spi/AbstractContainerLifecycleListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.AbstractContainerLifecycleListener.java">org/glassfish/jersey/server/spi/AbstractContainerLifecycleListener.java</a>
                 </td>
                 <td>
                   0
@@ -2482,7 +2482,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.CsrfProtectionFilter.java">org/glassfish/jersey/server/filter/CsrfProtectionFilter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.CsrfProtectionFilter.java">org/glassfish/jersey/server/filter/CsrfProtectionFilter.java</a>
                 </td>
                 <td>
                   0
@@ -2496,7 +2496,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.InvocableValidator.java">org/glassfish/jersey/server/model/InvocableValidator.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.InvocableValidator.java">org/glassfish/jersey/server/model/InvocableValidator.java</a>
                 </td>
                 <td>
                   0
@@ -2510,7 +2510,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ResourceStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/ResourceStatisticsImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ResourceStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/ResourceStatisticsImpl.java</a>
                 </td>
                 <td>
                   0
@@ -2524,7 +2524,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.EntityParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/EntityParamValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.EntityParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/EntityParamValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2538,7 +2538,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.ClassDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/ClassDocType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.ClassDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/ClassDocType.java</a>
                 </td>
                 <td>
                   0
@@ -2552,7 +2552,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ChunkedOutput.java">org/glassfish/jersey/server/ChunkedOutput.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ChunkedOutput.java">org/glassfish/jersey/server/ChunkedOutput.java</a>
                 </td>
                 <td>
                   0
@@ -2566,7 +2566,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Link.java">com/sun/research/ws/wadl/Link.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Link.java">com/sun/research/ws/wadl/Link.java</a>
                 </td>
                 <td>
                   0
@@ -2580,7 +2580,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Request.java">com/sun/research/ws/wadl/Request.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Request.java">com/sun/research/ws/wadl/Request.java</a>
                 </td>
                 <td>
                   0
@@ -2594,7 +2594,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceMethod.java">org/glassfish/jersey/server/model/ResourceMethod.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceMethod.java">org/glassfish/jersey/server/model/ResourceMethod.java</a>
                 </td>
                 <td>
                   0
@@ -2608,7 +2608,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.AsyncContext.java">org/glassfish/jersey/server/internal/process/AsyncContext.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.AsyncContext.java">org/glassfish/jersey/server/internal/process/AsyncContext.java</a>
                 </td>
                 <td>
                   0
@@ -2622,7 +2622,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.CollectionExtractor.java">org/glassfish/jersey/server/internal/inject/CollectionExtractor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.CollectionExtractor.java">org/glassfish/jersey/server/internal/inject/CollectionExtractor.java</a>
                 </td>
                 <td>
                   0
@@ -2636,7 +2636,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Response.java">com/sun/research/ws/wadl/Response.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Response.java">com/sun/research/ws/wadl/Response.java</a>
                 </td>
                 <td>
                   0
@@ -2650,7 +2650,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.RequestDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/RequestDocType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.RequestDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/RequestDocType.java</a>
                 </td>
                 <td>
                   0
@@ -2664,7 +2664,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.SubjectSecurityContext.java">org/glassfish/jersey/server/SubjectSecurityContext.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.SubjectSecurityContext.java">org/glassfish/jersey/server/SubjectSecurityContext.java</a>
                 </td>
                 <td>
                   0
@@ -2678,7 +2678,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.config.WadlGeneratorConfig.java">org/glassfish/jersey/server/wadl/config/WadlGeneratorConfig.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.config.WadlGeneratorConfig.java">org/glassfish/jersey/server/wadl/config/WadlGeneratorConfig.java</a>
                 </td>
                 <td>
                   0
@@ -2692,7 +2692,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.CombinedClientServerMediaType.java">org/glassfish/jersey/server/internal/routing/CombinedClientServerMediaType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.CombinedClientServerMediaType.java">org/glassfish/jersey/server/internal/routing/CombinedClientServerMediaType.java</a>
                 </td>
                 <td>
                   0
@@ -2706,7 +2706,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ApplicationInfoListener.java">org/glassfish/jersey/server/internal/monitoring/ApplicationInfoListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ApplicationInfoListener.java">org/glassfish/jersey/server/internal/monitoring/ApplicationInfoListener.java</a>
                 </td>
                 <td>
                   0
@@ -2720,7 +2720,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ContainerResponse.java">org/glassfish/jersey/server/ContainerResponse.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ContainerResponse.java">org/glassfish/jersey/server/ContainerResponse.java</a>
                 </td>
                 <td>
                   0
@@ -2734,7 +2734,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.CloseableService.java">org/glassfish/jersey/server/CloseableService.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.CloseableService.java">org/glassfish/jersey/server/CloseableService.java</a>
                 </td>
                 <td>
                   0
@@ -2748,7 +2748,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.Route.java">org/glassfish/jersey/server/internal/routing/Route.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.Route.java">org/glassfish/jersey/server/internal/routing/Route.java</a>
                 </td>
                 <td>
                   0
@@ -2762,7 +2762,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.PrimitiveMapper.java">org/glassfish/jersey/server/internal/inject/PrimitiveMapper.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.PrimitiveMapper.java">org/glassfish/jersey/server/internal/inject/PrimitiveMapper.java</a>
                 </td>
                 <td>
                   0
@@ -2776,7 +2776,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.package-info.java">org/glassfish/jersey/server/wadl/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.package-info.java">org/glassfish/jersey/server/wadl/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2790,7 +2790,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.ServerProcessingBinder.java">org/glassfish/jersey/server/internal/process/ServerProcessingBinder.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.ServerProcessingBinder.java">org/glassfish/jersey/server/internal/process/ServerProcessingBinder.java</a>
                 </td>
                 <td>
                   0
@@ -2804,7 +2804,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.FormParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/FormParamValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.FormParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/FormParamValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2818,7 +2818,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.RuntimeResourceModel.java">org/glassfish/jersey/server/model/RuntimeResourceModel.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.RuntimeResourceModel.java">org/glassfish/jersey/server/model/RuntimeResourceModel.java</a>
                 </td>
                 <td>
                   0
@@ -2832,7 +2832,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.StringCollectionExtractor.java">org/glassfish/jersey/server/internal/inject/StringCollectionExtractor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.StringCollectionExtractor.java">org/glassfish/jersey/server/internal/inject/StringCollectionExtractor.java</a>
                 </td>
                 <td>
                   0
@@ -2846,7 +2846,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.ResourceFinderStack.java">org/glassfish/jersey/server/internal/scanning/ResourceFinderStack.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.ResourceFinderStack.java">org/glassfish/jersey/server/internal/scanning/ResourceFinderStack.java</a>
                 </td>
                 <td>
                   0
@@ -2860,7 +2860,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.JaxbStringReaderProvider.java">org/glassfish/jersey/server/internal/inject/JaxbStringReaderProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.JaxbStringReaderProvider.java">org/glassfish/jersey/server/internal/inject/JaxbStringReaderProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2874,7 +2874,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.ResourceProcessor.java">org/glassfish/jersey/server/internal/scanning/ResourceProcessor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.ResourceProcessor.java">org/glassfish/jersey/server/internal/scanning/ResourceProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -2888,7 +2888,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.package-info.java">org/glassfish/jersey/server/model/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.package-info.java">org/glassfish/jersey/server/model/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2902,7 +2902,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.TransformableData.java">org/glassfish/jersey/server/internal/routing/TransformableData.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.TransformableData.java">org/glassfish/jersey/server/internal/routing/TransformableData.java</a>
                 </td>
                 <td>
                   0
@@ -2916,7 +2916,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.JarZipSchemeResourceFinderFactory.java">org/glassfish/jersey/server/internal/scanning/JarZipSchemeResourceFinderFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.JarZipSchemeResourceFinderFactory.java">org/glassfish/jersey/server/internal/scanning/JarZipSchemeResourceFinderFactory.java</a>
                 </td>
                 <td>
                   0
@@ -2930,7 +2930,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.internal.package-info.java">org/glassfish/jersey/server/spi/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.internal.package-info.java">org/glassfish/jersey/server/spi/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2944,7 +2944,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.package-info.java">org/glassfish/jersey/server/internal/inject/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.package-info.java">org/glassfish/jersey/server/internal/inject/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -2958,7 +2958,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.HttpMethodOverrideFilter.java">org/glassfish/jersey/server/filter/HttpMethodOverrideFilter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.HttpMethodOverrideFilter.java">org/glassfish/jersey/server/filter/HttpMethodOverrideFilter.java</a>
                 </td>
                 <td>
                   0
@@ -2972,7 +2972,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.AbstractValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/AbstractValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.AbstractValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/AbstractValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -2986,7 +2986,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringFeature.java">org/glassfish/jersey/server/internal/monitoring/MonitoringFeature.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringFeature.java">org/glassfish/jersey/server/internal/monitoring/MonitoringFeature.java</a>
                 </td>
                 <td>
                   0
@@ -3000,7 +3000,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ClientBinding.java">org/glassfish/jersey/server/ClientBinding.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ClientBinding.java">org/glassfish/jersey/server/ClientBinding.java</a>
                 </td>
                 <td>
                   0
@@ -3014,7 +3014,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.RequestEventImpl.java">org/glassfish/jersey/server/internal/monitoring/RequestEventImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.RequestEventImpl.java">org/glassfish/jersey/server/internal/monitoring/RequestEventImpl.java</a>
                 </td>
                 <td>
                   0
@@ -3028,7 +3028,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.ServerTraceEvent.java">org/glassfish/jersey/server/internal/ServerTraceEvent.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.ServerTraceEvent.java">org/glassfish/jersey/server/internal/ServerTraceEvent.java</a>
                 </td>
                 <td>
                   0
@@ -3042,7 +3042,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.RequestEvent.java">org/glassfish/jersey/server/monitoring/RequestEvent.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.RequestEvent.java">org/glassfish/jersey/server/monitoring/RequestEvent.java</a>
                 </td>
                 <td>
                   0
@@ -3056,7 +3056,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.ModelErrors.java">org/glassfish/jersey/server/model/internal/ModelErrors.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.ModelErrors.java">org/glassfish/jersey/server/model/internal/ModelErrors.java</a>
                 </td>
                 <td>
                   0
@@ -3070,7 +3070,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.ContainerResponseWriter.java">org/glassfish/jersey/server/spi/ContainerResponseWriter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.ContainerResponseWriter.java">org/glassfish/jersey/server/spi/ContainerResponseWriter.java</a>
                 </td>
                 <td>
                   0
@@ -3084,7 +3084,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.processor.package-info.java">org/glassfish/jersey/server/wadl/processor/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.processor.package-info.java">org/glassfish/jersey/server/wadl/processor/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3098,7 +3098,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.WadlGeneratorResourceDocSupport.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/WadlGeneratorResourceDocSupport.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.WadlGeneratorResourceDocSupport.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/WadlGeneratorResourceDocSupport.java</a>
                 </td>
                 <td>
                   0
@@ -3112,7 +3112,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.HTTPMethods.java">com/sun/research/ws/wadl/HTTPMethods.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.HTTPMethods.java">com/sun/research/ws/wadl/HTTPMethods.java</a>
                 </td>
                 <td>
                   0
@@ -3126,7 +3126,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Include.java">com/sun/research/ws/wadl/Include.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Include.java">com/sun/research/ws/wadl/Include.java</a>
                 </td>
                 <td>
                   0
@@ -3140,7 +3140,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.internal.ServerFiltersAutoDiscoverable.java">org/glassfish/jersey/server/filter/internal/ServerFiltersAutoDiscoverable.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.internal.ServerFiltersAutoDiscoverable.java">org/glassfish/jersey/server/filter/internal/ServerFiltersAutoDiscoverable.java</a>
                 </td>
                 <td>
                   0
@@ -3154,7 +3154,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.RequestProcessingContext.java">org/glassfish/jersey/server/internal/process/RequestProcessingContext.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.RequestProcessingContext.java">org/glassfish/jersey/server/internal/process/RequestProcessingContext.java</a>
                 </td>
                 <td>
                   0
@@ -3168,7 +3168,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.ObjectFactory.java">com/sun/research/ws/wadl/ObjectFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.ObjectFactory.java">com/sun/research/ws/wadl/ObjectFactory.java</a>
                 </td>
                 <td>
                   0
@@ -3182,7 +3182,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.ApplicationDescription.java">org/glassfish/jersey/server/wadl/internal/ApplicationDescription.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.ApplicationDescription.java">org/glassfish/jersey/server/wadl/internal/ApplicationDescription.java</a>
                 </td>
                 <td>
                   0
@@ -3196,7 +3196,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.ParamInjectionResolver.java">org/glassfish/jersey/server/internal/inject/ParamInjectionResolver.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.ParamInjectionResolver.java">org/glassfish/jersey/server/internal/inject/ParamInjectionResolver.java</a>
                 </td>
                 <td>
                   0
@@ -3210,7 +3210,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.java">org/glassfish/jersey/server/internal/routing/RuntimeModelBuilder.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.RuntimeModelBuilder.java">org/glassfish/jersey/server/internal/routing/RuntimeModelBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -3224,7 +3224,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ModelValidationException.java">org/glassfish/jersey/server/model/ModelValidationException.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ModelValidationException.java">org/glassfish/jersey/server/model/ModelValidationException.java</a>
                 </td>
                 <td>
                   0
@@ -3238,7 +3238,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.WadlParamType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/WadlParamType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.WadlParamType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/WadlParamType.java</a>
                 </td>
                 <td>
                   0
@@ -3252,7 +3252,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.Broadcaster.java">org/glassfish/jersey/server/Broadcaster.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.Broadcaster.java">org/glassfish/jersey/server/Broadcaster.java</a>
                 </td>
                 <td>
                   0
@@ -3266,7 +3266,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.WebTargetValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/WebTargetValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.WebTargetValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/WebTargetValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -3280,7 +3280,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.PathParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/PathParamValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.PathParamValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/PathParamValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -3294,7 +3294,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Method.java">com/sun/research/ws/wadl/Method.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Method.java">com/sun/research/ws/wadl/Method.java</a>
                 </td>
                 <td>
                   0
@@ -3308,7 +3308,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.MethodHandler.java">org/glassfish/jersey/server/model/MethodHandler.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.MethodHandler.java">org/glassfish/jersey/server/model/MethodHandler.java</a>
                 </td>
                 <td>
                   0
@@ -3322,7 +3322,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.ParameterInjectionBinder.java">org/glassfish/jersey/server/internal/inject/ParameterInjectionBinder.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.ParameterInjectionBinder.java">org/glassfish/jersey/server/internal/inject/ParameterInjectionBinder.java</a>
                 </td>
                 <td>
                   0
@@ -3336,7 +3336,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.WadlGeneratorGrammarsSupport.java">org/glassfish/jersey/server/wadl/internal/generators/WadlGeneratorGrammarsSupport.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.WadlGeneratorGrammarsSupport.java">org/glassfish/jersey/server/wadl/internal/generators/WadlGeneratorGrammarsSupport.java</a>
                 </td>
                 <td>
                   0
@@ -3350,7 +3350,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ExceptionMapperStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/ExceptionMapperStatisticsImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ExceptionMapperStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/ExceptionMapperStatisticsImpl.java</a>
                 </td>
                 <td>
                   0
@@ -3364,7 +3364,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.MultivaluedParameterExtractor.java">org/glassfish/jersey/server/internal/inject/MultivaluedParameterExtractor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.MultivaluedParameterExtractor.java">org/glassfish/jersey/server/internal/inject/MultivaluedParameterExtractor.java</a>
                 </td>
                 <td>
                   0
@@ -3378,7 +3378,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.ParamDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/ParamDocType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.ParamDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/ParamDocType.java</a>
                 </td>
                 <td>
                   0
@@ -3392,7 +3392,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PathPatternRouter.java">org/glassfish/jersey/server/internal/routing/PathPatternRouter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PathPatternRouter.java">org/glassfish/jersey/server/internal/routing/PathPatternRouter.java</a>
                 </td>
                 <td>
                   0
@@ -3406,7 +3406,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.package-info.java">org/glassfish/jersey/server/monitoring/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.package-info.java">org/glassfish/jersey/server/monitoring/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3420,7 +3420,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ModelProcessor.java">org/glassfish/jersey/server/model/ModelProcessor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ModelProcessor.java">org/glassfish/jersey/server/model/ModelProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -3434,7 +3434,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.package-info.java">org/glassfish/jersey/server/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.package-info.java">org/glassfish/jersey/server/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3448,7 +3448,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.UriSchemeResourceFinderFactory.java">org/glassfish/jersey/server/internal/scanning/UriSchemeResourceFinderFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.UriSchemeResourceFinderFactory.java">org/glassfish/jersey/server/internal/scanning/UriSchemeResourceFinderFactory.java</a>
                 </td>
                 <td>
                   0
@@ -3462,7 +3462,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ResourceFinder.java">org/glassfish/jersey/server/ResourceFinder.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ResourceFinder.java">org/glassfish/jersey/server/ResourceFinder.java</a>
                 </td>
                 <td>
                   0
@@ -3476,7 +3476,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.internal.ResourceMethodDispatcher.java">org/glassfish/jersey/server/spi/internal/ResourceMethodDispatcher.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.internal.ResourceMethodDispatcher.java">org/glassfish/jersey/server/spi/internal/ResourceMethodDispatcher.java</a>
                 </td>
                 <td>
                   0
@@ -3490,7 +3490,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.ModelHelper.java">org/glassfish/jersey/server/model/internal/ModelHelper.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.ModelHelper.java">org/glassfish/jersey/server/model/internal/ModelHelper.java</a>
                 </td>
                 <td>
                   0
@@ -3504,7 +3504,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.VoidVoidDispatcherProvider.java">org/glassfish/jersey/server/model/internal/VoidVoidDispatcherProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.VoidVoidDispatcherProvider.java">org/glassfish/jersey/server/model/internal/VoidVoidDispatcherProvider.java</a>
                 </td>
                 <td>
                   0
@@ -3518,7 +3518,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ParamException.java">org/glassfish/jersey/server/ParamException.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ParamException.java">org/glassfish/jersey/server/ParamException.java</a>
                 </td>
                 <td>
                   0
@@ -3532,7 +3532,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.WadlApplicationContextImpl.java">org/glassfish/jersey/server/wadl/internal/WadlApplicationContextImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.WadlApplicationContextImpl.java">org/glassfish/jersey/server/wadl/internal/WadlApplicationContextImpl.java</a>
                 </td>
                 <td>
                   0
@@ -3546,7 +3546,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ResourceMethodMXBeanImpl.java">org/glassfish/jersey/server/internal/monitoring/jmx/ResourceMethodMXBeanImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.ResourceMethodMXBeanImpl.java">org/glassfish/jersey/server/internal/monitoring/jmx/ResourceMethodMXBeanImpl.java</a>
                 </td>
                 <td>
                   0
@@ -3560,7 +3560,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ApplicationInfoImpl.java">org/glassfish/jersey/server/internal/monitoring/ApplicationInfoImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ApplicationInfoImpl.java">org/glassfish/jersey/server/internal/monitoring/ApplicationInfoImpl.java</a>
                 </td>
                 <td>
                   0
@@ -3574,7 +3574,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceModel.java">org/glassfish/jersey/server/model/ResourceModel.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceModel.java">org/glassfish/jersey/server/model/ResourceModel.java</a>
                 </td>
                 <td>
                   0
@@ -3588,7 +3588,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.RuntimeExecutorsBinder.java">org/glassfish/jersey/server/internal/RuntimeExecutorsBinder.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.RuntimeExecutorsBinder.java">org/glassfish/jersey/server/internal/RuntimeExecutorsBinder.java</a>
                 </td>
                 <td>
                   0
@@ -3602,7 +3602,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.package-info.java">org/glassfish/jersey/server/spi/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.package-info.java">org/glassfish/jersey/server/spi/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3616,7 +3616,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.IntrospectionModeller.java">org/glassfish/jersey/server/model/IntrospectionModeller.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.IntrospectionModeller.java">org/glassfish/jersey/server/model/IntrospectionModeller.java</a>
                 </td>
                 <td>
                   0
@@ -3630,7 +3630,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Invocable.java">org/glassfish/jersey/server/model/Invocable.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Invocable.java">org/glassfish/jersey/server/model/Invocable.java</a>
                 </td>
                 <td>
                   0
@@ -3644,7 +3644,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Param.java">com/sun/research/ws/wadl/Param.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Param.java">com/sun/research/ws/wadl/Param.java</a>
                 </td>
                 <td>
                   0
@@ -3658,7 +3658,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ContainerException.java">org/glassfish/jersey/server/ContainerException.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ContainerException.java">org/glassfish/jersey/server/ContainerException.java</a>
                 </td>
                 <td>
                   0
@@ -3672,7 +3672,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.internal.ResourceMethodInvocationHandlerProvider.java">org/glassfish/jersey/server/spi/internal/ResourceMethodInvocationHandlerProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.spi.internal.ResourceMethodInvocationHandlerProvider.java">org/glassfish/jersey/server/spi/internal/ResourceMethodInvocationHandlerProvider.java</a>
                 </td>
                 <td>
                   0
@@ -3686,7 +3686,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.internal.package-info.java">org/glassfish/jersey/server/filter/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.filter.internal.package-info.java">org/glassfish/jersey/server/filter/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3700,7 +3700,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.WadlUtils.java">org/glassfish/jersey/server/wadl/internal/WadlUtils.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.WadlUtils.java">org/glassfish/jersey/server/wadl/internal/WadlUtils.java</a>
                 </td>
                 <td>
                   0
@@ -3714,7 +3714,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.AnnotatedMethod.java">org/glassfish/jersey/server/model/AnnotatedMethod.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.AnnotatedMethod.java">org/glassfish/jersey/server/model/AnnotatedMethod.java</a>
                 </td>
                 <td>
                   0
@@ -3728,7 +3728,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.DefaultCloseableService.java">org/glassfish/jersey/server/internal/process/DefaultCloseableService.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.DefaultCloseableService.java">org/glassfish/jersey/server/internal/process/DefaultCloseableService.java</a>
                 </td>
                 <td>
                   0
@@ -3742,7 +3742,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Resources.java">com/sun/research/ws/wadl/Resources.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#com.sun.research.ws.wadl.Resources.java">com/sun/research/ws/wadl/Resources.java</a>
                 </td>
                 <td>
                   0
@@ -3756,7 +3756,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.SingleMatchResult.java">org/glassfish/jersey/server/internal/routing/SingleMatchResult.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.SingleMatchResult.java">org/glassfish/jersey/server/internal/routing/SingleMatchResult.java</a>
                 </td>
                 <td>
                   0
@@ -3770,7 +3770,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ResourceMethodStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/ResourceMethodStatisticsImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.ResourceMethodStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/ResourceMethodStatisticsImpl.java</a>
                 </td>
                 <td>
                   0
@@ -3784,7 +3784,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ResourceMethodMXBean.java">org/glassfish/jersey/server/monitoring/ResourceMethodMXBean.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.ResourceMethodMXBean.java">org/glassfish/jersey/server/monitoring/ResourceMethodMXBean.java</a>
                 </td>
                 <td>
                   0
@@ -3798,7 +3798,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ApplicationHandler.java">org/glassfish/jersey/server/ApplicationHandler.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ApplicationHandler.java">org/glassfish/jersey/server/ApplicationHandler.java</a>
                 </td>
                 <td>
                   0
@@ -3812,7 +3812,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.JarFileScanner.java">org/glassfish/jersey/server/internal/scanning/JarFileScanner.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.scanning.JarFileScanner.java">org/glassfish/jersey/server/internal/scanning/JarFileScanner.java</a>
                 </td>
                 <td>
                   0
@@ -3826,7 +3826,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.RequestEventBuilder.java">org/glassfish/jersey/server/internal/monitoring/RequestEventBuilder.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.RequestEventBuilder.java">org/glassfish/jersey/server/internal/monitoring/RequestEventBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -3840,7 +3840,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.ResourceModelBinder.java">org/glassfish/jersey/server/model/internal/ResourceModelBinder.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.ResourceModelBinder.java">org/glassfish/jersey/server/model/internal/ResourceModelBinder.java</a>
                 </td>
                 <td>
                   0
@@ -3854,7 +3854,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ResourceConfig.java">org/glassfish/jersey/server/ResourceConfig.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ResourceConfig.java">org/glassfish/jersey/server/ResourceConfig.java</a>
                 </td>
                 <td>
                   0
@@ -3868,7 +3868,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.RequestEventListener.java">org/glassfish/jersey/server/monitoring/RequestEventListener.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.monitoring.RequestEventListener.java">org/glassfish/jersey/server/monitoring/RequestEventListener.java</a>
                 </td>
                 <td>
                   0
@@ -3882,7 +3882,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.ProcessingProviders.java">org/glassfish/jersey/server/internal/ProcessingProviders.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.ProcessingProviders.java">org/glassfish/jersey/server/internal/ProcessingProviders.java</a>
                 </td>
                 <td>
                   0
@@ -3896,7 +3896,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.java">org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.java">org/glassfish/jersey/server/model/internal/ResourceMethodInvocationHandlerFactory.java</a>
                 </td>
                 <td>
                   0
@@ -3910,7 +3910,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.RoutedInflectorExtractorStage.java">org/glassfish/jersey/server/internal/routing/RoutedInflectorExtractorStage.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.RoutedInflectorExtractorStage.java">org/glassfish/jersey/server/internal/routing/RoutedInflectorExtractorStage.java</a>
                 </td>
                 <td>
                   0
@@ -3924,7 +3924,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.config.package-info.java">org/glassfish/jersey/server/wadl/config/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.config.package-info.java">org/glassfish/jersey/server/wadl/config/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3938,7 +3938,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.MultivaluedParameterExtractorFactory.java">org/glassfish/jersey/server/internal/inject/MultivaluedParameterExtractorFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.MultivaluedParameterExtractorFactory.java">org/glassfish/jersey/server/internal/inject/MultivaluedParameterExtractorFactory.java</a>
                 </td>
                 <td>
                   0
@@ -3952,7 +3952,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.ResourceDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/ResourceDocType.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.model.ResourceDocType.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/model/ResourceDocType.java</a>
                 </td>
                 <td>
                   0
@@ -3966,7 +3966,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.MethodAcceptorPair.java">org/glassfish/jersey/server/internal/routing/MethodAcceptorPair.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.MethodAcceptorPair.java">org/glassfish/jersey/server/internal/routing/MethodAcceptorPair.java</a>
                 </td>
                 <td>
                   0
@@ -3980,7 +3980,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.package-info.java">org/glassfish/jersey/server/wadl/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.package-info.java">org/glassfish/jersey/server/wadl/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -3994,7 +3994,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringAutodiscoverable.java">org/glassfish/jersey/server/internal/monitoring/MonitoringAutodiscoverable.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringAutodiscoverable.java">org/glassfish/jersey/server/internal/monitoring/MonitoringAutodiscoverable.java</a>
                 </td>
                 <td>
                   0
@@ -4008,7 +4008,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.ParamConverters.java">org/glassfish/jersey/server/internal/inject/ParamConverters.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.ParamConverters.java">org/glassfish/jersey/server/internal/inject/ParamConverters.java</a>
                 </td>
                 <td>
                   0
@@ -4022,7 +4022,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml.package-info.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/xhtml/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml.package-info.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/xhtml/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -4036,7 +4036,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PushMatchedMethodRouter.java">org/glassfish/jersey/server/internal/routing/PushMatchedMethodRouter.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.PushMatchedMethodRouter.java">org/glassfish/jersey/server/internal/routing/PushMatchedMethodRouter.java</a>
                 </td>
                 <td>
                   0
@@ -4050,7 +4050,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml.Elements.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/xhtml/Elements.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.resourcedoc.xhtml.Elements.java">org/glassfish/jersey/server/wadl/internal/generators/resourcedoc/xhtml/Elements.java</a>
                 </td>
                 <td>
                   0
@@ -4064,7 +4064,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.AsyncResponseValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/AsyncResponseValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.AsyncResponseValueFactoryProvider.java">org/glassfish/jersey/server/internal/inject/AsyncResponseValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -4078,7 +4078,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.processor.OptionsMethodProcessor.java">org/glassfish/jersey/server/wadl/processor/OptionsMethodProcessor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.processor.OptionsMethodProcessor.java">org/glassfish/jersey/server/wadl/processor/OptionsMethodProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -4092,7 +4092,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.ResourceMethodDispatcherFactory.java">org/glassfish/jersey/server/model/internal/ResourceMethodDispatcherFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.internal.ResourceMethodDispatcherFactory.java">org/glassfish/jersey/server/model/internal/ResourceMethodDispatcherFactory.java</a>
                 </td>
                 <td>
                   0
@@ -4106,7 +4106,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Routed.java">org/glassfish/jersey/server/model/Routed.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.Routed.java">org/glassfish/jersey/server/model/Routed.java</a>
                 </td>
                 <td>
                   0
@@ -4120,7 +4120,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.processor.WadlModelProcessor.java">org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.processor.WadlModelProcessor.java">org/glassfish/jersey/server/wadl/processor/WadlModelProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -4134,7 +4134,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceValidator.java">org/glassfish/jersey/server/model/ResourceValidator.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.model.ResourceValidator.java">org/glassfish/jersey/server/model/ResourceValidator.java</a>
                 </td>
                 <td>
                   0
@@ -4148,7 +4148,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.package-info.java">org/glassfish/jersey/server/internal/monitoring/jmx/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.jmx.package-info.java">org/glassfish/jersey/server/internal/monitoring/jmx/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -4162,7 +4162,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ServerConfig.java">org/glassfish/jersey/server/ServerConfig.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ServerConfig.java">org/glassfish/jersey/server/ServerConfig.java</a>
                 </td>
                 <td>
                   0
@@ -4176,7 +4176,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.ExtractorException.java">org/glassfish/jersey/server/internal/inject/ExtractorException.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.inject.ExtractorException.java">org/glassfish/jersey/server/internal/inject/ExtractorException.java</a>
                 </td>
                 <td>
                   0
@@ -4190,7 +4190,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.EmptyRequestEventBuilder.java">org/glassfish/jersey/server/internal/monitoring/EmptyRequestEventBuilder.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.EmptyRequestEventBuilder.java">org/glassfish/jersey/server/internal/monitoring/EmptyRequestEventBuilder.java</a>
                 </td>
                 <td>
                   0
@@ -4204,7 +4204,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.ServerManagedAsyncExecutorFactory.java">org/glassfish/jersey/server/internal/process/ServerManagedAsyncExecutorFactory.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.process.ServerManagedAsyncExecutorFactory.java">org/glassfish/jersey/server/internal/process/ServerManagedAsyncExecutorFactory.java</a>
                 </td>
                 <td>
                   0
@@ -4218,7 +4218,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.WadlGeneratorApplicationDoc.java">org/glassfish/jersey/server/wadl/internal/generators/WadlGeneratorApplicationDoc.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.wadl.internal.generators.WadlGeneratorApplicationDoc.java">org/glassfish/jersey/server/wadl/internal/generators/WadlGeneratorApplicationDoc.java</a>
                 </td>
                 <td>
                   0
@@ -4232,7 +4232,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.JerseyRequestTimeoutHandler.java">org/glassfish/jersey/server/internal/JerseyRequestTimeoutHandler.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.JerseyRequestTimeoutHandler.java">org/glassfish/jersey/server/internal/JerseyRequestTimeoutHandler.java</a>
                 </td>
                 <td>
                   0
@@ -4246,7 +4246,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringStatisticsProcessor.java">org/glassfish/jersey/server/internal/monitoring/MonitoringStatisticsProcessor.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringStatisticsProcessor.java">org/glassfish/jersey/server/internal/monitoring/MonitoringStatisticsProcessor.java</a>
                 </td>
                 <td>
                   0
@@ -4260,7 +4260,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/MonitoringStatisticsImpl.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.monitoring.MonitoringStatisticsImpl.java">org/glassfish/jersey/server/internal/monitoring/MonitoringStatisticsImpl.java</a>
                 </td>
                 <td>
                   0
@@ -4274,7 +4274,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.package-info.java">org/glassfish/jersey/server/internal/routing/package-info.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.package-info.java">org/glassfish/jersey/server/internal/routing/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -4288,7 +4288,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.RoutingContext.java">org/glassfish/jersey/server/internal/routing/RoutingContext.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.internal.routing.RoutingContext.java">org/glassfish/jersey/server/internal/routing/RoutingContext.java</a>
                 </td>
                 <td>
                   0
@@ -4302,7 +4302,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/jersey-server//checkstyle.html#org.glassfish.jersey.server.ServerBinder.java">org/glassfish/jersey/server/ServerBinder.java</a>
+                  <a href="https://jersey.github.io/jersey-server//checkstyle.html#org.glassfish.jersey.server.ServerBinder.java">org/glassfish/jersey/server/ServerBinder.java</a>
                 </td>
                 <td>
                   0

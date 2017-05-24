@@ -94,7 +94,7 @@ Annotation Type FormDataParam</H2>
 <DL>
 <DT><PRE><FONT SIZE="-1">@Target(value={PARAMETER,METHOD,FIELD})
 @Retention(value=RUNTIME)
-<A HREF="https://jersey.java.net/jersey-server//apidocs/com/sun/jersey/spi/container/ParamQualifier.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">@ParamQualifier</A>
+<A HREF="https://jersey.github.io/jersey-server//apidocs/com/sun/jersey/spi/container/ParamQualifier.html?is-external=true" title="class or interface in com.sun.jersey.spi.container">@ParamQualifier</A>
 </FONT>public @interface <B>FormDataParam</B></DL>
 </PRE>
 
@@ -102,7 +102,7 @@ Annotation Type FormDataParam</H2>
 Binds the named body part(s) of a "multipart/form-data" request
  entity body to a resource method parameter.
  <p>
- The <A HREF="https://jersey.java.net/jersey-core//apidocs/javax/ws/rs/FormParam.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>FormParam</CODE></A> annotation in conjunction with the media type
+ The <A HREF="https://jersey.github.io/jersey-core//apidocs/javax/ws/rs/FormParam.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>FormParam</CODE></A> annotation in conjunction with the media type
  "application/x-www-form-urlencoded" is inefficient for sending and
  consuming large quantities of binary data or text containing non-ASCII
  characters.
@@ -121,10 +121,10 @@ Binds the named body part(s) of a "multipart/form-data" request
      The value of the
      parameter will one or more named body parts with the same name, otherwise
      null if such a named body part is not present.
- <li><A HREF="https://jersey.java.net/jersey-core//apidocs/com/sun/jersey/core/header/FormDataContentDisposition.html?is-external=true" title="class or interface in com.sun.jersey.core.header"><CODE>FormDataContentDisposition</CODE></A>. The value of the parameter will be
+ <li><A HREF="https://jersey.github.io/jersey-core//apidocs/com/sun/jersey/core/header/FormDataContentDisposition.html?is-external=true" title="class or interface in com.sun.jersey.core.header"><CODE>FormDataContentDisposition</CODE></A>. The value of the parameter will be
      the content disposition of the first named body part, otherwise null if
      such a named body part is not present.
- <li>A <code>List</code> or <code>Collection</code> of <A HREF="https://jersey.java.net/jersey-core//apidocs/com/sun/jersey/core/header/FormDataContentDisposition.html?is-external=true" title="class or interface in com.sun.jersey.core.header"><CODE>FormDataContentDisposition</CODE></A>.
+ <li>A <code>List</code> or <code>Collection</code> of <A HREF="https://jersey.github.io/jersey-core//apidocs/com/sun/jersey/core/header/FormDataContentDisposition.html?is-external=true" title="class or interface in com.sun.jersey.core.header"><CODE>FormDataContentDisposition</CODE></A>.
      The value of
      the parameter will one or more content dispositions of the named body parts
      with the same name, otherwise null if such a named body part is not
@@ -136,20 +136,20 @@ Binds the named body part(s) of a "multipart/form-data" request
      input.
      <p>
      If there is no named part present and there is a default value present as
-     declared by <A HREF="https://jersey.java.net/jersey-core//apidocs/javax/ws/rs/DefaultValue.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>DefaultValue</CODE></A> then the media type will be set to
+     declared by <A HREF="https://jersey.github.io/jersey-core//apidocs/javax/ws/rs/DefaultValue.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>DefaultValue</CODE></A> then the media type will be set to
      "text/plain". The value of the parameter will be the result of reading
      using the message body reader given the type <code>T</code>, the media type
      "text/plain", and the UTF-8 encoded bytes of the default value as input.
      <p>
      If there is no message body reader available and the type <code>T</code> conforms
-     to a type specified by <A HREF="https://jersey.java.net/jersey-core//apidocs/javax/ws/rs/FormParam.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>FormParam</CODE></A> then processing is performed
-     as specified by <A HREF="https://jersey.java.net/jersey-core//apidocs/javax/ws/rs/FormParam.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>FormParam</CODE></A>, where the values of the form parameter
+     to a type specified by <A HREF="https://jersey.github.io/jersey-core//apidocs/javax/ws/rs/FormParam.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>FormParam</CODE></A> then processing is performed
+     as specified by <A HREF="https://jersey.github.io/jersey-core//apidocs/javax/ws/rs/FormParam.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>FormParam</CODE></A>, where the values of the form parameter
      are <code>String</code> instances produced by reading the bytes of the named body
      parts utilizing a message body reader for the <code>String</code> type and the
      media type "text/plain".
      <p>
      If there is no named part present then processing is performed as
-     specified by <A HREF="https://jersey.java.net/jersey-core//apidocs/javax/ws/rs/FormParam.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>FormParam</CODE></A>.</li>
+     specified by <A HREF="https://jersey.github.io/jersey-core//apidocs/javax/ws/rs/FormParam.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>FormParam</CODE></A>.</li>
  </ol>
  <p>
  For example, the use of this annotation allows one to support the
@@ -191,9 +191,9 @@ Binds the named body part(s) of a "multipart/form-data" request
 <DL>
 <DT><B>See Also:</B><DD><A HREF="../../../../com/sun/jersey/multipart/FormDataMultiPart.html" title="class in com.sun.jersey.multipart"><CODE>FormDataMultiPart</CODE></A>, 
 <A HREF="../../../../com/sun/jersey/multipart/FormDataBodyPart.html" title="class in com.sun.jersey.multipart"><CODE>FormDataBodyPart</CODE></A>, 
-<A HREF="https://jersey.java.net/jersey-core//apidocs/com/sun/jersey/core/header/FormDataContentDisposition.html?is-external=true" title="class or interface in com.sun.jersey.core.header"><CODE>FormDataContentDisposition</CODE></A>, 
-<A HREF="https://jersey.java.net/jersey-core//apidocs/javax/ws/rs/DefaultValue.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>DefaultValue</CODE></A>, 
-<A HREF="https://jersey.java.net/jersey-core//apidocs/javax/ws/rs/FormParam.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>FormParam</CODE></A></DL>
+<A HREF="https://jersey.github.io/jersey-core//apidocs/com/sun/jersey/core/header/FormDataContentDisposition.html?is-external=true" title="class or interface in com.sun.jersey.core.header"><CODE>FormDataContentDisposition</CODE></A>,
+<A HREF="https://jersey.github.io/jersey-core//apidocs/javax/ws/rs/DefaultValue.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>DefaultValue</CODE></A>,
+<A HREF="https://jersey.github.io/jersey-core//apidocs/javax/ws/rs/FormParam.html?is-external=true" title="class or interface in javax.ws.rs"><CODE>FormParam</CODE></A></DL>
 <HR>
 
 <P>

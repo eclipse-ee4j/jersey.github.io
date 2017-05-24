@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-media-json-jettison - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-media-json-jettison/</link>
+    <link>https://jersey.github.io/project/jersey-media-json-jettison/</link>
     <description>jersey-media-json-jettison - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2013 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.JettisonConfigured.java">org/glassfish/jersey/jettison/JettisonConfigured.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.JettisonConfigured.java">org/glassfish/jersey/jettison/JettisonConfigured.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.Stax2JettisonFactory.java">org/glassfish/jersey/jettison/internal/Stax2JettisonFactory.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.Stax2JettisonFactory.java">org/glassfish/jersey/jettison/internal/Stax2JettisonFactory.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.JettisonJaxbMarshaller.java">org/glassfish/jersey/jettison/internal/JettisonJaxbMarshaller.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.JettisonJaxbMarshaller.java">org/glassfish/jersey/jettison/internal/JettisonJaxbMarshaller.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.JettisonJaxbUnmarshaller.java">org/glassfish/jersey/jettison/internal/JettisonJaxbUnmarshaller.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.JettisonJaxbUnmarshaller.java">org/glassfish/jersey/jettison/internal/JettisonJaxbUnmarshaller.java</a>
                 </td>
                 <td>
                   0
@@ -85,7 +85,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.JettisonObjectProvider.java">org/glassfish/jersey/jettison/internal/entity/JettisonObjectProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.JettisonObjectProvider.java">org/glassfish/jersey/jettison/internal/entity/JettisonObjectProvider.java</a>
                 </td>
                 <td>
                   0
@@ -99,7 +99,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.JettisonUnmarshaller.java">org/glassfish/jersey/jettison/JettisonUnmarshaller.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.JettisonUnmarshaller.java">org/glassfish/jersey/jettison/JettisonUnmarshaller.java</a>
                 </td>
                 <td>
                   0
@@ -113,7 +113,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.JettisonJaxbContext.java">org/glassfish/jersey/jettison/JettisonJaxbContext.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.JettisonJaxbContext.java">org/glassfish/jersey/jettison/JettisonJaxbContext.java</a>
                 </td>
                 <td>
                   0
@@ -127,7 +127,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.JettisonConfig.java">org/glassfish/jersey/jettison/JettisonConfig.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.JettisonConfig.java">org/glassfish/jersey/jettison/JettisonConfig.java</a>
                 </td>
                 <td>
                   0
@@ -141,7 +141,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.package-info.java">org/glassfish/jersey/jettison/internal/entity/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.package-info.java">org/glassfish/jersey/jettison/internal/entity/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -155,7 +155,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.JettisonJaxbElementProvider.java">org/glassfish/jersey/jettison/internal/entity/JettisonJaxbElementProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.JettisonJaxbElementProvider.java">org/glassfish/jersey/jettison/internal/entity/JettisonJaxbElementProvider.java</a>
                 </td>
                 <td>
                   0
@@ -169,7 +169,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.JettisonRootElementProvider.java">org/glassfish/jersey/jettison/internal/entity/JettisonRootElementProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.JettisonRootElementProvider.java">org/glassfish/jersey/jettison/internal/entity/JettisonRootElementProvider.java</a>
                 </td>
                 <td>
                   0
@@ -183,7 +183,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.JettisonMarshaller.java">org/glassfish/jersey/jettison/JettisonMarshaller.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.JettisonMarshaller.java">org/glassfish/jersey/jettison/JettisonMarshaller.java</a>
                 </td>
                 <td>
                   0
@@ -197,7 +197,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.JettisonLowLevelProvider.java">org/glassfish/jersey/jettison/internal/entity/JettisonLowLevelProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.JettisonLowLevelProvider.java">org/glassfish/jersey/jettison/internal/entity/JettisonLowLevelProvider.java</a>
                 </td>
                 <td>
                   0
@@ -211,7 +211,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.BaseJsonMarshaller.java">org/glassfish/jersey/jettison/internal/BaseJsonMarshaller.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.BaseJsonMarshaller.java">org/glassfish/jersey/jettison/internal/BaseJsonMarshaller.java</a>
                 </td>
                 <td>
                   0
@@ -225,7 +225,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.JettisonArrayProvider.java">org/glassfish/jersey/jettison/internal/entity/JettisonArrayProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.JettisonArrayProvider.java">org/glassfish/jersey/jettison/internal/entity/JettisonArrayProvider.java</a>
                 </td>
                 <td>
                   0
@@ -239,7 +239,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.JettisonListElementProvider.java">org/glassfish/jersey/jettison/internal/entity/JettisonListElementProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.entity.JettisonListElementProvider.java">org/glassfish/jersey/jettison/internal/entity/JettisonListElementProvider.java</a>
                 </td>
                 <td>
                   0
@@ -253,7 +253,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.BaseJsonUnmarshaller.java">org/glassfish/jersey/jettison/internal/BaseJsonUnmarshaller.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.internal.BaseJsonUnmarshaller.java">org/glassfish/jersey/jettison/internal/BaseJsonUnmarshaller.java</a>
                 </td>
                 <td>
                   0
@@ -267,7 +267,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.JettisonFeature.java">org/glassfish/jersey/jettison/JettisonFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-json-jettison//checkstyle.html#org.glassfish.jersey.jettison.JettisonFeature.java">org/glassfish/jersey/jettison/JettisonFeature.java</a>
                 </td>
                 <td>
                   0

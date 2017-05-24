@@ -3,7 +3,7 @@
 <rss version="0.91">
   <channel>
     <title>jersey-examples-multipart-webapp - Checkstyle report</title>
-    <link>https://jersey.java.net/project/webapp-example-parent/multipart-webapp/</link>
+    <link>https://jersey.github.io/project/webapp-example-parent/multipart-webapp/</link>
     <description>jersey-examples-multipart-webapp - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2014 Oracle Corporation</copyright>
@@ -13,9 +13,9 @@
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/webapp-example-parent/multipart-webapp//checkstyle.html</link>
+            <link>https://jersey.github.io/project/webapp-example-parent/multipart-webapp//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/webapp-example-parent/multipart-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/webapp-example-parent/multipart-webapp//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -29,7 +29,7 @@
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/multipart-webapp//checkstyle.html#org.glassfish.jersey.examples.multipart.webapp.MultiPartFieldInjectedResource.java">org/glassfish/jersey/examples/multipart/webapp/MultiPartFieldInjectedResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/multipart-webapp//checkstyle.html#org.glassfish.jersey.examples.multipart.webapp.MultiPartFieldInjectedResource.java">org/glassfish/jersey/examples/multipart/webapp/MultiPartFieldInjectedResource.java</a>
                 </td>
                 <td>
                   0
@@ -43,7 +43,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/multipart-webapp//checkstyle.html#org.glassfish.jersey.examples.multipart.webapp.MultiPartResource.java">org/glassfish/jersey/examples/multipart/webapp/MultiPartResource.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/multipart-webapp//checkstyle.html#org.glassfish.jersey.examples.multipart.webapp.MultiPartResource.java">org/glassfish/jersey/examples/multipart/webapp/MultiPartResource.java</a>
                 </td>
                 <td>
                   0
@@ -57,7 +57,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/multipart-webapp//checkstyle.html#org.glassfish.jersey.examples.multipart.webapp.Bean.java">org/glassfish/jersey/examples/multipart/webapp/Bean.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/multipart-webapp//checkstyle.html#org.glassfish.jersey.examples.multipart.webapp.Bean.java">org/glassfish/jersey/examples/multipart/webapp/Bean.java</a>
                 </td>
                 <td>
                   0
@@ -71,7 +71,7 @@
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/webapp-example-parent/multipart-webapp//checkstyle.html#org.glassfish.jersey.examples.multipart.webapp.MyApplication.java">org/glassfish/jersey/examples/multipart/webapp/MyApplication.java</a>
+                  <a href="https://jersey.github.io/project/webapp-example-parent/multipart-webapp//checkstyle.html#org.glassfish.jersey.examples.multipart.webapp.MyApplication.java">org/glassfish/jersey/examples/multipart/webapp/MyApplication.java</a>
                 </td>
                 <td>
                   0

@@ -23,15 +23,15 @@
     </p><div class="section" title="17.1.&nbsp;Dependencies"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e9843"></a>17.1.&nbsp;Dependencies</h2></div></div></div><p>
             Jersey MVC templating support is provided by Jersey as a set of (three) extension modules:
 
-            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="https://jersey.java.net/project-info/2.0/jersey/project/jersey-mvc/dependencies.html" target="_top">jersey-mvc</a></p><p>
+            </p><div class="itemizedlist"><ul class="itemizedlist" type="disc"><li class="listitem"><p><a class="link" href="https://jersey.github.io/project-info/2.0/jersey/project/jersey-mvc/dependencies.html" target="_top">jersey-mvc</a></p><p>
                         The base module that provides API and extension SPI for MVC templating support in Jersey. This
                         module is required by any particular MVC templating engine integration module that implements the exposed
                         SPI.
-                    </p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/project-info/2.0/jersey/project/jersey-mvc-freemarker/dependencies.html" target="_top">jersey-mvc-freemarker</a></p><p>
+                    </p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/project-info/2.0/jersey/project/jersey-mvc-freemarker/dependencies.html" target="_top">jersey-mvc-freemarker</a></p><p>
                         An integration module with Freemarker-based templating engine. The module provides a custom
                         <code class="literal">TemplateProcessor</code> for Freemarker templates and a set of related engine-specific
                         configuration properties.
-                    </p></li><li class="listitem"><p><a class="link" href="https://jersey.java.net/project-info/2.0/jersey/project/jersey-mvc-jsp/dependencies.html" target="_top">jersey-mvc-jsp</a></p><p>
+                    </p></li><li class="listitem"><p><a class="link" href="https://jersey.github.io/project-info/2.0/jersey/project/jersey-mvc-jsp/dependencies.html" target="_top">jersey-mvc-jsp</a></p><p>
                         An integration module for JSP-based templating engine. The module provides a custom
                         <code class="literal">TemplateProcessor</code> for JSP templates, custom tag implementation and a set of
                         related engine-specific configuration properties.
@@ -43,7 +43,7 @@
             </p></div><p>
             If you want to use just templating API infrastructure provided by Jersey for the MVC templating support in order to
             implement your custom support for a templating engine other than the ones provided by Jersey (JSP/Freemarker),
-            you will need to add the base <a class="link" href="https://jersey.java.net/project-info/2.0/jersey/project/jersey-mvc/dependencies.html" target="_top">jersey-mvc</a> module into the list of your dependencies:
+            you will need to add the base <a class="link" href="https://jersey.github.io/project-info/2.0/jersey/project/jersey-mvc/dependencies.html" target="_top">jersey-mvc</a> module into the list of your dependencies:
 
             </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.ext&lt;/groupId&gt;
@@ -52,7 +52,7 @@
 &lt;/dependency&gt;</pre><p>
         </p><p>
             To use one of the templating engines for which Jersey provides the integration implementation (JSP/Freemarker)
-            in your project, you need to add the <a class="link" href="https://jersey.java.net/project-info/2.0/jersey/project/jersey-mvc-jsp/dependencies.html" target="_top">jersey-mvc-jsp</a> or <a class="link" href="https://jersey.java.net/project-info/2.0/jersey/project/jersey-mvc-freemarker/dependencies.html" target="_top">jersey-mvc-freemarker</a> module to your <code class="literal">pom.xml</code>
+            in your project, you need to add the <a class="link" href="https://jersey.github.io/project-info/2.0/jersey/project/jersey-mvc-jsp/dependencies.html" target="_top">jersey-mvc-jsp</a> or <a class="link" href="https://jersey.github.io/project-info/2.0/jersey/project/jersey-mvc-freemarker/dependencies.html" target="_top">jersey-mvc-freemarker</a> module to your <code class="literal">pom.xml</code>
             respectively:
 
             </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
@@ -72,7 +72,7 @@
             Maven practice to do so.
         </p><p>
             If you are not using Maven you need to make sure to have all required transitive dependencies
-            (see <a class="link" href="https://jersey.java.net/project-info/2.0/jersey/project/jersey-mvc/dependencies.html" target="_top">jersey-mvc</a>/<a class="link" href="https://jersey.java.net/project-info/2.0/jersey/project/jersey-mvc-freemarker/dependencies.html" target="_top">jersey-mvc-freemarker</a>/<a class="link" href="https://jersey.java.net/project-info/2.0/jersey/project/jersey-mvc-jsp/dependencies.html" target="_top">jersey-mvc-jsp</a>) on the classpath.
+            (see <a class="link" href="https://jersey.github.io/project-info/2.0/jersey/project/jersey-mvc/dependencies.html" target="_top">jersey-mvc</a>/<a class="link" href="https://jersey.github.io/project-info/2.0/jersey/project/jersey-mvc-freemarker/dependencies.html" target="_top">jersey-mvc-freemarker</a>/<a class="link" href="https://jersey.github.io/project-info/2.0/jersey/project/jersey-mvc-jsp/dependencies.html" target="_top">jersey-mvc-jsp</a>) on the classpath.
         </p></div><div class="section" title="17.2.&nbsp;Registration and Configuration"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e9922"></a>17.2.&nbsp;Registration and Configuration</h2></div></div></div><p>
             To use capabilities of Jersey MVC templating support in your JAX-RS/Jersey application you need to register
             <a class="link" href="http://jax-rs-spec.java.net/nonav/2.0/apidocs/javax/ws/rs/core/Feature.html" target="_top">Feature</a>s provided by the modules mentioned above. For <code class="literal">jersey-mvc</code> it is
@@ -253,7 +253,7 @@ public Viewable get() {
                         (if the deployment system is configured correctly) to add or modify templates while the application
                         is running.
                     </p></div></div></div></div><div class="section" title="17.4.&nbsp;JSP"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10280"></a>17.4.&nbsp;JSP</h2></div></div></div><p>
-            As stated earlier, Jersey provides support for JSP templates in <a class="link" href="https://jersey.java.net/project-info/2.0/jersey/project/jersey-mvc-jsp/dependencies.html" target="_top">jersey-mvc-jsp</a> extension module.
+            As stated earlier, Jersey provides support for JSP templates in <a class="link" href="https://jersey.github.io/project-info/2.0/jersey/project/jersey-mvc-jsp/dependencies.html" target="_top">jersey-mvc-jsp</a> extension module.
             There is a JSP template processor that resolves absolute template references to processable template references
             represented as JSP pages as follows:
         </p><div class="procedure" title="Procedure&nbsp;17.1.&nbsp;Resolving JSP processable template reference"><a name="d0e10288"></a><p class="title"><b>Procedure&nbsp;17.1.&nbsp;Resolving JSP processable template reference</b></p><ol class="procedure" type="1"><li class="step" title="Step 1"><p>

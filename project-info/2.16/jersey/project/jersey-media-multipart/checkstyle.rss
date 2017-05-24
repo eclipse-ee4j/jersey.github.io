@@ -20,7 +20,7 @@ under the License.
 <rss version="0.91">
   <channel>
     <title>jersey-media-multipart - Checkstyle report</title>
-    <link>https://jersey.java.net/project/jersey-media-multipart/</link>
+    <link>https://jersey.github.io/project/jersey-media-multipart/</link>
     <description>jersey-media-multipart - Checkstyle report</description>
     <language>en-us</language>
     <copyright>&#169;2010 - 2015 Oracle Corporation</copyright>
@@ -30,9 +30,9 @@ under the License.
              Warnings: 0,
              Infos: 0
       </title>
-            <link>https://jersey.java.net/project/jersey-media-multipart//checkstyle.html</link>
+            <link>https://jersey.github.io/project/jersey-media-multipart//checkstyle.html</link>
       <description>
-        <p>Click <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html">here</a> for the full Checkstyle report.</p>
+        <p>Click <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html">here</a> for the full Checkstyle report.</p>
 
         <table summary="Files" boder="1">
           <thead>
@@ -46,7 +46,7 @@ under the License.
           <tbody>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.ParameterizedHeadersMap.java">org/glassfish/jersey/media/multipart/ParameterizedHeadersMap.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.ParameterizedHeadersMap.java">org/glassfish/jersey/media/multipart/ParameterizedHeadersMap.java</a>
                 </td>
                 <td>
                   0
@@ -60,7 +60,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.DefaultMediaTypePredictor.java">org/glassfish/jersey/media/multipart/file/DefaultMediaTypePredictor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.DefaultMediaTypePredictor.java">org/glassfish/jersey/media/multipart/file/DefaultMediaTypePredictor.java</a>
                 </td>
                 <td>
                   0
@@ -74,7 +74,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.FileDataBodyPart.java">org/glassfish/jersey/media/multipart/file/FileDataBodyPart.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.FileDataBodyPart.java">org/glassfish/jersey/media/multipart/file/FileDataBodyPart.java</a>
                 </td>
                 <td>
                   0
@@ -88,7 +88,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.Boundary.java">org/glassfish/jersey/media/multipart/Boundary.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.Boundary.java">org/glassfish/jersey/media/multipart/Boundary.java</a>
                 </td>
                 <td>
                   0
@@ -102,7 +102,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.FormDataMultiPart.java">org/glassfish/jersey/media/multipart/FormDataMultiPart.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.FormDataMultiPart.java">org/glassfish/jersey/media/multipart/FormDataMultiPart.java</a>
                 </td>
                 <td>
                   0
@@ -116,7 +116,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.ContentDisposition.java">org/glassfish/jersey/media/multipart/ContentDisposition.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.ContentDisposition.java">org/glassfish/jersey/media/multipart/ContentDisposition.java</a>
                 </td>
                 <td>
                   0
@@ -130,7 +130,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.MultiPartReaderServerSide.java">org/glassfish/jersey/media/multipart/internal/MultiPartReaderServerSide.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.MultiPartReaderServerSide.java">org/glassfish/jersey/media/multipart/internal/MultiPartReaderServerSide.java</a>
                 </td>
                 <td>
                   0
@@ -144,7 +144,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.package-info.java">org/glassfish/jersey/media/multipart/file/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.package-info.java">org/glassfish/jersey/media/multipart/file/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -158,7 +158,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.MultiPartMediaTypes.java">org/glassfish/jersey/media/multipart/MultiPartMediaTypes.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.MultiPartMediaTypes.java">org/glassfish/jersey/media/multipart/MultiPartMediaTypes.java</a>
                 </td>
                 <td>
                   0
@@ -172,7 +172,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.MultiPartReaderClientSide.java">org/glassfish/jersey/media/multipart/internal/MultiPartReaderClientSide.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.MultiPartReaderClientSide.java">org/glassfish/jersey/media/multipart/internal/MultiPartReaderClientSide.java</a>
                 </td>
                 <td>
                   0
@@ -186,7 +186,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.FormDataParam.java">org/glassfish/jersey/media/multipart/FormDataParam.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.FormDataParam.java">org/glassfish/jersey/media/multipart/FormDataParam.java</a>
                 </td>
                 <td>
                   0
@@ -200,7 +200,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.BodyPartEntity.java">org/glassfish/jersey/media/multipart/BodyPartEntity.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.BodyPartEntity.java">org/glassfish/jersey/media/multipart/BodyPartEntity.java</a>
                 </td>
                 <td>
                   0
@@ -214,7 +214,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.MultiPartFeature.java">org/glassfish/jersey/media/multipart/MultiPartFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.MultiPartFeature.java">org/glassfish/jersey/media/multipart/MultiPartFeature.java</a>
                 </td>
                 <td>
                   0
@@ -228,7 +228,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.MultiPart.java">org/glassfish/jersey/media/multipart/MultiPart.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.MultiPart.java">org/glassfish/jersey/media/multipart/MultiPart.java</a>
                 </td>
                 <td>
                   0
@@ -242,7 +242,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.FormDataParamValueFactoryProvider.java">org/glassfish/jersey/media/multipart/internal/FormDataParamValueFactoryProvider.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.FormDataParamValueFactoryProvider.java">org/glassfish/jersey/media/multipart/internal/FormDataParamValueFactoryProvider.java</a>
                 </td>
                 <td>
                   0
@@ -256,7 +256,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.FormDataBodyPart.java">org/glassfish/jersey/media/multipart/FormDataBodyPart.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.FormDataBodyPart.java">org/glassfish/jersey/media/multipart/FormDataBodyPart.java</a>
                 </td>
                 <td>
                   0
@@ -270,7 +270,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.MultiPartProperties.java">org/glassfish/jersey/media/multipart/MultiPartProperties.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.MultiPartProperties.java">org/glassfish/jersey/media/multipart/MultiPartProperties.java</a>
                 </td>
                 <td>
                   0
@@ -284,7 +284,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.FormDataContentDisposition.java">org/glassfish/jersey/media/multipart/FormDataContentDisposition.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.FormDataContentDisposition.java">org/glassfish/jersey/media/multipart/FormDataContentDisposition.java</a>
                 </td>
                 <td>
                   0
@@ -298,7 +298,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.package-info.java">org/glassfish/jersey/media/multipart/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.package-info.java">org/glassfish/jersey/media/multipart/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -312,7 +312,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.StreamDataBodyPart.java">org/glassfish/jersey/media/multipart/file/StreamDataBodyPart.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.StreamDataBodyPart.java">org/glassfish/jersey/media/multipart/file/StreamDataBodyPart.java</a>
                 </td>
                 <td>
                   0
@@ -326,7 +326,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.package-info.java">org/glassfish/jersey/media/multipart/internal/package-info.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.package-info.java">org/glassfish/jersey/media/multipart/internal/package-info.java</a>
                 </td>
                 <td>
                   0
@@ -340,7 +340,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.FormDataParameterInjectionFeature.java">org/glassfish/jersey/media/multipart/internal/FormDataParameterInjectionFeature.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.FormDataParameterInjectionFeature.java">org/glassfish/jersey/media/multipart/internal/FormDataParameterInjectionFeature.java</a>
                 </td>
                 <td>
                   0
@@ -354,7 +354,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.BodyPart.java">org/glassfish/jersey/media/multipart/BodyPart.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.BodyPart.java">org/glassfish/jersey/media/multipart/BodyPart.java</a>
                 </td>
                 <td>
                   0
@@ -368,7 +368,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.MultiPartWriter.java">org/glassfish/jersey/media/multipart/internal/MultiPartWriter.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.MultiPartWriter.java">org/glassfish/jersey/media/multipart/internal/MultiPartWriter.java</a>
                 </td>
                 <td>
                   0
@@ -382,7 +382,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.MediaTypePredictor.java">org/glassfish/jersey/media/multipart/file/MediaTypePredictor.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.file.MediaTypePredictor.java">org/glassfish/jersey/media/multipart/file/MediaTypePredictor.java</a>
                 </td>
                 <td>
                   0
@@ -396,7 +396,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.BodyPartsList.java">org/glassfish/jersey/media/multipart/BodyPartsList.java</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.BodyPartsList.java">org/glassfish/jersey/media/multipart/BodyPartsList.java</a>
                 </td>
                 <td>
                   0
@@ -410,7 +410,7 @@ under the License.
               </tr>
                           <tr>
                 <td>
-                  <a href="https://jersey.java.net/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.localization.properties">org/glassfish/jersey/media/multipart/internal/localization.properties</a>
+                  <a href="https://jersey.github.io/project/jersey-media-multipart//checkstyle.html#org.glassfish.jersey.media.multipart.internal.localization.properties">org/glassfish/jersey/media/multipart/internal/localization.properties</a>
                 </td>
                 <td>
                   0
