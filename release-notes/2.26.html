@@ -13,10 +13,43 @@
 
 Release date: <strong>6-Sep-2018</strong>
 
-<!-- TODO place JIRA issues here TODO -->
-<h2>Placeholder</h2>
-<p>TBD.</p>
--->
+<p>Jersey 2.26 is a reference implementation for JAX-RS 2.1 (<a href="https://jcp.org/en/jsr/detail?id=370">https://jcp.org/en/jsr/detail?id=370</a>),
+which means it brings all new features defined there plus related code updates. Jersey 2.26 is part of Java EE 8 and is integrated in
+<a href="https://javaee.github.io/glassfish/">Glassfish 5.0</a>, which is Java EE 8 reference implementation.</p>
+
+<p>Selected features introduced in JAX-RS 2.1:
+
+<ul>
+<li>Reactive Client invocation</li>
+<li>Server sent events (SSE) support on the server and client</li>
+<li>CompletionStage support on the server side</li>
+<li>ExecutorService for client</li>
+<li>.. and other tweaks and improvements.</li>
+</ul></p>
+
+<p>Unfortunately, there was a need to make backwards incompatible changes in 2.26. Concretely jersey-proprietary reactive client API is completely
+gone and cannot be supported any longer - it conflicts with what was introduced in JAX-RS 2.1 (that's the price for Jersey being "spec playground..").</p>
+
+<p>Another bigger change in Jersey code is attempt to make Jersey core independent of any specific injection framework. As you might now,
+Jersey 2.x is (was!) pretty tightly dependent on HK2, which sometimes causes issues (esp. when running on other injection containers. Jersey
+now defines it's own injection facade, which, when implemented properly, replaces all internal Jersey injection.</p>
+
+<p>Don't be mistaken - Jersey still runs on hk2. But it should be possible to get rid off that dependency when other container provides same functionality.
+As already mentioned, the motivation is to be able to integrate seamlessly with other frameworks, like cdi, guice, etc. This is still work in progress
+and there is one consequence: user has to provide Jersey injection implementation. The only one which is 100% ready right now is based on hk2:
+
+<pre>
+        &lt;groupId&gt;org.glassfish.jersey.inject&lt;/groupId&gt;
+        &lt;artifactId&gt;jersey-hk2&lt;/artifactId&gt;
+        &lt;version&gt;2.26&lt;/version&gt;
+</pre>
+
+Jersey 2.26 also contains experimental support for CDI SE, but it is not yet suitable for production use.</p>
+
+<p>Please try out Jersey 2.26 and let us know if you find something which might be improved:<br/><br/>
+
+<a href="https://javaee.groups.io/g/jersey">Jersey mailing list</a><br />
+<a href="https://github.com/jersey/jersey/issues">Jersey issue tracker</a>
 
 <h2>Previous releases</h2>
 
