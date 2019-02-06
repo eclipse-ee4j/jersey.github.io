@@ -4,6 +4,6 @@ plugins:
 whitelist:
   - jekyll-redirect-from
 
-title: Jersey
+permalink: /
 redirect_to:
   - https://eclipse-ee4j.github.io/jersey/
