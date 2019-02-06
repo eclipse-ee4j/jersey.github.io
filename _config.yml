@@ -1,0 +1,9 @@
+plugins:
+  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-redirect-from
+
+title: Jersey
+redirect_to:
+  - https://eclipse-ee4j.github.io/jersey/
