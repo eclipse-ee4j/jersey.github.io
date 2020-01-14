@@ -1,0 +1,135 @@
+<html>
+<!--
+
+    Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+
+    This program and the accompanying materials are made available under the
+    terms of the Eclipse Public License v. 2.0, which is available at
+    http://www.eclipse.org/legal/epl-2.0.
+
+    This Source Code may also be made available under the following Secondary
+    Licenses when the conditions for such availability set forth in the
+    Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+    version 2 with the GNU Classpath Exception, which is available at
+    https://www.gnu.org/software/classpath/license.html.
+
+    SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="google-site-verification" content="OiKukTHVW4bdQqx8Fq0zA2EZ_hI6-yYL-MvkCxBxaFs" />
+    <title>Release Notes - Jersey 2.30</title>
+</head>
+
+<body>
+
+<h1>Release Notes - <a href="/">Jersey</a> 2.30</h1>
+
+Release date: <strong>10-01-2020</strong>
+
+<h2>Pull requests and issues</h2>
+<ul>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4245'>Issue 4245</a>] - Java 11 java.desktop module dependency</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4256'>Issue 4256</a>] - HK2 AbstractBinders are configured twice</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4266'>Issue 4266</a>] - Fix HeaderDelageProvider functionality</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4294'>Issue 4294</a>] - Inefficient access of LinkedList in Resource$Builder.mergeResources</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4302'>Issue 4302</a>] - Jetty 9.4.22 QueuedThreadPool compatibility</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4304'>Issue 4304</a>] - ResourceConfig not properly using specified ClassLoader</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4325'>Issue 4325</a>] - Build Jersey on JDK13</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4336'>Issue 4336</a>] - Allow to use a connector with RESTClient</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4344'>Issue 4344</a>] - Jersey 2.29 AbstractBinder.configure() called twice</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4254'>Pull 4254</a>] - Wiremock does not run now when skipTests property is set as true</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4258'>Pull 4258</a>] - Loading keystore resource if location starts with /</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4260'>Pull 4260</a>] - Jersey documentation scripts</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4268'>Pull 4268</a>] - Use locale insensitive case changes to ensure user code doesn't break…</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4271'>Pull 4271</a>] - Do not handle already handled requests on Jetty</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4272'>Pull 4272</a>] - AsyncInvocationinverceptors not properly created for each request</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4273'>Pull 4273</a>] - DocBook fixes</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4274'>Pull 4274</a>] - JsonBindingProvider provides JSON-B (not Jackson)</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4275'>Pull 4275</a>] - Throwing NoContentException when InputStream is empty</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4276'>Pull 4276</a>] - Allow for using HeaderDelegateProvider service </li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4277'>Pull 4277</a>] - HK2 to skip fields injected by CDI in non bean-defining-annotated beans</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4279'>Pull 4279</a>] - Update ASM to 7.2</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4280'>Pull 4280</a>] - Move CDI integration tests to a common CDI-Integration module</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4283'>Pull 4283</a>] - Enable to use AsyncInvoker in Rx client</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4290'>Pull 4290</a>] - release notes maven plugin (for Jersey)</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4291'>Pull 4291</a>] - Ignore tests of container-runner-maven-plugin on Windows</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4292'>Pull 4292</a>] - Assure that exception in async interceptor doesn't prevent completion</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4296'>Pull 4296</a>] - exclude javax.validation-api from bean validation dependency</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4298'>Pull 4298</a>] - Take Hk2CustomBoundTypesProvider into an account</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4300'>Pull 4300</a>] - Performance improvement in Resource.Builder#mergeResources</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4301'>Pull 4301</a>] - New client PreInvocationInterceptor and PostInvocationInterceptor SPI</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4303'>Pull 4303</a>] - Make JettyConnectorThreadPool#newThread public to comply with latest Jetty</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4306'>Pull 4306</a>] - Fixes #4304: ResourceConfig not properly using specified ClassLoader</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4307'>Pull 4307</a>] - Use Spring Context 4 in the Spring integration test</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4309'>Pull 4309</a>] - Spring 5 integration tests</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4312'>Pull 4312</a>] - Rewritten Netty Jersey implementation using direct ByteBuf consumption</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4313'>Pull 4313</a>] - new InvocationBuilderListener SPI</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4314'>Pull 4314</a>] - Override HK2 dependency versions with versions used in Jersey</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4317'>Pull 4317</a>] - Added deprecated methods back to retain backwards compatibility</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4318'>Pull 4318</a>] - Close SseEventSink at the end of the example</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4327'>Pull 4327</a>] - Allow to use additional properties with security manager/4323</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4338'>Pull 4338</a>] - Fix issues with ChunkedInputStream when using Apache Connector</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4341'>Pull 4341</a>] - Build Jersey on JDK13</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4342'>Pull 4342</a>] - Allow to disable certain default providers</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4347'>Pull 4347</a>] - ConnectorProvider support added to mp rest client</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4349'>Pull 4349</a>] - Prevent HK2 AbstractBinder from being configured twice.</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4350'>Pull 4350</a>] - Updated versions of 3rd party content</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4352'>Pull 4352</a>] - Replace an Exception thrown with BAD_REQUEST</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4353'>Pull 4353</a>] - OSGI groupId fix</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4358'>Pull 4358</a>] - initialize legal.source.folder property by plugin</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4359'>Pull 4359</a>] - Fix check style</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4360'>Pull 4360</a>] - Legal files for common</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4361'>Pull 4361</a>] - Properties and plugin change of examples module for legal files</li>
+
+</ul>
+<h2>Previous releases</h2>
+
+<ul>
+    <li><a href="2.30.html">Jersey 2.30 Release Notes</a></li>
+    <li><a href="2.29.1.html">Jersey 2.29.1 Release Notes</a></li>
+    <li><a href="2.29.html">Jersey 2.29 Release Notes</a></li>
+    <li><a href="2.28.html">Jersey 2.28 Release Notes</a></li>
+    <li><a href="2.25.1.html">Jersey 2.25.1 Release Notes</a></li>
+    <li><a href="2.25.html">Jersey 2.25 Release Notes</a></li>
+    <li><a href="2.24.1.html">Jersey 2.24.1 Release Notes</a></li>
+    <li><a href="2.24.html">Jersey 2.24 Release Notes</a></li>
+    <li><a href="2.23.2.html">Jersey 2.23.2 Release Notes</a></li>
+    <li><a href="2.23.1.html">Jersey 2.23.1 Release Notes</a></li>
+    <li><a href="2.23.html">Jersey 2.23 Release Notes</a></li>
+    <li><a href="2.22.2.html">Jersey 2.22.2 Release Notes</a></li>
+    <li><a href="2.22.1.html">Jersey 2.22.1 Release Notes</a></li>
+    <li><a href="2.22.html">Jersey 2.22 Release Notes</a></li>
+    <li><a href="2.21.1.html">Jersey 2.21.1 Release Notes</a></li>
+    <li><a href="2.21.html">Jersey 2.21 Release Notes</a></li>
+    <li><a href="2.20.html">Jersey 2.20 Release Notes</a></li>
+    <li><a href="2.19.html">Jersey 2.19 Release Notes</a></li>
+    <li><a href="2.18.html">Jersey 2.18 Release Notes</a></li>
+    <li><a href="2.17.html">Jersey 2.17 Release Notes</a></li>
+    <li><a href="2.16.html">Jersey 2.16 Release Notes</a></li>
+    <li><a href="2.14.html">Jersey 2.14 Release Notes</a></li>
+    <li><a href="2.13.html">Jersey 2.13 Release Notes</a></li>
+    <li><a href="2.12.html">Jersey 2.12 Release Notes</a></li>
+    <li><a href="2.11.html">Jersey 2.11 Release Notes</a></li>
+    <li><a href="2.10.1.html">Jersey 2.10.1 Release Notes</a></li>
+    <li><a href="2.10.html">Jersey 2.10 Release Notes</a></li>
+    <li><a href="2.9.1.html">Jersey 2.9.1 Release Notes</a></li>
+    <li><a href="2.9.html">Jersey 2.9 Release Notes</a></li>
+    <li><a href="2.8.html">Jersey 2.8 Release Notes</a></li>
+    <li><a href="2.7.html">Jersey 2.7 Release Notes</a></li>
+    <li><a href="2.6.html">Jersey 2.6 Release Notes</a></li>
+    <li><a href="2.5.1.html">Jersey 2.5.1 Release Notes</a></li>
+    <li><a href="2.5.html">Jersey 2.5 Release Notes</a></li>
+    <li><a href="2.4.1.html">Jersey 2.4.1 Release Notes</a></li>
+    <li><a href="2.4.html">Jersey 2.4 Release Notes</a></li>
+    <li><a href="2.3.1.html">Jersey 2.3.1 Release Notes</a></li>
+    <li><a href="2.3.html">Jersey 2.3 Release Notes</a></li>
+    <li><a href="2.2.html">Jersey 2.2 Release Notes</a></li>
+    <li><a href="2.1.html">Jersey 2.1 Release Notes</a></li>
+    <li><a href="2.0.html">Jersey 2.0 Release Notes</a></li>
+</ul>
+
+</body>
+</html>
