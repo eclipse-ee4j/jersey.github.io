@@ -1,0 +1,113 @@
+<html>
+<!--
+
+    Copyright (c) 2020 Oracle and/or its affiliates. All rights reserved.
+
+    This program and the accompanying materials are made available under the
+    terms of the Eclipse Public License v. 2.0, which is available at
+    http://www.eclipse.org/legal/epl-2.0.
+
+    This Source Code may also be made available under the following Secondary
+    Licenses when the conditions for such availability set forth in the
+    Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+    version 2 with the GNU Classpath Exception, which is available at
+    https://www.gnu.org/software/classpath/license.html.
+
+    SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="google-site-verification" content="OiKukTHVW4bdQqx8Fq0zA2EZ_hI6-yYL-MvkCxBxaFs" />
+    <title>Release Notes - Jersey 2.31</title>
+</head>
+
+<body>
+
+<h1>Release Notes - <a href="/">Jersey</a> 2.31</h1>
+
+Release date: <strong>22-05-2020</strong>
+
+<h2>Pull requests and issues</h2>
+<ul>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4362'>Issue 4362</a>] - Upgrade Hibernate Validator to 6.1.0.Final</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4458'>Issue 4458</a>] - ApacheConnector force the useSystemProperties flag to false</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4375'>Pull 4375</a>] - Fixed #3801 - inject cdi into custom validator</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4414'>Pull 4414</a>] - Use standard pom.xml structure in tests/integration/microprofile</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4415'>Pull 4415</a>] - Use request scope ClientProperties.READ_TIMEOUT in Jetty && Netty</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4419'>Pull 4419</a>] - Allow to use HeaderDelegateProvider to parse the response MediaType</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4425'>Pull 4425</a>] - Updated GF, Jetty, Mimepull, Moxy, Yasson dependencies</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4426'>Pull 4426</a>] - Support jdk15</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4429'>Pull 4429</a>] - Make sure the RX invoker gets ExecutorService from Provider</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4431'>Pull 4431</a>] - Adopt ASM 8.0</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4432'>Pull 4432</a>] - Upgraded bean validation to 6.1.2.Final</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4438'>Pull 4438</a>] - Fix jersey examples</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4441'>Pull 4441</a>] - Fix some build warnings and a multithread warning, when building with…</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4442'>Pull 4442</a>] - JerseyInvocation should override toString()</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4447'>Pull 4447</a>] - feat: allow json-jackson to auto-discover modules</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4450'>Pull 4450</a>] - When no JAX-B RI on CP warn and disable WADL</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4453'>Pull 4453</a>] - jersey-2031</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4459'>Pull 4459</a>] - Activate useSystemProperties into ApacheConnector (#4458)</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4460'>Pull 4460</a>] - Offer the Client (partial) response in ProcessingException.</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4461'>Pull 4461</a>] - Allow the user for overriding the default Viewable MediaType</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4466'>Pull 4466</a>] - Updated NOTICE files and regarding legal information</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4467'>Pull 4467</a>] - Be able to use invocation interceptor for multiple requests</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4469'>Pull 4469</a>] - ClientDestroyTest fix</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4471'>Pull 4471</a>] - Run tests with JDK11 in servlet-2.5-mvc-1</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4472'>Pull 4472</a>] - Set additional security features on SecureSaxParserFactory.</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4473'>Pull 4473</a>] - Execute tests in servlet-2.5-mvc-3</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4475'>Pull 4475</a>] - Set Bundle-ActivationPolicy on core-common module</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4477'>Pull 4477</a>] - Connector to Helidon 2 Web Client</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4482'>Pull 4482</a>] - javadoc fix for helidon connector</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4483'>Pull 4483</a>] - Moved localization messages to a proper folder</li>
+
+</ul>
+<h2>Previous releases</h2>
+
+<ul>
+    <li><a href="2.31.html">Jersey 2.31 Release Notes</a></li>
+    <li><a href="2.29.1.html">Jersey 2.29.1 Release Notes</a></li>
+    <li><a href="2.29.html">Jersey 2.29 Release Notes</a></li>
+    <li><a href="2.28.html">Jersey 2.28 Release Notes</a></li>
+    <li><a href="2.25.1.html">Jersey 2.25.1 Release Notes</a></li>
+    <li><a href="2.25.html">Jersey 2.25 Release Notes</a></li>
+    <li><a href="2.24.1.html">Jersey 2.24.1 Release Notes</a></li>
+    <li><a href="2.24.html">Jersey 2.24 Release Notes</a></li>
+    <li><a href="2.23.2.html">Jersey 2.23.2 Release Notes</a></li>
+    <li><a href="2.23.1.html">Jersey 2.23.1 Release Notes</a></li>
+    <li><a href="2.23.html">Jersey 2.23 Release Notes</a></li>
+    <li><a href="2.22.2.html">Jersey 2.22.2 Release Notes</a></li>
+    <li><a href="2.22.1.html">Jersey 2.22.1 Release Notes</a></li>
+    <li><a href="2.22.html">Jersey 2.22 Release Notes</a></li>
+    <li><a href="2.21.1.html">Jersey 2.21.1 Release Notes</a></li>
+    <li><a href="2.21.html">Jersey 2.21 Release Notes</a></li>
+    <li><a href="2.20.html">Jersey 2.20 Release Notes</a></li>
+    <li><a href="2.19.html">Jersey 2.19 Release Notes</a></li>
+    <li><a href="2.18.html">Jersey 2.18 Release Notes</a></li>
+    <li><a href="2.17.html">Jersey 2.17 Release Notes</a></li>
+    <li><a href="2.16.html">Jersey 2.16 Release Notes</a></li>
+    <li><a href="2.14.html">Jersey 2.14 Release Notes</a></li>
+    <li><a href="2.13.html">Jersey 2.13 Release Notes</a></li>
+    <li><a href="2.12.html">Jersey 2.12 Release Notes</a></li>
+    <li><a href="2.11.html">Jersey 2.11 Release Notes</a></li>
+    <li><a href="2.10.1.html">Jersey 2.10.1 Release Notes</a></li>
+    <li><a href="2.10.html">Jersey 2.10 Release Notes</a></li>
+    <li><a href="2.9.1.html">Jersey 2.9.1 Release Notes</a></li>
+    <li><a href="2.9.html">Jersey 2.9 Release Notes</a></li>
+    <li><a href="2.8.html">Jersey 2.8 Release Notes</a></li>
+    <li><a href="2.7.html">Jersey 2.7 Release Notes</a></li>
+    <li><a href="2.6.html">Jersey 2.6 Release Notes</a></li>
+    <li><a href="2.5.1.html">Jersey 2.5.1 Release Notes</a></li>
+    <li><a href="2.5.html">Jersey 2.5 Release Notes</a></li>
+    <li><a href="2.4.1.html">Jersey 2.4.1 Release Notes</a></li>
+    <li><a href="2.4.html">Jersey 2.4 Release Notes</a></li>
+    <li><a href="2.3.1.html">Jersey 2.3.1 Release Notes</a></li>
+    <li><a href="2.3.html">Jersey 2.3 Release Notes</a></li>
+    <li><a href="2.2.html">Jersey 2.2 Release Notes</a></li>
+    <li><a href="2.1.html">Jersey 2.1 Release Notes</a></li>
+    <li><a href="2.0.html">Jersey 2.0 Release Notes</a></li>
+</ul>
+
+</body>
+</html>
