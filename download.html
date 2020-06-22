@@ -106,16 +106,38 @@
 	<div class="row">
 		<div class="span12">
 			<div class="body-content">
-<div class="section"> 
+<div class="section">
+ <div class="section"> 
+  <h3 id="JAX-RS_3.0__Jersey_3.0.0_M6">JAX-RS 3.0.0-M1 / Jersey 3.0.0-M6</h3> 
+  <p>Jersey&nbsp;3.0.0-M6, that implements <a class="externalLink" href="https://jakarta.ee/specifications/restful-ws/3.0/">Jakarta RESTful WebServices 3.0</a> API is the future release of Jersey. Note that Jersey 2.x releases will continue along with Jersey 3.x releases.</p>
+  <p>For the convenience of non-maven developers the following links are provided:</p> 
+  <ul> 
+   <li><a class="externalLink" href="https://repo1.maven.org/maven2/org/glassfish/jersey/bundles/jaxrs-ri/3.0.0-M6/jaxrs-ri-3.0.0-M6.zip"><var class="icon-cloud-download"></var> Jersey 3.0.0-M6 RI bundle</a> bundle contains the Jakarta RESTful WebServices 3.0.0-M1 API jar, all the core Jersey module jars as well as all the required 3rd-party dependencies.</li> 
+  </ul> 
+  <p>All the Jersey 3 release binaries, including the source &amp; apidocs jars, are available for download under the Jersey 3 maven root group identifier&nbsp;<tt>org.glassfish.jersey</tt> from the&nbsp; <a class="externalLink" href="http://repo1.maven.org/maven2/org/glassfish/jersey/">central maven repository</a> as well as from the&nbsp;<a class="externalLink" href="https://jakarta.oss.sonatype.org/content/groups/public/org/glassfish/jersey/">sonatype maven repository</a>.</p>
+  <p>For the full list of updates for Jersey 3.0.0-M6, see  <a class="externalLink" href="https://github.com/eclipse-ee4j/jersey/releases/tag/3.0.0-M6">Jersey 3.0.0-M6 tag</a>.</p>
+  <p>Chances are you are using Apache Maven as a build &amp; dependency management tool for your project. If you do, there is a very easy and convenient way to start playing with Jersey 3.0.0-M6 by generating the skeleton application from one of the Jersey 3 maven archetypes that we provide. For instance, to create a Jersey 3.0.0-M6 application using the Grizzly 3 HTTP server container, use</p> 
+  <div class="source"> 
+   <pre>mvn archetype:generate -DarchetypeGroupId=org.glassfish.jersey.archetypes \
+   &nbsp;-DarchetypeArtifactId=jersey-quickstart-grizzly2 -DarchetypeVersion=3.0.0-M6
+   </pre>
+  </div> 
+  <p>If you want to create a Servlet container deployable Jersey 3.0.0-M6 web application instead, use</p> 
+  <div class="source"> 
+   <pre>mvn archetype:generate -DarchetypeGroupId=org.glassfish.jersey.archetypes \
+    -DarchetypeArtifactId=jersey-quickstart-webapp -DarchetypeVersion=3.0.0-M6
+   </pre>
+  </div> 
+ </div>
  <div class="section"> 
   <h3 id="JAX-RS_2.1__Jersey_2.26">JAX-RS 2.1 / Jersey 2.26+</h3> 
   <p>Jersey&nbsp;2.31, that implements <a class="externalLink" href="https://jcp.org/en/jsr/detail?id=370">JAX-RS 2.1 API</a> API is the most recent release of Jersey. To see the details about all changes, bug fixed and updates, please check the <a class="externalLink" href="https://jersey.github.io/release-notes/2.31.html">Jersey 2.31 Release Notes</a>.</p> 
   <p>For the convenience of non-maven developers the following links are provided:</p> 
   <ul> 
-   <li><a class="externalLink" href="http://repo1.maven.org/maven2/org/glassfish/jersey/bundles/jaxrs-ri/2.31/jaxrs-ri-2.31.zip"><var class="icon-cloud-download"></var> Jersey JAX-RS 2.1 RI bundle</a> bundle contains the JAX-RS 2.1 API jar, all the core Jersey module jars as well as all the required 3rd-party dependencies.</li> 
-   <li><a class="externalLink" href="http://repo1.maven.org/maven2/org/glassfish/jersey/bundles/jersey-examples/2.31/jersey-examples-2.31-all.zip"><var class="icon-cloud-download"></var> Jersey 2.31 Examples bundle</a> provides convenient access to the Jersey 2 examples for off-line browsing.</li> 
+   <li><a class="externalLink" href="https://repo1.maven.org/maven2/org/glassfish/jersey/bundles/jaxrs-ri/2.31/jaxrs-ri-2.31.zip"><var class="icon-cloud-download"></var> Jersey JAX-RS 2.1 RI bundle</a> bundle contains the JAX-RS 2.1 API jar, all the core Jersey module jars as well as all the required 3rd-party dependencies.</li> 
+   <li><a class="externalLink" href="https://repo1.maven.org/maven2/org/glassfish/jersey/bundles/jersey-examples/2.31/jersey-examples-2.31-all.zip"><var class="icon-cloud-download"></var> Jersey 2.31 Examples bundle</a> provides convenient access to the Jersey 2 examples for off-line browsing.</li> 
   </ul> 
-  <p>All the Jersey 2 release binaries, including the source &amp; apidocs jars, are available for download under the Jersey 2 maven root group identifier&nbsp;<tt>org.glassfish.jersey</tt> from the&nbsp; <a class="externalLink" href="http://repo1.maven.org/maven2/org/glassfish/jersey/">central maven repository</a> as well as from the&nbsp;<a class="externalLink" href="https://oss.sonatype.org/content/groups/public/org/glassfish/jersey/">java.net maven repository</a>.</p> 
+  <p>All the Jersey 2 release binaries, including the source &amp; apidocs jars, are available for download under the Jersey 2 maven root group identifier&nbsp;<tt>org.glassfish.jersey</tt> from the&nbsp; <a class="externalLink" href="http://repo1.maven.org/maven2/org/glassfish/jersey/">central maven repository</a> as well as from the&nbsp;<a class="externalLink" href="https://oss.sonatype.org/content/groups/public/org/glassfish/jersey/">sonatype maven repository</a>.</p> 
   <p>Chances are you are using Apache Maven as a build &amp; dependency management tool for your project. If you do, there is a very easy and convenient way to start playing with Jersey 2.31 by generating the skeleton application from one of the Jersey 2 maven archetypes that we provide. For instance, to create a Jersey 2.31 application using the Grizzly 2 HTTP server container, use</p> 
   <div class="source"> 
    <pre>mvn archetype:generate -DarchetypeGroupId=org.glassfish.jersey.archetypes \
