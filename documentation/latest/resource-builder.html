@@ -15,15 +15,15 @@
                 Table of Contents
             </a> | <a href="user-guide.html">
                 Single HTML
-            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="resource-builder"></a>Chapter&nbsp;14.&nbsp;Programmatic API for Building Resources</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="resource-builder.html#d0e10987">14.1. Introduction</a></span></dt><dt><span class="section"><a href="resource-builder.html#d0e11032">14.2. Programmatic Hello World example</a></span></dt><dd><dl><dt><span class="section"><a href="resource-builder.html#d0e11104">14.2.1. Deployment of programmatic resources</a></span></dt></dl></dd><dt><span class="section"><a href="resource-builder.html#d0e11166">14.3. Additional examples</a></span></dt><dt><span class="section"><a href="resource-builder.html#d0e11225">14.4. Model processors</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10987"></a>14.1.&nbsp;Introduction</h2></div></div></div><p>A standard approach of developing JAX-RS application is to implement resource classes annotated with <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a>
-            with resource methods annotated with HTTP method annotations like <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//GET.html" target="_top">@GET</a> or <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//POST.html" target="_top">@POST</a> and
+            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="resource-builder"></a>Chapter&nbsp;14.&nbsp;Programmatic API for Building Resources</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="resource-builder.html#d0e10987">14.1. Introduction</a></span></dt><dt><span class="section"><a href="resource-builder.html#d0e11032">14.2. Programmatic Hello World example</a></span></dt><dd><dl><dt><span class="section"><a href="resource-builder.html#d0e11104">14.2.1. Deployment of programmatic resources</a></span></dt></dl></dd><dt><span class="section"><a href="resource-builder.html#d0e11166">14.3. Additional examples</a></span></dt><dt><span class="section"><a href="resource-builder.html#d0e11225">14.4. Model processors</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e10987"></a>14.1.&nbsp;Introduction</h2></div></div></div><p>A standard approach of developing JAX-RS application is to implement resource classes annotated with <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a>
+            with resource methods annotated with HTTP method annotations like <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/GET.html" target="_top">@GET</a> or <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/POST.html" target="_top">@POST</a> and
             implement needed functionality. This approach is described in the chapter
             <a class="link" href="jaxrs-resources.html" target="_top">JAX-RS Application, Resources and Sub-Resources</a>. Besides this standard
             JAX-RS approach, Jersey offers an API for constructing resources programmatically.
             </p><p>
             Imagine a situation where a deployed JAX-RS application consists of many resource classes. These resources implement
-            standard HTTP methods like  <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//GET.html" target="_top">@GET</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//POST.html" target="_top">@POST</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//DELETE.html" target="_top">@DELETE</a>. In some situations it would be useful to add
-            an <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//OPTIONS.html" target="_top">@OPTIONS</a> method which would return some kind of meta data about the deployed resource. Ideally, you would
+            standard HTTP methods like  <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/GET.html" target="_top">@GET</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/POST.html" target="_top">@POST</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/DELETE.html" target="_top">@DELETE</a>. In some situations it would be useful to add
+            an <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/OPTIONS.html" target="_top">@OPTIONS</a> method which would return some kind of meta data about the deployed resource. Ideally, you would
             want to expose the functionality as an additional feature and you want to decide at the deploy time whether you want
             to add your custom <code class="literal">OPTIONS</code> method. However, when custom <code class="literal">OPTIONS</code> method are not
             enabled you would like to be <code class="literal">OPTIONS</code> requests handled in the standard way by JAX-RS runtime. To
@@ -104,7 +104,7 @@
             necessary to define a resource method handler (i.e. the code of the resource method that will return "Hello World!").
             There are more options how a resource method can be handled. In the example the implementation of
             <code class="literal">Inflector</code> is used. The Jersey <code class="literal">Inflector</code> interface defines a simple contract for
-            transformation of a request into a response. An inflector can either return a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Response.html" target="_top">Response</a> or directly
+            transformation of a request into a response. An inflector can either return a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Response.html" target="_top">Response</a> or directly
             an entity object, the way it is shown in the example. Another option is to setup a Java method handler using
             <code class="literal">handledBy(Class&lt;?&gt; handlerClass, Method method)</code> and pass it the chosen
             <code class="literal">java.lang.reflect.Method</code> instance together with the enclosing class.
@@ -116,9 +116,9 @@
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e11104"></a>14.2.1.&nbsp;Deployment of programmatic resources</h3></div></div></div><p>
                 Let's now look at how a programmatic resources are deployed.
                 The easiest way to setup your application as well as register any programmatic resources in Jersey
-                is to use a Jersey <code class="literal">ResourceConfig</code> utility class, an extension of <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Application.html" target="_top">Application</a>
+                is to use a Jersey <code class="literal">ResourceConfig</code> utility class, an extension of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Application.html" target="_top">Application</a>
                 class.
-                If you deploy your Jersey application into a Servlet container you will need to provide a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Application.html" target="_top">Application</a>
+                If you deploy your Jersey application into a Servlet container you will need to provide a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Application.html" target="_top">Application</a>
                 subclass that will be used for configuration. You may use a <code class="literal">web.xml</code> where you would define a
                 <code class="literal">org.glassfish.jersey.servlet.ServletContainer</code> Servlet entry there and specify initial parameter
                 <code class="literal">javax.ws.rs.Application</code> with the class name of your JAX-RS Application that you
@@ -174,7 +174,7 @@
             existing JAX-RS resources and use builder API to enhance such these standard resources.
             In the example we used already implemented <code class="literal">HelloWorldResource</code> resource class
             and enhanced it by <code class="literal">OPTIONS</code> method. The <code class="literal">OPTIONS</code> method is handled by an Inflector which
-            returns <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Response.html" target="_top">Response</a>.
+            returns <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Response.html" target="_top">Response</a>.
          </p><p>
             The following sample shows how to define sub-resource methods (methods that contains sub-path).
         </p><p>

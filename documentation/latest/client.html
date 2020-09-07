@@ -72,7 +72,7 @@
             supplied with the JDK place too much focus on the Client-Server constraint for the exchanges of request and
             responses rather than a resource, identified by a URI, and the use of a fixed set of HTTP methods.
         </p><p>A resource in the JAX-RS client API is an instance of the Java class
-            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/WebTarget.html" target="_top">WebTarget</a>.
+            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>.
             and encapsulates an URI. The fixed set of HTTP methods can be invoked based on the
             <code class="literal">WebTarget</code>.
             The representations are Java types, instances of which, may contain links that new instances of
@@ -82,7 +82,7 @@
             inject in ways that are not so intuitive or possible with other client-side APIs.
             The Jersey Client API reuses many aspects of the JAX-RS and the Jersey implementation such as:
             </p><div class="orderedlist"><ol class="orderedlist" type="1"><li class="listitem"><p>
-                        URI building using <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/UriBuilder.html" target="_top">UriBuilder</a> and <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/uri/UriTemplate.html" target="_top">UriTemplate</a> to safely build URIs;
+                        URI building using <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/UriBuilder.html" target="_top">UriBuilder</a> and <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/uri/UriTemplate.html" target="_top">UriTemplate</a> to safely build URIs;
                     </p></li><li class="listitem"><p>Built-in support for Java types of representations such as
                         <code class="literal">byte[]</code>,
                         <code class="literal">String</code>,
@@ -118,17 +118,17 @@ target.request(MediaType.APPLICATION_JSON_TYPE)
         MyJAXBBean.class);</pre></div></div><p><br class="example-break">
 
             In the <a class="xref" href="client.html#client.ex.formpost" title="Example&nbsp;5.1.&nbsp;POST request with form parameters">Example&nbsp;5.1, &#8220;POST request with form parameters&#8221;</a> a new <code class="literal">WebTarget</code> instance is created using a new
-            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a> instance first, next a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Form.html" target="_top">Form</a> instance is created with two form parameters.
+            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> instance first, next a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Form.html" target="_top">Form</a> instance is created with two form parameters.
             Once ready, the <code class="literal">Form</code> instance is <code class="literal">POST</code>ed to the target resource.
             First, the acceptable media type is specified in the <code class="literal">request(...)</code> method. Then in the
-            <code class="literal">post(...)</code> method, a call to a static method on JAX-RS <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Entity.html" target="_top">Entity</a> is made to construct
+            <code class="literal">post(...)</code> method, a call to a static method on JAX-RS <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Entity.html" target="_top">Entity</a> is made to construct
             the request entity instance and attach the proper content media type to the form entity that is being sent. The
             second parameter in the <code class="literal">post(...)</code> method specifies the Java type of the response entity that should
             be returned from the method in case of a successful response. In this case an instance of JAXB bean is requested to
-            be returned on success. The Jersey client API takes care of selecting the proper <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> for
+            be returned on success. The Jersey client API takes care of selecting the proper <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> for
             the serialization of the <code class="literal">Form</code> instance, invoking the <code class="literal">POST</code> request and producing and
             de-serialization of the response message payload into an instance of a JAXB bean using a proper
-            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>.
+            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>.
         </p><p>If the code above had to be written using <code class="literal">HttpUrlConnection</code>, the developer would have to write custom
             code to serialize the form data that are sent within the POST request and de-serialize the response input stream
             into a JAXB bean. Additionally, more code would have to be written to make it easy to reuse the logic when
@@ -146,10 +146,10 @@ target.request(MediaType.APPLICATION_JSON_TYPE)
             </h3></div></div></div><p>
                 JAX-RS Client API is designed to allow fluent programming model. This means, a construction of a
                 <code class="literal">Client</code> instance, from which a <code class="literal">WebTarget</code> is created, from which a
-                request <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Invocation.html" target="_top">Invocation</a> is built and invoked can be chained in a single "flow" of invocations.
+                request <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Invocation.html" target="_top">Invocation</a> is built and invoked can be chained in a single "flow" of invocations.
                 The individual steps of the flow will be shown in the following sections.
                 To utilize the client API it is first necessary to build an instance of a
-                <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a> using one of the static <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientBuilder.html" target="_top">ClientBuilder</a> factory methods. Here's the most
+                <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> using one of the static <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> factory methods. Here's the most
                 simple example:
 
                 </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Client client = ClientBuilder.newClient();</pre><p>
@@ -161,7 +161,7 @@ target.request(MediaType.APPLICATION_JSON_TYPE)
             </p><p>
                 A <code class="literal">Client</code> instance can be configured during creation by passing a <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a>
                 to the <code class="literal">newClient(Configurable)</code> <code class="literal">ClientBuilder</code> factory method.
-                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a> implements <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configurable.html" target="_top">Configurable</a> and therefore it offers methods to register
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a> implements <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a> and therefore it offers methods to register
                 providers (e.g. features or individual entity providers, filters or interceptors) and setup properties.
                 The following code shows a registration of custom client filters:
 
@@ -175,7 +175,7 @@ Client client = ClientBuilder.newClient(clientConfig);</pre><p>
                 Once a <code class="literal">ClientConfig</code> instance is configured, it can be passed to the
                 <code class="literal">ClientBuilder</code> to create a pre-configured <code class="literal">Client</code> instance.
             </p><p>
-                Note that the Jersey <code class="literal">ClientConfig</code> supports the fluent API model of <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configurable.html" target="_top">Configurable</a>.
+                Note that the Jersey <code class="literal">ClientConfig</code> supports the fluent API model of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a>.
                 With that the code that configures a new client instance can be also written using a more compact style as shown
                 below.
 
@@ -186,7 +186,7 @@ Client client = ClientBuilder.newClient(new ClientConfig()
 
                 The ability to leverage this compact pattern is inherent to all JAX-RS and Jersey Client API components.
             </p><p>
-                Since <code class="literal">Client</code> implements <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configurable.html" target="_top">Configurable</a> interface too, it can be configured further
+                Since <code class="literal">Client</code> implements <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a> interface too, it can be configured further
                 even after it has been created. Important is to mention that any configuration change done on a
                 <code class="literal">Client</code> instance will not influence the <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a> instance that was used to
                 provide the initial <code class="literal">Client</code> instance configuration at the instance creation time.
@@ -287,7 +287,7 @@ webTarget.register(FilterForExampleCom.class);</pre><p>
                 parameters too.
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e4719"></a>5.3.5.&nbsp;Invoking a HTTP request</h3></div></div></div><p>
                 Let's now focus on invoking a <code class="literal">GET</code> HTTP request on the created web targets. To start building a new
-                HTTP request invocation, we need to create a new <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Invocation.Builder.html" target="_top">Invocation.Builder</a>.
+                HTTP request invocation, we need to create a new <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Invocation.Builder.html" target="_top">Invocation.Builder</a>.
 
                 </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Invocation.Builder invocationBuilder =
         helloworldWebTargetWithQueryParam.request(MediaType.TEXT_PLAIN_TYPE);
@@ -304,13 +304,13 @@ invocationBuilder.header("some-header", "true");</pre><p>
                 header to value <code class="literal">true</code>.
             </p><p>
                 Once finished with request customizations, it's time to invoke the request. We have two options now.
-                We can use the <code class="literal">Invocation.Builder</code> to build a generic <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Invocation.html" target="_top">Invocation</a> instance
+                We can use the <code class="literal">Invocation.Builder</code> to build a generic <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Invocation.html" target="_top">Invocation</a> instance
                 that will be invoked some time later. Using <code class="literal">Invocation</code> we will be able to e.g. set additional
                 request properties which are properties in a batch of several requests and use the generic JAX-RS
                 <code class="literal">Invocation</code> API to invoke the batch of requests without actually knowing all the details
                 (such as request HTTP method, configuration etc.). Any properties set on an invocation instance can be read
-                during the request processing. For example, in a custom <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a> you can call
-                <code class="literal">getProperty()</code> method on the supplied <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientRequestContext.html" target="_top">ClientRequestContext</a> to read a request
+                during the request processing. For example, in a custom <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a> you can call
+                <code class="literal">getProperty()</code> method on the supplied <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientRequestContext.html" target="_top">ClientRequestContext</a> to read a request
                 property. Note that these request properties are different from the configuration properties set on
                 <code class="literal">Configurable</code>. As mentioned earlier, an <code class="literal">Invocation</code> instance provides generic
                 invocation API to invoke the HTTP request it represents either synchronously or asynchronously. See
@@ -345,7 +345,7 @@ Hi World!</pre><p>
                 in the resource target, when <code class="literal">response.readEntity(String.class)</code> gets called, the response
                 returned from the remote endpoint is passed through the response filter chain (including the
                 <code class="literal">MyClientResponseFilter</code>) and entity interceptor chain and at last a proper
-                <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> is located to read the response content bytes from the response stream into a
+                <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> is located to read the response content bytes from the response stream into a
                 Java <code class="literal">String</code> instance. Check <a class="xref" href="filters-and-interceptors.html" title="Chapter&nbsp;10.&nbsp;Filters and Interceptors">Chapter&nbsp;10, <i>Filters and Interceptors</i></a> to lear more about
                 request and response filters and entity interceptors.
             </p><p>
@@ -441,14 +441,14 @@ webTarget.request().post(Entity.entity(f, MediaType.TEXT_PLAIN_TYPE));
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e4940"></a>5.4.1.&nbsp;Adding support for new representations</h3></div></div></div><p>
                 The support for new application-defined representations as Java types requires the
                 implementation of the same JAX-RS entity provider extension interfaces as for the server side JAX-RS API, namely
-                <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> and <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a>
+                <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> and <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a>
                 respectively, for request and response entities (or inbound and outbound representations).
             </p><p>
                 Classes or implementations of the provider-based interfaces need to be registered as providers within the
                 JAX-RS or Jersey Client API components that implement <code class="literal">Configurable</code> contract
                 (<code class="literal">ClientBuilder</code>, <code class="literal">Client</code>, <code class="literal">WebTarget</code> or
                 <code class="literal">ClientConfig</code>), as was shown in the earlier sections.
-                Some media types are provided in the form of JAX-RS <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Feature.html" target="_top">Feature</a> a concept that allows the extension
+                Some media types are provided in the form of JAX-RS <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Feature.html" target="_top">Feature</a> a concept that allows the extension
                 providers to group together multiple different extension providers and/or configuration properties in order
                 to simplify the registration and configuration of the provided feature by the end users. For example,
                 <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/moxy/json/MoxyJsonFeature.html" target="_top">MoxyJsonFeature</a> can be register to enable and configure JSON binding support via MOXy
@@ -564,8 +564,8 @@ System.out.println("Now the connection is closed.");</pre></div></div><br class=
             Injections into client providers (filters, interceptor) are possible as long as the provider is
             registered as a class. If the provider is registered as an instance then runtime will not inject
             the provider. The reason is that this provider instance might be registered into multiple client
-            configurations. For example one instance of <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a> can be registered
-            to two <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a>s.
+            configurations. For example one instance of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a> can be registered
+            to two <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a>s.
         </p><p>
             To solve injection of a custom type into a client provider instance
             use <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/ServiceLocatorClientProvider.html" target="_top">ServiceLocatorClientProvider</a> to
@@ -592,7 +592,7 @@ System.out.println("Now the connection is closed.");</pre></div></div><br class=
             (and javadoc of <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/ServiceLocatorProvider.html" target="_top">ServiceLocatorProvider</a> which supports common JAX-RS components).
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e5317"></a>5.9.&nbsp;Securing a Client</h2></div></div></div><p>
             This section describes how to setup SSL configuration on Jersey client (using JAX-RS API). The SSL configuration is
-            setup in <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientBuilder.html" target="_top">ClientBuilder</a>. The client builder contains methods for definition of <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.html" target="_top">KeyStore</a>,
+            setup in <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a>. The client builder contains methods for definition of <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/security/KeyStore.html" target="_top">KeyStore</a>,
             <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/security/TrustStore.html" target="_top">TrustStore</a> or entire <a class="link" href="http://docs.oracle.com/javase/6/docs/api/javax/net/ssl/SslContext.html" target="_top">SslContext</a>. See the following example:
 
             </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">SSLContext ssl = ... your configured SSL context;

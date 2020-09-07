@@ -47,7 +47,7 @@
                                         </p></li><li class="listitem"><p>
                                             The medium verbosity (<a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/logging/LoggingFeature.Verbosity.html#PAYLOAD_TEXT" target="_top">LoggingFeature.Verbosity.PAYLOAD_TEXT</a>) will log
                                             request/response headers, as well as an entity if considered a readable text. The
-                                            entity is considered a readable text, if <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/MediaType.html" target="_top">MediaType</a> is
+                                            entity is considered a readable text, if <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/MediaType.html" target="_top">MediaType</a> is
                                             <code class="literal">text/*</code>
                                             or is one of
                                             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: square; "><li class="listitem"><p>
@@ -95,7 +95,7 @@
                         </pre></div></div><p><br class="example-break">
                 </p><p>
                     The <code class="literal">LoggingFeature</code> might be registered explicitly on <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> for
-                    server-side logging or on <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a> for client-side logging.
+                    server-side logging or on <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> for client-side logging.
                 </p><div class="example"><a name="d0e16088"></a><p class="title"><b>Example&nbsp;22.2.&nbsp;Register <code class="literal">LoggingFeature</code> via constructor
                     </b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">        ResourceConfig config = new ResourceConfig(HelloWorldResource.class);
         config.register(new LoggingFeature(LOGGER, LoggingFeature.Verbosity.PAYLOAD_ANY));

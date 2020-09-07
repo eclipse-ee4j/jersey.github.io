@@ -187,7 +187,7 @@ public class TestResource {
         .post(Entity.entity("post", MediaType.TEXT_PLAIN_TYPE));
     target.path("resource").request().get();</pre><p>
 
-                In the code above, the <code class="literal">target</code> is a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/WebTarget.html" target="_top">WebTarget</a> instance pointing to the application
+                In the code above, the <code class="literal">target</code> is a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> instance pointing to the application
                 context root path. Using the <a class="xref" href="client.html" title="Chapter&nbsp;5.&nbsp;Client API">Chapter&nbsp;5, <i>Client API</i></a>, we invoke <code class="literal">GET</code> and <code class="literal">POST</code> methods
                 on the <code class="literal">MyResource</code> JAX-RS resource class that we implemented earlier.
             </p><p>
@@ -358,7 +358,7 @@ request count: 4, average request processing [ms]: 73</pre><p>
                     <code class="literal">Uris</code> sub-groups. The <code class="literal">Global</code> group contains all global
                     statistics like overall requests statistics of the entire application (<code class="literal">AllRequestTimes</code>),
                     configuration of the JAX-RS application (<code class="literal">Configuration</code>), statistics about
-                    <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/ExceptionMapper.html" target="_top">ExceptionMapper&lt;E extends Throwable&gt;</a> execution (<code class="literal">ExceptionMapper</code>) and statistics about
+                    <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/ExceptionMapper.html" target="_top">ExceptionMapper&lt;E extends Throwable&gt;</a> execution (<code class="literal">ExceptionMapper</code>) and statistics about
                     produced responses (<code class="literal">Responses</code>).
                 </p><p>
                     <code class="literal">Resources</code> and <code class="literal">Uris</code> groups contains monitoring statistics specific to

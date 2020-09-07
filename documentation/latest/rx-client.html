@@ -179,7 +179,7 @@ destination.path("recommended").request()
             }
         });</pre></div></div><p><br class="example-break">
             </p><p>
-                The example is a bit more complicated from the first glance. We provided an <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/InvocationCallback.html" target="_top">InvocationCallback</a> to async
+                The example is a bit more complicated from the first glance. We provided an <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/InvocationCallback.html" target="_top">InvocationCallback</a> to async
                 <code class="literal">get</code> method. One of the callback methods (<code class="literal">completed</code> or <code class="literal">failed</code>)
                 is called when the request finishes. This is a pretty convenient way to handle async invocations when no nested
                 calls are present. Since we have some nested calls (obtaining weather forecasts) we needed to introduce
@@ -284,7 +284,7 @@ return recommended.thenCompose(destinations -&gt; {
         .get();</pre></div></div><p><br class="example-break">
 
             it is apparent how to pretty conveniently modify the way how a request is invoked (from sync to async) only by calling
-            <code class="literal">async</code> method on an <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Invocation.Builder.html" target="_top">Invocation.Builder</a>.
+            <code class="literal">async</code> method on an <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Invocation.Builder.html" target="_top">Invocation.Builder</a>.
         </p><p>
             Naturally, it'd be nice to copy the same pattern to allow invoking requests in a reactive way. Just instead of
             <code class="literal">async</code> you'd call <code class="literal">rx</code> on an extension of <code class="literal">Invocation.Builder</code>,
@@ -296,15 +296,15 @@ return recommended.thenCompose(destinations -&gt; {
         .rx()
         .get();</pre></div></div><p><br class="example-break">
         </p><p>
-            The first reactive interface in the invocation chain is <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/RxInvoker.html" target="_top">RxInvoker</a> which is very similar to
-            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/SyncInvoker.html" target="_top">SyncInvoker</a> and <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/AsyncInvoker.html" target="_top">AsyncInvoker</a>. It contains all methods present in the two latter
+            The first reactive interface in the invocation chain is <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a> which is very similar to
+            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/SyncInvoker.html" target="_top">SyncInvoker</a> and <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/AsyncInvoker.html" target="_top">AsyncInvoker</a>. It contains all methods present in the two latter
             JAX-RS interfaces but the <code class="literal">RxInvoker</code> interface is more generic, so that it can be extended
             and used in particular implementations taking advantage of various reactive libraries. Extending this new interface
             in a particular implementation also preserves type safety which means that you're not loosing type information when a HTTP
             method call returns an object that you want to process further.
         </p><p>
-            The method "rx()" in the example above is perfect example of that principle. It returns <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/CompletionStageRxInvoker.html" target="_top">CompletionStageRxInvoker</a>,
-            which extends <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/RxInvoker.html" target="_top">RxInvoker</a>.
+            The method "rx()" in the example above is perfect example of that principle. It returns <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/CompletionStageRxInvoker.html" target="_top">CompletionStageRxInvoker</a>,
+            which extends <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a>.
         </p><p>
             As a user of the Reactive Client API you only need to keep in mind that you won't be working with
             <code class="literal">RxInvoker</code> directly. You'd rather be working with an extension of this interface created for
@@ -319,7 +319,7 @@ return recommended.thenCompose(destinations -&gt; {
             information and the Reactive Client needs to know about this type to properly propagate it among the method
             calls you'll be making. This is the reason why other interfaces (described bellow) are parametrized with this type.
         </p><p>
-            In order to extend the API to be used with other reactive frameworks, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/RxInvokerProvider.html" target="_top">RxInvokerProvider</a> needs to be
+            In order to extend the API to be used with other reactive frameworks, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/RxInvokerProvider.html" target="_top">RxInvokerProvider</a> needs to be
             registered into the Client runtime:
         </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Client client = ClientBuilder.newClient();
 client.register(RxFlowableInvokerProvider.class);
@@ -348,7 +348,7 @@ String responseString = responseFlowable.blockingFirst();</pre><div class="simpl
                 used for composing asynchronous and event-based programs by using observable sequences. It uses the
                 <a class="link" href="http://en.wikipedia.org/wiki/Observer_pattern" target="_top">observer pattern</a> to support these sequences of data/events
                 via its <a class="link" href="http://reactivex.io/RxJava/javadoc//rx/Observable.html" target="_top">Observable</a> entry point class which implements the Reactive Pattern. <code class="literal">Observable</code> is
-                actually the parameter type in the RxJava's extension of <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/RxInvoker.html" target="_top">RxInvoker</a>, called
+                actually the parameter type in the RxJava's extension of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a>, called
                 <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/rx/rxjava/RxObservableInvoker.html" target="_top">RxObservableInvoker</a>. This means that the return type of HTTP method calls is
                 <code class="literal">Observable</code> in this case (accordingly parametrized).
             </p><p>
@@ -392,7 +392,7 @@ client.register(RxObservableInvokerProvider.class);</pre></div></div><p><br clas
                 used for composing asynchronous and event-based programs by using observable sequences. It uses the
                 <a class="link" href="http://en.wikipedia.org/wiki/Observer_pattern" target="_top">observer pattern</a> to support these sequences of data/events
                 via its <a class="link" href="http://reactivex.io/RxJava/javadoc//rx/Flowable.html" target="_top">Flowable</a> entry point class which implements the Reactive Pattern. <code class="literal">Flowable</code> is
-                actually the parameter type in the RxJava's extension of <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/RxInvoker.html" target="_top">RxInvoker</a>, called
+                actually the parameter type in the RxJava's extension of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a>, called
                 <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/rx/rxjava2/RxFlowableInvoker.html" target="_top">RxFlowableInvoker</a>. This means that the return type of HTTP method calls is
                 <code class="literal">Flowable</code> in this case (accordingly parametrized).
             </p><p>
@@ -477,11 +477,11 @@ ListenableFuture&lt;Response&gt; response = client.target("http://jersey.java.ne
                         dependencies of this extension module (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/project-info/2.31/jersey/project/project/jersey-rx-client-guava/dependencies.html" target="_top">jersey-rx-client-guava</a>) on the class-path.
                     </p></div></div></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="rx.client.spi"></a>6.4.&nbsp;Implementing Support for Custom Reactive Libraries (SPI)</h2></div></div></div><p>
             In case you want to bring support for some other library providing Reactive Programming Model into your application
-            you can extend functionality of Reactive JAX-RS Client by implementing <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/RxInvokerProvider.html" target="_top">RxInvokerProvider</a>, registering
+            you can extend functionality of Reactive JAX-RS Client by implementing <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/RxInvokerProvider.html" target="_top">RxInvokerProvider</a>, registering
             that implementation into the client runtime and then using rx(Class&lt;T&gt;) in your code.
         </p><div class="simplesect"><div class="titlepage"><div><div><h3 class="title"><a name="d0e6241"></a>Implement RxInvoker and RxInvokerProvider interfaces</h3></div></div></div><p>
-                The first step when implementing support for another reactive library is to implement <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/RxInvoker.html" target="_top">RxInvoker</a>.
-                JAX-RS API itself contains one implementation, which will be used as an example: <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/CompletionStageRxInvoker.html" target="_top">CompletionStageRxInvoker</a>.
+                The first step when implementing support for another reactive library is to implement <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a>.
+                JAX-RS API itself contains one implementation, which will be used as an example: <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/CompletionStageRxInvoker.html" target="_top">CompletionStageRxInvoker</a>.
 
                 </p><div class="example"><a name="rx.client.rxinvoker"></a><p class="title"><b>Example&nbsp;6.13.&nbsp;Extending RxIvoker</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public interface CompletionStageRxInvoker extends RxInvoker&lt;CompletionStage&gt; {
     @Override
@@ -493,11 +493,11 @@ ListenableFuture&lt;Response&gt; response = client.target("http://jersey.java.ne
     // ...
 }</pre></div></div><p><br class="example-break">
             </p><p>
-                The important fact to notice is that the generic parameter of <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/RxInvoker.html" target="_top">RxInvoker</a> is <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html" target="_top">CompletionStage</a>
-                and also that the return type is overriden to be always <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html" target="_top">CompletionStage</a> with some generic param (<a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Response.html" target="_top">Response</a>;
+                The important fact to notice is that the generic parameter of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a> is <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html" target="_top">CompletionStage</a>
+                and also that the return type is overriden to be always <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html" target="_top">CompletionStage</a> with some generic param (<a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Response.html" target="_top">Response</a>;
                 or T).
             </p><p>
-                After having the extended RxInvoker interface, the implementor has to provide <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/RxInvokerProvider.html" target="_top">RxInvokerProvider</a>,
+                After having the extended RxInvoker interface, the implementor has to provide <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/RxInvokerProvider.html" target="_top">RxInvokerProvider</a>,
                 which will be registered as an provider to a client instance.
             </p><div class="example"><a name="rx.client.extend.rxinvoker"></a><p class="title"><b>Example&nbsp;6.14.&nbsp;Extending RxInvokerProvider</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public static class CompletionStageRxInvokerProvider implements RxInvokerProvider&lt;CompletionStageRxInvoker&gt; {
     @Override

@@ -17,7 +17,7 @@
                 Single HTML
             </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="media"></a>Chapter&nbsp;9.&nbsp;Support for Common Media Type Representations</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="media.html#json">9.1. JSON</a></span></dt><dd><dl><dt><span class="section"><a href="media.html#d0e7773">9.1.1. Approaches to JSON Support</a></span></dt><dt><span class="section"><a href="media.html#json.moxy">9.1.2. MOXy</a></span></dt><dt><span class="section"><a href="media.html#json.json-p">9.1.3. Java API for JSON Processing (JSON-P)</a></span></dt><dt><span class="section"><a href="media.html#json.jackson">9.1.4. Jackson (1.x and 2.x)</a></span></dt><dt><span class="section"><a href="media.html#json.jettison">9.1.5. Jettison</a></span></dt><dt><span class="section"><a href="media.html#d0e8559">9.1.6. <code class="literal">@JSONP</code> - JSON with Padding Support</a></span></dt></dl></dd><dt><span class="section"><a href="media.html#xml">9.2. XML</a></span></dt><dd><dl><dt><span class="section"><a href="media.html#d0e8726">9.2.1. Low level XML support</a></span></dt><dt><span class="section"><a href="media.html#d0e8774">9.2.2. Getting started with JAXB</a></span></dt><dt><span class="section"><a href="media.html#d0e8862">9.2.3. POJOs</a></span></dt><dt><span class="section"><a href="media.html#d0e8900">9.2.4. Using custom JAXBContext</a></span></dt><dt><span class="section"><a href="media.html#d0e8932">9.2.5. MOXy</a></span></dt></dl></dd><dt><span class="section"><a href="media.html#multipart">9.3. Multipart</a></span></dt><dd><dl><dt><span class="section"><a href="media.html#d0e8987">9.3.1. Overview</a></span></dt><dt><span class="section"><a href="media.html#d0e9088">9.3.2. Client</a></span></dt><dt><span class="section"><a href="media.html#d0e9219">9.3.3. Server</a></span></dt></dl></dd></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="json"></a>9.1.&nbsp;JSON</h2></div></div></div><p>
             Jersey JSON support comes as a set of extension modules where each of these modules contains an implementation of
-            a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Feature.html" target="_top">Feature</a> that needs to be registered into your <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configurable.html" target="_top">Configurable</a> instance (client/server).
+            a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Feature.html" target="_top">Feature</a> that needs to be registered into your <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a> instance (client/server).
             There are multiple frameworks that provide support for JSON processing and/or JSON-to-Java binding.
             The modules listed below provide support for JSON representations by integrating the individual JSON frameworks into
             Jersey. At present, Jersey integrates with the following modules to provide JSON support:
@@ -152,7 +152,7 @@ try {
                 </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="moxy-registration"></a>9.1.2.2.&nbsp;Configure and register</h4></div></div></div><p>
                     As stated in the <a class="xref" href="deployment.html#deployment.autodiscoverable" title="4.3.&nbsp;Auto-Discoverable Features">Section&nbsp;4.3, &#8220;Auto-Discoverable Features&#8221;</a> as well as earlier in this chapter, MOXy media
                     module is one of the modules where you don't need to explicitly register its <code class="literal">Feature</code>s
-                    (<code class="literal">MoxyJsonFeature</code>) in your client/server <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configurable.html" target="_top">Configurable</a> as this feature is
+                    (<code class="literal">MoxyJsonFeature</code>) in your client/server <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a> as this feature is
                     automatically discovered and registered when you add <code class="literal">jersey-media-moxy</code> module to your class-path.
                 </p><p>
                     The auto-discoverable <code class="literal">jersey-media-moxy</code> module defines a few properties that can be used to control the
@@ -164,7 +164,7 @@ try {
                         A manual registration of any other Jersey JSON provider feature (except for <a class="link" href="media.html#json.json-p" title="9.1.3.&nbsp;Java API for JSON Processing (JSON-P)">Java API for JSON Processing (JSON-P)</a>)
                         disables the automated enabling and configuration of <code class="literal">MoxyJsonFeature</code>.
                     </p></div><p>
-                    To configure <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>s / <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a>s provided by MOXy you can simply
+                    To configure <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>s / <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a>s provided by MOXy you can simply
                     create an instance of <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html" target="_top">MoxyJsonConfig</a> and set values of needed properties. For most common
                     properties you can use a particular method to set the value of the property or you can use more generic
                     methods to set the property:
@@ -199,17 +199,17 @@ final ContextResolver&lt;MoxyJsonConfig&gt; jsonConfigResolver = moxyJsonConfig.
 </pre></div></div><p><br class="example-break">
                 </p><p>
                     Another way to pass configuration properties to the underlying <code class="literal">MOXyJsonProvider</code> is to set
-                    them directly into your <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configurable.html" target="_top">Configurable</a> instance (see an example below). These are overwritten by
+                    them directly into your <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a> instance (see an example below). These are overwritten by
                     properties set into the <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html" target="_top">MoxyJsonConfig</a>.
 
-                    </p><div class="example"><a name="d0e8059"></a><p class="title"><b>Example&nbsp;9.9.&nbsp;Setting properties for MOXy providers into <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configurable.html" target="_top">Configurable</a></b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">new ResourceConfig()
+                    </p><div class="example"><a name="d0e8059"></a><p class="title"><b>Example&nbsp;9.9.&nbsp;Setting properties for MOXy providers into <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a></b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">new ResourceConfig()
                             .property(MarshallerProperties.JSON_NAMESPACE_SEPARATOR, ".")
                             // further configuration</pre></div></div><p><br class="example-break">
                 </p><p>
                     There are some properties for which Jersey sets the default value when
-                    <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> / <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> from MOXy is used and they are:
+                    <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> / <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> from MOXy is used and they are:
 
-                    </p><div class="table"><a name="d0e8075"></a><p class="title"><b>Table&nbsp;9.1.&nbsp;Default property values for MOXy <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> / <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a></b></p><div class="table-contents"><table summary="Default property values for MOXy MessageBodyReader<T&gt; / MessageBodyWriter<T&gt;" border="1"><colgroup><col width="50%"><col width="50%"></colgroup><tbody><tr><td align="left"><code class="literal">javax.xml.bind.Marshaller#JAXB_FORMATTED_OUTPUT</code></td><td align="left"><code class="literal">false</code></td></tr><tr><td align="left">
+                    </p><div class="table"><a name="d0e8075"></a><p class="title"><b>Table&nbsp;9.1.&nbsp;Default property values for MOXy <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> / <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a></b></p><div class="table-contents"><table summary="Default property values for MOXy MessageBodyReader<T&gt; / MessageBodyWriter<T&gt;" border="1"><colgroup><col width="50%"><col width="50%"></colgroup><tbody><tr><td align="left"><code class="literal">javax.xml.bind.Marshaller#JAXB_FORMATTED_OUTPUT</code></td><td align="left"><code class="literal">false</code></td></tr><tr><td align="left">
                                         <code class="literal">org.eclipse.persistence.jaxb.JAXBContextProperties#JSON_INCLUDE_ROOT</code>
                                     </td><td align="left"><code class="literal">false</code></td></tr><tr><td align="left">
                                         <code class="literal">org.eclipse.persistence.jaxb.MarshallerProperties#JSON_MARSHAL_EMPTY_COLLECTIONS</code>
@@ -248,7 +248,7 @@ final Application application = new ResourceConfig()
                     As stated in <a class="xref" href="deployment.html#deployment.autodiscoverable" title="4.3.&nbsp;Auto-Discoverable Features">Section&nbsp;4.3, &#8220;Auto-Discoverable Features&#8221;</a> JSON-Processing media module is one of the
                     modules where you don't need to explicitly register its
                     <code class="literal">Feature</code>s (<code class="literal">JsonProcessingFeature</code>) in your client/server
-                    <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configurable.html" target="_top">Configurable</a> as this feature is automatically discovered and registered when you add
+                    <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a> as this feature is automatically discovered and registered when you add
                     <code class="literal">jersey-media-json-processing</code> module to your classpath.
                 </p><p>
                     As for the other modules, <code class="literal">jersey-media-json-processing</code> has also few properties that can affect the
@@ -257,8 +257,8 @@ final Application application = new ResourceConfig()
 
                     </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/CommonProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">CommonProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ServerProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/ClientProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ClientProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p></li></ul></div><p>
                 </p><p>
-                    To configure <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>s / <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a>s provided by JSON-P you can simply
-                    add values for supported properties into the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configuration.html" target="_top">Configuration</a> instance (client/server). Currently
+                    To configure <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>s / <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a>s provided by JSON-P you can simply
+                    add values for supported properties into the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configuration.html" target="_top">Configuration</a> instance (client/server). Currently
                     supported are these properties:
 
                     </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
@@ -311,7 +311,7 @@ final Application application = new ResourceConfig()
                 </p><p>
                     In order to use Jackson as your JSON (JAXB/POJO) provider you need to register <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/jackson/JacksonFeature.html" target="_top">JacksonFeature</a>
                     (<a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/jackson1/Jackson1Feature.html" target="_top">Jackson1Feature</a>) and a <code class="literal">ContextResolver&lt;T&gt;</code> for <code class="literal">ObjectMapper</code>,
-                    if needed, in your <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configurable.html" target="_top">Configurable</a> (client/server).
+                    if needed, in your <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a> (client/server).
 
                     </p><div class="example"><a name="d0e8311"></a><p class="title"><b>Example&nbsp;9.14.&nbsp;<code class="literal">ContextResolver&lt;ObjectMapper&gt;</code></b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Provider
 public class MyObjectMapperProvider implements ContextResolver&lt;ObjectMapper&gt; {
@@ -361,7 +361,7 @@ final Application application = new ResourceConfig()
                 further used to create a <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/jettison/JettisonJaxbContext.html" target="_top">JettisonJaxbContext</a>, which serves as a main configuration point in this
                 area.
                 To pass your specialized <code class="literal">JettisonJaxbContext</code> to Jersey, you will finally need to implement
-                a JAXBContext <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/ContextResolver.html" target="_top">ContextResolver&lt;T&gt;</a> (see below).
+                a JAXBContext <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/ContextResolver.html" target="_top">ContextResolver&lt;T&gt;</a> (see below).
             </p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e8366"></a>9.1.5.1.&nbsp;Dependency</h4></div></div></div><p>
                     To use Jettison as your JSON provider you need to add <code class="literal">jersey-media-json-jettison</code> module to your
                     <code class="literal">pom.xml</code> file:
@@ -515,7 +515,7 @@ context = new JettisonJaxbContext(
 }</pre></div></div><p><br class="example-break">
                     </p></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="jettison-registration"></a>9.1.5.3.&nbsp;Configure and register</h4></div></div></div><p>
                     In order to use Jettison as your JSON (JAXB/POJO) provider you need to register <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/jettison/JettisonFeature.html" target="_top">JettisonFeature</a>
-                    and a <code class="literal">ContextResolver&lt;T&gt;</code> for <code class="literal">JAXBContext</code> (if needed) in your <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configurable.html" target="_top">Configurable</a>
+                    and a <code class="literal">ContextResolver&lt;T&gt;</code> for <code class="literal">JAXBContext</code> (if needed) in your <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a>
                     (client/server).
 
                     </p><div class="example"><a name="d0e8532"></a><p class="title"><b>Example&nbsp;9.25.&nbsp;<code class="literal">ContextResolver&lt;ObjectMapper&gt;</code></b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Provider
@@ -557,7 +557,7 @@ final Application application = new ResourceConfig()
                             Resource method, which should return wrapped JSON, needs to be annotated with <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/JSONP.html" target="_top">@JSONP</a>
                             annotation.
                         </p></li><li class="listitem"><p>
-                            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> for <code class="literal">application/json</code> media type, which also accepts
+                            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> for <code class="literal">application/json</code> media type, which also accepts
                             the return type of the resource method, needs to be registered (see <a class="link" href="media.html#json" title="9.1.&nbsp;JSON">JSON</a>
                             section of this chapter).
                         </p></li><li class="listitem"><p>
@@ -850,7 +850,7 @@ Client client = ClientBuilder.newClient(config);
                 on this topic, read JavaDoc on <a class="link" href="https://eclipse-ee4j.github.io/jaxb-ri/docs/api/javax/xml/bind/JAXBContext.html" target="_top">JAXBContext</a>) or you can add <code class="literal">jersey-media-moxy</code> module to
                 your project and register/configure
                 <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/moxy/xml/MoxyXmlFeature.html" target="_top">MoxyXmlFeature</a> class/instance in
-                the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configurable.html" target="_top">Configurable</a>.
+                the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configurable.html" target="_top">Configurable</a>.
             </p><div class="example"><a name="d0e8958"></a><p class="title"><b>Example&nbsp;9.39.&nbsp;Add <code class="literal">jersey-media-moxy</code> dependency.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
     &lt;artifactId&gt;jersey-media-moxy&lt;/artifactId&gt;
@@ -883,7 +883,7 @@ final ResourceConfig config = new ResourceConfig()
                             The <code class="literal">MIME-Version: 1.0</code> HTTP header is included on generated responses.
                             It is accepted, but not required, on processed requests.
                         </p></li><li class="listitem"><p>
-                            A <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> implementation for consuming MIME MultiPart entities.
+                            A <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> implementation for consuming MIME MultiPart entities.
                         </p></li><li class="listitem"><p>
                             A <code class="literal">MessageBodyWriter&lt;T&gt;</code> implementation for producing MIME MultiPart entities.
                             The appropriate <code class="literal">@Provider</code> is used to serialize each body part, based on its media type.
@@ -1065,13 +1065,13 @@ public MultiPart post(final FormDataMultiPart multiPart) {
                                 part as input.
                             </p><p>
                                 If there is no named part present and there is a default value present as declared by
-                                <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//DefaultValue.html" target="_top">@DefaultValue</a> then the media type will be set to <code class="literal">text/plain</code>.
+                                <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/DefaultValue.html" target="_top">@DefaultValue</a> then the media type will be set to <code class="literal">text/plain</code>.
                                 The value of the parameter will be the result of reading using the message body reader given the
                                 type <code class="literal">T</code>, the media type <code class="literal">text/plain</code>, and the UTF-8 encoded
                                 bytes of the default value as input.
                             </p><p>
                                 If there is no message body reader available and the type <code class="literal">T</code> conforms
-                                to a type specified by <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//FormParam.html" target="_top">@FormParam</a> then processing is performed as specified by
+                                to a type specified by <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/FormParam.html" target="_top">@FormParam</a> then processing is performed as specified by
                                 <code class="literal">@FormParam</code>, where the values of the form parameter are <code class="literal">String</code>
                                 instances produced by reading the bytes of the named body parts utilizing a message body reader
                                 for the <code class="literal">String</code> type and the media type <code class="literal">text/plain</code>.

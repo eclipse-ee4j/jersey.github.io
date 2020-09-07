@@ -44,13 +44,13 @@
                         </p><p>
                             Support for <code class="literal">HK2 Binder</code> in the case of using HK2 Injection Module was implemented
                             but Jersey newly supports a registration its own <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/internal/inject/AbstractBinder.html" target="_top">AbstractBinder</a> and
-                            <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/internal/inject/Binder.html" target="_top">Binder</a> in <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Application.html" target="_top">Application</a> to easily switch from HK2 classes
+                            <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/internal/inject/Binder.html" target="_top">Binder</a> in <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Application.html" target="_top">Application</a> to easily switch from HK2 classes
                             to Jersey ones just by adjusting the imports.
                         </p><p>
                             <code class="literal">InjectionManager</code> contains a mechanism for registering DI specific
                             injection bindings, in case the application uses CDI, developers should use CDI mechanism, in case the
                             application uses HK2, developers should configure HK2 - ideally via configuring a parent locator that
-                            is then passed to Jersey. The custom bindings can be also registered through <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Application.html" target="_top">Application</a>
+                            is then passed to Jersey. The custom bindings can be also registered through <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Application.html" target="_top">Application</a>
                             if <code class="literal">InjectionManager</code> supports the bindings type that means that
                             <code class="literal">InjectionManager#isRegistrable</code> returns <code class="literal">true</code>;
                         </p><p>
@@ -203,13 +203,13 @@
                             <code class="literal">org.glassfish.jersey.apache.connector.ApacheClientProperties</code>
                             - constant
                             <code class="literal">SSL_CONFIG</code>
-                            has been removed. Use <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure SSL in a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a>
+                            has been removed. Use <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure SSL in a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a>
                             instance.
                         </p></li><li class="listitem"><p>
                             <code class="literal">org.glassfish.jersey.jetty.connector.JettyClientProperties</code>
                             - constant
                             <code class="literal">SSL_CONFIG</code>
-                            has been removed. Use <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure SSL in a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a>
+                            has been removed. Use <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure SSL in a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a>
                             instance.
                         </p></li><li class="listitem"><p>
                             <code class="literal">FreemarkerMvcFeature.TEMPLATES_BASE_PATH</code>
@@ -262,7 +262,7 @@
                     Jetty connector and Apache connector have been previously using their own custom properties to set SSL context
                     on a connector. These properties have been deprecated and the code has been updated to read the SSL context
                     information from the JAX-RS client configuration. This means that all Jersey connectors now properly accept
-                    SSL configuration as configured via standard JAX-RS <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientBuilder.html" target="_top">ClientBuilder</a> methods.
+                    SSL configuration as configured via standard JAX-RS <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods.
                 </p><p>
                     Previously, all Jersey connectors have been using their own default chunk size when HTTP chunked coding was
                     used. Since Jersey 2.16, there is a new default chunk size value used by all connectors, if a custom chunk
@@ -274,13 +274,13 @@
                             - constant
                             <code class="literal">SSL_CONFIG</code>
                             has been marked as deprecated and will be removed in a subsequent release.
-                            Use <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure SSL in a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a> instance.
+                            Use <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure SSL in a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> instance.
                         </p></li><li class="listitem"><p>
                             <code class="literal">org.glassfish.jersey.jetty.connector.JettyClientProperties</code>
                             - constant
                             <code class="literal">SSL_CONFIG</code>
                             has been marked as deprecated and will be removed in a subsequent release.
-                            Use <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure SSL in a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a> instance.
+                            Use <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a> methods to configure SSL in a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> instance.
                         </p></li></ul></div><p>
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-2.16-breaking-changes"></a>29.10.3.&nbsp;Breaking Changes</h3></div></div></div><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
@@ -468,7 +468,7 @@
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
                             Because of a bug fix for issue
                             <a class="link" href="https://java.net/jira/browse/JERSEY-2458" target="_top">JERSEY-2458</a>, there has been a
-                            slight change in the behavior of <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/UriInfo.html" target="_top">UriInfo</a>
+                            slight change in the behavior of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/UriInfo.html" target="_top">UriInfo</a>
                             <code class="literal">getPath</code>
                             and
                             <code class="literal">getPathSegments</code>
@@ -530,7 +530,7 @@
                             method instead.
                         </p></li><li class="listitem"><p>
                             Utility methods <code class="literal">JerseyTest</code> that provide access to
-                            pre-configured <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a> and <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/WebTarget.html" target="_top">WebTarget</a> instances (<code class="literal">
+                            pre-configured <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> and <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> instances (<code class="literal">
                             client()</code>,
                             <code class="literal">target(...)</code>) have been made final to prevent overriding in subclasses and thus
                             ensure consistency of the jersey test framework functionality.
@@ -642,12 +642,12 @@
                         </p></li><li class="listitem"><p>
                             A minor JAX-RS incompatibility issue has been recently discovered and reported (see <a class="link" href="https://java.net/jira/browse/JERSEY-2387" target="_top">JERSEY-2387</a>). As part of the fix,
                             minor breaking changes related to URI resolving and creation have been introduced in the behavior
-                            of <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/UriBuilder.html" target="_top">UriBuilder</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Link.Builder.html" target="_top">Link.Builder</a> and <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/WebTarget.html" target="_top">WebTarget</a> classes. It is no
+                            of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/UriBuilder.html" target="_top">UriBuilder</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Link.Builder.html" target="_top">Link.Builder</a> and <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> classes. It is no
                             longer possible to successfully build a new <code class="literal">URI</code> instance from a <code class="literal">UriBuilder</code>
                             that contains unresolved template parameters. An
                             <code class="literal">IllegalArgumentException</code>
                             will be thrown in such case, as mandated by JAX-RS API javadoc. Similarly, it is not possible to
-                            successfully create a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Link.html" target="_top">Link</a> instance from a URI template with unresolved template
+                            successfully create a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Link.html" target="_top">Link</a> instance from a URI template with unresolved template
                             parameters. Also, it is not possible to successfully send a request on a <code class="literal">WebTarget</code>
                             that represents a URI template that does not have all the template parameters properly resolved. Any
                             attempt to do so will fail with an exception. Note that this also applies to any managed clients
@@ -769,7 +769,7 @@
                             chunked transfer coding selection, please utilize use the new
                             <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/ClientProperties.html#REQUEST_ENTITY_PROCESSING" target="_top">ClientProperties.REQUEST_ENTITY_PROCESSING</a> property. The behaviour of the property
                             is however not unified across the available <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a> implementations and depends
-                            on the connector implementation configured for the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a> instance.
+                            on the connector implementation configured for the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> instance.
                             Default connector produced by <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/HttpUrlConnector.html" target="_top">HttpUrlConnectorProvider</a> still uses
                             buffering as default options due to bugs in <code class="literal">HttpURLConnection</code>. On the other hand,
                             Jetty HTTP Client based connectors produced by <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/jetty/connector/JettyConnectorProvider.html" target="_top">JettyConnectorProvider</a> do not support
@@ -781,7 +781,7 @@
                             just was not publicly acknowledged.
                         </p></li><li class="listitem"><p>
                         New <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/spi/ConnectorProvider.html" target="_top">ConnectorProvider</a> SPI has been introduced to decouple <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/spi/Connector.html" target="_top">Connector</a>
-                        instantiation from <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a> instance boot-strapping. As such, the
+                        instantiation from <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> instance boot-strapping. As such, the
                         <code class="literal">connector(Connector)</code>
                         method has been removed from <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/ClientConfig.html" target="_top">ClientConfig</a>
                         API. It has been replaced with a newly introduced
@@ -1022,7 +1022,7 @@
 
                     You can register your implementation of
                     <code class="literal">ContainerLifecycleListener</code>
-                    the same way as any other provider (i.e. either by annotating it by <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/Provider.html" target="_top">@Provider</a> annotation or adding
+                    the same way as any other provider (i.e. either by annotating it by <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/Provider.html" target="_top">@Provider</a> annotation or adding
                     it to the Jersey <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> directly either using the class (using
                     <code class="literal">ResourceConfig.addClasses()</code>) or registering a particular instance using
                     <code class="literal">ResourceConfig.addSingletons()</code>
@@ -1064,21 +1064,21 @@
                                     com.sun.jersey.api.client.Client
                                 </a>
                             </td><td align="left">
-                                <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientBuilder.html" target="_top">ClientBuilder</a>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientBuilder.html" target="_top">ClientBuilder</a>
                             </td><td align="left">For the static factory methods and constructors.</td></tr><tr><td align="left">&nbsp;</td><td align="left">
-                                <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a>
                             </td><td align="left">For the instance methods.</td></tr><tr><td align="left">
                                 <a class="link" href="http://jersey.java.net/nonav/apidocs/1.17/jersey/com/sun/jersey/api/client/WebResource.html" target="_top">
                                     com.sun.jersey.api.client.WebResource
                                 </a>
                             </td><td align="left">
-                                <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/WebTarget.html" target="_top">WebTarget</a>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>
                             </td><td align="left">&nbsp;</td></tr><tr><td align="left">
                                 <a class="link" href="http://jersey.java.net/nonav/apidocs/1.17/jersey/com/sun/jersey/api/client/AsyncWebResource.html" target="_top">
                                     com.sun.jersey.api.client.AsyncWebResource
                                 </a>
                             </td><td align="left">
-                                <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/WebTarget.html" target="_top">WebTarget</a>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>
                             </td><td align="left">You can access async versions of the async methods by calling
                                 <code class="literal">WebTarget.request().async()</code>
                             </td></tr></tbody></table></div></div><br class="table-break"><p>The following sub-sections show code examples.</p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="mig-client-simple-request"></a>29.24.2.1.&nbsp;Making a simple client request</h4></div></div></div><p>

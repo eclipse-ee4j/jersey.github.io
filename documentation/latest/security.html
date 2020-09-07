@@ -16,8 +16,8 @@
             </a> | <a href="user-guide.html">
                 Single HTML
             </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="security"></a>Chapter&nbsp;17.&nbsp;Security</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="security.html#d0e12503">17.1. Securing server</a></span></dt><dd><dl><dt><span class="section"><a href="security.html#d0e12506">17.1.1. SecurityContext</a></span></dt><dt><span class="section"><a href="security.html#d0e12612">17.1.2. Authorization - securing resources</a></span></dt></dl></dd><dt><span class="section"><a href="security.html#d0e12735">17.2. Client Security</a></span></dt><dt><span class="section"><a href="security.html#d0e12752">17.3. OAuth Support</a></span></dt><dd><dl><dt><span class="section"><a href="security.html#d0e12814">17.3.1. OAuth 1</a></span></dt><dt><span class="section"><a href="security.html#d0e13146">17.3.2. OAuth 2 Support</a></span></dt></dl></dd></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e12503"></a>17.1.&nbsp;Securing server</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e12506"></a>17.1.1.&nbsp;SecurityContext</h3></div></div></div><p>
-                Security information of a request is available by injecting a JAX-RS <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/SecurityContext.html" target="_top">SecurityContext</a> instance
-                using <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Context.html" target="_top">@Context</a>
+                Security information of a request is available by injecting a JAX-RS <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/SecurityContext.html" target="_top">SecurityContext</a> instance
+                using <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Context.html" target="_top">@Context</a>
                 annotation. The injected security context instance provides the equivalent of the functionality available on
                 <a class="link" href="http://docs.oracle.com/javaee/7/api/javax/servlet/http/HttpServletRequest.html" target="_top">HttpServletRequest</a> API.
                 The injected security context depends on the actual Jersey application deployment. For example, for a
@@ -63,16 +63,16 @@ public static class MyResource {
                     <code class="literal">&lt;auth-constraint&gt;</code> and user to roles mappings)
                     in order to be able to secure requests via calls to to the JAX-RS <code class="literal">SecurityContext</code>.
                 </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e12574"></a>17.1.1.2.&nbsp;Using Security Context in Container Request Filters</h4></div></div></div><p>
-                    The <code class="literal">SecurityContext</code> can be directly retrieved from <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//container/ContainerRequestContext.html" target="_top">ContainerRequestContext</a> via
+                    The <code class="literal">SecurityContext</code> can be directly retrieved from <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/container/ContainerRequestContext.html" target="_top">ContainerRequestContext</a> via
                     <code class="literal">getSecurityContext()</code> method. You can also replace the default
                     <code class="literal">SecurityContext</code> in a request context with a custom one using the
                     <code class="literal">setSecurityContext(SecurityContext)</code> method. If you set a custom
-                    <code class="literal">SecurityContext</code> instance in your <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//container/ContainerRequestFilter.html" target="_top">ContainerRequestFilter</a>,
+                    <code class="literal">SecurityContext</code> instance in your <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/container/ContainerRequestFilter.html" target="_top">ContainerRequestFilter</a>,
                     this security context instance will be used for injection into JAX-RS resource class fields.
                     This way you can implement a custom authentication filter that may setup your own
                     <code class="literal">SecurityContext</code> to be used. To ensure the early execution of your custom
                     authentication request filter, set the filter priority to <code class="literal">AUTHENTICATION</code>
-                    using constants from <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Priorities.html" target="_top">Priorities</a>. An early execution of you authentication filter will ensure that
+                    using constants from <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Priorities.html" target="_top">Priorities</a>. An early execution of you authentication filter will ensure that
                     all other filters, resources, resource methods and sub-resource locators will execute with your custom
                     <code class="literal">SecurityContext</code> instance.
                 </p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e12612"></a>17.1.2.&nbsp;Authorization - securing resources</h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e12615"></a>17.1.2.1.&nbsp;Security resources with <code class="literal">web.xml</code></h4></div></div></div><p>
@@ -110,7 +110,7 @@ public static class MyResource {
                     <code class="literal">rest/orders/*</code> will be accessible for "customer" user group. This security configuration
                     does not use JAX-RS or Jersey features at all as it is enforced by the Servlet container even before
                     a request reaches the Jersey application. Keeping these security constrains up to date with your
-                    JAX-RS application might not be easy as whenever you change the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a> annotations on your resource
+                    JAX-RS application might not be easy as whenever you change the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a> annotations on your resource
                     classes you may need to update also the <code class="literal">web.xml</code>
                     security configurations to reflect the changed JAX-RS resource paths. Therefore Jersey offers a
                     <a class="link" href="security.html#annotation-based-security" title="17.1.2.2.&nbsp;Securing JAX-RS resources with standard javax.annotation.security annotations">more flexible solution</a>
@@ -126,7 +126,7 @@ resourceConfig.register(RolesAllowedDynamicFeature.class);
                         </pre></div></div><p><br class="example-break">
 
                     Alternatively, typically when deploying your application to a Servlet container, you can implement your JAX-RS
-                    <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Application.html" target="_top">Application</a> subclass by extending from the Jersey <code class="literal">ResourceConfig</code> and
+                    <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Application.html" target="_top">Application</a> subclass by extending from the Jersey <code class="literal">ResourceConfig</code> and
                     registering the <code class="literal">RolesAllowedDynamicFeature</code> in the constructor:
 
                     </p><div class="example"><a name="d0e12684"></a><p class="title"><b>Example&nbsp;17.5.&nbsp;Registering RolesAllowedDynamicFeature by extending ResourceConfig</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class MyApplication extends ResourceConfig {
@@ -320,7 +320,7 @@ public class Resource {
                     and can be used without a support for subsequent authenticated requests.
                     The support for authenticated requests stays in the
                     <code class="literal">ClientRequestFilter</code> but is not part of a public API
-                    anymore and is registered by a Jersey OAuth <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Feature.html" target="_top">Feature</a>.
+                    anymore and is registered by a Jersey OAuth <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Feature.html" target="_top">Feature</a>.
                 </p><p>
                     The most important parts of the Jersey client OAuth API and SPI are explained here:
 
@@ -401,7 +401,7 @@ AccessToken accessToken = authFlow.finish(verifier);</pre></div></div><p><br cla
                     and exchanges the supplied verifier for a new valid Access Token.
                     At this point the authorization flow is finished and we can start using the retrieved
                     <code class="literal">AccessToken</code> to make authenticated requests.
-                    We can now create an instance of an OAuth 1 client <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Feature.html" target="_top">Feature</a> using
+                    We can now create an instance of an OAuth 1 client <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Feature.html" target="_top">Feature</a> using
                     <code class="literal">OAuth1ClientSupport</code> and pass it our <code class="literal">accessToken</code>.
                     Another way is to use <code class="literal">authFlow</code> that already contains the information about access token
                     to create the feature instance for us:
@@ -411,7 +411,7 @@ Client client = ClientBuilder.newBuilder()
     .register(feature)
     .build();</pre></div></div><p><br class="example-break">
 
-                    Once the feature is configured in the JAX-RS <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a> (or <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/WebTarget.html" target="_top">WebTarget</a>),
+                    Once the feature is configured in the JAX-RS <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> (or <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>),
                     all requests invoked from such <code class="literal">Client</code> (or <code class="literal">WebTarget</code>) instance
                     will automatically include an OAuth Authorization HTTP header (that contains also the OAuth signature).
                 </p><p>
@@ -436,7 +436,7 @@ Feature filterFeature = OAuth1ClientSupport.builder(consumerCredentials)
                     Key names and API documentation of these properties can be found in
                     <code class="literal">OAuth1ClientSupport</code>.
                     Using this approach, you can have a single, OAuth enabled instance of a JAX-RS <code class="literal">Client</code>
-                    (or <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/WebTarget.html" target="_top">WebTarget</a>) and use it to make authenticated requests on behalf of multiple users.
+                    (or <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>) and use it to make authenticated requests on behalf of multiple users.
                     Note that you can use the aforementioned request properties even if the feature has been initialized
                     with an <code class="literal">AccessToken</code> to override the default access token information for
                     particular requests, even though it is probably not a common use case.

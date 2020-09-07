@@ -193,7 +193,7 @@ public static class CountryResource {
             custom deployed resource.
             This resource contains a <code class="literal">GET</code> method and three <code class="literal">OPTIONS</code> methods.
             The <code class="literal">GET</code> method is our getCountry() method defined in the sample. There is a method name
-            in the <code class="literal">id</code> attribute and <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Produces.html" target="_top">@Produces</a> is described in the
+            in the <code class="literal">id</code> attribute and <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Produces.html" target="_top">@Produces</a> is described in the
             <code class="literal">response/representation</code> WADL element. <code class="literal">OPTIONS</code> methods are the methods that
             are automatically added by Jersey to each resource. There is an <code class="literal">OPTIONS</code> method
             returning <code class="literal">"text/plain"</code> media type, that will return a response with a string entity containing
@@ -475,7 +475,7 @@ public static class CustomerAddressSubResource {
             </p><pre class="&#xA;    toolbar: false;&#xA;    brush: ;&#xA;    ">jersey.config.server.wadl.disableWadl=true</pre><p>
 
             This property can be setup in a <code class="literal">web.xml</code> if the Jersey application is deployed
-            in the servlet with <code class="literal">web.xml</code> or the property can be returned from the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Application.html" target="_top">Application</a>.
+            in the servlet with <code class="literal">web.xml</code> or the property can be returned from the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Application.html" target="_top">Application</a>.
             <code class="literal">getProperties()</code>. See <a class="link" href="deployment.html" title="Chapter&nbsp;4.&nbsp;Application Deployment and Runtime Environments">Deployment chapter</a> for more information
             on setting the application configuration properties in various deployments.
         </p><p>

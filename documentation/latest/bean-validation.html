@@ -88,7 +88,7 @@
     .register( ... );</pre></div></div><p><br class="example-break">
 
             Customization of the <code class="literal">Validator</code> used in validation of resource classes/methods can be done using
-            <code class="literal">ValidationConfig</code> class and exposing it via <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/ContextResolver.html" target="_top">ContextResolver&lt;T&gt;</a> mechanism as shown in
+            <code class="literal">ValidationConfig</code> class and exposing it via <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/ContextResolver.html" target="_top">ContextResolver&lt;T&gt;</a> mechanism as shown in
             <a class="xref" href="bean-validation.html#bv.example.ValidationConfig" title="Example&nbsp;19.2.&nbsp;Using ValidationConfig to configure Validator.">Example&nbsp;19.2, &#8220;Using <code class="literal">ValidationConfig</code> to configure <code class="literal">Validator</code>.&#8221;</a>. You can set custom instances for the following interfaces from
             the Bean Validation API:
 
@@ -169,7 +169,7 @@ public class ValidationConfigurationContextResolver implements ContextResolver&l
             <code class="literal">Default</code> group is supported at the moment).
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e13864"></a>19.4.1.&nbsp;Constraint Annotations</h3></div></div></div><p>
                 The JAX-RS Server API provides support for extracting request values and mapping them into Java fields,
-                properties and parameters using annotations such as <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//HeaderParam.html" target="_top">@HeaderParam</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//QueryParam.html" target="_top">@QueryParam</a>, etc. It also
+                properties and parameters using annotations such as <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/HeaderParam.html" target="_top">@HeaderParam</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/QueryParam.html" target="_top">@QueryParam</a>, etc. It also
                 supports mapping of the request entity bodies into Java objects via non-annotated parameters (i.e., parameters
                 without any JAX-RS annotations).
             </p><p>
@@ -462,7 +462,7 @@ class MyResourceClass {
                 include validation errors to the client. This default behaviour could be changed by enabling
                 <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#BV_SEND_ERROR_IN_RESPONSE" target="_top">ServerProperties.BV_SEND_ERROR_IN_RESPONSE</a> property in your application
                 (<a class="xref" href="bean-validation.html#bv.example.jersey.properties" title="Example&nbsp;19.1.&nbsp;Configuring Jersey specific properties for Bean Validation.">Example&nbsp;19.1, &#8220;Configuring Jersey specific properties for Bean Validation.&#8221;</a>).
-                When this property is enabled then our custom <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/ExceptionMapper.html" target="_top">ExceptionMapper&lt;E extends Throwable&gt;</a> (that is handling
+                When this property is enabled then our custom <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/ExceptionMapper.html" target="_top">ExceptionMapper&lt;E extends Throwable&gt;</a> (that is handling
                 <code class="literal">ValidationException</code>s) would transform <code class="literal">ConstraintViolationException</code>(s) into
                 <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/validation/ValidationError.html" target="_top">ValidationError</a>(s) and set this object (collection) as the new response entity which Jersey is
                 able to sent to the client.

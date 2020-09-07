@@ -19,9 +19,9 @@
     </p><p>The JAX-RS 2.1.6 specification draft can be found online <a class="link" href="http://jcp.org/en/jsr/summary?id=339" target="_top">here</a>.
     </p><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e2043"></a>3.1.&nbsp;Root Resource Classes</h2></div></div></div><p>
             <span class="emphasis"><em>Root resource classes</em></span>
-            are POJOs (Plain Old Java Objects) that are annotated with <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a>
-            have at least one method annotated with <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a> or a resource method designator annotation such as <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//GET.html" target="_top">@GET</a>,
-            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//PUT.html" target="_top">@PUT</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//POST.html" target="_top">@POST</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//DELETE.html" target="_top">@DELETE</a>. Resource methods are methods of a resource class annotated with a resource
+            are POJOs (Plain Old Java Objects) that are annotated with <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a>
+            have at least one method annotated with <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a> or a resource method designator annotation such as <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/GET.html" target="_top">@GET</a>,
+            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/PUT.html" target="_top">@PUT</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/POST.html" target="_top">@POST</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/DELETE.html" target="_top">@DELETE</a>. Resource methods are methods of a resource class annotated with a resource
             method designator. This section shows how to use Jersey to annotate Java objects to create RESTful web services.
         </p><p>The following code example is a very simple example of a root
             resource class using JAX-RS annotations. The example code shown here is
@@ -46,17 +46,17 @@ public class HelloWorldResource {
     }
 }</pre></div></div><p><br class="example-break">
             Let's look at some of the JAX-RS annotations used in this example.
-        </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e2082"></a>3.1.1.&nbsp;@Path</h3></div></div></div><p>The <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a> annotation's value is a relative URI path. In the example above, the Java class will be hosted at the URI path
-                <code class="literal">/helloworld</code>. This is an extremely simple use of the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a> annotation. What makes JAX-RS so useful is that you can embed variables in the URIs.
+        </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e2082"></a>3.1.1.&nbsp;@Path</h3></div></div></div><p>The <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a> annotation's value is a relative URI path. In the example above, the Java class will be hosted at the URI path
+                <code class="literal">/helloworld</code>. This is an extremely simple use of the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a> annotation. What makes JAX-RS so useful is that you can embed variables in the URIs.
             </p><p>
                 <span class="emphasis"><em>URI path templates</em></span>
-                are URIs with variables embedded within the URI syntax. These variables are substituted at runtime in order for a resource to respond to a request based on the substituted URI. Variables are denoted by curly braces. For example, look at the following <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a> annotation:
+                are URIs with variables embedded within the URI syntax. These variables are substituted at runtime in order for a resource to respond to a request based on the substituted URI. Variables are denoted by curly braces. For example, look at the following <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a> annotation:
 
                 </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    gutter: false;">@Path("/users/{username}")</pre><p>
 
                 In this type of example, a user will be prompted to enter their name, and then a Jersey web service configured to respond to requests to this URI path template will respond. For example, if the user entered their username as "Galileo", the web service will respond to the following URL:
                 <code class="literal">http://example.com/users/Galileo</code>
-            </p><p>To obtain the value of the username variable the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//PathParam.html" target="_top">@PathParam</a> may be used on method parameter of a request method, for example:
+            </p><p>To obtain the value of the username variable the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/PathParam.html" target="_top">@PathParam</a> may be used on method parameter of a request method, for example:
                 </p><div class="example"><a name="d0e2115"></a><p class="title"><b>Example&nbsp;3.2.&nbsp;Specifying URI path parameter</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("/users/{username}")
 public class UserResource {
 
@@ -72,9 +72,9 @@ public class UserResource {
                 expression, "[^/]+", for example:
                 </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("users/{username: [a-zA-Z][a-zA-Z_0-9]*}")</pre><p>
                 In this type of example the username variable will only match user names that begin with one upper or lower case letter and zero or more alpha numeric characters and the underscore character. If a user name does not match that a 404 (Not Found) response will occur.
-            </p><p>A <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a> value may or may not begin with a '/', it makes no difference. Likewise, by default, a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a> value may or may not end in a '/', it makes no difference, and thus request URLs that end or do not end in a '/' will both
+            </p><p>A <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a> value may or may not begin with a '/', it makes no difference. Likewise, by default, a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a> value may or may not end in a '/', it makes no difference, and thus request URLs that end or do not end in a '/' will both
                 be matched.
-            </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e2132"></a>3.1.2.&nbsp;@GET, @PUT, @POST, @DELETE, ... (HTTP Methods)</h3></div></div></div><p><a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//GET.html" target="_top">@GET</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//PUT.html" target="_top">@PUT</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//POST.html" target="_top">@POST</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//DELETE.html" target="_top">@DELETE</a> and <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//HEAD.html" target="_top">@HEAD</a>
+            </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e2132"></a>3.1.2.&nbsp;@GET, @PUT, @POST, @DELETE, ... (HTTP Methods)</h3></div></div></div><p><a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/GET.html" target="_top">@GET</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/PUT.html" target="_top">@PUT</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/POST.html" target="_top">@POST</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/DELETE.html" target="_top">@DELETE</a> and <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/HEAD.html" target="_top">@HEAD</a>
                 are
                 <span class="emphasis"><em>resource method designator</em></span>
                 annotations defined
@@ -111,9 +111,9 @@ public Response putContainer() {
                 a <a class="link" href="http://wadl.java.net/" target="_top">WADL</a> document.
                 See <a class="link" href="wadl.html" title="Chapter&nbsp;18.&nbsp;WADL Support">wadl section</a> for more information.
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e2170"></a>3.1.3.&nbsp;@Produces</h3></div></div></div><p>
-                The <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Produces.html" target="_top">@Produces</a> annotation is used to specify the MIME media types of representations a resource can
+                The <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Produces.html" target="_top">@Produces</a> annotation is used to specify the MIME media types of representations a resource can
                 produce and send back to the client. In this example, the Java method will produce representations identified
-                by the MIME media type "text/plain". <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Produces.html" target="_top">@Produces</a> can be applied at both the class and method levels.
+                by the MIME media type "text/plain". <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Produces.html" target="_top">@Produces</a> can be applied at both the class and method levels.
                 Here's an example:
             </p><p>
                 </p><div class="example"><a name="d0e2183"></a><p class="title"><b>Example&nbsp;3.4.&nbsp;Specifying output MIME type</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("/myResource")
@@ -132,9 +132,9 @@ public class SomeResource {
 }</pre></div></div><p><br class="example-break">
                 The
                 <code class="literal">doGetAsPlainText</code>
-                method defaults to the MIME type of the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Produces.html" target="_top">@Produces</a> annotation at the class level. The
+                method defaults to the MIME type of the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Produces.html" target="_top">@Produces</a> annotation at the class level. The
                 <code class="literal">doGetAsHtml</code>
-                method's <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Produces.html" target="_top">@Produces</a> annotation overrides the class-level <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Produces.html" target="_top">@Produces</a> setting, and specifies that the
+                method's <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Produces.html" target="_top">@Produces</a> annotation overrides the class-level <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Produces.html" target="_top">@Produces</a> setting, and specifies that the
                 method can produce HTML rather than plain text.
             </p><p>If a resource class is capable of producing more that one MIME
                 media type then the resource method chosen will correspond to the most
@@ -148,7 +148,7 @@ public class SomeResource {
                 "text/plain" and "text/html" but prefers the latter, then the
                 <code class="literal">doGetAsHtml</code>
                 method will be invoked.
-            </p><p>More than one media type may be declared in the same <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Produces.html" target="_top">@Produces</a> declaration, for example:
+            </p><p>More than one media type may be declared in the same <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Produces.html" target="_top">@Produces</a> declaration, for example:
             </p><p>
                 </p><div class="example"><a name="d0e2225"></a><p class="title"><b>Example&nbsp;3.5.&nbsp;Using multiple output MIME types</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@GET
 @Produces({"application/xml", "application/json"})
@@ -172,8 +172,8 @@ public String doGetAsXmlOrJson() {
                 then a server always sends "application/json", since "application/xml" has a lower quality factor.
             </p><p>The examples above refers explicitly to MIME media types for
                 clarity. It is possible to refer to constant values, which may reduce
-                typographical errors, see the constant field values of <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/MediaType.html" target="_top">MediaType</a>.
-            </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e2249"></a>3.1.4.&nbsp;@Consumes</h3></div></div></div><p>The <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Consumes.html" target="_top">@Consumes</a> annotation is used to specify the MIME media types of representations
+                typographical errors, see the constant field values of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/MediaType.html" target="_top">MediaType</a>.
+            </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e2249"></a>3.1.4.&nbsp;@Consumes</h3></div></div></div><p>The <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Consumes.html" target="_top">@Consumes</a> annotation is used to specify the MIME media types of representations
                 that can be consumed by a resource. The above example can be modified to set the cliched
                 message as follows:
             </p><p>
@@ -186,12 +186,12 @@ public void postClichedMessage(String message) {
                 identified by the MIME media type "text/plain". Notice that the resource
                 method returns void. This means no representation is returned and
                 response with a status code of 204 (No Content) will be returned to the client.
-            </p><p><a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Consumes.html" target="_top">@Consumes</a> can be applied at both the class and the method levels and more than one media type
-                may be declared in the same <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Consumes.html" target="_top">@Consumes</a> declaration.
+            </p><p><a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Consumes.html" target="_top">@Consumes</a> can be applied at both the class and the method levels and more than one media type
+                may be declared in the same <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Consumes.html" target="_top">@Consumes</a> declaration.
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e2274"></a>3.2.&nbsp;Parameter Annotations (@*Param)</h2></div></div></div><p>Parameters of a resource method may be annotated with parameter-based annotations to extract information
-            from a request. One of the previous examples presented the use of <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//PathParam.html" target="_top">@PathParam</a> to extract a path
-            parameter from the path component of the request URL that matched the path declared in <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a>.
-        </p><p><a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//QueryParam.html" target="_top">@QueryParam</a> is used to extract query parameters from the Query component of the request URL.
+            from a request. One of the previous examples presented the use of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/PathParam.html" target="_top">@PathParam</a> to extract a path
+            parameter from the path component of the request URL that matched the path declared in <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a>.
+        </p><p><a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/QueryParam.html" target="_top">@QueryParam</a> is used to extract query parameters from the Query component of the request URL.
             The following example is an extract from the sparklines sample:
         </p><div class="example"><a name="d0e2289"></a><p class="title"><b>Example&nbsp;3.8.&nbsp;Query parameters</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("smooth")
 @GET
@@ -207,7 +207,7 @@ public Response smooth(
 }</pre></div></div><br class="example-break"><p>If a query parameter "step" exists in the query component of the
             request URI then the "step" value will be extracted and parsed as a
             32 bit signed integer and assigned to the step method parameter. If "step"
-            does not exist then a default value of 2, as declared in the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//DefaultValue.html" target="_top">@DefaultValue</a>
+            does not exist then a default value of 2, as declared in the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/DefaultValue.html" target="_top">@DefaultValue</a>
             annotation, will be assigned to the step method parameter. If the "step"
             value cannot be parsed as a 32 bit signed integer then a HTTP 404 (Not
             Found) response is returned. User defined Java types such as
@@ -262,16 +262,16 @@ public Response smooth(
                 </p></li></ol></div><p>Sometimes parameters may contain more than one value for the same
             name. If this is the case then types in 5) may be used to obtain all
             values.
-        </p><p>If the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//DefaultValue.html" target="_top">@DefaultValue</a> is not used in conjunction with <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//QueryParam.html" target="_top">@QueryParam</a>
+        </p><p>If the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/DefaultValue.html" target="_top">@DefaultValue</a> is not used in conjunction with <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/QueryParam.html" target="_top">@QueryParam</a>
             and the query parameter is not present in the request then value will be
             an empty collection for<code class="literal">List</code>, <code class="literal">Set</code> or <code class="literal">SortedSet</code>,
             <code class="literal">null</code> for other object types, and the Java-defined default for primitive types.
-        </p><p>The <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//PathParam.html" target="_top">@PathParam</a> and the other parameter-based annotations, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//MatrixParam.html" target="_top">@MatrixParam</a>,
-            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//HeaderParam.html" target="_top">@HeaderParam</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//CookieParam.html" target="_top">@CookieParam</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//FormParam.html" target="_top">@FormParam</a> obey the same rules as <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//QueryParam.html" target="_top">@QueryParam</a>.
-            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//MatrixParam.html" target="_top">@MatrixParam</a> extracts information from URL path segments. <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//HeaderParam.html" target="_top">@HeaderParam</a> extracts information
-            from the HTTP headers. <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//CookieParam.html" target="_top">@CookieParam</a> extracts information from the cookies declared in cookie related HTTP
+        </p><p>The <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/PathParam.html" target="_top">@PathParam</a> and the other parameter-based annotations, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/MatrixParam.html" target="_top">@MatrixParam</a>,
+            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/HeaderParam.html" target="_top">@HeaderParam</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/CookieParam.html" target="_top">@CookieParam</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/FormParam.html" target="_top">@FormParam</a> obey the same rules as <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/QueryParam.html" target="_top">@QueryParam</a>.
+            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/MatrixParam.html" target="_top">@MatrixParam</a> extracts information from URL path segments. <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/HeaderParam.html" target="_top">@HeaderParam</a> extracts information
+            from the HTTP headers. <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/CookieParam.html" target="_top">@CookieParam</a> extracts information from the cookies declared in cookie related HTTP
             headers.
-        </p><p><a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//FormParam.html" target="_top">@FormParam</a> is slightly special because it extracts information from a request representation that
+        </p><p><a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/FormParam.html" target="_top">@FormParam</a> is slightly special because it extracts information from a request representation that
             is of the MIME media type
             <code class="literal">"application/x-www-form-urlencoded"</code>
             and conforms to the encoding
@@ -299,7 +299,7 @@ public String get(@Context HttpHeaders hh) {
     MultivaluedMap&lt;String, String&gt; headerParams = hh.getRequestHeaders();
     Map&lt;String, Cookie&gt; pathParams = hh.getCookies();
 }</pre></div></div><p><br class="example-break">
-        </p><p>In general <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Context.html" target="_top">@Context</a> can be used to obtain contextual Java types related to the request or response.
+        </p><p>In general <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Context.html" target="_top">@Context</a> can be used to obtain contextual Java types related to the request or response.
         </p><p>Because form parameters (unlike others) are part of the message entity, it is possible to do the following:</p><p>
             </p><div class="example"><a name="d0e2456"></a><p class="title"><b>Example&nbsp;3.13.&nbsp;Obtaining general map of form parameters</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@POST
 @Consumes("application/x-www-form-urlencoded")
@@ -307,15 +307,15 @@ public void post(MultivaluedMap&lt;String, String&gt; formParams) {
     // Store the message
 }</pre></div></div><p><br class="example-break">
 
-            I.e. you don't need to use the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Context.html" target="_top">@Context</a> annotation.
-        </p><p>Another kind of injection is the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//BeanParam.html" target="_top">@BeanParam</a> which allows to inject the parameters described above into a
-            single bean. A bean annotated with <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//BeanParam.html" target="_top">@BeanParam</a> containing any fields and appropriate
+            I.e. you don't need to use the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Context.html" target="_top">@Context</a> annotation.
+        </p><p>Another kind of injection is the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/BeanParam.html" target="_top">@BeanParam</a> which allows to inject the parameters described above into a
+            single bean. A bean annotated with <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/BeanParam.html" target="_top">@BeanParam</a> containing any fields and appropriate
             <code class="literal">*param</code>
-            annotation(like <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//PathParam.html" target="_top">@PathParam</a>) will be initialized with corresponding request values in expected way as if these
+            annotation(like <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/PathParam.html" target="_top">@PathParam</a>) will be initialized with corresponding request values in expected way as if these
             fields were in the resource class. Then instead of injecting request values like path param into a constructor parameters
-            or class fields the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//BeanParam.html" target="_top">@BeanParam</a> can be used to inject such a bean into a resource or resource method. The
-            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//BeanParam.html" target="_top">@BeanParam</a> is used this way to aggregate more request parameters into a single bean.
-        </p><div class="example"><a name="d0e2485"></a><p class="title"><b>Example&nbsp;3.14.&nbsp;Example of the bean which will be used as <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//BeanParam.html" target="_top">@BeanParam</a>
+            or class fields the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/BeanParam.html" target="_top">@BeanParam</a> can be used to inject such a bean into a resource or resource method. The
+            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/BeanParam.html" target="_top">@BeanParam</a> is used this way to aggregate more request parameters into a single bean.
+        </p><div class="example"><a name="d0e2485"></a><p class="title"><b>Example&nbsp;3.14.&nbsp;Example of the bean which will be used as <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/BeanParam.html" target="_top">@BeanParam</a>
             </b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class MyBeanParam {
     @PathParam("p")
     private String pathParam;
@@ -342,15 +342,15 @@ public void post(MultivaluedMap&lt;String, String&gt; formParams) {
 public void post(@BeanParam MyBeanParam beanParam, String entity) {
     final String pathParam = beanParam.getPathParam(); // contains injected path parameter "p"
     ...
-}</pre></div></div><br class="example-break"><p>The example shows aggregation of injections <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//PathParam.html" target="_top">@PathParam</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//QueryParam.html" target="_top">@QueryParam</a> <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//MatrixParam.html" target="_top">@MatrixParam</a>
-            and <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//HeaderParam.html" target="_top">@HeaderParam</a> into one single bean. The rules for injections inside the bean are the same as described above
-            for these injections. The <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//DefaultValue.html" target="_top">@DefaultValue</a> is used to define the default value for matrix parameter matrixParam.
-            Also the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Encoded.html" target="_top">@Encoded</a> annotation has the same behaviour as if it were used for injection in the resource method
+}</pre></div></div><br class="example-break"><p>The example shows aggregation of injections <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/PathParam.html" target="_top">@PathParam</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/QueryParam.html" target="_top">@QueryParam</a> <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/MatrixParam.html" target="_top">@MatrixParam</a>
+            and <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/HeaderParam.html" target="_top">@HeaderParam</a> into one single bean. The rules for injections inside the bean are the same as described above
+            for these injections. The <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/DefaultValue.html" target="_top">@DefaultValue</a> is used to define the default value for matrix parameter matrixParam.
+            Also the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Encoded.html" target="_top">@Encoded</a> annotation has the same behaviour as if it were used for injection in the resource method
             directly. Injecting the bean parameter into @Singleton resource class fields is not allowed (injections into method
             parameter must be used instead).
-        </p><p><a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//BeanParam.html" target="_top">@BeanParam</a> can contain all parameters injections
-            (<a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//PathParam.html" target="_top">@PathParam</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//QueryParam.html" target="_top">@QueryParam</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//MatrixParam.html" target="_top">@MatrixParam</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//HeaderParam.html" target="_top">@HeaderParam</a>,
-            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//CookieParam.html" target="_top">@CookieParam</a>, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//FormParam.html" target="_top">@FormParam</a>). More
+        </p><p><a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/BeanParam.html" target="_top">@BeanParam</a> can contain all parameters injections
+            (<a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/PathParam.html" target="_top">@PathParam</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/QueryParam.html" target="_top">@QueryParam</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/MatrixParam.html" target="_top">@MatrixParam</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/HeaderParam.html" target="_top">@HeaderParam</a>,
+            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/CookieParam.html" target="_top">@CookieParam</a>, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/FormParam.html" target="_top">@FormParam</a>). More
             beans can be injected into one resource or method parameters even if they inject the same request values. For example
             the following is possible:
         </p><div class="example"><a name="d0e2540"></a><p class="title"><b>Example&nbsp;3.16.&nbsp;Injection of more beans into one resource methods:</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@POST
@@ -358,10 +358,10 @@ public void post(@BeanParam MyBeanParam beanParam, @BeanParam AnotherBean anothe
 String entity) {
     // beanParam.getPathParam() == pathParam
     ...
-}</pre></div></div><br class="example-break"></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e2545"></a>3.3.&nbsp;Sub-resources</h2></div></div></div><p><a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a> may be used on classes and such classes are referred to as root resource classes. <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a>
+}</pre></div></div><br class="example-break"></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e2545"></a>3.3.&nbsp;Sub-resources</h2></div></div></div><p><a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a> may be used on classes and such classes are referred to as root resource classes. <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a>
             may also be used on methods of root resource classes. This enables common functionality for a number of resources
             to be grouped together and potentially reused.
-        </p><p>The first way <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a> may be used is on resource methods and such methods are referred to as
+        </p><p>The first way <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a> may be used is on resource methods and such methods are referred to as
             <span class="emphasis"><em>sub-resource methods</em></span>. The following example shows the method signatures for a root
             resource class from the jmaki-backend sample:
         </p><p>
@@ -396,15 +396,15 @@ public class PrintersResource {
     @DELETE @Path("/ids/{printerid}")
     public void deletePrinter(@PathParam("printerid") String printerId) { ... }
 }</pre></div></div><p><br class="example-break">
-        </p><p>If the path of the request URL is "printers" then the resource methods not annotated with <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a>
+        </p><p>If the path of the request URL is "printers" then the resource methods not annotated with <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a>
             will be selected. If the request path of the request URL is "printers/list" then first the root resource class
             will be matched and then the sub-resource methods that match "list" will be selected, which in this case
             is the sub-resource method <code class="literal">getListOfPrinters</code>. So, in this example hierarchical matching
             on the path of the request URL is performed.
-        </p><p>The second way <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a> may be used is on methods
+        </p><p>The second way <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a> may be used is on methods
             <span class="bold"><strong>not</strong></span>
             annotated
-            with resource method designators such as <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//GET.html" target="_top">@GET</a> or <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//POST.html" target="_top">@POST</a>. Such methods are referred to as
+            with resource method designators such as <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/GET.html" target="_top">@GET</a> or <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/POST.html" target="_top">@POST</a>. Such methods are referred to as
             <span class="emphasis"><em>sub-resource locators</em></span>. The following example shows the method signatures for
             a root resource class and a resource class from the optimistic-concurrency sample:
         </p><p>
@@ -449,7 +449,7 @@ public class ItemContentResource {
             <code class="literal">ItemContentResource</code>
             resource class.
             Sub-resource locators enable reuse of resource classes. A method can be annotated with the
-            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Path.html" target="_top">@Path</a> annotation with empty path (<code class="literal">@Path("/")</code> or <code class="literal">@Path("")</code>) which
+            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Path.html" target="_top">@Path</a> annotation with empty path (<code class="literal">@Path("/")</code> or <code class="literal">@Path("")</code>) which
             means that the sub resource locator is matched for the path of the enclosing resource (without sub-resource path).
         </p><p>
             </p><div class="example"><a name="d0e2626"></a><p class="title"><b>Example&nbsp;3.19.&nbsp;Sub-resource locators with empty path</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("/item")
@@ -534,7 +534,7 @@ public class ItemResource {
             Class construction and garbage collection of JVMs has vastly improved over
             the years and many objects will be created and discarded to serve and
             process the HTTP request and return the HTTP response.
-        </p><p>Instances of singleton root resource classes can be declared by an instance of <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Application.html" target="_top">Application</a>.
+        </p><p>Instances of singleton root resource classes can be declared by an instance of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Application.html" target="_top">Application</a>.
         </p><p>Jersey supports two further life-cycles using Jersey specific annotations.</p><div class="table"><a name="d0e2709"></a><p class="title"><b>Table&nbsp;3.1.&nbsp;Resource scopes</b></p><div class="table-contents"><table summary="Resource scopes" border="1"><colgroup><col width="11%"><col width="11%"><col width="22%"><col width="56%"></colgroup><thead><tr><th>Scope</th><th>Annotation</th><th>Annotation full class name</th><th>Description</th></tr></thead><tbody><tr><td>Request scope</td><td>@RequestScoped (or none)</td><td>org.glassfish.jersey.process.internal.RequestScoped</td><td><span class="emphasis"><em>Default lifecycle </em></span> (applied when no annotation is present). In this scope
                             the resource instance is created for each new request and used for processing of this request. If the
                             resource is used more than one time in the request processing, always the same instance will be used.
@@ -543,8 +543,8 @@ public class ItemResource {
                             the resource instance is created every time it is needed for the processing even it handles
                             the same request.</td></tr><tr><td>Singleton</td><td>@Singleton</td><td>javax.inject.Singleton</td><td>In this scope there is only one instance per jax-rs application. Singleton resource can be either
                             annotated with @Singleton and its class can be registered using the instance of
-                            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Application.html" target="_top">Application</a>. You can also create singletons by registering singleton instances
-                            into <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Application.html" target="_top">Application</a>.</td></tr></tbody></table></div></div><br class="table-break"></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e2763"></a>3.5.&nbsp;Rules of Injection</h2></div></div></div><p>Previous sections have presented examples of annotated types, mostly
+                            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Application.html" target="_top">Application</a>. You can also create singletons by registering singleton instances
+                            into <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Application.html" target="_top">Application</a>.</td></tr></tbody></table></div></div><br class="table-break"></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e2763"></a>3.5.&nbsp;Rules of Injection</h2></div></div></div><p>Previous sections have presented examples of annotated types, mostly
             annotated method parameters but also annotated fields of a class, for the
             injection of values onto those types.
         </p><p>This section presents the rules of injection of values on annotated
@@ -607,7 +607,7 @@ public static class MySingletonResource {
             constructor or class fields. For these objects the runtime will inject proxies
             which are able to simultaneously server more request. These request objects are
             <code class="literal">HttpHeaders</code>, <code class="literal">Request</code>, <code class="literal">UriInfo</code>,
-            <code class="literal">SecurityContext</code>. These proxies can be injected using the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Context.html" target="_top">@Context</a>
+            <code class="literal">SecurityContext</code>. These proxies can be injected using the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Context.html" target="_top">@Context</a>
             annotation. The following example shows injection of proxies into the singleton resource class.
         </p><p>
             </p><div class="example"><a name="d0e2809"></a><p class="title"><b>Example&nbsp;3.25.&nbsp;Injection of proxies into singleton</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("resource")
@@ -644,7 +644,7 @@ public static class MySingletonResource {
                             Can be used in any scope.
                         </td></tr><tr><td>Setter methods</td><td>
                             Instead of injecting values directly into field the value can be injected into the
-                            setter method which will initialize the field. This injection can be used only with <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Context.html" target="_top">@Context</a>
+                            setter method which will initialize the field. This injection can be used only with <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Context.html" target="_top">@Context</a>
                             annotation. This means
                             it cannot be used for example for injecting of query params but it can be used for injections of
                             request. The setters will be called after the object creation and
@@ -689,17 +689,17 @@ public static class SubResource {
         return "sub resource";
     }
 }</pre></div></div><p><br class="example-break">
-        </p><p>The <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//FormParam.html" target="_top">@FormParam</a> annotation is special and may only be utilized on resource and sub-resource methods.
+        </p><p>The <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/FormParam.html" target="_top">@FormParam</a> annotation is special and may only be utilized on resource and sub-resource methods.
             This is because it extracts information from a request entity.
-        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e2871"></a>3.6.&nbsp;Use of @Context</h2></div></div></div><p>Previous sections have introduced the use of <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Context.html" target="_top">@Context</a>. Chapter "Context" in the JAX-RS
-            specification presents all the standard JAX-RS Java types that may be used with <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Context.html" target="_top">@Context</a>.
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e2871"></a>3.6.&nbsp;Use of @Context</h2></div></div></div><p>Previous sections have introduced the use of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Context.html" target="_top">@Context</a>. Chapter "Context" in the JAX-RS
+            specification presents all the standard JAX-RS Java types that may be used with <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Context.html" target="_top">@Context</a>.
         </p><p>When deploying a JAX-RS application using servlet then
             <a class="link" href="http://docs.oracle.com/javaee/5/api/javax/servlet/ServletConfig.html" target="_top">ServletConfig</a>,
             <a class="link" href="http://docs.oracle.com/javaee/5/api/javax/servlet/ServletContext.html" target="_top">ServletContext</a>,
             <a class="link" href="http://docs.oracle.com/javaee/5/api/javax/servlet/http/HttpServletRequest.html" target="_top">HttpServletRequest</a>
             and
             <a class="link" href="http://docs.oracle.com/javaee/5/api/javax/servlet/http/HttpServletResponse.html" target="_top">HttpServletResponse</a>
-            are available using <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Context.html" target="_top">@Context</a>.
+            are available using <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Context.html" target="_top">@Context</a>.
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e2899"></a>3.7.&nbsp;Programmatic resource model</h2></div></div></div><p>Resources can be constructed from classes or instances but also can be constructed from a programmatic resource
             model. Every resource created from resource classes can also
             be constructed using the programmatic resource builder api. See <a class="link" href="resource-builder.html" title="Chapter&nbsp;14.&nbsp;Programmatic API for Building Resources">resource builder section</a> for more information.

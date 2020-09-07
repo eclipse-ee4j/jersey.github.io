@@ -51,7 +51,7 @@ public class Foo {
         </p><div class="tip" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Tip</h3><p>
                 All HTTP methods may return <code class="literal">Viewable</code> instances. Thus a <code class="literal">POST</code> method may
                 return a template reference to a template that produces a view as a result of processing an
-                HTML <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Form.html" target="_top">Form</a>.
+                HTML <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Form.html" target="_top">Form</a>.
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e15076"></a>21.2.&nbsp;@Template</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e15079"></a>21.2.1.&nbsp;Annotating Resource methods</h3></div></div></div><p>
                 There is no need to use <code class="literal">Viewable</code> every time you want to bind a model to a template. To
                 make the resource method more readable (and to avoid verbose wrapping of a template reference and model into
@@ -203,7 +203,7 @@ public ShortenedLink createLink(@FormParam("link") final String link) {
             Note that <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/mvc/ErrorTemplate.html" target="_top">@ErrorTemplate</a> can be used on a resource class or a resource method to merely handle
             error states. There is no need to use <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/mvc/Template.html" target="_top">@Template</a> or <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/mvc/Viewable.html" target="_top">Viewable</a> with it.
         </p><p>
-            The annotation is handled by custom <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/ExceptionMapper.html" target="_top">ExceptionMapper&lt;E extends Throwable&gt;</a> which creates an instance of
+            The annotation is handled by custom <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/ExceptionMapper.html" target="_top">ExceptionMapper&lt;E extends Throwable&gt;</a> which creates an instance of
             <code class="literal">Viewable</code> that is further processed by Jersey. This exception mapper is registered automatically
             with a <code class="literal">MvcFeature</code>.
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e15375"></a>21.4.1.&nbsp;MVC &amp; Bean Validation</h3></div></div></div><p>
@@ -222,7 +222,7 @@ public ShortenedLink createLink(@NotEmpty @FormParam("link") final String link) 
     ${error.message} "&lt;strong&gt;${error.invalidValue}&lt;/strong&gt;"&lt;br/&gt;
 &lt;/c:forEach&gt;</pre></div></div><br class="example-break"><p>
                 Support for Bean Validation in Jersey MVC Templates is provided by a <code class="literal">jersey-mvc-bean-validation</code>
-                extension module. The JAX-RS <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Feature.html" target="_top">Feature</a> provided by this module
+                extension module. The JAX-RS <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Feature.html" target="_top">Feature</a> provided by this module
                 (<code class="literal">MvcBeanValidationFeature</code>) has to be registered in order to use this
                 functionality (see <a class="xref" href="mvc.html#mvc.registration" title="21.5.&nbsp;Registration and Configuration">Section&nbsp;21.5, &#8220;Registration and Configuration&#8221;</a>).
             </p><p>
@@ -237,7 +237,7 @@ public ShortenedLink createLink(@NotEmpty @FormParam("link") final String link) 
                 and for non-Maven users the list of dependencies is available at <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/project-info/2.31/jersey/project/jersey-mvc-bean-validation/dependencies.html" target="_top">jersey-mvc-bean-validation</a>.
             </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mvc.registration"></a>21.5.&nbsp;Registration and Configuration</h2></div></div></div><p>
             To use the capabilities of Jersey MVC templating support in your JAX-RS/Jersey application you need to register
-            specific JAX-RS <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Feature.html" target="_top">Feature</a>s provided by the MVC modules. For <code class="literal">jersey-mvc</code> module it is
+            specific JAX-RS <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Feature.html" target="_top">Feature</a>s provided by the MVC modules. For <code class="literal">jersey-mvc</code> module it is
             <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/mvc/MvcFeature.html" target="_top">MvcFeature</a> for others it could be, for example, <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/mvc/freemarker/FreemarkerMvcFeature.html" target="_top">FreemarkerMvcFeature</a>
             (<code class="literal">jersey-mvc-freemarker</code>).
 
@@ -310,7 +310,7 @@ public ShortenedLink createLink(@NotEmpty @FormParam("link") final String link) 
                             <code class="literal">jersey.config.server.mvc.caching.mustache</code></p><p>Enables caching of Mustache templates to avoid multiple compilation.</p></li><li class="listitem"><p><code class="literal">MustacheMvcFeature.TEMPLATE_OBJECT_FACTORY</code> -
                             <code class="literal">jersey.config.server.mvc.factory.mustache</code></p><p>Property used to pass user-configured <code class="literal">MustacheFactory</code>.</p></li><li class="listitem"><p><code class="literal">MustacheMvcFeature.ENCODING</code> -
                             <code class="literal">jersey.config.server.mvc.encoding.mustache</code></p><p>Property used to configure a default encoding that will be used
-                            if none is specified in <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Produces.html" target="_top">@Produces</a> annotation. If property is not defined
+                            if none is specified in <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Produces.html" target="_top">@Produces</a> annotation. If property is not defined
                             the UTF-8 encoding will be used as a default value.</p></li></ul></div><p>
             </p><p>
                 Maven users can find this module at coordinates
@@ -353,7 +353,7 @@ public ShortenedLink createLink(@NotEmpty @FormParam("link") final String link) 
                             <code class="literal">jersey.config.server.mvc.caching.freemarker</code></p><p>Enables caching of Freemarker templates to avoid multiple compilation.</p></li><li class="listitem"><p><code class="literal">FreemarkerMvcFeature.TEMPLATE_OBJECT_FACTORY</code> -
                             <code class="literal">jersey.config.server.mvc.factory.freemarker</code></p><p>Property used to pass user-configured <code class="literal">FreemarkerFactory</code>.</p></li><li class="listitem"><p><code class="literal">FreemarkerMvcFeature.ENCODING</code> -
                             <code class="literal">jersey.config.server.mvc.encoding.freemarker</code></p><p>Property used to configure a default encoding that will be used
-                            if none is specified in <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Produces.html" target="_top">@Produces</a> annotation. If property is not defined
+                            if none is specified in <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Produces.html" target="_top">@Produces</a> annotation. If property is not defined
                             the UTF-8 encoding will be used as a default value.</p></li></ul></div><p>
             </p><p>
                 Maven users can find this module at coordinates

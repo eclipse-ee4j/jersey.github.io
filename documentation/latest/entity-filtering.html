@@ -67,7 +67,7 @@
             to register <code class="literal">SecurityEntityFilteringFeature</code> as this feature registers also
             <code class="literal">EntityFilteringFeature</code>.
         </p><p>
-            Entity-filtering currently recognizes one property that can be passed into the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configuration.html" target="_top">Configuration</a> instance
+            Entity-filtering currently recognizes one property that can be passed into the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configuration.html" target="_top">Configuration</a> instance
             (client/server):
 
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/message/filtering/EntityFilteringFeature.html#ENTITY_FILTERING_SCOPE" target="_top">EntityFilteringFeature.ENTITY_FILTERING_SCOPE</a> - "<code class="literal">jersey.config.entityFiltering.scope</code>"</p><p>
@@ -316,7 +316,7 @@ public @interface ProjectDetailedView {
             how to do this for client-side and 3 ways for server-side:
 
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Out-bound client request or server response programmatically created with entity-filtering annotations
-                        that identify the scopes to be applied (available on both, client and server)</p></li><li class="listitem"><p>Property identifying the applied scopes passed through <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Configuration.html" target="_top">Configuration</a>
+                        that identify the scopes to be applied (available on both, client and server)</p></li><li class="listitem"><p>Property identifying the applied scopes passed through <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Configuration.html" target="_top">Configuration</a>
                         (available on both, client and server)</p></li><li class="listitem"><p>Entity-filtering annotations identifying the applied scopes attached to a resource method or class
                         (server-side only)</p></li></ul></div><p>
 
@@ -333,8 +333,8 @@ public @interface ProjectDetailedView {
             and its fields are considered. For all composite fields that have not been filtered out, the annotations on the
             referenced child class and its fields are considered next, and so on.
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e14670"></a>20.3.1.&nbsp;Server-side Entity Filtering</h3></div></div></div><p>
-                To pass entity-filtering annotations via <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Response.html" target="_top">Response</a> returned from a resource method you can leverage the
-                <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Response.ResponseBuilder.html#entity(java.lang.Object, java.lang.annotation.Annotation[])" target="_top">Response.ResponseBuilder#entity(Object, Annotation[])</a>
+                To pass entity-filtering annotations via <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Response.html" target="_top">Response</a> returned from a resource method you can leverage the
+                <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Response.ResponseBuilder.html#entity(java.lang.Object, java.lang.annotation.Annotation[])" target="_top">Response.ResponseBuilder#entity(Object, Annotation[])</a>
                 method. The next example illustrates this approach. You will also see why every custom entity-filtering
                 annotation should contain a factory for creating instances of the annotation.
 
@@ -463,7 +463,7 @@ public class ClientsResource {
             aspects:
 
             </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                        Custom <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/SecurityContext.html" target="_top">SecurityContext</a> should be set by a container request filter in order to use
+                        Custom <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/SecurityContext.html" target="_top">SecurityContext</a> should be set by a container request filter in order to use
                         <code class="literal">@RolesAllowed</code> for role-based filtering of domain model data (server-side)
                     </p></li><li class="listitem"><p>
                         There is no need to provide entity-filtering (or security) annotations on resource methods in order to

@@ -164,7 +164,7 @@ public static class SseResource {
                 <code class="literal">"text/event-stream"</code>
                 using constant from the <code class="literal">MediaType</code>.
                 The event media type is used for serialization of event <code class="literal">data</code>. Event data media type and Java
-                type are used to select the proper <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> for event data serialization and are passed
+                type are used to select the proper <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> for event data serialization and are passed
                 to the selected writer that serializes the event <code class="literal">data</code> content. In our case the string
                 <code class="literal">"Hello world " + i + "!"</code>
                 is serialized as <code class="literal">"text/plain"</code>. In event
@@ -221,7 +221,7 @@ data: Hello world 9!
                 Each message is received with a delay of one second.
             </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                     If you have worked with streams in JAX-RS, you may wonder what is the difference between
-                    <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> and <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/StreamingOutput.html" target="_top">StreamingOutput</a>.
+                    <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> and <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/StreamingOutput.html" target="_top">StreamingOutput</a>.
                 </p><p>
                     <code class="literal">ChunkedOutput</code> is Jersey-specific API. It lets you send "chunks" of data without closing
                     the client connection using series of convenient calls to <code class="literal">ChunkedOutput.write</code> methods
@@ -344,8 +344,8 @@ sseEventSource.close();
                 </pre></div></div><p><br class="example-break">
             In this example, the client code connects to the server where the <code class="literal">SseResource</code> from the
             <a class="xref" href="sse.html#example-simple-sse-jaxrs" title="Example&nbsp;16.2.&nbsp;Simple SSE resource method">Example&nbsp;16.2, &#8220;Simple SSE resource method&#8221;</a>
-            is deployed. The <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a> instance
-            is created (and initialized with <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a> automatically). Then the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/WebTarget.html" target="_top">WebTarget</a> is built.
+            is deployed. The <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> instance
+            is created (and initialized with <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a> automatically). Then the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> is built.
             In this case a request to the web target is not made directly in the code, instead, the web target instance
             is used to initialize a new SseEventSource.Builder instance that is used to build a new
             SseEventSource. The choice of <code class="literal">build()</code> method is important, as it tells
@@ -357,10 +357,10 @@ sseEventSource.close();
             process incoming SSE events. The method readData(Class) says that the
             event data should be de-serialized from a received InboundSseEvent instance into a
             <code class="literal">String</code>
-            Java type. This method call internally executes <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> which
-            de-serializes the event data. This is similar to reading an entity from the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Response.html" target="_top">Response</a> by
+            Java type. This method call internally executes <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> which
+            de-serializes the event data. This is similar to reading an entity from the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Response.html" target="_top">Response</a> by
             <code class="literal">readEntity(Class)</code>. The method <code class="literal">readData</code> can throw a
-            <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ProcessingException.html" target="_top">ProcessingException</a>.
+            <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ProcessingException.html" target="_top">ProcessingException</a>.
         </p><p>
             After a connection to the server is opened by calling the <code class="literal">open()</code> method on the event source,
             the <code class="literal">eventSource</code> starts listening to events. When an event comes, the listener will be executed
@@ -561,7 +561,7 @@ public static class SseResource {
                         </pre></div></div><p><br class="example-break">
 
                     The code above defines the resource deployed on URI <code class="literal">"/events"</code>. This resource has a single
-                    <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//GET.html" target="_top">@GET</a> resource method which returns as an entity <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a> - an extension of generic
+                    <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/GET.html" target="_top">@GET</a> resource method which returns as an entity <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a> - an extension of generic
                     Jersey
                     <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> API for output chunked message processing.
                 </p><p>
@@ -582,7 +582,7 @@ public static class SseResource {
                     using constant from the <code class="literal">SseFeature</code>.
                     The event media type is used for serialization of event <code class="literal">data</code>. Event data media type and
                     Java
-                    type are used to select the proper <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> for event data serialization and are passed
+                    type are used to select the proper <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> for event data serialization and are passed
                     to the selected writer that serializes the event <code class="literal">data</code> content. In our case the string
                     <code class="literal">"Hello world " + i + "!"</code>
                     is serialized as <code class="literal">"text/plain"</code>. In event
@@ -711,7 +711,7 @@ while (!eventInput.isClosed()) {
                     <a class="xref" href="sse.html#example-simple-sse" title="Example&nbsp;16.7.&nbsp;Simple SSE resource method">Example&nbsp;16.7, &#8220;Simple SSE resource method&#8221;</a>
                     is deployed. At first, a new JAX-RS/Jersey
                     <code class="literal">client</code>
-                    instance is created with a <code class="literal">SseFeature</code> registered. Then a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/WebTarget.html" target="_top">WebTarget</a> instance is
+                    instance is created with a <code class="literal">SseFeature</code> registered. Then a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> instance is
                     retrieved from the <code class="literal">client</code> and is used to invoke a HTTP request. The returned response
                     entity
                     is directly read as a <code class="literal">EventInput</code> Java type, which is an extension of Jersey
@@ -724,11 +724,11 @@ while (!eventInput.isClosed()) {
                     should be used for the event data de-serialization. In our example, individual events are de-serialized as
                     <code class="literal">String</code>
                     Java type instances. This method internally finds and executes a proper
-                    <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> which is the used to do the actual de-serialization. This is similar to reading
+                    <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> which is the used to do the actual de-serialization. This is similar to reading
                     an
-                    entity from the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Response.html" target="_top">Response</a> by <code class="literal">readEntity(Class)</code>. The method
+                    entity from the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Response.html" target="_top">Response</a> by <code class="literal">readEntity(Class)</code>. The method
                     <code class="literal">readData</code>
-                    can also throw a <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ProcessingException.html" target="_top">ProcessingException</a>.
+                    can also throw a <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ProcessingException.html" target="_top">ProcessingException</a>.
                 </p><p>
                     The <code class="literal">null</code> check on <code class="literal">inboundEvent</code> is necessary to make sure that the chunk was properly
                     read and connection has not been closed by the server. Once the connection is closed, the loop terminates and
@@ -769,8 +769,8 @@ eventSource.close();
                     In this example, the client code again connects to the server where the <code class="literal">SseResource</code> from
                     the
                     <a class="xref" href="sse.html#example-simple-sse" title="Example&nbsp;16.7.&nbsp;Simple SSE resource method">Example&nbsp;16.7, &#8220;Simple SSE resource method&#8221;</a>
-                    is deployed. The <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/Client.html" target="_top">Client</a> instance
-                    is again created and initialized with <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a>. Then the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/WebTarget.html" target="_top">WebTarget</a> is built.
+                    is deployed. The <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> instance
+                    is again created and initialized with <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a>. Then the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> is built.
                     In this case a request to the web target is not made directly in the code, instead, the web target instance
                     is used to initialize a new <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/EventSource.Builder.html" target="_top">EventSource.Builder</a> instance that is used to build a new
                     <code class="literal">EventSource</code>. The choice of <code class="literal">build()</code> method is important, as it tells
@@ -781,10 +781,10 @@ eventSource.close();
                     implementation is used to listen to and process incoming SSE events. The method readData(Class) says that the
                     event data should be de-serialized from a received <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> instance into a
                     <code class="literal">String</code>
-                    Java type. This method call internally executes <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> which
-                    de-serializes the event data. This is similar to reading an entity from the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//core/Response.html" target="_top">Response</a> by
+                    Java type. This method call internally executes <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> which
+                    de-serializes the event data. This is similar to reading an entity from the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Response.html" target="_top">Response</a> by
                     <code class="literal">readEntity(Class)</code>. The method <code class="literal">readData</code> can throw a
-                    <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ProcessingException.html" target="_top">ProcessingException</a>.
+                    <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ProcessingException.html" target="_top">ProcessingException</a>.
                 </p><p>
                     The custom event source listener is registered in the event source via
                     <code class="literal">EventSource</code><code class="literal">.register(EventListener, String)</code>

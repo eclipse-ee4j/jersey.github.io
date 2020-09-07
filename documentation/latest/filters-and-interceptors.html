@@ -28,12 +28,12 @@
             There are filters on the server side and the client side.
         </p><p>
             Server filters:
-            </p><table border="0" summary="Simple list" class="simplelist"><tr><td><a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//container/ContainerRequestFilter.html" target="_top">ContainerRequestFilter</a>
-                </td></tr><tr><td><a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//container/ContainerResponseFilter.html" target="_top">ContainerResponseFilter</a>
+            </p><table border="0" summary="Simple list" class="simplelist"><tr><td><a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/container/ContainerRequestFilter.html" target="_top">ContainerRequestFilter</a>
+                </td></tr><tr><td><a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/container/ContainerResponseFilter.html" target="_top">ContainerResponseFilter</a>
                 </td></tr></table><p>
             Client filters:
-            </p><table border="0" summary="Simple list" class="simplelist"><tr><td><a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a>
-                </td></tr><tr><td><a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientResponseFilter.html" target="_top">ClientResponseFilter</a>
+            </p><table border="0" summary="Simple list" class="simplelist"><tr><td><a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a>
+                </td></tr><tr><td><a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientResponseFilter.html" target="_top">ClientResponseFilter</a>
                 </td></tr></table><p>
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e9488"></a>10.2.1.&nbsp;Server filters</h3></div></div></div>
             The following example shows a simple container response filter adding a header to each response.
@@ -57,15 +57,15 @@ public class PoweredByResponseFilter implements ContainerResponseFilter {
             </p><p>
                 In the example above the <code class="literal">PoweredByResponseFilter</code>
                 always adds a header "X-Powered-By" to the
-                response. The filter must inherit from the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//container/ContainerResponseFilter.html" target="_top">ContainerResponseFilter</a> and must be registered
+                response. The filter must inherit from the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/container/ContainerResponseFilter.html" target="_top">ContainerResponseFilter</a> and must be registered
                 as a provider. The filter will be executed for every response which is in most cases after the resource method
                 is executed. Response filters are executed even if the resource method is not run, for example when
                 the resource method is not found and 404 "Not found" response code is returned by the Jersey runtime. In this case
                 the filter will be executed and will process the 404 response.
             </p><p>
                 The <code class="literal">filter()</code> method has two arguments, the container request and container response. The
-                <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//container/ContainerRequestContext.html" target="_top">ContainerRequestContext</a> is accessible only for read only purposes as the filter is executed already
-                in response phase. The modifications can be done in the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//container/ContainerResponseContext.html" target="_top">ContainerResponseContext</a>.
+                <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/container/ContainerRequestContext.html" target="_top">ContainerRequestContext</a> is accessible only for read only purposes as the filter is executed already
+                in response phase. The modifications can be done in the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/container/ContainerResponseContext.html" target="_top">ContainerResponseContext</a>.
             </p><p>
                 The following example shows the usage of a request filter.
             </p><div class="example"><a name="d0e9521"></a><p class="title"><b>Example&nbsp;10.2.&nbsp;Container request filter</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">import java.io.IOException;
@@ -93,7 +93,7 @@ public class AuthorizationRequestFilter implements ContainerRequestFilter {
     }
 }</pre></div></div><br class="example-break"><p>
                 The request filter is similar to the response filter but does not have access to the ContainerResponseContext
-                as no response is accessible yet. Response filter inherits from <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//container/ContainerResponseFilter.html" target="_top">ContainerResponseFilter</a>.
+                as no response is accessible yet. Response filter inherits from <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/container/ContainerResponseFilter.html" target="_top">ContainerResponseFilter</a>.
                 Request filter is executed before the resource method is run and before the
                 response is created. The filter has possibility to manipulate the request parameters including request
                 headers or entity.
@@ -115,7 +115,7 @@ public class AuthorizationRequestFilter implements ContainerRequestFilter {
             </p><p>
                 To overcome the above described limitation, there is a possibility to mark
                 a server request filter as a <span class="emphasis"><em>pre-matching</em></span> filter,
-                i.e. to annotate the filter class with the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//container/PreMatching.html" target="_top">@PreMatching</a> annotation.
+                i.e. to annotate the filter class with the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/container/PreMatching.html" target="_top">@PreMatching</a> annotation.
                 Pre-matching filters are request filters that are executed before
                 the request matching is started. Thanks to this, pre-matching request filters have
                 the possibility to influence which method will be matched. Such a pre-matching request filter example is shown
@@ -157,7 +157,7 @@ public class PreMatchingFilter implements ContainerRequestFilter {
                 Like in post-matching filters you can abort a response in pre-matching filters too.
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e9593"></a>10.2.2.&nbsp;Client filters</h3></div></div></div><p>
                 Client filters are similar to container filters. The response can also be aborted
-                in the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a> which would cause that no request will actually be sent to the server at all.
+                in the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a> which would cause that no request will actually be sent to the server at all.
                 A new response is passed to the <code class="literal">abort</code> method. This response will be used and delivered
                 as a result of the request invocation. Such a response goes through the client response filters.
                 This is similar to what happens on the server side. The process is shown in the following example:
@@ -185,11 +185,11 @@ public class PreMatchingFilter implements ContainerRequestFilter {
                 server side. If there would be any client response filter it would be executed on this response.
             </p><p>
                 To summarize the workflow, for any client request invoked from the client API
-                the client request filters (<a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a>)
+                the client request filters (<a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientRequestFilter.html" target="_top">ClientRequestFilter</a>)
                 are executed that could manipulate the request.
                 If not aborted, the outcoming request is then physically sent over to the server side
                 and once a response is received back from the server the client response
-                filters (<a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//client/ClientResponseFilter.html" target="_top">ClientResponseFilter</a>)
+                filters (<a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/ClientResponseFilter.html" target="_top">ClientResponseFilter</a>)
                 are executed that might again manipulate the returned response.
                 Finally the response is passed back to the code that invoked the request.
                 If the request was aborted in any client request filter then the
@@ -201,7 +201,7 @@ public class PreMatchingFilter implements ContainerRequestFilter {
             entity input/output streams. If you for example need to encode entity body of a client request then you could
             implement an interceptor to do the work for you.
          </p><p>
-            There are two kinds of interceptors, <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/ReaderInterceptor.html" target="_top">ReaderInterceptor</a> and <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/WriterInterceptor.html" target="_top">WriterInterceptor</a>.
+            There are two kinds of interceptors, <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/ReaderInterceptor.html" target="_top">ReaderInterceptor</a> and <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/WriterInterceptor.html" target="_top">WriterInterceptor</a>.
             Reader interceptors are used to manipulate inbound entity streams. These are the streams coming from
             the "wire". So, using a reader interceptor you
             can manipulate request entity stream on the server side (where
@@ -225,7 +225,7 @@ public class PreMatchingFilter implements ContainerRequestFilter {
     }
 }</pre></div></div><p><br class="example-break">
         </p><p>
-            The interceptor gets a output stream from the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/WriterInterceptorContext.html" target="_top">WriterInterceptorContext</a> and sets
+            The interceptor gets a output stream from the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/WriterInterceptorContext.html" target="_top">WriterInterceptorContext</a> and sets
             a new one which is a GZIP wrapper of the original output stream. After all interceptors are executed the
             output stream lastly set to the <code class="literal">WriterInterceptorContext</code> will be used for serialization of the entity. In the
             example above the entity bytes will be written to the GZIPOutputStream which will compress the stream data
@@ -270,7 +270,7 @@ public class PreMatchingFilter implements ContainerRequestFilter {
             The <code class="literal">GZIPReaderInterceptor</code> wraps the original input stream with the
             <code class="literal">GZIPInputStream</code>. All further reads from the entity stream will cause that data will be decompressed
             by this stream. The interceptor method <code class="literal">aroundReadFrom()</code> must return an entity. The entity
-            is returned from the <code class="literal">proceed</code> method of the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//ext/ReaderInterceptorContext.html" target="_top">ReaderInterceptorContext</a>. The
+            is returned from the <code class="literal">proceed</code> method of the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/ReaderInterceptorContext.html" target="_top">ReaderInterceptorContext</a>. The
             <code class="literal">proceed</code> method internally calls the wrapped interceptor which must also return an entity.
             The <code class="literal">proceed</code> method invoked from the last interceptor in the chain calls message body reader which deserializes
             the entity end returns it. Every interceptor can change this entity if there is a need but in the most cases
@@ -324,7 +324,7 @@ public class PreMatchingFilter implements ContainerRequestFilter {
             an interceptor is limited only to a specific resource method we say that it is <span class="emphasis"><em>name-bound</em></span>.
             Filters and interceptors that do not have such a limitation are called <span class="emphasis"><em>global</em></span>.
         </p><p>
-            Filter or interceptor can be assigned to a resource method using the <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//NameBinding.html" target="_top">@NameBinding</a> annotation. The annotation
+            Filter or interceptor can be assigned to a resource method using the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/NameBinding.html" target="_top">@NameBinding</a> annotation. The annotation
             is used as meta annotation for other user implemented annotations that are applied to a providers and resource
             methods. See the following example:
         </p><p>
@@ -448,7 +448,7 @@ public class CompressionDynamicBinding implements DynamicFeature {
             The example contains one <code class="literal">HelloWorldResource</code> which is known from the previous name binding example.
             The difference is in the <code class="literal">getVeryLongString</code> method, which now does not define
             the <code class="literal">@Compress</code> name binding annotations. The binding is done
-            using the provider which implements <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//container/DynamicFeature.html" target="_top">DynamicFeature</a> interface. The interface defines
+            using the provider which implements <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/container/DynamicFeature.html" target="_top">DynamicFeature</a> interface. The interface defines
             one <code class="literal">configure</code>
             method with two arguments, <code class="literal">ResourceInfo</code> and <code class="literal">FeatureContext</code>.
             <code class="literal">ResourceInfo</code> contains information about the resource and method to which the binding can be done.
@@ -480,7 +480,7 @@ public class CompressionDynamicBinding implements DynamicFeature {
             <code class="literal">@Priority(2000)</code> will be executed before another provider with
              priority defined with <code class="literal">@Priority(1000)</code>.
         </p><p>
-            It's a good practice to assign a priority to filters and interceptors. Use <a class="link" href="https://jax-rs.github.io/apidocs/2.1.6//Priorities.html" target="_top">Priorities</a> class which
+            It's a good practice to assign a priority to filters and interceptors. Use <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/Priorities.html" target="_top">Priorities</a> class which
             defines standardized priorities in JAX-RS for different usages, rather than inventing your
             own priorities. For example, when you write an authentication filter you would assign a priority 1000 which
             is the value of <code class="literal">Priorities</code><code class="literal">.AUTHENTICATION</code>. The following example
