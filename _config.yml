@@ -5,5 +5,4 @@ whitelist:
   - jekyll-redirect-from
 
 permalink: /
-redirect_to:
-  - https://eclipse-ee4j.github.io/jersey/
+redirect_to: https://eclipse-ee4j.github.io/jersey/
