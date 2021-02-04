@@ -1,0 +1,124 @@
+<html><!--
+
+    Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+
+    This program and the accompanying materials are made available under the
+    terms of the Eclipse Public License v. 2.0, which is available at
+    http://www.eclipse.org/legal/epl-2.0.
+
+    This Source Code may also be made available under the following Secondary
+    Licenses when the conditions for such availability set forth in the
+    Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+    version 2 with the GNU Classpath Exception, which is available at
+    https://www.gnu.org/software/classpath/license.html.
+
+    SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+
+--><head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta name="google-site-verification" content="OiKukTHVW4bdQqx8Fq0zA2EZ_hI6-yYL-MvkCxBxaFs">
+    <title>Release Notes - Jersey 2.32</title>
+</head>
+
+<body>
+
+<h1>Release Notes - <a href="https://ci.eclipse.org/">Jersey</a> 2.32</h1>
+
+Release date: <strong>25-09-2020</strong>
+
+<h2>Pull requests and issues</h2>
+<ul>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/issues/4462">Issue 4462</a>] - InvocationInterceptors only used once when registered on a Client.</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/issues/4493">Issue 4493</a>] - ChunkedOutput race condition</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/issues/4500">Issue 4500</a>] - JerseyEventSink shouln't throw exceptions in Flow.Subscriber methods</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/issues/4501">Issue 4501</a>] - SSE Endpoint should be able to inject Flow.Subscriber</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/issues/4507">Issue 4507</a>] - Intermittent HK2 ServiceLocatorImpl has been shut down</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/issues/4522">Issue 4522</a>] - org.glassfish.jersey.logging.LoggingInterceptor.LoggingStream does not override write(byte[] b, int off, int len)</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/issues/4533">Issue 4533</a>] - “NoSuchMethodErrors” due to multiple versions of org.apache.maven:maven-artifact:jar</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/issues/4536">Issue 4536</a>] - Missing Expect header and 100-continue handling in Jersey Client</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/issues/4538">Issue 4538</a>] - Features are executed in random order</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/issues/4542">Issue 4542</a>] - Loose dependency in CompositeInjectingConstraintValidatorFactory</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/issues/4548">Issue 4548</a>] - Netty connector timeouts are not heeded</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4485">Pull 4485</a>] - Note the subscription to email list and Twitter link in Readme</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4498">Pull 4498</a>] - Fix resources in containers</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4502">Pull 4502</a>] - Added Documentation for JSON-B support</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4503">Pull 4503</a>] - SSE Flow.Subscriber injectable as event sink</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4506">Pull 4506</a>] - Clean unused dependencies</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4508">Pull 4508</a>] - Fix intermittent premature ClientRuntime finalization</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4511">Pull 4511</a>] - Fixed HK2 AbstractActiveDescriptor Test</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4512">Pull 4512</a>] - project-info plugin configuration</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4514">Pull 4514</a>] - Implemented ClientBuilderListener</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4520">Pull 4520</a>] - Test Gzip + JSP</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4523">Pull 4523</a>] - Response.hasEntity to return true if buffered after readEntity</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4525">Pull 4525</a>] - Allow concurrent Exception to be unwrapped for the ExceptionMapper</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4526">Pull 4526</a>] - Regexp on MP RestClient @Path</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4528">Pull 4528</a>] - Support TLSv1.3</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4531">Pull 4531</a>] - Fix #4522 - override write method in LoggingStream</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4540">Pull 4540</a>] - Allow for specifying Feature processing order</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4541">Pull 4541</a>] - Make Kryo use setRegistrationRequired(true) by default</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4543">Pull 4543</a>] - Rest client update to version 1.4.1</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4559">Pull 4559</a>] - Updating maven-javadoc-pugin to 3.2.0</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4561">Pull 4561</a>] - JAX-RS link fixes (new apidocs location)</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4567">Pull 4567</a>] - updateing dependencies for jersey-doc-modulelist-maven-plugin</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4569">Pull 4569</a>] - Use Helidon Connector from Helidon</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4571">Pull 4571</a>] - Prevent race condition in ChunkedOutput</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4574">Pull 4574</a>] - Fix issue with optional CDI in BV module</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4576">Pull 4576</a>] - Expect:100-Continue header handling</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4577">Pull 4577</a>] - RestClientListener call switched</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4578">Pull 4578</a>] - TimeOut property for Netty Connector</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4579">Pull 4579</a>] - attributeValue NPE handling</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4580">Pull 4580</a>] - Put Helidon Properties file back</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4581">Pull 4581</a>] - Support Apache HttpEntity as an entity type when using Apache Connector</li>
+<li>[<a href="https://github.com/eclipse-ee4j/jersey/pull/4582">Pull 4582</a>] - Add Helidon module to bom pom and remove Jackson 1</li>
+
+</ul>
+<h2>Previous releases</h2>
+
+<ul>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.32.html">Jersey 2.32 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.29.1.html">Jersey 2.29.1 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.29.html">Jersey 2.29 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.28.html">Jersey 2.28 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.25.1.html">Jersey 2.25.1 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.25.html">Jersey 2.25 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.24.1.html">Jersey 2.24.1 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.24.html">Jersey 2.24 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.23.2.html">Jersey 2.23.2 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.23.1.html">Jersey 2.23.1 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.23.html">Jersey 2.23 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.22.2.html">Jersey 2.22.2 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.22.1.html">Jersey 2.22.1 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.22.html">Jersey 2.22 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.21.1.html">Jersey 2.21.1 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.21.html">Jersey 2.21 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.20.html">Jersey 2.20 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.19.html">Jersey 2.19 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.18.html">Jersey 2.18 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.17.html">Jersey 2.17 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.16.html">Jersey 2.16 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.14.html">Jersey 2.14 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.13.html">Jersey 2.13 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.12.html">Jersey 2.12 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.11.html">Jersey 2.11 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.10.1.html">Jersey 2.10.1 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.10.html">Jersey 2.10 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.9.1.html">Jersey 2.9.1 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.9.html">Jersey 2.9 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.8.html">Jersey 2.8 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.7.html">Jersey 2.7 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.6.html">Jersey 2.6 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.5.1.html">Jersey 2.5.1 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.5.html">Jersey 2.5 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.4.1.html">Jersey 2.4.1 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.4.html">Jersey 2.4 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.3.1.html">Jersey 2.3.1 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.3.html">Jersey 2.3 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.2.html">Jersey 2.2 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.1.html">Jersey 2.1 Release Notes</a></li>
+    <li><a href="https://ci.eclipse.org/jersey/view/Release-After/job/Jersey_publish_release_notes/9/artifact/release-notes/2.0.html">Jersey 2.0 Release Notes</a></li>
+</ul>
+
+
+
+</body></html>
