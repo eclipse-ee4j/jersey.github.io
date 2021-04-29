@@ -1,0 +1,132 @@
+<html>
+<!--
+
+    Copyright (c) 2019 Oracle and/or its affiliates. All rights reserved.
+
+    This program and the accompanying materials are made available under the
+    terms of the Eclipse Public License v. 2.0, which is available at
+    http://www.eclipse.org/legal/epl-2.0.
+
+    This Source Code may also be made available under the following Secondary
+    Licenses when the conditions for such availability set forth in the
+    Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+    version 2 with the GNU Classpath Exception, which is available at
+    https://www.gnu.org/software/classpath/license.html.
+
+    SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="google-site-verification" content="OiKukTHVW4bdQqx8Fq0zA2EZ_hI6-yYL-MvkCxBxaFs" />
+    <title>Release Notes - Jersey 2.34</title>
+</head>
+
+<body>
+
+<h1>Release Notes - <a href="/">Jersey</a> 2.34</h1>
+
+Release date: <strong>16-04-2021</strong>
+
+<h2>Pull requests and issues</h2>
+<ul>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4646'>Issue 4646</a>] - Jetty connector client response buffer is hard limited to 2MB</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4649'>Issue 4649</a>] - SseEventSource cannot see the JAXRS_DEFAULT_SSE_BUILDER in OSGI</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4651'>Issue 4651</a>] - Add a ParamConverterProvider for java.util.Optional parameters</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4654'>Issue 4654</a>] - MicroProfile Rest Client 2.0 support</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4665'>Issue 4665</a>] - Hk2RequestScope.Instance logger is not static</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4678'>Issue 4678</a>] - JdkConnectorProvider cannot parse Set-cookie header value when expires attribute is present</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4683'>Issue 4683</a>] - Setting ExecutorService causes connection leak</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4694'>Issue 4694</a>] - NettyConnector fixups</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4717'>Issue 4717</a>] - Add tests for newly updated Jersey classes by RestClient</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4722'>Issue 4722</a>] - Jersey 3.0.1 no longer defaults to */* consumes</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4723'>Issue 4723</a>] - Jackson module auto-discovery sets Jaxb Annotation Introspector as primary</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4734'>Issue 4734</a>] - Print request/response logs in a single line</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4618'>Pull 4618</a>] - Groovy jdk 16</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4639'>Pull 4639</a>] - Chapter for Expect:100-continue header (client)</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4647'>Pull 4647</a>] - Add support RFC 5987 for attribute filename* in HTTP header Content-Disposition</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4662'>Pull 4662</a>] - #4658 Apache HttpComponents upgrade</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4675'>Pull 4675</a>] - Make logger static into Hk2RequestScope.Instance class</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4677'>Pull 4677</a>] - Jetty synchronous max buffer size property</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4680'>Pull 4680</a>] - 2.x apidocs bundle generation fixes</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4681'>Pull 4681</a>] - JdkConnectorProvider cannot parse Set-cookie header value when expires</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4682'>Pull 4682</a>] - Public SseEventSourceBuilder implementation</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4684'>Pull 4684</a>] - Add a ParamConverterProvider for array support</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4690'>Pull 4690</a>] - Add a ParamConverterProvider for java.util.Optional parameters</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4695'>Pull 4695</a>] - Allow for having CDI on pure Jersey Client without Jersey Server</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4697'>Pull 4697</a>] - Stop filling monitoring queues when processor fails</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4699'>Pull 4699</a>] - MicroProfile Rest Client 2.0 support</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4704'>Pull 4704</a>] - Updated javadoc maven plugin API link</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4705'>Pull 4705</a>] - Do not create a connector multiple times for each rx() call</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4707'>Pull 4707</a>] - Configurable COLLISION_BUFFER_POWER</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4710'>Pull 4710</a>] - Adjusting Jersey archetypes</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4712'>Pull 4712</a>] - switching to NIO tmp file creation approach</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4714'>Pull 4714</a>] - update maven-antrun-plugin to 3.0.0</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4716'>Pull 4716</a>] - Custom schedulers to execute @PreDestroy methods</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4720'>Pull 4720</a>] - Updating ant to 1.10.9 for antrun plugin</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4724'>Pull 4724</a>] - Rest client 2.0 updates</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4728'>Pull 4728</a>] - Add a wildcard @Produces and @Consumes...</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4729'>Pull 4729</a>] - Empty/NULL properties handling</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4731'>Pull 4731</a>] - processing order for Jackson/Jaxb annotations</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4732'>Pull 4732</a>] - adjusting examples to be run with optional JAXB</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4745'>Pull 4745</a>] - Logging delimiter parametrized</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4749'>Pull 4749</a>] - Allow to use @Inject instead of @Context with CDI</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4753'>Pull 4753</a>] - Proper handling of chunked input streams in LoggingInterceptor</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4754'>Pull 4754</a>] - Adopt ASM 9.1 to support JDK 17</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4758'>Pull 4758</a>] - Adopted Jackson 2.12.2. No change in repackaged Jackson.</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4762'>Pull 4762</a>] - Replace null Configuration in ContainerRequest with an empty instance</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4764'>Pull 4764</a>] - Lazy synchronized SSL Context initialization in the HttpUrlConnector</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4766'>Pull 4766</a>] - Add a default Enum MB provider.</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4769'>Pull 4769</a>] - Updated properties for netty connection pooling</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4770'>Pull 4770</a>] - Javadoc for non-public classes (cdi-rs-inject)</li>
+
+</ul>
+<h2>Previous releases</h2>
+
+<ul>
+    <li><a href="2.34.html">Jersey 2.34 Release Notes</a></li>
+    <li><a href="2.29.1.html">Jersey 2.29.1 Release Notes</a></li>
+    <li><a href="2.29.html">Jersey 2.29 Release Notes</a></li>
+    <li><a href="2.28.html">Jersey 2.28 Release Notes</a></li>
+    <li><a href="2.25.1.html">Jersey 2.25.1 Release Notes</a></li>
+    <li><a href="2.25.html">Jersey 2.25 Release Notes</a></li>
+    <li><a href="2.24.1.html">Jersey 2.24.1 Release Notes</a></li>
+    <li><a href="2.24.html">Jersey 2.24 Release Notes</a></li>
+    <li><a href="2.23.2.html">Jersey 2.23.2 Release Notes</a></li>
+    <li><a href="2.23.1.html">Jersey 2.23.1 Release Notes</a></li>
+    <li><a href="2.23.html">Jersey 2.23 Release Notes</a></li>
+    <li><a href="2.22.2.html">Jersey 2.22.2 Release Notes</a></li>
+    <li><a href="2.22.1.html">Jersey 2.22.1 Release Notes</a></li>
+    <li><a href="2.22.html">Jersey 2.22 Release Notes</a></li>
+    <li><a href="2.21.1.html">Jersey 2.21.1 Release Notes</a></li>
+    <li><a href="2.21.html">Jersey 2.21 Release Notes</a></li>
+    <li><a href="2.20.html">Jersey 2.20 Release Notes</a></li>
+    <li><a href="2.19.html">Jersey 2.19 Release Notes</a></li>
+    <li><a href="2.18.html">Jersey 2.18 Release Notes</a></li>
+    <li><a href="2.17.html">Jersey 2.17 Release Notes</a></li>
+    <li><a href="2.16.html">Jersey 2.16 Release Notes</a></li>
+    <li><a href="2.14.html">Jersey 2.14 Release Notes</a></li>
+    <li><a href="2.13.html">Jersey 2.13 Release Notes</a></li>
+    <li><a href="2.12.html">Jersey 2.12 Release Notes</a></li>
+    <li><a href="2.11.html">Jersey 2.11 Release Notes</a></li>
+    <li><a href="2.10.1.html">Jersey 2.10.1 Release Notes</a></li>
+    <li><a href="2.10.html">Jersey 2.10 Release Notes</a></li>
+    <li><a href="2.9.1.html">Jersey 2.9.1 Release Notes</a></li>
+    <li><a href="2.9.html">Jersey 2.9 Release Notes</a></li>
+    <li><a href="2.8.html">Jersey 2.8 Release Notes</a></li>
+    <li><a href="2.7.html">Jersey 2.7 Release Notes</a></li>
+    <li><a href="2.6.html">Jersey 2.6 Release Notes</a></li>
+    <li><a href="2.5.1.html">Jersey 2.5.1 Release Notes</a></li>
+    <li><a href="2.5.html">Jersey 2.5 Release Notes</a></li>
+    <li><a href="2.4.1.html">Jersey 2.4.1 Release Notes</a></li>
+    <li><a href="2.4.html">Jersey 2.4 Release Notes</a></li>
+    <li><a href="2.3.1.html">Jersey 2.3.1 Release Notes</a></li>
+    <li><a href="2.3.html">Jersey 2.3 Release Notes</a></li>
+    <li><a href="2.2.html">Jersey 2.2 Release Notes</a></li>
+    <li><a href="2.1.html">Jersey 2.1 Release Notes</a></li>
+    <li><a href="2.0.html">Jersey 2.0 Release Notes</a></li>
+</ul>
+
+</body>
+</html>
