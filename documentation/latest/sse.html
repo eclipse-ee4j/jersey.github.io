@@ -221,7 +221,7 @@ data: Hello world 9!
                 Each message is received with a delay of one second.
             </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                     If you have worked with streams in JAX-RS, you may wonder what is the difference between
-                    <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> and <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/StreamingOutput.html" target="_top">StreamingOutput</a>.
+                    <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> and <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/StreamingOutput.html" target="_top">StreamingOutput</a>.
                 </p><p>
                     <code class="literal">ChunkedOutput</code> is Jersey-specific API. It lets you send "chunks" of data without closing
                     the client connection using series of convenient calls to <code class="literal">ChunkedOutput.write</code> methods
@@ -237,7 +237,7 @@ data: Hello world 9!
                     and the call to this method is blocking, i.e. the method is expected to write the entire entity body
                     before returning.
                 </p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e11737"></a>16.4.2.&nbsp;Broadcasting with Jersey SSE</h3></div></div></div><p>
-                JAX-RS SSE API defines <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/SseBroadcaster.html" target="_top">SseBroadcaster</a> which allows to broadcast individual events to multiple
+                JAX-RS SSE API defines <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/SseBroadcaster.html" target="_top">SseBroadcaster</a> which allows to broadcast individual events to multiple
                 clients. A simple broadcasting implementation is shown in the following example:
 
                 </p><div class="example"><a name="d0e11745"></a><p class="title"><b>Example&nbsp;16.3.&nbsp;Broadcasting SSE messages (with JAX-RS 2.1 API)</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">...
@@ -345,7 +345,7 @@ sseEventSource.close();
             In this example, the client code connects to the server where the <code class="literal">SseResource</code> from the
             <a class="xref" href="sse.html#example-simple-sse-jaxrs" title="Example&nbsp;16.2.&nbsp;Simple SSE resource method">Example&nbsp;16.2, &#8220;Simple SSE resource method&#8221;</a>
             is deployed. The <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> instance
-            is created (and initialized with <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a> automatically). Then the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> is built.
+            is created (and initialized with <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a> automatically). Then the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> is built.
             In this case a request to the web target is not made directly in the code, instead, the web target instance
             is used to initialize a new <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/sse/SseEventSource.Builder.html" target="_top">SseEventSource.Builder</a> instance that is used to build a new
             <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/sse/SseEventSource.html" target="_top">SseEventSource</a>. The choice of <code class="literal">build()</code> method is important, as it tells
@@ -509,13 +509,13 @@ onComplete);
     &lt;artifactId&gt;jersey-media-sse&lt;/artifactId&gt;
 &lt;/dependency&gt;</pre></div></div><p><br class="example-break">
             </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
-                    Prior to Jersey 2.8, you had to manually register <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a> in your application.
+                    Prior to Jersey 2.8, you had to manually register <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a> in your application.
                     (The <code class="literal">SseFeature</code> is a feature that can be registered for both, the client and the server.)
                     Since Jersey 2.8, the feature gets automatically discovered and registered when Jersey SSE module is
                     put on the application's classpath. The automatic discovery and registration of SSE feature can be suppressed
-                    by setting <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/SseFeature.html#DISABLE_SSE" target="_top">DISABLE_SSE</a> property to <code class="literal">true</code>.
+                    by setting <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/SseFeature.html#DISABLE_SSE" target="_top">DISABLE_SSE</a> property to <code class="literal">true</code>.
                     The behavior can also be selectively suppressed in either client or server runtime by setting
-                    <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/SseFeature.html#DISABLE_SSE_CLIENT" target="_top">DISABLE_SSE_CLIENT</a> or <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/SseFeature.html#DISABLE_SSE_SERVER" target="_top">DISABLE_SSE_SERVER</a> property
+                    <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/SseFeature.html#DISABLE_SSE_CLIENT" target="_top">DISABLE_SSE_CLIENT</a> or <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/SseFeature.html#DISABLE_SSE_SERVER" target="_top">DISABLE_SSE_SERVER</a> property
                     respectively.
                 </p></div><p>
         </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e12177"></a>16.6.1.&nbsp;Implementing SSE support in a JAX-RS resource</h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e12180"></a>16.6.1.1.&nbsp;Simple SSE resource method</h4></div></div></div><p>
@@ -561,9 +561,9 @@ public static class SseResource {
                         </pre></div></div><p><br class="example-break">
 
                     The code above defines the resource deployed on URI <code class="literal">"/events"</code>. This resource has a single
-                    <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/GET.html" target="_top">@GET</a> resource method which returns as an entity <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a> - an extension of generic
+                    <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/GET.html" target="_top">@GET</a> resource method which returns as an entity <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/EventOutput.html" target="_top">EventOutput</a> - an extension of generic
                     Jersey
-                    <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> API for output chunked message processing.
+                    <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/server/ChunkedOutput.html" target="_top">ChunkedOutput</a> API for output chunked message processing.
                 </p><p>
                     In the <a class="xref" href="sse.html#example-simple-sse" title="Example&nbsp;16.7.&nbsp;Simple SSE resource method">Example&nbsp;16.7, &#8220;Simple SSE resource method&#8221;</a>, the resource method creates a new thread that sends a sequence of
                     10 events. There is a 1 second delay between two subsequent events as indicated in a comment. Each event is
@@ -620,7 +620,7 @@ data: Hello world 1!
 ...
                     </pre><p>
                 </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e12302"></a>16.6.1.2.&nbsp;Broadcasting</h4></div></div></div><p>
-                    Jersey SSE server API defines <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/SseBroadcaster.html" target="_top">SseBroadcaster</a> which allows to broadcast individual events to
+                    Jersey SSE server API defines <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/SseBroadcaster.html" target="_top">SseBroadcaster</a> which allows to broadcast individual events to
                     multiple
                     clients. A simple broadcasting implementation is shown in the following example:
 
@@ -683,14 +683,14 @@ public static class BroadcasterResource {
                 On the client side, Jersey exposes APIs that support receiving and processing SSE events using two programming
                 models:
 
-                </p><table border="0" summary="Simple list" class="simplelist"><tr><td>Pull model - pulling events from a <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/EventInput.html" target="_top">EventInput</a>, or
+                </p><table border="0" summary="Simple list" class="simplelist"><tr><td>Pull model - pulling events from a <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/EventInput.html" target="_top">EventInput</a>, or
                     </td></tr><tr><td>Push model - listening for asynchronous notifications of <code class="literal">EventSource</code>
                     </td></tr></table><p>
                 The push model is similar to what is implemented in the JAX-RS SSE API. The pull model does not have a direct
                 counterpart in the JAX-RS API and has to be implemented by the developer, if required.
             </p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e12383"></a>16.6.2.1.&nbsp;Reading SSE events with <code class="literal">EventInput</code>
                 </h4></div></div></div><p>
-                    The events can be read on the client side from a <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/EventInput.html" target="_top">EventInput</a>. See the following code:
+                    The events can be read on the client side from a <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/EventInput.html" target="_top">EventInput</a>. See the following code:
 
                     </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Client client = ClientBuilder.newBuilder()
         .register(SseFeature.class).build();
@@ -748,7 +748,7 @@ message-to-client; Hello world 9!
                 </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e12458"></a>16.6.2.2.&nbsp;Asynchronous SSE processing with <code class="literal">EventSource</code>
                 </h4></div></div></div><p>
                     The main Jersey-specific SSE client API component used to read SSE events asynchronously is
-                    <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/EventSource.html" target="_top">EventSource</a>. The usage of the <code class="literal">EventSource</code> is shown on the following example.
+                    <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/EventSource.html" target="_top">EventSource</a>. The usage of the <code class="literal">EventSource</code> is shown on the following example.
                     </p><div class="example"><a name="sse.ex.client.eventListener"></a><p class="title"><b>Example&nbsp;16.9.&nbsp;Registering <code class="literal">EventListener</code> with <code class="literal">EventSource</code>
                         </b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Client client = ClientBuilder.newBuilder()
         .register(SseFeature.class).build();
@@ -770,16 +770,16 @@ eventSource.close();
                     the
                     <a class="xref" href="sse.html#example-simple-sse" title="Example&nbsp;16.7.&nbsp;Simple SSE resource method">Example&nbsp;16.7, &#8220;Simple SSE resource method&#8221;</a>
                     is deployed. The <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/Client.html" target="_top">Client</a> instance
-                    is again created and initialized with <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a>. Then the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> is built.
+                    is again created and initialized with <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/SseFeature.html" target="_top">SseFeature</a>. Then the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/WebTarget.html" target="_top">WebTarget</a> is built.
                     In this case a request to the web target is not made directly in the code, instead, the web target instance
-                    is used to initialize a new <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/EventSource.Builder.html" target="_top">EventSource.Builder</a> instance that is used to build a new
+                    is used to initialize a new <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/EventSource.Builder.html" target="_top">EventSource.Builder</a> instance that is used to build a new
                     <code class="literal">EventSource</code>. The choice of <code class="literal">build()</code> method is important, as it tells
                     the <code class="literal">EventSource.Builder</code> to create a new <code class="literal">EventSource</code> that is not
                     automatically
                     connected to the <code class="literal">target</code>. The connection is established only later by manually invoking
-                    the <code class="literal">eventSource.open()</code> method. A custom <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/EventListener.html" target="_top">EventListener</a>
+                    the <code class="literal">eventSource.open()</code> method. A custom <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/EventListener.html" target="_top">EventListener</a>
                     implementation is used to listen to and process incoming SSE events. The method readData(Class) says that the
-                    event data should be de-serialized from a received <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> instance into a
+                    event data should be de-serialized from a received <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/InboundEvent.html" target="_top">InboundEvent</a> instance into a
                     <code class="literal">String</code>
                     Java type. This method call internally executes <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a> which
                     de-serializes the event data. This is similar to reading an entity from the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/core/Response.html" target="_top">Response</a> by
@@ -823,8 +823,8 @@ message-to-client; Hello world 8!
 message-to-client; Hello world 9!
                     </pre><p>
                 </p><p>
-                    When browsing through the Jersey SSE API documentation, you may have noticed that the <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/EventSource.html" target="_top">EventSource</a>
-                    implements <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/sse/EventListener.html" target="_top">EventListener</a> and provides an empty implementation for the
+                    When browsing through the Jersey SSE API documentation, you may have noticed that the <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/EventSource.html" target="_top">EventSource</a>
+                    implements <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/media/sse/EventListener.html" target="_top">EventListener</a> and provides an empty implementation for the
                     <code class="literal">onEvent(InboundEvent inboundEvent)</code>
                     listener method. This adds more flexibility to the
                     Jersey client-side SSE API. Instead of defining and registering a separate event listener, in simple scenarios
