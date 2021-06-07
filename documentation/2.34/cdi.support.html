@@ -53,7 +53,7 @@
         you would not be able to use any request scoped CDI beans in your Jersey application. To make Jersey work with CDI
         in containers that do not have request scope binding resolved, some extra work is required.
       </p><p>
-        To allow smooth integration with Jersey request scope a new SPI, <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/spi/ExternalRequestScope.html" target="_top">ExternalRequestScope</a>, was introduced in Jersey version 2.15.
+        To allow smooth integration with Jersey request scope a new SPI, <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.34/jersey/org/glassfish/jersey/server/spi/ExternalRequestScope.html" target="_top">ExternalRequestScope</a>, was introduced in Jersey version 2.15.
         An SPI implementation should be registered via the standard <code class="literal">META-INF/services</code> mechanism
         and needs to make sure CDI implentation request scope has been properly managed and request scoped data kept in the right context. 
         For performance reasons, at most a single external request scope provider is allowed by Jersey runtime.
