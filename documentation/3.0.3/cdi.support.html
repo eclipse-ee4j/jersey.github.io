@@ -32,7 +32,7 @@
         </p><p>
           Apache Tomcat is another Servlet container that is known to work fine with Jersey CDI support.
           However, things do not work there out of the box. You need to enable CDI support in Tomcat e.g. using Weld.
-          Jersey <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.x/examples/cdi-webapp" target="_top">CDI example</a> shows how a WAR application could be packaged
+          Jersey <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.3/examples/cdi-webapp" target="_top">CDI example</a> shows how a WAR application could be packaged
           (see <code class="literal">tomcat-packaging</code> profile in the pom file) in order to enable JAX-RS/CDI integration
           in Tomcat with Jersey using Weld.
         </p><p>
@@ -53,7 +53,7 @@
         you would not be able to use any request scoped CDI beans in your Jersey application. To make Jersey work with CDI
         in containers that do not have request scope binding resolved, some extra work is required.
       </p><p>
-        To allow smooth integration with Jersey request scope a new SPI, <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/spi/ExternalRequestScope.html" target="_top">ExternalRequestScope</a>, was introduced in Jersey version 2.15.
+        To allow smooth integration with Jersey request scope a new SPI, <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/server/spi/ExternalRequestScope.html" target="_top">ExternalRequestScope</a>, was introduced in Jersey version 2.15.
         An SPI implementation should be registered via the standard <code class="literal">META-INF/services</code> mechanism
         and needs to make sure CDI implentation request scope has been properly managed and request scoped data kept in the right context. 
         For performance reasons, at most a single external request scope provider is allowed by Jersey runtime.

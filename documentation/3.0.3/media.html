@@ -158,27 +158,27 @@ try {
                 </p><p>
                     The auto-discoverable <code class="literal">jersey-media-moxy</code> module defines a few properties that can be used to control the
                     automatic registration of <code class="literal">MoxyJsonFeature</code> (besides the generic
-                    <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/CommonProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a> an the its client/server variants):
+                    <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/CommonProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a> an the its client/server variants):
 
-                    </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/CommonProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">CommonProperties.MOXY_JSON_FEATURE_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">ServerProperties.MOXY_JSON_FEATURE_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/ClientProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">ClientProperties.MOXY_JSON_FEATURE_DISABLE</a></p></li></ul></div><p>
+                    </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/CommonProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">CommonProperties.MOXY_JSON_FEATURE_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/server/ServerProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">ServerProperties.MOXY_JSON_FEATURE_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/client/ClientProperties.html#MOXY_JSON_FEATURE_DISABLE" target="_top">ClientProperties.MOXY_JSON_FEATURE_DISABLE</a></p></li></ul></div><p>
                 </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                         A manual registration of any other Jersey JSON provider feature (except for <a class="link" href="media.html#json.json-p" title="9.1.3.&nbsp;Java API for JSON Processing (JSON-P)">Java API for JSON Processing (JSON-P)</a>)
                         disables the automated enabling and configuration of <code class="literal">MoxyJsonFeature</code>.
                     </p></div><p>
                     To configure <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/3.0.0/jakarta/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>s / <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/3.0.0/jakarta/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a>s provided by MOXy you can simply
-                    create an instance of <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html" target="_top">MoxyJsonConfig</a> and set values of needed properties. For most common
+                    create an instance of <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html" target="_top">MoxyJsonConfig</a> and set values of needed properties. For most common
                     properties you can use a particular method to set the value of the property or you can use more generic
                     methods to set the property:
 
                     </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html#property(java.lang.String, java.lang.Object)" target="_top">MoxyJsonConfig#property(java.lang.String, java.lang.Object)</a> - sets a property value for both Marshaller and Unmarshaller.
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html#property(java.lang.String, java.lang.Object)" target="_top">MoxyJsonConfig#property(java.lang.String, java.lang.Object)</a> - sets a property value for both Marshaller and Unmarshaller.
                             </p></li><li class="listitem"><p>
-                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html#marshallerProperty(java.lang.String, java.lang.Object)" target="_top">MoxyJsonConfig#marshallerProperty(java.lang.String, java.lang.Object)</a> - sets a property value for Marshaller.
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html#marshallerProperty(java.lang.String, java.lang.Object)" target="_top">MoxyJsonConfig#marshallerProperty(java.lang.String, java.lang.Object)</a> - sets a property value for Marshaller.
                             </p></li><li class="listitem"><p>
-                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html#unmarshallerProperty(java.lang.String, java.lang.Object)" target="_top">MoxyJsonConfig#unmarshallerProperty(java.lang.String, java.lang.Object)</a> - sets a property value for Unmarshaller.
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html#unmarshallerProperty(java.lang.String, java.lang.Object)" target="_top">MoxyJsonConfig#unmarshallerProperty(java.lang.String, java.lang.Object)</a> - sets a property value for Unmarshaller.
                             </p></li></ul></div><p>
 
-                    </p><div class="example"><a name="d0e7837"></a><p class="title"><b>Example&nbsp;9.7.&nbsp;<a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html" target="_top">MoxyJsonConfig</a> - Setting properties.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">final Map&lt;String, String&gt; namespacePrefixMapper = new HashMap&lt;String, String&gt;();
+                    </p><div class="example"><a name="d0e7837"></a><p class="title"><b>Example&nbsp;9.7.&nbsp;<a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html" target="_top">MoxyJsonConfig</a> - Setting properties.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">final Map&lt;String, String&gt; namespacePrefixMapper = new HashMap&lt;String, String&gt;();
 namespacePrefixMapper.put("http://www.w3.org/2001/XMLSchema-instance", "xsi");
 
 final MoxyJsonConfig configuration = new MoxyJsonConfig()
@@ -201,7 +201,7 @@ final ContextResolver&lt;MoxyJsonConfig&gt; jsonConfigResolver = moxyJsonConfig.
                 </p><p>
                     Another way to pass configuration properties to the underlying <code class="literal">MOXyJsonProvider</code> is to set
                     them directly into your <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/3.0.0/jakarta/ws/rs/core/Configurable.html" target="_top">Configurable</a> instance (see an example below). These are overwritten by
-                    properties set into the <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html" target="_top">MoxyJsonConfig</a>.
+                    properties set into the <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/moxy/json/MoxyJsonConfig.html" target="_top">MoxyJsonConfig</a>.
 
                     </p><div class="example"><a name="d0e7870"></a><p class="title"><b>Example&nbsp;9.9.&nbsp;Setting properties for MOXy providers into <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/3.0.0/jakarta/ws/rs/core/Configurable.html" target="_top">Configurable</a></b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">new ResourceConfig()
                             .property(MarshallerProperties.JSON_NAMESPACE_SEPARATOR, ".")
@@ -231,7 +231,7 @@ final Application application = new ResourceConfig()
         // not disabled.
         .register(MoxyJsonFeature.class)
         .register(jsonConfigResolver);</pre></div></div><br class="example-break"></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e7941"></a>9.1.2.3.&nbsp;Examples</h4></div></div></div><p>
-                    Jersey provides a <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.x/examples/json-moxy" target="_top">JSON MOXy example</a>
+                    Jersey provides a <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.3/examples/json-moxy" target="_top">JSON MOXy example</a>
                     on how to use MOXy to consume/produce JSON.
                 </p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="json.json-p"></a>9.1.3.&nbsp;Java API for JSON Processing (JSON-P)</h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e7952"></a>9.1.3.1.&nbsp;Dependency</h4></div></div></div><p>
                     To use JSON-P as your JSON provider you need to add <code class="literal">jersey-media-json-processing</code> module to your
@@ -254,9 +254,9 @@ final Application application = new ResourceConfig()
                 </p><p>
                     As for the other modules, <code class="literal">jersey-media-json-processing</code> has also few properties that can affect the
                     registration of <code class="literal">JsonProcessingFeature</code>
-                    (besides <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/CommonProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a> and the like):
+                    (besides <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/CommonProperties.html#FEATURE_AUTO_DISCOVERY_DISABLE" target="_top">CommonProperties.FEATURE_AUTO_DISCOVERY_DISABLE</a> and the like):
 
-                    </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/CommonProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">CommonProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ServerProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ServerProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/ClientProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ClientProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p></li></ul></div><p>
+                    </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/CommonProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">CommonProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/server/ServerProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ServerProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p></li><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/client/ClientProperties.html#JSON_PROCESSING_FEATURE_DISABLE" target="_top">ClientProperties.JSON_PROCESSING_FEATURE_DISABLE</a></p></li></ul></div><p>
                 </p><p>
                     To configure <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/3.0.0/jakarta/ws/rs/ext/MessageBodyReader.html" target="_top">MessageBodyReader&lt;T&gt;</a>s / <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/3.0.0/jakarta/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a>s provided by JSON-P you can simply
                     add values for supported properties into the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/3.0.0/jakarta/ws/rs/core/Configuration.html" target="_top">Configuration</a> instance (client/server). Currently
@@ -278,7 +278,7 @@ final Application application = new ResourceConfig()
         .register(JsonProcessingFeature.class)
         .packages("org.glassfish.jersey.examples.jsonp")
         .property(JsonGenerator.PRETTY_PRINTING, true);</pre></div></div><br class="example-break"></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e8045"></a>9.1.3.3.&nbsp;Examples</h4></div></div></div><p>Jersey provides a
-                    <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.x/examples/json-processing-webapp" target="_top">JSON Processing example</a>
+                    <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.3/examples/json-processing-webapp" target="_top">JSON Processing example</a>
                     on how to use JSON-Processing to consume/produce JSON.</p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="json.jackson"></a>9.1.4.&nbsp;Jackson (2.x)</h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e8056"></a>9.1.4.1.&nbsp;Dependency</h4></div></div></div><p>
                     To use Jackson 2.x as your JSON provider you need to add <code class="literal">jersey-media-json-jackson</code> module to your
                     <code class="literal">pom.xml</code> file:
@@ -300,7 +300,7 @@ final Application application = new ResourceConfig()
                     below gives you a hint on how to wire your <code class="literal">ObjectMapper</code>
                     instance into your Jersey application.
                 </p><p>
-                    In order to use Jackson as your JSON (JAXB/POJO) provider you need to register <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/jackson/JacksonFeature.html" target="_top">JacksonFeature</a>
+                    In order to use Jackson as your JSON (JAXB/POJO) provider you need to register <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/jackson/JacksonFeature.html" target="_top">JacksonFeature</a>
                     and a <code class="literal">ContextResolver&lt;T&gt;</code> for <code class="literal">ObjectMapper</code>,
                     if needed, in your <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/3.0.0/jakarta/ws/rs/core/Configurable.html" target="_top">Configurable</a> (client/server).
 
@@ -328,9 +328,9 @@ public class MyObjectMapperProvider implements ContextResolver&lt;ObjectMapper&g
 
     // ...
 }</pre><p>To view the complete example source code, see
-    <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.x/examples/json-jackson/src/main/java/org/glassfish/jersey/examples/jackson/MyObjectMapperProvider.java" target="_top">
+    <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.3/examples/json-jackson/src/main/java/org/glassfish/jersey/examples/jackson/MyObjectMapperProvider.java" target="_top">
     MyObjectMapperProvider</a> class from the
-    <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.x/examples/json-jackson" target="_top">JSON-Jackson</a> example.</p></div></div><p><br class="example-break">
+    <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.3/examples/json-jackson" target="_top">JSON-Jackson</a> example.</p></div></div><p><br class="example-break">
 
                     </p><div class="example"><a name="d0e8119"></a><p class="title"><b>Example&nbsp;9.15.&nbsp;Building client with Jackson JSON feature enabled.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">final Client client = ClientBuilder.newBuilder()
         .register(MyObjectMapperProvider.class)  // No need to register this provider if no special configuration is required.
@@ -343,12 +343,12 @@ final Application application = new ResourceConfig()
         .register(MyObjectMapperProvider.class)  // No need to register this provider if no special configuration is required.
         .register(JacksonFeature.class);</pre></div></div><p><br class="example-break">
                 </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e8131"></a>9.1.4.3.&nbsp;Examples</h4></div></div></div><p>
-                    Jersey provides <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.x/examples/json-jackson" target="_top">JSON Jackson (2.x) example</a>
+                    Jersey provides <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.3/examples/json-jackson" target="_top">JSON Jackson (2.x) example</a>
                     showing how to use Jackson to consume/produce JSON.
                 </p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="json.jettison"></a>9.1.5.&nbsp;Jettison</h3></div></div></div><p>
                 JAXB approach for (de)serializing JSON in Jettison module provides, in addition to using pure JAXB,
-                configuration options that could be set on an <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/jettison/JettisonConfig.html" target="_top">JettisonConfig</a> instance. The instance could be then
-                further used to create a <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/jettison/JettisonJaxbContext.html" target="_top">JettisonJaxbContext</a>, which serves as a main configuration point in this
+                configuration options that could be set on an <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/jettison/JettisonConfig.html" target="_top">JettisonConfig</a> instance. The instance could be then
+                further used to create a <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/jettison/JettisonJaxbContext.html" target="_top">JettisonJaxbContext</a>, which serves as a main configuration point in this
                 area.
                 To pass your specialized <code class="literal">JettisonJaxbContext</code> to Jersey, you will finally need to implement
                 a JAXBContext <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/3.0.0/jakarta/ws/rs/ext/ContextResolver.html" target="_top">ContextResolver&lt;T&gt;</a> (see below).
@@ -415,7 +415,7 @@ Contact contact = new Contact(2, "Bob", Arrays.asList(addresses));</pre></div></
                     I.e. contact bean with <code class="literal">id=2</code>, <code class="literal">name="Bob"</code> containing
                     a single address (<code class="literal">street="Long Street 1"</code>, <code class="literal">town="Short Village"</code>).
                 </p><p>
-                    All below described configuration options are documented also in api-docs at <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/jettison/JettisonConfig.html" target="_top">JettisonConfig</a>.
+                    All below described configuration options are documented also in api-docs at <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/jettison/JettisonConfig.html" target="_top">JettisonConfig</a>.
                 </p><div class="section"><div class="titlepage"><div><div><h5 class="title"><a name="d0e8228"></a>9.1.5.2.1.&nbsp;Jettison mapped notation</h5></div></div></div><p>
                         If you need to deal with various XML namespaces, you will find Jettison <code class="literal">mapped</code>
                         notation pretty useful. Lets define a particular namespace for <code class="code">id</code> item:
@@ -504,7 +504,7 @@ context = new JettisonJaxbContext(
    }
 }</pre></div></div><p><br class="example-break">
                     </p></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="jettison-registration"></a>9.1.5.3.&nbsp;Configure and register</h4></div></div></div><p>
-                    In order to use Jettison as your JSON (JAXB/POJO) provider you need to register <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/jettison/JettisonFeature.html" target="_top">JettisonFeature</a>
+                    In order to use Jettison as your JSON (JAXB/POJO) provider you need to register <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/jettison/JettisonFeature.html" target="_top">JettisonFeature</a>
                     and a <code class="literal">ContextResolver&lt;T&gt;</code> for <code class="literal">JAXBContext</code> (if needed) in your <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/3.0.0/jakarta/ws/rs/core/Configurable.html" target="_top">Configurable</a>
                     (client/server).
 
@@ -537,14 +537,14 @@ final Application application = new ResourceConfig()
         .register(JaxbContextResolver.class)  // No need to register this provider if no special configuration is required.
         .register(JettisonFeature.class);</pre></div></div><p><br class="example-break">
                 </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e8341"></a>9.1.5.4.&nbsp;Examples</h4></div></div></div><p>
-                    Jersey provides an <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.x/examples/json-jettison" target="_top">JSON Jettison example</a>
+                    Jersey provides an <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.3/examples/json-jettison" target="_top">JSON Jettison example</a>
                     on how to use Jettison to consume/produce JSON.
                 </p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e8349"></a>9.1.6.&nbsp;<code class="literal">@JSONP</code> - JSON with Padding Support</h3></div></div></div><p>
                 Jersey provides out-of-the-box support for <a class="link" href="http://en.wikipedia.org/wiki/JSONP" target="_top">JSONP</a>
                 - JSON with padding. The following conditions has to be met to take advantage of this capability:
 
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                            Resource method, which should return wrapped JSON, needs to be annotated with <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/JSONP.html" target="_top">@JSONP</a>
+                            Resource method, which should return wrapped JSON, needs to be annotated with <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/server/JSONP.html" target="_top">@JSONP</a>
                             annotation.
                         </p></li><li class="listitem"><p>
                             <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/3.0.0/jakarta/ws/rs/ext/MessageBodyWriter.html" target="_top">MessageBodyWriter&lt;T&gt;</a> for <code class="literal">application/json</code> media type, which also accepts
@@ -641,7 +641,7 @@ public JaxbBean getSimpleJSONP() {
 })</pre><p>
             </p><p><b>Example.&nbsp;</b>
                     You can take a look at a provided
-                    <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.x/examples/json-with-padding" target="_top">JSON with Padding example</a>.
+                    <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.3/examples/json-with-padding" target="_top">JSON with Padding example</a>.
                 </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="json.json-b"></a>9.1.7.&nbsp;Java API for JSON Binding (JSON-B)</h3></div></div></div><p>
                 Jersey uses <a class="link" href="https://eclipse-ee4j.github.io/yasson/" target="_top">Yasson</a> for JSON Binding (JSR-367) implementation.
             </p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e8513"></a>9.1.7.1.&nbsp;Dependency</h4></div></div></div><p>
@@ -683,7 +683,7 @@ public class JsonbContextResolver implements ContextResolver&lt;Jsonb&gt; {
     .register(JsonbContextResolver.class)
 );</pre></div></div><br class="example-break"><p><b>Example.&nbsp;</b>
                         You can take a look at a provided
-                        <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.x/examples/json-binding-webapp" target="_top">JSON-B example.</a>.
+                        <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.3/examples/json-binding-webapp" target="_top">JSON-B example.</a>.
                     </p></div></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="xml"></a>9.2.&nbsp;XML</h2></div></div></div><p>
             As you probably already know, Jersey uses <code class="literal">MessageBodyWriter&lt;T&gt;</code>s and <code class="literal">MessageBodyReader&lt;T&gt;</code>s to
             parse incoming requests and create outgoing responses. Every user can create its own representation but... this is not
@@ -693,7 +693,7 @@ public class JsonbContextResolver implements ContextResolver&lt;Jsonb&gt; {
                 Jersey currently support several low level data types: <a class="link" href="http://docs.oracle.com/javase/7/docs/api/javax/xml/transform/stream/StreamSource.html" target="_top">StreamSource</a>, <a class="link" href="http://docs.oracle.com/javase/7/docs/api/javax/xml/transform/sax/SAXSource.html" target="_top">SAXSource</a>, <a class="link" href="http://docs.oracle.com/javase/7/docs/api/javax/xml/transform/dom/DOMSource.html" target="_top">DOMSource</a>
                 and <a class="link" href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Document.html" target="_top">Document</a>. You can use these types as the return type or as a method (resource) parameter.
                 Lets say we want to test this feature and we have
-                <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.x/examples/helloworld" target="_top">helloworld example</a> as a starting point.
+                <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.3/examples/helloworld" target="_top">helloworld example</a> as a starting point.
                 All we need to do is add methods (resources) which consumes and produces XML and types mentioned above will be
                 used.
             </p><div class="example"><a name="d0e8614"></a><p class="title"><b>Example&nbsp;9.33.&nbsp;Low level XML test - methods added to <code class="literal">HelloWorldResource.java</code></b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@POST
@@ -728,7 +728,7 @@ public Document getDocument(Document document) {
                 added to response but content stays. Feel free to iterate through all resources.
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e8642"></a>9.2.2.&nbsp;Getting started with JAXB</h3></div></div></div><p>
                 Good start for people which already have some experience with JAXB annotations
-                is <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.x/examples/jaxb" target="_top">JAXB example</a>. You can see various use-cases there.
+                is <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.3/examples/jaxb" target="_top">JAXB example</a>. You can see various use-cases there.
                 This text is mainly meant for those who don't have prior experience with JAXB. Don't expect that all possible
                 annotations and their combinations will be covered in this chapter,
                 <a class="link" href="http://jaxb.java.net" target="_top">JAXB (JSR 222 implementation)</a>
@@ -881,7 +881,7 @@ Client client = ClientBuilder.newClient(config);
                 the <code class="literal">JAXBContextFactory</code> from which a <code class="literal">JAXBContext</code> instance would be obtained (for more
                 on this topic, read JavaDoc on <a class="link" href="https://eclipse-ee4j.github.io/jaxb-ri/docs/api/jakarta.xml.bind/JAXBContext.html" target="_top">JAXBContext</a>) or you can add <code class="literal">jersey-media-moxy</code> module to
                 your project and register/configure
-                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/moxy/xml/MoxyXmlFeature.html" target="_top">MoxyXmlFeature</a> class/instance in
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/moxy/xml/MoxyXmlFeature.html" target="_top">MoxyXmlFeature</a> class/instance in
                 the <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/3.0.0/jakarta/ws/rs/core/Configurable.html" target="_top">Configurable</a>.
             </p><div class="example"><a name="d0e8826"></a><p class="title"><b>Example&nbsp;9.41.&nbsp;Add <code class="literal">jersey-media-moxy</code> dependency.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.media&lt;/groupId&gt;
@@ -924,7 +924,7 @@ final ResourceConfig config = new ResourceConfig()
                             <code class="literal">Content-Type</code> header, if not already present.
                         </p></li></ul></div><p>
             </p><p>
-                For more information refer to <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/multipart/package-summary.html" target="_top">Multi Part</a>.
+                For more information refer to <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/media/multipart/package-summary.html" target="_top">Multi Part</a>.
             </p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e8908"></a>9.3.1.1.&nbsp;Dependency</h4></div></div></div><p>
                     To use multipart features you need to add <code class="literal">jersey-media-multipart</code> module to your <code class="literal">pom.xml</code> file:
 
@@ -938,7 +938,7 @@ final ResourceConfig config = new ResourceConfig()
                     class-path.
                 </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e8925"></a>9.3.1.2.&nbsp;Registration</h4></div></div></div><p>
                     Before you can use capabilities of the <code class="literal">jersey-media-multipart</code> module in your client/server code, you
-                    need to register <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/multipart/MultiPartFeature.html" target="_top">MultiPartFeature</a>.
+                    need to register <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/media/multipart/MultiPartFeature.html" target="_top">MultiPartFeature</a>.
 
                     </p><div class="example"><a name="d0e8936"></a><p class="title"><b>Example&nbsp;9.44.&nbsp;Building client with MultiPart feature enabled.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">final Client client = ClientBuilder.newBuilder()
     .register(MultiPartFeature.class)
@@ -949,12 +949,12 @@ final Application application = new ResourceConfig()
     .packages("org.glassfish.jersey.examples.multipart")
     .register(MultiPartFeature.class)</pre></div></div><p><br class="example-break">
                 </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e8948"></a>9.3.1.3.&nbsp;Examples</h4></div></div></div><p>Jersey provides a
-                    <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.x/examples/multipart-webapp" target="_top">Multipart Web Application Example</a>
+                    <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.3/examples/multipart-webapp" target="_top">Multipart Web Application Example</a>
                     on how to use multipart features.</p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e8956"></a>9.3.2.&nbsp;Client</h3></div></div></div><p>
-                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/multipart/MultiPart.html" target="_top">MultiPart</a> class (or it's subclasses) can be used as an entry point to use
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/media/multipart/MultiPart.html" target="_top">MultiPart</a> class (or it's subclasses) can be used as an entry point to use
                 <code class="literal">jersey-media-multipart</code> module on the client side. This class represents a
                 <a class="link" href="http://en.wikipedia.org/wiki/MIME#Multipart_messages" target="_top">MIME multipart message</a> and is able
-                to hold an arbitrary number of <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/multipart/BodyPart.html" target="_top">BodyPart</a>s. Default media type is
+                to hold an arbitrary number of <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/media/multipart/BodyPart.html" target="_top">BodyPart</a>s. Default media type is
                 <a class="link" href="http://en.wikipedia.org/wiki/MIME#Mixed" target="_top">multipart/mixed</a>
                 for <code class="literal">MultiPart</code> entity and <code class="literal">text/plain</code> for
                 <code class="literal">BodyPart</code>.
@@ -989,7 +989,7 @@ Content-Type: application/json
 --Boundary_1_829077776_1369128119878--</pre></div></div><p><br class="example-break">
             </p><p>
                 When working with forms (e.g. media type <code class="literal">multipart/form-data</code>) and various fields in them,
-                there is a more convenient class to be used - <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/multipart/FormDataMultiPart.html" target="_top">FormDataMultiPart</a>. It automatically sets
+                there is a more convenient class to be used - <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/media/multipart/FormDataMultiPart.html" target="_top">FormDataMultiPart</a>. It automatically sets
                 the media type for the <code class="literal">FormDataMultiPart</code> entity to
                 <code class="literal">multipart/form-data</code> and <code class="literal">Content-Disposition</code> header to
                 <code class="literal">FormDataBodyPart</code> body parts.
@@ -1027,7 +1027,7 @@ Content-Disposition: form-data; name="json"
             </p><p>
                 A common use-case for many users is sending files from client to server. For this purpose you can use classes from
                 <code class="literal">org.glassfish.jersey.jersey.media.multipart</code> package, such as
-                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/multipart/file/FileDataBodyPart.html" target="_top">FileDataBodyPart</a> or <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/multipart/file/StreamDataBodyPart.html" target="_top">StreamDataBodyPart</a>.
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/media/multipart/file/FileDataBodyPart.html" target="_top">FileDataBodyPart</a> or <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/media/multipart/file/StreamDataBodyPart.html" target="_top">StreamDataBodyPart</a>.
 
                 </p><div class="example"><a name="d0e9067"></a><p class="title"><b>Example&nbsp;9.50.&nbsp;Multipart - sending files.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">// MediaType of the body part will be derived from the file.
 final FileDataBodyPart filePart = new FileDataBodyPart("my_pom", new File("pom.xml"));
@@ -1047,9 +1047,9 @@ final Response response = target.request()
                 Returning a multipart response from server to client is not much different from the parts described in the client
                 section above. To obtain a multipart entity, sent by a client, in the application you can use two approaches:
 
-                </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Injecting the whole <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/multipart/MultiPart.html" target="_top">MultiPart</a> entity.</p></li><li class="listitem"><p>
+                </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>Injecting the whole <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/media/multipart/MultiPart.html" target="_top">MultiPart</a> entity.</p></li><li class="listitem"><p>
                             Injecting particular parts of a <code class="literal">form-data</code> multipart request via
-                            <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/multipart/FormDataParam.html" target="_top">@FormDataParam</a> annotation.
+                            <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/media/multipart/FormDataParam.html" target="_top">@FormDataParam</a> annotation.
                         </p></li></ul></div><p>
             </p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e9109"></a>9.3.3.1.&nbsp;Injecting and returning the <code class="literal">MultiPart</code> entity</h4></div></div></div><p>
                     Working with <code class="literal">MultiPart</code> types is no different from injecting/returning other
@@ -1065,13 +1065,13 @@ public MultiPart post(final FormDataMultiPart multiPart) {
     return multiPart;
 }</pre></div></div><br class="example-break"></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e9143"></a>9.3.3.2.&nbsp;Injecting with <code class="literal">@FormDataParam</code></h4></div></div></div><p>
                     If you just need to bind the named body part(s) of a <code class="literal">multipart/form-data</code> request
-                    entity body to a resource method parameter you can use <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/multipart/FormDataParam.html" target="_top">@FormDataParam</a> annotation.
+                    entity body to a resource method parameter you can use <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/media/multipart/FormDataParam.html" target="_top">@FormDataParam</a> annotation.
                 </p><p>
                     This annotation in conjunction with the media type <code class="literal">multipart/form-data</code> should be used for
                     submitting and consuming forms that contain files, non-ASCII data, and binary data.
                 </p><p>
                     The type of the annotated parameter can be one of the following (for more detailed description see
-                    javadoc to <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/media/multipart/FormDataParam.html" target="_top">@FormDataParam</a>):
+                    javadoc to <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.3/jersey/org/glassfish/jersey/media/multipart/FormDataParam.html" target="_top">@FormDataParam</a>):
 
                     </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
                                 <code class="literal">FormDataBodyPart</code> - The value of the parameter will be the first

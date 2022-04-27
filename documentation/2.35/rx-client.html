@@ -349,7 +349,7 @@ String responseString = responseFlowable.blockingFirst();</pre><div class="simpl
                 <a class="link" href="http://en.wikipedia.org/wiki/Observer_pattern" target="_top">observer pattern</a> to support these sequences of data/events
                 via its <a class="link" href="http://reactivex.io/RxJava/javadoc//rx/Observable.html" target="_top">Observable</a> entry point class which implements the Reactive Pattern. <code class="literal">Observable</code> is
                 actually the parameter type in the RxJava's extension of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a>, called
-                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/rx/rxjava/RxObservableInvoker.html" target="_top">RxObservableInvoker</a>. This means that the return type of HTTP method calls is
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.35/jersey/org/glassfish/jersey/client/rx/rxjava/RxObservableInvoker.html" target="_top">RxObservableInvoker</a>. This means that the return type of HTTP method calls is
                 <code class="literal">Observable</code> in this case (accordingly parametrized).
             </p><p>
                 Requests are by default invoked at the moment when a subscriber is subscribed to an observable (it's a cold
@@ -393,7 +393,7 @@ client.register(RxObservableInvokerProvider.class);</pre></div></div><p><br clas
                 <a class="link" href="http://en.wikipedia.org/wiki/Observer_pattern" target="_top">observer pattern</a> to support these sequences of data/events
                 via its <a class="link" href="http://reactivex.io/RxJava/javadoc//rx/Flowable.html" target="_top">Flowable</a> entry point class which implements the Reactive Pattern. <code class="literal">Flowable</code> is
                 actually the parameter type in the RxJava's extension of <a class="link" href="https://eclipse-ee4j.github.io/jaxrs-api/apidocs/2.1.6/javax/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a>, called
-                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/rx/rxjava2/RxFlowableInvoker.html" target="_top">RxFlowableInvoker</a>. This means that the return type of HTTP method calls is
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.35/jersey/org/glassfish/jersey/client/rx/rxjava2/RxFlowableInvoker.html" target="_top">RxFlowableInvoker</a>. This means that the return type of HTTP method calls is
                 <code class="literal">Flowable</code> in this case (accordingly parametrized).
             </p><p>
                 Requests are by default invoked at the moment when a subscriber is subscribed to a flowable (it's a cold
@@ -437,7 +437,7 @@ client.register(RxFlowableInvokerProvider.class);</pre></div></div><p><br class=
                 listeners that are notified when the future completes. The <code class="literal">ListenableFuture</code> can be combined with
                 <a class="link" href="https://guava.dev/releases/18.0/api/docs/com/google/common/util/concurrent/Futures.html" target="_top">Futures</a> to achieve asynchronous/event-based completion aware processing. <code class="literal">ListenableFuture</code>
                 is the parameter type in the Guava's extension of <code class="literal">RxInvoker</code>, called
-                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/client/rx/guava/RxListenableFutureInvoker.html" target="_top">RxListenableFutureInvoker</a>. This means that the return type of HTTP method calls is
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.35/jersey/org/glassfish/jersey/client/rx/guava/RxListenableFutureInvoker.html" target="_top">RxListenableFutureInvoker</a>. This means that the return type of HTTP method calls is
                 <code class="literal">ListenableFuture</code> in this case (accordingly parametrized).
             </p><p>
                 Requests are by default invoked immediately. If not said otherwise the <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executors.html#newCachedThreadPool--" target="_top">Executors#newCachedThreadPool()</a> pool

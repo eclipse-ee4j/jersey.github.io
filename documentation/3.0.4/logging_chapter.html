@@ -17,7 +17,7 @@
                 Single HTML
             </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="logging_chapter"></a>Chapter&nbsp;22.&nbsp;Logging</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="logging_chapter.html#logging">22.1. Logging traffic</a></span></dt><dd><dl><dt><span class="section"><a href="logging_chapter.html#d0e15744">22.1.1. Introduction</a></span></dt><dt><span class="section"><a href="logging_chapter.html#d0e15769">22.1.2. Configuration and registering</a></span></dt></dl></dd></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="logging"></a>22.1.&nbsp;Logging traffic</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e15744"></a>22.1.1.&nbsp;Introduction</h3></div></div></div><p>
                 Jersey Logging supports the logging request and response via internal client and server filters, which are
-                configured and registered by <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/logging/LoggingFeature.html" target="_top">LoggingFeature</a> 's properties. <code class="literal">LoggingFeature</code>
+                configured and registered by <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.4/jersey/org/glassfish/jersey/logging/LoggingFeature.html" target="_top">LoggingFeature</a> 's properties. <code class="literal">LoggingFeature</code>
                 has been introduced in Jersey 2.23 version and deprecates an older <code class="literal">LoggingFilter</code>.
                 Jersey of version 3.x fully support all logging features of Jersey 2.x.
             </p><p>
@@ -30,23 +30,23 @@
                                 <code class="literal">Logger name</code>
                             </p><p>
                                 Defines a logger used to log request and response messages.
-                            </p><p>Default value is <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/logging/LoggingFeature.html#DEFAULT_LOGGER_NAME" target="_top">LoggingFeature.DEFAULT_LOGGER_NAME</a>.
+                            </p><p>Default value is <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.4/jersey/org/glassfish/jersey/logging/LoggingFeature.html#DEFAULT_LOGGER_NAME" target="_top">LoggingFeature.DEFAULT_LOGGER_NAME</a>.
                             </p></li><li class="listitem"><p>
                                 <code class="literal">Logger level</code>
                             </p><p>
                                 Defines level that will be used to log messages by logging filters. Messages will be logged only
                                 if the effective level of the logger allows it.
-                            </p><p>Default value is <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/logging/LoggingFeature.html#DEFAULT_LOGGER_LEVEL" target="_top">LoggingFeature.DEFAULT_LOGGER_LEVEL</a>.
+                            </p><p>Default value is <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.4/jersey/org/glassfish/jersey/logging/LoggingFeature.html#DEFAULT_LOGGER_LEVEL" target="_top">LoggingFeature.DEFAULT_LOGGER_LEVEL</a>.
                             </p></li><li class="listitem"><p>
                                 <code class="literal">Verbosity</code>
                             </p><p>
                                 Verbosity determines how detailed message will be logged.
-                                See <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/logging/LoggingFeature.Verbosity.html" target="_top">LoggingFeature.Verbosity</a> javadoc.
+                                See <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.4/jersey/org/glassfish/jersey/logging/LoggingFeature.Verbosity.html" target="_top">LoggingFeature.Verbosity</a> javadoc.
                                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: circle; "><li class="listitem"><p>
-                                            The lowest verbosity <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/logging/LoggingFeature.Verbosity.html#HEADERS_ONLY" target="_top">LoggingFeature.Verbosity.HEADERS_ONLY</a> will log
+                                            The lowest verbosity <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.4/jersey/org/glassfish/jersey/logging/LoggingFeature.Verbosity.html#HEADERS_ONLY" target="_top">LoggingFeature.Verbosity.HEADERS_ONLY</a> will log
                                             only request/response headers.
                                         </p></li><li class="listitem"><p>
-                                            The medium verbosity (<a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/logging/LoggingFeature.Verbosity.html#PAYLOAD_TEXT" target="_top">LoggingFeature.Verbosity.PAYLOAD_TEXT</a>) will log
+                                            The medium verbosity (<a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.4/jersey/org/glassfish/jersey/logging/LoggingFeature.Verbosity.html#PAYLOAD_TEXT" target="_top">LoggingFeature.Verbosity.PAYLOAD_TEXT</a>) will log
                                             request/response headers, as well as an entity if considered a readable text. The
                                             entity is considered a readable text, if <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/core/MediaType.html" target="_top">MediaType</a> is
                                             <code class="literal">text/*</code>
@@ -65,20 +65,20 @@
                                                         <code class="literal">application/xml</code>
                                                     </p></li></ul></div><p>
                                         </p></li><li class="listitem"><p>
-                                            The highest verbosity <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/logging/LoggingFeature.Verbosity.html#PAYLOAD_ANY" target="_top">LoggingFeature.Verbosity.PAYLOAD_ANY</a>
+                                            The highest verbosity <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.4/jersey/org/glassfish/jersey/logging/LoggingFeature.Verbosity.html#PAYLOAD_ANY" target="_top">LoggingFeature.Verbosity.PAYLOAD_ANY</a>
                                             will log all types of an entity (besides the request/response headers.
                                         </p></li></ul></div><p>
                                 Note that the entity is logged up to the specified maximum number of bytes
-                                (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_MAX_ENTITY_SIZE" target="_top">LoggingFeature.LOGGING_FEATURE_MAX_ENTITY_SIZE</a>).
+                                (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.4/jersey/org/glassfish/jersey/logging/LoggingFeature.html#LOGGING_FEATURE_MAX_ENTITY_SIZE" target="_top">LoggingFeature.LOGGING_FEATURE_MAX_ENTITY_SIZE</a>).
                             </p><p>
-                                Default value is <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/logging/LoggingFeature.html#DEFAULT_VERBOSITY" target="_top">LoggingFeature.DEFAULT_VERBOSITY</a>.
+                                Default value is <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.4/jersey/org/glassfish/jersey/logging/LoggingFeature.html#DEFAULT_VERBOSITY" target="_top">LoggingFeature.DEFAULT_VERBOSITY</a>.
                             </p></li><li class="listitem"><p>
                                 <code class="literal">Maximum entity size</code>
                             </p><p>
                                 Maximum number of entity bytes to be logged (and buffered) - if the entity is larger, logging
                                 filter will print (and buffer in memory) only the specified number of bytes and print "...more..."
                                 string at the end. Negative values are interpreted as zero.
-                            </p><p>Default value <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/logging/LoggingFeature.html#DEFAULT_MAX_ENTITY_SIZE" target="_top">LoggingFeature.DEFAULT_MAX_ENTITY_SIZE</a>.
+                            </p><p>Default value <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.4/jersey/org/glassfish/jersey/logging/LoggingFeature.html#DEFAULT_MAX_ENTITY_SIZE" target="_top">LoggingFeature.DEFAULT_MAX_ENTITY_SIZE</a>.
                             </p></li></ul></div><p>
                 </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e15903"></a>22.1.2.2.&nbsp;Configuration properties</h4></div></div></div><p>
                     The feature is enabled on when auto-discoverable mechanism is not disabled and at least one of the feature's
@@ -95,14 +95,14 @@
     Client client = ClientBuilder.newClient(clientConfig);
                         </pre></div></div><p><br class="example-break">
                 </p><p>
-                    The <code class="literal">LoggingFeature</code> might be registered explicitly on <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> for
+                    The <code class="literal">LoggingFeature</code> might be registered explicitly on <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.4/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a> for
                     server-side logging or on <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/client/Client.html" target="_top">Client</a> for client-side logging.
                 </p><div class="example"><a name="d0e15942"></a><p class="title"><b>Example&nbsp;22.2.&nbsp;Register <code class="literal">LoggingFeature</code> via constructor
                     </b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">        ResourceConfig config = new ResourceConfig(HelloWorldResource.class);
         config.register(new LoggingFeature(LOGGER, LoggingFeature.Verbosity.PAYLOAD_ANY));
 </pre></div></div><br class="example-break"></div><div class="section"><div class="titlepage"></div><p>
                     Following examples demonstrate registering <code class="literal">LoggingFeature</code> on server-side with default
-                    values and values defined by one of the public constructors (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/snapshot/jersey/org/glassfish/jersey/logging/LoggingFeature.html" target="_top">LoggingFeature</a>).
+                    values and values defined by one of the public constructors (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.4/jersey/org/glassfish/jersey/logging/LoggingFeature.html" target="_top">LoggingFeature</a>).
                 </p><div class="example"><a name="d0e15959"></a><p class="title"><b>Example&nbsp;22.3.&nbsp;Register <code class="literal">LoggingFeature</code> class
                     </b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">        ResourceConfig config = new ResourceConfig(HelloWorldResource.class);
         config.register(LoggingFeature.class);
