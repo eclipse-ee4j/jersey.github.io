@@ -1,0 +1,114 @@
+<html>
+<!--
+
+    Copyright (c) 2021 Oracle and/or its affiliates. All rights reserved.
+
+    This program and the accompanying materials are made available under the
+    terms of the Eclipse Public License v. 2.0, which is available at
+    http://www.eclipse.org/legal/epl-2.0.
+
+    This Source Code may also be made available under the following Secondary
+    Licenses when the conditions for such availability set forth in the
+    Eclipse Public License v. 2.0 are satisfied: GNU General Public License,
+    version 2 with the GNU Classpath Exception, which is available at
+    https://www.gnu.org/software/classpath/license.html.
+
+    SPDX-License-Identifier: EPL-2.0 OR GPL-2.0 WITH Classpath-exception-2.0
+
+-->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+    <meta name="google-site-verification" content="OiKukTHVW4bdQqx8Fq0zA2EZ_hI6-yYL-MvkCxBxaFs" />
+    <title>Release Notes - Jersey 2.35</title>
+</head>
+
+<body>
+
+<h1>Release Notes - <a href="/">Jersey</a> 2.35</h1>
+
+Release date: <strong>03-09-2021</strong>
+
+<h2>Pull requests and issues</h2>
+<ul>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4742'>Issue 4742</a>] - Connection timeout the double of what is configured</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4748'>Issue 4748</a>] - Exception in Jersey Jetty handler's URL parsing bubbles up to the top</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/issues/4773'>Issue 4773</a>] - NullPointerException in HeaderUtils.getPreferredCookie</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4779'>Pull 4779</a>] - Enable to use @Context in constructors of classes instantiated by CDI</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4783'>Pull 4783</a>] - Support more optionals</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4784'>Pull 4784</a>] - Bump commons-io from 2.2 to 2.7 in /test-framework/maven/custom-enforcer-rules</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4785'>Pull 4785</a>] - JDK16 Support</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4789'>Pull 4789</a>] - Make @Singleton to be singleton with CDI integration</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4792'>Pull 4792</a>] - Update groovy to work with jdk17</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4795'>Pull 4795</a>] - Fix issue NullPointerException in HeaderUtils.getPreferredCookie #4773</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4799'>Pull 4799</a>] - Support custom parameter types with `Optional<T>`</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4800'>Pull 4800</a>] - Helloworld example extendned by GraalVM native-image generation</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4802'>Pull 4802</a>] - User Guide: GraalVM/native-image chapter</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4803'>Pull 4803</a>] - GraalVM native-image jersey-client module</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4809'>Pull 4809</a>] - handle URISyntaxException in JettyHttpContainer</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4811'>Pull 4811</a>] - Connection timeout the double of what is configured</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4816'>Pull 4816</a>] - CI env for Jenkins</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4820'>Pull 4820</a>] - CI env for Jenkins</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4821'>Pull 4821</a>] - Jdk connector dead lock</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4822'>Pull 4822</a>] - New CDI based EE injection manager incubating implementation.</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4823'>Pull 4823</a>] - Issue4810</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4824'>Pull 4824</a>] - JerseyTest is not compatible with JUnit 5</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4829'>Pull 4829</a>] - ParamConverters cleanup</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4832'>Pull 4832</a>] - Bump ant from 1.10.9 to 1.10.11</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4833'>Pull 4833</a>] - Allow Feature and Dynamic feature as a JDK services</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4835'>Pull 4835</a>] - Prevent NoSuchMethodError when used MP Rest Client 1.4 API & CDI</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4836'>Pull 4836</a>] - Updated ASM to 9.2</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4837'>Pull 4837</a>] - add possibility to use entity with http method Options in requests according to the RFC 7231</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4845'>Pull 4845</a>] - Cache Application#getSingletons not be called twice</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4846'>Pull 4846</a>] - Updated versions in 2.x</li>
+<li>[<a href='https://github.com/eclipse-ee4j/jersey/pull/4848'>Pull 4848</a>] - System properties config for TimeWindowStatisticsImplTest</li>
+
+</ul>
+<h2>Previous releases</h2>
+
+<ul>
+    <li><a href="2.35.html">Jersey 2.35 Release Notes</a></li>
+    <li><a href="2.29.1.html">Jersey 2.29.1 Release Notes</a></li>
+    <li><a href="2.29.html">Jersey 2.29 Release Notes</a></li>
+    <li><a href="2.28.html">Jersey 2.28 Release Notes</a></li>
+    <li><a href="2.25.1.html">Jersey 2.25.1 Release Notes</a></li>
+    <li><a href="2.25.html">Jersey 2.25 Release Notes</a></li>
+    <li><a href="2.24.1.html">Jersey 2.24.1 Release Notes</a></li>
+    <li><a href="2.24.html">Jersey 2.24 Release Notes</a></li>
+    <li><a href="2.23.2.html">Jersey 2.23.2 Release Notes</a></li>
+    <li><a href="2.23.1.html">Jersey 2.23.1 Release Notes</a></li>
+    <li><a href="2.23.html">Jersey 2.23 Release Notes</a></li>
+    <li><a href="2.22.2.html">Jersey 2.22.2 Release Notes</a></li>
+    <li><a href="2.22.1.html">Jersey 2.22.1 Release Notes</a></li>
+    <li><a href="2.22.html">Jersey 2.22 Release Notes</a></li>
+    <li><a href="2.21.1.html">Jersey 2.21.1 Release Notes</a></li>
+    <li><a href="2.21.html">Jersey 2.21 Release Notes</a></li>
+    <li><a href="2.20.html">Jersey 2.20 Release Notes</a></li>
+    <li><a href="2.19.html">Jersey 2.19 Release Notes</a></li>
+    <li><a href="2.18.html">Jersey 2.18 Release Notes</a></li>
+    <li><a href="2.17.html">Jersey 2.17 Release Notes</a></li>
+    <li><a href="2.16.html">Jersey 2.16 Release Notes</a></li>
+    <li><a href="2.14.html">Jersey 2.14 Release Notes</a></li>
+    <li><a href="2.13.html">Jersey 2.13 Release Notes</a></li>
+    <li><a href="2.12.html">Jersey 2.12 Release Notes</a></li>
+    <li><a href="2.11.html">Jersey 2.11 Release Notes</a></li>
+    <li><a href="2.10.1.html">Jersey 2.10.1 Release Notes</a></li>
+    <li><a href="2.10.html">Jersey 2.10 Release Notes</a></li>
+    <li><a href="2.9.1.html">Jersey 2.9.1 Release Notes</a></li>
+    <li><a href="2.9.html">Jersey 2.9 Release Notes</a></li>
+    <li><a href="2.8.html">Jersey 2.8 Release Notes</a></li>
+    <li><a href="2.7.html">Jersey 2.7 Release Notes</a></li>
+    <li><a href="2.6.html">Jersey 2.6 Release Notes</a></li>
+    <li><a href="2.5.1.html">Jersey 2.5.1 Release Notes</a></li>
+    <li><a href="2.5.html">Jersey 2.5 Release Notes</a></li>
+    <li><a href="2.4.1.html">Jersey 2.4.1 Release Notes</a></li>
+    <li><a href="2.4.html">Jersey 2.4 Release Notes</a></li>
+    <li><a href="2.3.1.html">Jersey 2.3.1 Release Notes</a></li>
+    <li><a href="2.3.html">Jersey 2.3 Release Notes</a></li>
+    <li><a href="2.2.html">Jersey 2.2 Release Notes</a></li>
+    <li><a href="2.1.html">Jersey 2.1 Release Notes</a></li>
+    <li><a href="2.0.html">Jersey 2.0 Release Notes</a></li>
+</ul>
+
+</body>
+</html>
