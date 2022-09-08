@@ -982,9 +982,21 @@
                             <p>
                                 If the property is absent, the value is such as specified by Jetty (currently 2MiB).
                             </p>
+                        </td></tr><tr><td><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.37/jersey/org/glassfish/jersey/jetty/connector/JettyClientProperties.html#TOTAL_TIMEOUT" target="_top">JettyClientProperties.TOTAL_TIMEOUT</a></td><td><code class="literal">jersey.config.jetty.client.totalTimeout</code></td><td>
+                            <p>
+                                Total timeout interval for request/response conversation, in milliseconds.
+                                Opposed to <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.37/jersey/org/glassfish/jersey/client/ClientProperties.html#READ_TIMEOUT" target="_top">ClientProperties.READ_TIMEOUT</a>.
+                            </p>
+                            <p>
+                                The value MUST be an instance convertible to <code class="literal">Integer</code>.
+                                The value of zero <code class="literal">0</code> is equivalent to an interval of infinity.
+                            </p>
+                            <p>
+                                The default value is <code class="literal">0</code> (infinity).
+                            </p>
                         </td></tr></tbody></table></div></div><br class="table-break"></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="appendix-properties-client-netty"></a>A.10.&nbsp;Netty HTTP client configuration properties</h2></div></div></div><p>
             List of client configuration properties that can be found in <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.37/jersey/org/glassfish/jersey/netty/connector/NettyClientProperties.html" target="_top">NettyClientProperties</a> class.
-        </p><div class="table"><a name="d0e23690"></a><p class="title"><b>Table&nbsp;A.10.&nbsp;List of Netty HTTP client configuration properties</b></p><div class="table-contents"><table summary="List of Netty HTTP client configuration properties" border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th>Constant</th><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.37/jersey/org/glassfish/jersey/netty/connector/NettyClientProperties.html#IDLE_CONNECTION_PRUNE_TIMEOUT" target="_top">NettyClientProperties.IDLE_CONNECTION_PRUNE_TIMEOUT</a></td><td><code class="literal">jersey.config.client.idleConnectionPruneTimeout</code></td><td>
+        </p><div class="table"><a name="d0e23720"></a><p class="title"><b>Table&nbsp;A.10.&nbsp;List of Netty HTTP client configuration properties</b></p><div class="table-contents"><table summary="List of Netty HTTP client configuration properties" border="1"><colgroup><col width="33%"><col width="33%"><col width="34%"></colgroup><thead><tr><th>Constant</th><th>Value</th><th>Description</th></tr></thead><tbody><tr><td><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/2.37/jersey/org/glassfish/jersey/netty/connector/NettyClientProperties.html#IDLE_CONNECTION_PRUNE_TIMEOUT" target="_top">NettyClientProperties.IDLE_CONNECTION_PRUNE_TIMEOUT</a></td><td><code class="literal">jersey.config.client.idleConnectionPruneTimeout</code></td><td>
                             <p>
                                 This property determines the number of seconds the idle connections are kept in the pool before pruned.
                                 The default is 60. Specify 0 to disable.
