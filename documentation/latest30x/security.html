@@ -1,0 +1,621 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;17.&nbsp;Security</title><link rel="stylesheet" type="text/css" href="/jersey.github.io/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 3.0.8 User Guide"><link rel="up" href="index.html" title="Jersey 3.0.8 User Guide"><link rel="prev" href="sse.html" title="Chapter&nbsp;16.&nbsp;Server-Sent Events (SSE) Support"><link rel="next" href="wadl.html" title="Chapter&nbsp;18.&nbsp;WADL Support"><script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-3160303-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;17.&nbsp;Security</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="sse.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="wadl.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://eclipse-ee4j.github.io/jersey"><img src="https://eclipse-ee4j.github.io/jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
+            <a href="index.html">
+                Table of Contents
+            </a> | <a href="user-guide.html">
+                Single HTML
+            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="security"></a>Chapter&nbsp;17.&nbsp;Security</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="security.html#d0e12491">17.1. Securing server</a></span></dt><dd><dl><dt><span class="section"><a href="security.html#d0e12494">17.1.1. SecurityContext</a></span></dt><dt><span class="section"><a href="security.html#d0e12600">17.1.2. Authorization - securing resources</a></span></dt></dl></dd><dt><span class="section"><a href="security.html#d0e12723">17.2. Client Security</a></span></dt><dt><span class="section"><a href="security.html#d0e12740">17.3. OAuth Support</a></span></dt><dd><dl><dt><span class="section"><a href="security.html#d0e12802">17.3.1. OAuth 1</a></span></dt><dt><span class="section"><a href="security.html#d0e13133">17.3.2. OAuth 2 Support</a></span></dt></dl></dd></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e12491"></a>17.1.&nbsp;Securing server</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e12494"></a>17.1.1.&nbsp;SecurityContext</h3></div></div></div><p>
+                Security information of a request is available by injecting a JAX-RS <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/core/SecurityContext.html" target="_top">SecurityContext</a> instance
+                using <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/core/Context.html" target="_top">@Context</a>
+                annotation. The injected security context instance provides the equivalent of the functionality available on
+                <a class="link" href="https://jakarta.ee/specifications//servlet/5.0/apidocs/jakarta/servlet/http/httpservletrequest" target="_top">HttpServletRequest</a> API.
+                The injected security context depends on the actual Jersey application deployment. For example, for a
+                Jersey application deployed in a Servlet container, the Jersey <code class="literal">SecurityContext</code> will
+                encapsulate information from a security context retrieved from the Servlet request.
+                In case of a Jersey application deployed on a Grizzly server,
+                the <code class="literal">SecurityContext</code> will return information retrieved from the Grizzly request.
+            </p><p>
+                <code class="literal">SecurityContext</code> can be used in conjunction with sub-resource locators to return different
+                resources based on the specific roles a user principal is included in. For example, a sub-resource locator could
+                return a different resource if a user is a preferred customer:
+
+                </p><div class="example"><a name="d0e12519"></a><p class="title"><b>Example&nbsp;17.1.&nbsp;Using <code class="literal">SecurityContext</code> for a Resource Selection</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("basket")
+public ShoppingBasketResource get(@Context SecurityContext sc) {
+    if (sc.isUserInRole("PreferredCustomer") {
+        return new PreferredCustomerShoppingBasketResource();
+    } else {
+        return new ShoppingBasketResource();
+    }
+}</pre></div></div><p><br class="example-break">
+            </p><p>
+                <code class="literal">SecurityContext</code> is inherently request-scoped, yet can be also injected into fields of singleton
+                resources and JAX-RS providers. In such case the proxy of the request-scoped <code class="literal">SecurityContext</code>
+                will be injected.
+
+                </p><div class="example"><a name="d0e12536"></a><p class="title"><b>Example&nbsp;17.2.&nbsp;Injecting <code class="literal">SecurityContext</code> into a singleton resource</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("resource")
+@Singleton
+public static class MyResource {
+    // Jersey will inject proxy of Security Context
+    @Context
+    SecurityContext securityContext;
+
+    @GET
+    public String getUserPrincipal() {
+        return securityContext.getUserPrincipal().getName();
+    }
+}</pre></div></div><p><br class="example-break">
+            </p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e12545"></a>17.1.1.1.&nbsp;Initializing Security Context with Servlets</h4></div></div></div><p>
+                    As described above, the <code class="literal">SecurityContext</code> by default (if not overwritten by
+                    a request filter) only exposes security information from the underlying container.
+                    In the case you deploy a Jersey application in a Servlet container, you need to configure the
+                    Servlet container security aspects (<code class="literal">&lt;security-constraint&gt;</code>,
+                    <code class="literal">&lt;auth-constraint&gt;</code> and user to roles mappings)
+                    in order to be able to secure requests via calls to to the JAX-RS <code class="literal">SecurityContext</code>.
+                </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e12562"></a>17.1.1.2.&nbsp;Using Security Context in Container Request Filters</h4></div></div></div><p>
+                    The <code class="literal">SecurityContext</code> can be directly retrieved from <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/container/ContainerRequestContext.html" target="_top">ContainerRequestContext</a> via
+                    <code class="literal">getSecurityContext()</code> method. You can also replace the default
+                    <code class="literal">SecurityContext</code> in a request context with a custom one using the
+                    <code class="literal">setSecurityContext(SecurityContext)</code> method. If you set a custom
+                    <code class="literal">SecurityContext</code> instance in your <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/container/ContainerRequestFilter.html" target="_top">ContainerRequestFilter</a>,
+                    this security context instance will be used for injection into JAX-RS resource class fields.
+                    This way you can implement a custom authentication filter that may setup your own
+                    <code class="literal">SecurityContext</code> to be used. To ensure the early execution of your custom
+                    authentication request filter, set the filter priority to <code class="literal">AUTHENTICATION</code>
+                    using constants from <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/Priorities.html" target="_top">Priorities</a>. An early execution of you authentication filter will ensure that
+                    all other filters, resources, resource methods and sub-resource locators will execute with your custom
+                    <code class="literal">SecurityContext</code> instance.
+                </p></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e12600"></a>17.1.2.&nbsp;Authorization - securing resources</h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e12603"></a>17.1.2.1.&nbsp;Security resources with <code class="literal">web.xml</code></h4></div></div></div><p>
+                    In cases where a Jersey application is deployed in a Servlet container you can rely only on
+                    the standard Java/Jakarta EE Web application security mechanisms offered by the Servlet container and
+                    configurable via application's <code class="literal">web.xml</code> descriptor.
+                    You need to define the <code class="literal">&lt;security-constraint&gt;</code> elements in the
+                    <code class="literal">web.xml</code> and assign roles which are able to access these resources. You can also
+                    define HTTP methods that are allowed to be executed. See the following example.
+
+                    </p><div class="example"><a name="d0e12619"></a><p class="title"><b>Example&nbsp;17.3.&nbsp;Securing resources using <code class="literal">web.xml</code>
+                        </b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;security-constraint&gt;
+    &lt;web-resource-collection&gt;
+        &lt;url-pattern&gt;/rest/admin/*&lt;/url-pattern&gt;
+    &lt;/web-resource-collection&gt;
+    &lt;auth-constraint&gt;
+        &lt;role-name&gt;admin&lt;/role-name&gt;
+    &lt;/auth-constraint&gt;
+&lt;/security-constraint&gt;
+&lt;security-constraint&gt;
+    &lt;web-resource-collection&gt;
+        &lt;url-pattern&gt;/rest/orders/*&lt;/url-pattern&gt;
+    &lt;/web-resource-collection&gt;
+    &lt;auth-constraint&gt;
+        &lt;role-name&gt;customer&lt;/role-name&gt;
+    &lt;/auth-constraint&gt;
+&lt;/security-constraint&gt;
+&lt;login-config&gt;
+    &lt;auth-method&gt;BASIC&lt;/auth-method&gt;
+    &lt;realm-name&gt;my-default-realm&lt;/realm-name&gt;
+&lt;/login-config&gt;</pre></div></div><p><br class="example-break">
+
+                    The example secures two kinds of URI namespaces using the HTTP Basic Authentication.
+                    <code class="literal">rest/admin/*</code> will be accessible only for user group "admin" and
+                    <code class="literal">rest/orders/*</code> will be accessible for "customer" user group. This security configuration
+                    does not use JAX-RS or Jersey features at all as it is enforced by the Servlet container even before
+                    a request reaches the Jersey application. Keeping these security constrains up to date with your
+                    JAX-RS application might not be easy as whenever you change the <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/Path.html" target="_top">@Path</a> annotations on your resource
+                    classes you may need to update also the <code class="literal">web.xml</code>
+                    security configurations to reflect the changed JAX-RS resource paths. Therefore Jersey offers a
+                    <a class="link" href="security.html#annotation-based-security" title="17.1.2.2.&nbsp;Securing JAX-RS resources with standard jakarta.annotation.security annotations">more flexible solution</a>
+                    based on placing standard Java/Jakarta EE security annotations directly on JAX-RS resource classes and methods.
+                </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="annotation-based-security"></a>17.1.2.2.&nbsp;Securing JAX-RS resources with standard <code class="literal">jakarta.annotation.security</code> annotations</h4></div></div></div><p>
+                    With Jersey you can define the access to resources based on the user group using annotations. You
+                    can, for example, define that only a user group "admin" can execute specific resource method. To do that you
+                    firstly need to register <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/server/filter/RolesAllowedDynamicFeature.html" target="_top">RolesAllowedDynamicFeature</a> as a provider. The following example
+                    shows how to register the feature if your deployment is based on a <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a>.
+
+                    </p><div class="example"><a name="d0e12657"></a><p class="title"><b>Example&nbsp;17.4.&nbsp;Registering RolesAllowedDynamicFeature using ResourceConfig</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">final ResourceConfig resourceConfig = new ResourceConfig(MyResource.class);
+resourceConfig.register(RolesAllowedDynamicFeature.class);
+                        </pre></div></div><p><br class="example-break">
+
+                    Alternatively, typically when deploying your application to a Servlet container, you can implement your JAX-RS
+                    <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/core/Application.html" target="_top">Application</a> subclass by extending from the Jersey <code class="literal">ResourceConfig</code> and
+                    registering the <code class="literal">RolesAllowedDynamicFeature</code> in the constructor:
+
+                    </p><div class="example"><a name="d0e12672"></a><p class="title"><b>Example&nbsp;17.5.&nbsp;Registering RolesAllowedDynamicFeature by extending ResourceConfig</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public class MyApplication extends ResourceConfig {
+    public MyApplication() {
+        super(MyResource.class);
+        register(RolesAllowedDynamicFeature.class);
+    }
+}</pre></div></div><p><br class="example-break">
+                </p><p>
+                    Once the feature is registered, you can use annotations from package
+                    <code class="literal">jakarta.annotation.security</code> defined by JSR-250. See the following example.
+
+                    </p><div class="example"><a name="d0e12683"></a><p class="title"><b>Example&nbsp;17.6.&nbsp;Applying <code class="literal">jakarta.annotation.security</code> to JAX-RS resource methods.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("/")
+@PermitAll
+public class Resource {
+    @RolesAllowed("user")
+    @GET
+    public String get() { return "GET"; }
+
+    @RolesAllowed("admin")
+    @POST
+    public String post(String content) { return content; }
+
+    @Path("sub")
+    public SubResource getSubResource() {
+        return new SubResource();
+    }
+}</pre></div></div><p><br class="example-break">
+
+                    The resource class <code class="literal">Resource</code> defined in the example is annotated with a
+                    <a class="link" href="https://jakarta.ee/specifications/annotations/2.0/apidocs/jakarta.annotation/jakarta/annotation/security/permitall" target="_top">@PermitAll</a> annotation. This means that all methods in the class which do not
+                    override this
+                    annotation will be permitted for all user groups (no restrictions are defined). In our example, the
+                    annotation will only apply to the <code class="literal">getSubResource()</code> method as it is the only method
+                    that does not override the annotation by defining custom role-based security settings using the
+                    <a class="link" href="https://jakarta.ee/specifications/annotations/2.0/apidocs/jakarta.annotation/jakarta/annotation/security/rolesallowed" target="_top">@RolesAllowed</a> annotation.
+                    <code class="literal">@RolesAllowed</code> annotations present on the other methods define a role or a set of
+                    roles that are allowed to execute a particular method.
+                </p><p>
+                    These Java/Jakarta EE security annotations are processed internally in the request filter registered using
+                    the Jersey <code class="literal">RolesAllowedDynamicFeature</code>. The roles defined in the annotations are
+                    tested against current roles set in the <code class="literal">SecurityContext</code> using
+                    the <code class="literal">SecurityContext</code><code class="literal">.isUserInRole(String role)</code> method. In case the caller
+                    is not in the role specified by the annotation, the HTTP <code class="literal">403 (Forbidden)</code>
+                    error response is returned.
+                </p></div></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e12723"></a>17.2.&nbsp;Client Security</h2></div></div></div><p>
+            For details about client security please see the <a class="link" href="client.html" title="Chapter&nbsp;5.&nbsp;Client API">Client chapter</a>. Jersey
+            client allows to define parameters of SSL communication using <code class="literal">HTTPS</code> protocol.
+            You can also use jersey built-in authentication filters which perform <span class="emphasis"><em>HTTP Basic Authentication</em></span>
+            or <span class="emphasis"><em>HTTP Digest Authentication</em></span>. See the client chapter for more details.
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e12740"></a>17.3.&nbsp;OAuth Support</h2></div></div></div><p>
+            OAuth is a specification that defines secure authentication model on behalf of another user.
+            Two versions of OAuth exists at the moment - <span class="emphasis"><em>OAuth 1</em></span> defined by <a class="link" href="http://tools.ietf.org/html/rfc5849" target="_top">OAuth 1.0 specification</a> and
+            <span class="emphasis"><em>OAuth 2</em></span> defined by <a class="link" href="http://tools.ietf.org/html/rfc6749" target="_top">OAuth 2.0 specification</a>.
+            OAuth 2 is the latest version and it is not backward compatible with
+            OAuth 1 specification. OAuth in general is widely used in popular social Web sites in order to grant access
+            to a user account and associated resources for a third party consumer (application). The consumer then usually
+            uses RESTful Web Services to access the user data.
+            The following example describes a use case of the OAuth (similar for OAuth 1 and OAuth 2). The example is simple
+            and probably obvious for many developers but introduces terms that are used in this
+            documentation as well as in Jersey OAuth API documentation.
+        </p><p>
+            Three parties act in an OAuth scenario.
+        </p><div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="80%"><tr><td align="center"><img src="images/oauth-parties.png" align="middle" width="100%"></td></tr></table></div><p>
+            The first party represents a user, in our case Adam,
+            who is called in the OAuth terminology a <span class="emphasis"><em>Resource Owner</em></span>. Adam has an account on
+            Twitter. Twitter represents the second party. This party is called a
+            <span class="emphasis"><em>Service Provider</em></span>. Twitter offers a web interface
+            that Adam uses to create new tweets, read tweets of others etc. Now, Adam uses our new web site,
+            HelloWorldWeb, which is a very simple web site that says <code class="literal">Hello World</code> but it additionally
+            displays the last tweet of the logged in user.
+            To do so, our web site needs to have access to the Twitter account of Adam. Our web site is a 3rd party
+            application that wants to connect to Twitter and get Adam's tweets. In OAuth, such party is called
+            <span class="emphasis"><em>Consumer</em></span>.
+            Our Consumer would like to use Twitter's RESTful APIs to get some data associated with Adam's Twitter account.
+            In order to solve this situation Adam could directly give his Twitter password to the HelloWorldWeb.
+            This would however be rather unsafe, especially if we do not know much about the authors of the application.
+            If Adam would give his password to HelloWorldWeb, he would have to deal with the associated security risks.
+            First of all, Adam would have to fully trust HelloWorldWeb
+            that it will not misuse the full access to his Twitter account. Next, if Adam would change his password,
+            he would need to remember to give the new password also to the HelloWorldWeb application.
+            And at last, if Adam would like to revoke the HelloWorldWeb's access to his Twitter account,
+            he would need to change his password again. The OAuth protocol has been devised to address all these challenges.
+        </p><p>
+            With OAuth, a resource owner (Adam) grants an access to a consumer (HelloWorldWeb) without giving it
+            his password. This access grant is achieved by a procedure called
+            <span class="emphasis"><em>authorization flow</em></span>. Authorization flow is out of the scope of this
+            documentation and its description can be found in the OAuth specification linked above.
+            The result of the authorization flow is an <span class="emphasis"><em>Access Token</em></span> which is later
+            used by the consumer to authenticate against the service provider.
+            While this brief description applies to both OAuth 1 and 2, note that there are some differences in details
+            between these two specifications.
+        </p><p>
+            Jersey OAuth is currently supported for the following use cases and OAuth versions:
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+                        OAuth 1: Client (consumer) and server (service provider)
+                    </p></li><li class="listitem"><p>
+                        OAuth 2: Client (consumer)
+                    </p></li></ul></div><p>
+
+            With client and server support there are two supported scenarios:
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+                        Authorization flow
+                    </p></li><li class="listitem"><p>
+                        Authentication with Access Token (support for authenticated requests)
+                    </p></li></ul></div><p>
+        </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e12802"></a>17.3.1.&nbsp;OAuth 1</h3></div></div></div><p>
+                OAuth 1 protocol is based on message signatures that are calculated using specific
+                signature methods. Signatures are quite complex and therefore are implemented in a separate
+                module. The OAuth 1 Jersey modules are (<code class="literal">groupId:artifactId:description</code>):
+                </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+                            <code class="literal">org.glassfish.jersey.security:oauth1-client</code>: provides client
+                            OAuth 1 support for authorization flow and authentication
+                        </p></li><li class="listitem"><p>
+                            <code class="literal">org.glassfish.jersey.security:oauth1-server</code>: provides server
+                            OAuth 1 support for authorization flow, SPI for token management including authentication
+                            filter.
+                        </p></li><li class="listitem"><p>
+                            <code class="literal">org.glassfish.jersey.security:oauth1-signature</code>
+                            : provides support for OAuth1 request signatures. This module is a dependency of previous two
+                            modules and as such it will be implicitly included in your maven project.
+                            The module can be used as a standalone module but this will not be needed in most of the use cases.
+                            You would do that if you wanted to implement your own OAuth support and would not want to deal with
+                            implementing the complex signature algorithms.
+                        </p></li></ul></div><p>
+            </p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e12830"></a>17.3.1.1.&nbsp;Server</h4></div></div></div><p>
+                    To add support for OAuth into your server-side application, add the following dependency to your<code class="literal">
+                    pom.xml</code>:
+                    </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.security&lt;/groupId&gt;
+    &lt;artifactId&gt;oauth1-server&lt;/artifactId&gt;
+    &lt;version&gt;3.0.8&lt;/version&gt;
+&lt;/dependency&gt;</pre><p>
+                    Again, there is no need to add a direct dependency to the signature module, it will be transitively included.
+                </p><p>
+                    Let's now briefly go over the most important server Jersey OAuth APIs and SPIs:
+                    </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/server/oauth1/OAuth1ServerFeature.html" target="_top">OAuth1ServerFeature</a>: The feature which enables the
+                                OAuth 1 support on the server and registers <code class="literal">OAuth1Provider</code>
+                                explained in the following point.
+                            </p></li><li class="listitem"><p>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/server/oauth1/OAuth1Provider.html" target="_top">OAuth1Provider</a>: Implementation of this SPI must be
+                                registered to the server runtime as a standard provider. The implementation will be used
+                                to create request and access token, get consumer by consumer key, etc. You can either
+                                implement your provider or use the default implementation provided by Jersey by
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/server/oauth1/DefaultOAuth1Provider.html" target="_top">DefaultOAuth1Provider</a>.
+                            </p></li><li class="listitem"><p>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/server/oauth1/OAuth1ServerProperties.html" target="_top">OAuth1ServerProperties</a>: properties that can be used
+                                to configure the OAuth 1 support.
+                            </p></li><li class="listitem"><p>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/server/oauth1/OAuth1Consumer.html" target="_top">OAuth1Consumer</a>, <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/server/oauth1/OAuth1Token.html" target="_top">OAuth1Token</a>: classes
+                                that contain consumer key, request and access tokens. You need to
+                                implement them only if you also implement the interface
+                                <code class="literal">OAuth1Provider</code>.
+                            </p></li></ul></div><p>
+                </p><p>
+                    First step in enabling Jersey OAuth 1 support is to register a
+                    <code class="literal">OAuth1ServerFeature</code> instance
+                    initialized with an instance of <code class="literal">OAuth1Provider</code>. Additionally, you may
+                    configure the <span class="emphasis"><em>Request Token URI</em></span> and <span class="emphasis"><em>Access Token URI</em></span> -
+                    the endpoints accessible on the OAuth server that issue Request and Access Tokens. These endpoints
+                    are defined in the OAuth 1 specification and are contacted as part of the OAuth authorization flow.
+                </p><p>
+                    Next, when a client initiates the OAuth authorization flow, the provided implementation of
+                    <code class="literal">OAuth1Provider</code> will be invoked as to create new tokens,
+                    get tokens and finally to store the issued Access Token. If a consumer already has a valid Access Token
+                    and makes Authenticated Requests (with OAuth 1 Authorization information in the HTTP header),
+                    the provider will be invoked to provide the <code class="literal">OAuth1Token</code> for the
+                    Access Token information in the header.
+                </p></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="oauth1-client"></a>17.3.1.2.&nbsp;Client</h4></div></div></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+                        OAuth client support in Jersey is almost identical for OAuth 1 and OAuth 2. As such, this chapter
+                        provides useful information even for users that use OAuth 2 client support.
+                    </p></div><p>
+                    To add support for OAuth into your Jersey client application, add the following dependency to your
+                    <code class="literal">pom.xml</code>:
+
+                    </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.security&lt;/groupId&gt;
+    &lt;artifactId&gt;oauth1-client&lt;/artifactId&gt;
+    &lt;version&gt;3.0.8&lt;/version&gt;
+&lt;/dependency&gt;</pre><p>
+
+                    As mentioned earlier, there is no need to add a direct dependency to the signature module,
+                    it will be transitively included.
+                </p><p>
+                    OAuth 1 client support initially started as a code migration from Jersey 1.x.
+                    During the migration however the API of was significantly revised.
+                    The high level difference compared to Jersey 1.x OAuth client API is that the authorization flow
+                    is no longer part of a client OAuth filter. Authorization flow is now a standalone utility
+                    and can be used without a support for subsequent authenticated requests.
+                    The support for authenticated requests stays in the
+                    <code class="literal">ClientRequestFilter</code> but is not part of a public API
+                    anymore and is registered by a Jersey OAuth <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/core/Feature.html" target="_top">Feature</a>.
+                </p><p>
+                    The most important parts of the Jersey client OAuth API and SPI are explained here:
+
+                    </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth1/OAuth1ClientSupport.html" target="_top">OAuth1ClientSupport</a>: The main class which contains builder
+                                methods to build features that enable the OAuth 1 support. Start with this class every time
+                                you need to add any OAuth 1 support to the Jersey Client (build an Authorization flow
+                                or initialize client to perform authenticated requests). The class contains a
+                                static method that returns an instance of <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth1/OAuth1Builder.html" target="_top">OAuth1Builder</a> and also
+                                the class defines request properties to influence behaviour of the authenticated
+                                request support.
+                            </p></li><li class="listitem"><p>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth1/OAuth1AuthorizationFlow.html" target="_top">OAuth1AuthorizationFlow</a>: API that allows to perform the
+                                Authorization flow against service provider. Implementation of this interface is a
+                                class that is used as a standalone utility and is not part of the JAX-RS client. In
+                                other words, this is not a feature that should be registered into the client.
+                            </p></li><li class="listitem"><p>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth1/AccessToken.html" target="_top">AccessToken</a>, <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth1/ConsumerCredentials.html" target="_top">ConsumerCredentials</a>:
+                                Interfaces that define Access Token classes and Consumer Credentials. Interfaces contain
+                                getters for public keys and secret keys of token and credentials.
+                            </p></li></ul></div><p>
+
+                    An example of how Jersey OAuth 1 client API is used was in
+                    the <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.8/examples/oauth-client-twitter" target="_top">OAuth 1 Twitter Client Example</a> but for now it's temporally removed from examples.
+                    The following code snippets are extracted from the
+                    example and explain how to use the Jersey OAuth client API.
+                </p><p>
+                    Before we start with any interaction with Twitter, we need to register our application
+                    on Twitter. See the example <code class="literal">README.TXT</code> file for the instructions.
+                    As a result of the registration, we get the consumer credentials that identify our application.
+                    Consumer credentials consist of <code class="literal">consumer key</code> and <code class="literal">consumer secret</code>.
+                </p><p>
+                    As a first step in our code, we need to perform the authorization flow, where the user grants us an access to
+                    his/her Twitter client.
+                </p><p>
+                    </p><div class="example"><a name="d0e12970"></a><p class="title"><b>Example&nbsp;17.7.&nbsp;Build the authorization flow utility</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">ConsumerCredentials consumerCredentials = new ConsumerCredentials(
+                "a846d84e68421b321a32d, "f13aed84190bc");
+OAuth1AuthorizationFlow authFlow = OAuth1ClientSupport.builder(consumerCredentials)
+    .authorizationFlow(
+        "http://api.twitter.com/oauth/request_token",
+        "http://api.twitter.com/oauth/access_token",
+        "http://api.twitter.com/oauth/authorize")
+    .build();</pre></div></div><p><br class="example-break">
+                </p><p>
+                    Here we have built a <code class="literal">OAuth1AuthorizationFlow</code> utility component representing the
+                    OAuth 1 authorization flow, using <code class="literal">OAuth1ClientSupport</code> and
+                    <code class="literal">OAuth1Builder</code> API. The static <code class="literal">builder</code> method accepts
+                    mandatory parameter with <code class="literal">ConsumerCredentials</code>. These
+                    are credentials earlier issued by Twitter for our application.
+                    We have specified the Twitter OAuth endpoints where Request Token, Access Token will be retrieved and
+                    Authorization URI to which we will redirect the user in order to grant user's consent.
+                    Twitter will present an HTML page on this URI and it will ask the user whether he/she would like us
+                    to access his/her account.
+                </p><p>
+                    Now we can proceed with the OAuth authorization flow.
+
+                    </p><div class="example"><a name="d0e12995"></a><p class="title"><b>Example&nbsp;17.8.&nbsp;Perform the OAuth Authorization Flow</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">String authorizationUri = authFlow.start();
+// here we must direct the user to authorization uri to approve
+// our application. The result will be verifier code (String).
+AccessToken accessToken = authFlow.finish(verifier);</pre></div></div><p><br class="example-break">
+
+                    In the first line, we start the authorization flow. The method internally makes a request to the
+                    <code class="literal">http://api.twitter.com/oauth/request_token</code> URL
+                    and retrieves a Request Token. Details of this request can be found in the OAuth 1 specification.
+                    It then constructs a URI to which we must redirect the user. The URI is based on Twitter's
+                    authorization URI (<code class="literal">http://api.twitter.com/oauth/authorize</code>) and contains
+                    a Request Token as a query parameter. In the Twitter example, we have a simple console application therefore
+                    we print the URL to the console and ask the user to open the URL in a browser to approve the authorization
+                    of our application.
+                    Then the user gets a verifier and enters it back to the console. However, if our application would be a
+                    web application, we would need to return a redirection response to the user in order to redirect the user
+                    automatically to the <code class="literal">authorizationUri</code>. 
+                </p><p>
+                    Once we have a verifier, we invoke the method <code class="literal">finish()</code>
+                    on our <code class="literal">OAuth1AuthorizationFlow</code> instance, which internally
+                    sends a request to an access token service URI (<code class="literal">http://api.twitter.com/oauth/access_token</code>)
+                    and exchanges the supplied verifier for a new valid Access Token.
+                    At this point the authorization flow is finished and we can start using the retrieved
+                    <code class="literal">AccessToken</code> to make authenticated requests.
+                    We can now create an instance of an OAuth 1 client <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/core/Feature.html" target="_top">Feature</a> using
+                    <code class="literal">OAuth1ClientSupport</code> and pass it our <code class="literal">accessToken</code>.
+                    Another way is to use <code class="literal">authFlow</code> that already contains the information about access token
+                    to create the feature instance for us:
+
+                    </p><div class="example"><a name="d0e13038"></a><p class="title"><b>Example&nbsp;17.9.&nbsp;Authenticated requests</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Feature feature = authFlow.getOAuth1Feature();
+Client client = ClientBuilder.newBuilder()
+    .register(feature)
+    .build();</pre></div></div><p><br class="example-break">
+
+                    Once the feature is configured in the JAX-RS <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/client/Client.html" target="_top">Client</a> (or <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>),
+                    all requests invoked from such <code class="literal">Client</code> (or <code class="literal">WebTarget</code>) instance
+                    will automatically include an OAuth Authorization HTTP header (that contains also the OAuth signature).
+                </p><p>
+                    Note that if you already have a valid Access Token (for example stored in the database for each of your users),
+                    then you can skip the authorization flow steps and directly create the OAuth <code class="literal">Feature</code>
+                    configured to use your Access Token.
+
+                    </p><div class="example"><a name="d0e13061"></a><p class="title"><b>Example&nbsp;17.10.&nbsp;Build feature from Access Token</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">AccessToken storedToken = ...;
+Feature filterFeature = OAuth1ClientSupport.builder(consumerCredentials)
+    .feature()
+    .accessToken(storedToken)
+    .build();</pre></div></div><p><br class="example-break">
+
+                    Here, the <code class="literal">storedToken</code> represents an <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth1/AccessToken.html" target="_top">AccessToken</a> that your client
+                    application keeps stored e.g. in a database.
+                </p><p>
+                    Note that the OAuth feature builder API does not require the access token to be set.
+                    The reason for it is that you might want to build a feature which would register the internal Jersey
+                    OAuth <code class="literal">ClientRequestFilter</code> and other related providers but which would not
+                    initialize the OAuth providers with a single fixed <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth1/AccessToken.html" target="_top">AccessToken</a> instance.
+                    In such case you would need to specify a token for every single request in the request properties.
+                    Key names and API documentation of these properties can be found in
+                    <code class="literal">OAuth1ClientSupport</code>.
+                    Using this approach, you can have a single, OAuth enabled instance of a JAX-RS <code class="literal">Client</code>
+                    (or <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.0.0/jakarta/ws/rs/client/WebTarget.html" target="_top">WebTarget</a>) and use it to make authenticated requests on behalf of multiple users.
+                    Note that you can use the aforementioned request properties even if the feature has been initialized
+                    with an <code class="literal">AccessToken</code> to override the default access token information for
+                    particular requests, even though it is probably not a common use case.
+                </p><p>
+                    The following code shows how to set an access token on a single request using the Jersey OAuth properties.
+
+                    </p><div class="example"><a name="d0e13095"></a><p class="title"><b>Example&nbsp;17.11.&nbsp;Specifying Access Token on a Request.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Response resp =
+    client.target("http://my-serviceprovider.org/rest/foo/bar")
+        .request()
+        .property(OAuth1ClientSupport.OAUTH_PROPERTY_ACCESS_TOKEN, storedToken)
+        .get();</pre></div></div><p><br class="example-break">
+
+                    <code class="literal">OAuth1AuthorizationFlow</code> internally uses
+                    a <code class="literal">Client</code> instance to communicate with the OAuth server. For this a
+                    new client instance is automatically created by default. You can supply your instance of
+                    a <code class="literal">Client</code> to be used for the authorization flow requests (for performance
+                    and/or resource management reasons) using <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth1/OAuth1Builder.html" target="_top">OAuth1Builder</a> methods.
+                </p><div class="section"><div class="titlepage"><div><div><h5 class="title"><a name="oauth1-client-signatures"></a>17.3.1.2.1.&nbsp;Public/Private Keys for RSA-SHA1 signature method</h5></div></div></div><p>
+                        Follow the steps below in case the outgoing requests sent from client to server have to be signed with
+                        RSA-SHA1 signature method instead of the default one (HMAC-SHA1).
+                    </p><div class="example"><a name="d0e13118"></a><p class="title"><b>Example&nbsp;17.12.&nbsp;Creating Public/Private RSA-SHA1 keys</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: bash;&#xA;    ">$ # Create the private key.
+$ openssl genrsa -out private.key 2048
+$ # Convert the key into PKCS8 format.
+$ openssl pkcs8 -topk8 -in private.key -nocrypt
+$ # Extract the public key.
+$ openssl rsa -in private.key -pubout</pre></div></div><br class="example-break"><p>
+                        The output of the second command can be used as a consumer secret to sign the outgoing request:
+                        <code class="literal">new ConsumerCredentials("consumer-key", CONSUMER_PRIVATE_KEY)</code>. Public key obtained from
+                        the third command can be then used on the service provider to verify the signed data.
+                    </p><p>
+                        For more advanced cases (i.e. other formats of keys) a custom <code class="literal">OAuth1SignatureMethod</code>
+                        should be implemented and used.
+                    </p></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="d0e13133"></a>17.3.2.&nbsp;OAuth 2 Support</h3></div></div></div><p>At the moment Jersey supports OAuth 2 only on the client side.</p><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="d0e13138"></a>17.3.2.1.&nbsp;Client</h4></div></div></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+                        Note: It is suggested to read the section <a class="xref" href="security.html#oauth1-client" title="17.3.1.2.&nbsp;Client">Section&nbsp;17.3.1.2, &#8220;Client&#8221;</a>
+                        before this section. Support for OAuth on the client is very similar for both
+                        OAuth 1 and OAuth 2 and general principles are valid for both OAuth versions as such.
+                    </p></div><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+                        OAuth 2 support is in a <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/Beta.html" target="_top">Beta</a> state and as such the API is subject
+                        to change.
+                    </p></div><p>
+                    To add support for Jersey OAuth 2 Client API into your application, add the following dependency
+                    to your <code class="literal">pom.xml</code>:
+
+                    </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.security&lt;/groupId&gt;
+    &lt;artifactId&gt;oauth2-client&lt;/artifactId&gt;
+    &lt;version&gt;3.0.8&lt;/version&gt;
+&lt;/dependency&gt;</pre><p>
+                </p><p>
+                    OAuth 2, in contrast with OAuth 1, is not a strictly defined protocol, rather a framework.
+                    OAuth 2 specification defines many extension points and it is up to service providers to
+                    implement these details and document these implementations for the service consumers.
+                    Additionally, OAuth 2 defines more than one authorization flow.
+                    The authorization flow similar to the flow from OAuth 1 is called
+                    the <span class="emphasis"><em>Authorization Code Grant Flow</em></span>.
+                    This is the flow currently supported by Jersey (Jersey currently does not support other flows).
+                    Please refer to the <a class="link" href="http://tools.ietf.org/html/rfc6749" target="_top">OAuth 2.0 specification</a> for more details about authorization flows.
+                    Another significant change compared to OAuth 1 is that OAuth 2 is not based on signatures and
+                    secret keys and therefore for most of the communication SSL needs to be used
+                    (i.e. the requests must be made through HTTPS). This means that all OAuth 2 endpoint URIs must use
+                    the <code class="literal">https</code> scheme.
+                </p><p>
+                    Due to the fact that OAuth 2 does not define a strict protocol, it is not possible to provide a
+                    single, universal pre-configured tool interoperable with all providers.
+                    Jersey OAuth 2 APIs allows a lot of extensibility via parameters sent in each requests. Jersey
+                    currently provides two pre-configured authorization flow providers - for Google and Facebook.
+                </p><p>
+                    The most important entry points of Jersey client OAuth 2 API and SPI are explained below:
+
+                    </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth2/OAuth2ClientSupport.html" target="_top">OAuth2ClientSupport</a>: The main class which contains builder
+                                methods to build features that enable the OAuth 2 support. Start with this class every time
+                                you need to add any OAuth 2 support to the Jersey Client (build an Authorization flow
+                                or initialize client to perform authenticated requests). The class contains also
+                                methods to get authorization flow utilities adjusted for Facebook or Google.
+                            </p></li><li class="listitem"><p>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth2/OAuth2CodeGrantFlow.html" target="_top">OAuth2CodeGrantFlow</a>: API that allows to perform the
+                                authorization flow defined as Authorization Code Grant Flow in the OAuth 2 specification.
+                                Implementation of this interface is a
+                                class that is used as a standalone utility and is not part of the JAX-RS client. In
+                                other words, this is not a feature that should be registered into the client.
+                            </p></li><li class="listitem"><p>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth2/ClientIdentifier.html" target="_top">ClientIdentifier</a>: Identifier of the client issued by the Service
+                                Provider for the client. Similar to <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth1/ConsumerCredentials.html" target="_top">ConsumerCredentials</a>
+                                from OAuth 1 client support.
+                            </p></li><li class="listitem"><p>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth2/OAuth2Parameters.html" target="_top">OAuth2Parameters</a>: Defines parameters that are used in requests
+                                during the authorization flow. These parameters can be used to override some of the
+                                parameters used in different authorization phases.
+                            </p></li><li class="listitem"><p>
+                                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.0.8/jersey/org/glassfish/jersey/client/oauth2/TokenResult.html" target="_top">TokenResult</a>:
+                                Contains result of the authorization flow. One of the result values is the Access
+                                Token. It can additionally contain the expiration time of the Access Token and
+                                Refresh Token that can be used to get new Access Token.
+                            </p></li></ul></div><p>
+                </p><p>
+                    The principle of performing the authorization flow with Jersey is similar to OAuth 1.
+                    Check the <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.0.8/examples/oauth-client-twitter" target="_top">OAuth 1 Twitter Client Example</a> which utilizes Jersey client
+                    support for OAuth 2 to get Google Tasks of the user. The application is a web application
+                    that uses redirection to forward the user to the authorization URI.
+                </p><p>
+                    The following code is an example of how to build and use OAuth 2 authorization flow.
+
+                    </p><div class="example"><a name="d0e13217"></a><p class="title"><b>Example&nbsp;17.13.&nbsp;Building OAuth 2 Authorization Flow.</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">OAuth2CodeGrantFlow.Builder builder =
+    OAuth2ClientSupport.authorizationCodeGrantFlowBuilder(clientId,
+                            "https://example.com/oauth/authorization",
+                            "https://example.com/oauth/token");
+OAuth2CodeGrantFlow flow = builder
+    .property(OAuth2CodeGrantFlow.Phase.AUTHORIZATION, "readOnly", "true")
+    .scope("contact")
+    .build();
+String authorizationUri = flow.start();
+
+// Here we must redirect the user to the authorizationUri
+// and let the user approve an access for our app.
+
+...
+
+// We must handle redirection back to our web resource
+// and extract code and state from the request
+final TokenResult result = flow.finish(code, state);
+System.out.println("Access Token: " + result.get);</pre></div></div><p><br class="example-break">
+
+                    In the code above we create an <code class="literal">OAuth2CodeGrantFlow</code> from an
+                    authorization URI and an access token URI. We have additionally set a
+                    <code class="literal">readOnly</code> parameter to <code class="literal">true</code> and assigned the parameter
+                    to the authorization phase. This is the way, how you can extend the standard flow with
+                    additional service provider-specific parameters. In this case, the <code class="literal">readOnly=true</code>
+                    parameter will be added as a query parameter to the authorization uri returned from the method
+                    <code class="literal">flow.start()</code>.
+                    If we would specify <code class="literal">ACCESS_TOKEN_REQUEST</code> as a phase, then the parameter
+                    would have been added to the request when <code class="literal">flow.finish()</code>
+                    is invoked. See javadocs for more information. The parameter <code class="literal">readOnly</code>
+                    is not part of the OAuth 2 specification and is used in the example
+                    for demonstration of how to configure the flow for needs of specific service providers (in this
+                    case, the <code class="literal">readOnly</code>
+                    param would be described in the service provider's documentation).
+                </p><p>
+                    Between the calls to <code class="literal">flow.start()</code> and <code class="literal">flow.finish()</code>, a user
+                    must be redirected to the authorization URI. This means that the code will not be executed in
+                    a single method and the finish part will be invoked as a handler of redirect request back to our web from
+                    authorization URI. 
+                </p></div></div></div></div><link href="https://eclipse-ee4j.github.io/jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://eclipse-ee4j.github.io/jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://eclipse-ee4j.github.io/jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://eclipse-ee4j.github.io/jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+            function path() {
+              var args = arguments,
+                  result = []
+                  ;
+
+              for(var i = 0; i < args.length; i++)
+                  result.push(args[i].replace('@', 'https://eclipse-ee4j.github.io/jersey.github.io/sh/'));
+
+              return result
+            };
+
+            SyntaxHighlighter.autoloader.apply(null, path(
+              'applescript            @shBrushAppleScript.js',
+              'actionscript3 as3      @shBrushAS3.js',
+              'bash shell             @shBrushBash.js',
+              'coldfusion cf          @shBrushColdFusion.js',
+              'cpp c                  @shBrushCpp.js',
+              'c# c-sharp csharp      @shBrushCSharp.js',
+              'css                    @shBrushCss.js',
+              'delphi pascal          @shBrushDelphi.js',
+              'diff patch pas         @shBrushDiff.js',
+              'erl erlang             @shBrushErlang.js',
+              'groovy                 @shBrushGroovy.js',
+              'java                   @shBrushJava.js',
+              'jfx javafx             @shBrushJavaFX.js',
+              'js jscript javascript  @shBrushJScript.js',
+              'perl pl                @shBrushPerl.js',
+              'php                    @shBrushPhp.js',
+              'text plain             @shBrushPlain.js',
+              'py python              @shBrushPython.js',
+              'ruby rails ror rb      @shBrushRuby.js',
+              'sass scss              @shBrushSass.js',
+              'scala                  @shBrushScala.js',
+              'sql                    @shBrushSql.js',
+              'vb vbnet               @shBrushVb.js',
+              'xml xhtml xslt html    @shBrushXml.js'
+            ));
+
+            SyntaxHighlighter.all();
+        </script><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="sse.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="wadl.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;16.&nbsp;Server-Sent Events (SSE) Support&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;18.&nbsp;WADL Support</td></tr></table></div></div></body></html>
