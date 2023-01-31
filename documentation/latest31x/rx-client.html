@@ -1,6 +1,6 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Chapter&nbsp;6.&nbsp;Reactive JAX-RS Client API</title><link rel="stylesheet" type="text/css" href="/jersey.github.io/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 3.1.0 User Guide"><link rel="up" href="index.html" title="Jersey 3.1.0 User Guide"><link rel="prev" href="client.html" title="Chapter&nbsp;5.&nbsp;Client API"><link rel="next" href="representations.html" title="Chapter&nbsp;7.&nbsp;Representations and Responses"><script type="text/javascript">
+   <title>Chapter&nbsp;6.&nbsp;Reactive JAX-RS Client API</title><link rel="stylesheet" type="text/css" href="/jersey.github.io/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 3.1.1 User Guide"><link rel="up" href="index.html" title="Jersey 3.1.1 User Guide"><link rel="prev" href="client.html" title="Chapter&nbsp;5.&nbsp;Client API"><link rel="next" href="representations.html" title="Chapter&nbsp;7.&nbsp;Representations and Responses"><script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-3160303-1']);
             _gaq.push(['_trackPageview']);
@@ -350,7 +350,7 @@ String responseString = responseFlowable.blockingFirst();</pre><div class="simpl
                 <a class="link" href="http://en.wikipedia.org/wiki/Observer_pattern" target="_top">observer pattern</a> to support these sequences of data/events
                 via its <a class="link" href="http://reactivex.io/RxJava/javadoc//io/reactivex/Observable.html" target="_top">Observable</a> entry point class which implements the Reactive Pattern. <code class="literal">Observable</code> is
                 actually the parameter type in the RxJava's extension of <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a>, called
-                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.0/jersey/org/glassfish/jersey/client/rx/rxjava/RxObservableInvoker.html" target="_top">RxObservableInvoker</a>. This means that the return type of HTTP method calls is
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.1/jersey/org/glassfish/jersey/client/rx/rxjava/RxObservableInvoker.html" target="_top">RxObservableInvoker</a>. This means that the return type of HTTP method calls is
                 <code class="literal">Observable</code> in this case (accordingly parametrized).
             </p><p>
                 Requests are by default invoked at the moment when a subscriber is subscribed to an observable (it's a cold
@@ -380,21 +380,21 @@ client.register(RxObservableInvokerProvider.class);</pre></div></div><p><br clas
                     </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    gutter: false;">&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.ext.rx&lt;/groupId&gt;
     &lt;artifactId&gt;jersey-rx-client-rxjava&lt;/artifactId&gt;
-    &lt;version&gt;3.1.0&lt;/version&gt;
+    &lt;version&gt;3.1.1&lt;/version&gt;
 &lt;/dependency&gt;</pre><p>
 
                     After this step you can use the extended client right away. The dependency transitively adds the following
                     dependencies to your class-path as well: <code class="literal">io.reactivex:rxjava</code>.
                 </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                         If you're not using Maven (or other dependency management tool) make sure to add also all the transitive
-                        dependencies of this extension module (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/project-info/3.1.0/jersey/project/project/jersey-rx-client-rxjava/dependencies.html" target="_top">jersey-rx-client-rxjava</a>) on the class-path.
+                        dependencies of this extension module (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/project-info/3.1.1/jersey/project/project/jersey-rx-client-rxjava/dependencies.html" target="_top">jersey-rx-client-rxjava</a>) on the class-path.
                     </p></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="rx-client.rxjava2"></a>6.3.2.&nbsp;RxJava &#8211; Flowable</h3></div></div></div><p>
                 <a class="link" href="https://github.com/ReactiveX/RxJava" target="_top">RxJava</a>, contributed by Netflix, is probably the most advanced reactive library for Java at the moment. It's
                 used for composing asynchronous and event-based programs by using observable sequences. It uses the
                 <a class="link" href="http://en.wikipedia.org/wiki/Observer_pattern" target="_top">observer pattern</a> to support these sequences of data/events
                 via its <a class="link" href="http://reactivex.io/RxJava/javadoc//io/reactivex/Flowable.html" target="_top">Flowable</a> entry point class which implements the Reactive Pattern. <code class="literal">Flowable</code> is
                 actually the parameter type in the RxJava's extension of <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a>, called
-                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.0/jersey/org/glassfish/jersey/client/rx/rxjava2/RxFlowableInvoker.html" target="_top">RxFlowableInvoker</a>. This means that the return type of HTTP method calls is
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.1/jersey/org/glassfish/jersey/client/rx/rxjava2/RxFlowableInvoker.html" target="_top">RxFlowableInvoker</a>. This means that the return type of HTTP method calls is
                 <code class="literal">Flowable</code> in this case (accordingly parametrized).
             </p><p>
                 Requests are by default invoked at the moment when a subscriber is subscribed to a flowable (it's a cold
@@ -425,20 +425,20 @@ client.register(RxFlowableInvokerProvider.class);</pre></div></div><p><br class=
                     </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    gutter: false;">&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.ext.rx&lt;/groupId&gt;
     &lt;artifactId&gt;jersey-rx-client-rxjava2&lt;/artifactId&gt;
-    &lt;version&gt;3.1.0&lt;/version&gt;
+    &lt;version&gt;3.1.1&lt;/version&gt;
 &lt;/dependency&gt;</pre><p>
 
                     After this step you can use the extended client right away. The dependency transitively adds the following
                     dependencies to your class-path as well: <code class="literal">io.reactivex:rxjava2</code>.
                 </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                         If you're not using Maven (or other dependency management tool) make sure to add also all the transitive
-                        dependencies of this extension module (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/project-info/3.1.0/jersey/project/project/jersey-rx-client-rxjava2/dependencies.html" target="_top">jersey-rx-client-rxjava2</a>) on the class-path.
+                        dependencies of this extension module (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/project-info/3.1.1/jersey/project/project/jersey-rx-client-rxjava2/dependencies.html" target="_top">jersey-rx-client-rxjava2</a>) on the class-path.
                     </p></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="rx-client.guava"></a>6.3.3.&nbsp;Guava &#8211; ListenableFuture and Futures</h3></div></div></div><p>
                 <a class="link" href="https://guava.dev/" target="_top">Guava</a>, contributed by Google, also contains a type, <a class="link" href="https://guava.dev/releases/31.1-jre/api/docs/com/google/common/util/concurrent/ListenableFuture.html" target="_top">ListenableFuture</a>, which can be decorated with
                 listeners that are notified when the future completes. The <code class="literal">ListenableFuture</code> can be combined with
                 <a class="link" href="https://guava.dev/releases/31.1-jre/api/docs/com/google/common/util/concurrent/Futures.html" target="_top">Futures</a> to achieve asynchronous/event-based completion aware processing. <code class="literal">ListenableFuture</code>
                 is the parameter type in the Guava's extension of <code class="literal">RxInvoker</code>, called
-                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.0/jersey/org/glassfish/jersey/client/rx/guava/RxListenableFutureInvoker.html" target="_top">RxListenableFutureInvoker</a>. This means that the return type of HTTP method calls is
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.1/jersey/org/glassfish/jersey/client/rx/guava/RxListenableFutureInvoker.html" target="_top">RxListenableFutureInvoker</a>. This means that the return type of HTTP method calls is
                 <code class="literal">ListenableFuture</code> in this case (accordingly parametrized).
             </p><p>
                 Requests are by default invoked immediately. If not said otherwise the <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executors.html#newCachedThreadPool--" target="_top">Executors#newCachedThreadPool()</a> pool
@@ -468,14 +468,14 @@ ListenableFuture&lt;Response&gt; response = client.target("http://eclipse-ee4j.g
                     </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    gutter: false;">&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.ext.rx&lt;/groupId&gt;
     &lt;artifactId&gt;jersey-rx-client-guava&lt;/artifactId&gt;
-    &lt;version&gt;3.1.0&lt;/version&gt;
+    &lt;version&gt;3.1.1&lt;/version&gt;
 &lt;/dependency&gt;</pre><p>
 
                     After this step you can use the extended client right away. The dependency transitively adds the following
                     dependencies to your class-path as well: <code class="literal">com.google.guava:guava</code>.
                 </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
                         If you're not using Maven (or other dependency management tool) make sure to add also all the transitive
-                        dependencies of this extension module (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/project-info/3.1.0/jersey/project/project/jersey-rx-client-guava/dependencies.html" target="_top">jersey-rx-client-guava</a>) on the class-path.
+                        dependencies of this extension module (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/project-info/3.1.1/jersey/project/project/jersey-rx-client-guava/dependencies.html" target="_top">jersey-rx-client-guava</a>) on the class-path.
                     </p></div></div></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="rx.client.spi"></a>6.4.&nbsp;Implementing Support for Custom Reactive Libraries (SPI)</h2></div></div></div><p>
             In case you want to bring support for some other library providing Reactive Programming Model into your application
             you can extend functionality of Reactive JAX-RS Client by implementing <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/RxInvokerProvider.html" target="_top">RxInvokerProvider</a>, registering
@@ -502,7 +502,7 @@ ListenableFuture&lt;Response&gt; response = client.target("http://eclipse-ee4j.g
                 which will be registered as an provider to a client instance.
             </p><div class="example"><a name="rx.client.extend.rxinvoker"></a><p class="title"><b>Example&nbsp;6.14.&nbsp;Extending RxInvokerProvider</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public static class CompletionStageRxInvokerProvider implements RxInvokerProvider&lt;CompletionStageRxInvoker&gt; {
     @Override
-    public boolean isProviderFor(Class&lt;?%gt; clazz) {
+    public boolean isProviderFor(Class&lt;?&gt; clazz) {
         return CompletionStage.class.equals(clazz);
     }
 

@@ -1,6 +1,6 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Chapter&nbsp;29.&nbsp;Migration Guide</title><link rel="stylesheet" type="text/css" href="/jersey.github.io/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 3.1.0 User Guide"><link rel="up" href="index.html" title="Jersey 3.1.0 User Guide"><link rel="prev" href="how-to-build.html" title="Chapter&nbsp;28.&nbsp;Building and Testing Jersey"><link rel="next" href="appendix-properties.html" title="Appendix&nbsp;A.&nbsp;Configuration Properties"><script type="text/javascript">
+   <title>Chapter&nbsp;29.&nbsp;Migration Guide</title><link rel="stylesheet" type="text/css" href="/jersey.github.io/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 3.1.1 User Guide"><link rel="up" href="index.html" title="Jersey 3.1.1 User Guide"><link rel="prev" href="how-to-build.html" title="Chapter&nbsp;28.&nbsp;Building and Testing Jersey"><link rel="next" href="appendix-properties.html" title="Appendix&nbsp;A.&nbsp;Configuration Properties"><script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-3160303-1']);
             _gaq.push(['_trackPageview']);
@@ -15,21 +15,20 @@
                 Table of Contents
             </a> | <a href="user-guide.html">
                 Single HTML
-            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="migration"></a>Chapter&nbsp;29.&nbsp;Migration Guide</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="migration.html#mig-3.0.0">29.1. Migrating from Jersey 2.32+ to 3.0.x.</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-3.0.0-breaking-changes">29.1.1. Breaking Changes</a></span></dt><dt><span class="section"><a href="migration.html#mig-3.0.0-removed-deprecated">29.1.2. Removed deprecated APIs</a></span></dt><dt><span class="section"><a href="migration.html#mig-3.0.0-application-servers">29.1.3. Application servers for Jersey</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-3.1.0">29.2. Migrating from Jersey 3.0.x to 3.1.0.</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-3.1.0-breaking-changes">29.2.1. Breaking Changes</a></span></dt></dl></dd></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-3.0.0"></a>29.1.&nbsp;Migrating from Jersey 2.32+ to 3.0.x.</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-3.0.0-breaking-changes"></a>29.1.1.&nbsp;Breaking Changes</h3></div></div></div><p>
+            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="migration"></a>Chapter&nbsp;29.&nbsp;Migration Guide</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="migration.html#mig-3.0.0">29.1. Migrating from Jersey 2.32+ to 3.0.x.</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-3.0.0-breaking-changes">29.1.1. Breaking Changes</a></span></dt><dt><span class="section"><a href="migration.html#mig-3.0.0-removed-deprecated">29.1.2. Removed deprecated APIs</a></span></dt><dt><span class="section"><a href="migration.html#mig-3.0.0-application-servers">29.1.3. Application servers for Jersey</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-3.1.0">29.2. Migrating from Jersey 3.0.x to 3.1.1.</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-3.1.0-breaking-changes">29.2.1. Breaking Changes</a></span></dt></dl></dd></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-3.0.0"></a>29.1.&nbsp;Migrating from Jersey 2.32+ to 3.0.x.</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-3.0.0-breaking-changes"></a>29.1.1.&nbsp;Breaking Changes</h3></div></div></div><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
-                            The most fundamental change in Jersey 3.1.0 and later is namespace change.
+                            The most fundamental change in Jersey 3.0.0 and later is namespace change.
                             Since Jakarta EE 9 the <code class="literal">jakarta.</code> namespace is introduced as a replacement
                             for javax namespace from Java EE.
                         </p><p>
                             Due to required jakartification several modules where omitted (because of not satisfied dependencies).
                             Or require higher JDK (11+).
                         </p><p>
-                            Spring for now is not supported.
-                        </p><p>
-                            Helidon connector for now is not supported.
-                        </p><p>
                             Examples and tests are reduced in quantity (so you probably will not find all those examples which were available
                             in the 2.32 version).
+                        </p></li><li class="listitem"><p>
+                            <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.1/jersey/org/glassfish/jersey/server/ServerProperties.html#UNWRAP_COMPLETION_STAGE_IN_WRITER_ENABLE" target="_top">ServerProperties.UNWRAP_COMPLETION_STAGE_IN_WRITER_ENABLE</a> is by default
+                            <code class="literal">true</code>.
                         </p></li></ul></div><p>
             </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-3.0.0-removed-deprecated"></a>29.1.2.&nbsp;Removed deprecated APIs</h3></div></div></div><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
@@ -43,14 +42,11 @@
                 <code class="literal">Jetty 11 (JDK 11+ required)</code>,
                 <code class="literal">Payara 6</code>, and
                 <code class="literal">Tomcat 10</code>.
-            </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-3.1.0"></a>29.2.&nbsp;Migrating from Jersey 3.0.x to 3.1.0.</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-3.1.0-breaking-changes"></a>29.2.1.&nbsp;Breaking Changes</h3></div></div></div><p>
+            </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-3.1.0"></a>29.2.&nbsp;Migrating from Jersey 3.0.x to 3.1.1.</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-3.1.0-breaking-changes"></a>29.2.1.&nbsp;Breaking Changes</h3></div></div></div><p>
                 </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
                             Jersey 3.1.0+ is the implementation of Jakarta RESTful WebServices 3.1, which is part of
                             Jakarta EE 10. Jakarta EE 10 defines the minimum JDK 11 requirement and hence Jersey no longer
                             supports JDK 8.
-                        </p></li><li class="listitem"><p>
-                            <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.0/jersey/org/glassfish/jersey/server/ServerProperties.html#UNWRAP_COMPLETION_STAGE_IN_WRITER_ENABLE" target="_top">ServerProperties.UNWRAP_COMPLETION_STAGE_IN_WRITER_ENABLE</a> is by default
-                            <code class="literal">true</code>.
                         </p></li><li class="listitem"><p>
                             Since Jersey 3.1.0+ the <code class="literal">getRequestHeader(String name)</code> method of the
                             <code class="literal">ClientRequest</code> class returns NULL (instead of an empty List) in case if

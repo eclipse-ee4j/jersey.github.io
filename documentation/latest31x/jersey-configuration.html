@@ -1,6 +1,6 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Chapter&nbsp;15.&nbsp;Jersey configuration</title><link rel="stylesheet" type="text/css" href="/jersey.github.io/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 3.1.0 User Guide"><link rel="up" href="index.html" title="Jersey 3.1.0 User Guide"><link rel="prev" href="resource-builder.html" title="Chapter&nbsp;14.&nbsp;Programmatic API for Building Resources"><link rel="next" href="sse.html" title="Chapter&nbsp;16.&nbsp;Server-Sent Events (SSE) Support"><script type="text/javascript">
+   <title>Chapter&nbsp;15.&nbsp;Jersey configuration</title><link rel="stylesheet" type="text/css" href="/jersey.github.io/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 3.1.1 User Guide"><link rel="up" href="index.html" title="Jersey 3.1.1 User Guide"><link rel="prev" href="resource-builder.html" title="Chapter&nbsp;14.&nbsp;Programmatic API for Building Resources"><link rel="next" href="sse.html" title="Chapter&nbsp;16.&nbsp;Server-Sent Events (SSE) Support"><script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-3160303-1']);
             _gaq.push(['_trackPageview']);
@@ -26,8 +26,8 @@
             </pre><p>
             Note that with the security manager turned on, write access permission is required to execute
             System.getProperties(). With insufficient permissions, the warning message is logged (with Level.FINER) and
-            only <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.0/jersey/org/glassfish/jersey/CommonProperties.html" target="_top">CommonProperties</a>, <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.0/jersey/org/glassfish/jersey/client/ClientProperties.html" target="_top">ClientProperties</a>,
-            and <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.0/jersey/org/glassfish/jersey/server/ServerProperties.html" target="_top">ServerProperties</a>
+            only <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.1/jersey/org/glassfish/jersey/CommonProperties.html" target="_top">CommonProperties</a>, <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.1/jersey/org/glassfish/jersey/client/ClientProperties.html" target="_top">ClientProperties</a>,
+            and <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.1/jersey/org/glassfish/jersey/server/ServerProperties.html" target="_top">ServerProperties</a>
             properties are used, as the property names are known and System.getProperty(name) method can be used,
             which does not require the write access permission.
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mp-config"></a>15.2.&nbsp;Micro profile configuration provider</h2></div></div></div><p>
@@ -46,7 +46,7 @@
                 &lt;dependency&gt;
                     &lt;groupId&gt;org.glassfish.jersey.ext.microprofile&lt;/groupId&gt;
                     &lt;artifactId&gt;jersey-mp-config&lt;/artifactId&gt;
-                    &lt;version&gt;3.1.0&lt;/scope&gt;
+                    &lt;version&gt;3.1.1&lt;/scope&gt;
                 &lt;/dependency&gt;
             </pre><p>
             And the Microprofile Config implementation, such as Helidon:

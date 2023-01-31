@@ -1,6 +1,6 @@
 <html><head>
       <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-   <title>Chapter&nbsp;25.&nbsp;Jersey CDI Container Agnostic Support</title><link rel="stylesheet" type="text/css" href="/jersey.github.io/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 3.1.0 User Guide"><link rel="up" href="index.html" title="Jersey 3.1.0 User Guide"><link rel="prev" href="ioc.html" title="Chapter&nbsp;24.&nbsp;Custom Injection and Lifecycle Management"><link rel="next" href="graalvm-native-image.html" title="Chapter&nbsp;26.&nbsp;GraalVM native-image generation"><script type="text/javascript">
+   <title>Chapter&nbsp;25.&nbsp;Jersey CDI Container Agnostic Support</title><link rel="stylesheet" type="text/css" href="/jersey.github.io/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.1"><link rel="home" href="index.html" title="Jersey 3.1.1 User Guide"><link rel="up" href="index.html" title="Jersey 3.1.1 User Guide"><link rel="prev" href="ioc.html" title="Chapter&nbsp;24.&nbsp;Custom Injection and Lifecycle Management"><link rel="next" href="graalvm-native-image.html" title="Chapter&nbsp;26.&nbsp;GraalVM native-image generation"><script type="text/javascript">
             var _gaq = _gaq || [];
             _gaq.push(['_setAccount', 'UA-3160303-1']);
             _gaq.push(['_trackPageview']);
@@ -32,7 +32,7 @@
         </p><p>
           Apache Tomcat is another Servlet container that is known to work fine with Jersey CDI support.
           However, things do not work there out of the box. You need to enable CDI support in Tomcat e.g. using Weld.
-          Jersey <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.1.0/examples/cdi-webapp" target="_top">CDI example</a> shows how a WAR application could be packaged
+          Jersey <a class="link" href="https://github.com/eclipse-ee4j/jersey/tree/3.1.1/examples/cdi-webapp" target="_top">CDI example</a> shows how a WAR application could be packaged
           (see <code class="literal">tomcat-packaging</code> profile in the pom file) in order to enable JAX-RS/CDI integration
           in Tomcat with Jersey using Weld.
         </p><p>
@@ -41,7 +41,7 @@
             </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.ext.cdi&lt;/groupId&gt;
     &lt;artifactId&gt;jersey-cdi1x&lt;/artifactId&gt;
-    &lt;version&gt;3.1.0&lt;/version&gt;
+    &lt;version&gt;3.1.1&lt;/version&gt;
 &lt;/dependency&gt;
             </pre><p>
         </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="cdi.support.request.scope.binding"></a>25.3.&nbsp;Request Scope Binding</h2></div></div></div><p>
@@ -53,7 +53,7 @@
         you would not be able to use any request scoped CDI beans in your Jersey application. To make Jersey work with CDI
         in containers that do not have request scope binding resolved, some extra work is required.
       </p><p>
-        To allow smooth integration with Jersey request scope a new SPI, <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.0/jersey/org/glassfish/jersey/server/spi/ExternalRequestScope.html" target="_top">ExternalRequestScope</a>, was introduced in Jersey version 2.15.
+        To allow smooth integration with Jersey request scope a new SPI, <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/3.1.1/jersey/org/glassfish/jersey/server/spi/ExternalRequestScope.html" target="_top">ExternalRequestScope</a>, was introduced in Jersey version 2.15.
         An SPI implementation should be registered via the standard <code class="literal">META-INF/services</code> mechanism
         and needs to make sure CDI implentation request scope has been properly managed and request scoped data kept in the right context. 
         For performance reasons, at most a single external request scope provider is allowed by Jersey runtime.
@@ -63,7 +63,7 @@
             </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    ">&lt;dependency&gt;
     &lt;groupId&gt;org.glassfish.jersey.ext.cdi&lt;/groupId&gt;
     &lt;artifactId&gt;jersey-weld2-se&lt;/artifactId&gt;
-    &lt;version&gt;3.1.0&lt;/version&gt;
+    &lt;version&gt;3.1.1&lt;/version&gt;
 &lt;/dependency&gt;
             </pre><p>
             Then you could use your CDI backed JAX-RS components in a Jersey application running in Grizzly HTTP container
