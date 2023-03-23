@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.glassfish.jersey.ext.cdi1x.internal"},{"l":"org.glassfish.jersey.ext.cdi1x.spi"}]
