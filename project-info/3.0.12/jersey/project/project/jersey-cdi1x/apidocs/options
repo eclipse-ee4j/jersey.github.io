@@ -1,0 +1,33 @@
+-classpath
+'/home/jenkins/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/3.0.12/jersey-hk2-3.0.12.jar:/home/jenkins/.m2/repository/org/glassfish/jersey/core/jersey-common/3.0.12/jersey-common-3.0.12.jar:/home/jenkins/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/home/jenkins/.m2/repository/org/glassfish/hk2/hk2-locator/3.0.3/hk2-locator-3.0.3.jar:/home/jenkins/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/3.0.3/aopalliance-repackaged-3.0.3.jar:/home/jenkins/.m2/repository/org/glassfish/hk2/hk2-api/3.0.3/hk2-api-3.0.3.jar:/home/jenkins/.m2/repository/org/glassfish/hk2/hk2-utils/3.0.3/hk2-utils-3.0.3.jar:/home/jenkins/.m2/repository/org/javassist/javassist/3.29.2-GA/javassist-3.29.2-GA.jar:/home/jenkins/.m2/repository/jakarta/enterprise/jakarta.enterprise.cdi-api/3.0.0/jakarta.enterprise.cdi-api-3.0.0.jar:/home/jenkins/.m2/repository/jakarta/el/jakarta.el-api/4.0.0/jakarta.el-api-4.0.0.jar:/home/jenkins/.m2/repository/jakarta/interceptor/jakarta.interceptor-api/2.0.0/jakarta.interceptor-api-2.0.0.jar:/home/jenkins/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/jenkins/.m2/repository/org/glassfish/jersey/core/jersey-server/3.0.12/jersey-server-3.0.12.jar:/home/jenkins/.m2/repository/org/glassfish/jersey/core/jersey-client/3.0.12/jersey-client-3.0.12.jar:/home/jenkins/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.0.0/jakarta.annotation-api-2.0.0.jar:/home/jenkins/.m2/repository/jakarta/validation/jakarta.validation-api/3.0.2/jakarta.validation-api-3.0.2.jar:/home/jenkins/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.0.0/jakarta.ws.rs-api-3.0.0.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/jenkins/agent/workspace/release_project_info/ext/cdi/jersey-cdi1x/src/main/java:/home/jenkins/agent/workspace/release_project_info/ext/cdi/jersey-cdi1x/target/generated-sources/rsrc-gen'
+-verbose
+-author
+-bottom
+'Copyright &#169; 2007-2023,                                 <a href="http://www.oracle.com">Oracle</a>                                 and/or its affiliates.                                 All Rights Reserved. Use is subject to license terms.'
+-charset
+'UTF-8'
+-d
+'/home/jenkins/agent/workspace/release_project_info/ext/cdi/jersey-cdi1x/target/site/apidocs'
+-docencoding
+'UTF-8'
+-Xdoclint:none
+-doctitle
+'Jersey 3.0.12 API Documentation'
+-link
+'https://jakartaee.github.io/rest/apidocs/3.0.0'
+-link
+'https://javaee.github.io/hk2/apidocs'
+-link
+'https://eclipse-ee4j.github.io/jersey.github.io/apidocs/latest/jersey'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/jenkins/agent/workspace/release_project_info/ext/cdi/jersey-cdi1x/target/javadoc-bundle-options'
+-notimestamp
+-use
+-version
+-windowtitle
+'Jersey 3.0.12 API'
