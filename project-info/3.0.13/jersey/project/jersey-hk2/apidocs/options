@@ -1,0 +1,33 @@
+-classpath
+'/home/jenkins/.m2/repository/org/glassfish/jersey/core/jersey-common/3.0.13/jersey-common-3.0.13.jar:/home/jenkins/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/3.0.0/jakarta.ws.rs-api-3.0.0.jar:/home/jenkins/.m2/repository/jakarta/annotation/jakarta.annotation-api/2.1.1/jakarta.annotation-api-2.1.1.jar:/home/jenkins/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/home/jenkins/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/home/jenkins/.m2/repository/org/glassfish/hk2/hk2-locator/3.0.6/hk2-locator-3.0.6.jar:/home/jenkins/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/3.0.6/aopalliance-repackaged-3.0.6.jar:/home/jenkins/.m2/repository/org/glassfish/hk2/hk2-api/3.0.6/hk2-api-3.0.6.jar:/home/jenkins/.m2/repository/org/glassfish/hk2/hk2-utils/3.0.6/hk2-utils-3.0.6.jar:/home/jenkins/.m2/repository/org/javassist/javassist/3.30.2-GA/javassist-3.30.2-GA.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/jenkins/agent/workspace/Jakarta-Common-Release-Jobs/release_project_info/inject/hk2/src/main/java:/home/jenkins/agent/workspace/Jakarta-Common-Release-Jobs/release_project_info/inject/hk2/target/generated-sources/rsrc-gen'
+-verbose
+-author
+-bottom
+'Copyright &#169; 2007-2023,                                 <a href="http://www.oracle.com">Oracle</a>                                 and/or its affiliates.                                 All Rights Reserved. Use is subject to license terms.'
+-charset
+'UTF-8'
+-d
+'/home/jenkins/agent/workspace/Jakarta-Common-Release-Jobs/release_project_info/inject/hk2/target/site/apidocs'
+-docencoding
+'UTF-8'
+-Xdoclint:none
+-doctitle
+'Jersey 3.0.13 API Documentation'
+-link
+'https://jakartaee.github.io/rest/apidocs/3.0.0'
+-link
+'https://javaee.github.io/hk2/apidocs'
+-link
+'https://eclipse-ee4j.github.io/jersey.github.io/apidocs/latest/jersey'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/jenkins/agent/workspace/Jakarta-Common-Release-Jobs/release_project_info/inject/hk2/target/javadoc-bundle-options'
+-notimestamp
+-use
+-version
+-windowtitle
+'Jersey 3.0.13 API'
