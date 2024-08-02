@@ -32,7 +32,7 @@ jobs:
   # Deployment job
   deploy:
     environment:
-      name: github-pages
+      name: master
       url: "https://eclipse-ee4j.github.io/jersey.github.io"
     runs-on: ubuntu-latest
     needs: build
