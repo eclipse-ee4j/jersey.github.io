@@ -1,0 +1,29 @@
+name: Deploy Jersey documentation and apidocs
+
+on:
+  push:
+    branches: ["master"]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: "https://eclipse-ee4j.github.io/jersey.github.io"
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
