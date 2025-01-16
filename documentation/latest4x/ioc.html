@@ -1,0 +1,498 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;25.&nbsp;Custom Injection and Lifecycle Management</title><link rel="stylesheet" type="text/css" href="/jersey.github.io/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Jersey 4.0.0-M1 User Guide"><link rel="up" href="index.html" title="Jersey 4.0.0-M1 User Guide"><link rel="prev" href="monitoring_tracing.html" title="Chapter&nbsp;24.&nbsp;Monitoring and Diagnostics"><link rel="next" href="cdi.support.html" title="Chapter&nbsp;26.&nbsp;Jersey CDI Container Agnostic Support"><script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-3160303-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;25.&nbsp;Custom Injection and Lifecycle Management</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="monitoring_tracing.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="cdi.support.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://eclipse-ee4j.github.io/jersey"><img src="https://eclipse-ee4j.github.io/jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
+            <a href="index.html">
+                Table of Contents
+            </a> | <a href="user-guide.html">
+                Single HTML
+            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="ioc"></a>Chapter&nbsp;25.&nbsp;Custom Injection and Lifecycle Management</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="ioc.html#d0e17761">25.1. Implementing Custom Injection Provider</a></span></dt><dt><span class="section"><a href="ioc.html#d0e17862">25.2. Defining Custom Injection Annotation</a></span></dt><dt><span class="section"><a href="ioc.html#d0e17930">25.3. Custom Life Cycle Management</a></span></dt></dl></div><p>
+        Since version 2.0, Jersey uses <a class="link" href="https://github.com/eclipse-ee4j/glassfish-hk2" target="_top">Glassfish-HK2</a> library for component life cycle management and dependency injection.
+        Rather than spending a lot of effort in maintaining Jersey specific API (as it used to be before Jersey 2.0 version),
+        Jersey defines several extension points where end-user application can directly manipulate Jersey HK2 bindings
+        using the HK2 public API to customize life cycle management and dependency injection of application components.
+    </p><p>
+        Jersey user guide can by no means supply an exhaustive documentation of HK2 API in its entire scope.
+        This chapter only points out the most common scenarios related
+        to dependency injection in Jersey and suggests possible options to implement these scenarios.
+        It is highly recommended to check out the <a class="link" href="https://github.com/eclipse-ee4j/glassfish-hk2" target="_top">Glassfish-HK2</a> website and read HK2 documentation in order to get
+        better understanding of suggested approaches. HK2 documentation should also help in resolving use cases
+        that are not discussed in this writing.
+    </p><p>
+        There are typically three main use cases, where your application may consider dealing with
+        HK2 APIs exposed in Jersey:
+
+        </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">Implementing a custom injection provider that allows an application to define
+                additional types to be injectable into Jersey-managed JAX-RS components.</li><li class="listitem">Defining a custom injection annotation (other than <a class="link" href="https://jakarta.ee/specifications//dependency-injection/2.0/apidocs/jakarta/inject/inject" target="_top">@Inject</a>
+                or <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/core/Context.html" target="_top">@Context</a>) to mark application injection points.</li><li class="listitem">Specifying a custom component life cycle management for your application
+                components.</li></ul></div><p>
+    </p><p>
+        Relying on Servlet HTTP session concept is not very RESTful. It turns the originally state-less HTTP
+        communication schema into a state-full manner. However, it could serve
+        as a good example that will help me demonstrate implementation of the use cases described above.
+        The following examples should work on top of Jersey Servlet integration module. The approach that will be
+        demonstrated could be further generalized.
+        Below we will show how to make actual Servlet <a class="link" href="https://jakarta.ee/specifications//servlet/5.0/apidocs/jakarta/servlet/http/httpsession" target="_top">HttpSession</a> injectable into JAX-RS components
+        and how to make this injection work with a custom inject annotation type. Finally, we will demonstrate
+        how you can write <code class="literal">HttpSession</code>-scoped JAX-RS resources.
+    </p><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e17761"></a>25.1.&nbsp;Implementing Custom Injection Provider</h2></div></div></div><p>
+            Jersey implementation allows you to directly inject <a class="link" href="https://jakarta.ee/specifications//servlet/5.0/apidocs/jakarta/servlet/http/httpservletrequest" target="_top">HttpServletRequest</a> instance into
+            your JAX-RS components.
+            It is quite straight forward to get the appropriate <code class="literal">HttpSession</code> instance out of the
+            injected request instance.
+            Let say, you want to get <code class="literal">HttpSession</code> instance directly injected into your JAX-RS
+            types like in the code snippet below.
+
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("di-resource")
+public class MyDiResource {
+
+    @Inject HttpSession httpSession;
+
+    ...
+
+}</pre><p>
+
+            To make the above injection work, you will need to define an additional HK2 binding in your
+            application <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/4.0.0-M1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a>.
+            Let's start with a custom HK2 <a class="link" href="https://javaee.github.io/hk2/apidocs//org/glassfish/hk2/api/Factory.html" target="_top">Factory</a> implementation that knows how to extract
+            <code class="literal">HttpSession</code> out of given <code class="literal">HttpServletRequest</code>.
+
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">import org.glassfish.hk2.api.Factory;
+    ...
+
+    public class HttpSessionFactory implements Factory&lt;HttpSession&gt; {
+
+    private final HttpServletRequest request;
+
+    @Inject
+    public HttpSessionFactory(HttpServletRequest request) {
+        this.request = request;
+    }
+
+    @Override
+    public HttpSession provide() {
+       return request.getSession();
+    }
+
+    @Override
+    public void dispose(HttpSession t) {
+    }
+}</pre><p>
+
+            Please note that the factory implementation itself relies on having the actual
+            <code class="literal">HttpServletRequest</code> instance injected.
+            In your implementation, you can of course depend on other types (and inject them conveniently)
+            as long as these other types are bound to the actual HK2 service locator by Jersey or by your
+            application. The key notion to remember here is that your HK2 <code class="literal">Factory</code> implementation
+            is responsible for implementing the <code class="literal">provide()</code> method that is used by HK2
+            runtime to retrieve the injected instance. Those of you who worked with Guice binding API in the
+            past will most likely find this concept very familiar.
+        </p><p>
+            Once implemented, the factory can be used in a custom HK2 <code class="literal">Binder</code> to define the
+            new injection binding for <code class="literal">HttpSession</code>. Finally, the implemented binder
+            can be registered in your <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/4.0.0-M1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a>:
+
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">import org.glassfish.hk2.utilities.binding.AbstractBinder;
+...
+
+public class MyApplication extends ResourceConfig {
+
+    public MyApplication() {
+
+        ...
+
+        register(new AbstractBinder() {
+            @Override
+            protected void configure() {
+                bindFactory(HttpSessionFactory.class).to(HttpSession.class)
+                .proxy(true).proxyForSameScope(false).in(RequestScoped.class);
+            }
+        });
+    }
+}</pre><p>
+
+            Note that we did not define any explicit injection scope for the new injection binding.
+            By default, HK2 factories are bound in a HK2 <a class="link" href="https://javaee.github.io/hk2/apidocs//org/glassfish/hk2/api/PerLookup.html" target="_top">PerLookup</a> scope, which is in most
+            cases a good choice and it is suitable also in our example.
+        </p><p>
+            To summarize the approach described above, here is a list of steps to follow
+            when implementing custom injection provider in your Jersey application :
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem">Implement your own HK2 <code class="literal">Factory</code> to provide the
+                    injectable instances.</li><li class="listitem">Use the HK2 <code class="literal">Factory</code> to define an injection
+                    binding for the injected instance via custom HK2 <code class="literal">Binder</code>.</li><li class="listitem">Register the custom HK2 <code class="literal">Binder</code> in your application
+                    <code class="literal">ResourceConfig</code>.</li></ul></div><p>
+        </p><p>
+            While the <code class="literal">Factory</code>-based approach is quite straight-forward and should help you to
+            quickly prototype or even implement final solutions, you should bear in mind, that your
+            implementation does not need to be based on factories. You can for instance bind your own
+            types directly, while still taking advantage of HK2 provided dependency injection.
+            Also, in your implementation you may want to pay more attention to defining or managing
+            injection binding scopes for the sake of performance or correctness of your custom injection
+            extension.
+
+            </p><div class="important" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Important</h3><p>
+                    While the individual injection binding implementations vary and depend on your use case,
+                    to enable your custom injection extension in Jersey, you must register your custom HK2 <a class="link" href="https://javaee.github.io/hk2/apidocs//org/glassfish/hk2/utilities/Binder.html" target="_top">Binder</a>
+                    implementation in your application <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/4.0.0-M1/jersey/org/glassfish/jersey/server/ResourceConfig.html" target="_top">ResourceConfig</a>!
+                </p></div><p>
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e17862"></a>25.2.&nbsp;Defining Custom Injection Annotation</h2></div></div></div><p>
+            Java annotations are a convenient way for attaching metadata to various elements of Java code.
+            Sometimes you may even decide to combine the metadata with additional functionality, such as
+            ability to automatically inject the instances based on the annotation-provided metadata.
+            The described scenario is one of the use cases where having means of defining a custom injection
+            annotation in your Jersey application may prove to be useful. Obviously, this use case applies also
+            to re-used existing, 3rd-party annotation types.
+        </p><p>
+            In the following example, we will describe how a custom injection annotation can be supported.
+            Let's start with defining a new custom <code class="literal">SessionInject</code> injection annotation
+            that we will specifically use to inject instances of <a class="link" href="https://jakarta.ee/specifications//servlet/5.0/apidocs/jakarta/servlet/http/httpsession" target="_top">HttpSession</a>
+            (similarly to the previous example):
+
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+public @interface SessionInject { }</pre><p>
+
+            The above <code class="literal">@SessionInject</code> annotation should be then used as follows:
+
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("di-resource")
+public class MyDiResource {
+
+    @SessionInject HttpSession httpSession;
+
+    ...
+
+}</pre><p>
+
+            Again, the semantics remains the same as in the example described in the previous section.
+            You want to have the actual HTTP Servlet session instance injected into your
+            <code class="literal">MyDiResource</code> instance. This time however, you expect that the
+            <code class="literal">httpSession</code> field to be injected must be annotated with
+            a custom <code class="literal">@SessionInject</code> annotation. Obviously, in this simplistic case
+            the use of a custom injection annotation is an overkill, however, the simplicity of the
+            use case will help us to avoid use case specific distractions and allow us better focus on
+            the important aspects of the job of defining a custom injection annotation.
+        </p><p>
+            If you remember from the previous section, to make the injection in the code snippet above work,
+            you first need to implement the injection provider (HK2 <a class="link" href="https://javaee.github.io/hk2/apidocs//org/glassfish/hk2/api/Factory.html" target="_top">Factory</a>) as well as define the
+            injection binding for the <code class="literal">HttpSession</code> type. That part we have already
+            done in the previous section.
+            We will now focus on what needs to be done to inform the HK2 runtime about our <code class="literal">@SessionInject</code>
+            annotation type that we want to support as a new injection point marker annotation. To do that,
+            we need to implement our own HK2 <a class="link" href="https://javaee.github.io/hk2/apidocs//org/glassfish/hk2/api/InjectionResolver.html" target="_top">InjectionResolver</a> for the annotation as demonstrated
+            in the following listing:
+
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">import jakarta.inject.Inject;
+import jakarta.inject.Named;
+
+import jakarta.servlet.http.HttpSession;
+
+import org.glassfish.hk2.api.InjectionResolver;
+import org.glassfish.hk2.api.ServiceHandle;
+
+...
+
+public class SessionInjectResolver implements InjectionResolver&lt;SessionInject&gt; {
+
+    @Inject
+    @Named(InjectionResolver.SYSTEM_RESOLVER_NAME)
+    InjectionResolver&lt;Inject&gt; systemInjectionResolver;
+
+    @Override
+    public Object resolve(Injectee injectee, ServiceHandle&lt;?&gt; handle) {
+        if (HttpSession.class == injectee.getRequiredType()) {
+            return systemInjectionResolver.resolve(injectee, handle);
+        }
+
+        return null;
+    }
+
+    @Override
+    public boolean isConstructorParameterIndicator() {
+        return false;
+    }
+
+    @Override
+    public boolean isMethodParameterIndicator() {
+        return false;
+    }
+}</pre><p>
+
+            The <code class="literal">SessionInjectResolver</code> above just delegates to the default
+            HK2 system injection resolver to do the actual work.
+        </p><p>
+            You again need to register your injection resolver with your Jersey application,
+            and you can do it the same was as in the previous case. Following listing includes
+            HK2 binder that registers both, the injection provider from the previous step
+            as well as the new HK2 inject resolver with Jersey application <code class="literal">ResourceConfig</code>.
+            Note that in this case we're explicitly binding the <code class="literal">SessionInjectResolver</code>
+            to a <a class="link" href="https://jakarta.ee/specifications//dependency-injection/2.0/apidocs/jakarta/inject/singleton" target="_top">@Singleton</a> scope to avoid the unnecessary proliferation of
+            <code class="literal">SessionInjectResolver</code> instances in the application:
+
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">import org.glassfish.hk2.api.TypeLiteral;
+import org.glassfish.hk2.utilities.binding.AbstractBinder;
+
+import jakarta.inject.Singleton;
+
+...
+
+public class MyApplication extends ResourceConfig {
+
+    public MyApplication() {
+
+        ...
+
+        register(new AbstractBinder() {
+            @Override
+            protected void configure() {
+                bindFactory(HttpSessionFactory.class).to(HttpSession.class);
+
+                bind(SessionInjectResolver.class)
+                    .to(new TypeLiteral&lt;InjectionResolver&lt;SessionInject&gt;&gt;(){})
+                    .in(Singleton.class);
+            }
+        });
+    }
+}</pre><p>
+        </p></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e17930"></a>25.3.&nbsp;Custom Life Cycle Management</h2></div></div></div><p>
+            The last use case discussed in this chapter will cover managing custom-scoped components
+            within a Jersey application.
+            If not configured otherwise, then all JAX-RS resources are by default managed on a per-request basis. A new instance
+            of given resource class will be created for each incoming request that should be handled by that resource class.
+            Let say you want to have your resource class managed in a per-session manner. It means a new instance of your
+            resource class should be created only when a new Servlet <a class="link" href="https://jakarta.ee/specifications//servlet/5.0/apidocs/jakarta/servlet/http/httpsession" target="_top">HttpSession</a> is established.
+            (As with previous examples in the chapter, this example assumes the deployment of your application
+            to a Servlet container.)
+        </p><p>
+            Following is an example of such a resource class that builds on the support for
+            <code class="literal">HttpSession</code> injection from the earlier examples described in this chapter.
+            The <code class="literal">PerSessionResource</code> class allows you to count the number of requests made within
+            a single client session and provides you a handy sub-resource method to obtain the number via
+            a HTTP <code class="literal">GET</code> method call:
+
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">@Path("session")
+public class PerSessionResource {
+
+    @SessionInject HttpSession httpSession;
+
+    AtomicInteger counter = new AtomicInteger();
+
+    @GET
+    @Path("id")
+    public String getSession() {
+        counter.incrementAndGet();
+        return httpSession.getId();
+    }
+
+    @GET
+    @Path("count")
+    public int getSessionRequestCount() {
+        return counter.incrementAndGet();
+    }
+}</pre><p>
+
+            Should the above resource be per-request scoped (default option), you would never be able to obtain
+            any other number but 1 from it's getReqs sub-resource method, because then for each request
+            a new instance of our <code class="literal">PerSessionResource</code> class would get created with a fresh
+            instance <code class="literal">counter</code> field set to 0.
+            The value of this field would get incremented to 1 in the the <code class="literal">getSessionRequestCount</code>
+            method before this value is returned.
+            In order to achieve what we want, we have to find a way how to bind the instances of
+            our <code class="literal">PerSessionResource</code> class to <code class="literal">HttpSession</code> instances and
+            then reuse those bound instances whenever new request bound to the same HTTP client session arrives.
+            Let's see how to achieve this.
+        </p><p>
+            To get better control over your Jersey component instantiation and life cycle,
+            you need to implement a custom Jersey <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/4.0.0-M1/jersey/org/glassfish/jersey/server/spi/ComponentProvider.html" target="_top">ComponentProvider</a> SPI,
+            that would manage your custom components.
+            Although it might seem quite complex to implement such a thing,
+            the component provider concept in Jersey is in fact very simple. It allows you to define
+            your own HK2 injection bindings for the types that you are interested in,
+            while informing the Jersey runtime at the same time that it should back out and leave
+            the component management to your provider in such a case.
+            By default, if there is no custom component provider found for any given component type, Jersey
+            runtime assumes the role of the default component provider and automatically defines the default
+            HK2 binding for the component type.
+        </p><p>
+            Following example shows a simple <code class="literal">ComponentProvider</code> implementation,
+            for our use case. Some comments on the code follow.
+
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">import jakarta.inject.Inject;
+import jakarta.inject.Provider;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpSession;
+...
+import org.glassfish.hk2.api.DynamicConfiguration;
+import org.glassfish.hk2.api.DynamicConfigurationService;
+import org.glassfish.hk2.api.Factory;
+import org.glassfish.hk2.api.PerLookup;
+import org.glassfish.hk2.api.ServiceLocator;
+import org.glassfish.hk2.utilities.binding.BindingBuilderFactory;
+import org.glassfish.jersey.server.spi.ComponentProvider;
+
+@jakarta.ws.rs.ext.Provider
+public class PerSessionComponentProvider implements ComponentProvider {
+
+    private ServiceLocator locator;
+
+    static class PerSessionFactory implements Factory&lt;PerSessionResource&gt;{
+        static ConcurrentHashMap&lt;String, PerSessionResource&gt; perSessionMap
+                = new ConcurrentHashMap&lt;String, PerSessionResource&gt;();
+
+
+        private final Provider&lt;HttpServletRequest&gt; requestProvider;
+        private final ServiceLocator locator;
+
+        @Inject
+        public PerSessionFactory(
+                Provider&lt;HttpServletRequest&gt; request,
+                ServiceLocator locator) {
+
+            this.requestProvider = request;
+            this.locator = locator;
+        }
+
+        @Override
+        @PerLookup
+        public PerSessionResource provide() {
+            final HttpSession session = requestProvider.get().getSession();
+
+            if (session.isNew()) {
+                PerSessionResource newInstance = createNewPerSessionResource();
+                perSessionMap.put(session.getId(), newInstance);
+
+                return newInstance;
+            } else {
+                return perSessionMap.get(session.getId());
+            }
+        }
+
+        @Override
+        public void dispose(PerSessionResource r) {
+        }
+
+        private PerSessionResource createNewPerSessionResource() {
+            final PerSessionResource perSessionResource = new PerSessionResource();
+            locator.inject(perSessionResource);
+            return perSessionResource;
+        }
+    }
+
+    @Override
+    public void initialize(ServiceLocator locator) {
+        this.locator = locator;
+    }
+
+    @Override
+    public boolean bind(Class&lt;?&gt; component, Set&lt;Class&lt;?&gt;&gt; providerContracts) {
+        if (component == PerSessionResource.class) {
+
+            final DynamicConfigurationService dynamicConfigService =
+                locator.getService(DynamicConfigurationService.class);
+            final DynamicConfiguration dynamicConfiguration =
+                dynamicConfigService.createDynamicConfiguration();
+
+            BindingBuilderFactory
+                .addBinding(BindingBuilderFactory.newFactoryBinder(PerSessionFactory.class)
+                .to(PerSessionResource.class), dynamicConfiguration);
+
+            dynamicConfiguration.commit();
+
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public void done() {
+    }
+}</pre><p>
+        </p><p>
+            The first and very important aspect of writing your own <code class="literal">ComponentProvider</code>
+            in Jersey is to store the actual HK2 <a class="link" href="https://javaee.github.io/hk2/apidocs//org/glassfish/hk2/api/ServiceLocator.html" target="_top">ServiceLocator</a> instance that will be passed to you as
+            the only argument of the provider <code class="literal">initialize</code> method.
+            Your component provider instance will not get injected at all so this is more or less your only chance
+            to get access to the HK2 runtime of your application. Please bear in mind, that at the time when
+            your component provider methods get invoked, the <code class="literal">ServiceLocator</code> is not fully configured yet.
+            This limitation applies to all component provider methods, as the main goal of any component provider
+            is to take part in configuring the application's <code class="literal">ServiceLocator</code>.
+        </p><p>
+            Now let's examine the <code class="literal">bind</code> method, which is where your provider tells the HK2
+            how to bind your component.
+            Jersey will invoke this method multiple times, once for each type that is registered with the
+            actual application.
+            Every time the <code class="literal">bind</code> method is invoked, your component provider needs to decide
+            if it is taking control over the component or not. In our case we know exactly which Java type
+            we are interested in (<code class="literal">PerSessionResource</code> class),
+            so the logic in our <code class="literal">bind</code> method is quite straightforward. If we see our
+            <code class="literal">PerSessionResource</code> class it is our turn to provide our custom binding for the class,
+            otherwise we just return false to make Jersey poll other providers and, if no provider kicks in,
+            eventually provide the default HK2 binding for the component.
+            Please, refer to the <a class="link" href="https://github.com/eclipse-ee4j/glassfish-hk2" target="_top">Glassfish-HK2</a> documentation for the details of the concrete HK2 APIs used in
+            the <code class="literal">bind</code> method implementation above. The main idea behind the code is that
+            we register a new HK2 <a class="link" href="https://javaee.github.io/hk2/apidocs//org/glassfish/hk2/api/Factory.html" target="_top">Factory</a> (<code class="literal">PerSessionFactory</code>), to provide
+            the <code class="literal">PerSessionResource</code> instances to HK2.
+        </p><p>
+            The implementation of the <code class="literal">PerSessionFactory</code> is also included above.
+            Please note that as opposed to a component provider implementation that should never itself rely
+            on an injection support, the factory bound by our component provider would get injected just fine,
+            since it is only instantiated later, once the Jersey runtime for the application is fully
+            initialized including the fully configured HK2 runtime.
+            Whenever a new session is seen, the factory instantiates and injects
+            a new PerSessionResource instance. The instance is then stored in the perSessionMap for later use
+            (for future calls).
+        </p><p>
+            In a real life scenario, you would want to pay more attention to possible synchronization issues.
+            Also, we do not consider a mechanism that would clean-up any obsolete resources for closed, expired or
+            otherwise invalidated HTTP client sessions.
+            We have omitted those considerations here for the sake of brevity of our example.
+        </p></div></div><link href="https://eclipse-ee4j.github.io/jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://eclipse-ee4j.github.io/jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://eclipse-ee4j.github.io/jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://eclipse-ee4j.github.io/jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+            function path() {
+              var args = arguments,
+                  result = []
+                  ;
+
+              for(var i = 0; i < args.length; i++)
+                  result.push(args[i].replace('@', 'https://eclipse-ee4j.github.io/jersey.github.io/sh/'));
+
+              return result
+            };
+
+            SyntaxHighlighter.autoloader.apply(null, path(
+              'applescript            @shBrushAppleScript.js',
+              'actionscript3 as3      @shBrushAS3.js',
+              'bash shell             @shBrushBash.js',
+              'coldfusion cf          @shBrushColdFusion.js',
+              'cpp c                  @shBrushCpp.js',
+              'c# c-sharp csharp      @shBrushCSharp.js',
+              'css                    @shBrushCss.js',
+              'delphi pascal          @shBrushDelphi.js',
+              'diff patch pas         @shBrushDiff.js',
+              'erl erlang             @shBrushErlang.js',
+              'groovy                 @shBrushGroovy.js',
+              'java                   @shBrushJava.js',
+              'jfx javafx             @shBrushJavaFX.js',
+              'js jscript javascript  @shBrushJScript.js',
+              'perl pl                @shBrushPerl.js',
+              'php                    @shBrushPhp.js',
+              'text plain             @shBrushPlain.js',
+              'py python              @shBrushPython.js',
+              'ruby rails ror rb      @shBrushRuby.js',
+              'sass scss              @shBrushSass.js',
+              'scala                  @shBrushScala.js',
+              'sql                    @shBrushSql.js',
+              'vb vbnet               @shBrushVb.js',
+              'xml xhtml xslt html    @shBrushXml.js'
+            ));
+
+            SyntaxHighlighter.all();
+        </script><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="monitoring_tracing.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="cdi.support.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;24.&nbsp;Monitoring and Diagnostics&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;26.&nbsp;Jersey CDI Container Agnostic Support</td></tr></table></div></div></body></html>

@@ -1,0 +1,111 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;30.&nbsp;Migration Guide</title><link rel="stylesheet" type="text/css" href="/jersey.github.io/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Jersey 4.0.0-M1 User Guide"><link rel="up" href="index.html" title="Jersey 4.0.0-M1 User Guide"><link rel="prev" href="how-to-build.html" title="Chapter&nbsp;29.&nbsp;Building and Testing Jersey"><link rel="next" href="appendix-properties.html" title="Appendix&nbsp;A.&nbsp;Configuration Properties"><script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-3160303-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;30.&nbsp;Migration Guide</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="how-to-build.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="appendix-properties.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://eclipse-ee4j.github.io/jersey"><img src="https://eclipse-ee4j.github.io/jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
+            <a href="index.html">
+                Table of Contents
+            </a> | <a href="user-guide.html">
+                Single HTML
+            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="migration"></a>Chapter&nbsp;30.&nbsp;Migration Guide</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="migration.html#mig-3.0.0">30.1. Migrating from Jersey 2.32+ to 3.0.x.</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-3.0.0-breaking-changes">30.1.1. Breaking Changes</a></span></dt><dt><span class="section"><a href="migration.html#mig-3.0.0-removed-deprecated">30.1.2. Removed deprecated APIs</a></span></dt><dt><span class="section"><a href="migration.html#mig-3.0.0-application-servers">30.1.3. Application servers for Jersey</a></span></dt></dl></dd><dt><span class="section"><a href="migration.html#mig-3.1.0">30.2. Migrating from Jersey 3.0.x to 4.0.0-M1.</a></span></dt><dd><dl><dt><span class="section"><a href="migration.html#mig-3.1.0-breaking-changes">30.2.1. Breaking Changes</a></span></dt><dt><span class="section"><a href="migration.html#mig-3.1.0-application-path">30.2.2. @ApplicationPath Annotation Support</a></span></dt><dt><span class="section"><a href="migration.html#mig-3.1.4-jetty-modules">30.2.3. Jetty Modules</a></span></dt><dt><span class="section"><a href="migration.html#mig-3.1.4">30.2.4. Migrating from Jersey 3.1.3 to 3.1.4</a></span></dt></dl></dd></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-3.0.0"></a>30.1.&nbsp;Migrating from Jersey 2.32+ to 3.0.x.</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-3.0.0-breaking-changes"></a>30.1.1.&nbsp;Breaking Changes</h3></div></div></div><p>
+                </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+                            The most fundamental change in Jersey 3.0.0 and later is namespace change.
+                            Since Jakarta EE 9 the <code class="literal">jakarta.</code> namespace is introduced as a replacement
+                            for javax namespace from Java EE.
+                        </p></li><li class="listitem"><p>
+                            Some Jersey modules require higher versions of Java SE. See <a class="xref" href="modules-and-dependencies.html#se_compatibility" title="2.1.&nbsp;Java SE Compatibility">Section&nbsp;2.1, &#8220;Java SE Compatibility&#8221;</a>.
+                        </p></li><li class="listitem"><p>
+                            Examples and tests are reduced in quantity (so you probably will not find all those examples which were available
+                            in the 2.32 version).
+                        </p></li><li class="listitem"><p>
+                            <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/4.0.0-M1/jersey/org/glassfish/jersey/server/ServerProperties.html#UNWRAP_COMPLETION_STAGE_IN_WRITER_ENABLE" target="_top">ServerProperties.UNWRAP_COMPLETION_STAGE_IN_WRITER_ENABLE</a> is by default
+                            <code class="literal">true</code>.
+                        </p></li></ul></div><p>
+            </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-3.0.0-removed-deprecated"></a>30.1.2.&nbsp;Removed deprecated APIs</h3></div></div></div><p>
+                </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+                            Jackson 1 support was removed.
+                        </p></li></ul></div><p>
+            </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-3.0.0-application-servers"></a>30.1.3.&nbsp;Application servers for Jersey</h3></div></div></div><p>
+                Note that only a few servers support Jakarta EE 9 compatible Servlet API and they are tested with Jersey.
+                Those are:
+                <code class="literal">GlassFish 6</code>,
+                <code class="literal">Grizzly 3</code>,
+                <code class="literal">Jetty 11 (JDK 11+ required)</code>,
+                <code class="literal">Payara 6</code>, and
+                <code class="literal">Tomcat 10</code>.
+            </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="mig-3.1.0"></a>30.2.&nbsp;Migrating from Jersey 3.0.x to 4.0.0-M1.</h2></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-3.1.0-breaking-changes"></a>30.2.1.&nbsp;Breaking Changes</h3></div></div></div><p>
+                </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+                            Jersey 3.1.0+ is the implementation of Jakarta RESTful WebServices 3.1, which is part of
+                            Jakarta EE 10. Jakarta EE 10 defines the minimum JDK 11 requirement and hence Jersey no longer
+                            supports JDK 8.
+                        </p><p>
+                            Some Jersey modules require higher versions of Java SE. See <a class="xref" href="modules-and-dependencies.html#se_compatibility" title="2.1.&nbsp;Java SE Compatibility">Section&nbsp;2.1, &#8220;Java SE Compatibility&#8221;</a>.
+                        </p></li><li class="listitem"><p>
+                            Since Jersey 3.1.0+ the <code class="literal">getRequestHeader(String name)</code> method of the
+                            <code class="literal">ClientRequest</code> class returns NULL (instead of an empty List) in case if
+                            the specified header does not exist.
+                        </p></li></ul></div><p>
+            </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-3.1.0-application-path"></a>30.2.2.&nbsp;@ApplicationPath Annotation Support</h3></div></div></div><p>
+                Jersey 3.1 supports <code class="literal">@ApplicationPath</code> annotation by every container, not only the
+                <code class="literal">Servlet</code> container. This can affect tests, as well as deployments to containers
+                where the annotation used to be ignored by previous versions of Jersey.
+            </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-3.1.4-jetty-modules"></a>30.2.3.&nbsp;Jetty Modules</h3></div></div></div><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+                        Jersey 3.0.x, and 3.1.0 - 3.1.3 Jetty modules (jersey-jetty-connector, jersey-container-jetty-http,
+                        jersey-container-jetty-servlet, jersey-test-framework-provider-jetty) are based on Jetty 11,
+                        which is Jakarta EE 9 related.
+                    </p></li><li class="listitem"><p>
+                        Jersey 3.1.4 modules use Jetty 12 which is Jakarta EE 10 related (as well as Jersey 3.1.x).
+                        Jetty 12 dependencies use modules names different from Jetty 11.
+                    </p></li></ul></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="mig-3.1.4"></a>30.2.4.&nbsp;Migrating from Jersey 3.1.3 to 3.1.4</h3></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a name="mig-3.1.4-jackson-changes"></a>30.2.4.1.&nbsp;Changes in Jackson</h4></div></div></div><p>
+                    Jersey 3.1.4 starts to support Jackson 2.15 which comes with default limitations for the length of parsed text,
+                    numbers, and nesting depth. Jersey keeps the Jackson default value, but it allows to override the maximum
+                    length of parsed text using the <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/4.0.0-M1/jersey/org/glassfish/jersey/message/MessageProperties.html#JSON_MAX_STRING_LENGTH" target="_top">MessageProperties.JSON_MAX_STRING_LENGTH</a> property if needed.
+                </p></div></div></div></div><link href="https://eclipse-ee4j.github.io/jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://eclipse-ee4j.github.io/jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://eclipse-ee4j.github.io/jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://eclipse-ee4j.github.io/jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+            function path() {
+              var args = arguments,
+                  result = []
+                  ;
+
+              for(var i = 0; i < args.length; i++)
+                  result.push(args[i].replace('@', 'https://eclipse-ee4j.github.io/jersey.github.io/sh/'));
+
+              return result
+            };
+
+            SyntaxHighlighter.autoloader.apply(null, path(
+              'applescript            @shBrushAppleScript.js',
+              'actionscript3 as3      @shBrushAS3.js',
+              'bash shell             @shBrushBash.js',
+              'coldfusion cf          @shBrushColdFusion.js',
+              'cpp c                  @shBrushCpp.js',
+              'c# c-sharp csharp      @shBrushCSharp.js',
+              'css                    @shBrushCss.js',
+              'delphi pascal          @shBrushDelphi.js',
+              'diff patch pas         @shBrushDiff.js',
+              'erl erlang             @shBrushErlang.js',
+              'groovy                 @shBrushGroovy.js',
+              'java                   @shBrushJava.js',
+              'jfx javafx             @shBrushJavaFX.js',
+              'js jscript javascript  @shBrushJScript.js',
+              'perl pl                @shBrushPerl.js',
+              'php                    @shBrushPhp.js',
+              'text plain             @shBrushPlain.js',
+              'py python              @shBrushPython.js',
+              'ruby rails ror rb      @shBrushRuby.js',
+              'sass scss              @shBrushSass.js',
+              'scala                  @shBrushScala.js',
+              'sql                    @shBrushSql.js',
+              'vb vbnet               @shBrushVb.js',
+              'xml xhtml xslt html    @shBrushXml.js'
+            ));
+
+            SyntaxHighlighter.all();
+        </script><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="how-to-build.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="appendix-properties.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;29.&nbsp;Building and Testing Jersey&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Appendix&nbsp;A.&nbsp;Configuration Properties</td></tr></table></div></div></body></html>

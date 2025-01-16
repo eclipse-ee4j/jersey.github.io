@@ -1,0 +1,568 @@
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   <title>Chapter&nbsp;6.&nbsp;Reactive JAX-RS Client API</title><link rel="stylesheet" type="text/css" href="/jersey.github.io/documentation.css"><meta name="generator" content="DocBook XSL Stylesheets V1.79.1"><link rel="home" href="index.html" title="Jersey 4.0.0-M1 User Guide"><link rel="up" href="index.html" title="Jersey 4.0.0-M1 User Guide"><link rel="prev" href="client.html" title="Chapter&nbsp;5.&nbsp;Client API"><link rel="next" href="representations.html" title="Chapter&nbsp;7.&nbsp;Representations and Responses"><script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-3160303-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script></head><body class="contents"><div class="contents" bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Chapter&nbsp;6.&nbsp;Reactive JAX-RS Client API</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="client.html">Prev</a>&nbsp;</td><th width="60%" align="center">&nbsp;</th><td width="20%" align="right">&nbsp;<a accesskey="n" href="representations.html">Next</a></td></tr></table><hr></div><div style="float:right"><a href="https://eclipse-ee4j.github.io/jersey"><img src="https://eclipse-ee4j.github.io/jersey.github.io/images/jersey_logo.png"></a></div><small>Links:
+            <a href="index.html">
+                Table of Contents
+            </a> | <a href="user-guide.html">
+                Single HTML
+            </a></small><div lang="en" class="chapter"><div class="titlepage"><div><div><h1 class="title"><a name="rx-client"></a>Chapter&nbsp;6.&nbsp;Reactive JAX-RS Client API</h1></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="rx-client.html#d0e5896">6.1. Motivation for Reactive Client Extension</a></span></dt><dt><span class="section"><a href="rx-client.html#d0e6067">6.2. Usage and Extension Modules</a></span></dt><dt><span class="section"><a href="rx-client.html#rx.client.supported">6.3. Supported Reactive Libraries</a></span></dt><dd><dl><dt><span class="section"><a href="rx-client.html#rx-client.rxjava">6.3.1. RxJava (Observable)</a></span></dt><dt><span class="section"><a href="rx-client.html#rx-client.rxjava2">6.3.2. RxJava (Flowable)</a></span></dt><dt><span class="section"><a href="rx-client.html#rx-client.guava">6.3.3. Guava (ListenableFuture and Futures)</a></span></dt></dl></dd><dt><span class="section"><a href="rx-client.html#rx.client.spi">6.4. Implementing Support for Custom Reactive Libraries (SPI)</a></span></dt></dl></div><div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Warning</h3><p>
+            Jersey 2.26 (JAX-RS 2.1 implementation) dropped Jersey-proprietary API in favor of JAX-RS 2.1 Reactive Client API.
+            For Jersey 3.x this approach is still valid.
+        </p></div><p>
+        Reactive client extension is quite a generic API allowing end users to utilize the popular reactive programming model
+        when using JAX-RS Client. The API is designed to be extensible, so any existing reactive framework can integrate with
+        it and there is build in support for CompletionStage. Along with describing the API itself, this section also covers
+        existing extension modules and provides hints to implement a custom extension if needed.
+    </p><p>
+        If you are not familiar with the JAX-RS Client API, it is recommended that you see <a class="xref" href="client.html" title="Chapter&nbsp;5.&nbsp;Client API">Chapter&nbsp;5, <i>Client API</i></a>
+        where the basics of JAX-RS Client API along with some advanced techniques are described.
+    </p><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e5896"></a>6.1.&nbsp;Motivation for Reactive Client Extension</h2></div></div></div><div class="simplesect"><div class="titlepage"><div><div><h3 class="title"><a name="d0e5899"></a>The Problem</h3></div></div></div><p>
+                Imagine a travel agency whose information system consists of multiple basic services. These services might be built
+                using different technologies (JMS, EJB, WS, ...). For simplicity we presume that the services can be
+                consumed using REST interface via HTTP method calls (e.g. using a JAX-RS Client). We also presume that the basic
+                services we need to work with are:
+
+                </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p>
+                            <span class="emphasis"><em>Customers service</em></span> &#8211; provides information about customers of the travel agency.
+                        </p></li><li class="listitem"><p>
+                            <span class="emphasis"><em>Destinations service</em></span> &#8211; provides a list of visited and recommended destinations
+                            for an authenticated customer.
+                        </p></li><li class="listitem"><p>
+                            <span class="emphasis"><em>Weather service</em></span> &#8211; provides weather forecast for a given destination.
+                        </p></li><li class="listitem"><p>
+                            <span class="emphasis"><em>Quoting service</em></span> &#8211; provides price calculation for a customer to travel to
+                            a recommended destination.
+                        </p></li></ul></div><p>
+            </p><p>
+                The task is to create a publicly available feature that would, for an authenticated user, display a list of 10 last visited places and
+                also display a list of 10 new recommended destinations including weather forecast and price calculations for the
+                user. Notice that some of the requests (to retrieve data) depend on results of previous requests. E.g. getting
+                recommended destinations depends on obtaining information about the authenticated user first. Obtaining weather
+                forecast depends on destination information, etc. This relationship between some of the requests is an important part of the
+                problem and an area where you can take a real advantage of the reactive programming model.
+            </p><p>
+                One way how to obtain data is to make multiple HTTP method calls from the client (e.g. mobile device) to all
+                services involved and combine the retrieved data on the client. However, since the basic services are available
+                in the internal network only we'd rather create a public orchestration layer instead of exposing all internal services to the outside world.
+                The orchestration layer would expose only the desired operations of the basic services
+                to the public. To limit traffic and achieve lower latency we'd like to return all the necessary
+                information to the client in a single response.
+            </p><p>
+                The orchestration layer is illustrated in the <a class="xref" href="rx-client.html#rx.client.motivation.problem" title="Figure&nbsp;6.1.&nbsp;Travel Agency Orchestration Service">Figure&nbsp;6.1</a>.
+                The layer accepts requests from the outside and is responsible of invoking multiple requests to the internal services.
+                When responses from the internal services are available in the orchestration layer they're combined into
+                a single response that is sent back to the client.
+
+                </p><div class="figure"><a name="rx.client.motivation.problem"></a><p class="title"><b>Figure&nbsp;6.1.&nbsp;Travel Agency Orchestration Service</b></p><div class="figure-contents"><div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="80%"><tr><td align="center"><img src="images/rx-client-problem.png" align="middle" width="100%" alt="Travel Agency Orchestration Service"></td></tr></table></div></div></div><p><br class="figure-break">
+
+                The next sections describe various approaches (using JAX-RS Client) how the orchestration layer can be implemented.
+            </p></div><div class="simplesect"><div class="titlepage"><div><div><h3 class="title"><a name="d0e5945"></a>A Naive Approach</h3></div></div></div><p>
+                The simplest way to implement the orchestration layer is to use synchronous approach. For this purpose we can use
+                JAX-RS Client Sync API (see <a class="xref" href="rx-client.html#rx.client.motivation.naive" title="Example&nbsp;6.1.&nbsp;Excerpt from a synchronous approach while implementing the orchestration layer">Example&nbsp;6.1, &#8220;Excerpt from a synchronous approach while implementing the orchestration layer&#8221;</a>). The implementation is simple to do,
+                easy to read and straightforward to debug.
+
+                </p><div class="example"><a name="rx.client.motivation.naive"></a><p class="title"><b>Example&nbsp;6.1.&nbsp;Excerpt from a synchronous approach while implementing the orchestration layer</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">final WebTarget destination = ...;
+final WebTarget forecast = ...;
+
+// Obtain recommended destinations.
+List&lt;Destination&gt; recommended = Collections.emptyList();
+try {
+    recommended = destination.path("recommended").request()
+            // Identify the user.
+            .header("Rx-User", "Sync")
+            // Return a list of destinations.
+            .get(new GenericType&lt;List&lt;Destination&gt;&gt;() {});
+} catch (final Throwable throwable) {
+    errors.offer("Recommended: " + throwable.getMessage());
+}
+
+// Forecasts. (depend on recommended destinations)
+final Map&lt;String, Forecast&gt; forecasts = new HashMap&lt;&gt;();
+for (final Destination dest : recommended) {
+    try {
+        forecasts.put(dest.getDestination(),
+                forecast.resolveTemplate("destination", dest.getDestination()).request().get(Forecast.class));
+    } catch (final Throwable throwable) {
+        errors.offer("Forecast: " + throwable.getMessage());
+    }
+}</pre></div></div><p><br class="example-break">
+
+                The downside of this approach is its slowness. You need to sequentially process all the independent requests which
+                means that you're wasting resources. You are needlessly blocking threads, that could be otherwise used for some real work.
+            </p><p>
+                If you take a closer look at the example you can notice that at the moment when all the recommended destinations are
+                available for further processing we try to obtain forecasts for these destinations. Obtaining a weather forecast
+                can be done only for a single destination with a single request, so we need to make 10 requests to
+                the <span class="emphasis"><em>Forecast service</em></span> to get all the destinations covered. In a synchronous way this means getting the forecasts
+                one-by-one. When one response with a forecast arrives we can send another request to obtain another one. This takes
+                time. The whole process of constructing a response for the client can be seen in
+                <a class="xref" href="rx-client.html#rx.client.motivation.graph.sync" title="Figure&nbsp;6.2.&nbsp;Time consumed to create a response for the client &#8211; synchronous way">Figure&nbsp;6.2</a>.
+            </p><p>
+                Let's try to quantify this with assigning an approximate time to every request we make to the internal services.
+                This way we can easily compute the time needed to complete a response for the client. For example, obtaining
+
+                </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><span class="emphasis"><em>Customer details</em></span> takes 150 ms</p></li><li class="listitem"><p><span class="emphasis"><em>Recommended destinations</em></span> takes 250 ms</p></li><li class="listitem"><p><span class="emphasis"><em>Price calculation for a customer and destination</em></span> takes 170 ms (each)</p></li><li class="listitem"><p><span class="emphasis"><em>Weather forecast for a destination</em></span> takes 330 ms (each)</p></li></ul></div><p>
+
+                When summed up, 5400 ms is approximately needed to construct a response for the client.
+
+                </p><div class="figure"><a name="rx.client.motivation.graph.sync"></a><p class="title"><b>Figure&nbsp;6.2.&nbsp;Time consumed to create a response for the client &#8211; synchronous way</b></p><div class="figure-contents"><div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="80%"><tr><td align="center"><img src="images/rx-client-sync-approach.png" align="middle" width="100%" alt="Time consumed to create a response for the client &#8211; synchronous way"></td></tr></table></div></div></div><p><br class="figure-break">
+
+                Synchronous approach is better to use for lower number of requests (where the accumulated time doesn't matter that
+                much) or for a single request that depends on the result of previous operations.
+            </p></div><div class="simplesect"><div class="titlepage"><div><div><h3 class="title"><a name="d0e5996"></a>Optimized Approach</h3></div></div></div><p>
+                The amount of time needed by the synchronous approach can be lowered by invoking independent requests in parallel.
+                We're going to use JAX-RS Client Async API to illustrate this approach. The implementation in this case is slightly
+                more difficult to get right because of the nested callbacks and the need to wait at some points for the moment
+                when all partial responses are ready to be processed. The implementation is also a little bit harder to debug and maintain.
+                The nested calls are causing a lot of complexity here. An example of concrete Java code following the asynchronous approach
+                can be seen in <a class="xref" href="rx-client.html#rx.client.motivation.optimized" title="Example&nbsp;6.2.&nbsp;Excerpt from an asynchronous approach while implementing the orchestration layer">Example&nbsp;6.2, &#8220;Excerpt from an asynchronous approach while implementing the orchestration layer&#8221;</a>.
+
+                </p><div class="example"><a name="rx.client.motivation.optimized"></a><p class="title"><b>Example&nbsp;6.2.&nbsp;Excerpt from an asynchronous approach while implementing the orchestration layer</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">final WebTarget destination = ...;
+final WebTarget forecast = ...;
+
+// Obtain recommended destinations. (does not depend on visited ones)
+destination.path("recommended").request()
+        // Identify the user.
+        .header("Rx-User", "Async")
+        // Async invoker.
+        .async()
+        // Return a list of destinations.
+        .get(new InvocationCallback&lt;List&lt;Destination&gt;&gt;() {
+            @Override
+            public void completed(final List&lt;Destination&gt; recommended) {
+                final CountDownLatch innerLatch = new CountDownLatch(recommended.size());
+
+                // Forecasts. (depend on recommended destinations)
+                final Map&lt;String, Forecast&gt; forecasts = Collections.synchronizedMap(new HashMap&lt;&gt;());
+                for (final Destination dest : recommended) {
+                    forecast.resolveTemplate("destination", dest.getDestination()).request()
+                            .async()
+                            .get(new InvocationCallback&lt;Forecast&gt;() {
+                                @Override
+                                public void completed(final Forecast forecast) {
+                                    forecasts.put(dest.getDestination(), forecast);
+                                    innerLatch.countDown();
+                                }
+
+                                @Override
+                                public void failed(final Throwable throwable) {
+                                    errors.offer("Forecast: " + throwable.getMessage());
+                                    innerLatch.countDown();
+                                }
+                            });
+                }
+
+                // Have to wait here for dependent requests ...
+                try {
+                    if (!innerLatch.await(10, TimeUnit.SECONDS)) {
+                        errors.offer("Inner: Waiting for requests to complete has timed out.");
+                    }
+                } catch (final InterruptedException e) {
+                    errors.offer("Inner: Waiting for requests to complete has been interrupted.");
+                }
+
+                // Continue with processing.
+            }
+
+            @Override
+            public void failed(final Throwable throwable) {
+                errors.offer("Recommended: " + throwable.getMessage());
+            }
+        });</pre></div></div><p><br class="example-break">
+            </p><p>
+                The example is a bit more complicated from the first glance. We provided an <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/InvocationCallback.html" target="_top">InvocationCallback</a> to async
+                <code class="literal">get</code> method. One of the callback methods (<code class="literal">completed</code> or <code class="literal">failed</code>)
+                is called when the request finishes. This is a pretty convenient way to handle async invocations when no nested
+                calls are present. Since we have some nested calls (obtaining weather forecasts) we needed to introduce
+                a <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CountDownLatch.html" target="_top">CountDownLatch</a> synchronization primitive as we use asynchronous approach in obtaining the weather
+                forecasts as well. The latch is decreased every time a request, to the <span class="emphasis"><em>Forecasts service</em></span>,
+                completes successfully or fails. This indicates that the request actually finished and it is a signal for us that
+                we can continue with processing (otherwise we wouldn't have all required data to construct the response for the
+                client). This additional synchronization is something that was not present when taking the synchronous approach,
+                but it is needed here.
+            </p><p>
+                Also the error processing can not be written as it could be in an ideal case. The error handling is scattered in
+                too many places within the code, that it is quite difficult to create a comprehensive response for the client.
+            </p><p>
+                On the other hand taking asynchronous approach leads to code that is as fast as it gets.
+                The resources are used optimally (no waiting threads) to achieve
+                quick response time. The whole process of constructing the response for the client can be seen in
+                <a class="xref" href="rx-client.html#rx.client.motivation.graph.async" title="Figure&nbsp;6.3.&nbsp;Time consumed to create a response for the client &#8211; asynchronous way">Figure&nbsp;6.3</a>. It only took 730 ms instead of
+                5400 ms which we encountered in the previous approach.
+
+                </p><div class="figure"><a name="rx.client.motivation.graph.async"></a><p class="title"><b>Figure&nbsp;6.3.&nbsp;Time consumed to create a response for the client &#8211; asynchronous way</b></p><div class="figure-contents"><div class="mediaobject" align="center"><table border="0" summary="manufactured viewport for HTML img" style="cellpadding: 0; cellspacing: 0;" width="80%"><tr><td align="center"><img src="images/rx-client-async-approach.png" align="middle" width="100%" alt="Time consumed to create a response for the client &#8211; asynchronous way"></td></tr></table></div></div></div><p><br class="figure-break">
+
+                As you can guess, this approach, even with all it's benefits, is the one that is really hard to implement, debug
+                and maintain. It's a safe bet when you have many independent calls to make but it gets uglier with an increasing
+                number of nested calls.
+            </p></div><div class="simplesect"><div class="titlepage"><div><div><h3 class="title"><a name="d0e6042"></a>Reactive Approach</h3></div></div></div><p>
+                Reactive approach is a way out of the so-called <span class="emphasis"><em>Callback Hell</em></span> which you can encounter when
+                dealing with Java's <code class="literal">Future</code>s or invocation callbacks. Reactive approach is based on a data-flow
+                concept and the execution model propagate changes through the flow. An example of a single item in the data-flow
+                chain can be a JAX-RS Client HTTP method call. When the JAX-RS request finishes then the next item (or the user code)
+                in the data-flow chain is notified about the continuation, completion or error in the chain. You're more describing
+                what should be done next than how the next action in the chain should be triggered. The other important part here
+                is that the data-flows are composable. You can compose/transform multiple flows into the resulting one and apply
+                more operations on the result.
+            </p><p>
+                An example of this approach can be seen in <a class="xref" href="rx-client.html#rx.client.motivation.reactive" title="Example&nbsp;6.3.&nbsp;Excerpt from a reactive approach while implementing the orchestration layer">Example&nbsp;6.3, &#8220;Excerpt from a reactive approach while implementing the orchestration layer&#8221;</a>. The APIs would be
+                described in more detail in the next sections.
+
+                </p><div class="example"><a name="rx.client.motivation.reactive"></a><p class="title"><b>Example&nbsp;6.3.&nbsp;Excerpt from a reactive approach while implementing the orchestration layer</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">final WebTarget destination = ...;
+final WebTarget forecast = ...;
+
+// Recommended places.
+CompletionStage&lt;List&lt;Destination&gt;&gt; recommended =
+        destination.path("recommended")
+                   .request()
+                   // Identify the user.
+                   .header("Rx-User", "CompletionStage")
+                   // Reactive invoker.
+                   .rx()
+                   // Return a list of destinations.
+                   .get(new GenericType&lt;List&lt;Destination&gt;&gt;() {})
+                   .exceptionally(throwable -&gt; {
+                       errors.offer("Recommended: " + throwable.getMessage());
+                       return Collections.emptyList();
+                   });
+
+// get Forecast for recommended destinations.
+return recommended.thenCompose(destinations -&gt; {
+
+    List&lt;CompletionStage&lt;Recommendation&gt;&gt; recommendations = destinations.stream().map(destination -&gt; {
+    // For each destination, obtain a weather forecast ...
+    final CompletionStage&lt;Forecast&gt; forecastResult =
+            forecast.resolveTemplate("destination", destination.getDestination())
+                    .request().rx().get(Forecast.class)
+                    .exceptionally(throwable -&gt; {
+                        errors.offer("Forecast: " + throwable.getMessage());
+                        return new Forecast(destination.getDestination(), "N/A");
+                    });
+
+                    //noinspection unchecked
+                    return CompletableFuture.completedFuture(new Recommendation(destination))
+                                            // Set forecast for recommended destination.
+                                            .thenCombine(forecastResult, Recommendation::forecast)
+                    }).collect(Collectors.toList());
+
+                    // Transform List&lt;CompletionStage&lt;Recommendation&gt;&gt; to CompletionStage&lt;List&lt;Recommendation&gt;&gt;
+                    return sequence(recommendations);
+    });</pre></div></div><p><br class="example-break">
+            </p><p>
+                As you can see the code achieves the same work as the previous two examples. It's more readable than the pure
+                asynchronous approach even though it's equally fast. It's as easy to read and implement as the synchronous approach.
+                The error processing is also better handled in this way than in the asynchronous approach.
+            </p><p>
+                When dealing with a large amount of requests (that depend on each other) and when you need to compose/combine the
+                results of these requests, the reactive programming model is the right technique to use.
+            </p></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="d0e6067"></a>6.2.&nbsp;Usage and Extension Modules</h2></div></div></div><p>
+            Reactive Client API is part of the JAX-RS specification since version 2.1. 
+        </p><p>
+            When you compare synchronous invocation of HTTP calls (
+            <a class="xref" href="rx-client.html#rx.client.sync" title="Example&nbsp;6.4.&nbsp;Synchronous invocation of HTTP requests">Example&nbsp;6.4, &#8220;Synchronous invocation of HTTP requests&#8221;</a>)
+
+            </p><div class="example"><a name="rx.client.sync"></a><p class="title"><b>Example&nbsp;6.4.&nbsp;Synchronous invocation of HTTP requests</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Response response = ClientBuilder.newClient()
+        .target("http://example.com/resource")
+        .request()
+        .get();</pre></div></div><p><br class="example-break">
+
+            with asynchronous invocation (<a class="xref" href="rx-client.html#rx.client.async" title="Example&nbsp;6.5.&nbsp;Asynchronous invocation of HTTP requests">Example&nbsp;6.5, &#8220;Asynchronous invocation of HTTP requests&#8221;</a>)
+
+            </p><div class="example"><a name="rx.client.async"></a><p class="title"><b>Example&nbsp;6.5.&nbsp;Asynchronous invocation of HTTP requests</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Future&lt;Response&gt; response = ClientBuilder.newClient()
+        .target("http://example.com/resource")
+        .request()
+        .async()
+        .get();</pre></div></div><p><br class="example-break">
+
+            it is apparent how to pretty conveniently modify the way how a request is invoked (from sync to async) only by calling
+            <code class="literal">async</code> method on an <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/Invocation.Builder.html" target="_top">Invocation.Builder</a>.
+        </p><p>
+            Naturally, it'd be nice to copy the same pattern to allow invoking requests in a reactive way. Just instead of
+            <code class="literal">async</code> you'd call <code class="literal">rx</code> on an extension of <code class="literal">Invocation.Builder</code>,
+            like in <a class="xref" href="rx-client.html#rx.client.reactive" title="Example&nbsp;6.6.&nbsp;Reactive invocation of HTTP requests">Example&nbsp;6.6, &#8220;Reactive invocation of HTTP requests&#8221;</a>.
+
+            </p><div class="example"><a name="rx.client.reactive"></a><p class="title"><b>Example&nbsp;6.6.&nbsp;Reactive invocation of HTTP requests</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">CompletionStage&lt;Response&gt; response = ClientBuilder.newClient()
+        .target("http://example.com/resource")
+        .request()
+        .rx()
+        .get();</pre></div></div><p><br class="example-break">
+        </p><p>
+            The first reactive interface in the invocation chain is <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a> which is very similar to
+            <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/SyncInvoker.html" target="_top">SyncInvoker</a> and <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/AsyncInvoker.html" target="_top">AsyncInvoker</a>. It contains all methods present in the two latter
+            JAX-RS interfaces but the <code class="literal">RxInvoker</code> interface is more generic, so that it can be extended
+            and used in particular implementations taking advantage of various reactive libraries. Extending this new interface
+            in a particular implementation also preserves type safety which means that you're not loosing type information when a HTTP
+            method call returns an object that you want to process further.
+        </p><p>
+            The method "rx()" in the example above is perfect example of that principle. It returns <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/CompletionStageRxInvoker.html" target="_top">CompletionStageRxInvoker</a>,
+            which extends <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a>.
+        </p><p>
+            As a user of the Reactive Client API you only need to keep in mind that you won't be working with
+            <code class="literal">RxInvoker</code> directly. You'd rather be working with an extension of this interface created for
+            a particular implementation and you don't need to be bothered much with why are things designed the way they are.
+
+            </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+                    To see how the <code class="literal">RxInvoker</code> should be extended, refer to
+                    <a class="xref" href="rx-client.html#rx.client.spi" title="6.4.&nbsp;Implementing Support for Custom Reactive Libraries (SPI)">Section&nbsp;6.4, &#8220;Implementing Support for Custom Reactive Libraries (SPI)&#8221;</a>.
+                </p></div><p>
+
+            The important thing to notice here is that an extension of <code class="literal">RxInvoker</code> holds the type
+            information and the Reactive Client needs to know about this type to properly propagate it among the method
+            calls you'll be making. This is the reason why other interfaces (described bellow) are parametrized with this type.
+        </p><p>
+            In order to extend the API to be used with other reactive frameworks, <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/RxInvokerProvider.html" target="_top">RxInvokerProvider</a> needs to be
+            registered into the Client runtime:
+        </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Client client = ClientBuilder.newClient();
+client.register(RxFlowableInvokerProvider.class);
+
+Flowable&lt;String&gt; responseFlowable =
+        client.target("http://eclipse-ee4j.github.io/jersey")
+              .request()
+              .rx(RxFlowableInvoker.class)
+              .get(String.class);
+
+String responseString = responseFlowable.blockingFirst();</pre><div class="simplesect"><div class="titlepage"><div><div><h3 class="title"><a name="d0e6161"></a>Dependencies</h3></div></div></div><p>
+                    JAX-RS mandates support for CompletionStage, which doesn't required any other dependency and can be
+                    used out of the box.
+                </p><p>
+                    To add support for a particular library, see the <a class="xref" href="rx-client.html#rx.client.supported" title="6.3.&nbsp;Supported Reactive Libraries">Section&nbsp;6.3, &#8220;Supported Reactive Libraries&#8221;</a>.
+                </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+                        If you're not using Maven (or other dependency management tool) make sure to add also all the transitive
+                        dependencies of Jersey client module and any other extensions (when used) on the class-path.
+                    </p></div></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="rx.client.supported"></a>6.3.&nbsp;Supported Reactive Libraries</h2></div></div></div><p>
+            There are already some available reactive (or reactive-like) libraries out there and Jersey brings support for some of
+            them out of the box. Jersey currently supports:
+
+            </p><div class="itemizedlist"><ul class="itemizedlist" style="list-style-type: disc; "><li class="listitem"><p><a class="xref" href="rx-client.html#rx-client.rxjava" title="6.3.1.&nbsp;RxJava &#8211; Observable">RxJava (Observable)</a></p></li><li class="listitem"><p><a class="xref" href="rx-client.html#rx-client.rxjava2" title="6.3.2.&nbsp;RxJava &#8211; Flowable">RxJava (Flowable)</a></p></li><li class="listitem"><p><a class="xref" href="rx-client.html#rx-client.guava" title="6.3.3.&nbsp;Guava &#8211; ListenableFuture and Futures">Guava (ListenableFuture and Futures)</a></p></li></ul></div><p>
+        </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="rx-client.rxjava"></a>6.3.1.&nbsp;RxJava &#8211; Observable</h3></div></div></div><p>
+                <a class="link" href="https://github.com/ReactiveX/RxJava" target="_top">RxJava</a>, contributed by Netflix, is probably the most advanced reactive library for Java at the moment. It's
+                used for composing asynchronous and event-based programs by using observable sequences. It uses the
+                <a class="link" href="http://en.wikipedia.org/wiki/Observer_pattern" target="_top">observer pattern</a> to support these sequences of data/events
+                via its <a class="link" href="http://reactivex.io/RxJava/javadoc//io/reactivex/Observable.html" target="_top">Observable</a> entry point class which implements the Reactive Pattern. <code class="literal">Observable</code> is
+                actually the parameter type in the RxJava's extension of <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a>, called
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/4.0.0-M1/jersey/org/glassfish/jersey/client/rx/rxjava/RxObservableInvoker.html" target="_top">RxObservableInvoker</a>. This means that the return type of HTTP method calls is
+                <code class="literal">Observable</code> in this case (accordingly parametrized).
+            </p><p>
+                Requests are by default invoked at the moment when a subscriber is subscribed to an observable (it's a cold
+                <code class="literal">Observable</code>). If not said otherwise a separate thread (JAX-RS Async Client requests) is used to
+                obtain data. This behavior can be overridden by providing an <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ExecutorService.html" target="_top">ExecutorService</a> when a reactive
+                <code class="literal">Client</code> is created.
+            </p><div class="simplesect"><div class="titlepage"><div><div><h4 class="title"><a name="d0e6228"></a>Usage</h4></div></div></div><p>
+                    The extensibility is built-in JAX-RS Client API, so there are no special dependencies on Jersey Client
+                    API other than the extension itself.
+
+                    </p><div class="example"><a name="rx.client.rxjava.rx"></a><p class="title"><b>Example&nbsp;6.7.&nbsp;Creating JAX-RS Client with RxJava reactive extension</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">// New Client
+Client client = ClientBuilder.newClient();
+client.register(RxObservableInvokerProvider.class);</pre></div></div><p><br class="example-break">
+                </p><p>
+                    An example of obtaining <code class="literal">Observable</code> with JAX-RS <code class="literal">Response</code> from a remote service
+                    can be seen in <a class="xref" href="rx-client.html#rx.client.rxjava.usage" title="Example&nbsp;6.8.&nbsp;Obtaining Observable<Response&gt; from Jersey/RxJava Client">Example&nbsp;6.8, &#8220;Obtaining Observable&lt;Response&gt; from Jersey/RxJava Client&#8221;</a>.
+
+                    </p><div class="example"><a name="rx.client.rxjava.usage"></a><p class="title"><b>Example&nbsp;6.8.&nbsp;Obtaining Observable&lt;Response&gt; from Jersey/RxJava Client</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Observable&lt;Response&gt; observable = RxObservable.newClient()
+                                                    .target("http://example.com/resource")
+                                                    .request()
+                                                    .rx(RxObservableInvoker.class)
+                                                    .get();</pre></div></div><p><br class="example-break">
+                </p></div><div class="simplesect"><div class="titlepage"><div><div><h4 class="title"><a name="d0e6255"></a>Dependencies</h4></div></div></div><p>
+                    The RxJava support is available as an extension module in Jersey. For Maven users,
+                    simply add the following dependency to your <code class="literal">pom.xml</code>:
+
+                    </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    gutter: false;">&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.ext.rx&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-rx-client-rxjava&lt;/artifactId&gt;
+    &lt;version&gt;4.0.0-M1&lt;/version&gt;
+&lt;/dependency&gt;</pre><p>
+
+                    After this step you can use the extended client right away. The dependency transitively adds the following
+                    dependencies to your class-path as well: <code class="literal">io.reactivex:rxjava</code>.
+                </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+                        If you're not using Maven (or other dependency management tool) make sure to add also all the transitive
+                        dependencies of this extension module (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/project-info/4.0.0-M1/jersey/project/project/jersey-rx-client-rxjava/dependencies.html" target="_top">jersey-rx-client-rxjava</a>) on the class-path.
+                    </p></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="rx-client.rxjava2"></a>6.3.2.&nbsp;RxJava &#8211; Flowable</h3></div></div></div><p>
+                <a class="link" href="https://github.com/ReactiveX/RxJava" target="_top">RxJava</a>, contributed by Netflix, is probably the most advanced reactive library for Java at the moment. It's
+                used for composing asynchronous and event-based programs by using observable sequences. It uses the
+                <a class="link" href="http://en.wikipedia.org/wiki/Observer_pattern" target="_top">observer pattern</a> to support these sequences of data/events
+                via its <a class="link" href="http://reactivex.io/RxJava/javadoc//io/reactivex/Flowable.html" target="_top">Flowable</a> entry point class which implements the Reactive Pattern. <code class="literal">Flowable</code> is
+                actually the parameter type in the RxJava's extension of <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a>, called
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/4.0.0-M1/jersey/org/glassfish/jersey/client/rx/rxjava2/RxFlowableInvoker.html" target="_top">RxFlowableInvoker</a>. This means that the return type of HTTP method calls is
+                <code class="literal">Flowable</code> in this case (accordingly parametrized).
+            </p><p>
+                Requests are by default invoked at the moment when a subscriber is subscribed to a flowable (it's a cold
+                <code class="literal">Flowable</code>). If not said otherwise a separate thread (JAX-RS Async Client requests) is used to
+                obtain data. This behavior can be overridden by providing an <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ExecutorService.html" target="_top">ExecutorService</a> when a reactive
+                <code class="literal">Client</code> is created.
+            </p><div class="simplesect"><div class="titlepage"><div><div><h4 class="title"><a name="d0e6314"></a>Usage</h4></div></div></div><p>
+                    The extensibility is built-in JAX-RS Client API, so there are no special dependencies on Jersey Client
+                    API other than the extension itself.
+
+                    </p><div class="example"><a name="rx.client.rxjava2.rx"></a><p class="title"><b>Example&nbsp;6.9.&nbsp;Creating JAX-RS Client with RxJava2 reactive extension</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">// New Client
+Client client = ClientBuilder.newClient();
+client.register(RxFlowableInvokerProvider.class);</pre></div></div><p><br class="example-break">
+                </p><p>
+                    An example of obtaining <code class="literal">Flowable</code> with JAX-RS <code class="literal">Response</code> from a remote service
+                    can be seen in <a class="xref" href="rx-client.html#rx.client.rxjava.usage" title="Example&nbsp;6.8.&nbsp;Obtaining Observable<Response&gt; from Jersey/RxJava Client">Example&nbsp;6.8, &#8220;Obtaining Observable&lt;Response&gt; from Jersey/RxJava Client&#8221;</a>.
+
+                    </p><div class="example"><a name="rx.client.rxjava2.usage"></a><p class="title"><b>Example&nbsp;6.10.&nbsp;Obtaining Flowable&lt;Response&gt; from Jersey/RxJava Client</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Flowable&lt;Response&gt; observable = RxObservable.newClient()
+                            .target("http://example.com/resource")
+                            .request()
+                            .rx(RxFlowableInvoker.class)
+                            .get();
+                        </pre></div></div><p><br class="example-break">
+                </p></div><div class="simplesect"><div class="titlepage"><div><div><h4 class="title"><a name="d0e6341"></a>Dependencies</h4></div></div></div><p>
+                    The RxJava support is available as an extension module in Jersey. For Maven users,
+                    simply add the following dependency to your <code class="literal">pom.xml</code>:
+
+                    </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    gutter: false;">&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.ext.rx&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-rx-client-rxjava2&lt;/artifactId&gt;
+    &lt;version&gt;4.0.0-M1&lt;/version&gt;
+&lt;/dependency&gt;</pre><p>
+
+                    After this step you can use the extended client right away. The dependency transitively adds the following
+                    dependencies to your class-path as well: <code class="literal">io.reactivex:rxjava2</code>.
+                </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+                        If you're not using Maven (or other dependency management tool) make sure to add also all the transitive
+                        dependencies of this extension module (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/project-info/4.0.0-M1/jersey/project/project/jersey-rx-client-rxjava2/dependencies.html" target="_top">jersey-rx-client-rxjava2</a>) on the class-path.
+                    </p></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="rx-client.guava"></a>6.3.3.&nbsp;Guava &#8211; ListenableFuture and Futures</h3></div></div></div><p>
+                <a class="link" href="https://guava.dev/" target="_top">Guava</a>, contributed by Google, also contains a type, <a class="link" href="https://guava.dev/releases/31.1-jre/api/docs/com/google/common/util/concurrent/ListenableFuture.html" target="_top">ListenableFuture</a>, which can be decorated with
+                listeners that are notified when the future completes. The <code class="literal">ListenableFuture</code> can be combined with
+                <a class="link" href="https://guava.dev/releases/31.1-jre/api/docs/com/google/common/util/concurrent/Futures.html" target="_top">Futures</a> to achieve asynchronous/event-based completion aware processing. <code class="literal">ListenableFuture</code>
+                is the parameter type in the Guava's extension of <code class="literal">RxInvoker</code>, called
+                <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/apidocs/4.0.0-M1/jersey/org/glassfish/jersey/client/rx/guava/RxListenableFutureInvoker.html" target="_top">RxListenableFutureInvoker</a>. This means that the return type of HTTP method calls is
+                <code class="literal">ListenableFuture</code> in this case (accordingly parametrized).
+            </p><p>
+                Requests are by default invoked immediately. If not said otherwise the <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executors.html#newCachedThreadPool--" target="_top">Executors#newCachedThreadPool()</a> pool
+                is used to obtain a thread which processed the request. This behavior can be overridden by providing a
+                <a class="link" href="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ExecutorService.html" target="_top">ExecutorService</a> when a <code class="literal">Client</code> is created.
+            </p><div class="simplesect"><div class="titlepage"><div><div><h4 class="title"><a name="d0e6403"></a>Usage</h4></div></div></div><p>
+                    The extensibility is built-in JAX-RS Client API, so there are no special dependencies on Jersey Client
+                    API other than the extension itself.
+
+                    </p><div class="example"><a name="rx.client.guava.rx"></a><p class="title"><b>Example&nbsp;6.11.&nbsp;Creating Jersey/Guava Client</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">// New Client
+Client client = ClientBuilder.newClient();
+client.register(RxListenableFutureInvokerProvider.class);</pre></div></div><p><br class="example-break">
+                </p><p>
+                    An example of obtaining <code class="literal">ListenableFuture</code> with JAX-RS <code class="literal">Response</code> from a remote
+                    service can be seen in <a class="xref" href="rx-client.html#rx.client.guava.usage" title="Example&nbsp;6.12.&nbsp;Obtaining ListenableFuture<Response&gt; from Jersey/Guava Client">Example&nbsp;6.12, &#8220;Obtaining ListenableFuture&lt;Response&gt; from Jersey/Guava Client&#8221;</a>.
+
+                    </p><div class="example"><a name="rx.client.guava.usage"></a><p class="title"><b>Example&nbsp;6.12.&nbsp;Obtaining ListenableFuture&lt;Response&gt; from Jersey/Guava Client</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">
+ListenableFuture&lt;Response&gt; response = client.target("http://eclipse-ee4j.github.io/jersey")
+                                            .request()
+                                            .rx(RxListenableFutureInvoker.class)
+                                            .get();
+</pre></div></div><p><br class="example-break">
+                </p></div><div class="simplesect"><div class="titlepage"><div><div><h4 class="title"><a name="d0e6430"></a>Dependencies</h4></div></div></div><p>
+                    The Reactive Jersey Client with Guava support is available as an extension module in Jersey. For Maven users,
+                    simply add the following dependency to your <code class="literal">pom.xml</code>:
+
+                    </p><pre class="&#xA;    toolbar: false;&#xA;    brush: xml;&#xA;    gutter: false;">&lt;dependency&gt;
+    &lt;groupId&gt;org.glassfish.jersey.ext.rx&lt;/groupId&gt;
+    &lt;artifactId&gt;jersey-rx-client-guava&lt;/artifactId&gt;
+    &lt;version&gt;4.0.0-M1&lt;/version&gt;
+&lt;/dependency&gt;</pre><p>
+
+                    After this step you can use the extended client right away. The dependency transitively adds the following
+                    dependencies to your class-path as well: <code class="literal">com.google.guava:guava</code>.
+                </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>
+                        If you're not using Maven (or other dependency management tool) make sure to add also all the transitive
+                        dependencies of this extension module (see <a class="link" href="https://eclipse-ee4j.github.io/jersey.github.io/project-info/4.0.0-M1/jersey/project/project/jersey-rx-client-guava/dependencies.html" target="_top">jersey-rx-client-guava</a>) on the class-path.
+                    </p></div></div></div></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="rx.client.spi"></a>6.4.&nbsp;Implementing Support for Custom Reactive Libraries (SPI)</h2></div></div></div><p>
+            In case you want to bring support for some other library providing Reactive Programming Model into your application
+            you can extend functionality of Reactive JAX-RS Client by implementing <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/RxInvokerProvider.html" target="_top">RxInvokerProvider</a>, registering
+            that implementation into the client runtime and then using rx(Class&lt;T&gt;) in your code.
+        </p><div class="simplesect"><div class="titlepage"><div><div><h3 class="title"><a name="d0e6458"></a>Implement RxInvoker and RxInvokerProvider interfaces</h3></div></div></div><p>
+                The first step when implementing support for another reactive library is to implement <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a>.
+                JAX-RS API itself contains one implementation, which will be used as an example: <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/CompletionStageRxInvoker.html" target="_top">CompletionStageRxInvoker</a>.
+
+                </p><div class="example"><a name="rx.client.rxinvoker"></a><p class="title"><b>Example&nbsp;6.13.&nbsp;Extending RxIvoker</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public interface CompletionStageRxInvoker extends RxInvoker&lt;CompletionStage&gt; {
+    @Override
+    public CompletionStage&lt;Response&gt; get();
+
+    @Override
+    public &lt;T&gt; CompletionStage&lt;T&gt; get(Class&lt;T&gt; responseType);
+
+    // ...
+}</pre></div></div><p><br class="example-break">
+            </p><p>
+                The important fact to notice is that the generic parameter of <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/RxInvoker.html" target="_top">RxInvoker</a> is <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html" target="_top">CompletionStage</a>
+                and also that the return type is overriden to be always <a class="link" href="http://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletionStage.html" target="_top">CompletionStage</a> with some generic param (<a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/core/Response.html" target="_top">Response</a>;
+                or T).
+            </p><p>
+                After having the extended RxInvoker interface, the implementor has to provide <a class="link" href="https://jakartaee.github.io/rest/apidocs/3.1.0/jakarta/ws/rs/client/RxInvokerProvider.html" target="_top">RxInvokerProvider</a>,
+                which will be registered as an provider to a client instance.
+            </p><div class="example"><a name="rx.client.extend.rxinvoker"></a><p class="title"><b>Example&nbsp;6.14.&nbsp;Extending RxInvokerProvider</b></p><div class="example-contents"><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">public static class CompletionStageRxInvokerProvider implements RxInvokerProvider&lt;CompletionStageRxInvoker&gt; {
+    @Override
+    public boolean isProviderFor(Class&lt;?&gt; clazz) {
+        return CompletionStage.class.equals(clazz);
+    }
+
+    @Override
+    public CompletionStageRxInvoker getRxInvoker(SyncInvoker syncInvoker, ExecutorService executorService) {
+        return new CompletionStageRxInvoker() {
+            // ...
+        };
+    }
+}</pre></div></div><br class="example-break"></div><div class="simplesect"><div class="titlepage"><div><div><h3 class="title"><a name="d0e6499"></a>Example of using custom RxInvokerProvider</h3></div></div></div><p>
+                Considering the work above was done and the implementation of custom <code class="literal">RxInvoker</code> and
+                <code class="literal">RxInvokerProvider</code> is available, the client code using those extensions will be:
+            </p><pre class="&#xA;    toolbar: false;&#xA;    brush: java;&#xA;    ">Client client = ClientBuilder.newClient();
+// register custom RxInvokerProvider
+client.register(CompletionStageRxInvokerProvider.class);
+
+CompletionStage&lt;Response&gt; response =
+        client.target("http://eclipse-ee4j.github.io/jersey")
+              .request()
+              .rx(CompletionStageRxInvoker.class)
+              // Now we have an instance of CompletionStageRxInvoker returned from our registered RxInvokerProvider,
+              // which is CompletionStageRxInvokerProvider in this particular scenario.
+              .get();</pre></div></div></div><link href="https://eclipse-ee4j.github.io/jersey.github.io/sh/shCore.css" rel="stylesheet" type="text/css"><link href="https://eclipse-ee4j.github.io/jersey.github.io/sh/shThemeDefault.css" rel="stylesheet" type="text/css"><script src="https://eclipse-ee4j.github.io/jersey.github.io/sh/shCore.js" type="text/javascript"></script><script src="https://eclipse-ee4j.github.io/jersey.github.io/sh/shAutoloader.js" type="text/javascript"></script><script type="text/javascript">
+            function path() {
+              var args = arguments,
+                  result = []
+                  ;
+
+              for(var i = 0; i < args.length; i++)
+                  result.push(args[i].replace('@', 'https://eclipse-ee4j.github.io/jersey.github.io/sh/'));
+
+              return result
+            };
+
+            SyntaxHighlighter.autoloader.apply(null, path(
+              'applescript            @shBrushAppleScript.js',
+              'actionscript3 as3      @shBrushAS3.js',
+              'bash shell             @shBrushBash.js',
+              'coldfusion cf          @shBrushColdFusion.js',
+              'cpp c                  @shBrushCpp.js',
+              'c# c-sharp csharp      @shBrushCSharp.js',
+              'css                    @shBrushCss.js',
+              'delphi pascal          @shBrushDelphi.js',
+              'diff patch pas         @shBrushDiff.js',
+              'erl erlang             @shBrushErlang.js',
+              'groovy                 @shBrushGroovy.js',
+              'java                   @shBrushJava.js',
+              'jfx javafx             @shBrushJavaFX.js',
+              'js jscript javascript  @shBrushJScript.js',
+              'perl pl                @shBrushPerl.js',
+              'php                    @shBrushPhp.js',
+              'text plain             @shBrushPlain.js',
+              'py python              @shBrushPython.js',
+              'ruby rails ror rb      @shBrushRuby.js',
+              'sass scss              @shBrushSass.js',
+              'scala                  @shBrushScala.js',
+              'sql                    @shBrushSql.js',
+              'vb vbnet               @shBrushVb.js',
+              'xml xhtml xslt html    @shBrushXml.js'
+            ));
+
+            SyntaxHighlighter.all();
+        </script><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="client.html">Prev</a>&nbsp;</td><td width="20%" align="center">&nbsp;</td><td width="40%" align="right">&nbsp;<a accesskey="n" href="representations.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">Chapter&nbsp;5.&nbsp;Client API&nbsp;</td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top">&nbsp;Chapter&nbsp;7.&nbsp;Representations and Responses</td></tr></table></div></div></body></html>
